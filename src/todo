@@ -1,0 +1,64 @@
+loading screen
+
+
+error page route
+
+search(property, value) returns new array comprised of all array elements where
+[property] matches value, page reloads using new array as map
+    use for search bar in collections
+    use for "search by tag" functionality when clicking on tags
+
+collections: present data feed's associated button appears different color
+    same with navmaster
+
+attack rolls off of weapons add prof + prime stat?
+    choose prime stat?
+
+random chargen
+
+collapsible cards
+    let player expand cards of interest
+    collapsed form includes title, tags, quick functional desc
+
+encumbrance translate from e units to sacks/stones/soaps
+
+instead of salvage button under items -> sell/haggle button 
+    brings up menu with options for favorable bargain, moderate sell, hard sell
+        these moderate final price
+        so DM could say "yeah sell it at favorable bargain" and player does the work
+
+--------------------------------------------------------------------------------------
+
+spells have "cast spell" button like attacks
+    brings up "how strong do you want to cast" menu 
+    take multiplier from ^ and MCOST, calc and subtract total from LIFE
+
+
+
+
+MONSTER GENERATOR
+-template + modifier "packs" made of skills/abilities/mutations
+    -aka (ba, ka) zombification = 20/0? ba/ka defense, attack drains enemy ba/ka
+    -vome = 
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+  lists crafting materials, deprecated
+  const getMats = (materials) => {
+    for (let element of character.materials) {
+      materials += element + ", ";
+    }
+    let mmaterials = materials.slice(0, -2);
+    return <span>{mmaterials}</span>;
+  };
+  */

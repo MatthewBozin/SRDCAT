@@ -1,0 +1,24 @@
+{
+    "navmasters":[
+        {
+            "name":"character",
+            "type":"character",
+            "text":"Character",
+            "link":"/character"
+        },
+        {
+            "name":"collections",
+            "type":"collections",
+            "text":"Collections",
+            "link":"/"
+        }
+    ],
+    "navlets":
+    [
+        
+        {"name":"mutations","display":"Mutations"},
+        {"name":"abilities","display":"Abilities"},
+        {"name":"skills","display":"Skills"},
+        {"name":"items","display":"Items"}
+    ]
+}
