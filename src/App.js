@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Context from "./data/context.js";
+import Character from "./data/character.js";
+import NavMaster from "./navigation/NavMaster";
+import "./App.css";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Collections from "./pages/Collections";
+import CharSheet from "./pages/CharSheet";
 
 function App() {
+  const [context, setContext] = useState({
+    collections: "items",
+    link: "collections",
+  });
+  const [character, setCharacter] = useState({
+    name: "Akres Sarsot",
+    STR: 1,
+    END: 1,
+    AGI: 1,
+    CHA: 1,
+    AUR: 1,
+    THO: 1,
+    HA: 10,
+    KA: 10,
+    BA: 10,
+    LIFE: 20,
+    MCOST: 3,
+    HERODICE: 0,
+    XP: 0,
+    skills: [],
+    abilities: [],
+    mutations: [],
+    items: [],
+    cash: 0,
+    materials: ["metal", "fuel"],
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Context.Provider value={[context, setContext]}>
+        <Character.Provider value={[character, setCharacter]}>
+          <Router>
+            <NavMaster />
+            <Route exact path="/">
+              <Collections />
+            </Route>
+            <Route path="/character">
+              <CharSheet />
+            </Route>
+          </Router>
+        </Character.Provider>
+      </Context.Provider>
     </div>
   );
 }

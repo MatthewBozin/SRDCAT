@@ -1,0 +1,91 @@
+{
+    "skills":[
+        {
+            "name":"Agriculturist Farmer",
+            "tag":"#background",
+            "flavor":"An autonomous popular people’s collective ruled by an autocrat.",
+            "description":"Grows beans. Wakes up early. Tills greenhouses. Works long hours. Pays onerous taxes. Understands magic legumes. Joins the levies. Avoids attention very, very well. Wields farm implements and light long arms. Also farms other valuable",
+            "table":["Squashes","Breadfruit","Tart mangoes","Saucy tangerines","Giant peaches","Turnips","Hybrid oats","Uplifted monocultural rice","Mushrooms of power","Industrial grade pumpkins","Land coral","Kelp"],
+            "ranks":["Critical damage.","Damage dice increased one step.","Ignores armor."],
+            "info":"SEACAT p.17"
+        },
+        {
+            "name":"Artist Aesthetic",
+            "tag":"#background",
+            "flavor":"The unmanifest idea is worthless.",
+            "description":"Creates treasures out of aether, dreams, and labor. Paints, sculpts, draws, dances and sings. Wields a brush and chisel, sells trinkets as avant-garde art to hungry social climbers. Known for",
+            "table":["Bas relief etchings", "Croquis and caricatures", "Hyperrealist plastics", "Microlithic landscape design", "Mixed media cave paintings", "Neon jungle sculptures", "Performance welding", "Surrealist canvases"],
+            "ranks":["Gets ITEM (table)"],
+            "info":"SEACAT p.17"
+        }
+    ],
+    "abilities":[
+        {
+            "name":"Artiforganism",
+            "tag":"#biomachine",
+            "flavor":"The unborn. The made.",
+            "ranks":[
+                "Hero is not actually alive. They do not need to eat, breathe, drink, or sleep. They gain energy from the sun or from magical batteries.",
+                "Hero can replicate themselves given a few weeks and security backups."
+            ],
+            "info":"SEACAT p.17"
+        },
+        {
+            "name":"Aural Corona",
+            "tag":"#fantascience",
+            "flavor":"Flaring off the elemental excess.",
+            "description":"Hero is surrounded by",
+            "table":["Light", "Fire", "Sky", "Water", "Green", "Metal", "Radiation", "Void"],
+            "ranks":["Hero crackles with an overcharged aura. They take half damage from their element.", "Hero can spend 1 life to flare their aura to an adjacent creature, either sharing their resistance or transferring all the damage they avoided.", "Hero takes minimum damage from their element."],
+            "info":"SEACAT p.17"
+        }
+    ],
+    "mutations":[
+        {
+            "name":"Another Mind",
+            "tag":"#psionic",
+            "flavor":"The seed of truth grows within.",
+            "ranks":[
+                {"base":"Hard, cyst-like nodule develops on the ", "entries":["throat", "stomach","lumbar spine","upper back"], "end":"."},
+                "The nodule grows larger and bonier, a secondary brain begins to develop within. Reflexes are accelerated while the hero becomes vulnerable to critical hits. Clothes no longer fit.",
+                "The secondary brain grows larger and faster. The hero’s perception and analytical abilities increase. The disfigurement is more pronounced.",
+                {"base":"The secondary brain achieves a semblance of independent thought and develops unusual mental abilities, such as ", "entries":["pyrokinesis","telekinesis","electrokinesis","tele-empathetic manipulation"], "end":". Sometimes it takes over the hero’s body."}
+            ],
+            "info":"SEACAT p.70"
+        },
+        {
+            "name":"Astral Eyes",
+            "tag":"#psionic",
+            "flavor":"The world you know is a veil hiding the deeper beauty of the fields of ka.",
+            "ranks":[
+                {"base":"Eyes turn", "entries":["milky", "pitch black","translucent","like amber orbs"], "end":". Vision is impaired."},
+                "Eyes evaporate out of their sockets. Hero is blind.",
+                "A heavy, misty gas leaks out of the hero’s sockets. They perceive auras with new organs growing where their eyes once rolled in fear and terror."
+            ],
+            "info":"SEACAT p.70"
+        }
+    ],
+    "items":[
+        {
+            "name":"Flamethrower",
+            "tag":"#mechanical",
+            "flavor":"Roast em, toast em, extra well-done.",
+            "description":"Held together by spit and duct tape, a deadly fire-spraying contraption.",
+            "weight": 100,
+            "table":"1d6d6",
+            "value":"7",
+            "crafting":["metal","metal","fuel","fuel"],
+            "ranks":["0","1","2","3","4","5"]
+        },
+                {
+            "name":"Wheel of Cheese",
+            "tag":"#food",
+            "flavor":"Extra delicious, no need to reinvent.",
+            "description":"Cheese.",
+            "weight": 10,
+            "value":"2",
+            "crafting":["biological","biological"],
+            "ranks":["0","1","2","3","4","5"]
+        }
+    ]
+}
