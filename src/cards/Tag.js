@@ -1,7 +1,7 @@
 import React from "react";
 
 const Tag = (props) => {
-  return <div className="bit tag">{props.tag}</div>;
+  return <span className="bit tag">{props.tag}</span>;
 };
 
 export default Tag;

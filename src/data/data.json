@@ -2,7 +2,7 @@
     "skills":[
         {
             "name":"Agriculturist Farmer",
-            "tag":"#background",
+            "tags":["#background"],
             "flavor":"An autonomous popular people’s collective ruled by an autocrat.",
             "description":"Grows beans. Wakes up early. Tills greenhouses. Works long hours. Pays onerous taxes. Understands magic legumes. Joins the levies. Avoids attention very, very well. Wields farm implements and light long arms. Also farms other valuable",
             "table":["Squashes","Breadfruit","Tart mangoes","Saucy tangerines","Giant peaches","Turnips","Hybrid oats","Uplifted monocultural rice","Mushrooms of power","Industrial grade pumpkins","Land coral","Kelp"],
@@ -11,7 +11,7 @@
         },
         {
             "name":"Artist Aesthetic",
-            "tag":"#background",
+            "tags":["#background"],
             "flavor":"The unmanifest idea is worthless.",
             "description":"Creates treasures out of aether, dreams, and labor. Paints, sculpts, draws, dances and sings. Wields a brush and chisel, sells trinkets as avant-garde art to hungry social climbers. Known for",
             "table":["Bas relief etchings", "Croquis and caricatures", "Hyperrealist plastics", "Microlithic landscape design", "Mixed media cave paintings", "Neon jungle sculptures", "Performance welding", "Surrealist canvases"],
@@ -22,7 +22,7 @@
     "abilities":[
         {
             "name":"Artiforganism",
-            "tag":"#biomachine",
+            "tags":["#biomachine"],
             "flavor":"The unborn. The made.",
             "ranks":[
                 "Hero is not actually alive. They do not need to eat, breathe, drink, or sleep. They gain energy from the sun or from magical batteries.",
@@ -32,7 +32,7 @@
         },
         {
             "name":"Aural Corona",
-            "tag":"#fantascience",
+            "tags":["#fantascience"],
             "flavor":"Flaring off the elemental excess.",
             "description":"Hero is surrounded by",
             "table":["Light", "Fire", "Sky", "Water", "Green", "Metal", "Radiation", "Void"],
@@ -43,7 +43,7 @@
     "mutations":[
         {
             "name":"Another Mind",
-            "tag":"#psionic",
+            "tags":["#psionic"],
             "flavor":"The seed of truth grows within.",
             "ranks":[
                 {"base":"Hard, cyst-like nodule develops on the ", "entries":["throat", "stomach","lumbar spine","upper back"], "end":"."},
@@ -55,7 +55,7 @@
         },
         {
             "name":"Astral Eyes",
-            "tag":"#psionic",
+            "tags":["#psionic"],
             "flavor":"The world you know is a veil hiding the deeper beauty of the fields of ka.",
             "ranks":[
                 {"base":"Eyes turn", "entries":["milky", "pitch black","translucent","like amber orbs"], "end":". Vision is impaired."},
@@ -68,7 +68,7 @@
     "items":[
         {
             "name":"Flamethrower",
-            "tag":"#mechanical",
+            "tags":["#weapon","#machine"],
             "flavor":"Roast em, toast em, extra well-done.",
             "description":"Held together by spit and duct tape, a deadly fire-spraying contraption.",
             "weight": 100,
@@ -79,7 +79,7 @@
         },
                 {
             "name":"Wheel of Cheese",
-            "tag":"#food",
+            "tags":["#food"],
             "flavor":"Extra delicious, no need to reinvent.",
             "description":"Cheese.",
             "weight": 10,

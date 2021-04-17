@@ -4,20 +4,13 @@ import Context from "../data/context.js";
 import Character from "../data/character.js";
 import StatSheet from "../charactersheet/StatSheet";
 import CharName from "../charactersheet/CharName";
-import { FaSave, FaFileDownload, FaDiceD20 } from "react-icons/fa";
+import SaveCharModal from "../charactersheet/SaveCharModal";
+import { FaDiceD20 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const CharSheet = () => {
   const [context, setContext] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
-
-  const saveChar = () => {
-    localStorage.setItem("SRDcharacter", JSON.stringify(character));
-  };
-  const loadChar = () => {
-    const loadchar = localStorage.getItem("SRDcharacter");
-    setCharacter(JSON.parse(loadchar));
-  };
 
   const randomChar = () => {
     console.log("Observing the console log, are we?");
@@ -42,19 +35,8 @@ const CharSheet = () => {
       <h4 className="item">
         <div className="row entry fullwidth">
           <span className="row entry">Hero Sheet</span>
-          <span className="right">
-            <FaSave
-              className="button right margin"
-              onClick={() => {
-                saveChar(character);
-              }}
-            />
-            <FaFileDownload
-              className="button right margin"
-              onClick={() => {
-                loadChar(character);
-              }}
-            />
+          <span className="row right">
+            <SaveCharModal></SaveCharModal>
             <FaDiceD20
               className="button right margin"
               onClick={() => {
@@ -99,7 +81,7 @@ const CharSheet = () => {
           category={"items"}
         />
       </div>
-      {categoryArray.map((category) => {
+      {categoryArray.map((category, index) => {
         return (
           <div className="item">
             <div className="row entry fullwidth">
@@ -124,6 +106,7 @@ const CharSheet = () => {
               form={"minus"}
               deleteFrom={category.value}
               category={category.value}
+              key={index}
             />
           </div>
         );
