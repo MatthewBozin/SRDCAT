@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Name from "./Name";
 import Tag from "./Tag";
 import Flavor from "./Flavor";
@@ -10,9 +10,11 @@ import Col from "react-bootstrap/Col";
 import { FaHammer, FaRecycle } from "react-icons/fa";
 
 const Card = (props) => {
+  const [expanded, setExpanded] = useState(false);
+
   const {
     name,
-    tag,
+    tags,
     flavor,
     description,
     ranks,
@@ -91,6 +93,17 @@ const Card = (props) => {
     }
   };
 
+  //BUTTON
+  //if (expanded === false) return button expand mode
+  //return button collapse mode
+
+  //const expandCard = () => {setExpanded(true)}
+  //const collapseCard = () => {setExpanded(false)}
+
+  //CARD
+  //if (expanded === false) return collapsed card format
+  //return expanded card format
+
   return (
     <Col xs={12} md lg={6} xl={4}>
       <article className="item">
@@ -107,7 +120,9 @@ const Card = (props) => {
           </span>
         </div>
         <hr></hr>
-        <Tag tag={tag} />
+        {tags.map((tag) => {
+          return <Tag tag={tag} />;
+        })}
         <Flavor flavor={flavor} />
         <Description description={description} />
         {ifItem2()}

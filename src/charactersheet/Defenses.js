@@ -60,7 +60,7 @@ const Defenses = () => {
     <div className="item">
       <div className="row entry">DEFENSES</div>
       <div className="bit row entry">
-        {defenses.map((defense) => {
+        {defenses.map((defense, index) => {
           return (
             <button
               className="bit bordered padded2 margin"
@@ -68,7 +68,7 @@ const Defenses = () => {
                 modalOpenStat(defense);
               }}
             >
-              <Stat stat={defense} />
+              <Stat stat={defense} key={index} />
             </button>
           );
         })}

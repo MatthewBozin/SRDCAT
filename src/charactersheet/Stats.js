@@ -10,8 +10,7 @@ const Stats = () => {
   const [modalStat, setModalStat] = useState("");
   const [result, setResult] = useState("");
 
-  const SEA = ["STR", "END", "AGI"];
-  const CAT = ["CHA", "AUR", "THO"];
+  const SEACAT = ["STR", "END", "AGI", "CHA", "AUR", "THO"];
 
   const targets = [
     { name: "Trivial", value: 3 },
@@ -67,21 +66,7 @@ const Stats = () => {
     <div className="item">
       <div className="row entry">STATS</div>
       <div className="bit row entry">
-        {SEA.map((stat) => {
-          return (
-            <button
-              className="bit bordered padded2 margin"
-              onClick={() => {
-                modalOpenStat(stat);
-              }}
-            >
-              <Stat stat={stat} />
-            </button>
-          );
-        })}
-      </div>
-      <div className="bit row entry">
-        {CAT.map((stat) => {
+        {SEACAT.map((stat) => {
           return (
             <button
               className="bit bordered padded2 margin"

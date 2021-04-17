@@ -11,12 +11,13 @@ const NavMaster = () => {
       <div className="row entry fullwidth">
         <span className="row entry">SRDCAT</span>
         <div className="right">
-          {navbar.navmasters.map((navmaster) => {
+          {navbar.navmasters.map((navmaster, index) => {
             return (
               <Linklet
                 text={navmaster.text}
                 link={navmaster.link}
                 type={navmaster.type}
+                key={index}
                 onClick={() =>
                   setContext(() => {
                     let newcontext = context;
