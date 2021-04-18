@@ -64,11 +64,12 @@ const Defenses = () => {
           return (
             <button
               className="bit bordered padded2 margin"
+              key={index}
               onClick={() => {
                 modalOpenStat(defense);
               }}
             >
-              <Stat stat={defense} key={index} />
+              <Stat stat={defense} />
             </button>
           );
         })}
@@ -79,10 +80,11 @@ const Defenses = () => {
         </Modal.Header>
         <Modal.Body>
           Attacker sum:
-          {profarray.map((prof) => {
+          {profarray.map((prof, index) => {
             return (
               <button
                 className="bit button bordered padded2"
+                key={index}
                 onClick={() => {
                   test(prof);
                 }}

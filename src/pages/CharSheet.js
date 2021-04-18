@@ -83,7 +83,7 @@ const CharSheet = () => {
       </div>
       {categoryArray.map((category, index) => {
         return (
-          <div className="item">
+          <div className="item" key={index}>
             <div className="row entry fullwidth">
               <span>
                 <Link

@@ -71,7 +71,7 @@ const SaveCharModal = () => {
             let slot = JSON.parse(JSON.stringify(index));
             if (char.name === undefined) {
               return (
-                <div>
+                <div key={index}>
                   <span className="bit item">(empty)</span>
                   <button
                     onClick={() => {
@@ -86,6 +86,7 @@ const SaveCharModal = () => {
             } else {
               return (
                 <CharSlot
+                  key={index}
                   char={char}
                   saveChar={saveChar}
                   loadChar={loadChar}
