@@ -23,13 +23,20 @@ const Search = () => {
     });
   };
 
+  const setPlaceholder = () => {
+    if (context.search === "") {
+      return "Enter tag or name";
+    }
+    return context.search;
+  };
+
   return (
     <h4 className="item">
       <div className="row fullwidth name">
         <form className="fullheight" onSubmit={handleSubmit}>
           <input
             className="button bordered marginleft"
-            placeholder={"Enter tag or name"}
+            placeholder={setPlaceholder()}
             type="text"
             value={data}
             onChange={(e) => setData(e.target.value)}

@@ -153,8 +153,8 @@ const Card = (props) => {
           </span>
         </div>
         <hr></hr>
-        {tags.map((tag) => {
-          return <Tag tag={tag} />;
+        {tags.map((tag, index) => {
+          return <Tag tag={tag} key={index} />;
         })}
         <Flavor flavor={flavor} />
         <Description description={description} />
