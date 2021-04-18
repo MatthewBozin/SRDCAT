@@ -12,6 +12,7 @@ function App() {
   const [context, setContext] = useState({
     collections: "items",
     link: "collections",
+    search: "none",
   });
   const [character, setCharacter] = useState({
     name: "Akres Sarsot",
