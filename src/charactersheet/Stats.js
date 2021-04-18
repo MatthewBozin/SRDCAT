@@ -66,10 +66,11 @@ const Stats = () => {
     <div className="item">
       <div className="row entry">STATS</div>
       <div className="bit row entry">
-        {SEACAT.map((stat) => {
+        {SEACAT.map((stat, index) => {
           return (
             <button
               className="bit bordered padded2 margin"
+              key={index}
               onClick={() => {
                 modalOpenStat(stat);
               }}
@@ -86,10 +87,11 @@ const Stats = () => {
         <Modal.Body>
           Targets:
           <div>
-            {targets.map((target) => {
+            {targets.map((target, index) => {
               return (
                 <button
                   className="bit button bordered padded2"
+                  key={index}
                   onClick={() => {
                     test(target.value);
                   }}

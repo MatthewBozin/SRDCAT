@@ -5,6 +5,7 @@ import Flavor from "./Flavor";
 import Description from "./Description";
 import Ranks from "./Ranks";
 import PlusMinus from "./PlusMinus";
+import ExpandCollapse from "./ExpandCollapse";
 import Table from "./Table";
 import Col from "react-bootstrap/Col";
 import { FaHammer, FaRecycle } from "react-icons/fa";
@@ -93,22 +94,54 @@ const Card = (props) => {
     }
   };
 
-  //BUTTON
-  //if (expanded === false) return button expand mode
-  //return button collapse mode
+  const expandCollapse = (status) => {
+    if (status === true) {
+      setExpanded(() => {
+        return false;
+      });
+    } else {
+      setExpanded(() => {
+        return true;
+      });
+    }
+  };
 
-  //const expandCard = () => {setExpanded(true)}
-  //const collapseCard = () => {setExpanded(false)}
-
-  //CARD
-  //if (expanded === false) return collapsed card format
-  //return expanded card format
-
+  if (expanded === false) {
+    return (
+      <Col xs={12} md lg={6} xl={4}>
+        <article className="item">
+          <div className="row">
+            <Name
+              name={name}
+              expanded={expanded}
+              expandCollapse={expandCollapse}
+            />
+            <span className="right">
+              <PlusMinus
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+              />
+              {ifItem(props.deleteFrom)}
+            </span>
+          </div>
+          {tags.map((tag, index) => {
+            return <Tag tag={tag} key={index} />;
+          })}
+        </article>
+      </Col>
+    );
+  }
   return (
     <Col xs={12} md lg={6} xl={4}>
       <article className="item">
         <div className="row">
-          <Name name={name} />
+          <Name
+            name={name}
+            expanded={expanded}
+            expandCollapse={expandCollapse}
+          />
           <span className="right">
             <PlusMinus
               card={props.card}
