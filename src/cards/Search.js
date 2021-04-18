@@ -17,11 +17,10 @@ const Search = () => {
 
   const resetSearch = () => {
     let context2 = context;
-    context2.search = "none";
+    context2.search = "";
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });
-    console.log(context);
   };
 
   return (
@@ -30,7 +29,7 @@ const Search = () => {
         <form className="fullheight" onSubmit={handleSubmit}>
           <input
             className="button bordered marginleft"
-            placeholder="Enter tag or name"
+            placeholder={"Enter tag or name"}
             type="text"
             value={data}
             onChange={(e) => setData(e.target.value)}

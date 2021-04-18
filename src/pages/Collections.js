@@ -8,28 +8,49 @@ import data from "../data/data.json";
 const Collections = () => {
   const [context] = useContext(Context);
 
-  const filterData = () => {
+  const filter = (filterBy) => {
     let contextData = data[context.collections];
-    console.log(data);
-    console.log(context);
-    console.log(context.collections);
-    console.log(contextData);
     let newData = [];
     contextData.map((element) => {
-      if (element.tags.includes(context.search)) {
+      let toFilter;
+      if (typeof element[filterBy] === "string") {
+        toFilter = element[filterBy].toLowerCase();
+      } else {
+        toFilter = [];
+        element[filterBy].map((item) => {
+          toFilter.push(item.toLowerCase());
+        });
+      }
+      if (toFilter.includes(context.search.toLowerCase())) {
         newData.push(element);
       }
     });
     return newData;
   };
 
-  if (context.search !== "none") {
+  if (context.search !== "") {
+    let filtered = filter("tags");
+    if (filtered.length === 0) {
+      filtered = filter("name");
+      console.log(filtered);
+    }
+
+    if (filtered.length === 0) {
+      return (
+        <div>
+          <Navbar />
+          <Search />
+          <div className="item">Your search didn't return any hits.</div>
+        </div>
+      );
+    }
+
     return (
       <div>
         <Navbar />
         <Search />
         <CardList
-          content={filterData()}
+          content={filtered}
           form={"plus"}
           deleteFrom={"none"}
           category={context.collections}
