@@ -65,8 +65,10 @@ const SaveCharModal = () => {
         }}
       />
       <Modal show={modalOpen} onHide={closeModal}>
-        <Modal.Header>Manage Characters</Modal.Header>
-        <Modal.Body>
+        <Modal.Header className="modalbackground">
+          Manage Characters
+        </Modal.Header>
+        <Modal.Body className="modalbackground">
           {characters.map((char, index) => {
             let slot = JSON.parse(JSON.stringify(index));
             if (char.name === undefined) {

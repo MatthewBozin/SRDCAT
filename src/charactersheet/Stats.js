@@ -69,7 +69,7 @@ const Stats = () => {
         {SEACAT.map((stat, index) => {
           return (
             <button
-              className="bit bordered padded2 margin"
+              className="bit button bordered padded2"
               key={index}
               onClick={() => {
                 modalOpenStat(stat);
@@ -81,10 +81,10 @@ const Stats = () => {
         })}
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
-        <Modal.Header>
+        <Modal.Header className="modalbackground">
           Roll {modalStat}: (+{character[modalStat]})
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modalbackground">
           Targets:
           <div>
             {targets.map((target, index) => {
