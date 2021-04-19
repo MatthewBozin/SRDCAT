@@ -63,7 +63,7 @@ const Defenses = () => {
         {defenses.map((defense, index) => {
           return (
             <button
-              className="bit bordered padded2 margin"
+              className="bit button bordered padded2"
               key={index}
               onClick={() => {
                 modalOpenStat(defense);

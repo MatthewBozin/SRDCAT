@@ -6,16 +6,16 @@ const Resources = () => {
     <div className="item">
       <div className="row entry">RESOURCES</div>
       <div className="bit row entry">
-        <button className="bit bordered padded2 margin">
+        <button className="bit button bordered padded2">
           <Stat className="bit bordered padded2 margin" stat={"LIFE"} />
         </button>
-        <button className="bit bordered padded2 margin">
+        <button className="bit button bordered padded2">
           <Stat className="bit bordered padded2 margin" stat={"MCOST"} />
         </button>
-        <button className="bit bordered padded2 margin">
+        <button className="bit button bordered padded2">
           <Stat className="bit bordered padded2 margin" stat={"HERODICE"} />
         </button>
-        <button className="bit bordered padded2 margin">
+        <button className="bit button bordered padded2">
           <Stat className="bit bordered padded2 margin" stat={"XP"} />
         </button>
       </div>

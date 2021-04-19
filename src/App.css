@@ -25,6 +25,10 @@ button,
   cursor: pointer;
 }
 
+.modalbackground {
+  background-color: #2c2831;
+}
+
 .bordered {
   border-style: solid;
   border-width: 1px;
