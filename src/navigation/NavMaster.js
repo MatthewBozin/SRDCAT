@@ -18,14 +18,6 @@ const NavMaster = () => {
                 link={navmaster.link}
                 type={navmaster.type}
                 key={index}
-                onClick={() =>
-                  setContext(() => {
-                    let newcontext = context;
-                    newcontext.collections = navmaster.type;
-                    let final = JSON.parse(JSON.stringify(newcontext));
-                    return final;
-                  })
-                }
               />
             );
           })}

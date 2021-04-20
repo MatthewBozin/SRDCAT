@@ -13,6 +13,11 @@ button,
   color: #d5d4d6;
 }
 
+.button2:hover {
+  text-decoration: none;
+  color: #d5d4d6;
+}
+
 .button {
   background: #2c2831;
   color: #fa5c5c;

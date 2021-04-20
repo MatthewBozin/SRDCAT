@@ -41,11 +41,12 @@ function App() {
       <Context.Provider value={[context, setContext]}>
         <Character.Provider value={[character, setCharacter]}>
           <Router>
-            <NavMaster />
             <Route exact path="/">
+              <NavMaster />
               <Collections />
             </Route>
             <Route path="/character">
+              <NavMaster />
               <CharSheet />
             </Route>
           </Router>
