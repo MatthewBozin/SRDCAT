@@ -30,7 +30,7 @@ function App() {
     HERODICE: 0,
     XP: 0,
     skills: [],
-    abilities: [],
+    traits: [],
     mutations: [],
     items: [],
     cash: 0,
