@@ -18,7 +18,7 @@ const CharSheet = () => {
 
   const categoryArray = [
     { name: "Skills", value: "skills" },
-    { name: "Abilities", value: "abilities" },
+    { name: "Traits", value: "traits" },
     { name: "Mutations", value: "mutations" },
   ];
 

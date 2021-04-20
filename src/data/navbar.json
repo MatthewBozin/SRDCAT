@@ -17,7 +17,7 @@
     [
         
         {"name":"mutations","display":"Mutations"},
-        {"name":"abilities","display":"Abilities"},
+        {"name":"traits","display":"Traits"},
         {"name":"skills","display":"Skills"},
         {"name":"items","display":"Items"}
     ]
