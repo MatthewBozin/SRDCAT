@@ -26,6 +26,8 @@ function App() {
     KA: 10,
     BA: 10,
     LIFE: 20,
+    LEVEL: 1,
+    PRO: 1,
     MCOST: 3,
     HERODICE: 0,
     XP: 0,
