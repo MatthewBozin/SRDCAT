@@ -6,7 +6,7 @@
             "flavor":"An autonomous popular people’s collective ruled by an autocrat.",
             "description":"Grows beans. Wakes up early. Tills greenhouses. Works long hours. Pays onerous taxes. Understands magic legumes. Joins the levies. Avoids attention very, very well. Wields farm implements and light long arms. Also farms other valuable",
             "table":["Squashes","Breadfruit","Tart mangoes","Saucy tangerines","Giant peaches","Turnips","Hybrid oats","Uplifted monocultural rice","Mushrooms of power","Industrial grade pumpkins","Land coral","Kelp"],
-            "ranks":["Critical damage.","Damage dice increased one step.","Ignores armor."],
+            "ranks":["Gets ITEM (table)"],
             "info":"SEACAT p.17"
         },
         {
@@ -17,7 +17,1156 @@
             "table":["Bas relief etchings", "Croquis and caricatures", "Hyperrealist plastics", "Microlithic landscape design", "Mixed media cave paintings", "Neon jungle sculptures", "Performance welding", "Surrealist canvases"],
             "ranks":["Gets ITEM (table)"],
             "info":"SEACAT p.17"
+        },
+        {
+            "name":"Apparatchik",
+            "tags":["background"],
+            "flavor":"The highly trained bureaucrat reproduces the bureaucracy.",
+            "description":"Project manager navigating byzantine institutions and accessing secret locations. Passes the buck and avoids blame. Organizes time sheets and sets key performance indicators. Uses office supplies as weapons. Familiar with ",
+            "table":[
+                "Cultured affairs",
+                "Foreign entanglements",
+                "History adaptation",
+                "Internal change direction",
+                "Language adjustment",
+                "Ministerial truth management",
+                "Political economic corrections",
+                "Social sanitation"
+            ],
+            "ranks":["Gets ba ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Archaeologist Freiherr",
+            "tags":["adventure"],
+            "flavor":"Behold, the golden idol!",
+            "description":"Discovers lost artifacts. Climbs, jumps and dodges boulders. Detects traps and hidden doors. Whips a small gun and cracks a neural whip.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Athlete of Some Renown",
+            "tags":["adventure"],
+            "flavor":"Run, rabbit, run.",
+            "description":"Runs the extra mile, stretches reserves further, goes faster. Does a biathlon, a triathlon, a polythlon. Signs an autograph. Waves a bottle of fizz-wine. Found fame as a ",
+            "table":[
+                "Ball hitter or kicker",
+                "Discus thrower",
+                "Dressage rider",
+                "Fancy dancer",
+                "Obstacle jumper",
+                "Distance runner",
+                "Pro wrestler",
+                "Rock climber",
+                "Swimmer",
+                "Wave surfer"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Big Game Tourist",
+            "tags":["adventure"],
+            "flavor":"It’s a fair chase, honest.",
+            "description":"Shoots big guns and rides a large burden beast or armored golem. Blithely orders servants around and overlooks the lower classes. Chomps cigars, swills firewater, and talks turkey. Seeks the elusive ",
+            "table":[
+                "Asbestos phoenix",
+                "Black squid",
+                "Green roc",
+                "Iron rhino",
+                "Purple grandworm",
+                "Swordtoothed bear",
+                "White whale",
+                "Yellow earthdragon"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Butcher Banker",
+            "tags":["background"],
+            "flavor":"Blood and money. Both must flow.",
+            "description":"Lends money and practices usury. Nobs with fine folk, promotes charities and intimidates with wealth. Crunches numbers and collects arts or antiquities. Secretly ",
+            "table":[
+                "Breeds doves",
+                "Collects pet rocks",
+                "Composes sonnets",
+                "Grows tiny trees",
+                "Plays the sad mandolin",
+                "Practices memorization"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Captain in the Auxiliaries",
+            "tags":["adventure"],
+            "flavor":"Lead that cannon fodder.",
+            "description":"Leads the forces of civilization to victories over monsters of madness and chaos by navigating the military bureaucracy. Understand boots, morale and logistics. Wields standard issue weapons and equipment.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Cat Burglar",
+            "tags":["adventure"],
+            "flavor":"Door, window, wall. Same thing.",
+            "description":"Breaks into and out of places.  Disarms locks and traps and extrasensory wards. Moves very quietly. Appraises treasures. Stylish, suave, elegant. Loves ",
+            "table":[
+                "Berets",
+                "Calling cards",
+                "Cats",
+                "Masks",
+                "Puzzles",
+                "Stripes"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Chevalier",
+            "tags":["background"],
+            "flavor":"A beacon of chivalry.",
+            "description":"Suitors swoon and adversaries gnash their teeh. Masters etiquette and romantic literature. Wields lance, sword, and noble pin blaster from steed-seat. Rules subhuman peons with the iron fist of justice and extracts taxes without fault or fail. Titled ",
+            "table":[
+                "Dooch",
+                "En Ginny",
+                "Hazda or Gasda",
+                "May or Siz",
+                "Laud or Lae or Lait",
+                "Wlada"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Circus Acrobat",
+            "tags":["adventure"],
+            "flavor":"Make no bones about it.",
+            "description":"Squeezes into small places. Puts on circus shows. Gets out of restraints. Gets into and out of armor very quickly. Shows an amazing knowledge of pressure points. Evades enemies with surprising grace. Daydreams through dreary day jobs.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Corpocrat Suitwearer",
+            "tags":["background"],
+            "flavor":"The business.",
+            "description":"Helps run corporations, banks, and self-help associations. Lubricates the world. Signs forms and documents. Toadies up to superiors. Shakes up recalcitrants, sidesteps legislations and regulations, changes facts on the ground, breaks knees. Wields concealed weapons, broken bottles, and pistols. Their specialization ",
+            "table":[
+                "Asset enhancement",
+                "Efficient downsizing",
+                "Fallout management",
+                "Human resources",
+                "Mergers and acquisitions",
+                "Political lobbying",
+                "Public opinion management",
+                "Risk reprogramming"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Dream Voyager",
+            "tags":["adventure"],
+            "flavor":"If the vizier dies while they dream, who is at fault?",
+            "description":"Travels in dreams. Talks to spirits and chairs. Converses with other dreamers. Visits the moon and other far places. Trades in secrets, fears, and desires. Handles psychedelics like a virtuoso.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Driver Jill, Jack or Jo",
+            "tags":["adventure"],
+            "flavor":"Speed in the sign of yellow.",
+            "description":"Handles land vehicles, manoeuvres past obstacles at speed. Repairs and keeps travel machines running. Packs surprisingly well. Masters details like rally racing, drifting, stunts, and crashing safely.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Explorer of the Vastlands",
+            "tags":["adventure"],
+            "flavor":"Over seven rivers and seven hills.",
+            "description":"Organizes expeditions into the unknown and survives in the wild. Navigates by rumors and landmarks, hacks through jungles and sails deserts. Negotiates with other cultures and writes popular travel literature. Wields rifles and machetes. A passable ",
+            "table":[
+                "Epic announcer",
+                "Experimental chef",
+                "Lomographer",
+                "Nonfiction writer",
+                "Phonogram recorder",
+                "Rally golem rider",
+                "Water colorist"            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Fisher Pasha",
+            "tags":["background"],
+            "flavor":"Gentle and atmospheric.",
+            "description":"Had a claim, but it is lost ",
+            "table":[
+                "City become free.",
+                "County gone corporate.",
+                "Floating mountain stolen.",
+                "Freehold overrun.",
+                "Kingdom turned republic.",
+                "Resort island gambled away."
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Forager of the Future",
+            "tags":["adventure"],
+            "flavor":"Food wriggles everywhere!",
+            "description":"Finds berries, nuts, mushrooms, grubs, leftovers, and cooling pies. Traps rabbits, tickles trouts, scrapes lichens, starts fires. Keep dry and warm in wilds and ruin lands, sewer zones and streets.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Gladiator",
+            "tags":["adventure"],
+            "flavor":"Blood soothes the decadent fools.",
+            "description":"Thrives in arenas, puts on shows. Impresses crowds and intimidates opponents. Masters showy weapons and circus mainstays like folded chairs. Trades in dirty tricks too. Styles as ",
+            "table":[
+                "an aquatic monarch.",
+                "a caped animal crusader.",
+                "a creepy clown trickster.",
+                "a golden hero of the crowds.",
+                "a raging bull warrior.",
+                "a thundering storm lord."
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Groom to the Superior Species",
+            "tags":["adventure"],
+            "flavor":"All for the love of master.",
+            "description":"Comprehends the superiority of the masters and understands their empathic emanations. Makes the masters happy and receives their love and affections. Grooms, brushes, styles, curls, trims, cuts, perms, and pampers. Follows and sometimes make fashion. Master may be a ",
+            "table":[
+                "Telepathic cat",
+                "Sapientized dog",
+                "Cosmic gerbil",
+                "Higher-dimensional white mouse",
+                "Noösphere-linked snake",
+                "Quantum ant colony",
+                "Three-eyed grey parrot",
+                "Chronoclastic potted plant",
+                "Awakened galliform dinosaur",
+                "Hypnotic toad",
+                "Pharaoh fish",
+                "Talking horse"
+            ],
+            "ranks":["Gets PET (table). The groom treats the pet as their master. The player may also reverse roles, turning the animal into a full character and treating them as the lead hero."],
+            "info":""
+        },
+        {
+            "name":"Handyworker",
+            "tags":["background"],
+            "flavor":"The trades. Unsurprisingly useful.",
+            "description":"Builds, fits, maintains, and repairs the complicated machinery that makes modern life bearable. Navigates labyrinths, pipes, ducts, and portals. Sports distinctive facial decorations and overalls. Joins trade guilds. Saves princelings. Wields tools, wrenches and orbs. Is a skilled ",
+            "table":[
+                "Boilermaker",
+                "Bricklayer",
+                "Carpenter",
+                "Gardener",
+                "Gasfitter",
+                "Ka-ba-wright",
+                "Plumber",
+                "Welder"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Historian of the Downfall",
+            "tags":["adventure"],
+            "flavor":"The war. The war never changes.",
+            "description":"Safeguards the history of the ancient dead places and radiation wastelands. Uses ancient war machines. Learns the old rituals of technology. Assassinates dangerous sages and politicians. Preserves humanity from itself. Builds remote fortified abbeys full of traps. Treasures books. Wields oldtech weapons, knives, spears and pistols. Practices the lost martial art of gun-boxing.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Housekeeper of Good Repute",
+            "tags":["background"],
+            "flavor":"My home is my castrum.",
+            "description":"Keeps the core socioeconomic unit running. Runs household. Manages accounts. Maintains schedules, supplies and logistics. Packs and prepares. Settles disputes. Collects rents. Pays allowances. Provides first aid and preventative medical care. Wields rolling pins, pans, and more.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Hunter of the Late Days",
+            "tags":["adventure"],
+            "flavor":"It doesn’t know it's already food.",
+            "description":"Thinks like animals and hunts them. Tracks them, sets traps, and hides in ambush. Skins them, prepares furs, and the rest. Uses hunting weapons. Humans are animals. Keen on ",
+            "table":[
+                "Arctotheres",
+                "Chalicotheres",
+                "Dinornithiforms",
+                "Dryopithecines",
+                "Megalodontoceti",
+                "Merychips",
+                "Novammoths",
+                "Re-smilodons"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Investigator Private",
+            "tags":["adventure"],
+            "flavor":"Elementary, my dear sidekick.",
+            "description":"Gathers clues and pieces together answers. Discreetely interrogates people. Folds origami unicorns or other monsters. Uses small, easily concealed weapons. Breaks safes, locks, and bureaucratic police protocols. They present as a(n) ",
+            "table":[
+                "Bounty hunter",
+                "Doctor of uncertain field",
+                "Eccentric opium user",
+                "Fiction writer",
+                "Golem decommissioner",
+                "Nosy priest",
+                "Retired country landlord",
+                "Undercover operative"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Laborer in Reserve",
+            "tags":["background"],
+            "flavor":"Nothing to lose but their chains.",
+            "description":"Survives in latter-day urban environments. Forages for food and work. Builds shelters, maintains infrastructure, cleans palaces, grooms bodies. Forges bonds away from the gaze of the corpocrats and aristocrats. Wields hammers, sickles, fists and improvised guns. Treasures paper titles such as ",
+            "table":[
+                "Food delivery professional",
+                "Community sanitation tech",
+                "Streetbuilder corps member",
+                "Rubble picker battalion",
+                "Urbancore gardener",
+                "Houselaborer",
+                "Machine polisher",
+                "Senior janitor",
+                "Biological watch unit",
+                "Conspicuous servitor",
+                "Day-and-night laborer",
+                "Power delivery specialist"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Maker Cogsmith",
+            "tags":["background"],
+            "flavor":"Did you try plugging it in?",
+            "description":"Understands machines and listens to their woes. Cares for them, lubricates them, and fixes them. Even brings them back from the grave. Makes and unmakes mechanics. Wields a mean blow torch and throws a sharp spanner. Fond of ",
+            "table":[
+                "Automata",
+                "Clocks",
+                "Difference engines",
+                "Golem abacuses",
+                "Locks",
+                "Waterwheels"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Master Packer",
+            "tags":["adventure"],
+            "flavor":"No magic bag, just a system.",
+            "description":"Packs gear and cargo and supplies very effectively. Doesn’t bruise fruit or break eggs. Finds space for the caravan pet. Warehousing and logistics experience.",
+            "ranks":["Gains one bonus inventory slot.","Gains another slot.","Two more slots. Continues with fibonacci sequence at higher ranks."],
+            "info":""
+        },
+        {
+            "name":"Mule Whisperer",
+            "tags":["adventure"],
+            "flavor":"It’s not talking to animals per se.",
+            "description":"Literally talks to animals. Gets pack animals to get along. Has animal friends and keeps them happy. Finds water and food, treats injured animals, encourages recalcitrant steeds, calms panicked beasts. Animals might include ",
+            "table":[
+                "Biomanced burdenbeasts",
+                "Hairy unicorns",
+                "Hardy horses",
+                "Meta-elephants",
+                "Impressive quadrodonts",
+                "Lowing bicycles",
+                "Plumed runbirds",
+                "Gore yaks",
+                "Secondary donkeys",
+                "Struthiform dinosaurs",
+                "Lope possums",
+                "Carnal fastfoots"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Navigator of Other Worlds",
+            "tags":["adventure"],
+            "flavor":"When the seven signs align.",
+            "description":"Masters maps and telescopes and cartography. Avoids getting lost and tracks down lost treasures and new discoveries. Charts course by stars, winds, waypoints and worms. Folds the gateways and bends space.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Negotiatior of Relations",
+            "tags":["background"],
+            "flavor":"They think they got the better deal.",
+            "description":"Reads people and listens to them. Figures out what they want, and how to get it for them. Generates win-win outcomes while meeting key jargon milestones. Does a bit of discrete espionage. Handles organizations and bureaucracies. Hates corruption, approves of lobbying. Was an ",
+            "table":[
+                "Ambassador",
+                "Comissar",
+                "Emissary",
+                "Secretary",
+                "Spiritual interpreter",
+                "Sociotherapist",
+                "Translator",
+                "Used golem salesperson"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Noble Socialite",
+            "tags":["background"],
+            "flavor":"The life of the party.",
+            "description":"Gets invited to all the parties. Dresses to impress. Knows who’s who. Is mentioned in the who’s who. Substitutes contacts and gossip for actual work or ability. Wields a tiny dog and a small wand. Known as a ",
+            "table":[
+                "Beauty of our times",
+                "Ditzy fool",
+                "Lounge lizard",
+                "Raucous party animal",
+                "Smooth operator",
+                "Wondrous wit"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Nomad Rustler",
+            "tags":["adventure"],
+            "flavor":"Go, go, guerrilla.",
+            "description":"Irregular tactics and guerrilla combat. Snipes, ambushes and shoots on the run. Rides like lightning, wears large hats, finds water holes. Steals cattle. Hides tracks, plays tricks. Excellent endurance when running away.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Outsider Alien",
+            "tags":["adventure"],
+            "flavor":"Not normal here.",
+            "description":"Possesses strange foreign skills out of place in civilized society. Speaks alien languages. Looks strange and out of place. Survives in ducts and sewers and ruins. Hides in plain sight. Applies cosmetics and prosthetics. Uses improvised tools.",
+            "ranks":["Gets ITEM (table) and a COSMETIC MUTATION (table)."],
+            "info":""
+        },
+        {
+            "name":"Pilot of Vechs",
+            "tags":["adventure"],
+            "flavor":"This might be an unfair fight.",
+            "description":"Becomes one with their mobile golem armor. Understands vechs and their void-energy needs. Speak the machine language of flashing lights and wins their loyalty. Understands war machine academy politics. Fond of ",
+            "table":[
+                "Biovechs",
+                "Hovers",
+                "Levitators",
+                "Rollers",
+                "Walkers",
+                "Wheelers"
+            ],
+            "ranks":["Gets VEHICLE (table)"],
+            "info":""
+        },
+        {
+            "name":"Postmodern Soldier",
+            "tags":["adventure"],
+            "flavor":"Once there were many like them.",
+            "description":"Polishes the rituals, skills and badges of the warriors from before those wasted years when the Vüstlands swallowed the Free Imperial Republics. Wields pistols and rifles, grenades and knives. Drives half-brainless machines. Endures mind-numbing drill. Salutes the half-forgotten ",
+            "table":[
+                "Black pocket monolith",
+                "Imperial mask",
+                "Rusted star",
+                "Solar banner",
+                "Unbroken serpent",
+                "Withered heart"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Bows",
+            "tags":["combat"],
+            "flavor":"Shoot an arrow, split a tree.",
+            "description":"Embraces the neoprimitive. Skirmishes with the best. Looses storms and sharpshoots alike. Makes and breaks bows and arrows. Keeps fighting trim.",
+            "ranks":["Critical damage increased one step.","[+] to close attacks.","Attacks twice per action."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Chains",
+            "tags":["combat"],
+            "flavor":"Against the army of the dead.",
+            "description":"Wields flails, chains, saws and chainsaws in the savior style from the Last Zombie Necrocide. Also puts on a great show of being a lumberjill or lumberjack.",
+            "ranks":["Gains #reach.","Critical range increased one step.","Critical range increased one more step and decapitates undead on critical."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Good Guns",
+            "tags":["combat"],
+            "flavor":"The big gun is good big time.",
+            "description":"Uses and maintains really big ranged weapons, like cannons, catapults, and null walkers. Repairs simple machines. Pretty good at ballistics too.",
+            "ranks":["Reloads faster.","[+] on long-range fire.","All damage dice explode."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Energies",
+            "tags":["combat"],
+            "flavor":"An elite order of laser monks?",
+            "description":"Uses and maintains ancient energy weapons in the field. Masters wands, lasers, and death orbs. Peruses holy manuals and recites operation mantras.",
+            "ranks":["Energy weapon minimum settings double as tools for cutting and burning. Can choose to deal minimum damage.","Adjusts settings for [+] vs. force and energy defenses.","Full power modulation. Chooses damage dice results instead of rolling."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Hammeraxes",
+            "tags":["combat"],
+            "flavor":"Has buttered scones for tea.",
+            "description":"Chops down trees. Hammers down nails. Upholds the dictats of the dwarven worker-aristocracy. Slays with axes, hammers, axe-hammers, dagger-axes, mattocks, ice axes, and more. Plays traditional percussion instruments.",
+            "ranks":["Critical multiplier increased one step.","Damage dice increased one step.","Critical multiplier increased one more step."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Knives",
+            "tags":["combat"],
+            "flavor":"The shark has such teeth, dear.",
+            "description":"Chops open coconuts and cuts paths through jungle. Hides and throws and twirls knives. Guts a fish, slits a throat, spreads some butter.",
+            "ranks":["Knife damage dice explode.","Knife attacks ignore armor.","Knives deal double damage."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Mortal Shells",
+            "tags":["combat"],
+            "flavor":"They made champions to win the eternal war.",
+            "description":"Understands battle and struggle at a cellular level. Utilizes body and environment as weapons. Redesigned to endure stress, hardship and fatigue. Meditates upon falling flowers. Dances through battles.",
+            "ranks":["Unarmed attacks deal d6 damage. Improvised weapon damage dice increase 1 step.","Unarmed attacks deal d8. Improvised dice increase 1 more step.","Unarmed d12. Improvised 1 more step."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Pistoliers",
+            "tags":["combat"],
+            "flavor":"Archaemagic cloaks and wands with pistol grips.",
+            "description":"Wields fantascientific pistols and magitechnic wands like a gun baron of the now-defunct Powder Feudalism. Draws fast and shoots tricks, duels and dices, drinks fire water and sleeps light as a feather.",
+            "ranks":["Reloads as a free action.","[+] to attacks against nearby targets.","Attacks twice per action."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Poles",
+            "tags":["combat"],
+            "flavor":"Poke with the pointy end, please.",
+            "description":"Wields polearms in formation or alone. Unleashes fire and brimstone with the staves of elder power. Fights with spear and shield like a hero of the old days.",
+            "ranks":["Ha and ka defenses increased by 2.","Critical multiplier increased one step.","[+] to tricks, trips, pushes, and other maneuvers."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Rifles",
+            "tags":["combat"],
+            "flavor":"The longest arm.",
+            "description":"Repairs, maintains and uses long wands, guns, rifles and shotguns. Snipes from a distance and clears rooms with a prayer and a sprayer. Full-auto hunting.",
+            "ranks":["[+] to attacks when sniping.","Reloads as a free action.","Critical range increased one step."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Rods",
+            "tags":["combat"],
+            "flavor":"Spare the rod, spoil the fight.",
+            "description":"Whirls rods, maces, clubs and sticks in combat. Uses the spell-rods of the battle wizards of old and crushes bones with nuclearlithic uranium-head maces.",
+            "ranks":["Critical damage multiplier increased one step.","Damage dice increased one step.","Ignores armor."],
+            "info":""
+        },
+        {
+            "name":"Praxa of the Swords",
+            "tags":["combat"],
+            "flavor":"Double stake or split, the ace of spades.",
+            "description":"Twirls and polishes a sword, pokes and chops and pommel bashes. Parade marches and dead man’s hand card games. Makes a mean musketeer (just don’t ask them to shoot).",
+            "ranks":["Critical range increased one step.","Damage dice increased one step.","Critical range increased one more step."],
+            "info":""
+        },
+        {
+            "name":"Professor in Panhumanities",
+            "tags":["background"],
+            "flavor":"Practical applications coming soon.",
+            "description":"Expounds theories and histories. Navigates cloisters and libraries. Fights academic battles and browbeats foolish opponents. Memorizes one narrow field of lore. Popular fields include ",
+            "table":[
+                "Art rehistorian",
+                "Constructivist linguist",
+                "Evolved theologist",
+                "Historian of the long long ago",
+                "Lamarckian bioethicist",
+                "Metascientific philosopher",
+                "Neogeographer",
+                "Parapolitical economist",
+                "Postconceptual metatherapist",
+                "Psychosocial engineer",
+                "Ruinland semiotician",
+                "Theoretical anthropologist"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Protocollier",
+            "tags":["background"],
+            "flavor":"Once we mined coal, now we make protocol.",
+            "description":"Holds coffee ceremonies and builds sacrificial wicker humans. Determines modes of address and titles, paints heraldries and writes genealogies. Adjudicates seating, including shotgun seats. Wields pick and shovel. Focused on ",
+            "table":[
+                "Alcohol practices",
+                "Cigarette rituals",
+                "Coffee ceremonies",
+                "Pastry formalities",
+                "Tripe rites",
+                "Water pipe liturgies"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Psychic Veteran",
+            "tags":["adventure"],
+            "flavor":"A fire of unknown origin took their friends away.",
+            "description":"Uses psychic and oldtech weapons. Maintains archaic and golem armors. Closes the mind to incomprehensible alien intruders. Staves off boredom. Survives and recognizes strange nootropics developed by long lost corporate kingdoms.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Revolutionary",
+            "tags":["adventure"],
+            "flavor":"Change is always coming.",
+            "description":"Organizes the disaffected and downtrodden. Writes tracts and gives impassioned speeches. Steals from the rich and powerful. Robs banks and blow up treasure caravans. Accumulates wealth and power. Wields explosives, pistols, pens, and knives.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Rider at Ease",
+            "tags":["adventure"],
+            "flavor":"This steed is Fleetfoot the Ninth.",
+            "description":"Rides animals and riding machines. Wields light ranged weapons and lances. Takes care keeping steeds happy and working nicely. Explores societal issues. Attracts attention of locals.",
+            "ranks":["Gets VEHICLE (table)"],
+            "info":""
+        },
+        {
+            "name":"Secret Servant",
+            "tags":["adventure"],
+            "flavor":"From chaos, with love.",
+            "description":"Goes undercover. Hunts moles. Seduces informants. Plugs leaks. Leaks kompromat. Navigates complex organizations and files reports in triplicate. Uses pistols, umbrellas, poisons, and strange ancient artefacts. Gets left out in the cold sooner or later.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Shadow Merchant",
+            "tags":["adventure"],
+            "flavor":"Somebody would have sold the Hand of God sooner or later.",
+            "description":"Buys cheap and sells dear. Assesses, refurbishes, and trades. Makes useful contacts in places low and high. Hires guards and fires guns. Sells ",
+            "table":[
+                "Drugs",
+                "Off-license biomedicals",
+                "Golems",
+                "Guns",
+                "Illegal spells",
+                "Smuggled essentials"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Shopkeeper",
+            "tags":["background"],
+            "flavor":"Now this is a party.",
+            "description":"Buys cheap and sells dear. Pillars the community and pillories interlopers. Upholds the letter of the law and the spirit of the purse. Wields coins and decorative town swords. Specialized in ",
+            "table":[
+                "Desirable vehicles",
+                "Exotic fruits",
+                "Glittering jewelries",
+                "Luxuriant furs",
+                "Overwrought timepieces",
+                "Red shoes",
+                "Smelly perfumes",
+                "Voluptuous silks"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Bestfolk",
+            "tags":["social"],
+            "flavor":"Some folk are simply better.",
+            "description":"Apes the rituals and customs of the ancient source-modified neoaristocracies. Masters the ingratiating arts of the courts imperial and corporate. Perches precariously on social ladders.",
+            "ranks":["[+] to social attacks in noble contexts.","Doubles ba defense from ornate attire.","When reduced to 0 life by social attacks, may immediately pay 1 physical stat point to regain 1d6 + level life."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Iron Fist",
+            "tags":["social"],
+            "flavor":"The army settles in the soul.",
+            "description":"Understands the military mindset. Comprehends the discipline and subordination required by the colony organism. Grasps the paradoxical catch-22 nature of bureaucratic systems.",
+            "ranks":["Takes half damage from social attacks in military contexts.","[+] to social attacks in military contexts.","Ba defense from ornate military attire doubled."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Leastfolk",
+            "tags":["social"],
+            "flavor":"The last must be first.",
+            "description":"Survives the harshest mistreatments. Toils in the shadows. Builds networks, contacts, and underground railways. Marks the injustices against them.",
+            "ranks":["[+] to social attacks in proletarian contexts.","Takes half damage from non-legal and non-monetary social attacks.","Reduces social damage by 1 for every nearby ally (minimum of 1)."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Legalities",
+            "tags":["social"],
+            "flavor":"The word made order from chaos.",
+            "description":"Masters the logical traditions of cause and effect. Peruses the tomes of precedent. Invokes the wisdom of the long-dead. Appeals to the letter of the law.",
+            "ranks":["[+] to social attacks in legal contexts.","Ba defense increased by pro.","[+] to damage with legal attacks."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Outcaste",
+            "tags":["social"],
+            "flavor":"Freedom and misery.",
+            "description":"Travels outside the circles and customs of society. Sees the paradoxes of social life. Parts the veils of propriety. Survives without shame.",
+            "ranks":["Whenever the outcaste takes social damage, they immediately gain a boon.","[+] to social attacks in outcast contexts.","All social attacks against the outcaste deal double ba damage. Social attacks cannot reduce the outcaste to 0 life."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Rhetors",
+            "tags":["social"],
+            "flavor":"Words soothe the savage beast.",
+            "description":"Teaches and uses the art of oratory. Divines the hidden structures of languages and uses them to nuanced effect. Skewers opponents with glittering wit and honed logic.",
+            "ranks":["Basic social attacks deal d6 damage.","Critical range increased one step.","Critical multiplier increased one step."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Sacred Deed",
+            "tags":["social"],
+            "flavor":"As above so below.",
+            "description":"Grasps the social need for sacrifices and scape goats. Comprehends the value of meaning and purpose. Soothes ruffled souls and uplifts broken dreams.",
+            "ranks":["[+] to attacks in religious contexts.","Ba defense from religious attire doubled.","Deals double damage with all religious social attacks."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Soiltwined",
+            "tags":["social"],
+            "flavor":"True tradition tills the terroir.",
+            "description":"Grasps the cycles of soil and season. Works the soil and the rhythms of the lifegrowers. Understands the old ways that the cityborn have forgotten.",
+            "ranks":["[+] to social attacks in rural contexts.","Takes half damage from social attacks in rural contexts. Takes minimum damage from social attacks while standing on their own soil.","When reduced to 0 life by social attacks, may immediately pay 1 mental stat point to regain 1d6 + level life."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Staunchkeepers",
+            "tags":["social"],
+            "flavor":"Debt is the mother of coin.",
+            "description":"Upholds the dictats of the sacred economy. Creates and accumulates wealth. Battles with bribes and corruption. Resists disorder.",
+            "ranks":["[+] to social attacks in mercantile contexts.","[+] to ba damage in mercantile contexts.","Doubles ba defense from wealth."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Unfettered",
+            "tags":["social"],
+            "flavor":"Beyond good and evil.",
+            "description":"Resides outside the moralities of the mass of humanities. Trucks in higher realities and baser instincts. Trades in the dreams of a pure platonic world. Escapes into the fortress of their mind. Hides in the wilderness of their soul.",
+            "ranks":["[-] to all social attacks. Takes half damage from all social attacks","[-] to all social damage. Can spend a stat point to reduce incoming social damage to 1.","[+] to all magical damage."],
+            "info":""
+        },
+        {
+            "name":"Sidu of the Uptought",
+            "tags":["social"],
+            "flavor":"Knowledge is the one true currency.",
+            "description":"Cultivates an air of easy grace and elite education. Understands the seventeen unironic classics. Comprehends the arc of history. Fears that their brilliance is not appreciated.",
+            "ranks":["[+] to social attacks in academic contexts.","[+] to all ba damage dealt and received.","Critical multiplier for all ba damage dealt increased one step."],
+            "info":""
+        },
+        {
+            "name":"Singer of the Lastlands",
+            "tags":["adventure"],
+            "flavor":"The Old-World will never die.",
+            "description":"Navigates the mythic wilderness of forgotten times by the landmarks of ancient days. Soothes wild beasts and rouses rage in the breasts of humans. Tells good stories with satisfying endings. Regales with ",
+            "table":[
+                "Choreographed pop pieces.",
+                "Epic lays of lost lands.",
+                "Heroic songs of desperation.",
+                "Operatic masterpieces.",
+                "Polyphonic eerie chants.",
+                "Salty shanties."
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Spelunker",
+            "tags":["adventure"],
+            "flavor":"Heaven is down. Always down.",
+            "description":"Ventures into deep places. Climbs, rappels, dives. Camps. Forages. Marks and maps. Crawls and squeezes. Survives in the dark, ageless places where the eyes of the builders see not.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Storm Infantry",
+            "tags":["background"],
+            "flavor":"Break on through to the other side.",
+            "description":"Masters heavy weapons, armors, and shields. Fights in formation, resists charges, and endures long periods of boredom or armor. Storms enemy lines and fortifications. Keeps camps and cook fires.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Street Performer",
+            "tags":["background"],
+            "flavor":"Joy of the many, coin of the few.",
+            "description":"Brings joy to children. Performs magic tricks and sleight of hand. Uses cold reading and cunning to dupe marks. Wields hidden daggers and pistol-wands. Variant: ",
+            "table":[
+                "Illusion",
+                "Puppeteer",
+                "Jongleur",
+                "Vome charmer",
+                "Fortune teller",
+                "Ventriloquist"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Survivor in the Vast",
+            "tags":["adventure"],
+            "flavor":"Slept in the belly of a dead bear.",
+            "description":"Survives and thrives in the endless Vast. Fishes, hunts, tracks, hides and moves quiet as the long-stripe cat. Shoots from horse and autowagon like a child of the wild. Particularly familiar with the ",
+            "table":[
+                "Cosmic-riven highlands",
+                "Endless moon forest ",
+                "Deserts of the sun",
+                "Frozen starry seas",
+                "Horizon ruinlands",
+                "Thin-air plateau",
+                "Ultraviolet steppe",
+                "Thousand swimming isles"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Tactician of the Endless War",
+            "tags":["adventure"],
+            "flavor":"There is an art to war.",
+            "description":"Finds strategic advantages for war or business. Paints grand canvases with the blood of lesser mortals. Narrates new chapters in the endless cycles of history. Repeats past mistakes and avoids censure. Spins defeats into victories. Day to day they do ",
+            "table":[
+                "Accounting",
+                "Carpets",
+                "Corporate consulting",
+                "Games of strategy",
+                "Military consulting",
+                "Real estate",
+                "Sports",
+                "Underworld cleanups"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Thespian",
+            "tags":["background"],
+            "flavor":"The gods were merely actors.",
+            "description":"Puts on plays and swaps out faces. Changes personalities and wardrobes. Moves hearts and souls with word and gesture. Gets invited to the belle soirées. Survives on fame alone, no food required, honest. Variants ",
+            "table":[
+                "Character actor",
+                "Chosen one",
+                "Clown",
+                "Comedian",
+                "Dramatist",
+                "Farceur",
+                "Leading person",
+                "Media star",
+                "Monologuer",
+                "Mummer",
+                "Politician",
+                "Tragedian"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Timelost Interloper",
+            "tags":["adventure"],
+            "flavor":"A flint blade for a laser sword.",
+            "description":"Possesses skills out of place in the modern world. Builds slave golems called computers. Spouts gibberish about quantum physics. Flies rockets and experimental one-way time machines. Knaps stone tools and starts fires with sticks. Terrified of simple magic. Comes from ",
+            "table":[
+                "A broken star",
+                "A distant future",
+                "A glorious past",
+                "A lost planet",
+                "A parallel world",
+                "A warlike era"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Tinker Toymaker",
+            "tags":["background"],
+            "flavor":"Toys are people too.",
+            "description":"Carves and sculpts fine toys, balanced dice, and detailed mechanical automata. Uses delicate tools. Repairs and beautifies golems and machine humans. Cheats at dice with languid elegance. Operates remote weapons. Fondest of ",
+            "table":[
+                "Ceramic dolls",
+                "Gilded games",
+                "Little vechs",
+                "Plush toys",
+                "Tin golems",
+                "Wicker soldiers"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Useless Freeloader",
+            "tags":["background"],
+            "flavor":"It gets around.",
+            "description":"Invites themselves to all the parties. Dresses to blend in. Knows who’s who. Gets free food and board. Butters up the insecure and soothes the ruffled. Wields a smooth tongue and a lack of shame. Known to be ",
+            "table":[
+                "A layabout",
+                "Lackadaisical",
+                "Languid",
+                "Lazy",
+                "Lethargic",
+                "Terminally hip"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Abmortal Doctor",
+            "tags":["magic"],
+            "flavor":"Doctor what?",
+            "description":"Fixes damaged humans, diagnoses injuries and diseases. Uses medical equipment, scalpels and knives. Recognizes poisons and potions, even curses and charms. Runs very well.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the All-Chemist",
+            "tags":["magic"],
+            "flavor":"It’s supposed to explode.",
+            "description":"Understands chemical processes and matter modification equipment. Makes explosives, cook drugs. Transmutes refuse into treasures (like excreta into gunpowder).",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Awakened Sphere",
+            "tags":["magic"],
+            "flavor":"The noösphere is hungry.",
+            "description":"Studies and adapts natural systems. Reads leaves and listens to churning microbes. Hears the voices of the wind. Smells the songs of the ocean. Uses biological equipment and handles hunting weapons.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Biomechané",
+            "tags":["magic"],
+            "flavor":"Skin-deep poems carved in flesh.",
+            "description":"Plays the living spirit of flesh and bough. Dams injuries and diseases, modifies biological processes, sculpts angels and monsters. Wields knives and saws, needles and probes. Unofficially dabbles in mad science body horror.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Cosmic Architects",
+            "tags":["magic"],
+            "flavor":"It’s not a secret club.",
+            "description":"Builds buildings. Shapes stones. Understands dungeons. Forms mystery cults. Treads the boundary between life and death. Plays with magic gates. Wields hammers and chisels.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Existential Void",
+            "tags":["magic"],
+            "flavor":"Where imagination fails the void dwells.",
+            "description":"Journeys the hidden paths. Braves the madness and fast decay. Dreams of of stars and hopes, mistakes undone, futures rewritten, promises remade.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Flying Serpent",
+            "tags":["magic"],
+            "flavor":"Prayers to the feathery one.",
+            "description":"Mixes poisons, potions, and medicines. Entreaties the tiny machines that swim in all living things. Harvests herbs that heal and those that ill. Wields knives, pestles, and mortars.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Golemmafexes",
+            "tags":["magic"],
+            "flavor":"Roboticist to the initiated.",
+            "description":"Heals and maintains ancient autonomous machines. Follows preserved manuals of ritual assembly to copy platonic golems. Communicates with machines via the ancient art of coding. Uses integrated energy weapons and void screwdrivers.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Iron Symphony",
+            "tags":["magic"],
+            "flavor":"The spheres are ringing.",
+            "description":"Uses music to unite and divide, to share and preserve. Makes a band and tours the Vastlands. Ignores ingested poisons and shatters objects with instrumentals alone. Wrecks inns and hotels, leaves heartbreak behind. Casts the spells of the vibrating spheres.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Law Necromantic",
+            "tags":["magic"],
+            "flavor":"Life and death are legal matters.",
+            "description":"Talks to the dead and interprets their wishes. Mediates between living and dead. Consults the wisdom of past ages. Brings things back from the long sleep where they dreamless lay. Impeccable taste in candles, perfumes, skulls and gowns.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Light Held Fast",
+            "tags":["magic"],
+            "flavor":"It would work if you just believed.",
+            "description":"Uses placebos and nocebos to change the world. Stores and retrieves information with living crystals. Focus and refract magics through oldtech gems. Creates plays of light and shadow. Wields crystal wands.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Mother Electric",
+            "tags":["magic"],
+            "flavor":"Creation hums the song Electric.",
+            "description":"Practices the old rites of electric equipment maintenance and repair. Uses heavy energy weapons and ka batteries. Casts spells with blueprint scrolls.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Old Technologies",
+            "tags":["magic"],
+            "flavor":"It's how they did things Long Ago.",
+            "description":"Understands the fantascience of Oldtech. Activates or deactivates nearly anything. Reverse-engineers how to use ancient technomagical artifacts. Jury rigs a feeble emulation of the glories of the Long Ago.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Plant Kings",
+            "tags":["magic"],
+            "flavor":"Just because the trees talk, doesn’t mean they’re crazy.",
+            "description":"Talks to plants and hears what they have to say. Encourages verdant growth and opulent fruition. Promotes mobility and advancement for the plant kingdom. Harvests strange fruits. Wields sickles, axes, clubs and blunts.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Rightmaker",
+            "tags":["magic"],
+            "flavor":"Soothe the savage mob.",
+            "description":"Feels society and community in their bones. Sacrifices the few for the many. Understands the exigencies of survival transcend morality. Judges with stern impartiality. Wields great swords and ornate guns.",
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Seeming Becoming",
+            "tags":["magic"],
+            "flavor":"They’re magic beans.",
+            "description":"Researches who wants what and how much they’re willing to pay. Makes rough guesses and drives data. Writes adventuring campaigns. Handles public relations. Wields confusion and obfuscation.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Seven Summons",
+            "tags":["magic"],
+            "flavor":"It wants to serve us. Trust me.",
+            "description":"Finds the multitudes inhabiting the realms beyond the aether veils and in this dark material reality binds them. Bends, breaks, and enthralls daimons. Makes them give up their secrets. Pretends to their trust and loyalty.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Soul Breaker",
+            "tags":["magic"],
+            "flavor":"Did I dream I was a human, or was I a human dreaming I was a spark of infinity?",
+            "description":"Reads people’s intentions and desires. Intuits strength of character and weakness of desire. Twists plans and dreams. Subvert the ka and steals the body with the terrifying spells of the ultras.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the Witching Song",
+            "tags":["magic"],
+            "flavor":"Ears for the all-song.",
+            "description":"Listens to the world around them, the folk big and small, and hears what they say. Mixes herbs and opens the spirit eye to protect against daemons and slanders. Heals with words and attentions. Works in possibilities and glances.",
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Veda of the World’s Word",
+            "tags":["magic"],
+            "flavor":"The will of the world is written in the wind and the seed.",
+            "description":"Reads the omens of wind and sky and water and grass. Divines the desires of the gods and their immutable laws. Adjusts those laws to help others and themselves. Deities and belief systems might include ",
+            "table":[
+                "Hedonic flesh-firstism",
+                "Opiate stasis",
+                "Mystery objectivism",
+                "Pan-noöspherical gratitude",
+                "Builder beatification",
+                "Socioethicism",
+                "Cogflower growth gospel",
+                "Ur-rationalism",
+                "Ancestral apotheosis",
+                "Pre-singularity nostalgism",
+                "Rainbow panoply polytheism",
+                "Machine idolatry"
+            ],
+            "ranks":["Gets SPELL (table)"],
+            "info":""
+        },
+        {
+            "name":"Vome Technician",
+            "tags":["adventure"],
+            "flavor":"Once these machines were our servants.",
+            "description":"Studies and repairs vomes. Adapts and uses vomish implants. Manages their side-effects. Takes control of vome drones and independent units. Uses vometech. Discretely ",
+            "table":[
+                "Accepts vomish directives",
+                "Collects vome trophies",
+                "Enjoys vomewave art",
+                "Hunts synthetics",
+                "Modifies themself",
+                "Spreads vomeware"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"White Collar Drone",
+            "tags":["background"],
+            "flavor":"Just killing time.",
+            "description":"Dresses appropriately and understands the etiquettes of modern life. Speaks three languages. Has a suitable degree and years of experience. Understands jargon. Masters arcane communication and management rituals. Clandestinely takes care of personal affairs despite the watchful eyes of jaded bosses. Creates ornate project documentation that nobody will ever read. Dreams of a better life. Secretly ",
+            "table":[
+                "Writes erotic poetry",
+                "Builds tiny model towns",
+                "Plays make-believe games",
+                "Dresses up in costumes",
+                "Joined a motor-golem gang",
+                "Summons small daemons"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Writer of Belles Lettres",
+            "tags":["background"],
+            "flavor":"Calligraphy and purple prose.",
+            "description":"Makes a living as a scribe using the three traditional scripts. Writes stories, fictions, and forgeries. Inscribes ritual code scrolls with fluid ease. Wields a pen sharper than a sword. Cuts with tongue, drowns with ink. Genres include ",
+            "table":[
+                "Belle epoque novel",
+                "Postconstructivist poetry",
+                "Oldtech fiction",
+                "Generative stories",
+                "Epistolary tales",
+                "Subtextual plays"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
+        },
+        {
+            "name":"Zu Error",
+            "tags":["error"],
+            "flavor":"Error. Reality. Reboot.",
+            "description":"Memory conflict. Reality cascades and reforms. Veils within veils. Wormholes in the mind. This body is created from dreams and destinies and corroded code. Resonates with alien artefacts. Feels at home with the non-euclidean. Grasps the fundamental illusion of existence. Denies the knowledge with ",
+            "table":[
+                "Hard clerical labour",
+                "Bare-knuckle fighting",
+                "Competitive drinking",
+                "Maniacal fantastic scribbling",
+                "Rigid traditionalism",
+                "Revolutionary action"
+            ],
+            "ranks":["Gets ITEM (table)"],
+            "info":""
         }
+
     ],
     "traits":[
         {
@@ -1003,7 +2152,7 @@
     "mutations":[
         {
             "name":"Another Mind",
-            "tags":["psionic"],
+            "tags":["deleterious"],
             "flavor":"The seed of truth grows within.",
             "ranks":[
                 {"base":"Hard, cyst-like nodule develops on the ", "entries":["throat", "stomach","lumbar spine","upper back"], "end":"."},
@@ -1011,18 +2160,18 @@
                 "The secondary brain grows larger and faster. The hero’s perception and analytical abilities increase. The disfigurement is more pronounced.",
                 {"base":"The secondary brain achieves a semblance of independent thought and develops unusual mental abilities, such as ", "entries":["pyrokinesis","telekinesis","electrokinesis","tele-empathetic manipulation"], "end":". Sometimes it takes over the hero’s body."}
             ],
-            "info":"SEACAT p.70"
+            "info":""
         },
         {
             "name":"Astral Eyes",
-            "tags":["psionic"],
+            "tags":["deleterious"],
             "flavor":"The world you know is a veil hiding the deeper beauty of the fields of ka.",
             "ranks":[
                 {"base":"Eyes turn", "entries":["milky", "pitch black","translucent","like amber orbs"], "end":". Vision is impaired."},
                 "Eyes evaporate out of their sockets. Hero is blind.",
                 "A heavy, misty gas leaks out of the hero’s sockets. They perceive auras with new organs growing where their eyes once rolled in fear and terror."
             ],
-            "info":"SEACAT p.70"
+            "info":""
         }
     ],
     "items":[
