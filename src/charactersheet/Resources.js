@@ -8,9 +8,9 @@ const Resources = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("");
   const [currentResource, setCurrentResource] = useState(character[modalStat]);
-  const [data, setData] = useState(0);
+  const [data, setData] = useState(character[modalStat]);
 
-  const resources = ["LIFE", "HERODICE", "XP"];
+  const resources = ["LIFE", "HERODICE", "XP", "CASH"];
   const amounts = [-10, -5, -1, 1, 5, 10];
 
   const modalOpenStat = (stat) => {
@@ -53,10 +53,9 @@ const Resources = () => {
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          Subtract or Add {modalStat}
+          Add or Subtract {modalStat}: {character[modalStat]}
         </Modal.Header>
         <Modal.Body className="modalbackground">
-          {character[modalStat]}
           <div>
             {amounts.map((amount, index) => {
               return (
@@ -76,7 +75,7 @@ const Resources = () => {
             <label>
               <input
                 className="bit button bordered padded2 marginleft"
-                placeholder="Enter Amount"
+                placeholder={character[modalStat]}
                 type="text"
                 value={data}
                 onChange={(e) => setData(e.target.value)}

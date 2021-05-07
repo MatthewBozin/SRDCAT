@@ -35,9 +35,10 @@ function App() {
     traits: [],
     mutations: [],
     items: [],
-    cash: 0,
+    CASH: 0,
     materials: ["metal", "fuel"],
   });
+  localStorage.setItem("SRDcharacters", []);
   return (
     <div>
       <Context.Provider value={[context, setContext]}>
