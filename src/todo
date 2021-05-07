@@ -1,14 +1,15 @@
-in localstorage
-    SRDcharacter object -> SRDcharacters array
+on rolls:
+  toggle "[+]", "[-]"
+  toggle "Add PRO"
 
-let counter = -1;
-{characters.map((char) => {
-    counter++;
-    if (char === {}) {
-        return <button onClick={saveChar(JSON.parse(JSON.stringify(counter)), character)}>(empty)</button>;
-    }
-    return <button onClick={saveChar(JSON.parse(JSON.stringify(counter)), character)}>{character.name}</button>;
-});}
+stats:
+  are modified by internal logic
+    level:
+      press "level up", calculates xp needed, if yes, subtracts xp and adds level
+    pro:
+      modifies self on level
+    mcost:
+      modifies self on [?]
 
 
 

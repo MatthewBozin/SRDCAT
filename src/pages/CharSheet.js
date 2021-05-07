@@ -69,8 +69,6 @@ const CharSheet = () => {
           </span>
         </div>
         <div className="item">
-          <span className="entry tag">Cash: </span>
-          <span className="entry">{character.cash}</span>
           <span className="entry tag">Encumbrance: </span>
           <span className="entry">{getEncumbrance()}</span>
         </div>
