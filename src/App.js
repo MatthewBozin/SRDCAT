@@ -38,7 +38,7 @@ function App() {
     CASH: 0,
     materials: ["metal", "fuel"],
   });
-  localStorage.setItem("SRDcharacters", []);
+  localStorage.setItem("SRDcharacters", "[" + JSON.stringify(character) + "]");
   return (
     <div>
       <Context.Provider value={[context, setContext]}>
