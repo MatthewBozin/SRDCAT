@@ -75,10 +75,10 @@ const Defenses = () => {
         })}
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
-        <Modal.Header>
+        <Modal.Header className="modalbackground">
           {modalStat} save: ({character[modalStat]})
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modalbackground">
           Attacker sum:
           {profarray.map((prof, index) => {
             return (
