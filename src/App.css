@@ -30,6 +30,11 @@ button,
   cursor: pointer;
 }
 
+.buttonoverride {
+  color: #d5d4d6;
+  cursor: default;
+}
+
 .modalbackground {
   background-color: #2c2831;
 }
@@ -39,6 +44,12 @@ button,
   border-width: 1px;
   border-color: #fa5c5c;
   border-radius: 8px;
+}
+
+.hideborder {
+  border-style: solid;
+  border-width: 0px;
+  border-color: #2c2831;
 }
 
 hr {
@@ -57,6 +68,10 @@ hr {
 .padded2 {
   margin: 5px;
   padding: 5px;
+}
+
+.margined {
+  margin: 5px;
 }
 
 .padded3 {
@@ -139,4 +154,37 @@ hr {
 
 .margintop {
   margin-top: 13px;
+}
+
+.textwrap {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flexgrow {
+  flex: 1 1 0;
+}
+
+.flexgrow2 {
+  flex: auto;
+}
+
+.maxwidth {
+  width: fit-content;
+}
+
+.lefttoright {
+  text-align: right;
 }
