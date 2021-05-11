@@ -7,6 +7,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Collections from "./pages/Collections";
 import CharSheet from "./pages/CharSheet";
+import Error from "./pages/Error";
 
 function App() {
   const [context, setContext] = useState({
@@ -30,28 +31,33 @@ function App() {
     PRO: 1,
     MCOST: 3,
     HERODICE: 0,
+    CASH: 0,
     XP: 0,
     skills: [],
     traits: [],
     mutations: [],
     items: [],
-    CASH: 0,
-    materials: ["metal", "fuel"],
   });
-  localStorage.setItem("SRDcharacters", "[" + JSON.stringify(character) + "]");
+  if (localStorage.getItem("SRDcharacters") === undefined) {
+    localStorage.setItem("SRDcharacters", []);
+  }
   return (
     <div>
       <Context.Provider value={[context, setContext]}>
         <Character.Provider value={[character, setCharacter]}>
           <Router>
-            <Route exact path="/">
-              <NavMaster />
-              <Collections />
-            </Route>
-            <Route path="/character">
-              <NavMaster />
-              <CharSheet />
-            </Route>
+            <NavMaster />
+            <Switch>
+              <Route exact path="/">
+                <Collections />
+              </Route>
+              <Route path="/character">
+                <CharSheet />
+              </Route>
+              <Route path="*">
+                <Error />
+              </Route>
+            </Switch>
           </Router>
         </Character.Provider>
       </Context.Provider>

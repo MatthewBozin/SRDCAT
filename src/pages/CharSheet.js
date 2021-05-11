@@ -5,6 +5,7 @@ import Character from "../data/character.js";
 import StatSheet from "../charactersheet/StatSheet";
 import CharName from "../charactersheet/CharName";
 import SaveCharModal from "../charactersheet/SaveCharModal";
+import ExportCharModal from "../charactersheet/ExportCharModal";
 import { FaDiceD20 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -36,7 +37,8 @@ const CharSheet = () => {
         <div className="row entry fullwidth">
           <span className="row entry">Hero Sheet</span>
           <span className="row right">
-            <SaveCharModal></SaveCharModal>
+            <SaveCharModal />
+            <ExportCharModal />
             <FaDiceD20
               className="button right margin"
               onClick={() => {

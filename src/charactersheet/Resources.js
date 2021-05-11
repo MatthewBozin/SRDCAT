@@ -11,7 +11,9 @@ const Resources = () => {
   const [data, setData] = useState(character[modalStat]);
 
   const resources = ["LIFE", "HERODICE", "XP", "CASH"];
-  const amounts = [-10, -5, -1, 1, 5, 10];
+  const amounts = [1, 5, 10];
+  const amounts2 = [-1, -5, -10];
+  const amounts3 = ["+1", "+5", "+10"];
 
   const modalOpenStat = (stat) => {
     setModalOpen(true);
@@ -30,7 +32,10 @@ const Resources = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    modResource(data, modalStat);
+    let id = "modalform" + character[modalStat];
+    document.getElementById(id).value = "";
+    character[modalStat] = parseInt(data);
+    setCurrentResource(character[modalStat]);
   };
 
   return (
@@ -52,15 +57,47 @@ const Resources = () => {
         })}
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
-        <Modal.Header className="modalbackground">
-          Add or Subtract {modalStat}: {character[modalStat]}
-        </Modal.Header>
         <Modal.Body className="modalbackground">
-          <div>
+          <form onSubmit={handleSubmit} className="flex">
+            <div className="bit button bordered margined flex flexgrow2">
+              <span className="margined buttonoverride">{modalStat}</span>
+              <input
+                className="bit button hideborder flexgrow2 lefttoright"
+                placeholder={character[modalStat]}
+                type="text"
+                onChange={(e) => {
+                  setData(e.target.value);
+                }}
+                id={"modalform" + character[modalStat]}
+              />
+            </div>
+            <input
+              className="bit button bordered padded2 flexgrow2"
+              type="submit"
+              //value = stat.value
+              value="Set"
+            />
+          </form>
+          <div className="flex">
             {amounts.map((amount, index) => {
               return (
                 <button
-                  className="bit button bordered padded2"
+                  className="bit button bordered padded2 flexgrow"
+                  key={index}
+                  onClick={() => {
+                    modResource(amount, modalStat);
+                  }}
+                >
+                  {amounts3[index]}
+                </button>
+              );
+            })}
+          </div>
+          <div className="flex">
+            {amounts2.map((amount, index) => {
+              return (
+                <button
+                  className="bit button bordered padded2 flexgrow"
                   key={index}
                   onClick={() => {
                     modResource(amount, modalStat);
@@ -71,22 +108,6 @@ const Resources = () => {
               );
             })}
           </div>
-          <form onSubmit={handleSubmit}>
-            <label>
-              <input
-                className="bit button bordered padded2 marginleft"
-                placeholder={character[modalStat]}
-                type="text"
-                value={data}
-                onChange={(e) => setData(e.target.value)}
-              />
-            </label>
-            <input
-              className="bit button bordered padded2 marginleft"
-              type="submit"
-              value="Modify"
-            />
-          </form>
         </Modal.Body>
       </Modal>
     </div>
