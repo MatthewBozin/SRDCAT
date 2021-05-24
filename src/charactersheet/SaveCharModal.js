@@ -59,7 +59,7 @@ const SaveCharModal = () => {
   return (
     <div>
       <FaSave
-        className="button right margin"
+        className="icon"
         onClick={() => {
           modalOpening();
         }}
@@ -74,12 +74,12 @@ const SaveCharModal = () => {
             if (char.name === undefined) {
               return (
                 <div key={index}>
-                  <span className="bit outerbox">(empty)</span>
+                  <span className="padded5px outerbox">(empty)</span>
                   <button
                     onClick={() => {
                       saveChar(char.slot, character);
                     }}
-                    className="bit button bordered padded2"
+                    className="button bordered padded5px margin5px"
                   >
                     save
                   </button>
@@ -99,7 +99,7 @@ const SaveCharModal = () => {
             }
           })}
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               addSlot();
             }}

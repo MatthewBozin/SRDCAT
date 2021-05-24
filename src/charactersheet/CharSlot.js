@@ -13,12 +13,12 @@ const CharSlot = (props) => {
   if (char.name === undefined) {
     return (
       <div>
-        <span className="bit outerbox">(empty)</span>
+        <span className="padded5px outerbox">(empty)</span>
         <button
           onClick={() => {
             saveChar(slot, character);
           }}
-          className="bit button bordered padded2"
+          className="button bordered padded5px margin5px"
         >
           save
         </button>
@@ -27,12 +27,12 @@ const CharSlot = (props) => {
   } else {
     return (
       <div>
-        <span className="bit outerbox">{char.name}</span>
+        <span className="padded5px outerbox">{char.name}</span>
         <button
           onClick={() => {
             saveChar(slot, character);
           }}
-          className="bit button bordered padded2"
+          className="button bordered padded5px margin5px"
         >
           overwrite
         </button>
@@ -40,7 +40,7 @@ const CharSlot = (props) => {
           onClick={() => {
             deleteChar(slot);
           }}
-          className="bit button bordered padded2"
+          className="button bordered padded5px margin5px"
         >
           delete
         </button>
@@ -48,7 +48,7 @@ const CharSlot = (props) => {
           onClick={() => {
             loadChar(slot);
           }}
-          className="bit button bordered padded2"
+          className="button bordered padded5px margin5px"
         >
           load
         </button>

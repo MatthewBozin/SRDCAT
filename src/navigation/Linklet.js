@@ -9,8 +9,8 @@ const Linklet = (props) => {
     <Link
       className={
         context.link === props.type
-          ? "button2 bordered padded right"
-          : "button bordered padded right"
+          ? "link button--selected bordered"
+          : "link button bordered"
       }
       onClick={() =>
         setContext(() => {

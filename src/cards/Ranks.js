@@ -59,20 +59,20 @@ const Ranks = (props) => {
       return (
         <span>
           <button
-            className="button bordered padded"
+            className="button bordered padded2px"
             onClick={() => {
               modify(-1);
             }}
           >
-            <FaChevronLeft className="bpad" />
+            <FaChevronLeft className="pbottom5px" />
           </button>
           <button
-            className="button bordered padded"
+            className="button bordered padded2px"
             onClick={() => {
               modify(1);
             }}
           >
-            <FaChevronRight className="bpad" />
+            <FaChevronRight className="pbottom5px" />
           </button>
         </span>
       );
@@ -81,18 +81,18 @@ const Ranks = (props) => {
 
   const ifItem = (type) => {
     if (type === "items") {
-      return <span className="tag">Amount: </span>;
+      return <span className="orangetext">Amount: </span>;
     } else if (type === "single") {
-      return <span className="tag">Feature: </span>;
+      return <span className="orangetext">Feature: </span>;
     } else {
-      return <span className="tag">Rank {index + 1}: </span>;
+      return <span className="orangetext">Rank {index + 1}: </span>;
     }
   };
 
   return (
     <div>
       {rankButtons(props)}
-      <span className="bit">
+      <span className="padded5px">
         {ifItem(props.deleteFrom)}
         {rankTable(rank)}
       </span>

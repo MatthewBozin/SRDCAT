@@ -50,22 +50,22 @@ const CharSheet = () => {
 
   return (
     <div>
-      <h4 className="outerbox">
-        <div className="row entry fullwidth">
-          <span className="row entry">Hero Sheet</span>
-          <span className="row right">
+      <div className="outerbox">
+        <div className="row mleft5px fullwidth">
+          <h4 className="row mleft5px">Hero Sheet</h4>
+          <span className="row rightfloat mright12px">
             <SaveCharModal />
             <ExportCharModal />
             <RandomCharModal />
           </span>
         </div>
-      </h4>
+      </div>
       <div className="outerbox">
         <CharName />
         <StatSheet />
       </div>
       <div className="outerbox">
-        <div className="row entry fullwidth">
+        <div className="row mleft5px fullwidth">
           <span>
             <Link
               onClick={() =>
@@ -75,7 +75,7 @@ const CharSheet = () => {
                   return newcontext;
                 })
               }
-              className="row entry button"
+              className="row mleft5px button"
               to="/"
             >
               Inventory
@@ -83,8 +83,8 @@ const CharSheet = () => {
           </span>
         </div>
         <div className="outerbox">
-          <span className="entry tag">Encumbrance: </span>
-          <span className="entry">{getEncumbrance()}</span>
+          <span className="mleft5px orangetext">Encumbrance: </span>
+          <span className="mleft5px">{getEncumbrance()}</span>
         </div>
         <CardList
           content={character.items}
@@ -96,7 +96,7 @@ const CharSheet = () => {
       {categoryArray.map((category, index) => {
         return (
           <div className="outerbox" key={index}>
-            <div className="row entry fullwidth">
+            <div className="row mleft5px fullwidth">
               <span>
                 <Link
                   onClick={() =>
@@ -106,7 +106,7 @@ const CharSheet = () => {
                       return newcontext;
                     })
                   }
-                  className="row entry button"
+                  className="row mleft5px button"
                   to="/"
                 >
                   {category.name}

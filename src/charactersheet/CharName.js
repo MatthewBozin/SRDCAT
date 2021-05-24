@@ -24,7 +24,7 @@ function CharName() {
         <form onSubmit={handleSubmit}>
           <label>
             <input
-              className="bit button bordered padded2 marginleft"
+              className="button bordered padded5px margin5px mleft12px"
               placeholder="Enter Name"
               type="text"
               value={name}
@@ -32,28 +32,28 @@ function CharName() {
             />
           </label>
           <input
-            className="bit button bordered padded2 marginleft"
+            className="button bordered padded5px margin5px mleft12px"
             type="submit"
             value="Submit"
           />
         </form>
       );
     return (
-      <div className="row entry fullwidth">
-        <span className="bit bordered padded2">{character.name}</span>
-        <span className="entry marginleft">
+      <div className="row mleft5px fullwidth">
+        <span className="bordered padded5px margin5px">{character.name}</span>
+        <span>
           <FaPencilAlt
             onClick={() => {
               setIsForm(true);
             }}
-            className="button margintop"
+            className="icon"
           />
         </span>
       </div>
     );
   };
 
-  return <div className="row entry fullwidth">{nameDisplay()}</div>;
+  return <div className="row mleft5px fullwidth">{nameDisplay()}</div>;
 }
 
 export default CharName;

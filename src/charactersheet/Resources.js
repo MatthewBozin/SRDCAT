@@ -41,12 +41,12 @@ const Resources = () => {
 
   return (
     <div className="outerbox">
-      <div className="row entry">RESOURCES</div>
-      <div className="bit row entry">
+      <div className="row mleft5px">RESOURCES</div>
+      <div className="padded5px row mleft5px">
         {resources.map((stat, index) => {
           return (
             <button
-              className="bit button bordered padded2"
+              className="button bordered padded5px margin5px"
               key={index}
               onClick={() => {
                 modalOpenStat(stat);
@@ -60,10 +60,10 @@ const Resources = () => {
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Body className="modalbackground">
           <form onSubmit={handleSubmit} className="flex">
-            <div className="bit button bordered margined flex flexgrow2">
-              <span className="margined buttonoverride">{modalStat}</span>
+            <div className="padded5px button bordered margin5px flex flexgrow2">
+              <span className="margin5px button--override">{modalStat}</span>
               <input
-                className="bit button hideborder flexgrow2 lefttoright"
+                className="padded5px button clearborder flexgrow2 lefttoright"
                 placeholder={character[modalStat]}
                 type="text"
                 onChange={(e) => {
@@ -73,7 +73,7 @@ const Resources = () => {
               />
             </div>
             <input
-              className="bit button bordered padded2 flexgrow2"
+              className="button bordered padded5px margin5px flexgrow2"
               type="submit"
               //value = stat.value
               value="Set"
@@ -83,7 +83,7 @@ const Resources = () => {
             {amounts.map((amount, index) => {
               return (
                 <button
-                  className="bit button bordered padded2 flexgrow"
+                  className="button bordered padded5px margin5px flexgrow"
                   key={index}
                   onClick={() => {
                     modResource(amount, modalStat);
@@ -98,7 +98,7 @@ const Resources = () => {
             {amounts2.map((amount, index) => {
               return (
                 <button
-                  className="bit button bordered padded2 flexgrow"
+                  className="button bordered padded5px margin5px flexgrow"
                   key={index}
                   onClick={() => {
                     modResource(amount, modalStat);

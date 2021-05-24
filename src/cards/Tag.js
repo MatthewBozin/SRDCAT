@@ -13,7 +13,7 @@ const Tag = (props) => {
   };
 
   return (
-    <span className="bit button tag" onClick={setTagSearch}>
+    <span className="padded5px button orangetext" onClick={setTagSearch}>
       #{props.tag}
     </span>
   );

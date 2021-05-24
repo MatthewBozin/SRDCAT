@@ -2,7 +2,7 @@ import React from "react";
 
 const Flavor = (props) => {
   return (
-    <div className="bit">
+    <div className="padded5px">
       <i>{props.flavor}</i>
     </div>
   );

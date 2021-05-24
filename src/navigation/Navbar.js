@@ -4,9 +4,9 @@ import navbar from "../data/navbar.json";
 
 const Navbar = () => {
   return (
-    <h4 className="row entry fullwidth">
-      <span className="row ghostpadded">Collections</span>
-      <div className="right marginright">
+    <h4 className="row mleft5px fullwidth">
+      <span className="row heading">Collections</span>
+      <div className="rightfloat mright12px">
         {navbar.navlets.map((navlet) => {
           return <Navlet key={navlet.name} navlet={navlet} />;
         })}

@@ -28,18 +28,18 @@ const Table = (props) => {
             rollDamage();
           }}
         >
-          <FaDiceD20 className="button scaleup" />
+          <FaDiceD20 className="button scaleup125" />
         </button>
-        <span className="bit">{damage}</span>
+        <span className="padded5px">{damage}</span>
       </span>
     );
   } else {
     return (
       <span>
         <button className="button clearborder" onClick={roll}>
-          <FaDiceD20 className="button scaleup" />
+          <FaDiceD20 className="button scaleup125" />
         </button>
-        <span className="bit">{entry}</span>
+        <span className="padded5px">{entry}</span>
       </span>
     );
   }
