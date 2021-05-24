@@ -40,7 +40,7 @@ const CharSheet = () => {
     for (let element of array) {
       console.log(element.amount);
       if (element.amount !== 0 && element.amount !== "") {
-        sackstonesoap += element.name + ": " + element.amount + " ";
+        sackstonesoap += element.name + ": " + element.amount;
       } else {
         sackstonesoap += element.name + ": 0";
       }

@@ -43,10 +43,28 @@ const SaveCharModal = () => {
   const exportTxt = () => {
     let txtstring = "";
     for (let property of properties) {
-      let txtproperty = character[property].toString();
-      console.log(txtproperty);
-      //if typeof == "object"
-      txtstring += property + ": " + txtproperty + "\n";
+      let charprop = character[property];
+      if (typeof charprop == "object") {
+        let stringprop = "";
+        for (let card of charprop) {
+          let stringcard = "";
+          stringcard += "name: " + card.name + "\n";
+          if (card.description !== undefined) {
+            stringcard += "description: " + card.description + "\n";
+          }
+          stringcard += "rank: " + card.ranks[card.savedrank] + "\n";
+          stringprop +=
+            stringcard + "----------------------------------------\n";
+        }
+        txtstring +=
+          "=========================\n" +
+          property +
+          "\n=========================\n" +
+          stringprop;
+      } else {
+        let txtproperty = charprop.toString();
+        txtstring += property + ": " + txtproperty + "\n";
+      }
     }
     setCharExport(txtstring);
   };
