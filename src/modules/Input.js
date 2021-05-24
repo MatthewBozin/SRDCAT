@@ -24,7 +24,7 @@ function Input(props) {
         <form onSubmit={handleSubmit}>
           <label>
             <input
-              className="bit button bordered padded2 marginleft"
+              className="button bordered padded5px margin5px mleft12px"
               placeholder="Enter Name"
               type="text"
               value={data}
@@ -32,16 +32,16 @@ function Input(props) {
             />
           </label>
           <input
-            className="bit button bordered padded2 marginleft"
+            className="button bordered padded5px margin5px mleft12px"
             type="submit"
             value="Submit"
           />
         </form>
       );
     return (
-      <div className="row entry fullwidth">
+      <div className="row mleft5px fullwidth">
         <button
-          className="bit bordered padded2"
+          className="bordered padded5px margin5px"
           onClick={() => {
             setIsForm(true);
           }}
@@ -52,7 +52,7 @@ function Input(props) {
     );
   };
 
-  return <div className="row entry fullwidth">{inputDisplay()}</div>;
+  return <div className="row mleft5px fullwidth">{inputDisplay()}</div>;
 }
 
 export default Input;

@@ -8,9 +8,9 @@ const NavMaster = () => {
 
   return (
     <h4 className="outerbox">
-      <div className="row entry fullwidth">
-        <span className="row ghostpadded">SRDCAT</span>
-        <div className="right marginright">
+      <div className="row mleft5px fullwidth">
+        <span className="row heading">SRDCAT</span>
+        <div className="rightfloat mright12px">
           {navbar.navmasters.map((navmaster, index) => {
             return (
               <Linklet

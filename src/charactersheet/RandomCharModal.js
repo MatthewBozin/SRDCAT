@@ -154,7 +154,7 @@ const RandomCharModal = () => {
   return (
     <div>
       <FaDiceD20
-        className="button right margin"
+        className="icon"
         onClick={() => {
           modalOpening();
         }}
@@ -165,7 +165,7 @@ const RandomCharModal = () => {
         </Modal.Header>
         <Modal.Body className="modalbackground">
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               charGen("specialextra");
             }}
@@ -173,7 +173,7 @@ const RandomCharModal = () => {
             Special Extra
           </button>
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               charGen("pulphero");
             }}
@@ -181,7 +181,7 @@ const RandomCharModal = () => {
             Pulp Hero
           </button>
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               charGen("epiclegend");
             }}
@@ -189,7 +189,7 @@ const RandomCharModal = () => {
             Epic Legend
           </button>
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               charGen("avatar");
             }}

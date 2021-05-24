@@ -58,12 +58,12 @@ const Defenses = () => {
 
   return (
     <div className="outerbox">
-      <div className="row entry">DEFENSES</div>
-      <div className="bit row entry">
+      <div className="row mleft5px">DEFENSES</div>
+      <div className="padded5px row mleft5px">
         {defenses.map((defense, index) => {
           return (
             <button
-              className="bit button bordered padded2"
+              className="button bordered padded5px margin5px"
               key={index}
               onClick={() => {
                 modalOpenStat(defense);
@@ -83,7 +83,7 @@ const Defenses = () => {
           {profarray.map((prof, index) => {
             return (
               <button
-                className="bit button bordered padded2"
+                className="button bordered padded5px margin5px"
                 key={index}
                 onClick={() => {
                   test(prof);

@@ -64,12 +64,12 @@ const Stats = () => {
 
   return (
     <div className="outerbox">
-      <div className="row entry">ATTRIBUTES</div>
-      <div className="bit row entry">
+      <div className="row mleft5px">ATTRIBUTES</div>
+      <div className="padded5px row mleft5px">
         {SEACAT.map((stat, index) => {
           return (
             <button
-              className="bit button bordered padded2"
+              className="padded5px button bordered padded5px margin5px"
               key={index}
               onClick={() => {
                 modalOpenStat(stat);
@@ -90,7 +90,7 @@ const Stats = () => {
             {targets.map((target, index) => {
               return (
                 <button
-                  className="bit button bordered padded2"
+                  className="button bordered padded5px margin5px"
                   key={index}
                   onClick={() => {
                     test(target.value);

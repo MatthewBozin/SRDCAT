@@ -4,16 +4,25 @@ import Stat from "./Stat";
 const Resources = () => {
   return (
     <div className="outerbox">
-      <div className="row entry">STATS</div>
-      <div className="bit row entry">
-        <button className="bit button bordered padded2">
-          <Stat className="bit bordered padded2 margin" stat={"LEVEL"} />
+      <div className="row mleft5px">STATS</div>
+      <div className="padded5px row mleft5px">
+        <button className="button bordered padded5px margin5px">
+          <Stat
+            className="bordered padded5px margin5px mright15px"
+            stat={"LEVEL"}
+          />
         </button>
-        <button className="bit button bordered padded2">
-          <Stat className="bit bordered padded2 margin" stat={"PRO"} />
+        <button className="button bordered padded5px margin5px">
+          <Stat
+            className="bordered padded5px margin5px mright15px"
+            stat={"PRO"}
+          />
         </button>
-        <button className="bit button bordered padded2">
-          <Stat className="bit bordered padded2 margin" stat={"MCOST"} />
+        <button className="button bordered padded5px margin5px">
+          <Stat
+            className="bordered padded5px margin5px mright15px"
+            stat={"MCOST"}
+          />
         </button>
       </div>
     </div>

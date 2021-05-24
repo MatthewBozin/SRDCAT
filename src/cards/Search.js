@@ -31,22 +31,18 @@ const Search = () => {
   };
 
   return (
-    <div className="row name entry fullwidth">
-      <form className="fullheight flex fullwidth" onSubmit={handleSubmit}>
+    <div className="row mleft5px fullwidth">
+      <form className="flex fullwidth" onSubmit={handleSubmit}>
         <input
-          className="button bordered flexgrow2"
+          className="button bordered link flexgrow2"
           placeholder={setPlaceholder()}
           type="text"
           value={data}
           onChange={(e) => setData(e.target.value)}
         />
-        <input
-          className="button bordered marginleft"
-          type="submit"
-          value="Search"
-        />
+        <input className="button bordered link" type="submit" value="Search" />
         <button
-          className="button bordered marginleft marginright"
+          className="button bordered link mright12px"
           onClick={resetSearch}
         >
           Reset

@@ -8,8 +8,8 @@ const Navlet = (props) => {
     <button
       className={
         context.collections === props.navlet.name
-          ? "button2 bordered padded right"
-          : "button bordered padded right"
+          ? "link button--selected bordered"
+          : "link button bordered"
       }
       onClick={() =>
         setContext(() => {

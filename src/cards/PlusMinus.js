@@ -33,23 +33,20 @@ const PlusMinus = (props) => {
 
   if (props.form === "plus") {
     return (
-      <button
-        className="bit right button bordered padded2 margin"
-        onClick={addCard}
-      >
-        <FaPlus className="bpad" />
+      <button className="plusminus bordered" onClick={addCard}>
+        <FaPlus className="pbottom5px" />
       </button>
     );
   }
   if (props.form === "minus") {
     return (
       <button
-        className="bit right button bordered padded2 margin"
+        className="plusminus bordered"
         onClick={() => {
           deleteCard();
         }}
       >
-        <FaMinus className="bpad" />
+        <FaMinus className="pbottom5px" />
       </button>
     );
   }

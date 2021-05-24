@@ -83,7 +83,7 @@ const SaveCharModal = () => {
     if (charexport !== "") {
       return (
         <button
-          className="bit button bordered padded2"
+          className="button bordered padded5px margin5px"
           onClick={() => {
             navigator.clipboard.writeText(charexport);
             //possible nonfunctionality with older browsers?
@@ -98,7 +98,7 @@ const SaveCharModal = () => {
   return (
     <div>
       <FaFileExport
-        className="button right margin"
+        className="icon"
         onClick={() => {
           modalOpening();
         }}
@@ -110,7 +110,7 @@ const SaveCharModal = () => {
         <Modal.Body className="modalbackground">
           {character.name}
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               exportTxt();
             }}
@@ -118,7 +118,7 @@ const SaveCharModal = () => {
             .txt
           </button>
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               setCharExport(JSON.stringify(character));
             }}
@@ -126,7 +126,7 @@ const SaveCharModal = () => {
             .json
           </button>
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               exportCsv();
             }}

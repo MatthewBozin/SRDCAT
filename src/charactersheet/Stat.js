@@ -5,8 +5,8 @@ const Stat = (props) => {
   const [character] = useContext(Character);
   return (
     <div>
-      <span className="tag">{props.stat}</span>
-      <span className="marginleft">{character[props.stat]}</span>
+      <span className="orangetext">{props.stat}</span>
+      <span className="mleft12px">{character[props.stat]}</span>
     </div>
   );
 };

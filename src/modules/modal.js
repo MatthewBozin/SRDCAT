@@ -20,7 +20,7 @@ return (
       {profarray.map((prof) => {
         return (
           <button
-            className="bit button bordered padded2"
+            className="button bordered padded5px margin5px"
             onClick={() => {
               test(prof);
             }}

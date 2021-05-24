@@ -6,9 +6,9 @@ const ExpandCollapse = (props) => {
 
   if (props.expanded === true) {
     return (
-      <button className="bit right button bordered padded2 margin">
+      <button className="rightfloat button bordered padded5px margin5px mright15px">
         <FaCompressArrowsAlt
-          className="bpad"
+          className="pbottom5px"
           onClick={() => {
             expandCollapse();
           }}
@@ -17,9 +17,9 @@ const ExpandCollapse = (props) => {
     );
   }
   return (
-    <button className="bit right button bordered padded2 margin">
+    <button className="rightfloat button bordered padded5px margin5px mright15px">
       <FaExpandArrowsAlt
-        className="bpad"
+        className="pbottom5px"
         onClick={() => {
           expandCollapse();
         }}

@@ -4,14 +4,14 @@ const Name = (props) => {
   let expandCollapse = props.expandCollapse;
   let expanded = props.expanded;
   return (
-    <h4
-      className="button bit padded3"
+    <div
+      className="button cardname"
       onClick={() => {
         expandCollapse(expanded);
       }}
     >
       {props.name}
-    </h4>
+    </div>
   );
 };
 

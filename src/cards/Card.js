@@ -31,14 +31,14 @@ const Card = (props) => {
       return (
         <div>
           <div>
-            <span className="bit">
-              <span className="tag">Value: </span>
+            <span className="padded5px">
+              <span className="orangetext">Value: </span>
               <span>{value}</span>
             </span>
           </div>
           <div>
-            <span className="bit">
-              <span className="tag">Crafting: </span>
+            <span className="padded5px">
+              <span className="orangetext">Crafting: </span>
               <span>{fullcraft}</span>
             </span>
           </div>
@@ -56,7 +56,7 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="right marginright">
+          <span className="rightfloat mright12px">
             <PlusMinus
               card={props.card}
               form={props.form}
@@ -64,9 +64,9 @@ const Card = (props) => {
               deleteFrom={props.deleteFrom}
             />
             {props.deleteFrom === "items" && (
-              <span className="right margin">
-                <FaHammer className="button scaleup margintop" />
-                <FaRecycle className="button scaleup margintop marginleft" />
+              <span className="rightfloat mright15px">
+                <FaHammer className="icon" />
+                <FaRecycle className="icon" />
               </span>
             )}
           </span>
@@ -88,8 +88,8 @@ const Card = (props) => {
             <Description description={description} />
             {ifItem2()}
             {typeof table === "string" && (
-              <span className="bit">
-                <span className="tag">Damage: </span>
+              <span className="padded5px">
+                <span className="orangetext">Damage: </span>
                 <span>{table}</span>
               </span>
             )}
@@ -99,7 +99,7 @@ const Card = (props) => {
               </span>
             )}
             <hr></hr>
-            <div className="bit">
+            <div className="padded5px">
               {ranks.length < 2 ? (
                 <span>
                   <Ranks ranks={ranks} deleteFrom="single" />
