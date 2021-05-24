@@ -27,19 +27,20 @@ const Resources = () => {
   const modResource = (amount, resource) => {
     character[resource] += parseInt(amount);
     setCurrentResource(character[resource]);
-    console.log(character[resource]);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     let id = "modalform" + character[modalStat];
     document.getElementById(id).value = "";
-    character[modalStat] = parseInt(data);
-    setCurrentResource(character[modalStat]);
+    if (data !== undefined) {
+      character[modalStat] = parseInt(data);
+      setCurrentResource(character[modalStat]);
+    }
   };
 
   return (
-    <div className="item">
+    <div className="outerbox">
       <div className="row entry">RESOURCES</div>
       <div className="bit row entry">
         {resources.map((stat, index) => {

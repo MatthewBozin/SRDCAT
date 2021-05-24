@@ -3,7 +3,7 @@ import Stat from "./Stat";
 
 const Resources = () => {
   return (
-    <div className="item">
+    <div className="outerbox">
       <div className="row entry">STATS</div>
       <div className="bit row entry">
         <button className="bit button bordered padded2">

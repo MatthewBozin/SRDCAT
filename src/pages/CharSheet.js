@@ -6,16 +6,12 @@ import StatSheet from "../charactersheet/StatSheet";
 import CharName from "../charactersheet/CharName";
 import SaveCharModal from "../charactersheet/SaveCharModal";
 import ExportCharModal from "../charactersheet/ExportCharModal";
-import { FaDiceD20 } from "react-icons/fa";
+import RandomCharModal from "../charactersheet/RandomCharModal";
 import { Link } from "react-router-dom";
 
 const CharSheet = () => {
   const [context, setContext] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
-
-  const randomChar = () => {
-    console.log("Observing the console log, are we?");
-  };
 
   const categoryArray = [
     { name: "Skills", value: "skills" },
@@ -23,36 +19,52 @@ const CharSheet = () => {
     { name: "Mutations", value: "mutations" },
   ];
 
+  const invcalc = (encumbrance, placement, placement2) => {
+    return encumbrance.toString().slice(placement, placement2);
+  };
+
   const getEncumbrance = () => {
     let encumbrance = 0;
     for (let element of character.items) {
       encumbrance += element.weight;
     }
-    return <span>{encumbrance}</span>;
+    let soaps = invcalc(encumbrance, -1);
+    let stones = invcalc(encumbrance, -2, -1);
+    let sacks = invcalc(encumbrance, -3, -2);
+    let array = [
+      { amount: sacks, name: "Sacks" },
+      { amount: stones, name: ", Stones" },
+      { amount: soaps, name: ", Soaps" },
+    ];
+    let sackstonesoap = "";
+    for (let element of array) {
+      console.log(element.amount);
+      if (element.amount !== 0 && element.amount !== "") {
+        sackstonesoap += element.name + ": " + element.amount + " ";
+      } else {
+        sackstonesoap += element.name + ": 0";
+      }
+    }
+    return <span>{sackstonesoap}</span>;
   };
 
   return (
     <div>
-      <h4 className="item">
+      <h4 className="outerbox">
         <div className="row entry fullwidth">
           <span className="row entry">Hero Sheet</span>
           <span className="row right">
             <SaveCharModal />
             <ExportCharModal />
-            <FaDiceD20
-              className="button right margin"
-              onClick={() => {
-                randomChar(character);
-              }}
-            />
+            <RandomCharModal />
           </span>
         </div>
       </h4>
-      <div className="item">
+      <div className="outerbox">
         <CharName />
         <StatSheet />
       </div>
-      <div className="item">
+      <div className="outerbox">
         <div className="row entry fullwidth">
           <span>
             <Link
@@ -70,7 +82,7 @@ const CharSheet = () => {
             </Link>
           </span>
         </div>
-        <div className="item">
+        <div className="outerbox">
           <span className="entry tag">Encumbrance: </span>
           <span className="entry">{getEncumbrance()}</span>
         </div>
@@ -83,7 +95,7 @@ const CharSheet = () => {
       </div>
       {categoryArray.map((category, index) => {
         return (
-          <div className="item" key={index}>
+          <div className="outerbox" key={index}>
             <div className="row entry fullwidth">
               <span>
                 <Link

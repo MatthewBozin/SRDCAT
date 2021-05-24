@@ -7,10 +7,10 @@ const NavMaster = () => {
   const [context, setContext] = useContext(Context);
 
   return (
-    <h4 className="item">
+    <h4 className="outerbox">
       <div className="row entry fullwidth">
-        <span className="row entry">SRDCAT</span>
-        <div className="right">
+        <span className="row ghostpadded">SRDCAT</span>
+        <div className="right marginright">
           {navbar.navmasters.map((navmaster, index) => {
             return (
               <Linklet

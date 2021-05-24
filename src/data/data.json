@@ -2186,8 +2186,48 @@
             "crafting":["metal","metal","fuel","fuel"],
             "ranks":["0","1","2","3","4","5"]
         },
-                {
+        {
             "name":"Wheel of Cheese",
+            "tags":["food"],
+            "flavor":"Extra delicious, no need to reinvent.",
+            "description":"Cheese.",
+            "weight": 10,
+            "value":"2",
+            "crafting":["biological","biological"],
+            "ranks":["0","1","2","3","4","5"]
+        },
+        {
+            "name":"Sample1",
+            "tags":["food"],
+            "flavor":"Extra delicious, no need to reinvent.",
+            "description":"Cheese.",
+            "weight": 10,
+            "value":"2",
+            "crafting":["biological","biological"],
+            "ranks":["0","1","2","3","4","5"]
+        },
+        {
+            "name":"Sample2",
+            "tags":["food"],
+            "flavor":"Extra delicious, no need to reinvent.",
+            "description":"Cheese.",
+            "weight": 10,
+            "value":"2",
+            "crafting":["biological","biological"],
+            "ranks":["0","1","2","3","4","5"]
+        },
+        {
+            "name":"Sample3",
+            "tags":["food"],
+            "flavor":"Extra delicious, no need to reinvent.",
+            "description":"Cheese.",
+            "weight": 10,
+            "value":"2",
+            "crafting":["biological","biological"],
+            "ranks":["0","1","2","3","4","5"]
+        },
+        {
+            "name":"Sample4",
             "tags":["food"],
             "flavor":"Extra delicious, no need to reinvent.",
             "description":"Cheese.",

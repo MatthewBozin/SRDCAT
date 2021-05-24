@@ -10,7 +10,7 @@ function Error() {
   ];
   const [error] = useState(s(snippets));
   return (
-    <div className="item">
+    <div className="outerbox">
       <div>{error}</div>
       <div>(insert image of engineer penglings repairing RRYPO)</div>
       <Link className="button bordered" to="/">

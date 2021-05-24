@@ -57,7 +57,7 @@ const Defenses = () => {
   };
 
   return (
-    <div className="item">
+    <div className="outerbox">
       <div className="row entry">DEFENSES</div>
       <div className="bit row entry">
         {defenses.map((defense, index) => {

@@ -11,6 +11,9 @@ stats:
     mcost:
       modifies self on [?]
 
+cards with ranks are set to rank: 1 in data.json
+  in hero sheet, card rank state is preserved
+
 
 
 
