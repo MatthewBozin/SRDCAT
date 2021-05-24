@@ -13,7 +13,7 @@ const CharSlot = (props) => {
   if (char.name === undefined) {
     return (
       <div>
-        <span className="bit item">(empty)</span>
+        <span className="bit outerbox">(empty)</span>
         <button
           onClick={() => {
             saveChar(slot, character);
@@ -27,7 +27,7 @@ const CharSlot = (props) => {
   } else {
     return (
       <div>
-        <span className="bit item">{char.name}</span>
+        <span className="bit outerbox">{char.name}</span>
         <button
           onClick={() => {
             saveChar(slot, character);

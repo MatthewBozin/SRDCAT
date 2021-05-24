@@ -9,7 +9,10 @@ const PlusMinus = (props) => {
 
   const addCard = () => {
     setCharacter(() => {
-      character[context.collections].push(props.card);
+      let withranks = props.card;
+      withranks.savedrank = 0;
+      character[context.collections].push(withranks);
+      console.log(character[context.collections]);
 
       let jsonArray = character[context.collections].map(JSON.stringify);
       let uniqueSet = new Set(jsonArray);
@@ -30,20 +33,23 @@ const PlusMinus = (props) => {
 
   if (props.form === "plus") {
     return (
-      <button className="bit right button bordered padded2 margin">
-        <FaPlus className="bpad" onClick={addCard} />
+      <button
+        className="bit right button bordered padded2 margin"
+        onClick={addCard}
+      >
+        <FaPlus className="bpad" />
       </button>
     );
   }
   if (props.form === "minus") {
     return (
-      <button className="bit right button bordered padded2 margin">
-        <FaMinus
-          className="bpad"
-          onClick={() => {
-            deleteCard();
-          }}
-        />
+      <button
+        className="bit right button bordered padded2 margin"
+        onClick={() => {
+          deleteCard();
+        }}
+      >
+        <FaMinus className="bpad" />
       </button>
     );
   }

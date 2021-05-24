@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Table from "./Table";
+import Character from "../data/character.js";
 
 const Ranks = (props) => {
-  const [index, setIndex] = useState(0);
+  const ifRank = () => {
+    if (props.savedrank !== undefined) {
+      return props.savedrank;
+    } else {
+      return 0;
+    }
+  };
+
+  const [character, setCharacter] = useContext(Character);
+  const [index, setIndex] = useState(ifRank());
   const rank = props.ranks[index];
 
   const checkNumber = (number) => {
@@ -16,15 +26,16 @@ const Ranks = (props) => {
     return number;
   };
 
-  const next = () => {
+  const modify = (mod) => {
     setIndex((index) => {
-      let newIndex = index + 1;
-      return checkNumber(newIndex);
-    });
-  };
-  const prev = () => {
-    setIndex((index) => {
-      let newIndex = index - 1;
+      let newIndex = index + mod;
+      if (props.deleteFrom !== "none" && props.deleteFrom !== "single") {
+        setCharacter(() => {
+          character[props.category][props.placement].savedrank = newIndex;
+          let newCharacter = JSON.parse(JSON.stringify(character));
+          return newCharacter;
+        });
+      }
       return checkNumber(newIndex);
     });
   };
@@ -47,10 +58,20 @@ const Ranks = (props) => {
     if (props.ranks.length > 1) {
       return (
         <span>
-          <button className="button bordered padded" onClick={prev}>
+          <button
+            className="button bordered padded"
+            onClick={() => {
+              modify(-1);
+            }}
+          >
             <FaChevronLeft className="bpad" />
           </button>
-          <button className="button bordered padded" onClick={next}>
+          <button
+            className="button bordered padded"
+            onClick={() => {
+              modify(1);
+            }}
+          >
             <FaChevronRight className="bpad" />
           </button>
         </span>

@@ -28,47 +28,47 @@ const Collections = () => {
     return newData;
   };
 
-  if (context.search !== "") {
-    let filtered = filter("tags");
-    if (filtered.length === 0) {
-      filtered = filter("name");
-      console.log(filtered);
-    }
+  const ifSearch = () => {
+    if (context.search !== "") {
+      let filtered = filter("tags");
+      if (filtered.length === 0) {
+        filtered = filter("name");
+        console.log(filtered);
+      }
 
-    if (filtered.length === 0) {
+      if (filtered.length === 0) {
+        return (
+          <div className="outerbox">Your search didn't return any hits.</div>
+        );
+      }
+
       return (
-        <div>
-          <Navbar />
-          <Search />
-          <div className="item">Your search didn't return any hits.</div>
-        </div>
-      );
-    }
-
-    return (
-      <div>
-        <Navbar />
-        <Search />
         <CardList
           content={filtered}
           form={"plus"}
           deleteFrom={"none"}
           category={context.collections}
         />
-      </div>
-    );
-  }
+      );
+    }
 
-  return (
-    <div>
-      <Navbar />
-      <Search />
+    return (
       <CardList
         content={data[context.collections]}
         form={"plus"}
         deleteFrom={"none"}
         category={context.collections}
       />
+    );
+  };
+
+  return (
+    <div>
+      <div className="outerbox">
+        <Navbar />
+        <Search />
+      </div>
+      {ifSearch()}
     </div>
   );
 };

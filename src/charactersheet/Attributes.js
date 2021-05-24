@@ -63,7 +63,7 @@ const Stats = () => {
   };
 
   return (
-    <div className="item">
+    <div className="outerbox">
       <div className="row entry">ATTRIBUTES</div>
       <div className="bit row entry">
         {SEACAT.map((stat, index) => {

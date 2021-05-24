@@ -16,6 +16,7 @@ const CardList = (props) => {
               form={props.form}
               placement={placement}
               deleteFrom={props.deleteFrom}
+              category={props.category}
             />
           );
         })}

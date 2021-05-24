@@ -16,16 +16,14 @@ const Card = (props) => {
     setExpanded(!status);
   };
 
-  const {
-    name,
-    tags,
-    flavor,
-    description,
-    ranks,
-    table,
-    value,
-    crafting,
-  } = props.card;
+  const { name, tags, flavor, description, ranks, table, value, crafting } =
+    props.card;
+
+  let savedrank = 0;
+
+  if (props.card.savedrank !== undefined) {
+    savedrank = props.card.savedrank;
+  }
 
   const ifItem2 = () => {
     if (value !== undefined && crafting !== undefined) {
@@ -51,14 +49,14 @@ const Card = (props) => {
 
   return (
     <Col xs={12} md={6} lg={6} xl={4}>
-      <article className="item">
+      <article className="outerbox">
         <div className="row">
           <Name
             name={name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="right">
+          <span className="right marginright">
             <PlusMinus
               card={props.card}
               form={props.form}
@@ -108,7 +106,13 @@ const Card = (props) => {
                 </span>
               ) : (
                 <span>
-                  <Ranks ranks={ranks} deleteFrom={props.deleteFrom} />
+                  <Ranks
+                    ranks={ranks}
+                    savedrank={savedrank}
+                    deleteFrom={props.deleteFrom}
+                    placement={props.placement}
+                    category={props.category}
+                  />
                 </span>
               )}
             </div>

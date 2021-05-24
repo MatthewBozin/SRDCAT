@@ -13,7 +13,7 @@ const SaveCharModal = () => {
 
   const modalOpening = () => {
     setModalOpen(true);
-    console.log(localStorage);
+    console.log(localStorage.SRDcharacters);
     if (localStorage.getItem("SRDcharacters") === undefined) {
       localStorage.setItem("SRDcharacters", []);
     }
@@ -74,7 +74,7 @@ const SaveCharModal = () => {
             if (char.name === undefined) {
               return (
                 <div key={index}>
-                  <span className="bit item">(empty)</span>
+                  <span className="bit outerbox">(empty)</span>
                   <button
                     onClick={() => {
                       saveChar(char.slot, character);

@@ -31,27 +31,28 @@ const Search = () => {
   };
 
   return (
-    <h4 className="item">
-      <div className="row fullwidth name">
-        <form className="fullheight" onSubmit={handleSubmit}>
-          <input
-            className="button bordered marginleft"
-            placeholder={setPlaceholder()}
-            type="text"
-            value={data}
-            onChange={(e) => setData(e.target.value)}
-          />
-          <input
-            className="button bordered marginleft"
-            type="submit"
-            value="Search"
-          />
-        </form>
-        <button className="button bordered marginleft" onClick={resetSearch}>
+    <div className="row name entry fullwidth">
+      <form className="fullheight flex fullwidth" onSubmit={handleSubmit}>
+        <input
+          className="button bordered flexgrow2"
+          placeholder={setPlaceholder()}
+          type="text"
+          value={data}
+          onChange={(e) => setData(e.target.value)}
+        />
+        <input
+          className="button bordered marginleft"
+          type="submit"
+          value="Search"
+        />
+        <button
+          className="button bordered marginleft marginright"
+          onClick={resetSearch}
+        >
           Reset
         </button>
-      </div>
-    </h4>
+      </form>
+    </div>
   );
 };
 
