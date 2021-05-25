@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { FaDiceD20 } from "react-icons/fa";
 import Character from "../data/character.js";
-import data from "../data/data.json";
 import { s, r } from "../data/exports.js";
+import architecture from "../data/architecture.json";
 
 const RandomCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,72 +17,7 @@ const RandomCharModal = () => {
     setModalOpen(false);
   };
 
-  const charLevels = {
-    specialextra: {
-      skills: 1,
-      traits: 0,
-      LEVEL: 0,
-      PRO: 1,
-      actions: 2,
-      MCOST: 2,
-      stats: 5,
-      statlimit: 3,
-      LIFE: 5,
-      HERODICE: 0,
-      XP: 0,
-      gear: false,
-      items: 1,
-      CASH: 30,
-    },
-    pulphero: {
-      skills: 3,
-      traits: 2,
-      LEVEL: 3,
-      PRO: 2,
-      actions: 2,
-      MCOST: 2,
-      stats: 7,
-      statlimit: 4,
-      LIFE: 20,
-      HERODICE: 3,
-      XP: 999,
-      gear: false,
-      items: 4,
-      CASH: 300,
-    },
-    epiclegend: {
-      skills: 6,
-      traits: 5,
-      LEVEL: 6,
-      PRO: 3,
-      actions: 2,
-      MCOST: 2,
-      stats: 9,
-      statlimit: 5,
-      LIFE: 38,
-      HERODICE: 6,
-      XP: 9999,
-      gear: true,
-      items: 4,
-      CASH: 3000,
-    },
-    avatar: {
-      skills: 9,
-      traits: 9,
-      LEVEL: 9,
-      PRO: 4,
-      actions: 2,
-      MCOST: 2,
-      stats: 11,
-      statlimit: 5,
-      LIFE: 60,
-      HERODICE: 9,
-      XP: 99999,
-      gear: true,
-      items: 6,
-      CASH: 30000,
-    },
-  };
+  const charLevels = architecture.charLevels;
 
   const charGen = (heroType) => {
     let levels = charLevels[heroType];
@@ -104,7 +39,8 @@ const RandomCharModal = () => {
     for (let collection of collections) {
       newchar[collection] = [];
       for (let i = 0; i < levels[collection]; i++) {
-        let selection = s(data[collection]);
+        let data = require(`../data/collections/` + collection);
+        let selection = s(data.data);
         if (selection.table !== undefined) {
           selection.savedresult = r(selection.table.length);
         }
@@ -117,7 +53,7 @@ const RandomCharModal = () => {
               }
             }
           } else {
-            let newselection = s(data[collection]);
+            let newselection = s(data.data);
             //makeshift solution for now, might need while statement
             newchar[collection].push(newselection);
           }

@@ -3,10 +3,9 @@ import Context from "../data/context";
 
 const Search = () => {
   const [context, setContext] = useContext(Context);
-  const [data, setData] = useState("");
+  const [data, setData] = useState("Enter tag or name");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const submitSearch = () => {
     let context2 = context;
     context2.search = data;
     setContext(() => {
@@ -18,36 +17,40 @@ const Search = () => {
   const resetSearch = () => {
     let context2 = context;
     context2.search = "";
+    console.log(context2);
+    document.getElementById("searchbox").value = "";
+    setData(() => {
+      return "Enter tag or name";
+    });
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });
   };
 
-  const setPlaceholder = () => {
-    if (context.search === "") {
-      return "Enter tag or name";
-    }
-    return context.search;
-  };
-
   return (
     <div className="row mleft5px fullwidth">
-      <form className="flex fullwidth" onSubmit={handleSubmit}>
+      <div className="flex fullwidth">
         <input
+          id="searchbox"
           className="button bordered link flexgrow2"
-          placeholder={setPlaceholder()}
+          placeholder={data}
           type="text"
-          value={data}
           onChange={(e) => setData(e.target.value)}
         />
-        <input className="button bordered link" type="submit" value="Search" />
+        <button
+          className="button bordered link"
+          onClick={submitSearch}
+          value="Search"
+        >
+          Submit
+        </button>
         <button
           className="button bordered link mright12px"
           onClick={resetSearch}
         >
           Reset
         </button>
-      </form>
+      </div>
     </div>
   );
 };

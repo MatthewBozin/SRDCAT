@@ -3,15 +3,15 @@ import Navbar from "../navigation/Navbar";
 import Search from "../cards/Search";
 import CardList from "../cards/CardList";
 import Context from "../data/context";
-import data from "../data/data.json";
 
 const Collections = () => {
   const [context] = useContext(Context);
 
   const filter = (filterBy) => {
-    let contextData = data[context.collections];
+    let contextData = require(`../data/collections/` + context.collections);
+    console.log(contextData);
     let newData = [];
-    contextData.map((element) => {
+    contextData.data.map((element) => {
       let toFilter;
       if (typeof element[filterBy] === "string") {
         toFilter = element[filterBy].toLowerCase();
@@ -29,6 +29,8 @@ const Collections = () => {
   };
 
   const ifSearch = () => {
+    let data = require(`../data/collections/` + context.collections);
+    console.log(data);
     if (context.search !== "") {
       let filtered = filter("tags");
       if (filtered.length === 0) {
@@ -54,7 +56,7 @@ const Collections = () => {
 
     return (
       <CardList
-        content={data[context.collections]}
+        content={data.data}
         form={"plus"}
         deleteFrom={"none"}
         category={context.collections}
