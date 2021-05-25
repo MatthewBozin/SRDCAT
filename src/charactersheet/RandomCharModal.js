@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import { FaDiceD20 } from "react-icons/fa";
 import Character from "../data/character.js";
 import data from "../data/data.json";
-import { s } from "../data/exports.js";
+import { s, r } from "../data/exports.js";
 
 const RandomCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -105,6 +105,9 @@ const RandomCharModal = () => {
       newchar[collection] = [];
       for (let i = 0; i < levels[collection]; i++) {
         let selection = s(data[collection]);
+        if (selection.table !== undefined) {
+          selection.savedresult = r(selection.table.length);
+        }
         selection.savedrank = 0;
         if (newchar[collection].includes(selection)) {
           if (selection.ranks.length > 1) {
