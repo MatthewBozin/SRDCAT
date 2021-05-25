@@ -4,7 +4,7 @@ import Flavor from "../cards/Flavor";
 import Description from "../cards/Description";
 import Col from "react-bootstrap/Col";
 
-const ModalCard = (props) => {
+const RandomCharCard = (props) => {
   const [expanded, setExpanded] = useState(false);
 
   const expandCollapse = (status) => {
@@ -42,7 +42,7 @@ const ModalCard = (props) => {
             })}
             <hr></hr>
             <button
-              className="button bordered padded5px margin5px"
+              className="button bordered padded5px fullwidth"
               onClick={() => {
                 buttonfunction(buttonprop);
               }}
@@ -56,4 +56,4 @@ const ModalCard = (props) => {
   );
 };
 
-export default ModalCard;
+export default RandomCharCard;

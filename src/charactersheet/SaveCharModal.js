@@ -2,7 +2,8 @@ import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { FaSave } from "react-icons/fa";
 import Character from "../data/character.js";
-import CharSlot from "./CharSlot.js";
+import SaveCharCard from "./SaveCharCard.js";
+import Col from "react-bootstrap/Col";
 
 const SaveCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -26,6 +27,16 @@ const SaveCharModal = () => {
     let array = characters;
     array.push({ slot: characters.length });
     setCharacters(JSON.parse(JSON.stringify(array)));
+  };
+
+  const addChar = (charInfo) => {
+    let array = characters;
+    charInfo.slot = characters.length;
+    array.push(charInfo);
+    setCharacters(() => {
+      return JSON.parse(JSON.stringify(array));
+    });
+    localStorage.setItem("SRDcharacters", JSON.stringify(array));
   };
 
   const saveChar = (slot, charInfo) => {
@@ -64,29 +75,37 @@ const SaveCharModal = () => {
         }}
       />
       <Modal show={modalOpen} onHide={closeModal}>
-        <Modal.Header className="modalbackground">
-          Manage Characters
-        </Modal.Header>
+        <Modal.Header className="modalbackground">Manage Heroes</Modal.Header>
         <Modal.Body className="modalbackground">
           {characters.map((char, index) => {
             let slot = JSON.parse(JSON.stringify(index));
             if (char.name === undefined) {
               return (
-                <div key={index}>
-                  <span className="padded5px outerbox">(empty)</span>
-                  <button
-                    onClick={() => {
-                      saveChar(char.slot, character);
-                    }}
-                    className="button bordered padded5px margin5px"
-                  >
-                    save
-                  </button>
-                </div>
+                <Col>
+                  <div key={index} className="outerbox">
+                    <div className="padded5px">Empty Hero Slot</div>
+                    <button
+                      onClick={() => {
+                        saveChar(char.slot, character);
+                      }}
+                      className="button bordered padded5px margin5px"
+                    >
+                      save
+                    </button>
+                    <button
+                      onClick={() => {
+                        deleteChar(char.slot, character);
+                      }}
+                      className="button bordered padded5px margin5px"
+                    >
+                      delete
+                    </button>
+                  </div>
+                </Col>
               );
             } else {
               return (
-                <CharSlot
+                <SaveCharCard
                   key={index}
                   char={char}
                   saveChar={saveChar}
@@ -97,14 +116,16 @@ const SaveCharModal = () => {
               );
             }
           })}
-          <button
-            className="button bordered padded5px margin5px"
-            onClick={() => {
-              addSlot();
-            }}
-          >
-            New
-          </button>
+          <Col>
+            <button
+              className="button bordered padded5px fullwidth"
+              onClick={() => {
+                addChar(character);
+              }}
+            >
+              Save Hero
+            </button>
+          </Col>
         </Modal.Body>
       </Modal>
     </div>
