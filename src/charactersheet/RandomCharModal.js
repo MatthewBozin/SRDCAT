@@ -4,7 +4,7 @@ import { FaDiceD20 } from "react-icons/fa";
 import Character from "../data/character.js";
 import { s, r } from "../data/exports.js";
 import architecture from "../data/architecture.json";
-import ModalCard from "../modules/ModalCard.js";
+import RandomCharCard from "./RandomCharCard.js";
 
 const RandomCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -168,7 +168,7 @@ const RandomCharModal = () => {
         <Modal.Body className="modalbackground">
           {charTypes.map((type, index) => {
             return (
-              <ModalCard
+              <RandomCharCard
                 name={type.name}
                 flavor={type.flavor}
                 description={type.description}

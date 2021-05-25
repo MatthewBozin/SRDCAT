@@ -18,9 +18,15 @@ function App() {
     search: "",
   });
   const [character, setCharacter] = useState(currentChar);
-  if (localStorage.getItem("SRDcharacters") === undefined) {
-    localStorage.setItem("SRDcharacters", []);
+  if (
+    localStorage.getItem("SRDcharacters") === undefined ||
+    localStorage.getItem("SRDcharacters") === []
+  ) {
+    let array = [];
+    array.push(currentChar);
+    localStorage.setItem("SRDcharacters", JSON.stringify(array));
   }
+  console.log(localStorage);
   return (
     <div>
       <Context.Provider value={[context, setContext]}>
