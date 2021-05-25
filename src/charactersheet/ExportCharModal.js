@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { FaFileExport } from "react-icons/fa";
 import Character from "../data/character.js";
+import architecture from "../data/architecture.json";
 
 const SaveCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -16,29 +17,7 @@ const SaveCharModal = () => {
     setModalOpen(false);
   };
 
-  let properties = [
-    "name",
-    "STR",
-    "END",
-    "AGI",
-    "CHA",
-    "AUR",
-    "THO",
-    "HA",
-    "KA",
-    "BA",
-    "LIFE",
-    "LEVEL",
-    "PRO",
-    "MCOST",
-    "HERODICE",
-    "XP",
-    "CASH",
-    "skills",
-    "traits",
-    "mutations",
-    "items",
-  ];
+  let properties = architecture.properties;
 
   const exportTxt = () => {
     let txtstring = "";
@@ -57,7 +36,16 @@ const SaveCharModal = () => {
             }
             stringcard += "\n";
           }
-          stringcard += "rank: " + card.ranks[card.savedrank] + "\n";
+          for (let i = 0; i < card.ranks.length; i++) {
+            let i2 = i + 1;
+            if (i <= card.savedrank) {
+              stringcard += "rank " + i2 + ": " + card.ranks[i] + "\n";
+            }
+            if (i <= card.savedrank - 1) {
+              stringcard += "...\n";
+            }
+          }
+          //stringcard += "rank: " + card.ranks[card.savedrank] + "\n";
           stringprop +=
             stringcard + "----------------------------------------\n";
         }
@@ -129,10 +117,9 @@ const SaveCharModal = () => {
       />
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          Export Character As
+          Export {character.name} As
         </Modal.Header>
         <Modal.Body className="modalbackground">
-          {character.name}
           <button
             className="button bordered padded5px margin5px"
             onClick={() => {
