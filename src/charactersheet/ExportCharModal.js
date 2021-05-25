@@ -50,7 +50,12 @@ const SaveCharModal = () => {
           let stringcard = "";
           stringcard += "name: " + card.name + "\n";
           if (card.description !== undefined) {
-            stringcard += "description: " + card.description + "\n";
+            stringcard += "description: " + card.description;
+            if (card.table !== undefined) {
+              let result = card.table[card.savedresult].toLowerCase();
+              stringcard += " " + result + ".";
+            }
+            stringcard += "\n";
           }
           stringcard += "rank: " + card.ranks[card.savedrank] + "\n";
           stringprop +=
@@ -94,7 +99,8 @@ const SaveCharModal = () => {
         csvstring += process(charProperty);
       }
     }
-    setCharExport(csvstring);
+    //setCharExport(csvstring);
+    setCharExport("Feature under construction.");
   };
 
   const ifCharExport = () => {

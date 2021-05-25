@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { r, rdamage } from "../data/exports.js";
 import { FaDiceD20 } from "react-icons/fa";
+import Character from "../data/character.js";
 
 const Table = (props) => {
-  const [index, setIndex] = useState(0);
+  let placement = r(props.table.length);
+  console.log(props.savedresult);
+  if (props.savedresult !== undefined) {
+    placement = props.savedresult;
+  }
+  const [index, setIndex] = useState(placement);
   const entry = props.table[index];
   const [damage, setDamage] = useState("");
+  const [character, setCharacter] = useContext(Character);
 
   const roll = () => {
+    let newplacement = r(props.table.length);
+    if (props.savedresult !== undefined) {
+      let newchar = character;
+      newchar[props.category][props.placement].savedresult = newplacement;
+      setCharacter(newchar);
+    }
     setIndex((index) => {
-      return r(props.table.length);
+      return newplacement;
     });
   };
 

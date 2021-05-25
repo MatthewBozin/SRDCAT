@@ -9,9 +9,13 @@ const PlusMinus = (props) => {
 
   const addCard = () => {
     setCharacter(() => {
-      let withranks = props.card;
-      withranks.savedrank = 0;
-      character[context.collections].push(withranks);
+      let instanced = props.card;
+      if (instanced.table !== undefined) {
+        console.log(instanced.table);
+        instanced.savedresult = 0;
+      }
+      instanced.savedrank = 0;
+      character[context.collections].push(instanced);
       console.log(character[context.collections]);
 
       let jsonArray = character[context.collections].map(JSON.stringify);

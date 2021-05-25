@@ -20,9 +20,13 @@ const Card = (props) => {
     props.card;
 
   let savedrank = 0;
-
   if (props.card.savedrank !== undefined) {
     savedrank = props.card.savedrank;
+  }
+
+  let savedresult = undefined;
+  if (props.card.savedresult !== undefined) {
+    savedresult = props.card.savedresult;
   }
 
   const ifItem2 = () => {
@@ -95,7 +99,12 @@ const Card = (props) => {
             )}
             {table !== undefined && (
               <span>
-                <Table table={table} />
+                <Table
+                  table={table}
+                  savedresult={savedresult}
+                  placement={props.placement}
+                  category={props.category}
+                />
               </span>
             )}
             <hr></hr>
