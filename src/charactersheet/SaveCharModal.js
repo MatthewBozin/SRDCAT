@@ -13,7 +13,6 @@ const SaveCharModal = () => {
 
   const modalOpening = () => {
     setModalOpen(true);
-    console.log(localStorage.SRDcharacters);
     if (localStorage.getItem("SRDcharacters") === undefined) {
       localStorage.setItem("SRDcharacters", []);
     }
