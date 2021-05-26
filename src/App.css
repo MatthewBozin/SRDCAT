@@ -114,7 +114,7 @@ hr {
 }
 
 .cardname {
-  font-size: 28px;
+  font-size: 24px;
   margin-left: 15px;
   padding: 5px;
 }
@@ -176,6 +176,10 @@ hr {
 
 .mleft12px {
   margin-left: 12px;
+}
+
+.mright3px {
+  margin-right: 3px;
 }
 
 .mright12px {

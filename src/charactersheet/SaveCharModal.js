@@ -23,12 +23,6 @@ const SaveCharModal = () => {
     setModalOpen(false);
   };
 
-  const addSlot = () => {
-    let array = characters;
-    array.push({ slot: characters.length });
-    setCharacters(JSON.parse(JSON.stringify(array)));
-  };
-
   const addChar = (charInfo) => {
     let array = characters;
     charInfo.slot = characters.length;
