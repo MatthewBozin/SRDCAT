@@ -14,7 +14,7 @@ const ExportCharCard = (props) => {
   const { name, description, method } = props;
 
   return (
-    <Col xs={12} md={6} lg={6} xl={4}>
+    <Col>
       <article className="outerbox">
         <div className="row">
           <Name

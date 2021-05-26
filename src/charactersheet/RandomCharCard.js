@@ -22,7 +22,7 @@ const RandomCharCard = (props) => {
   } = props;
 
   return (
-    <Col xs={12} md={6} lg={6} xl={4}>
+    <Col>
       <article className="outerbox">
         <div className="row">
           <Name
