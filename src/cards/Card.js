@@ -4,10 +4,10 @@ import Tag from "./Tag";
 import Flavor from "./Flavor";
 import Description from "./Description";
 import Ranks from "./Ranks";
-import PlusMinus from "./PlusMinus";
+import AddSubtract from "./AddSubtract";
 import Table from "./Table";
 import Col from "react-bootstrap/Col";
-import { FaHammer, FaRecycle } from "react-icons/fa";
+//import { FaHammer, FaRecycle } from "react-icons/fa";
 
 const Card = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -61,18 +61,18 @@ const Card = (props) => {
             expandCollapse={expandCollapse}
           />
           <span className="rightfloat mright12px">
-            <PlusMinus
+            <AddSubtract
               card={props.card}
               form={props.form}
               placement={props.placement}
               deleteFrom={props.deleteFrom}
             />
-            {props.deleteFrom === "items" && (
+            {/*props.deleteFrom === "items" && (
               <span className="rightfloat mright15px">
                 <FaHammer className="icon" />
                 <FaRecycle className="icon" />
               </span>
-            )}
+            )*/}
           </span>
         </div>
         {expanded === false && (
