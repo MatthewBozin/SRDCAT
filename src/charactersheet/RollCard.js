@@ -2,39 +2,39 @@ import React, { useState } from "react";
 import Name from "../cards/Name";
 import Description from "../cards/Description";
 import Col from "react-bootstrap/Col";
+import { FaDiceD20 } from "react-icons/fa";
 
-const ExportCharCard = (props) => {
+const RollCard = (props) => {
   const [expanded, setExpanded] = useState(false);
 
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
 
-  const { name, description, method } = props;
+  const { name, description, target, method } = props;
 
   return (
     <Col>
       <article className="outerbox">
-        <div className="row">
+        <div className="row fullwidth">
           <Name
             name={name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
+          <FaDiceD20
+            className="icon rightfloat"
+            onClick={() => {
+              method();
+            }}
+          ></FaDiceD20>
         </div>
         {expanded === true && (
           <span>
             <hr></hr>
             <Description description={description} />
             <hr></hr>
-            <button
-              className="button bordered padded5px fullwidth"
-              onClick={() => {
-                method();
-              }}
-            >
-              Export
-            </button>
+            <Description description={"Target: " + target} />
           </span>
         )}
       </article>
@@ -42,4 +42,4 @@ const ExportCharCard = (props) => {
   );
 };
 
-export default ExportCharCard;
+export default RollCard;
