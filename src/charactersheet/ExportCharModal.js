@@ -1,8 +1,9 @@
 import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { FaFileExport } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 import Character from "../data/character.js";
 import architecture from "../data/architecture.json";
+import ExportCharCard from "./ExportCharCard.js";
 
 const SaveCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -72,6 +73,10 @@ const SaveCharModal = () => {
     }
   };
 
+  const exportJson = () => {
+    setCharExport(JSON.stringify(character));
+  };
+
   const exportCsv = () => {
     let csvstring = "";
     for (let property of properties) {
@@ -94,22 +99,56 @@ const SaveCharModal = () => {
   const ifCharExport = () => {
     if (charexport !== "") {
       return (
-        <button
-          className="button bordered padded5px margin5px"
-          onClick={() => {
-            navigator.clipboard.writeText(charexport);
-            //possible nonfunctionality with older browsers?
-          }}
-        >
-          copy
-        </button>
+        <div>
+          <button
+            className="button bordered padded5px fullwidth"
+            onClick={() => {
+              navigator.clipboard.writeText(charexport);
+              //possible nonfunctionality with older browsers?
+            }}
+          >
+            copy
+          </button>
+          <button
+            className="button bordered padded5px fullwidth"
+            onClick={() => {
+              setCharExport("");
+            }}
+          >
+            reset
+          </button>
+        </div>
       );
     }
   };
 
+  const exportTypes = [
+    {
+      name: "Export as .txt",
+      description: "Great for games over Discord!",
+      method: () => {
+        exportTxt();
+      },
+    },
+    {
+      name: "Export as .json",
+      description: "Great for JSON data connectivity between apps!",
+      method: () => {
+        exportJson();
+      },
+    },
+    {
+      name: "Export as .csv",
+      description: "This feature is currently under construction.",
+      method: () => {
+        exportCsv();
+      },
+    },
+  ];
+
   return (
     <div>
-      <FaFileExport
+      <FaFileDownload
         className="icon"
         onClick={() => {
           modalOpening();
@@ -117,33 +156,19 @@ const SaveCharModal = () => {
       />
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          Export {character.name} As
+          {character.name} Export Options
         </Modal.Header>
         <Modal.Body className="modalbackground">
-          <button
-            className="button bordered padded5px margin5px"
-            onClick={() => {
-              exportTxt();
-            }}
-          >
-            .txt
-          </button>
-          <button
-            className="button bordered padded5px margin5px"
-            onClick={() => {
-              setCharExport(JSON.stringify(character));
-            }}
-          >
-            .json
-          </button>
-          <button
-            className="button bordered padded5px margin5px"
-            onClick={() => {
-              exportCsv();
-            }}
-          >
-            .csv
-          </button>
+          {exportTypes.map((type, index) => {
+            return (
+              <ExportCharCard
+                key={index}
+                name={type.name}
+                description={type.description}
+                method={type.method}
+              />
+            );
+          })}
           <br />
           {ifCharExport()}
           <div className={"textwrap"}>{charexport}</div>

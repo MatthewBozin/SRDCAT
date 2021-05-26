@@ -169,6 +169,7 @@ const RandomCharModal = () => {
           {charTypes.map((type, index) => {
             return (
               <RandomCharCard
+                key={index}
                 name={type.name}
                 flavor={type.flavor}
                 description={type.description}
