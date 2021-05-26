@@ -11,9 +11,17 @@ const Resources = () => {
   const [data, setData] = useState(character[modalStat]);
 
   const resources = ["LIFE", "HERODICE", "XP", "CASH"];
-  const amounts = [1, 5, 10];
-  const amounts2 = [-1, -5, -10];
-  const amounts3 = ["+1", "+5", "+10"];
+  const amounts = [
+    [1, 5, 10],
+    [-1, -5, -10],
+    ["+1", "+5", "+10"],
+  ];
+
+  const amounts2 = [
+    [1, 5, 20, 100],
+    [-1, -5, -20, -100],
+    ["+1", "+5", "+20", "+100"],
+  ];
 
   const modalOpenStat = (stat) => {
     setModalOpen(true);
@@ -36,6 +44,70 @@ const Resources = () => {
     if (data !== undefined) {
       character[modalStat] = parseInt(data);
       setCurrentResource(character[modalStat]);
+    }
+  };
+
+  const ifStat1 = (stat) => {
+    if (stat == "XP" || stat == "CASH") {
+      return amounts2[0].map((amount, index) => {
+        return (
+          <button
+            className="button bordered padded5px margin5px flexgrow"
+            key={index}
+            onClick={() => {
+              modResource(amount, modalStat);
+            }}
+          >
+            {amounts2[2][index]}
+          </button>
+        );
+      });
+    } else {
+      return amounts[0].map((amount, index) => {
+        return (
+          <button
+            className="button bordered padded5px margin5px flexgrow"
+            key={index}
+            onClick={() => {
+              modResource(amount, modalStat);
+            }}
+          >
+            {amounts[2][index]}
+          </button>
+        );
+      });
+    }
+  };
+
+  const ifStat2 = (stat) => {
+    if (stat == "XP" || stat == "CASH") {
+      return amounts2[1].map((amount, index) => {
+        return (
+          <button
+            className="button bordered padded5px margin5px flexgrow"
+            key={index}
+            onClick={() => {
+              modResource(amount, modalStat);
+            }}
+          >
+            {amount}
+          </button>
+        );
+      });
+    } else {
+      return amounts[1].map((amount, index) => {
+        return (
+          <button
+            className="button bordered padded5px margin5px flexgrow"
+            key={index}
+            onClick={() => {
+              modResource(amount, modalStat);
+            }}
+          >
+            {amount}
+          </button>
+        );
+      });
     }
   };
 
@@ -79,36 +151,8 @@ const Resources = () => {
               value="Set"
             />
           </form>
-          <div className="flex">
-            {amounts.map((amount, index) => {
-              return (
-                <button
-                  className="button bordered padded5px margin5px flexgrow"
-                  key={index}
-                  onClick={() => {
-                    modResource(amount, modalStat);
-                  }}
-                >
-                  {amounts3[index]}
-                </button>
-              );
-            })}
-          </div>
-          <div className="flex">
-            {amounts2.map((amount, index) => {
-              return (
-                <button
-                  className="button bordered padded5px margin5px flexgrow"
-                  key={index}
-                  onClick={() => {
-                    modResource(amount, modalStat);
-                  }}
-                >
-                  {amount}
-                </button>
-              );
-            })}
-          </div>
+          <div className="flex">{ifStat1(modalStat)}</div>
+          <div className="flex">{ifStat2(modalStat)}</div>
         </Modal.Body>
       </Modal>
     </div>
