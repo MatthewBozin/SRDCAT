@@ -13,6 +13,8 @@ const Stats = () => {
   const [result, setResult] = useState("");
   const [edit, setEdit] = useState(false);
   const [currentStat, setCurrentStat] = useState(character[modalStat]);
+  const [pro, setPro] = useState(false);
+  const [adv, setAdv] = useState("");
 
   const SEACAT = ["STR", "END", "AGI", "CHA", "AUR", "THO"];
 
@@ -57,8 +59,24 @@ const Stats = () => {
     setModalOpen(false);
   };
 
-  const editToggle = (status) => {
-    setEdit(!status);
+  const toggle = (method, status) => {
+    method(!status);
+  };
+
+  const toggleAdv = (input) => {
+    if (input === "+") {
+      if (adv === "+") {
+        setAdv("");
+      } else {
+        setAdv("+");
+      }
+    } else if (input === "-") {
+      if (adv === "-") {
+        setAdv("");
+      } else {
+        setAdv("-");
+      }
+    }
   };
 
   const editStat = (amount, stat) => {
@@ -66,9 +84,36 @@ const Stats = () => {
     setCurrentStat(character[stat]);
   };
 
+  const roll = () => {
+    let result = 0;
+    let total = 0;
+    let text = "";
+    if (adv === "+") {
+      let roll1 = r(20) + 1;
+      let roll2 = r(20) + 1;
+      result = Math.max(roll1, roll2);
+      text = "Results: " + roll1 + ", " + roll2;
+    } else if (adv === "-") {
+      let roll1 = r(20) + 1;
+      let roll2 = r(20) + 1;
+      result = Math.min(roll1, roll2);
+      text = "Results: " + roll1 + ", " + roll2;
+    } else {
+      result = r(20) + 1;
+      text = "Result: " + result;
+    }
+    if (pro === true) {
+      total = result + character.PRO;
+    } else {
+      total = result;
+    }
+    return { result: result, total: total, text: text };
+  };
+
   const test = (target) => {
-    let rollResult = r(20) + 1;
-    let total = rollResult + character[modalStat];
+    let rollData = roll();
+    let rollResult = rollData.result;
+    let rollTotal = rollData.total + character[modalStat];
     let resultString = "";
     if (rollResult === 20 || rollResult === 1) {
       resultString += " Critical ";
@@ -76,22 +121,52 @@ const Stats = () => {
     if (rollResult === target) {
       resultString += "Barely a ";
     }
-    if (total >= target) {
+    if (rollTotal >= target) {
       resultString += "Success";
     } else {
       resultString += "Failure";
     }
-    if (rollResult === 7 && total <= target) {
+    if (rollResult === 7 && rollTotal <= target) {
       resultString += " with a Silver Lining ";
     }
-    if (rollResult === 13 && total >= target) {
+    if (rollResult === 13 && rollTotal >= target) {
       resultString += " with a Drawback ";
     }
 
-    resultString += "! Result: " + rollResult + ". Total: " + total + ".";
+    resultString += "! " + rollData.text + ". Total: " + rollTotal + ".";
     setResult(() => {
       return resultString;
     });
+  };
+
+  const ifTitle = () => {
+    let titleString = "Roll " + modalStat;
+    let calc = character[modalStat];
+    let mod = "";
+    if (pro !== false || adv !== "") {
+      titleString += " with ";
+    }
+    if (pro === true) {
+      titleString += "Proficiency";
+      calc += character.PRO;
+    }
+    if (pro === true && adv !== "") {
+      titleString += " and ";
+    }
+    if (adv === "+") {
+      titleString += "Advantage";
+      mod = "[+]";
+    }
+    if (adv === "-") {
+      titleString += "Disadvantage";
+      mod = "[-]";
+    }
+
+    return (
+      <span className="cardname orangetext">
+        {titleString}: (+{calc}) {mod}
+      </span>
+    );
   };
 
   return (
@@ -114,14 +189,12 @@ const Stats = () => {
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          <span className="cardname orangetext">
-            Roll {modalStat}: (+{character[modalStat]})
-          </span>
+          {ifTitle()}
           <span>
             <FaRegEdit
               className="icon rightfloat"
               onClick={() => {
-                editToggle(edit);
+                toggle(setEdit, edit);
               }}
             ></FaRegEdit>
           </span>
@@ -154,7 +227,7 @@ const Stats = () => {
                   <button
                     className="button bordered padded5px margin5px fullwidth"
                     onClick={() => {
-                      editToggle(edit);
+                      toggle(setEdit, edit);
                     }}
                   >
                     Done
@@ -164,6 +237,34 @@ const Stats = () => {
               <hr></hr>
             </div>
           )}
+          <hr />
+          <div className="flex">
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggle(setPro, pro);
+              }}
+            >
+              PRO
+            </button>
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleAdv("+");
+              }}
+            >
+              [+]
+            </button>
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleAdv("-");
+              }}
+            >
+              [-]
+            </button>
+          </div>
+          <hr />
           <div>
             <div className="center">{result}</div>
             <div>
