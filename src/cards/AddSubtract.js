@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaRegShareSquare, FaRegTrashAlt } from "react-icons/fa";
 import Context from "../data/context";
 import Character from "../data/character";
 
-const PlusMinus = (props) => {
+const AddSubtract = (props) => {
   const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
 
@@ -36,24 +36,18 @@ const PlusMinus = (props) => {
   };
 
   if (props.form === "plus") {
-    return (
-      <button className="plusminus bordered" onClick={addCard}>
-        <FaPlus className="pbottom5px" />
-      </button>
-    );
+    return <FaRegShareSquare className="icon mright12px" onClick={addCard} />;
   }
   if (props.form === "minus") {
     return (
-      <button
-        className="plusminus bordered"
+      <FaRegTrashAlt
+        className="icon mright12px"
         onClick={() => {
           deleteCard();
         }}
-      >
-        <FaMinus className="pbottom5px" />
-      </button>
+      />
     );
   }
 };
 
-export default PlusMinus;
+export default AddSubtract;
