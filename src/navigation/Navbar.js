@@ -5,8 +5,7 @@ import navbar from "../data/navbar.json";
 const Navbar = () => {
   return (
     <h4 className="row mleft5px fullwidth">
-      <span className="row heading">Collections</span>
-      <div className="rightfloat mright12px">
+      <div className="flex mright12px fullwidth">
         {navbar.navlets.map((navlet) => {
           return <Navlet key={navlet.name} navlet={navlet} />;
         })}

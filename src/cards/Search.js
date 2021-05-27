@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import Context from "../data/context";
+import { FaSearch } from "react-icons/fa";
 
 const Search = () => {
   const [context, setContext] = useContext(Context);
@@ -38,17 +39,17 @@ const Search = () => {
           onChange={(e) => setData(e.target.value)}
         />
         <button
-          className="button bordered link"
+          className="button bordered link searchbutton"
           onClick={submitSearch}
           value="Search"
         >
-          Submit
+          <FaSearch />
         </button>
         <button
-          className="button bordered link mright12px"
+          className="button bordered link mright12px searchbutton"
           onClick={resetSearch}
         >
-          Reset
+          <b>C</b>
         </button>
       </div>
     </div>

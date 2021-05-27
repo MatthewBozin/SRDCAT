@@ -112,10 +112,23 @@ hr {
   transition: 0.3s;
 }
 
+.iconbutton {
+  background: #2c2831;
+  color: #fa5c5c;
+  cursor: pointer;
+  transform: scale(1.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
 .cardname {
   font-size: 24px;
   margin-left: 15px;
   padding: 5px;
+}
+
+.searchbutton {
+  min-width: 60px;
 }
 
 /*

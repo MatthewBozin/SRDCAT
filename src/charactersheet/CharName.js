@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import Character from "../data/character.js";
-import { FaPencilAlt } from "react-icons/fa";
+import { FaRegEdit, FaRegCheckSquare } from "react-icons/fa";
 
 function CharName() {
   const [character, setCharacter] = useContext(Character);
@@ -22,27 +22,23 @@ function CharName() {
     if (isForm)
       return (
         <form onSubmit={handleSubmit}>
-          <label>
-            <input
-              className="button bordered padded5px margin5px mleft12px"
-              placeholder="Enter Name"
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
           <input
             className="button bordered padded5px margin5px mleft12px"
-            type="submit"
-            value="Submit"
+            placeholder="Enter Name"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
+          <button className="button clearborder" type="submit" value="Submit">
+            <FaRegCheckSquare className="iconbutton" />
+          </button>
         </form>
       );
     return (
-      <div className="row mleft5px fullwidth">
+      <div className="row mleft5px">
         <span className="bordered padded5px margin5px">{character.name}</span>
         <span>
-          <FaPencilAlt
+          <FaRegEdit
             onClick={() => {
               setIsForm(true);
             }}
@@ -53,7 +49,7 @@ function CharName() {
     );
   };
 
-  return <div className="row mleft5px fullwidth">{nameDisplay()}</div>;
+  return <div className="mleft5px fullwidth">{nameDisplay()}</div>;
 }
 
 export default CharName;
