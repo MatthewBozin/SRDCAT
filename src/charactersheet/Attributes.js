@@ -5,6 +5,7 @@ import { r } from "../data/exports";
 import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import RollCard from "./RollCard.js";
+import architecture from "../data/architecture.json";
 
 const Stats = () => {
   const [character, setCharacter] = useContext(Character);
@@ -17,34 +18,7 @@ const Stats = () => {
 
   const SEACAT = ["STR", "END", "AGI", "CHA", "AUR", "THO"];
 
-  const targets = [
-    {
-      name: "Trivial",
-      description: "Routine, but risk of catastrophic or hilarious failure.",
-      value: 3,
-    },
-    {
-      name: "Easy",
-      description: "Normally no obstacle to a professional.",
-      value: 7,
-    },
-    {
-      name: "Moderate",
-      description: "Even professionals risk failure regularly.",
-      value: 11,
-    },
-    {
-      name: "Difficult",
-      description:
-        "Smart heroes avoid these kinds of tests or seek to stack advantages in their favor before attempting them.",
-      value: 15,
-    },
-    {
-      name: "Extreme",
-      description: "Odds only a desperate professional would attempt.",
-      value: 19,
-    },
-  ];
+  const targets = architecture.targets;
 
   const modalOpenStat = (stat) => {
     setResult(() => {

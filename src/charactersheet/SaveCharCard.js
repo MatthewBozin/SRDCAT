@@ -40,6 +40,7 @@ const SaveCharCard = (props) => {
     { name: "Life", value: "LIFE" },
     { name: "Cash", value: "CASH" },
     { name: "XP", value: "XP" },
+    { name: "Type", value: "type" },
   ];
 
   if (char.name === undefined) {
@@ -97,7 +98,7 @@ const SaveCharCard = (props) => {
               <hr></hr>
               {stats.map((stat, index) => {
                 return (
-                  <div className="padded5px">
+                  <div className="padded5px" key={index}>
                     {stat.name}: {char[stat.value]}
                   </div>
                 );
