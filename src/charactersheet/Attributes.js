@@ -7,12 +7,11 @@ import { FaRegEdit } from "react-icons/fa";
 import RollCard from "./RollCard.js";
 
 const Stats = () => {
-  const [character] = useContext(Character);
+  const [character, setCharacter] = useContext(Character);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("");
   const [result, setResult] = useState("");
   const [edit, setEdit] = useState(false);
-  const [currentStat, setCurrentStat] = useState(character[modalStat]);
   const [pro, setPro] = useState(false);
   const [adv, setAdv] = useState("");
 
@@ -80,8 +79,9 @@ const Stats = () => {
   };
 
   const editStat = (amount, stat) => {
-    character[stat] += parseInt(amount);
-    setCurrentStat(character[stat]);
+    let newChar = character;
+    newChar[stat] += parseInt(amount);
+    setCharacter(JSON.parse(JSON.stringify(newChar)));
   };
 
   const roll = () => {
@@ -127,10 +127,10 @@ const Stats = () => {
       resultString += "Failure";
     }
     if (rollResult === 7 && rollTotal <= target) {
-      resultString += " with a Silver Lining ";
+      resultString += " with a Silver Lining";
     }
     if (rollResult === 13 && rollTotal >= target) {
-      resultString += " with a Drawback ";
+      resultString += " with a Drawback";
     }
 
     resultString += "! " + rollData.text + ". Total: " + rollTotal + ".";
@@ -271,6 +271,7 @@ const Stats = () => {
               {targets.map((target, index) => {
                 return (
                   <RollCard
+                    key={index}
                     name={target.name}
                     description={target.description}
                     target={target.value}
