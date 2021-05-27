@@ -1,10 +1,10 @@
 {
     "navmasters":[
         {
-            "name":"character",
-            "type":"character",
-            "text":"Character",
-            "link":"/character"
+            "name":"herosheet",
+            "type":"herosheet",
+            "text":"Hero Sheet",
+            "link":"/hero"
         },
         {
             "name":"collections",
@@ -15,10 +15,9 @@
     ],
     "navlets":
     [
-        
-        {"name":"mutations","display":"Mutations"},
-        {"name":"traits","display":"Traits"},
+        {"name":"items","display":"Items"},
         {"name":"skills","display":"Skills"},
-        {"name":"items","display":"Items"}
+        {"name":"traits","display":"Traits"},
+        {"name":"mutations","display":"Mutations"}
     ]
 }

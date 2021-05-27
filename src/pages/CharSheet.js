@@ -51,16 +51,11 @@ const CharSheet = () => {
   return (
     <div>
       <div className="outerbox">
-        <div className="row mleft5px fullwidth">
-          <h4 className="row mleft5px">Hero Sheet</h4>
-          <span className="row rightfloat mright12px">
-            <SaveCharModal />
-            <ExportCharModal />
-            <RandomCharModal />
-          </span>
-        </div>
-      </div>
-      <div className="outerbox">
+        <span className="row rightfloat mright12px">
+          <SaveCharModal />
+          <ExportCharModal />
+          <RandomCharModal />
+        </span>
         <CharName />
         <StatSheet />
       </div>
