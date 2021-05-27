@@ -27,8 +27,11 @@ const Resources = () => {
   };
 
   const modResource = (amount, resource) => {
-    character[resource] += parseInt(amount);
-    setCurrentResource(character[resource]);
+    //character[resource] += parseInt(amount);
+    //setCurrentResource(character[resource]);
+    let newChar = character;
+    newChar[resource] += parseInt(amount);
+    setCharacter(JSON.parse(JSON.stringify(newChar)));
   };
 
   const handleSubmit = (e) => {
@@ -36,8 +39,11 @@ const Resources = () => {
     let id = "modalform" + character[modalStat];
     document.getElementById(id).value = "";
     if (data !== undefined) {
-      character[modalStat] = parseInt(data);
-      setCurrentResource(character[modalStat]);
+      //character[modalStat] = parseInt(data);
+      //setCurrentResource(character[modalStat]);
+      let newChar = character;
+      newChar[modalStat] += parseInt(data);
+      setCharacter(JSON.parse(JSON.stringify(newChar)));
     }
   };
 

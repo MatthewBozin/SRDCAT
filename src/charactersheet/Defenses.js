@@ -4,22 +4,51 @@ import Modal from "react-bootstrap/Modal";
 import { r } from "../data/exports";
 import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
+import Defense from "./Defense.js";
 
 const Defenses = () => {
-  const [character] = useContext(Character);
+  const [character, setCharacter] = useContext(Character);
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalStat, setModalStat] = useState("");
+  const [modalStat, setModalStat] = useState("HA");
   const [result, setResult] = useState("");
   const [edit, setEdit] = useState(false);
   const [currentStat, setCurrentStat] = useState(character[modalStat]);
 
-  const defenses = ["HA", "KA", "BA"];
+  const defenses = {
+    HA: {
+      name: "HA",
+      substats: ["STR", "AGI"],
+    },
+    KA: {
+      name: "KA",
+      substats: ["AUR", "THO"],
+    },
+    BA: {
+      name: "BA",
+      substats: ["CHA", "END"],
+    },
+  };
+
+  const deforder = ["HA", "KA", "BA"];
+
   const bonuses = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
     [9, 10],
   ];
+
+  const calcDefense = (defense) => {
+    console.log(modalStat);
+    console.log(defense);
+    let substats = defense.substats;
+    let total = 0;
+    total += Math.max(character[substats[0]], character[substats[1]]);
+    total += character.PRO;
+    total += character[defense.name];
+    console.log(total);
+    return total;
+  };
 
   const modalOpenStat = (stat) => {
     setResult(() => {
@@ -62,16 +91,16 @@ const Defenses = () => {
     <div className="outerbox">
       <div className="row mleft5px">DEFENSES</div>
       <div className="padded5px row mleft5px">
-        {defenses.map((defense, index) => {
+        {deforder.map((defense, index) => {
           return (
             <button
               className="button bordered padded5px margin5px"
               key={index}
               onClick={() => {
-                modalOpenStat(defense);
+                modalOpenStat(defenses[defense].name);
               }}
             >
-              <Stat stat={defense} />
+              <Defense defense={defenses[defense]} />
             </button>
           );
         })}
@@ -79,7 +108,7 @@ const Defenses = () => {
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           <span className="cardname orangetext center">
-            {modalStat} save: ({character[modalStat]})
+            {modalStat} save: ({calcDefense(defenses[modalStat])})
           </span>
           <span>
             <FaRegEdit
@@ -95,7 +124,7 @@ const Defenses = () => {
             //flex these
             <div>
               <div className="outerbox">
-                <div className="cardname center">Edit Stat</div>
+                <div className="cardname center">Edit Defense</div>
                 <div className="flex">
                   <button
                     className="button bordered padded5px margin5px flexgrow"
@@ -132,7 +161,7 @@ const Defenses = () => {
           <div>
             {bonuses.map((bonusrow, index) => {
               return (
-                <div className="flex">
+                <div className="flex" key={index}>
                   {bonusrow.map((bonus, index) => {
                     return (
                       <button
