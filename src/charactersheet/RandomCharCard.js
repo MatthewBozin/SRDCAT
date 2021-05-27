@@ -38,7 +38,11 @@ const RandomCharCard = (props) => {
             <Description description={description} />
             <hr></hr>
             {stats.map((stat, index) => {
-              return <div className="padded5px">{stat}</div>;
+              return (
+                <div key={index} className="padded5px">
+                  {stat}
+                </div>
+              );
             })}
             <hr></hr>
             <button

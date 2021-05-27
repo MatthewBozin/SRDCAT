@@ -7,7 +7,6 @@ const Resources = () => {
   const [character, setCharacter] = useContext(Character);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("");
-  const [currentResource, setCurrentResource] = useState(character[modalStat]);
   const [data, setData] = useState(character[modalStat]);
 
   const stats = ["LEVEL", "PRO", "MCOST"];

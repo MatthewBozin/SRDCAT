@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
-import Stat from "./Stat";
 import Modal from "react-bootstrap/Modal";
 import { r } from "../data/exports";
 import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import Defense from "./Defense.js";
+import architecture from "../data/architecture.json";
 
 const Defenses = () => {
   const [character, setCharacter] = useContext(Character);
@@ -14,20 +14,7 @@ const Defenses = () => {
   const [edit, setEdit] = useState(false);
   const [currentStat, setCurrentStat] = useState(character[modalStat]);
 
-  const defenses = {
-    HA: {
-      name: "HA",
-      substats: ["STR", "AGI"],
-    },
-    KA: {
-      name: "KA",
-      substats: ["AUR", "THO"],
-    },
-    BA: {
-      name: "BA",
-      substats: ["CHA", "END"],
-    },
-  };
+  const defenses = architecture.defenses;
 
   const deforder = ["HA", "KA", "BA"];
 

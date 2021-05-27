@@ -1,114 +1,190 @@
 {
-    "properties": [
-        "name",
-        "STR",
-        "END",
-        "AGI",
-        "CHA",
-        "AUR",
-        "THO",
-        "HA",
-        "KA",
-        "BA",
-        "LIFE",
-        "LEVEL",
-        "PRO",
-        "MCOST",
-        "HERODICE",
-        "XP",
-        "CASH",
-        "skills",
-        "traits",
-        "mutations",
-        "items"
-    ],
-    "charLevels": {
-        "specialextra": {
-          "skills": 1,
-          "traits": 0,
-          "LEVEL": 0,
-          "PRO": 1,
-          "actions": 2,
-          "MCOST": 2,
-          "stats": 5,
-          "statlimit": 3,
-          "LIFE": 5,
-          "HERODICE": 0,
-          "XP": 0,
-          "gear": false,
-          "items": 1,
-          "CASH": 30
-        },
-        "pulphero": {
-          "skills": 3,
-          "traits": 2,
-          "LEVEL": 3,
-          "PRO": 2,
-          "actions": 2,
-          "MCOST": 2,
-          "stats": 7,
-          "statlimit": 4,
-          "LIFE": 20,
-          "HERODICE": 3,
-          "XP": 999,
-          "gear": false,
-          "items": 4,
-          "CASH": 300
-        },
-        "epiclegend": {
-          "skills": 6,
-          "traits": 5,
-          "LEVEL": 6,
-          "PRO": 3,
-          "actions": 2,
-          "MCOST": 2,
-          "stats": 9,
-          "statlimit": 5,
-          "LIFE": 38,
-          "HERODICE": 6,
-          "XP": 9999,
-          "gear": true,
-          "items": 4,
-          "CASH": 3000
-        },
-        "avatar": {
-          "skills": 9,
-          "traits": 9,
-          "LEVEL": 9,
-          "PRO": 4,
-          "actions": 2,
-          "MCOST": 2,
-          "stats": 11,
-          "statlimit": 5,
-          "LIFE": 60,
-          "HERODICE": 9,
-          "XP": 99999,
-          "gear": true,
-          "items": 6,
-          "CASH": 30000
-        }
-    },
-    "currentChar": {
-      "name": "Akres Sarsot",
-      "STR": 1,
-      "END": 1,
-      "AGI": 1,
-      "CHA": 1,
-      "AUR": 1,
-      "THO": 1,
-      "HA": 10,
-      "KA": 10,
-      "BA": 10,
-      "LIFE": 20,
-      "LEVEL": 1,
+  "properties": [
+      "name",
+      "STR",
+      "END",
+      "AGI",
+      "CHA",
+      "AUR",
+      "THO",
+      "HA",
+      "KA",
+      "BA",
+      "LIFE",
+      "LEVEL",
+      "PRO",
+      "MCOST",
+      "HERODICE",
+      "XP",
+      "CASH",
+      "skills",
+      "traits",
+      "mutations",
+      "items"
+  ],
+  "charLevels": {
+    "specialextra": {
+      "name": "Special Extra",
+      "skills": 1,
+      "traits": 0,
+      "LEVEL": 0,
       "PRO": 1,
-      "MCOST": 3,
+      "actions": 2,
+      "MCOST": 2,
+      "stats": 5,
+      "statlimit": 3,
+      "LIFE": 5,
       "HERODICE": 0,
-      "CASH": 0,
       "XP": 0,
-      "skills": [],
-      "traits": [],
-      "mutations": [],
-      "items": []
-  }
+      "gear": false,
+      "items": 1,
+      "CASH": 30
+    },
+    "pulphero": {
+      "name": "Pulp Hero",
+      "skills": 3,
+      "traits": 2,
+      "LEVEL": 3,
+      "PRO": 2,
+      "actions": 2,
+      "MCOST": 2,
+      "stats": 7,
+      "statlimit": 4,
+      "LIFE": 20,
+      "HERODICE": 3,
+      "XP": 999,
+      "gear": false,
+      "items": 4,
+      "CASH": 300
+    },
+    "epiclegend": {
+      "name": "Epic Legend",
+      "skills": 6,
+      "traits": 5,
+      "LEVEL": 6,
+      "PRO": 3,
+      "actions": 2,
+      "MCOST": 2,
+      "stats": 9,
+      "statlimit": 5,
+      "LIFE": 38,
+      "HERODICE": 6,
+      "XP": 9999,
+      "gear": true,
+      "items": 4,
+      "CASH": 3000
+    },
+    "avatar": {
+      "name": "Avatar of the Final Form",
+      "skills": 9,
+      "traits": 9,
+      "LEVEL": 9,
+      "PRO": 4,
+      "actions": 2,
+      "MCOST": 2,
+      "stats": 11,
+      "statlimit": 5,
+      "LIFE": 60,
+      "HERODICE": 9,
+      "XP": 99999,
+      "gear": true,
+      "items": 6,
+      "CASH": 30000
+    }
+  },
+  "currentChar": {
+    "name": "Akres Sarsot",
+    "STR": 1,
+    "END": 1,
+    "AGI": 1,
+    "CHA": 1,
+    "AUR": 1,
+    "THO": 1,
+    "HA": 0,
+    "KA": 0,
+    "BA": 0,
+    "LIFE": 20,
+    "LEVEL": 1,
+    "PRO": 1,
+    "MCOST": 3,
+    "HERODICE": 0,
+    "CASH": 0,
+    "XP": 0,
+    "skills": [],
+    "traits": [],
+    "mutations": [],
+    "items": [],
+    "type": "Special Extra"
+  },
+  "charTypes": [
+    {
+      "name": "Special Extra",
+      "value": "specialextra",
+      "stats": ["Level: 0", "Life: 5", "XP: 0", "Cash: 30"],
+      "flavor": "A rather common hero.",
+      "description": "Starting play with the extra lets players discover the story of how a nobody becomes a hero. Abilities are few, survival is uncertain, and advancement is slowed by the character’s need to rest."
+    },
+    {
+      "name": "Pulp Hero",
+      "value": "pulphero",
+      "stats": ["Level: 3", "Life: 20", "XP: 999", "Cash: 300"],
+      "flavor": "A memorable human.",
+      "description": "The standard starting hero. Unique, unforgettable, historic. As glorious in battle as the great horse lords of the Centaur Empire, as powerful as the great avatar wizards who laid waste the oldest world with the heavy metal arrows of the Rain God."
+    },
+    {
+      "name": "Epic Legend",
+      "value": "epiclegend",
+      "stats": ["Level: 6", "Life: 38", "XP: 9999", "Cash: 3000"],
+      "flavor": "Quite unforgotten.",
+      "description": "Their achievements will not be forgotten for a thousand years. A legend’s advancement is slowed by high experience costs, but it promises  power overwhelming."
+    },
+    {
+      "name": "Avatar of the Final Form",
+      "value": "avatar",
+      "stats": ["Level: 9", "Life: 60", "XP: 99999", "Cash: 30000"],
+      "flavor": "Obviously not really human.",
+      "description": "The embodiment of a culture hero, an archetype taken flesh. After reaching the pinnacle of power, the only paths left open are change and decline. There is nowhere further to go."
+    }
+  ],
+  "defenses": {
+    "HA": {
+      "name": "HA",
+      "substats": ["STR", "AGI"]
+    },
+    "KA": {
+      "name": "KA",
+      "substats": ["AUR", "THO"]
+    },
+    "BA": {
+      "name": "BA",
+      "substats": ["CHA", "END"]
+    }
+  },
+  "targets": [
+    {
+      "name": "Trivial",
+      "description": "Routine, but risk of catastrophic or hilarious failure.",
+      "value": 3
+    },
+    {
+      "name": "Easy",
+      "description": "Normally no obstacle to a professional.",
+      "value": 7
+    },
+    {
+      "name": "Moderate",
+      "description": "Even professionals risk failure regularly.",
+      "value": 11
+    },
+    {
+      "name": "Difficult",
+      "description": "Smart heroes avoid these kinds of tests or seek to stack advantages in their favor before attempting them.",
+      "value": 15
+    },
+    {
+      "name": "Extreme",
+      "description": "Odds only a desperate professional would attempt.",
+      "value": 19
+    }
+  ]
 }
