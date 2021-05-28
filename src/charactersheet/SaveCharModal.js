@@ -75,8 +75,8 @@ const SaveCharModal = () => {
             let slot = JSON.parse(JSON.stringify(index));
             if (char.name === undefined) {
               return (
-                <Col>
-                  <div key={index} className="outerbox">
+                <Col key={index}>
+                  <div className="outerbox">
                     <div className="padded5px">Empty Hero Slot</div>
                     <button
                       onClick={() => {
@@ -100,7 +100,6 @@ const SaveCharModal = () => {
             } else {
               return (
                 <SaveCharCard
-                  key={index}
                   char={char}
                   saveChar={saveChar}
                   loadChar={loadChar}

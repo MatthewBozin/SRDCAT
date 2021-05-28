@@ -1,0 +1,15 @@
+{
+    "data":[
+        {
+            "name":"Flamethrower",
+            "tags":["weapon","machine"],
+            "flavor":"Roast em, toast em, extra well-done.",
+            "description":"Held together by spit and duct tape, a deadly fire-spraying contraption.",
+            "weight": 100,
+            "table":"1d6d6",
+            "value":"7",
+            "crafting":["metal","metal","fuel","fuel"],
+            "ranks":["0","1","2","3","4","5"]
+        }
+    ]
+}

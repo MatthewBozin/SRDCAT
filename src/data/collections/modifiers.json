@@ -1,0 +1,14 @@
+{
+    "concealed":{
+        "name":"Concealed",
+        "description":"At the push of a button, the force-shield disappears, leaving only the projection bracer."
+    },
+    "guidance":{
+        "name":"Guidance",
+        "description":"Wielder can spend 1 action and one life to commune with the demon accelerator. The accelerated flail then gains [+] to strike one target."
+    },
+    "vorpal-edge":{
+        "name":"Vorpal Edge",
+        "description":"Can be used as an improvised melee weapon to deal 1d4 damage. On critical hits, it severs extremities."
+    }
+}
