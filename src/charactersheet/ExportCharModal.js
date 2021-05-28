@@ -37,13 +37,15 @@ const SaveCharModal = () => {
             }
             stringcard += "\n";
           }
-          for (let i = 0; i < card.ranks.length; i++) {
-            let i2 = i + 1;
-            if (i <= card.savedrank) {
-              stringcard += "rank " + i2 + ": " + card.ranks[i] + "\n";
-            }
-            if (i <= card.savedrank - 1) {
-              stringcard += "...\n";
+          if (card.ranks !== undefined) {
+            for (let i = 0; i < card.ranks.length; i++) {
+              let i2 = i + 1;
+              if (i <= card.savedrank) {
+                stringcard += "rank " + i2 + ": " + card.ranks[i] + "\n";
+              }
+              if (i <= card.savedrank - 1) {
+                stringcard += "...\n";
+              }
             }
           }
           //stringcard += "rank: " + card.ranks[card.savedrank] + "\n";

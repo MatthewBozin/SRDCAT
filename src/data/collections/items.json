@@ -1,65 +1,26 @@
 {
     "data":[
         {
-            "name":"Flamethrower",
-            "tags":["weapon","machine"],
-            "flavor":"Roast em, toast em, extra well-done.",
-            "description":"Held together by spit and duct tape, a deadly fire-spraying contraption.",
-            "weight": 100,
-            "table":"1d6d6",
-            "value":"7",
-            "crafting":["metal","metal","fuel","fuel"],
-            "ranks":["0","1","2","3","4","5"]
+            "name":"Flail, Accelerated",
+            "type":"offensive",
+            "tags":["chain", "clumsy", "exotica"],
+            "flavor":"A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
+            "weight": 20,
+            "value":"2d6x500",
+            "number":"2d12",
+            "stat":"HA",
+            "modifiers":["guidance"]
         },
         {
-            "name":"Wheel of Cheese",
-            "tags":["food"],
-            "flavor":"Extra delicious, no need to reinvent.",
-            "description":"Cheese.",
+            "name":"Shield, Hard Light",
+            "type":"defensive",
+            "tags":["fantastic", "reflective", "sun-forged"],
+            "flavor":"A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
             "weight": 10,
-            "value":"2",
-            "crafting":["biological","biological"],
-            "ranks":["0","1","2","3","4","5"]
-        },
-        {
-            "name":"Sample1",
-            "tags":["food"],
-            "flavor":"Extra delicious, no need to reinvent.",
-            "description":"Cheese.",
-            "weight": 10,
-            "value":"2",
-            "crafting":["biological","biological"],
-            "ranks":["0","1","2","3","4","5"]
-        },
-        {
-            "name":"Sample2",
-            "tags":["food"],
-            "flavor":"Extra delicious, no need to reinvent.",
-            "description":"Cheese.",
-            "weight": 10,
-            "value":"2",
-            "crafting":["biological","biological"],
-            "ranks":["0","1","2","3","4","5"]
-        },
-        {
-            "name":"Sample3",
-            "tags":["food"],
-            "flavor":"Extra delicious, no need to reinvent.",
-            "description":"Cheese.",
-            "weight": 10,
-            "value":"2",
-            "crafting":["biological","biological"],
-            "ranks":["0","1","2","3","4","5"]
-        },
-        {
-            "name":"Sample4",
-            "tags":["food"],
-            "flavor":"Extra delicious, no need to reinvent.",
-            "description":"Cheese.",
-            "weight": 10,
-            "value":"2",
-            "crafting":["biological","biological"],
-            "ranks":["0","1","2","3","4","5"]
+            "value":"3d6x2000",
+            "number":"3",
+            "stat":"BA",
+            "modifiers":["concealed","vorpal-edge"]
         }
     ]
 }

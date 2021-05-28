@@ -24,4 +24,34 @@ const rdamage = (string) => {
   return base;
 };
 
-export { r, s, rdamage };
+const calcSale = (value) => {
+  let price = 0;
+  let valuesplit = value.split("x");
+  let dice = valuesplit[0].split("d");
+  let times = parseInt(dice[0]);
+  let size = parseInt(dice[1]);
+  for (let i = 0; i < times; i++) {
+    price += r(size);
+  }
+  return price * parseInt(valuesplit[1]);
+};
+
+const test = (pro, stat) => {
+  return r(20) + pro + stat;
+};
+
+const haggleRoll = (result, mode) => {
+  let multiplier = 1;
+  let add = (result - 15) * 0.05;
+  if (mode === "none") {
+    //buying
+    multiplier -= add;
+  }
+  if (mode === "items") {
+    //selling
+    multiplier += add;
+  }
+  return multiplier;
+};
+
+export { r, s, rdamage, calcSale, test, haggleRoll };
