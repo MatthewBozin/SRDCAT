@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import Stat from "./Stat";
 import Modal from "react-bootstrap/Modal";
-import { r } from "../data/exports";
 import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import RollCard from "./RollCard.js";
 import architecture from "../data/architecture.json";
+import { test } from "../data/exports.js";
 
 const Stats = () => {
   const [character, setCharacter] = useContext(Character);
@@ -13,7 +13,7 @@ const Stats = () => {
   const [modalStat, setModalStat] = useState("");
   const [result, setResult] = useState("");
   const [edit, setEdit] = useState(false);
-  const [pro, setPro] = useState(false);
+  const [pro, setPro] = useState(0);
   const [adv, setAdv] = useState("");
 
   const SEACAT = ["STR", "END", "AGI", "CHA", "AUR", "THO"];
@@ -36,6 +36,14 @@ const Stats = () => {
     method(!status);
   };
 
+  const togglePro = () => {
+    if (pro === 0) {
+      setPro(character.PRO);
+    } else {
+      setPro(0);
+    }
+  };
+
   const toggleAdv = (input) => {
     if (input === "+") {
       if (adv === "+") {
@@ -56,61 +64,6 @@ const Stats = () => {
     let newChar = character;
     newChar[stat] += parseInt(amount);
     setCharacter(JSON.parse(JSON.stringify(newChar)));
-  };
-
-  const roll = () => {
-    let result = 0;
-    let total = 0;
-    let text = "";
-    if (adv === "+") {
-      let roll1 = r(20) + 1;
-      let roll2 = r(20) + 1;
-      result = Math.max(roll1, roll2);
-      text = "Results: " + roll1 + ", " + roll2;
-    } else if (adv === "-") {
-      let roll1 = r(20) + 1;
-      let roll2 = r(20) + 1;
-      result = Math.min(roll1, roll2);
-      text = "Results: " + roll1 + ", " + roll2;
-    } else {
-      result = r(20) + 1;
-      text = "Result: " + result;
-    }
-    if (pro === true) {
-      total = result + character.PRO;
-    } else {
-      total = result;
-    }
-    return { result: result, total: total, text: text };
-  };
-
-  const test = (target) => {
-    let rollData = roll();
-    let rollResult = rollData.result;
-    let rollTotal = rollData.total + character[modalStat];
-    let resultString = "";
-    if (rollResult === 20 || rollResult === 1) {
-      resultString += " Critical ";
-    }
-    if (rollResult === target) {
-      resultString += "Barely a ";
-    }
-    if (rollTotal >= target) {
-      resultString += "Success";
-    } else {
-      resultString += "Failure";
-    }
-    if (rollResult === 7 && rollTotal <= target) {
-      resultString += " with a Silver Lining";
-    }
-    if (rollResult === 13 && rollTotal >= target) {
-      resultString += " with a Drawback";
-    }
-
-    resultString += "! " + rollData.text + ". Total: " + rollTotal + ".";
-    setResult(() => {
-      return resultString;
-    });
   };
 
   const ifTitle = () => {
@@ -137,7 +90,7 @@ const Stats = () => {
     }
 
     return (
-      <span className="cardname orangetext">
+      <span className="cardname">
         {titleString}: (+{calc}) {mod}
       </span>
     );
@@ -216,7 +169,7 @@ const Stats = () => {
             <button
               className="button bordered padded5px margin5px flexgrow"
               onClick={() => {
-                toggle(setPro, pro);
+                togglePro();
               }}
             >
               PRO
@@ -250,7 +203,14 @@ const Stats = () => {
                     description={target.description}
                     target={target.value}
                     method={() => {
-                      test(target.value);
+                      setResult(() => {
+                        return test(
+                          target.value,
+                          adv,
+                          pro,
+                          character[modalStat]
+                        );
+                      });
                     }}
                   />
                 );

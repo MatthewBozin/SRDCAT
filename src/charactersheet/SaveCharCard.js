@@ -68,6 +68,16 @@ const SaveCharCard = (props) => {
               expandCollapse={expandCollapse}
             />
             <span className="rightfloat mright15px">
+              <FaRegFolderOpen
+                className="icon mright3px"
+                onClick={() => {
+                  confirmToggle();
+                  setConfirmType({
+                    text: "Load This Hero",
+                    type: "load",
+                  });
+                }}
+              ></FaRegFolderOpen>
               <FaRegTrashAlt
                 className="icon mright3px"
                 onClick={() => {
@@ -79,16 +89,6 @@ const SaveCharCard = (props) => {
                   });
                 }}
               ></FaRegTrashAlt>
-              <FaRegFolderOpen
-                className="icon mright3px"
-                onClick={() => {
-                  confirmToggle();
-                  setConfirmType({
-                    text: "Load This Hero",
-                    type: "load",
-                  });
-                }}
-              ></FaRegFolderOpen>
             </span>
           </div>
           {expanded === true && (

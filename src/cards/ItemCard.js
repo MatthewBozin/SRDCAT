@@ -9,7 +9,15 @@ import NameValuePair from "./NameValuePair.js";
 import modsdata from "../data/collections/modifiers.json";
 import { FaDiceD20, FaDollarSign } from "react-icons/fa";
 import Character from "../data/character.js";
-import { calcSale, test, haggleRoll } from "../data/exports.js";
+import {
+  test,
+  multiRoll,
+  calcSale,
+  minitest,
+  haggleRoll,
+  sackstonesoap,
+} from "../data/exports.js";
+import architecture from "../data/architecture.json";
 
 const Card = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -19,6 +27,11 @@ const Card = (props) => {
   const [salePrice, setSalePrice] = useState(0);
   const [failSale, setFailSale] = useState(false);
   const [message, setMessage] = useState(false);
+  const [attackInfo, setAttackInfo] = useState(0);
+  const [target, setTarget] = useState(10);
+  const [pro, setPro] = useState(0);
+  const [adv, setAdv] = useState("");
+  const [attackResult, setAttackResult] = useState("");
 
   const toggle = (method, status) => {
     method(!status);
@@ -31,6 +44,85 @@ const Card = (props) => {
     let valuesplit = value.split("x");
     let newvalue = valuesplit[0] + " x " + valuesplit[1] + " cash";
     return newvalue;
+  };
+
+  const togglePro = () => {
+    if (pro === 0) {
+      setPro(character.PRO);
+    } else {
+      setPro(0);
+    }
+  };
+
+  const toggleAdv = (input) => {
+    if (input === "+") {
+      if (adv === "+") {
+        setAdv("");
+      } else {
+        setAdv("+");
+      }
+    } else if (input === "-") {
+      if (adv === "-") {
+        setAdv("");
+      } else {
+        setAdv("-");
+      }
+    }
+  };
+
+  const calcAttackInfo = () => {
+    let substat = architecture.defenses[stat];
+    let attribute = Math.max(
+      character[substat.substats[0]],
+      character[substat.substats[1]]
+    );
+    setAttackInfo(attribute);
+  };
+
+  const ifTitle = () => {
+    let titleString = "Attack using your " + name;
+    let mod = "";
+    if (pro !== 0 || adv !== "") {
+      titleString += " with ";
+    }
+    if (pro !== 0) {
+      titleString += "Proficiency";
+    }
+    if (pro !== 0 && adv !== "") {
+      titleString += " and ";
+    }
+    if (adv === "+") {
+      titleString += "Advantage";
+      mod = "[+]";
+    }
+    if (adv === "-") {
+      titleString += "Disadvantage";
+      mod = "[-]";
+    }
+    return (
+      <span className="cardname">
+        {titleString} {mod}
+      </span>
+    );
+  };
+
+  const confirmAttack = () => {
+    let attack = test(target, adv, pro, attackInfo);
+    let damage = multiRoll(number);
+
+    if (
+      attack.startsWith("S") ||
+      attack.startsWith("B") ||
+      attack.startsWith("Critical S")
+    ) {
+      setAttackResult(
+        <div>
+          {attack} {damage} <i>{stat}</i> damage dealt!
+        </div>
+      );
+    } else {
+      setAttackResult(attack);
+    }
   };
 
   const sale = () => {
@@ -57,7 +149,7 @@ const Card = (props) => {
 
   const haggle = () => {
     let price = calcSale(value);
-    let testResult = test(character.PRO, character.CHA);
+    let testResult = minitest(character.PRO, character.CHA);
     let multiplier = haggleRoll(testResult, props.deleteFrom);
     setSalePrice(Math.round(price * multiplier));
   };
@@ -67,10 +159,6 @@ const Card = (props) => {
       return true;
     }
   };
-
-  //add item attack modal
-  //chooses attack attribute by picking the higher attribute associated with the stat
-  //aka hakaba
 
   return (
     <Col xs={12} md={6} lg={6} xl={4}>
@@ -90,6 +178,7 @@ const Card = (props) => {
                 onClick={() => {
                   setAttackModalOpen(true);
                   setSaleModalOpen(false);
+                  calcAttackInfo();
                 }}
               />
             )}
@@ -125,7 +214,10 @@ const Card = (props) => {
             })}
             <Flavor flavor={flavor} />
             <hr></hr>
-            <NameValuePair name={"Weight"} value={weight} />
+            <NameValuePair
+              name={"Weight"}
+              value={sackstonesoap(weight, "item")}
+            />
             <NameValuePair name={"Value"} value={displayValue(value)} />
             <div>
               <span className="padded5px">
@@ -162,10 +254,71 @@ const Card = (props) => {
           toggle(setAttackModalOpen, attackModalOpen);
         }}
       >
-        <Modal.Header className="modalbackground">
-          Attack with your {name}
-        </Modal.Header>
-        <Modal.Body className="modalbackground"></Modal.Body>
+        <Modal.Header className="modalbackground">{ifTitle()}</Modal.Header>
+        <Modal.Body className="modalbackground">
+          {pro !== 0 && <div>Attack Bonus: {attackInfo + pro}</div>}
+          {pro === 0 && <div>Attack Bonus: {attackInfo}</div>}
+          <div>
+            Weapon Damage: {number} <i>{stat}</i>
+          </div>
+          <hr />
+          <div className="flex">
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                togglePro();
+              }}
+            >
+              PRO
+            </button>
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleAdv("+");
+              }}
+            >
+              [+]
+            </button>
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleAdv("-");
+              }}
+            >
+              [-]
+            </button>
+          </div>
+          <hr />
+          <div className="center">Target: {target}</div>
+          <div className="flex">
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                setTarget(target - 1);
+              }}
+            >
+              -1
+            </button>
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                setTarget(target + 1);
+              }}
+            >
+              +1
+            </button>
+          </div>
+          <hr />
+          <button
+            className="button bordered padded5px margin5px fullwidth"
+            onClick={() => {
+              confirmAttack();
+            }}
+          >
+            Confirm Attack
+          </button>
+          {attackResult !== "" && <div>{attackResult}</div>}
+        </Modal.Body>
       </Modal>
       <Modal
         show={saleModalOpen}

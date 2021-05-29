@@ -7,6 +7,7 @@ import CharName from "../charactersheet/CharName";
 import SaveCharModal from "../charactersheet/SaveCharModal";
 import ExportCharModal from "../charactersheet/ExportCharModal";
 import RandomCharModal from "../charactersheet/RandomCharModal";
+import { sackstonesoap } from "../data/exports.js";
 import { Link } from "react-router-dom";
 
 const CharSheet = () => {
@@ -19,33 +20,13 @@ const CharSheet = () => {
     { name: "Mutations", value: "mutations" },
   ];
 
-  const invcalc = (encumbrance, placement, placement2) => {
-    return encumbrance.toString().slice(placement, placement2);
-  };
-
   const getEncumbrance = () => {
     let encumbrance = 0;
     for (let element of character.items) {
       encumbrance += element.weight;
     }
-    let soaps = invcalc(encumbrance, -1);
-    let stones = invcalc(encumbrance, -2, -1);
-    let sacks = invcalc(encumbrance, -3, -2);
-    let array = [
-      { amount: sacks, name: "Sacks" },
-      { amount: stones, name: ", Stones" },
-      { amount: soaps, name: ", Soaps" },
-    ];
-    let sackstonesoap = "";
-    for (let element of array) {
-      console.log(element.amount);
-      if (element.amount !== 0 && element.amount !== "") {
-        sackstonesoap += element.name + ": " + element.amount;
-      } else {
-        sackstonesoap += element.name + ": 0";
-      }
-    }
-    return <span>{sackstonesoap}</span>;
+    let weightstring = sackstonesoap(encumbrance, "inventory");
+    return <span>{weightstring}</span>;
   };
 
   return (
