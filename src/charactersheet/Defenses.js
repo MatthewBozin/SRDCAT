@@ -26,14 +26,11 @@ const Defenses = () => {
   ];
 
   const calcDefense = (defense) => {
-    console.log(modalStat);
-    console.log(defense);
     let substats = defense.substats;
     let total = 0;
     total += Math.max(character[substats[0]], character[substats[1]]);
     total += character.PRO;
     total += character[defense.name];
-    console.log(total);
     return total;
   };
 
@@ -58,19 +55,15 @@ const Defenses = () => {
     setCurrentStat(character[stat]);
   };
 
-  const test = (modifier) => {
+  const save = (modifier) => {
     let rollResult = r(20) + 1;
     let total = rollResult + modifier;
     if (total <= character[modalStat]) {
-      setResult(() => {
-        return (
-          "Save successful! Result: " + rollResult + ". Total: " + total + "."
-        );
-      });
+      return (
+        "Save successful! Result: " + rollResult + ". Total: " + total + "."
+      );
     } else {
-      setResult(() => {
-        return "Save failed! Result: " + rollResult + ". Total: " + total + ".";
-      });
+      return "Save failed! Result: " + rollResult + ". Total: " + total + ".";
     }
   };
 
@@ -155,7 +148,7 @@ const Defenses = () => {
                         className="button bordered padded5px margin5px flexgrow"
                         key={index}
                         onClick={() => {
-                          test(bonus);
+                          setResult(save(bonus));
                         }}
                       >
                         +{bonus}
