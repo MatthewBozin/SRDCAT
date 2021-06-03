@@ -146,6 +146,14 @@
       "description": "The embodiment of a culture hero, an archetype taken flesh. After reaching the pinnacle of power, the only paths left open are change and decline. There is nowhere further to go."
     }
   ],
+  "attributeArray":[
+      "STR",
+      "END",
+      "AGI",
+      "CHA",
+      "AUR",
+      "THO"
+    ],
   "defenses": {
     "HA": {
       "name": "HA",
@@ -186,5 +194,23 @@
       "description": "Odds only a desperate professional would attempt.",
       "value": 19
     }
-  ]
+  ],
+  "statMasks":{
+    "STR":"Strength",
+    "END":"Endurance",
+    "AGI":"Agility",
+    "CHA":"Charisma",
+    "AUR":"Aura",
+    "THO":"Thought",
+    "HA":"Ha",
+    "KA":"Ka",
+    "BA":"Ba",
+    "LIFE":"Life",
+    "HERODICE":"Hero Dice",
+    "XP":"Xp",
+    "CASH":"Cash",
+    "LEVEL":"Level",
+    "PRO":"Pro",
+    "MCOST":"Magic Cost"
+  }
 }

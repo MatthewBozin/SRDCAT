@@ -2,6 +2,7 @@ import { React, useState, useContext } from "react";
 import Stat from "./Stat";
 import Modal from "react-bootstrap/Modal";
 import Character from "../data/character.js";
+import architecture from "../data/architecture.json";
 
 const Resources = () => {
   const [character, setCharacter] = useContext(Character);
@@ -9,6 +10,7 @@ const Resources = () => {
   const [modalStat, setModalStat] = useState("");
   const [data, setData] = useState(character[modalStat]);
 
+  const statMasks = architecture.statMasks;
   const stats = ["LEVEL", "PRO", "MCOST"];
   const amounts = [
     [1, 5, 10],
@@ -49,11 +51,11 @@ const Resources = () => {
   return (
     <div className="outerbox">
       <div className="row mleft5px">STATS</div>
-      <div className="padded5px row mleft5px">
+      <div className="padded5px mleft5px flex">
         {stats.map((stat, index) => {
           return (
             <button
-              className="button bordered padded5px margin5px"
+              className="button bordered padded5px margin5px flexgrow"
               key={index}
               onClick={() => {
                 modalOpenStat(stat);
@@ -67,7 +69,9 @@ const Resources = () => {
           <Modal.Body className="modalbackground">
             <form onSubmit={handleSubmit} className="flex">
               <div className="padded5px button bordered margin5px flex flexgrow2">
-                <span className="margin5px button--override">{modalStat}</span>
+                <span className="margin5px button--override">
+                  {statMasks[modalStat]}
+                </span>
                 <input
                   className="padded5px button clearborder flexgrow2 lefttoright"
                   placeholder={character[modalStat]}

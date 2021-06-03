@@ -30,7 +30,7 @@ const CharSheet = () => {
   };
 
   return (
-    <div>
+    <div className="charsheet">
       <div className="outerbox">
         <span className="row rightfloat mright12px">
           <SaveCharModal />
@@ -40,65 +40,67 @@ const CharSheet = () => {
         <CharName />
         <StatSheet />
       </div>
-      <div className="outerbox">
-        <div className="row mleft5px fullwidth">
-          <span>
-            <Link
-              onClick={() =>
-                setContext(() => {
-                  let newcontext = context;
-                  newcontext.collections = "items";
-                  return newcontext;
-                })
-              }
-              className="row mleft5px button"
-              to="/"
-            >
-              Inventory
-            </Link>
-          </span>
-        </div>
+      <div>
         <div className="outerbox">
-          <span className="mleft5px orangetext">Encumbrance: </span>
-          <span className="mleft5px">{getEncumbrance()}</span>
-        </div>
-        <CardList
-          content={character.items}
-          form={"minus"}
-          deleteFrom={"items"}
-          category={"items"}
-        />
-      </div>
-      {categoryArray.map((category, index) => {
-        return (
-          <div className="outerbox" key={index}>
-            <div className="row mleft5px fullwidth">
-              <span>
-                <Link
-                  onClick={() =>
-                    setContext(() => {
-                      let newcontext = context;
-                      newcontext.collections = category.value;
-                      return newcontext;
-                    })
-                  }
-                  className="row mleft5px button"
-                  to="/"
-                >
-                  {category.name}
-                </Link>
-              </span>
-            </div>
-            <CardList
-              content={character[category.value]}
-              form={"minus"}
-              deleteFrom={category.value}
-              category={category.value}
-              key={index}
-            />
+          <div className="row mleft5px fullwidth">
+            <span>
+              <Link
+                onClick={() =>
+                  setContext(() => {
+                    let newcontext = context;
+                    newcontext.collections = "items";
+                    return newcontext;
+                  })
+                }
+                className="row mleft5px button"
+                to="/"
+              >
+                Inventory
+              </Link>
+            </span>
           </div>
-        );
-      })}
+          <div className="outerbox">
+            <span className="mleft5px orangetext">Encumbrance: </span>
+            <span className="mleft5px">{getEncumbrance()}</span>
+          </div>
+          <CardList
+            content={character.items}
+            form={"minus"}
+            deleteFrom={"items"}
+            category={"items"}
+          />
+        </div>
+        {categoryArray.map((category, index) => {
+          return (
+            <div className="outerbox" key={index}>
+              <div className="row mleft5px fullwidth">
+                <span>
+                  <Link
+                    onClick={() =>
+                      setContext(() => {
+                        let newcontext = context;
+                        newcontext.collections = category.value;
+                        return newcontext;
+                      })
+                    }
+                    className="row mleft5px button"
+                    to="/"
+                  >
+                    {category.name}
+                  </Link>
+                </span>
+              </div>
+              <CardList
+                content={character[category.value]}
+                form={"minus"}
+                deleteFrom={category.value}
+                category={category.value}
+                key={index}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

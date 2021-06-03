@@ -3,11 +3,11 @@ import Name from "./Name";
 import Tag from "./Tag";
 import Flavor from "./Flavor";
 import AddSubtract from "./AddSubtract";
-import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import NameValuePair from "./NameValuePair.js";
 import modsdata from "../data/collections/modifiers.json";
-import { FaDiceD20, FaDollarSign } from "react-icons/fa";
+import { FaDollarSign } from "react-icons/fa";
+import { ReactComponent as Attack } from "../data/icons/attack.svg";
 import Character from "../data/character.js";
 import {
   test,
@@ -26,12 +26,42 @@ const Card = (props) => {
   const [character, setCharacter] = useContext(Character);
   const [salePrice, setSalePrice] = useState(0);
   const [failSale, setFailSale] = useState(false);
-  const [message, setMessage] = useState(false);
   const [attackInfo, setAttackInfo] = useState(0);
   const [target, setTarget] = useState(10);
   const [pro, setPro] = useState(0);
   const [adv, setAdv] = useState("");
   const [attackResult, setAttackResult] = useState("");
+
+  //const [attack, setAttack] = useState({pro: 0, mod: 0, adv: ""})
+  //const [damage, setDamage] = useState({ adv: "" });
+
+  //attackInfo becomes attack.mod
+  //adv becomes attack.adv
+  //pro becomes attack.pro
+
+  /*
+  const updateState = (object, method, property, value) => {
+    let object2 = object;
+    object2[property] = value;
+    method(object2);
+  };
+
+  const toggleState = (object, method, property, value, togglevalue) => {
+    if (object.property === value) {
+      update(object, method, property, togglevalue)
+    } else {
+      update(object, method, property, value)
+    }
+  }
+
+  togglePro becomes toggleState(attack, setAttack, pro, 0, character.PRO)
+
+  attack "+" button press becomes toggleState(attack, setAttack, adv, "", "+")
+  attack "-" button press beomces toggleState(attack, setAttack, adv, "", "-")
+
+  calcAttackInfo setAttackInfo becomes update(attack, setAttack, mod, attribute)
+
+  */
 
   const toggle = (method, status) => {
     method(!status);
@@ -117,7 +147,8 @@ const Card = (props) => {
     ) {
       setAttackResult(
         <div>
-          {attack} {damage} <i>{stat}</i> damage dealt!
+          {attack} <br /> {damage} <i>{architecture.statMasks[stat]}</i> damage
+          dealt!
         </div>
       );
     } else {
@@ -143,7 +174,8 @@ const Card = (props) => {
       newCharacter.CASH += salePrice;
       newCharacter[props.deleteFrom].splice(props.placement, 1);
     }
-
+    setSalePrice(0);
+    toggle(setSaleModalOpen, saleModalOpen);
     setCharacter(newCharacter);
   };
 
@@ -160,8 +192,15 @@ const Card = (props) => {
     }
   };
 
+  const noBreakpointsIfHeroSheet = () => {
+    if (props.deleteFrom === "none") {
+      return "col-xs-12 col-md-6 col-lg-6 col-xl-4";
+    }
+    return "fullwidth mleft15px mright15px";
+  };
+
   return (
-    <Col xs={12} md={6} lg={6} xl={4}>
+    <div className={noBreakpointsIfHeroSheet()}>
       <article className="outerbox">
         <div className="row">
           <Name
@@ -173,8 +212,8 @@ const Card = (props) => {
           />
           <span className="rightfloat mright12px">
             {props.deleteFrom === "items" && type === "offensive" && (
-              <FaDiceD20
-                className="icon"
+              <Attack
+                className="iconsvg"
                 onClick={() => {
                   setAttackModalOpen(true);
                   setSaleModalOpen(false);
@@ -228,7 +267,7 @@ const Card = (props) => {
                   <span className="orangetext">Damage: </span>
                 )}
                 <span>
-                  {number} <i>{stat}</i>
+                  {number} <i>{architecture.statMasks[stat]}</i>
                 </span>
               </span>
             </div>
@@ -258,11 +297,15 @@ const Card = (props) => {
         <Modal.Body className="modalbackground">
           {pro !== 0 && <div>Attack Bonus: {attackInfo + pro}</div>}
           {pro === 0 && <div>Attack Bonus: {attackInfo}</div>}
-          <div>
-            Weapon Damage: {number} <i>{stat}</i>
-          </div>
-          <hr />
           <div className="flex">
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleAdv("-");
+              }}
+            >
+              [-]
+            </button>
             <button
               className="button bordered padded5px margin5px flexgrow"
               onClick={() => {
@@ -279,17 +322,13 @@ const Card = (props) => {
             >
               [+]
             </button>
-            <button
-              className="button bordered padded5px margin5px flexgrow"
-              onClick={() => {
-                toggleAdv("-");
-              }}
-            >
-              [-]
-            </button>
           </div>
           <hr />
-          <div className="center">Target: {target}</div>
+          <div>
+            Weapon Damage: {number} <i>{architecture.statMasks[stat]}</i>
+          </div>
+          <hr />
+          <div>Target: {target}</div>
           <div className="flex">
             <button
               className="button bordered padded5px margin5px flexgrow"
@@ -315,7 +354,7 @@ const Card = (props) => {
               confirmAttack();
             }}
           >
-            Confirm Attack
+            Roll Attack
           </button>
           {attackResult !== "" && <div>{attackResult}</div>}
         </Modal.Body>
@@ -349,7 +388,6 @@ const Card = (props) => {
             className="button bordered padded5px margin5px"
             onClick={() => {
               sale();
-              toggle(setSaleModalOpen, saleModalOpen);
             }}
           >
             Confirm Sale
@@ -358,12 +396,12 @@ const Card = (props) => {
             className="button bordered padded5px margin5px"
             onClick={() => {
               setSalePrice(0);
+              setFailSale(false);
               toggle(setSaleModalOpen, saleModalOpen);
             }}
           >
             Never Mind
           </button>
-          {message !== "" && <div>{message}</div>}
           {salePrice !== 0 && failSale === false && (
             <div>The merchant will offer you a deal of {salePrice} cash.</div>
           )}
@@ -372,7 +410,7 @@ const Card = (props) => {
           )}
         </Modal.Body>
       </Modal>
-    </Col>
+    </div>
   );
 };
 

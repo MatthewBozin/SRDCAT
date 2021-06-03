@@ -4,6 +4,7 @@ import { FaFileDownload } from "react-icons/fa";
 import Character from "../data/character.js";
 import architecture from "../data/architecture.json";
 import ExportCharCard from "./ExportCharCard.js";
+import { sackstonesoap } from "../data/exports.js";
 
 const SaveCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -25,12 +26,13 @@ const SaveCharModal = () => {
     for (let property of properties) {
       let charprop = character[property];
       if (typeof charprop == "object") {
+        //if charprop === "items"
         let stringprop = "";
         for (let card of charprop) {
           let stringcard = "";
-          stringcard += "name: " + card.name + "\n";
+          stringcard += "Name: " + card.name + "\n";
           if (card.description !== undefined) {
-            stringcard += "description: " + card.description;
+            stringcard += "Description: " + card.description;
             if (card.table !== undefined) {
               let result = card.table[card.savedresult].toLowerCase();
               stringcard += " " + result + ".";
@@ -41,7 +43,7 @@ const SaveCharModal = () => {
             for (let i = 0; i < card.ranks.length; i++) {
               let i2 = i + 1;
               if (i <= card.savedrank) {
-                stringcard += "rank " + i2 + ": " + card.ranks[i] + "\n";
+                stringcard += "Rank " + i2 + ": " + card.ranks[i] + "\n";
               }
               if (i <= card.savedrank - 1) {
                 stringcard += "...\n";
@@ -49,6 +51,29 @@ const SaveCharModal = () => {
             }
           }
           //stringcard += "rank: " + card.ranks[card.savedrank] + "\n";
+          //item properties
+          if (property === "items") {
+            stringcard += "Type: " + card.type + "\n";
+            stringcard +=
+              "Weight: " + sackstonesoap(card.weight, "none") + "\n";
+            //import weight to sackstonesoaps
+            stringcard += "Value: " + card.value + "\n";
+            if (card.stat !== undefined) {
+              let itemprop = "";
+              if (card.type === "offensive") {
+                itemprop = "Damage: ";
+              }
+              if (card.type === "defensive") {
+                itemprop = "Defense: ";
+              }
+              stringcard +=
+                itemprop +
+                card.number +
+                " " +
+                architecture.statMasks[card.stat] +
+                "\n";
+            }
+          }
           stringprop +=
             stringcard + "----------------------------------------\n";
         }
@@ -65,7 +90,7 @@ const SaveCharModal = () => {
     setCharExport(txtstring);
   };
 
-  const process = (toProcess) => {
+  /*const process = (toProcess) => {
     console.log(toProcess);
     let toProcessString = toProcess.toString();
     if (toProcessString.includes(",")) {
@@ -73,14 +98,14 @@ const SaveCharModal = () => {
     } else {
       return toProcessString + ",";
     }
-  };
+  };*/
 
   const exportJson = () => {
     setCharExport(JSON.stringify(character));
   };
 
   const exportCsv = () => {
-    let csvstring = "";
+    /*let csvstring = "";
     for (let property of properties) {
       let charProperty = character[property];
       console.log(charProperty);
@@ -94,7 +119,7 @@ const SaveCharModal = () => {
         csvstring += process(charProperty);
       }
     }
-    //setCharExport(csvstring);
+    //setCharExport(csvstring);*/
     setCharExport("Feature under construction.");
   };
 

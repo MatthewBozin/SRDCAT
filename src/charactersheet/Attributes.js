@@ -16,7 +16,9 @@ const Stats = () => {
   const [pro, setPro] = useState(0);
   const [adv, setAdv] = useState("");
 
-  const SEACAT = ["STR", "END", "AGI", "CHA", "AUR", "THO"];
+  const SEA = ["STR", "END", "AGI"];
+  const CAT = ["CHA", "AUR", "THO"];
+  const statMasks = architecture.statMasks;
 
   const targets = architecture.targets;
 
@@ -67,17 +69,17 @@ const Stats = () => {
   };
 
   const ifTitle = () => {
-    let titleString = "Roll " + modalStat;
+    let titleString = "Test Your " + statMasks[modalStat];
     let calc = character[modalStat];
     let mod = "";
-    if (pro !== false || adv !== "") {
+    if (pro !== 0 || adv !== "") {
       titleString += " with ";
     }
-    if (pro === true) {
+    if (pro !== 0) {
       titleString += "Proficiency";
       calc += character.PRO;
     }
-    if (pro === true && adv !== "") {
+    if (pro !== 0 && adv !== "") {
       titleString += " and ";
     }
     if (adv === "+") {
@@ -99,20 +101,37 @@ const Stats = () => {
   return (
     <div className="outerbox">
       <div className="row mleft5px">ATTRIBUTES</div>
-      <div className="padded5px row mleft5px">
-        {SEACAT.map((stat, index) => {
-          return (
-            <button
-              className="padded5px button bordered padded5px margin5px"
-              key={index}
-              onClick={() => {
-                modalOpenStat(stat);
-              }}
-            >
-              <Stat stat={stat} />
-            </button>
-          );
-        })}
+      <div>
+        <div className="padded5px mleft5px flex">
+          {SEA.map((stat, index) => {
+            return (
+              <button
+                className="padded5px button bordered padded5px margin5px flexgrow"
+                key={index}
+                onClick={() => {
+                  modalOpenStat(stat);
+                }}
+              >
+                <Stat stat={stat} />
+              </button>
+            );
+          })}
+        </div>
+        <div className="padded5px mleft5px flex">
+          {CAT.map((stat, index) => {
+            return (
+              <button
+                className="padded5px button bordered padded5px margin5px flexgrow"
+                key={index}
+                onClick={() => {
+                  modalOpenStat(stat);
+                }}
+              >
+                <Stat stat={stat} />
+              </button>
+            );
+          })}
+        </div>
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
@@ -164,6 +183,7 @@ const Stats = () => {
               <hr></hr>
             </div>
           )}
+          <div className="center">{result}</div>
           <hr />
           <div className="flex">
             <button
@@ -193,7 +213,6 @@ const Stats = () => {
           </div>
           <hr />
           <div>
-            <div className="center">{result}</div>
             <div>
               {targets.map((target, index) => {
                 return (

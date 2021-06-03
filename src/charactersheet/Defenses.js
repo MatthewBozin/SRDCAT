@@ -15,6 +15,7 @@ const Defenses = () => {
   const [currentStat, setCurrentStat] = useState(character[modalStat]);
 
   const defenses = architecture.defenses;
+  const statMasks = architecture.statMasks;
 
   const deforder = ["HA", "KA", "BA"];
 
@@ -31,6 +32,10 @@ const Defenses = () => {
     total += Math.max(character[substats[0]], character[substats[1]]);
     total += character.PRO;
     total += character[defense.name];
+    if (defense.name === "BA") {
+      total += Math.round(character.CASH / 250);
+      console.log(Math.round(character.CASH / 250));
+    }
     return total;
   };
 
@@ -70,11 +75,11 @@ const Defenses = () => {
   return (
     <div className="outerbox">
       <div className="row mleft5px">DEFENSES</div>
-      <div className="padded5px row mleft5px">
+      <div className="padded5px mleft5px flex">
         {deforder.map((defense, index) => {
           return (
             <button
-              className="button bordered padded5px margin5px"
+              className="button bordered padded5px margin5px flexgrow"
               key={index}
               onClick={() => {
                 modalOpenStat(defenses[defense].name);
@@ -88,7 +93,8 @@ const Defenses = () => {
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           <span className="cardname orangetext center">
-            {modalStat} save: ({calcDefense(defenses[modalStat])})
+            <i>{statMasks[modalStat]}</i> save: (
+            {calcDefense(defenses[modalStat])})
           </span>
           <span>
             <FaRegEdit
