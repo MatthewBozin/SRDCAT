@@ -2,6 +2,7 @@ import { React, useState, useContext } from "react";
 import Stat from "./Stat";
 import Modal from "react-bootstrap/Modal";
 import Character from "../data/character.js";
+import architecture from "../data/architecture.json";
 
 const Resources = () => {
   const [character, setCharacter] = useContext(Character);
@@ -10,6 +11,7 @@ const Resources = () => {
   const [currentResource, setCurrentResource] = useState(character[modalStat]);
   const [data, setData] = useState(character[modalStat]);
 
+  const statMasks = architecture.statMasks;
   const resources = ["LIFE", "HERODICE", "XP", "CASH"];
   const amounts = [
     [1, 5, 10],
@@ -48,7 +50,7 @@ const Resources = () => {
   };
 
   const ifStat1 = (stat) => {
-    if (stat == "XP" || stat == "CASH") {
+    if (stat === "XP" || stat === "CASH") {
       return amounts2[0].map((amount, index) => {
         return (
           <button
@@ -80,7 +82,7 @@ const Resources = () => {
   };
 
   const ifStat2 = (stat) => {
-    if (stat == "XP" || stat == "CASH") {
+    if (stat === "XP" || stat === "CASH") {
       return amounts2[1].map((amount, index) => {
         return (
           <button
@@ -114,11 +116,11 @@ const Resources = () => {
   return (
     <div className="outerbox">
       <div className="row mleft5px">RESOURCES</div>
-      <div className="padded5px row mleft5px">
+      <div className="padded5px mleft5px flex">
         {resources.map((stat, index) => {
           return (
             <button
-              className="button bordered padded5px margin5px"
+              className="button bordered padded5px margin5px flexgrow"
               key={index}
               onClick={() => {
                 modalOpenStat(stat);
@@ -133,7 +135,9 @@ const Resources = () => {
         <Modal.Body className="modalbackground">
           <form onSubmit={handleSubmit} className="flex">
             <div className="padded5px button bordered margin5px flex flexgrow2">
-              <span className="margin5px button--override">{modalStat}</span>
+              <span className="margin5px button--override">
+                {statMasks[modalStat]}
+              </span>
               <input
                 className="padded5px button clearborder flexgrow2 lefttoright"
                 placeholder={character[modalStat]}

@@ -26,7 +26,6 @@ function App() {
     array.push(currentChar);
     localStorage.setItem("SRDcharacters", JSON.stringify(array));
   }
-  console.log(localStorage);
   return (
     <div>
       <Context.Provider value={[context, setContext]}>

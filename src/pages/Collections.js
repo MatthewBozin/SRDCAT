@@ -37,7 +37,6 @@ const Collections = () => {
         filtered = filter("name");
         console.log(filtered);
       }
-
       if (filtered.length === 0) {
         return (
           <div className="outerbox">Your search didn't return any hits.</div>

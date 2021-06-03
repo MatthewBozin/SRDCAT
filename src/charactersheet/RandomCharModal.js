@@ -25,7 +25,7 @@ const RandomCharModal = () => {
     let levels = charLevels[heroType];
     let newchar = {};
     let collections = ["skills", "traits", "items", "mutations"];
-    let attributes = ["STR", "END", "AGI", "CHA", "AUR", "THO"];
+    let attributes = architecture.attributeArray;
     let saves = ["HA", "KA", "BA"];
     let otherstats = [
       "LEVEL",
@@ -73,10 +73,13 @@ const RandomCharModal = () => {
           }
           selection.savedrank = 0;
           //below adds rank to card instead of adding duplicate
-          if (newchar[collection].includes(selection)) {
+          if (
+            newchar[collection].includes(selection) &&
+            collection !== "items"
+          ) {
             if (selection.ranks.length > 1) {
               for (let card in newchar[collection]) {
-                if (card.name == selection.name) {
+                if (card.name === selection.name) {
                   card.savedrank += 1;
                 }
               }

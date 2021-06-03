@@ -51,8 +51,15 @@ const Card = (props) => {
     }
   };
 
+  const noBreakpointsIfHeroSheet = () => {
+    if (props.deleteFrom === "none") {
+      return "col-xs-12 col-md-6 col-lg-6 col-xl-4";
+    }
+    return "col";
+  };
+
   return (
-    <Col xs={12} md={6} lg={6} xl={4}>
+    <div className={noBreakpointsIfHeroSheet()}>
       <article className="outerbox">
         <div className="row">
           <Name
@@ -128,7 +135,7 @@ const Card = (props) => {
           </span>
         )}
       </article>
-    </Col>
+    </div>
   );
 };
 

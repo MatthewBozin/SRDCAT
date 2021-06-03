@@ -5,6 +5,7 @@
 4. Margin and Padding
 5. Hovers
 6. Flexes
+7. Media Queries
 */
 
 * {
@@ -121,6 +122,14 @@ hr {
   transition: 0.3s;
 }
 
+.iconsvg {
+  width: 30px;
+  color: #fa5c5c;
+  cursor: pointer;
+  padding-top: 15px;
+  transition: 0.3s;
+}
+
 .cardname {
   font-size: 24px;
   margin-left: 15px;
@@ -129,6 +138,11 @@ hr {
 
 .searchbutton {
   min-width: 60px;
+}
+
+.charsheet {
+  display: flex;
+  flex-direction: row;
 }
 
 /*
@@ -182,6 +196,10 @@ hr {
   padding-bottom: 5px;
 }
 
+.pleft5px {
+  padding-left: 5px;
+}
+
 .margin5px {
   margin: 5px;
 }
@@ -191,6 +209,10 @@ hr {
 }
 
 .mleft12px {
+  margin-left: 12px;
+}
+
+.mleft15px {
   margin-left: 12px;
 }
 
@@ -232,6 +254,10 @@ button:hover {
   color: #d5d4d6;
 }
 
+.iconsvg:hover {
+  color: #d5d4d6;
+}
+
 .button--selected:hover {
   text-decoration: none;
   color: #d5d4d6;
@@ -270,4 +296,16 @@ button:hover {
 
 .flexgrow3 {
   flex: 2 0 0;
+}
+
+/*
+----------------------------------------------------------------------
+  MEDIA QUERIES
+----------------------------------------------------------------------
+*/
+
+@media (max-width: 992px) {
+  .charsheet {
+    flex-direction: column;
+  }
 }
