@@ -7,7 +7,18 @@
             "flavor":"A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
             "weight": 20,
             "value":"2d6x500",
-            "number":"2d12",
+            "number":"2d12*",
+            "stat":"HA",
+            "modifiers":["guidance"]
+        },
+        {
+            "name":"Nanite Swarm",
+            "type":"offensive",
+            "tags":["chain", "clumsy", "exotica"],
+            "flavor":"Test",
+            "weight": 20,
+            "value":"2d6x500",
+            "number":"12d2*",
             "stat":"HA",
             "modifiers":["guidance"]
         },

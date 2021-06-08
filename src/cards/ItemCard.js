@@ -10,8 +10,9 @@ import { FaDollarSign } from "react-icons/fa";
 import { ReactComponent as Attack } from "../data/icons/attack.svg";
 import Character from "../data/character.js";
 import {
+  r,
   test,
-  multiRoll,
+  damagecalc,
   calcSale,
   minitest,
   haggleRoll,
@@ -26,42 +27,26 @@ const Card = (props) => {
   const [character, setCharacter] = useContext(Character);
   const [salePrice, setSalePrice] = useState(0);
   const [failSale, setFailSale] = useState(false);
-  const [attackInfo, setAttackInfo] = useState(0);
   const [target, setTarget] = useState(10);
-  const [pro, setPro] = useState(0);
-  const [adv, setAdv] = useState("");
   const [attackResult, setAttackResult] = useState("");
 
-  //const [attack, setAttack] = useState({pro: 0, mod: 0, adv: ""})
-  //const [damage, setDamage] = useState({ adv: "" });
+  const [attack, setAttack] = useState({ pro: "", mod: 0, adv: "" });
+  const [damage, setDamage] = useState({ adv: "" });
 
-  //attackInfo becomes attack.mod
-  //adv becomes attack.adv
-  //pro becomes attack.pro
-
-  /*
   const updateState = (object, method, property, value) => {
     let object2 = object;
     object2[property] = value;
-    method(object2);
+    method(JSON.parse(JSON.stringify(object2)));
   };
 
   const toggleState = (object, method, property, value, togglevalue) => {
-    if (object.property === value) {
-      update(object, method, property, togglevalue)
+    if (object[property] === value) {
+      updateState(object, method, property, togglevalue);
     } else {
-      update(object, method, property, value)
+      updateState(object, method, property, value);
     }
-  }
-
-  togglePro becomes toggleState(attack, setAttack, pro, 0, character.PRO)
-
-  attack "+" button press becomes toggleState(attack, setAttack, adv, "", "+")
-  attack "-" button press beomces toggleState(attack, setAttack, adv, "", "-")
-
-  calcAttackInfo setAttackInfo becomes update(attack, setAttack, mod, attribute)
-
-  */
+    console.log(object);
+  };
 
   const toggle = (method, status) => {
     method(!status);
@@ -76,83 +61,90 @@ const Card = (props) => {
     return newvalue;
   };
 
-  const togglePro = () => {
-    if (pro === 0) {
-      setPro(character.PRO);
-    } else {
-      setPro(0);
-    }
-  };
-
-  const toggleAdv = (input) => {
-    if (input === "+") {
-      if (adv === "+") {
-        setAdv("");
-      } else {
-        setAdv("+");
-      }
-    } else if (input === "-") {
-      if (adv === "-") {
-        setAdv("");
-      } else {
-        setAdv("-");
-      }
-    }
-  };
-
   const calcAttackInfo = () => {
     let substat = architecture.defenses[stat];
     let attribute = Math.max(
       character[substat.substats[0]],
       character[substat.substats[1]]
     );
-    setAttackInfo(attribute);
+    updateState(attack, setAttack, "mod", attribute);
   };
 
-  const ifTitle = () => {
-    let titleString = "Attack using your " + name;
+  const modularString = (object) => {
+    let string = "";
     let mod = "";
-    if (pro !== 0 || adv !== "") {
-      titleString += " with ";
+    if (object.pro !== undefined) {
+      if (object.pro !== "" || object.adv !== "") {
+        string += " with ";
+      }
+      if (object.pro === "single") {
+        string += "Proficiency";
+      }
+      if (object.pro === "double") {
+        string += "Double Proficiency";
+      }
+      if (object.pro !== "" && object.adv !== "") {
+        string += " and ";
+      }
+    } else if (object.adv !== "") {
+      string += " with ";
     }
-    if (pro !== 0) {
-      titleString += "Proficiency";
-    }
-    if (pro !== 0 && adv !== "") {
-      titleString += " and ";
-    }
-    if (adv === "+") {
-      titleString += "Advantage";
+    if (object.adv === "+") {
+      string += "Advantage";
       mod = "[+]";
     }
-    if (adv === "-") {
-      titleString += "Disadvantage";
+    if (object.adv === "-") {
+      string += "Disadvantage";
       mod = "[-]";
     }
     return (
-      <span className="cardname">
-        {titleString} {mod}
+      <span>
+        {string} {mod}
       </span>
     );
   };
 
   const confirmAttack = () => {
-    let attack = test(target, adv, pro, attackInfo);
-    let damage = multiRoll(number);
+    let pro = 0;
+    if (attack.pro === "single") {
+      pro += character.PRO;
+    }
+    if (attack.pro === "double") {
+      pro += character.PRO * 2;
+    }
 
+    let attackRes = test(target, attack.adv, pro, attack.mod);
+    let damageResult = damagecalc(number, damage.adv);
+
+    console.log(attackRes);
+    console.log(damageResult);
+
+    if (attackRes.startsWith("Critical S")) {
+      console.log(damageResult);
+      damageResult.total = damageResult.total * 2;
+      let critRoll = r(20) + 1;
+      if (critRoll === "20") {
+        damageResult.total = damageResult.total * 2;
+        attackRes.concat("Double ", attackRes);
+      }
+      console.log(damageResult);
+    }
     if (
-      attack.startsWith("S") ||
-      attack.startsWith("B") ||
-      attack.startsWith("Critical S")
+      attackRes.startsWith("S") ||
+      attackRes.startsWith("B") ||
+      attackRes.startsWith("Critical S")
     ) {
       setAttackResult(
         <div>
-          {attack} <br /> {damage} <i>{architecture.statMasks[stat]}</i> damage
-          dealt!
+          {attackRes} <br /> {damageResult.total}{" "}
+          <i>{architecture.statMasks[stat]}</i> damage dealt!{" "}
+          {damageResult.explosions !== 0 && (
+            <span>(Explosions: {damageResult.explosions})</span>
+          )}
         </div>
       );
     } else {
-      setAttackResult(attack);
+      setAttackResult(attackRes);
     }
   };
 
@@ -293,31 +285,81 @@ const Card = (props) => {
           toggle(setAttackModalOpen, attackModalOpen);
         }}
       >
-        <Modal.Header className="modalbackground">{ifTitle()}</Modal.Header>
+        <Modal.Header className="modalbackground">
+          <span className="cardname">Attack using your {name}</span>
+        </Modal.Header>
         <Modal.Body className="modalbackground">
-          {pro !== 0 && <div>Attack Bonus: {attackInfo + pro}</div>}
-          {pro === 0 && <div>Attack Bonus: {attackInfo}</div>}
+          {attack.pro === "single" && (
+            <div>
+              Attack Bonus {modularString(attack)}: {attack.mod + character.PRO}
+            </div>
+          )}
+          {attack.pro === "double" && (
+            <div>
+              Attack Bonus {modularString(attack)}:{" "}
+              {attack.mod + character.PRO * 2}
+            </div>
+          )}
+          {attack.pro === "" && (
+            <div>
+              Attack Bonus {modularString(attack)}: {attack.mod}
+            </div>
+          )}
           <div className="flex">
             <button
               className="button bordered padded5px margin5px flexgrow"
               onClick={() => {
-                toggleAdv("-");
+                toggleState(attack, setAttack, "adv", "", "-");
               }}
             >
               [-]
             </button>
+            {attack.pro === "" && (
+              <button
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  toggleState(
+                    attack,
+                    setAttack,
+                    "pro",
+                    "single",
+                    character.PRO
+                  );
+                }}
+              >
+                PRO
+              </button>
+            )}
+            {attack.pro === "single" && (
+              <button
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  toggleState(
+                    attack,
+                    setAttack,
+                    "pro",
+                    "double",
+                    character.PRO
+                  );
+                }}
+              >
+                PRO x2
+              </button>
+            )}
+            {attack.pro === "double" && (
+              <button
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  toggleState(attack, setAttack, "pro", "", character.PRO);
+                }}
+              >
+                No PRO
+              </button>
+            )}
             <button
               className="button bordered padded5px margin5px flexgrow"
               onClick={() => {
-                togglePro();
-              }}
-            >
-              PRO
-            </button>
-            <button
-              className="button bordered padded5px margin5px flexgrow"
-              onClick={() => {
-                toggleAdv("+");
+                toggleState(attack, setAttack, "adv", "", "+");
               }}
             >
               [+]
@@ -325,7 +367,26 @@ const Card = (props) => {
           </div>
           <hr />
           <div>
-            Weapon Damage: {number} <i>{architecture.statMasks[stat]}</i>
+            Damage {modularString(damage)}: {number}{" "}
+            <i>{architecture.statMasks[stat]}</i>
+          </div>
+          <div className="flex">
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleState(damage, setDamage, "adv", "", "-");
+              }}
+            >
+              [-]
+            </button>
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleState(damage, setDamage, "adv", "", "+");
+              }}
+            >
+              [+]
+            </button>
           </div>
           <hr />
           <div>Target: {target}</div>

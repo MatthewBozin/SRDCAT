@@ -35,6 +35,64 @@ const multiRoll = (value) => {
   return total;
 };
 
+const damage = (string) => {
+  let exploding = false;
+  let explosions = 0;
+  console.log(string.substr(string.length - 1));
+  if (string.substr(string.length - 1) === "*") {
+    exploding = true;
+    string = string.slice(0, -1);
+  }
+  let total = 0;
+  let dice = string.split("d");
+  let times = parseInt(dice[0]);
+  let size = parseInt(dice[1]);
+  for (let i = 0; i < times; i++) {
+    let subtotal = 0;
+    let result = r(size) + 1;
+    subtotal += result;
+    //exploding dice
+    if (result === size && exploding === true) {
+      console.log("BOOM");
+      while (true) {
+        explosions += 1;
+        let newresult = r(size) + 1;
+        subtotal += newresult;
+        if (newresult !== size) {
+          break;
+        }
+      }
+    }
+    total += subtotal;
+  }
+  return { total: total, explosions: explosions };
+};
+
+const damagecalc = (string, adv) => {
+  let result1;
+  let result2;
+  if (adv !== "") {
+    result1 = damage(string);
+    result2 = damage(string);
+  } else {
+    result1 = damage(string);
+  }
+
+  if (adv === "+") {
+    if (result1.total > result2.total) {
+      return result1;
+    }
+    return result2;
+  }
+  if (adv === "-") {
+    if (result1.total < result2.total) {
+      return result1;
+    }
+    return result2;
+  }
+  return result1;
+};
+
 const calcSale = (value) => {
   let valuesplit = value.split("x");
   let roll = multiRoll(valuesplit[0]);
@@ -77,9 +135,9 @@ const test = (target, adv, pro, mod) => {
   let rollTotal = parseInt(rollData.total) + parseInt(mod);
   let resultString = "";
   if (rollResult === 20 || rollResult === 1) {
-    resultString += " Critical ";
+    resultString += "Critical ";
   }
-  if (rollResult === target) {
+  if (rollTotal === target) {
     resultString += "Barely a ";
   }
   if (rollTotal >= target) {
@@ -145,6 +203,7 @@ export {
   s,
   rdamage,
   multiRoll,
+  damagecalc,
   calcSale,
   roll,
   minitest,
