@@ -1,9 +1,9 @@
 {
     "data":[
         {
-            "name":"Flail, Accelerated",
+            "name":"Accelerated Flail",
             "type":"offensive",
-            "tags":["chain", "clumsy", "exotica"],
+            "tags":["offensive", "chain", "daemonic"],
             "flavor":"A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
             "weight": 20,
             "value":"2d6x500",
@@ -12,26 +12,26 @@
             "modifiers":["guidance"]
         },
         {
-            "name":"Nanite Swarm",
-            "type":"offensive",
-            "tags":["chain", "clumsy", "exotica"],
-            "flavor":"Test",
-            "weight": 20,
-            "value":"2d6x500",
-            "number":"12d2*",
-            "stat":"HA",
-            "modifiers":["guidance"]
-        },
-        {
-            "name":"Shield, Hard Light",
+            "name":"Hard Light Shield",
             "type":"defensive",
-            "tags":["fantastic", "reflective", "sun-forged"],
+            "tags":["defensive", "hard-light"],
             "flavor":"A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
             "weight": 10,
             "value":"3d6x2000",
             "number":"3",
             "stat":"BA",
             "modifiers":["concealed","vorpal-edge"]
-        }
+        },
+        {
+            "name":"Nanite Swarm Projector",
+            "type":"offensive",
+            "tags":["offensive", "good-gun", "nanotech"],
+            "flavor":"The swarm devours eternal.",
+            "weight": 20,
+            "value":"2d6x500",
+            "number":"12d2*",
+            "stat":"HA",
+            "modifiers":["guidance"]
+        } 
     ]
 }

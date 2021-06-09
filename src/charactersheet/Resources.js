@@ -10,6 +10,7 @@ const Resources = () => {
   const [modalStat, setModalStat] = useState("");
   const [currentResource, setCurrentResource] = useState(character[modalStat]);
   const [data, setData] = useState(character[modalStat]);
+  const [setButton, setSetButton] = useState(false);
 
   const statMasks = architecture.statMasks;
   const resources = ["LIFE", "HERODICE", "XP", "CASH"];
@@ -47,6 +48,7 @@ const Resources = () => {
       character[modalStat] = parseInt(data);
       setCurrentResource(character[modalStat]);
     }
+    setSetButton(false);
   };
 
   const ifStat1 = (stat) => {
@@ -142,18 +144,23 @@ const Resources = () => {
                 className="padded5px button clearborder flexgrow2 lefttoright"
                 placeholder={character[modalStat]}
                 type="text"
+                onClick={() => {
+                  setSetButton(true);
+                }}
                 onChange={(e) => {
                   setData(e.target.value);
                 }}
                 id={"modalform" + character[modalStat]}
               />
             </div>
-            <input
-              className="button bordered padded5px margin5px flexgrow2"
-              type="submit"
-              //value = stat.value
-              value="Set"
-            />
+            {setButton === true && (
+              <input
+                className="button bordered padded5px margin5px flexgrow2"
+                type="submit"
+                //value = stat.value
+                value="Set"
+              />
+            )}
           </form>
           <div className="flex">{ifStat1(modalStat)}</div>
           <div className="flex">{ifStat2(modalStat)}</div>
