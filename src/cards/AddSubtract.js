@@ -2,12 +2,17 @@ import React, { useContext } from "react";
 import { FaRegShareSquare, FaRegTrashAlt } from "react-icons/fa";
 import Context from "../data/context";
 import Character from "../data/character";
+import toaster from "toasted-notes";
+import "toasted-notes/src/styles.css";
 
 const AddSubtract = (props) => {
   const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
 
   const addCard = () => {
+    toaster.notify("Card (" + props.card.name + ") added to character!", {
+      duration: 2000,
+    });
     setCharacter(() => {
       let instanced = props.card;
       if (instanced.table !== undefined) {
@@ -28,6 +33,9 @@ const AddSubtract = (props) => {
   };
 
   const deleteCard = () => {
+    toaster.notify("Card (" + props.card.name + ") removed from character!", {
+      duration: 2000,
+    });
     setCharacter(() => {
       character[props.deleteFrom].splice(props.placement, 1);
       const newCharacter = JSON.parse(JSON.stringify(character));
