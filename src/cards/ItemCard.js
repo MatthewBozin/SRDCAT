@@ -9,6 +9,8 @@ import modsdata from "../data/collections/modifiers.json";
 import { FaDollarSign } from "react-icons/fa";
 import { ReactComponent as Attack } from "../data/icons/attack.svg";
 import Character from "../data/character.js";
+import toaster from "toasted-notes";
+import "toasted-notes/src/styles.css";
 import {
   r,
   test,
@@ -147,10 +149,32 @@ const Card = (props) => {
     if (props.deleteFrom === "none") {
       newCharacter.CASH -= salePrice;
       newCharacter["items"].push(props.card);
+      toaster.notify(
+        "Item bought: " +
+          name +
+          "! Cost: " +
+          salePrice +
+          ", Current Cash: " +
+          character.CASH,
+        {
+          duration: 3000,
+        }
+      );
     }
     if (props.deleteFrom === "items") {
       newCharacter.CASH += salePrice;
       newCharacter[props.deleteFrom].splice(props.placement, 1);
+      toaster.notify(
+        "Item sold: " +
+          name +
+          "! Cost: " +
+          salePrice +
+          ", Current Cash: " +
+          character.CASH,
+        {
+          duration: 3000,
+        }
+      );
     }
     setSalePrice(0);
     toggle(setSaleModalOpen, saleModalOpen);
@@ -409,6 +433,9 @@ const Card = (props) => {
               <div
                 className="button padded5px"
                 onClick={() => {
+                  toaster.notify("Attack text copied to clipboard!", {
+                    duration: 2000,
+                  });
                   navigator.clipboard.writeText(attackMessage);
                 }}
               >

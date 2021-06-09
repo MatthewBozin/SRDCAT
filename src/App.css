@@ -326,6 +326,6 @@ button:hover {
     flex-direction: column;
   }
   .limitwidth {
-    width: 100%;
+    width: 97.5%;
   }
 }
