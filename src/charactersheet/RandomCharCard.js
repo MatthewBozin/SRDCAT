@@ -3,6 +3,7 @@ import Name from "../cards/Name";
 import Flavor from "../cards/Flavor";
 import Description from "../cards/Description";
 import Col from "react-bootstrap/Col";
+import { FaDiceD20 } from "react-icons/fa";
 
 const RandomCharCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -29,6 +30,12 @@ const RandomCharCard = (props) => {
             name={name}
             expanded={expanded}
             expandCollapse={expandCollapse}
+          />
+          <FaDiceD20
+            className="rightfloat icon mright24px"
+            onClick={() => {
+              buttonfunction(buttonprop);
+            }}
           />
         </div>
         {expanded === true && (

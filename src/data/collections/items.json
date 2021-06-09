@@ -14,7 +14,7 @@
         {
             "name":"Hard Light Shield",
             "type":"defensive",
-            "tags":["defensive", "hard-light"],
+            "tags":["defensive", "armour", "hard-light"],
             "flavor":"A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
             "weight": 10,
             "value":"3d6x2000",

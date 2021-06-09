@@ -22,7 +22,7 @@ const Defense = (props) => {
 
   return (
     <div>
-      <span className="orangetext">{statMasks[props.defense.name]}</span>
+      <span>{statMasks[props.defense.name]}</span>
       <span className="mleft12px">{calcDefense(props.defense)}</span>
     </div>
   );

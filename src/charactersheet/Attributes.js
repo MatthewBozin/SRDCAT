@@ -5,7 +5,7 @@ import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import RollCard from "./RollCard.js";
 import architecture from "../data/architecture.json";
-import { test } from "../data/exports.js";
+import { test, toggleState, toggle, withProAdv } from "../data/exports.js";
 
 const Stats = () => {
   const [character, setCharacter] = useContext(Character);
@@ -13,12 +13,10 @@ const Stats = () => {
   const [modalStat, setModalStat] = useState("");
   const [result, setResult] = useState("");
   const [edit, setEdit] = useState(false);
-  const [pro, setPro] = useState(0);
-  const [adv, setAdv] = useState("");
+  const [testInfo, setTestInfo] = useState({ pro: "", mod: 0, adv: "" });
 
   const SEA = ["STR", "END", "AGI"];
   const CAT = ["CHA", "AUR", "THO"];
-  const statMasks = architecture.statMasks;
 
   const targets = architecture.targets;
 
@@ -34,66 +32,27 @@ const Stats = () => {
     setModalOpen(false);
   };
 
-  const toggle = (method, status) => {
-    method(!status);
-  };
-
-  const togglePro = () => {
-    if (pro === 0) {
-      setPro(character.PRO);
-    } else {
-      setPro(0);
-    }
-  };
-
-  const toggleAdv = (input) => {
-    if (input === "+") {
-      if (adv === "+") {
-        setAdv("");
-      } else {
-        setAdv("+");
-      }
-    } else if (input === "-") {
-      if (adv === "-") {
-        setAdv("");
-      } else {
-        setAdv("-");
-      }
-    }
-  };
-
   const editStat = (amount, stat) => {
     let newChar = character;
     newChar[stat] += parseInt(amount);
     setCharacter(JSON.parse(JSON.stringify(newChar)));
   };
 
-  const ifTitle = () => {
-    let titleString = "Test Your " + statMasks[modalStat];
-    let calc = character[modalStat];
-    let mod = "";
-    if (pro !== 0 || adv !== "") {
-      titleString += " with ";
+  const modularString = (object) => {
+    let data = withProAdv(object);
+    let number = 0;
+    if (object.pro !== undefined) {
+      if (object.pro === "single") {
+        number += character.PRO;
+      }
+      if (object.pro === "double") {
+        number += character.PRO * 2;
+      }
     }
-    if (pro !== 0) {
-      titleString += "Proficiency";
-      calc += character.PRO;
-    }
-    if (pro !== 0 && adv !== "") {
-      titleString += " and ";
-    }
-    if (adv === "+") {
-      titleString += "Advantage";
-      mod = "[+]";
-    }
-    if (adv === "-") {
-      titleString += "Disadvantage";
-      mod = "[-]";
-    }
-
+    number += character[modalStat];
     return (
-      <span className="cardname">
-        {titleString}: (+{calc}) {mod}
+      <span>
+        {data.string} {data.mod}: (+{number})
       </span>
     );
   };
@@ -135,7 +94,10 @@ const Stats = () => {
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          {ifTitle()}
+          <span className="cardname">
+            Test Your {architecture.statMasks[modalStat]}{" "}
+            {modularString(testInfo)}
+          </span>
           <span>
             <FaRegEdit
               className="icon rightfloat"
@@ -147,7 +109,6 @@ const Stats = () => {
         </Modal.Header>
         <Modal.Body className="modalbackground">
           {edit === true && (
-            //flex these
             <div>
               <div className="outerbox">
                 <div className="cardname center">Edit Stat</div>
@@ -183,32 +144,85 @@ const Stats = () => {
               <hr></hr>
             </div>
           )}
-          <div className="center">{result}</div>
-          <hr />
+          {result !== "" && (
+            <div>
+              <div
+                className="center button"
+                onClick={() => {
+                  navigator.clipboard.writeText(
+                    character.name +
+                      " tests their " +
+                      architecture.statMasks[modalStat] +
+                      withProAdv(testInfo).string +
+                      "!\nThe test is a " +
+                      result
+                  );
+                }}
+              >
+                {result}
+              </div>
+              <hr />
+            </div>
+          )}
+
           <div className="flex">
             <button
               className="button bordered padded5px margin5px flexgrow"
               onClick={() => {
-                togglePro();
-              }}
-            >
-              PRO
-            </button>
-            <button
-              className="button bordered padded5px margin5px flexgrow"
-              onClick={() => {
-                toggleAdv("+");
-              }}
-            >
-              [+]
-            </button>
-            <button
-              className="button bordered padded5px margin5px flexgrow"
-              onClick={() => {
-                toggleAdv("-");
+                toggleState(testInfo, setTestInfo, "adv", "", "-");
               }}
             >
               [-]
+            </button>
+            {testInfo.pro === "" && (
+              <button
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  toggleState(
+                    testInfo,
+                    setTestInfo,
+                    "pro",
+                    "single",
+                    character.PRO
+                  );
+                }}
+              >
+                PRO
+              </button>
+            )}
+            {testInfo.pro === "single" && (
+              <button
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  toggleState(
+                    testInfo,
+                    setTestInfo,
+                    "pro",
+                    "double",
+                    character.PRO
+                  );
+                }}
+              >
+                PRO x2
+              </button>
+            )}
+            {testInfo.pro === "double" && (
+              <button
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  toggleState(testInfo, setTestInfo, "pro", "", character.PRO);
+                }}
+              >
+                No PRO
+              </button>
+            )}
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleState(testInfo, setTestInfo, "adv", "", "+");
+              }}
+            >
+              [+]
             </button>
           </div>
           <hr />
@@ -222,11 +236,18 @@ const Stats = () => {
                     description={target.description}
                     target={target.value}
                     method={() => {
+                      let prof = 0;
+                      if (testInfo.pro === "single") {
+                        prof += character.PRO;
+                      }
+                      if (testInfo.pro === "double") {
+                        prof += character.PRO * 2;
+                      }
                       setResult(() => {
                         return test(
                           target.value,
-                          adv,
-                          pro,
+                          testInfo.adv,
+                          prof,
                           character[modalStat]
                         );
                       });

@@ -145,6 +145,10 @@ hr {
   flex-direction: row;
 }
 
+.hoverpointer {
+  cursor: default;
+}
+
 /*
 ------------------------------------------------------------------
   POSITIONING
@@ -175,6 +179,11 @@ hr {
 
 .center {
   text-align: center;
+}
+
+.limitwidth {
+  width: 700px;
+  max-width: 100%;
 }
 
 /* 
@@ -228,6 +237,10 @@ hr {
   margin-right: 15px;
 }
 
+.mright24px {
+  margin-right: 24px;
+}
+
 /*
 -------------------------------------------------------------------------
   HOVERS
@@ -266,6 +279,10 @@ button:hover {
 
 .outerbox:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hoverpointer:hover {
+  cursor: pointer;
 }
 
 /*
@@ -307,5 +324,8 @@ button:hover {
 @media (max-width: 992px) {
   .charsheet {
     flex-direction: column;
+  }
+  .limitwidth {
+    width: 100%;
   }
 }
