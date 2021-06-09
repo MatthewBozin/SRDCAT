@@ -9,6 +9,7 @@ const Resources = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("");
   const [data, setData] = useState(character[modalStat]);
+  const [setButton, setSetButton] = useState(false);
 
   const statMasks = architecture.statMasks;
   const stats = ["LEVEL", "PRO", "MCOST"];
@@ -46,6 +47,7 @@ const Resources = () => {
       newChar[modalStat] += parseInt(data);
       setCharacter(JSON.parse(JSON.stringify(newChar)));
     }
+    setSetButton(false);
   };
 
   return (
@@ -76,18 +78,23 @@ const Resources = () => {
                   className="padded5px button clearborder flexgrow2 lefttoright"
                   placeholder={character[modalStat]}
                   type="text"
+                  onClick={() => {
+                    setSetButton(true);
+                  }}
                   onChange={(e) => {
                     setData(e.target.value);
                   }}
                   id={"modalform" + character[modalStat]}
                 />
               </div>
-              <input
-                className="button bordered padded5px margin5px flexgrow2"
-                type="submit"
-                //value = stat.value
-                value="Set"
-              />
+              {setButton === true && (
+                <input
+                  className="button bordered padded5px margin5px flexgrow2"
+                  type="submit"
+                  //value = stat.value
+                  value="Set"
+                />
+              )}
             </form>
             <div className="flex">
               {amounts[0].map((amount, index) => {
