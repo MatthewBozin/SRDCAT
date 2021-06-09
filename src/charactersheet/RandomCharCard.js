@@ -4,6 +4,8 @@ import Flavor from "../cards/Flavor";
 import Description from "../cards/Description";
 import Col from "react-bootstrap/Col";
 import { FaDiceD20 } from "react-icons/fa";
+import toaster from "toasted-notes";
+import "toasted-notes/src/styles.css";
 
 const RandomCharCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -34,6 +36,9 @@ const RandomCharCard = (props) => {
           <FaDiceD20
             className="rightfloat icon mright24px"
             onClick={() => {
+              toaster.notify("Random character generated!", {
+                duration: 2000,
+              });
               buttonfunction(buttonprop);
             }}
           />
@@ -55,6 +60,9 @@ const RandomCharCard = (props) => {
             <button
               className="button bordered padded5px fullwidth"
               onClick={() => {
+                toaster.notify("Random character generated!", {
+                  duration: 2000,
+                });
                 buttonfunction(buttonprop);
               }}
             >
