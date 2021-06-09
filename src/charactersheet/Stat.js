@@ -7,7 +7,7 @@ const Stat = (props) => {
   const statMasks = architecture.statMasks;
   return (
     <div>
-      <span className="orangetext">{statMasks[props.stat]}</span>
+      <span>{statMasks[props.stat]}</span>
       <span className="mleft12px">{character[props.stat]}</span>
     </div>
   );

@@ -31,7 +31,7 @@ const CharSheet = () => {
 
   return (
     <div className="charsheet">
-      <div className="outerbox">
+      <div className="outerbox limitwidth">
         <span className="row rightfloat mright12px">
           <SaveCharModal />
           <ExportCharModal />
@@ -40,7 +40,7 @@ const CharSheet = () => {
         <CharName />
         <StatSheet />
       </div>
-      <div>
+      <div className="outerbox limitwidth">
         <div className="outerbox">
           <div className="row mleft5px fullwidth">
             <span>

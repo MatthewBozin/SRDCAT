@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import ItemCard from "./ItemCard";
-import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
   const ifItem = (card, placement) => {
@@ -30,13 +30,22 @@ const CardList = (props) => {
   };
 
   return (
-    <section>
-      <Row>
-        {props.content.map((card, index) => {
-          return ifItem(card, index);
-        })}
-      </Row>
-    </section>
+    <div>
+      {props.deleteFrom !== "none" && (
+        <div>
+          {props.content.map((card, index) => {
+            return ifItem(card, index);
+          })}
+        </div>
+      )}
+      {props.deleteFrom === "none" && (
+        <Col>
+          {props.content.map((card, index) => {
+            return ifItem(card, index);
+          })}
+        </Col>
+      )}
+    </div>
   );
 };
 

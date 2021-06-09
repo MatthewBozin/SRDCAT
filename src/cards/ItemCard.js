@@ -17,6 +17,10 @@ import {
   minitest,
   haggleRoll,
   sackstonesoap,
+  updateState,
+  toggleState,
+  toggle,
+  withProAdv,
 } from "../data/exports.js";
 import architecture from "../data/architecture.json";
 
@@ -29,28 +33,10 @@ const Card = (props) => {
   const [failSale, setFailSale] = useState(false);
   const [target, setTarget] = useState(10);
   const [attackResult, setAttackResult] = useState("");
+  const [attackMessage, setAttackMessage] = useState("");
 
   const [attack, setAttack] = useState({ pro: "", mod: 0, adv: "" });
   const [damage, setDamage] = useState({ adv: "" });
-
-  const updateState = (object, method, property, value) => {
-    let object2 = object;
-    object2[property] = value;
-    method(JSON.parse(JSON.stringify(object2)));
-  };
-
-  const toggleState = (object, method, property, value, togglevalue) => {
-    if (object[property] === value) {
-      updateState(object, method, property, togglevalue);
-    } else {
-      updateState(object, method, property, value);
-    }
-    console.log(object);
-  };
-
-  const toggle = (method, status) => {
-    method(!status);
-  };
 
   const { name, type, tags, flavor, weight, value, number, stat, modifiers } =
     props.card;
@@ -71,35 +57,10 @@ const Card = (props) => {
   };
 
   const modularString = (object) => {
-    let string = "";
-    let mod = "";
-    if (object.pro !== undefined) {
-      if (object.pro !== "" || object.adv !== "") {
-        string += " with ";
-      }
-      if (object.pro === "single") {
-        string += "Proficiency";
-      }
-      if (object.pro === "double") {
-        string += "Double Proficiency";
-      }
-      if (object.pro !== "" && object.adv !== "") {
-        string += " and ";
-      }
-    } else if (object.adv !== "") {
-      string += " with ";
-    }
-    if (object.adv === "+") {
-      string += "Advantage";
-      mod = "[+]";
-    }
-    if (object.adv === "-") {
-      string += "Disadvantage";
-      mod = "[-]";
-    }
+    let data = withProAdv(object);
     return (
       <span>
-        {string} {mod}
+        {data.string} {data.mod}
       </span>
     );
   };
@@ -116,18 +77,13 @@ const Card = (props) => {
     let attackRes = test(target, attack.adv, pro, attack.mod);
     let damageResult = damagecalc(number, damage.adv);
 
-    console.log(attackRes);
-    console.log(damageResult);
-
     if (attackRes.startsWith("Critical S")) {
-      console.log(damageResult);
       damageResult.total = damageResult.total * 2;
       let critRoll = r(20) + 1;
       if (critRoll === "20") {
         damageResult.total = damageResult.total * 2;
         attackRes.concat("Double ", attackRes);
       }
-      console.log(damageResult);
     }
     if (
       attackRes.startsWith("S") ||
@@ -143,8 +99,38 @@ const Card = (props) => {
           )}
         </div>
       );
+      let damageAdv = "";
+      if (damage.adv === "+") {
+        damageAdv = " [+] ";
+      }
+      if (damage.adv === "-") {
+        damageAdv = " [-] ";
+      }
+      let message =
+        character.name +
+        " attacks with their " +
+        name +
+        withProAdv(attack).string +
+        "!\nThe attack is a " +
+        attackRes +
+        "\n" +
+        damageResult.total +
+        " " +
+        architecture.statMasks[stat] +
+        " damage" +
+        damageAdv +
+        " dealt!";
+      setAttackMessage(message);
     } else {
+      let message =
+        character.name +
+        " attacks with their " +
+        name +
+        withProAdv(attack).string +
+        "!\nThe attack is a " +
+        attackRes;
       setAttackResult(attackRes);
+      setAttackMessage(message);
     }
   };
 
@@ -188,7 +174,7 @@ const Card = (props) => {
     if (props.deleteFrom === "none") {
       return "col-xs-12 col-md-6 col-lg-6 col-xl-4";
     }
-    return "fullwidth mleft15px mright15px";
+    return "fullwidth mright15px";
   };
 
   return (
@@ -417,7 +403,19 @@ const Card = (props) => {
           >
             Roll Attack
           </button>
-          {attackResult !== "" && <div>{attackResult}</div>}
+          {attackResult !== "" && (
+            <div>
+              <hr />
+              <div
+                className="button padded5px"
+                onClick={() => {
+                  navigator.clipboard.writeText(attackMessage);
+                }}
+              >
+                {attackResult}
+              </div>
+            </div>
+          )}
         </Modal.Body>
       </Modal>
       <Modal

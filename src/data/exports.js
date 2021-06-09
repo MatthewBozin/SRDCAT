@@ -1,3 +1,16 @@
+/*
+1. Utility
+2. Combat
+3. Tests
+4. Status
+*/
+
+/*
+------------------------------------------------------------------
+  UTILITY
+------------------------------------------------------------------
+*/
+
 const r = function (c) {
   return Math.floor(Math.random() * c);
 };
@@ -5,6 +18,41 @@ const r = function (c) {
 const s = function (array) {
   return array[r(array.length)];
 };
+
+const multiRoll = (value) => {
+  let total = 0;
+  let dice = value.split("d");
+  let times = parseInt(dice[0]);
+  let size = parseInt(dice[1]);
+  for (let i = 0; i < times; i++) {
+    total += r(size);
+  }
+  return total;
+};
+
+const updateState = (object, method, property, value) => {
+  let object2 = object;
+  object2[property] = value;
+  method(JSON.parse(JSON.stringify(object2)));
+};
+
+const toggleState = (object, method, property, value, togglevalue) => {
+  if (object[property] === value) {
+    updateState(object, method, property, togglevalue);
+  } else {
+    updateState(object, method, property, value);
+  }
+};
+
+const toggle = (method, status) => {
+  method(!status);
+};
+
+/*
+------------------------------------------------------------------
+  COMBAT
+------------------------------------------------------------------
+*/
 
 const rdamage = (string) => {
   let split = string.split("d");
@@ -22,17 +70,6 @@ const rdamage = (string) => {
   }
 
   return base;
-};
-
-const multiRoll = (value) => {
-  let total = 0;
-  let dice = value.split("d");
-  let times = parseInt(dice[0]);
-  let size = parseInt(dice[1]);
-  for (let i = 0; i < times; i++) {
-    total += r(size);
-  }
-  return total;
 };
 
 const damage = (string) => {
@@ -93,10 +130,20 @@ const damagecalc = (string, adv) => {
   return result1;
 };
 
+/*
+------------------------------------------------------------------
+  TESTS
+------------------------------------------------------------------
+*/
+
 const calcSale = (value) => {
   let valuesplit = value.split("x");
   let roll = multiRoll(valuesplit[0]);
   return roll * parseInt(valuesplit[1]);
+};
+
+const minitest = (pro, stat) => {
+  return r(20) + pro + stat;
 };
 
 const roll = (adv, pro) => {
@@ -123,10 +170,6 @@ const roll = (adv, pro) => {
     total = result;
   }
   return { result: result, total: total, text: text };
-};
-
-const minitest = (pro, stat) => {
-  return r(20) + pro + stat;
 };
 
 const test = (target, adv, pro, mod) => {
@@ -170,6 +213,42 @@ const haggleRoll = (result, mode) => {
   return multiplier;
 };
 
+/*
+------------------------------------------------------------------
+  STATUS
+------------------------------------------------------------------
+*/
+
+const withProAdv = (object) => {
+  let string = "";
+  let mod = "";
+  if (object.pro !== undefined) {
+    if (object.pro !== "" || object.adv !== "") {
+      string += " with ";
+    }
+    if (object.pro === "single") {
+      string += "Proficiency";
+    }
+    if (object.pro === "double") {
+      string += "Double Proficiency";
+    }
+    if (object.pro !== "" && object.adv !== "") {
+      string += " and ";
+    }
+  } else if (object.adv !== "") {
+    string += " with ";
+  }
+  if (object.adv === "+") {
+    string += "Advantage";
+    mod = "[+]";
+  }
+  if (object.adv === "-") {
+    string += "Disadvantage";
+    mod = "[-]";
+  }
+  return { string: string, mod: mod };
+};
+
 const invcalc = (encumbrance, placement, placement2) => {
   return encumbrance.toString().slice(placement, placement2);
 };
@@ -210,4 +289,8 @@ export {
   test,
   haggleRoll,
   sackstonesoap,
+  updateState,
+  toggleState,
+  toggle,
+  withProAdv,
 };
