@@ -16,17 +16,17 @@ const AddSubtract = (props) => {
     setCharacter(() => {
       let instanced = props.card;
       if (instanced.table !== undefined) {
-        console.log(instanced.table);
         instanced.savedresult = 0;
       }
       instanced.savedrank = 0;
       character[context.collections].push(instanced);
-      console.log(character[context.collections]);
 
-      let jsonArray = character[context.collections].map(JSON.stringify);
-      let uniqueSet = new Set(jsonArray);
-      let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
-      character[context.collections] = uniqueArray;
+      if (context.collections !== "items") {
+        let jsonArray = character[context.collections].map(JSON.stringify);
+        let uniqueSet = new Set(jsonArray);
+        let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
+        character[context.collections] = uniqueArray;
+      }
       const newCharacter = JSON.parse(JSON.stringify(character));
       return newCharacter;
     });
