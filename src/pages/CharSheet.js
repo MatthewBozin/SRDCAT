@@ -22,6 +22,7 @@ const CharSheet = () => {
 
   const getEncumbrance = () => {
     let encumbrance = 0;
+    console.log(character.items);
     for (let element of character.items) {
       encumbrance += element.weight;
     }

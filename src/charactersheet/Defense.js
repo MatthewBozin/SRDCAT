@@ -7,7 +7,7 @@ const Defense = (props) => {
   const statMasks = architecture.statMasks;
 
   const calcDefense = (defense) => {
-    console.log(character.CASH);
+    //console.log(character.CASH);
     let substats = defense.substats;
     let total = 0;
     total += Math.max(character[substats[0]], character[substats[1]]);
