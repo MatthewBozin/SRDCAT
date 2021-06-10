@@ -26,6 +26,12 @@ const CharSheet = () => {
     for (let element of character.items) {
       encumbrance += element.weight;
     }
+    encumbrance += Math.round(character.CASH / 25);
+    return encumbrance;
+  };
+
+  const weightString = () => {
+    let encumbrance = getEncumbrance();
     let weightstring = sackstonesoap(encumbrance, "inventory");
     return <span>{weightstring}</span>;
   };
@@ -61,8 +67,13 @@ const CharSheet = () => {
             </span>
           </div>
           <div className="outerbox">
-            <span className="mleft5px orangetext">Encumbrance: </span>
-            <span className="mleft5px">{getEncumbrance()}</span>
+            {getEncumbrance() > 100 && (
+              <span className="mleft5px orangetext">ENCUMBERED!! </span>
+            )}
+            {getEncumbrance() <= 100 && (
+              <span className="mleft5px orangetext">Encumbrance: </span>
+            )}
+            <span className="mleft5px">{weightString()}</span>
           </div>
           <CardList
             content={character.items}
