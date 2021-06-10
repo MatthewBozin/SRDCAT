@@ -8,7 +8,6 @@ const Resources = () => {
   const [character, setCharacter] = useContext(Character);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("");
-  const [currentResource, setCurrentResource] = useState(character[modalStat]);
   const [data, setData] = useState(character[modalStat]);
   const [setButton, setSetButton] = useState(false);
 
@@ -36,8 +35,10 @@ const Resources = () => {
   };
 
   const modResource = (amount, resource) => {
-    character[resource] += parseInt(amount);
-    setCurrentResource(character[resource]);
+    let newchar = character;
+    newchar[resource] += parseInt(amount);
+    console.log(newchar);
+    setCharacter(JSON.parse(JSON.stringify(newchar)));
   };
 
   const handleSubmit = (e) => {
@@ -45,8 +46,9 @@ const Resources = () => {
     let id = "modalform" + character[modalStat];
     document.getElementById(id).value = "";
     if (data !== undefined) {
-      character[modalStat] = parseInt(data);
-      setCurrentResource(character[modalStat]);
+      let newchar = character;
+      newchar[modalStat] = parseInt(data);
+      setCharacter(JSON.parse(JSON.stringify(newchar)));
     }
     setSetButton(false);
   };

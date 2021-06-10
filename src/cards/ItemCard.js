@@ -9,15 +9,19 @@ import ItemSaleModal from "./ItemSaleModal.js";
 import modsdata from "../data/collections/modifiers.json";
 import { FaDollarSign } from "react-icons/fa";
 import { ReactComponent as Attack } from "../data/icons/attack.svg";
+import { ReactComponent as Defend } from "../data/icons/defend.svg";
+import { ReactComponent as DefendAlt } from "../data/icons/defendbasealt.svg";
 import Character from "../data/character.js";
 import architecture from "../data/architecture.json";
-import "toasted-notes/src/styles.css";
 import { sackstonesoap, updateState, toggle } from "../data/exports.js";
+import toaster from "toasted-notes";
+import "toasted-notes/src/styles.css";
 
 const Card = (props) => {
   const [expanded, setExpanded] = useState(false);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
+  const [itemNotWorn, setItemNotWorn] = useState(true);
   const [character, setCharacter] = useContext(Character);
   const [attack, setAttack] = useState({ pro: "", mod: 0, adv: "" });
 
@@ -52,6 +56,13 @@ const Card = (props) => {
     return "fullwidth mright15px";
   };
 
+  const toggleWear = () => {
+    let newchar = character;
+    let item = newchar.items[props.placement];
+    item.worn = itemNotWorn;
+    setCharacter(JSON.parse(JSON.stringify(newchar)));
+  };
+
   return (
     <div className={noBreakpointsIfHeroSheet()}>
       <article className="outerbox">
@@ -74,6 +85,34 @@ const Card = (props) => {
                 }}
               />
             )}
+            {props.deleteFrom === "items" &&
+              type === "defensive" &&
+              itemNotWorn === true && (
+                <Defend
+                  className="iconsvg"
+                  onClick={() => {
+                    toggle(setItemNotWorn, itemNotWorn);
+                    toggleWear();
+                    toaster.notify(name + " worn!", {
+                      duration: 2000,
+                    });
+                  }}
+                />
+              )}
+            {props.deleteFrom === "items" &&
+              type === "defensive" &&
+              itemNotWorn === false && (
+                <DefendAlt
+                  className="iconsvg"
+                  onClick={() => {
+                    toggle(setItemNotWorn, itemNotWorn);
+                    toggleWear();
+                    toaster.notify(name + " taken off!", {
+                      duration: 2000,
+                    });
+                  }}
+                />
+              )}
             {capitalism(props.deleteFrom) && (
               <FaDollarSign
                 className="icon"
