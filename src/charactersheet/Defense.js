@@ -14,15 +14,12 @@ const Defense = (props) => {
     total += character.PRO;
     total += character[defense.name];
     for (let item of character.items) {
-      console.log(item);
-      console.log(defense);
       if (item.stat === defense.name && item.worn === true) {
         total += parseInt(item.number);
       }
     }
     if (defense.name === "BA") {
-      total += Math.round(character.CASH / 250);
-      console.log(Math.round(character.CASH / 250));
+      total += Math.round((character.CASH - 125) / 250);
     }
     return total;
   };
