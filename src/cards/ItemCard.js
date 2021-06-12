@@ -74,7 +74,7 @@ const Card = (props) => {
               toggle(setExpanded, expanded);
             }}
           />
-          <span className="rightfloat mright12px">
+          <span className="rightfloat mright12px mtop10px">
             {props.deleteFrom === "items" && type === "offensive" && (
               <Attack
                 className="iconsvg"
@@ -130,7 +130,7 @@ const Card = (props) => {
             />
           </span>
         </div>
-        {expanded === false && (
+        {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
               return <Tag tag={tag} key={index} />;

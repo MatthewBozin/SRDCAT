@@ -34,7 +34,7 @@ const RandomCharCard = (props) => {
             expandCollapse={expandCollapse}
           />
           <FaDiceD20
-            className="rightfloat icon mright24px"
+            className="rightfloat icon mright24px mtop12px"
             onClick={() => {
               toaster.notify("Random character generated!", {
                 duration: 2000,

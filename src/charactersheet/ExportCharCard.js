@@ -23,7 +23,7 @@ const ExportCharCard = (props) => {
             expandCollapse={expandCollapse}
           />
           <FaFileDownload
-            className="rightfloat icon mright24px"
+            className="rightfloat icon mright24px mtop12px"
             onClick={() => {
               method();
             }}

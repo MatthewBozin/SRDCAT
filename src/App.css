@@ -107,7 +107,6 @@ hr {
   color: #fa5c5c;
   cursor: pointer;
   transform: scale(1.5);
-  margin-top: 16px;
   margin-left: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -126,7 +125,6 @@ hr {
   width: 30px;
   color: #fa5c5c;
   cursor: pointer;
-  padding-top: 15px;
   transition: 0.3s;
 }
 
@@ -239,6 +237,14 @@ hr {
 
 .mright24px {
   margin-right: 24px;
+}
+
+.mtop10px {
+  margin-top: 4px;
+}
+
+.mtop12px {
+  margin-top: 12px;
 }
 
 /*

@@ -67,7 +67,7 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mright12px">
+          <span className="rightfloat mright12px mtop10px">
             <AddSubtract
               card={props.card}
               form={props.form}
@@ -82,7 +82,7 @@ const Card = (props) => {
             )*/}
           </span>
         </div>
-        {expanded === false && (
+        {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
               return <Tag tag={tag} key={index} />;
