@@ -1,15 +1,18 @@
 {
     "data":[
         {
-            "name":"Flamethrower",
-            "tags":["weapon","machine"],
-            "flavor":"Roast em, toast em, extra well-done.",
-            "description":"Held together by spit and duct tape, a deadly fire-spraying contraption.",
-            "weight": 100,
-            "table":"1d6d6",
-            "value":"7",
-            "crafting":["metal","metal","fuel","fuel"],
-            "ranks":["0","1","2","3","4","5"]
+            "name":"Burden Sharing Arrangement",
+            "tags":["abmortal-sanatry"],
+            "flavor":"Let me bear your cross.",
+            "description":"The wizard undertakes a spiritual voyage into a creature’s essential existence to remove their burden. Doctors may dress up the simple metempsychic rite to justify higher fees.",
+            "weight": 10,
+            "ranks":[
+                {"power":1, "effect":"The doctor’s ka embarks on its voyage through the creature’s eyes or other primary sense organs. Over several hours they remove a burden from the target and convert it into a healer’s burden stored in an adjacent creature’s aura."},
+                {"power":2, "effect":"Rite takes about half an hour."},
+                {"power":3, "effect":"Rite takes a few minutes."},
+                {"power":4, "effect":"Rite takes a dozen seconds."}
+            ],
+            "modifiers":["telemagic","transfer","healers-burden","sloppy-transfer"]
         }
     ]
 }
