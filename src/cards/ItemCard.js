@@ -17,7 +17,7 @@ import { sackstonesoap, updateState, toggle } from "../data/exports.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
-const Card = (props) => {
+const ItemCard = (props) => {
   const [expanded, setExpanded] = useState(false);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
@@ -168,11 +168,14 @@ const Card = (props) => {
               {modifiers.map((mod, index) => {
                 let modifier = modsdata[mod];
                 return (
-                  <NameValuePair
-                    key={index}
-                    name={modifier.name}
-                    value={modifier.description}
-                  />
+                  <div>
+                    <NameValuePair
+                      key={index}
+                      name={modifier.name}
+                      value={modifier.description}
+                    />
+                    <hr />
+                  </div>
                 );
               })}
             </div>
@@ -203,4 +206,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default ItemCard;

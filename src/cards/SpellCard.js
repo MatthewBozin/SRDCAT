@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import Character from "../data/character.js";
+import SpellCastModal from "./SpellCastModal.js";
+import { ReactComponent as Cast } from "../data/icons/magic.svg";
 import Name from "./Name";
 import Tag from "./Tag";
 import Flavor from "./Flavor";
@@ -6,16 +9,22 @@ import Description from "./Description";
 import Ranks from "./Ranks";
 import AddSubtract from "./AddSubtract";
 import Table from "./Table";
+import NameValuePair from "./NameValuePair";
+import modsdata from "../data/collections/modifiers.json";
 
-const Card = (props) => {
+const SpellCard = (props) => {
   const [expanded, setExpanded] = useState(false);
+  const [castModalOpen, setCastModalOpen] = useState(false);
+  const [character, setCharacter] = useContext(Character);
 
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
 
-  const { name, tags, flavor, description, ranks, table, value, crafting } =
+  const { name, tags, flavor, description, ranks, table, modifiers } =
     props.card;
+
+  console.log(props);
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {
@@ -26,28 +35,6 @@ const Card = (props) => {
   if (props.card.savedresult !== undefined) {
     savedresult = props.card.savedresult;
   }
-
-  const ifItem2 = () => {
-    if (value !== undefined && crafting !== undefined) {
-      let fullcraft = crafting.join(", ");
-      return (
-        <div>
-          <div>
-            <span className="padded5px">
-              <span className="orangetext">Value: </span>
-              <span>{value}</span>
-            </span>
-          </div>
-          <div>
-            <span className="padded5px">
-              <span className="orangetext">Crafting: </span>
-              <span>{fullcraft}</span>
-            </span>
-          </div>
-        </div>
-      );
-    }
-  };
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -66,18 +53,20 @@ const Card = (props) => {
             expandCollapse={expandCollapse}
           />
           <span className="rightfloat mright12px mtop10px">
+            {props.deleteFrom !== "none" && (
+              <Cast
+                className="iconsvg"
+                onClick={() => {
+                  setCastModalOpen(true);
+                }}
+              />
+            )}
             <AddSubtract
               card={props.card}
               form={props.form}
               placement={props.placement}
               deleteFrom={props.deleteFrom}
             />
-            {/*props.deleteFrom === "items" && (
-              <span className="rightfloat mright15px">
-                <FaHammer className="icon" />
-                <FaRecycle className="icon" />
-              </span>
-            )*/}
           </span>
         </div>
         {expanded === false && props.deleteFrom === "none" && (
@@ -95,13 +84,6 @@ const Card = (props) => {
             })}
             <Flavor flavor={flavor} />
             <Description description={description} />
-            {ifItem2()}
-            {typeof table === "string" && (
-              <span className="padded5px">
-                <span className="orangetext">Damage: </span>
-                <span>{table}</span>
-              </span>
-            )}
             {table !== undefined && (
               <span>
                 <Table
@@ -130,11 +112,34 @@ const Card = (props) => {
                 </span>
               )}
             </div>
+            <hr></hr>
+            {modifiers.map((mod, index) => {
+              let modifier = modsdata[mod];
+              return (
+                <div>
+                  <NameValuePair
+                    key={index}
+                    name={modifier.name}
+                    value={modifier.description}
+                  />
+                  <hr />
+                </div>
+              );
+            })}
           </span>
         )}
       </div>
+      <SpellCastModal
+        castModalOpen={castModalOpen}
+        setCastModalOpen={setCastModalOpen}
+        character={character}
+        setCharacter={setCharacter}
+        name={name}
+        description={description}
+        ranks={ranks}
+      />
     </div>
   );
 };
 
-export default Card;
+export default SpellCard;

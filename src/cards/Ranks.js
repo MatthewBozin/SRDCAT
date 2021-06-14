@@ -12,6 +12,8 @@ const Ranks = (props) => {
     }
   };
 
+  console.log(props.deleteFrom);
+
   const [character, setCharacter] = useContext(Character);
   const [index, setIndex] = useState(ifRank());
   const rank = props.ranks[index];
@@ -41,7 +43,7 @@ const Ranks = (props) => {
   };
 
   const rankTable = (rank) => {
-    if (typeof rank == "object") {
+    if (typeof rank == "object" && props.category !== "spells") {
       return (
         <span>
           <span>{rank.base}</span>
@@ -49,6 +51,8 @@ const Ranks = (props) => {
           <span>{rank.end}</span>
         </span>
       );
+    } else if (props.category === "spells") {
+      return props.ranks[index].effect;
     } else {
       return rank;
     }
@@ -79,11 +83,13 @@ const Ranks = (props) => {
     }
   };
 
-  const ifItem = (type) => {
-    if (type === "items") {
-      return <span className="orangetext">Amount: </span>;
-    } else if (type === "single") {
+  const ifRankType = (type) => {
+    if (type === "single") {
       return <span className="orangetext">Feature: </span>;
+    } else if (props.category === "spells") {
+      return (
+        <span className="orangetext">Cost {props.ranks[index].power}: </span>
+      );
     } else {
       return <span className="orangetext">Rank {index + 1}: </span>;
     }
@@ -93,7 +99,7 @@ const Ranks = (props) => {
     <div>
       {rankButtons(props)}
       <span className="padded5px">
-        {ifItem(props.deleteFrom)}
+        {ifRankType(props.deleteFrom)}
         {rankTable(rank)}
       </span>
     </div>

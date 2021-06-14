@@ -18,7 +18,6 @@ function ItemSaleModal(props) {
     displayValue,
     name,
     deleteFrom,
-    card,
   } = props;
 
   const haggle = () => {

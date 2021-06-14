@@ -11,6 +11,7 @@
       "KA",
       "BA",
       "LIFE",
+      "MAXLIFE",
       "LEVEL",
       "PRO",
       "MCOST",
@@ -20,7 +21,8 @@
       "skills",
       "traits",
       "mutations",
-      "items"
+      "items",
+      "spells"
   ],
   "charLevels": {
     "specialextra": {
@@ -34,6 +36,7 @@
       "stats": 5,
       "statlimit": 3,
       "LIFE": 5,
+      "MAXLIFE": 5,
       "HERODICE": 0,
       "XP": 0,
       "gear": false,
@@ -51,6 +54,7 @@
       "stats": 7,
       "statlimit": 4,
       "LIFE": 20,
+      "MAXLIFE": 20,
       "HERODICE": 3,
       "XP": 999,
       "gear": false,
@@ -68,6 +72,7 @@
       "stats": 9,
       "statlimit": 5,
       "LIFE": 38,
+      "MAXLIFE": 38,
       "HERODICE": 6,
       "XP": 9999,
       "gear": true,
@@ -85,6 +90,7 @@
       "stats": 11,
       "statlimit": 5,
       "LIFE": 60,
+      "MAXLIFE": 60,
       "HERODICE": 9,
       "XP": 99999,
       "gear": true,
@@ -104,6 +110,7 @@
     "KA": 0,
     "BA": 0,
     "LIFE": 20,
+    "MAXLIFE": 20,
     "LEVEL": 1,
     "PRO": 1,
     "MCOST": 3,
@@ -114,6 +121,7 @@
     "traits": [],
     "mutations": [],
     "items": [],
+    "spells": [],
     "type": "Special Extra"
   },
   "charTypes": [
