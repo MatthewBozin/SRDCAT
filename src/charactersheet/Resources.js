@@ -154,6 +154,11 @@ const Resources = () => {
                 }}
                 id={"modalform" + character[modalStat]}
               />
+              {modalStat === "LIFE" && (
+                <span className="mtop45px button--override">
+                  / {character.MAXLIFE}
+                </span>
+              )}
             </div>
             {setButton === true && (
               <input

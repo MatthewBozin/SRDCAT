@@ -5,7 +5,7 @@ import NavMaster from "./navigation/NavMaster";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Collections from "./pages/Collections";
-import CharSheet from "./pages/CharSheet";
+import HeroSheet from "./pages/HeroSheet";
 import Error from "./pages/Error";
 import architecture from "./data/architecture.json";
 
@@ -37,7 +37,7 @@ function App() {
                 <Collections />
               </Route>
               <Route path="/hero">
-                <CharSheet />
+                <HeroSheet />
               </Route>
               <Route path="*">
                 <Error />

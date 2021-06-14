@@ -10,7 +10,7 @@ import RandomCharModal from "../charactersheet/RandomCharModal";
 import { sackstonesoap } from "../data/exports.js";
 import { Link } from "react-router-dom";
 
-const CharSheet = () => {
+const HeroSheet = () => {
   const [context, setContext] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
 
@@ -18,12 +18,16 @@ const CharSheet = () => {
     { name: "Skills", value: "skills" },
     { name: "Traits", value: "traits" },
     { name: "Mutations", value: "mutations" },
+    { name: "Spells", value: "spells" },
   ];
 
   const getEncumbrance = () => {
     let encumbrance = 0;
     for (let element of character.items) {
       encumbrance += element.weight;
+    }
+    for (let element of character.spells) {
+      encumbrance += 10;
     }
     encumbrance += Math.round(character.CASH / 25);
     return encumbrance;
@@ -116,4 +120,4 @@ const CharSheet = () => {
   );
 };
 
-export default CharSheet;
+export default HeroSheet;

@@ -1,13 +1,26 @@
 import React from "react";
 import Card from "./Card";
 import ItemCard from "./ItemCard";
+import SpellCard from "./SpellCard";
 import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
-  const ifItem = (card, placement) => {
+  const ifCard = (card, placement) => {
     if (props.category === "items") {
       return (
         <ItemCard
+          key={placement}
+          card={card}
+          form={props.form}
+          placement={placement}
+          deleteFrom={props.deleteFrom}
+          category={props.category}
+        />
+      );
+    }
+    if (props.category === "spells") {
+      return (
+        <SpellCard
           key={placement}
           card={card}
           form={props.form}
@@ -34,14 +47,14 @@ const CardList = (props) => {
       {props.deleteFrom !== "none" && (
         <div>
           {props.content.map((card, index) => {
-            return ifItem(card, index);
+            return ifCard(card, index);
           })}
         </div>
       )}
       {props.deleteFrom === "none" && (
         <Col>
           {props.content.map((card, index) => {
-            return ifItem(card, index);
+            return ifCard(card, index);
           })}
         </Col>
       )}

@@ -9,6 +9,7 @@ const Stat = (props) => {
     <div>
       <span>{statMasks[props.stat]}</span>
       <span className="mleft12px">{character[props.stat]}</span>
+      {props.stat === "LIFE" && <span>/{character.MAXLIFE}</span>}
     </div>
   );
 };
