@@ -29,7 +29,11 @@ function CharName() {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <button className="button clearborder" type="submit" value="Submit">
+          <button
+            className="button clearborder mtop10px"
+            type="submit"
+            value="Submit"
+          >
             <FaRegCheckSquare className="iconbutton" />
           </button>
         </form>
@@ -42,7 +46,7 @@ function CharName() {
             onClick={() => {
               setIsForm(true);
             }}
-            className="icon"
+            className="icon mtop10px"
           />
         </span>
       </div>

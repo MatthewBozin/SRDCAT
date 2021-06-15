@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Linklet from "./Linklet.js";
 import navbar from "../data/navbar.json";
 

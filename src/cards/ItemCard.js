@@ -74,7 +74,7 @@ const ItemCard = (props) => {
               toggle(setExpanded, expanded);
             }}
           />
-          <span className="rightfloat mright12px mtop10px">
+          <span className="rightfloat mright12px mtop4px">
             {props.deleteFrom === "items" && type === "offensive" && (
               <Attack
                 className="iconsvg"
@@ -168,9 +168,8 @@ const ItemCard = (props) => {
               {modifiers.map((mod, index) => {
                 let modifier = modsdata[mod];
                 return (
-                  <div>
+                  <div key={index}>
                     <NameValuePair
-                      key={index}
                       name={modifier.name}
                       value={modifier.description}
                     />

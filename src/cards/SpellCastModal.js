@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import SpellCostCard from "./SpellCostCard.js";
 import "toasted-notes/src/styles.css";
-import { toggleState, toggle } from "../data/exports.js";
+import { toggle } from "../data/exports.js";
 
 function SpellCastModal(props) {
   const {

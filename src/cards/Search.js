@@ -15,13 +15,11 @@ const Search = () => {
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });
-    console.log(context);
   };
 
   const resetSearch = () => {
     let context2 = context;
     context2.search = "";
-    console.log(context2);
     document.getElementById("searchbox").value = "";
     setData(() => {
       return "Enter tag or name";
@@ -32,7 +30,6 @@ const Search = () => {
   };
 
   const filter = (filterBy) => {
-    console.log(contextData);
     let newData = [];
     contextData.data.map((element) => {
       let toFilter;

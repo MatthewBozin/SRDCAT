@@ -9,7 +9,6 @@ const Collections = () => {
 
   const filter = (filterBy) => {
     let contextData = require(`../data/collections/` + context.collections);
-    console.log(contextData);
     let newData = [];
     contextData.data.map((element) => {
       let toFilter;
@@ -30,7 +29,6 @@ const Collections = () => {
 
   const ifSearch = () => {
     let data = require(`../data/collections/` + context.collections);
-    console.log(data);
     if (context.search !== "") {
       let filtered = filter("tags");
       if (filtered.length === 0) {

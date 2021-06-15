@@ -124,7 +124,7 @@ const RandomCharModal = () => {
   return (
     <div>
       <FaDiceD20
-        className="icon"
+        className="icon mtop10px"
         onClick={() => {
           modalOpening();
         }}

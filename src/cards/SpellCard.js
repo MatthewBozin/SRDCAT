@@ -52,7 +52,7 @@ const SpellCard = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mright12px mtop10px">
+          <span className="rightfloat mright12px mtop4px">
             {props.deleteFrom !== "none" && (
               <Cast
                 className="iconsvg"

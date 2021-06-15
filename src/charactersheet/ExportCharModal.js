@@ -4,6 +4,7 @@ import { FaFileDownload } from "react-icons/fa";
 import Character from "../data/character.js";
 import architecture from "../data/architecture.json";
 import ExportCharCard from "./ExportCharCard.js";
+import ImportCharCard from "./ImportCharCard.js";
 import { sackstonesoap } from "../data/exports.js";
 
 const SaveCharModal = () => {
@@ -42,8 +43,15 @@ const SaveCharModal = () => {
           if (card.ranks !== undefined) {
             for (let i = 0; i < card.ranks.length; i++) {
               let i2 = i + 1;
-              if (i <= card.savedrank) {
+              if (i <= card.savedrank && typeof card.ranks[i] !== "object") {
                 stringcard += "Rank " + i2 + ": " + card.ranks[i] + "\n";
+              } else {
+                stringcard +=
+                  "Cost " +
+                  card.ranks[i].power +
+                  ": " +
+                  card.ranks[i].effect +
+                  "\n";
               }
               if (i <= card.savedrank - 1) {
                 stringcard += "...\n";
@@ -176,16 +184,23 @@ const SaveCharModal = () => {
   return (
     <div>
       <FaFileDownload
-        className="icon"
+        className="icon mtop10px"
         onClick={() => {
           modalOpening();
         }}
       />
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          {character.name} Export Options
+          {character.name} Export/Import Options
         </Modal.Header>
         <Modal.Body className="modalbackground">
+          <ImportCharCard
+            name={"Import as .json"}
+            description={
+              "Copy and paste character JSON data into the textarea."
+            }
+          />
+          <hr />
           {exportTypes.map((type, index) => {
             return (
               <ExportCharCard
