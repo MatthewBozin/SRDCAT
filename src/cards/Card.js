@@ -65,7 +65,7 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mright12px mtop10px">
+          <span className="rightfloat mright12px mtop4px">
             <AddSubtract
               card={props.card}
               form={props.form}

@@ -7,7 +7,7 @@ import Defense from "./Defense.js";
 import architecture from "../data/architecture.json";
 
 const Defenses = () => {
-  const [character, setCharacter] = useContext(Character);
+  const [character] = useContext(Character);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("HA");
   const [result, setResult] = useState("");

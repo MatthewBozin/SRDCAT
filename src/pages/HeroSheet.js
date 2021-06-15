@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const HeroSheet = () => {
   const [context, setContext] = useContext(Context);
-  const [character, setCharacter] = useContext(Character);
+  const [character] = useContext(Character);
 
   const categoryArray = [
     { name: "Skills", value: "skills" },

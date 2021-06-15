@@ -23,7 +23,7 @@ const RollCard = (props) => {
             expandCollapse={expandCollapse}
           />
           <FaDiceD20
-            className="icon rightfloat"
+            className="icon rightfloat mtop10px"
             onClick={() => {
               method();
             }}

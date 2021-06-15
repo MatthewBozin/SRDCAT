@@ -63,7 +63,7 @@ const SaveCharModal = () => {
   return (
     <div>
       <FaSave
-        className="icon"
+        className="icon mtop10px"
         onClick={() => {
           modalOpening();
         }}
@@ -100,6 +100,7 @@ const SaveCharModal = () => {
             } else {
               return (
                 <SaveCharCard
+                  key={index}
                   char={char}
                   saveChar={saveChar}
                   loadChar={loadChar}

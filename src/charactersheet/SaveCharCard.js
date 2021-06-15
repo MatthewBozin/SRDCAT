@@ -6,12 +6,12 @@ import Character from "../data/character.js";
 import { FaRegTrashAlt, FaRegFolderOpen } from "react-icons/fa";
 
 const SaveCharCard = (props) => {
-  const [character, setCharacter] = useContext(Character);
+  const [character] = useContext(Character);
   const [expanded, setExpanded] = useState(false);
   const [confirm, setConfirm] = useState(false);
   const [confirmType, setConfirmType] = useState({});
 
-  const { key, char, saveChar, loadChar, deleteChar, slot } = props;
+  const { char, saveChar, loadChar, deleteChar, slot } = props;
 
   const expandCollapse = (status) => {
     setExpanded(!status);
