@@ -24,8 +24,6 @@ const SpellCard = (props) => {
   const { name, tags, flavor, description, ranks, table, modifiers } =
     props.card;
 
-  console.log(props);
-
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {
     savedrank = props.card.savedrank;

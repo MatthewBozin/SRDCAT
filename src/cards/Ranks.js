@@ -12,8 +12,6 @@ const Ranks = (props) => {
     }
   };
 
-  console.log(props.deleteFrom);
-
   const [character, setCharacter] = useContext(Character);
   const [index, setIndex] = useState(ifRank());
   const rank = props.ranks[index];

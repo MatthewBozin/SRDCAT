@@ -33,7 +33,6 @@ const Collections = () => {
       let filtered = filter("tags");
       if (filtered.length === 0) {
         filtered = filter("name");
-        console.log(filtered);
       }
       if (filtered.length === 0) {
         return (

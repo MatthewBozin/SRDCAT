@@ -17,7 +17,7 @@
             "stat":["KA"],
             "number":["5"],
             "weight":20,
-            "value":"3d6* x 12k",
+            "value":"3d6* x 12000",
             "modifiers":["ascetic","lo-kinetic"]
         },
         {
@@ -26,7 +26,7 @@
             "flavor":"Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.",
             "stat":["HA","KA"],
             "number":["4","4"],
-            "value":"6d6 x 1k",
+            "value":"6d6 x 1000",
             "modifiers":["memories"]
         },
         {
@@ -84,7 +84,7 @@
             "flavor":"A gilded golem suit with actual ornate winglets to make the wearer more obvious on the battlefield—and to send and receive semaphore commands.",
             "stat":["HA","BA"],
             "number":["3","7"],
-            "value":"3d6* x 4k",
+            "value":"3d6* x 4000",
             "modifiers":["blatant","daimonized","ornate","reasonably-inspiring"]
         },
         {
@@ -94,7 +94,7 @@
             "stat":["HA"],
             "number":["1d6"],
             "weight":10,
-            "value":"2d6*",
+            "value":"2d6* x 1",
             "modifiers":["disarming","hindering","parrying","two-hands"]
         },
         {
@@ -174,7 +174,7 @@
             "stat":["HA"],
             "number":["3"],
             "weight":10,
-            "value":"3d6* x 2k",
+            "value":"3d6* x 2000",
             "modifiers":["toggle-conceal","reflective","sun-forged","sharp-edge"]
         },
         {
@@ -194,7 +194,7 @@
             "stat":["HA"],
             "number":["1d20"],
             "weight":30,
-            "value":"2d6* x 1k",
+            "value":"2d6* x 1000",
             "modifiers":["big","clumsy","two-handed"]
         },
         {
@@ -252,7 +252,7 @@
             "stat":["HA"],
             "number":["1d6"],
             "weight":10,
-            "value":"2d6*",
+            "value":"2d6* x 1",
             "modifiers":["less-lethal"]
         },
         {
@@ -302,7 +302,7 @@
             "stat":["HA"],
             "number":["3d6"],
             "weight":10,
-            "value":"2d6* x 2k",
+            "value":"2d6* x 2000",
             "modifiers":["explosive","life-charged","ranged"]
         },
         {
@@ -320,7 +320,7 @@
             "flavor":"A cerulean mirror hung on fine chains of woven unicorn sinew in and the tears of the starborn.",
             "stat":["KA"],
             "number":["9"],
-            "value":"1d10* x 15k",
+            "value":"1d10* x 15000",
             "modifiers":["fragile","spell-reflector"]
         },
         {
@@ -330,7 +330,7 @@
             "stat":["HA"],
             "number":["1d6"],
             "weight":10,
-            "value":"2d6*",
+            "value":"2d6* x 1",
             "modifiers":["arrows","ranged","two-hands"]
         },
         {
@@ -339,7 +339,7 @@
             "flavor":"A rough, pebbly synthetic skin overlaid on a fungal golem metaskeleton. Designed for agility and covert operations.",
             "stat":["HA"],
             "number":["5"],
-            "value":"3d6 x 3,000",
+            "value":"3d6 x 3000",
             "modifiers":["camouflaged","neurogolem","vital-60"]
         },
         {
@@ -348,7 +348,7 @@
             "flavor":"A ghost-infused golem suit of coiling onyx snakes and shifting spirit stones. As it moves, it whispers with hints of lives wasted and dreams destroyed.",
             "stat":["HA","KA"],
             "number":["5","5"],
-            "value":"6d6 x 10k",
+            "value":"6d6 x 10000",
             "modifiers":["aura-booster","ghost-stones","vital-50"]
         },
         {
@@ -397,7 +397,7 @@
             "flavor":"Elegantly fashionable robes in the second empire style ward off superstition, slander, and even the occasional stiletto.",
             "stat":["HA","KA"],
             "number":["1","3"],
-            "value":"1d10* x 1,000",
+            "value":"1d10* x 1000",
             "modifiers":["commanding","spell-control"]
         },
         {
@@ -426,7 +426,7 @@
             "flavor":"A large shield to absorb and deflect blows, laced with diffusers to disperse energy attacks. Painted with vivid and terrifying designs to recall the lost immortals of old.",
             "stat":["HA"],
             "number":["3"],
-            "value":"3d6*",
+            "value":"3d6* x 1",
             "modifiers":["bashing","breakable"]
         },
         {
@@ -506,7 +506,7 @@
             "stat":["HA"],
             "number":["1d6"],
             "weight":10,
-            "value":"2d6*",
+            "value":"2d6* x 1",
             "modifiers":["tool"]
         },
         {
@@ -516,7 +516,7 @@
             "stat":["HA"],
             "number":["1"],
             "weight":10,
-            "value":"3d6*",
+            "value":"3d6* x 1",
             "modifiers":["chitin-weave","cool"]
         },
         {

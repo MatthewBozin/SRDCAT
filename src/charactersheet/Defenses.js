@@ -33,8 +33,6 @@ const Defenses = () => {
     total += character.PRO;
     total += character[defense.name];
     for (let item of character.items) {
-      console.log(item);
-      console.log(defense);
       for (let item of character.items) {
         for (let i = 0; i < item.stat.length; i++) {
           if (item.stat[i] === defense.name && item.worn === true) {

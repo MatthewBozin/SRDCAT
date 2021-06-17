@@ -39,8 +39,6 @@ function ItemAttackModal(props) {
     }
   }
 
-  console.log(stat);
-
   const modularString = (object) => {
     let data = withProAdv(object);
     return (

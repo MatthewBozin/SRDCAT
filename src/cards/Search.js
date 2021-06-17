@@ -58,7 +58,6 @@ const Search = () => {
       resultpool = filter("tags");
       if (resultpool.length === 0) {
         resultpool = filter("name");
-        console.log(resultpool);
       }
       if (resultpool.length === 1) {
         return;

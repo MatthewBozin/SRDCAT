@@ -5,7 +5,6 @@ import Character from "../data/character.js";
 
 const Table = (props) => {
   let placement = r(props.table.length);
-  console.log(props.savedresult);
   if (props.savedresult !== undefined) {
     placement = props.savedresult;
   }

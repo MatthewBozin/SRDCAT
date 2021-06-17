@@ -94,7 +94,6 @@ const rdamage = (string) => {
 const damage = (string) => {
   let exploding = false;
   let explosions = 0;
-  console.log(string.substr(string.length - 1));
   if (string.substr(string.length - 1) === "*") {
     exploding = true;
     string = string.slice(0, -1);
