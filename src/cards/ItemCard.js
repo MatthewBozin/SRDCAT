@@ -29,8 +29,6 @@ const ItemCard = (props) => {
   const { name, type, tags, flavor, weight, value, number, stat, modifiers } =
     props.card;
 
-  console.log(props.card);
-
   const calcAttackInfo = () => {
     let modifiers = [];
     for (let eachstat of stat) {

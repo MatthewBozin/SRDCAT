@@ -12,7 +12,6 @@ function Input(props) {
     setCharacter(() => {
       character[attribute] = data;
       const newCharacter = JSON.parse(JSON.stringify(character));
-      console.log(newCharacter);
       return newCharacter;
     });
     setIsForm(false);

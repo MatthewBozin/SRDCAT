@@ -12,7 +12,6 @@ function CharName() {
     setCharacter(() => {
       character.name = name;
       const newCharacter = JSON.parse(JSON.stringify(character));
-      console.log(newCharacter);
       return newCharacter;
     });
     setIsForm(false);

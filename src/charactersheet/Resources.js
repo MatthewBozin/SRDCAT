@@ -37,7 +37,6 @@ const Resources = () => {
   const modResource = (amount, resource) => {
     let newchar = character;
     newchar[resource] += parseInt(amount);
-    console.log(newchar);
     setCharacter(JSON.parse(JSON.stringify(newchar)));
   };
 
