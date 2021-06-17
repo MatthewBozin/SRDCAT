@@ -10,6 +10,7 @@ import {
   toggleState,
   toggle,
   withProAdv,
+  messageStats,
 } from "../data/exports.js";
 
 function ItemAttackModal(props) {
@@ -29,6 +30,17 @@ function ItemAttackModal(props) {
     number,
   } = props;
 
+  let messagestats = "";
+
+  for (let i = 0; i < stat.length; i++) {
+    messagestats += architecture.statMasks[stat[i]];
+    if (i !== stat.length && stat.length !== 0) {
+      messagestats += " or ";
+    }
+  }
+
+  console.log(stat);
+
   const modularString = (object) => {
     let data = withProAdv(object);
     return (
@@ -38,7 +50,7 @@ function ItemAttackModal(props) {
     );
   };
 
-  const confirmAttack = () => {
+  const confirmAttack = (index) => {
     let pro = 0;
     if (attack.pro === "single") {
       pro += character.PRO;
@@ -47,8 +59,8 @@ function ItemAttackModal(props) {
       pro += character.PRO * 2;
     }
 
-    let attackRes = test(target, attack.adv, pro, attack.mod);
-    let damageResult = damagecalc(number, damage.adv);
+    let attackRes = test(target, attack.adv, pro, attack.mod[index]);
+    let damageResult = damagecalc(number[index], damage.adv);
 
     if (attackRes.startsWith("Critical S")) {
       damageResult.total = damageResult.total * 2;
@@ -66,7 +78,7 @@ function ItemAttackModal(props) {
       setAttackResult(
         <div>
           {attackRes} <br /> {damageResult.total}{" "}
-          <i>{architecture.statMasks[stat]}</i> damage dealt!{" "}
+          {architecture.statMasks[stat[index]]} damage dealt!{" "}
           {damageResult.explosions !== 0 && (
             <span>(Explosions: {damageResult.explosions})</span>
           )}
@@ -89,7 +101,7 @@ function ItemAttackModal(props) {
         "\n" +
         damageResult.total +
         " " +
-        architecture.statMasks[stat] +
+        architecture.statMasks[stat[index]] +
         " damage" +
         damageAdv +
         " dealt!";
@@ -120,18 +132,43 @@ function ItemAttackModal(props) {
       <Modal.Body className="modalbackground">
         {attack.pro === "single" && (
           <div>
-            Attack Bonus {modularString(attack)}: {attack.mod + character.PRO}
+            Attack Bonus {modularString(attack)}:
+            {stat.map((eachstat, index) => {
+              return (
+                <span key={index}>
+                  {" "}
+                  <i>{architecture.statMasks[eachstat]}</i>{" "}
+                  {attack.mod[index] + character.PRO}
+                </span>
+              );
+            })}{" "}
           </div>
         )}
         {attack.pro === "double" && (
           <div>
-            Attack Bonus {modularString(attack)}:{" "}
-            {attack.mod + character.PRO * 2}
+            Attack Bonus {modularString(attack)}:
+            {stat.map((eachstat, index) => {
+              return (
+                <span key={index}>
+                  {" "}
+                  <i>{architecture.statMasks[eachstat]}</i>{" "}
+                  {attack.mod[index] + character.PRO * 2}
+                </span>
+              );
+            })}{" "}
           </div>
         )}
         {attack.pro === "" && (
           <div>
-            Attack Bonus {modularString(attack)}: {attack.mod}
+            Attack Bonus {modularString(attack)}:
+            {stat.map((eachstat, index) => {
+              return (
+                <span key={index}>
+                  {" "}
+                  <i>{architecture.statMasks[eachstat]}</i> {attack.mod[index]}
+                </span>
+              );
+            })}{" "}
           </div>
         )}
         <div className="flex">
@@ -184,8 +221,15 @@ function ItemAttackModal(props) {
         </div>
         <hr />
         <div>
-          Damage {modularString(damage)}: {number}{" "}
-          <i>{architecture.statMasks[stat]}</i>
+          Damage {modularString(damage)}:{" "}
+          {stat.map((eachstat, index) => {
+            return (
+              <span key={index}>
+                {number[index]} <i>{architecture.statMasks[eachstat]}</i>
+                {index + 1 < stat.length && <span> or </span>}
+              </span>
+            );
+          })}
         </div>
         <div className="flex">
           <button
@@ -226,14 +270,21 @@ function ItemAttackModal(props) {
           </button>
         </div>
         <hr />
-        <button
-          className="button bordered padded5px margin5px fullwidth"
-          onClick={() => {
-            confirmAttack();
-          }}
-        >
-          Roll Attack
-        </button>
+        <div className="flex">
+          {stat.map((eachstat, index) => {
+            return (
+              <button
+                key={index}
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  confirmAttack(index);
+                }}
+              >
+                Attack with {architecture.statMasks[eachstat]}
+              </button>
+            );
+          })}
+        </div>
         {attackResult !== "" && (
           <div>
             <hr />
