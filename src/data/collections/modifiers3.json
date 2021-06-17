@@ -1,0 +1,70 @@
+{
+    "anchor":{
+        "name":"Anchor",
+        "description":" The spell creates a physical anchor, which the caster stores in their inventory to keep the spell active and controlled. Destroying or losing the anchor ends the spell (or worse). "
+    },
+    "attack":{
+        "name":"Attack",
+        "description":"The spell is cast as an attack action. A caster uses their relevant magical skill to test against their foe’s defence and affect them."
+    },
+    "back-mounted":{
+        "name":"Back-Mounted",
+        "description":"The item requires a back-mounted component, and cannot be wielded unless the user's back is free."
+    },
+    "daemon-guidance":{
+        "name":"Daemon Guidance",
+        "description":"Wielder can spend 1 action and one life to commune with the Daemon within the item. They gain [+] to strike one target."
+    },
+    "dangerous":{
+        "name":"Dangerous",
+        "description":"The spell forces a test to avoid magical corruption every time it is cast."
+    },
+    "focus":{
+        "name":"Focus",
+        "description":"The spell requires focus to stay active. A caster must spend an action every turn, or the spell ends. A caster can always pay double the spell price to imbue the spell with their vital essence, keeping it active without focus. This is usually dangerous and requires a test against magical corruption."
+    },
+    "healers-burden":{
+        "name":"Healer's Burden",
+        "description":"The wizard encysts a spirit stone in the aural body. It imposes [-] to all tests with one stat. It is otherwise harmless and dissipates without long-term damage to the bearer."
+    },
+    "imbue":{
+        "name":"Imbue",
+        "description":"The caster keeps an imbued spell active so long as they reserve the vital essence (life or stat) spent casting the spell. Reserved essence reduces the caster's maximum life or stat and cannot be recovered until the spell ends."
+    },
+    "morphic-shock":{
+        "name":"Morphic Shock",
+        "description":"Those affected suffer psychophysical burdens."
+    },
+    "overwriting":{
+        "name":"Overwriting",
+        "description":"The target's mental stats are overwritten. However, if the target resists, a psychic conflict occurs with unpredictable results."
+    },
+    "precast-vessel":{
+        "name":"Precast Ka-Ba Vessel",
+        "description":"The wizard can imbue a suitable vessel with the spell so that it is ready to cast when triggered. The spell can also be automated or initiated by someone else."
+    },
+    "rushed":{
+        "name":"Rushed",
+        "description":"The wizard can perform the rite in half the time, but all willing parties involved take 2d6 damage."
+    },
+    "spell-item":{
+        "name":"Spell-Item",
+        "description":"When a caster creates a magic item, they use the spell to lock their existential force (life or stat) within a physical object. Locked force reduces the caster's maximum life or stat and can only be recovered when the magic item is disenchanted or destroyed."
+    },
+    "telemagic":{
+        "name":"Telemagic",
+        "description":"The wizard can perform the spell using a vidy crystal or other telecommunication magic."
+    },
+    "toggle-conceal":{
+        "name":"Toggle-Conceal",
+        "description":"At the push of a button, the item can disappear or reappear."
+    },
+    "vorpal-edge":{
+        "name":"Vorpal Edge",
+        "description":"Can be used as an improvised melee weapon to deal 1d4 damage. On critical hits, it severs extremities."
+    },
+    "willing":{
+        "name":"Willing",
+        "description":"If all parties involved are willing, success is automatic. If any party is unwilling, the wizard must test with [-] in order to cast."
+    }
+}

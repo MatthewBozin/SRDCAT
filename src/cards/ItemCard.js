@@ -29,7 +29,7 @@ const ItemCard = (props) => {
   const { name, type, tags, flavor, weight, value, number, stat, modifiers } =
     props.card;
 
-  console.log(stat);
+  console.log(props.card);
 
   const calcAttackInfo = () => {
     let modifiers = [];
@@ -83,7 +83,7 @@ const ItemCard = (props) => {
             }}
           />
           <span className="rightfloat mright12px mtop4px">
-            {props.deleteFrom === "items" && type === "offensive" && (
+            {props.deleteFrom === "items" && tags.includes("offensive") && (
               <Attack
                 className="iconsvg"
                 onClick={() => {
@@ -94,7 +94,7 @@ const ItemCard = (props) => {
               />
             )}
             {props.deleteFrom === "items" &&
-              type === "defensive" &&
+              tags.includes("defensive") &&
               itemNotWorn === true && (
                 <Defend
                   className="iconsvg"
@@ -108,7 +108,7 @@ const ItemCard = (props) => {
                 />
               )}
             {props.deleteFrom === "items" &&
-              type === "defensive" &&
+              tags.includes("defensive") &&
               itemNotWorn === false && (
                 <DefendAlt
                   className="iconsvg"
@@ -171,10 +171,10 @@ const ItemCard = (props) => {
                     <span key={index}>
                       {index < stat.length &&
                         index !== 0 &&
-                        type === "defensive" && <span> and </span>}
+                        tags.includes("defensive") && <span> and </span>}
                       {index < stat.length &&
                         index !== 0 &&
-                        type === "offensive" && <span> or </span>}
+                        tags.includes("offensive") && <span> or </span>}
                       {number[index]} <i>{architecture.statMasks[eachstat]}</i>
                     </span>
                   );

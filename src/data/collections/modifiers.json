@@ -1,70 +1,414 @@
 {
-    "anchor":{
-        "name":"Anchor",
-        "description":" The spell creates a physical anchor, which the caster stores in their inventory to keep the spell active and controlled. Destroying or losing the anchor ends the spell (or worse). "
+    "absorbing":{
+        "name":"Absorbing",
+        "description":"Hero can use it to negate the damage from 1 critical hit. This destroys the helmet."
     },
-    "attack":{
-        "name":"Attack",
-        "description":"The spell is cast as an attack action. A caster uses their relevant magical skill to test against their foe’s defence and affect them."
+    "ammo":{
+        "name":"Ammo",
+        "description":"Oldworld brass cartridges."
     },
-    "back-mounted":{
-        "name":"Back-Mounted",
-        "description":"The item requires a back-mounted component, and cannot be wielded unless the user's back is free."
+    "ammunition":{
+        "name":"Ammunition",
+        "description":"Brass cartridges, probably."
     },
-    "daemon-guidance":{
-        "name":"Daemon Guidance",
-        "description":"Wielder can spend 1 action and one life to commune with the Daemon within the item. They gain [+] to strike one target."
+    "ancestral":{
+        "name":"Ancestral",
+        "description":"Mail also grants ka 2."
     },
-    "dangerous":{
-        "name":"Dangerous",
-        "description":"The spell forces a test to avoid magical corruption every time it is cast."
+    "armour-penetrating":{
+        "name":"Armour Penetrating",
+        "description":"Deals additional ha damage equal to a target's ha defence."
     },
-    "focus":{
-        "name":"Focus",
-        "description":"The spell requires focus to stay active. A caster must spend an action every turn, or the spell ends. A caster can always pay double the spell price to imbue the spell with their vital essence, keeping it active without focus. This is usually dangerous and requires a test against magical corruption."
+    "arrows":{
+        "name":"Arrows",
+        "description":"Bolts as ammunition. "
     },
-    "healers-burden":{
-        "name":"Healer's Burden",
-        "description":"The wizard encysts a spirit stone in the aural body. It imposes [-] to all tests with one stat. It is otherwise harmless and dissipates without long-term damage to the bearer."
+    "ascetic":{
+        "name":"Ascetic",
+        "description":"Resistant to ba damage."
     },
-    "imbue":{
-        "name":"Imbue",
-        "description":"The caster keeps an imbued spell active so long as they reserve the vital essence (life or stat) spent casting the spell. Reserved essence reduces the caster's maximum life or stat and cannot be recovered until the spell ends."
+    "aura-booster":{
+        "name":"Aura booster",
+        "description":"+3 aura."
     },
-    "morphic-shock":{
-        "name":"Morphic Shock",
-        "description":"Those affected suffer psychophysical burdens."
+    "balancer":{
+        "name":"Balancer",
+        "description":"Ignores all undead immunities and resistances."
     },
-    "overwriting":{
-        "name":"Overwriting",
-        "description":"The target's mental stats are overwritten. However, if the target resists, a psychic conflict occurs with unpredictable results."
+    "bashing":{
+        "name":"Bashing",
+        "description":"Can be used as an improvised melee weapon to deal 1d4 damage or knock an opponent back."
     },
-    "precast-vessel":{
-        "name":"Precast Ka-Ba Vessel",
-        "description":"The wizard can imbue a suitable vessel with the spell so that it is ready to cast when triggered. The spell can also be automated or initiated by someone else."
+    "big":{
+        "name":"Big",
+        "description":"[-] to attacks in confined spaces."
     },
-    "rushed":{
-        "name":"Rushed",
-        "description":"The wizard can perform the rite in half the time, but all willing parties involved take 2d6 damage."
+    "blatant":{
+        "name":"Blatant",
+        "description":"[-] to stealth and deception."
     },
-    "spell-item":{
-        "name":"Spell-Item",
-        "description":"When a caster creates a magic item, they use the spell to lock their existential force (life or stat) within a physical object. Locked force reduces the caster's maximum life or stat and can only be recovered when the magic item is disenchanted or destroyed."
+    "boost":{
+        "name":"Boost",
+        "description":"Spend a charge to deal double damage for one round (free action)."
     },
-    "telemagic":{
-        "name":"Telemagic",
-        "description":"The wizard can perform the spell using a vidy crystal or other telecommunication magic."
+    "breakable":{
+        "name":"Breakable",
+        "description":"Can be sacrificed to negate damage from one attack."
+    },
+    "break-spell":{
+        "name":"Break spell",
+        "description":"Wielder can sacrifice the spell-breaker to negate one spell targeting them."
+    },
+    "camouflaged":{
+        "name":"Camouflaged",
+        "description":"Incoming ranged attacks suffer [-]."
+    },
+    "chameleon-field":{
+        "name":"Chameleon field",
+        "description":"Ring grants [+] to hiding and sneaking."
+    },
+    "chitin-weave":{
+        "name":"Chitin weave",
+        "description":"All incoming ha damage is reduced [-]."
+    },
+    "chromatyped":{
+        "name":"Chromatyped",
+        "description":"Robes are resistant to damage from sources of one of the six sacred colours."
+    },
+    "circuit-breaker":{
+        "name":"Circuit breaker",
+        "description":"Deals increased damage [+] to synthetics."
+    },
+    "clumsy":{
+        "name":"Clumsy",
+        "description":"[-] to attack rolls."
+    },
+    "commanding":{
+        "name":"Commanding",
+        "description":"[+] to mental domination and charm attacks."
+    },
+    "concealed":{
+        "name":"Concealed",
+        "description":"[+] hiding the weapon."
+    },
+    "cool":{
+        "name":"Cool",
+        "description":"The other cool. Resistance to ba damage in the wastelands."
+    },
+    "daimonized":{
+        "name":"Daimonized",
+        "description":"Grants 3 charisma."
+    },
+    "dead-warded":{
+        "name":"Dead-warded ",
+        "description":"Undead are repulsed by the Iksan rationalist runes woven into the lining of the greatcoat. All undead attacks against the wearer suffer [-]."
+    },
+    "decorated":{
+        "name":"Decorated",
+        "description":"Grants 2 ba defence."
+    },
+    "defensive":{
+        "name":"Defensive",
+        "description":"Wielder gains 1 ha defence."
+    },
+    "degrading":{
+        "name":"Degrading",
+        "description":"Each die that deals maximum damage reduces an enemy's defences by 1 each."
+    },
+    "disarming":{
+        "name":"Disarming",
+        "description":"[+] to disarming tests."
+    },
+    "exoskeleton":{
+        "name":"Exoskeleton",
+        "description":"[+] to endurance and athletic tests."
+    },
+    "fashionable":{
+        "name":"Fashionable",
+        "description":"Also grant ba 2."
+    },
+    "force-field":{
+        "name":"Force field",
+        "description":"Incoming high vel-ocity & energy attacks suffer [-]."
+    },
+    "explosive":{
+        "name":"Explosive",
+        "description":"Damages creatures and objects adjacent to the target."
+    },
+    "feeding":{
+        "name":"Feeding",
+        "description":"The mail feeds on flesh to repair itself. It can also gain mass, granting the wearer 5 temporary life per stone (max +10 life)."
+    },
+    "fortune-in-misfortune":{
+        "name":"Fortune in misfortune",
+        "description":"When the wearer suffers damage they gain a boon [+] to spend as they will."
+    },
+    "fragile":{
+        "name":"Fragile",
+        "description":"Physical damage is likely to break the mirror. Comes with a 2 stone protective plastic and foam case."
+    },
+    "ghostbone":{
+        "name":"Ghostbone",
+        "description":"Incoming ka damage is reduced [-]."
+    },
+    "ghostbreaker":{
+        "name":"Ghostbreaker",
+        "description":"Deals increased damage [+] to incorporeal targets."
+    },
+    "ghost-stones":{
+        "name":"Ghost stones",
+        "description":"Incoming ka damage is reduced [-]."
+    },
+    "ghost-weave":{
+        "name":"Ghost weave",
+        "description":"All incoming ka damage is reduced [-]."
+    },
+    "golem-harness":{
+        "name":"Golem harness",
+        "description":"+4 endurance."
+    },
+    "grievous":{
+        "name":"Grievous",
+        "description":"Ignores damage resistances."
+    },
+    "guidance":{
+        "name":"Guidance",
+        "description":"Wielder can spend 1 action and 1 life to commune with the daemon accelerator. The accelerated flail then gains [+] to strike one target."
+    },
+    "hindering":{
+        "name":"Hindering",
+        "description":"[+] to tests to slow, trip, or otherwise hinder opponents."
+    },
+    "impressive":{
+        "name":"Impressive",
+        "description":"Pretty intimidating (deals ba damage)."
+    },
+    "infrared":{
+        "name":"Infrared",
+        "description":"Sustained heat-ray fire ignites fires."
+    },
+    "jade-essence":{
+        "name":"Jade essence",
+        "description":"When the wearer would suffer a burden, they can sacrifice the jade modifier to absorb it instead. The gear continues to function, but the modifier is lost."
+    },
+    "large":{
+        "name":"Large",
+        "description":"[-] to physical activities in confined spaces."
+    },
+    "less-lethal":{
+        "name":"Less lethal",
+        "description":"Though marketed as non-lethal, this is a lie. Still, victims who make death tests after being whacked by the LVBS roll with [+]."
+    },
+    "life-charged":{
+        "name":"Life-charged",
+        "description":"Wielder can spend 1 action and 1 life to translate their will through the golem harness into the arrow. The bow deals an additional 1d12 damage on the next attack."
+    },
+    "lo-kinetic":{
+        "name":"Lo-kinetic",
+        "description":"Damper field grants resistance against melee and area attack damage."
+    },
+    "long-range":{
+        "name":"Long Range",
+        "description":"No penalty to hit far away targets, [-] against adjacent."
+    },
+    "luminous":{
+        "name":"Luminous",
+        "description":"Deals increased damage [+] to creatures of darkness."
+    },
+    "memories":{
+        "name":"Memories",
+        "description":"Ancestors grant 1 thought."
+    },
+    "mildly-neuralgic":{
+        "name":"Mildly neuralgic",
+        "description":"Stuns on crit."
+    },
+    "mildly-possessed":{
+        "name":"Mildly possessed",
+        "description":"The sword gibbers and talks to itself. Especially when silence would be more helpful."
+    },
+    "mobile":{
+        "name":"Mobile",
+        "description":"Despite the weight, does not impede movement."
+    },
+    "neurogolem":{
+        "name":"Neurogolem",
+        "description":"+3 agility."
+    },
+    "ornate":{
+        "name":"Ornate",
+        "description":"Incoming ba damage is reduced [-]."
+    },
+    "overcharge":{
+        "name":"Overcharge",
+        "description":"With a bit of judicious hacking, the power dampers can be disabled. The blade flares out, dealing 4d4 damage, but suffering [-] to attacks. In this configuration, the plasma knife burns 3 charges per conflict."
+    },
+    "parrying":{
+        "name":"Parrying",
+        "description":"Grants 3 ha defence."
+    },
+    "permanent":{
+        "name":"Permanent",
+        "description":"The monstrous biomech bonds with the wearer's flesh and bone. Removing it deals 3d10 damage and imposes a burden or permanently reduces a stat by 1."
+    },
+    "pointy":{
+        "name":"Pointy",
+        "description":"Deals 1d8 damage with a charge attack."
+    },
+    "power-curve":{
+        "name":"Power curve",
+        "description":"Heat-ray output is stronger at short range, dealing more damage [+] to adjacent targets."
+    },
+    "power-drop":{
+        "name":"Power drop",
+        "description":"Deals double damage to adjacent targets and increased damage [+] to nearby targets."
+    },
+    "powered":{
+        "name":"Powered",
+        "description":"Technospiritual prayer wheel batteries."
+    },
+    "precise":{
+        "name":"Precise",
+        "description":"Wielder gains [+] to attacks if they have not been jostled or injured that round."
+    },
+    "ranged":{
+        "name":"Ranged",
+        "description":"Can attack nearby targets normally and far away targets with [-]."
+    },
+    "reactive":{
+        "name":"Reactive",
+        "description":"Deals 2d6 ha damage to attacker when struck."
+    },
+    "reasonably-inspiring":{
+        "name":"Reasonably inspiring",
+        "description":"Each turn one ally gains 1d6 to a roll."
+    },
+    "recycling":{
+        "name":"Recycling",
+        "description":"[+] against the effects of dehydration and starvation."
+    },
+    "reflective":{
+        "name":"Reflective",
+        "description":"Wearer always takes minimum damage from energy attacks. 1-in-6 chance energy strikes rebound into a random nearby target. Critical hits always ricochet into a random nearby target, with a 1-in-6 chance of hitting the shooter."
+    },
+    "sharp-edge":{
+        "name":"Sharp Edge",
+        "description":"Used as an improvised melee weapon deals 1d4 damage. Severs extremity on critical hit."
+    },
+    "shells":{
+        "name":"Shells",
+        "description":"Uses large calibre ammo."
+    },
+    "siege":{
+        "name":"Siege",
+        "description":"Deals double damage to structures and heavily armoured vehicles or very large monsters."
+    },
+    "siege-hardpoints":{
+        "name":"Siege hardpoints",
+        "description":"Wearer can wield large weapons with a single hand. They can wield a siege weapon two-handed."
+    },
+    "slow":{
+        "name":"Slow",
+        "description":"If it fires more than once per round, the projector begins to overheat, increasing the chance of a critical failure by 1 each additional time it is fired. The projector cools down in a quarter of an hour or so."
+    },
+    "smelly":{
+        "name":"Smelly",
+        "description":"[-] on social tests."
+    },
+    "soul-stealer":{
+        "name":"Soul-stealer",
+        "description":"Reduces target’s level by 1 each time it hits."
+    },
+    "spell-control":{
+        "name":"Spell control",
+        "description":"Grants 2 levels for spell casting and corruption tests."
+    },
+    "spell-reflector":{
+        "name":"Spell-reflector",
+        "description":"The wearer can spend 1d4 life to roll a ka or ha counterattack as a free action when a wizard casts a spell at them. If they beat the attacker’s roll, the spell is reflected back against its caster."
+    },
+    "spirit-boost":{
+        "name":"Spirit-boost ",
+        "description":"Increases wearer’s aura and charisma by 1 each."
+    },
+    "spirit-ward":{
+        "name":"Spirit-ward",
+        "description":"Grants 1 ka defence."
+    },
+    "stiletto":{
+        "name":"Stiletto",
+        "description":"Can be used as a knife, dealing 1d4 damage."
+    },
+    "strength-servos":{
+        "name":"Strength servos",
+        "description":"+6 strength."
+    },
+    "sun-forged":{
+        "name":"Sun-forged",
+        "description":"When the wearer is bathed in UV radiation, all damage suffered is reduced [-]."
+    },
+    "sword-breaker":{
+        "name":"Sword-breaker",
+        "description":"The back of the cutlass is notched. Opponents with bladed weapons suffer an increased critical failure range (weapon breaks on a natural attack roll of 1 or 2)."
+    },
+    "team-colours":{
+        "name":"Team colours",
+        "description":"[+] to social tests with friendly teams and gangs, [-] with unfriendlies."
+    },
+    "tinkling":{
+        "name":"Tinkling",
+        "description":"Clattering plates impose [-] to stealth tests."
     },
     "toggle-conceal":{
         "name":"Toggle-Conceal",
-        "description":"At the push of a button, the item can disappear or reappear."
+        "description":"At the push of a button, the force-shield disappears, leaving only the projection bracer."
+    },
+    "tool":{
+        "name":"Tool",
+        "description":"Useful in many situations."
+    },
+    "two-handed":{
+        "name":"Two-handed",
+        "description":"Yes."
+    },
+    "two-hands":{
+        "name":"Two hands",
+        "description":"Quite unwieldy."
+    },
+    "versatile":{
+        "name":"Versatile",
+        "description":"2d8 damage two-handed."
+    },
+    "vital-30":{
+        "name":"Vital 30",
+        "description":"Grants 30 life."
+    },
+    "vital-50":{
+        "name":"Vital 50",
+        "description":"Grants 50 life."
+    },
+    "vital-60":{
+        "name":"Vital 60",
+        "description":"Grants 60 life."
+    },
+    "vital-100":{
+        "name":"Vital 100",
+        "description":"Grants 100 life."
+    },
+    "vorpal":{
+        "name":"Vorpal",
+        "description":"Severs an extremity on a critical hit. Decapitates corporeal undead targets."
     },
     "vorpal-edge":{
-        "name":"Vorpal Edge",
-        "description":"Can be used as an improvised melee weapon to deal 1d4 damage. On critical hits, it severs extremities."
+        "name":"Vorpal edge",
+        "description":"On a crit severs slender extremities or inflicts a gushing wound (burden)."
     },
-    "willing":{
-        "name":"Willing",
-        "description":"If all parties involved are willing, success is automatic. If any party is unwilling, the wizard must test with [-] in order to cast."
+    "weaponized":{
+        "name":"Weaponized",
+        "description":"Deals 1d10 damage with unarmed attacks."
+    },
+    "zombie-ripper":{
+        "name":"Zombie ripper",
+        "description":"Deals double damage to corporeal undead."
     }
 }
