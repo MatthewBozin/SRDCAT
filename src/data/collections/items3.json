@@ -1,0 +1,37 @@
+{
+    "data":[
+        {
+            "name":"Accelerated Flail",
+            "type":"offensive",
+            "tags":["offensive", "chain", "daemonic"],
+            "flavor":"A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
+            "weight": 20,
+            "value":"2d6x500",
+            "number":["2d12*","2d10*"],
+            "stat":["HA","BA"],
+            "modifiers":["daemon-guidance"]
+        },
+        {
+            "name":"Hard Light Shield",
+            "type":"defensive",
+            "tags":["defensive", "armour", "hard-light"],
+            "flavor":"A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
+            "weight": 10,
+            "value":"3d6x2000",
+            "number":["3","2"],
+            "stat":["BA","HA"],
+            "modifiers":["toggle-conceal","vorpal-edge"]
+        },
+        {
+            "name":"Nanite Swarm Projector",
+            "type":"offensive",
+            "tags":["offensive", "big-gun", "nanotech"],
+            "flavor":"The swarm devours eternal.",
+            "weight": 100,
+            "value":"2d6*x5000",
+            "number":["12d2*"],
+            "stat":["HA"],
+            "modifiers":["back-mounted"]
+        } 
+    ]
+}
