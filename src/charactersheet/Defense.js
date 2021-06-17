@@ -13,8 +13,10 @@ const Defense = (props) => {
     total += character.PRO;
     total += character[defense.name];
     for (let item of character.items) {
-      if (item.stat === defense.name && item.worn === true) {
-        total += parseInt(item.number);
+      for (let i = 0; i < item.stat.length; i++) {
+        if (item.stat[i] === defense.name && item.worn === true) {
+          total += parseInt(item.number[i]);
+        }
       }
     }
     if (defense.name === "BA") {

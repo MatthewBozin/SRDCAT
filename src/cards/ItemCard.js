@@ -23,18 +23,26 @@ const ItemCard = (props) => {
   const [saleModalOpen, setSaleModalOpen] = useState(false);
   const [itemNotWorn, setItemNotWorn] = useState(true);
   const [character, setCharacter] = useContext(Character);
-  const [attack, setAttack] = useState({ pro: "", mod: 0, adv: "" });
+  const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
+  //mod becomes mods: []
 
   const { name, type, tags, flavor, weight, value, number, stat, modifiers } =
     props.card;
 
+  console.log(stat);
+
   const calcAttackInfo = () => {
-    let substat = architecture.defenses[stat];
-    let attribute = Math.max(
-      character[substat.substats[0]],
-      character[substat.substats[1]]
-    );
-    updateState(attack, setAttack, "mod", attribute);
+    let modifiers = [];
+    for (let eachstat of stat) {
+      let substat = architecture.defenses[eachstat];
+      let substats = [];
+      for (let subattribute of substat.substats) {
+        substats.push(character[subattribute]);
+      }
+      modifiers.push(Math.max(...substats));
+    }
+    //alter the math to return a modifier for each stat
+    updateState(attack, setAttack, "mod", modifiers);
   };
 
   const displayValue = (value) => {
@@ -158,9 +166,19 @@ const ItemCard = (props) => {
                 {type === "offensive" && (
                   <span className="orangetext">Damage: </span>
                 )}
-                <span>
-                  {number} <i>{architecture.statMasks[stat]}</i>
-                </span>
+                {stat.map((eachstat, index) => {
+                  return (
+                    <span key={index}>
+                      {index < stat.length &&
+                        index !== 0 &&
+                        type === "defensive" && <span> and </span>}
+                      {index < stat.length &&
+                        index !== 0 &&
+                        type === "offensive" && <span> or </span>}
+                      {number[index]} <i>{architecture.statMasks[eachstat]}</i>
+                    </span>
+                  );
+                })}
               </span>
             </div>
             <hr></hr>
@@ -189,6 +207,7 @@ const ItemCard = (props) => {
         character={character}
         name={name}
         number={number}
+        stat={stat}
       />
       <ItemSaleModal
         saleModalOpen={saleModalOpen}

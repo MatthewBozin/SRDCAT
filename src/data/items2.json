@@ -1,0 +1,220 @@
+{
+    "data":[
+        {
+            "name":"Accelerated Flail",
+            "tags":["chain"],
+            "flavor":"A spiked head1 of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
+            "weight":20,
+            "value":"€2d6* x 500",
+            "mods":["clumsy","guidance"]
+        },
+        {
+            "name":"Amber Wandgun",
+            "tags":["pistol"],
+            "flavor":"A genteel wand that discharges an arcing bolt of pain and fire.",
+            "weight":10,
+            "value":"€2d6* x 100",
+            "mods":["powered","ranged"]
+        },
+        {
+            "name":"Big Game Gun",
+            "tags":["biggun"],
+            "flavor":"An infantry-portable heavy orichalcum projector traditionally used by  Neoprimitive Human liberation fighters against the Farpower voyan war golems. Their manufacture has since passed into the gunsmithing lore of many cultural survivals from the misty aeons.",
+            "weight":20,
+            "value":"€2d6* x 100",
+            "mods":["armour-penetrating","long-range","shells","slow"]
+        },
+        {
+            "name":"Bourgeois Blade",
+            "tags":["sword"],
+            "flavor":"A posh sword, more status symbol than weapon.","stat":"ha","number":"1d6",
+            "weight":10,
+            "value":"€2d6* x 200",
+            "mods":["decorated"]
+        },
+        {
+            "name":"Chain Sickle",
+            "tags":["chain"],
+            "flavor":"A weapon developed independently several times during the great servile rebellion time split, it has since become a symbol of the Agricolyte Peasant Republics.",
+            "weight":10,
+            "value":"2d6* x 1",
+            "mods":["disarming","hindering","parrying","two-hands"]
+        },
+        {
+            "name":"Chainsword",
+            "tags":["chain"],
+            "flavor":"A ripping chain of shark-like metal teeth powered by a roaring golem hilt-and-gauntlet combination. An elegant weapon of the second zombie apocalypse renaissance.",
+            "weight":20,
+            "value":"€2d6* x 100",
+            "mods":["versatile","vorpal","zombie-ripper"]
+        },
+        {
+            "name":"Crucifix Bow",
+            "tags":["bow"],
+            "flavor":"A silent war crossbow used by the cloud empire survivals.",
+            "weight":10,
+            "value":"€2d6* x 20",
+            "mods":["arrows","ranged"]
+        },
+        {
+            "name":"Crystal Siege Rod",
+            "tags":["biggun"],
+            "flavor":"A smoke quartz disintegration ray amplifier housed in a heavily-glyphed brass and brazilwood casing.","stat":"x","number":"1d6",
+            "weight":30,
+            "value":"€2d6* x 200",
+            "mods":["clumsy","degrading","powered","siege","slow"]
+        },
+        {
+            "name":"Ghostbone Axe",
+            "tags":["hammeraxe"],
+            "flavor":"An axe made from the bones of the Early World's shimmering titans. The energies still bound within these gifts of creation devastate abominations against the circle of life.",
+            "weight":20,
+            "value":"€2d6* x 200",
+            "mods":["balancer","ghostbreaker","two-hands"]
+        },
+        {
+            "name":"Golem Bow",
+            "tags":["bow"],
+            "flavor":"A war bow with a specialized full-arm golem harness that loads and draws the weapon for the archer. After the Steam Lords mandated augmented golem-multi-arm training for their free labourer caste from childhood, their piston archers revolutionized Long Sea warfare for a generation. Then the 3rd ansible revolution wiped out the Steam Lords.",
+            "weight":10,
+            "value":"€2d6* x 200",
+            "mods":["arrows","life-charged","ranged"]
+        },
+        {
+            "name":"Horani War Maul",
+            "tags":["rod"],
+            "flavor":"A big two-handed mace forged from the brainstone and neural column of an Iron War golem. Fortunately, few of those wrecks remain in the Horaberg Colline Mountains, the traditional homeland of the Horani radical machinist collectives.",
+            "weight":30,
+            "value":"€2d6* x 1000",
+            "mods":["big","clumsy","two-handed"]
+        },
+        {
+            "name":"Iksan Heat Ray",
+            "tags":["energy","rifle"],
+            "flavor":"A ruby wand encased in a bakelite and ironwood amplifier casing. Originally mass-produced by the Reasonable Army, new heat-rays are usually ornate one-offs produced by crystal wizards for the luxury laser hunting market.",
+            "weight":10,
+            "value":"€2d6* x 100",
+            "mods":["infrared","power-curve","powered","ranged"]
+        },
+        {
+            "name":"Lignum Vitae Battle Stick",
+            "tags":["rod"],
+            "flavor":"Carved and polished from the glowing heartwood of the heavy tree, the stick sinks in water. Widely used as a “compliance tool” by the imperial uplifters of the Four Sky Regency, it has remained a traditional badge of rank among the officer-chiefs of the regency camelherder tribes of the Pale Plains beyond the Yellowland.",
+            "weight":10,
+            "value":"€2d6* x 1",
+            "mods":["less-lethal"]
+        },
+        {
+            "name":"Longeye Fusil",
+            "tags":["rifle"],
+            "flavor":"A sniper rifle made to the specifications of the golem fusiliers by the drone human fabricators of the Crust Belt.",
+            "weight":10,
+            "value":"€2d6* x 100",
+            "mods":["ammunition","long-range","precise"]
+        },
+        {
+            "name":"Lucite Spell-Breaker",
+            "tags":["rod"],
+            "flavor":"A small club or truncheon of pure lucite reinforced with sinew and copper bands.","stat":"ha","number":"1d4",
+            "weight":10,
+            "value":"€2d6* x 10",
+            "mods":["break-spell"]
+        },
+        {
+            "name":"Luminous Halberd",
+            "tags":["polearm"],
+            "flavor":"A glowing two-handed weapon favoured by the Bund-Bund warriors of the technopapacy.",
+            "weight":20,
+            "value":"€2d6 x 50",
+            "mods":["luminous","spirit-ward"]
+        },
+        {
+            "name":"Magnificent Fireball Pistol",
+            "tags":["pistol"],
+            "flavor":"One of the most stupidly over-powered inventions ever fed into an autofac production matrix. The fireball wandpistols convert the dross of mortal life force into powerful balls of fire. Hardly a fair trade, in the eyes of the noble land barons.",
+            "weight":10,
+            "value":"€2d6* x 2k",
+            "mods":["explosive","life-charged","ranged"]
+        },
+        {
+            "name":"Neoprimitive Bow",
+            "tags":["bow"],
+            "flavor":"A hunting bow designed in a museum style from the lost ages.",
+            "weight":10,
+            "value":"€2d6* x 1",
+            "mods":["arrows","ranged","two-hands"]
+        },
+        {
+            "name":"Plasma Knife ",
+            "tags":["energy","knife"],
+            "flavor":"An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.",
+            "weight":10,
+            "value":"€2d6* x 50",
+            "mods":["grievous","overcharge","powered"]
+        },
+        {
+            "name":"Stuckforce Shiv",
+            "tags":["knife"],
+            "flavor":"A shard of fractured force field held in uneasy equilibrium by a stabilizer pearl bound in jade cement. These blades are the residue of magical struggles beyond what anyone could imagine today; some say they are the leftovers of creation itself.",
+            "weight":10,
+            "value":"€2d6 x 100",
+            "mods":["vorpal-edge"]
+        },
+        {
+            "name":"Shock-sword",
+            "tags":["energy","sword"],
+            "flavor":"A composite amber and ceramic blade, rippling with electromagical fields. Neon knight gangs use decorated custom grips and colourful auras to stand out from one another. Still, most shock-swords continue to be manufactured by a single levitating auto-factory called R.O.G.",
+            "weight":10,
+            "value":"€2d6* x 50",
+            "mods":["boost","circuit-breaker","mildly-neuralgic","powered"]
+        },
+        {
+            "name":"Soul-eater Nightblade",
+            "tags":["sword"],
+            "flavor":"The spirit of the Eater in Darkness dwells in this blade.",
+            "weight":10,
+            "value":"€2d6* x 20",
+            "mods":["soul-stealer","mildly-possessed"]
+        },
+        {
+            "name":"Steppe-ship Cutlass",
+            "tags":["sword"],
+            "flavor":"A masterpiece of precision engineering, the hilt holds an array of valuable tools: corkscrew, bottle opener, bread knife, butter spreader, saw, nail file, nail clipper, scissors, swappable screwdriver, wrench, magnifying lens, compass, and whistle.",
+            "weight":10,
+            "value":"€2d6* x 4",
+            "mods":["sword-breaker","tool"]
+        },
+        {
+            "name":"Switchblade Revolver",
+            "tags":["knife","pistol"],
+            "flavor":"An ugly, snub-nosed affair.",
+            "weight":10,
+            "value":"€2d6* x 5",
+            "mods":["ammo","concealed","ranged","stiletto"]
+        },
+        {
+            "name":"Synth Crystal Ray Rifle",
+            "tags":["energy","rifle"],
+            "flavor":"A massive thing of humming compressors and radiating batteries, it emits blistering energy pulses.",
+            "weight":20,
+            "value":"€2d6* x 500",
+            "mods":["long-range","power-drop","powered"]
+        },
+        {
+            "name":"Trench Rifle",
+            "tags":["polearm","rifle"],
+            "flavor":"A heavy, sturdy weapon of oiled wood and blue steel. Tipped with a bayonet that could have been mounted on a partisan.",
+            "weight":20,
+            "value":"€2d6* x 50",
+            "mods":["ammunition","long-range"]
+        },
+        {
+            "name":"Utility Axe",
+            "tags":["hammeraxe"],
+            "flavor":"A multitool axe in bright primary colours in the styles of the venerable Maintenance Warguilds. ",
+            "weight":10,
+            "value":"€2d6* x 1",
+            "mods":["tool"]
+        }
+    ]
+}

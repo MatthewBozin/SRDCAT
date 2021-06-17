@@ -1,58 +1,53 @@
 {
-    "data": [
+    "data":[
         {
             "name":"Aesthetic Creation",
             "tags":["biomachine"],
             "flavor":"Made in Beautiful.",
             "ranks":[
-                "Hero chooses a cosmetic mutation. Gains 1 charisma.",
-                "Hero gains 1 charisma and increases ba damage 1 step.",
-                "Hero chooses a cosmetic mutation and gains 1 ba defence."
-            ]
-        },
-        {
-            "name":"Artful Dodger",
-            "tags":["fortune"],
-            "flavor":"Important for staying alive.",
-            "ranks":[
-                "Hero gains [+] to tests to avoid area effects, explosions, nasty spills, and other similar problems. Gains 1 ha defence.",
-                "Teflon reputation. Resistant to all kind of splash damage. [+] to tests to avoid legal repercussions.",
-                "Experience in staying ahead. Adds highest mental stat to ha defence and highest physical stat to ba defence."
-            ]
+                "Hero chooses a cosmetic mutation."
+            ],
+            "info":"SEACAT p.17"
         },
         {
             "name":"Artiforganism",
             "tags":["biomachine"],
             "flavor":"The unborn. The made.",
             "ranks":[
-                "Hero is not actually alive. Does not need to eat, breathe, drink, or sleep. Gains energy from the sun or from magical batteries.",
-                "Hero can replicate themselves given a few weeks and security backups.",
-                "Upgradeable. Hero gains 4 inventory slots for mutations and other enhancements."
-            ]
+                "Hero is not actually alive. They do not need to eat, breathe, drink, or sleep. They gain energy from the sun or from magical batteries.",
+                "Hero can replicate themselves given a few weeks and security backups."
+            ],
+            "info":"SEACAT p.17"
         },
         {
             "name":"Aural Corona",
             "tags":["fantascience"],
             "flavor":"Flaring off the elemental excess.",
-            "description":"Hero is surrounded by ",
-            "table":["Light","Fire","Sky ","Water","Green","Metal","Radiation","Void"],
-            "ranks":[
-                "Hero crackles with an overcharged aura. They take half damage from their element.",
-                "Hero can spend 1 life to flare their aura to an adjacent creature, either sharing their resistance or transferring all the damage they avoided.",
-                "Hero takes minimum damage from their element."
-            ]
+            "description":"Hero is surrounded by",
+            "table":["Light", "Fire", "Sky", "Water", "Green", "Metal", "Radiation", "Void"],
+            "ranks":["Hero crackles with an overcharged aura. They take half damage from their element.", "Hero can spend 1 life to flare their aura to an adjacent creature, either sharing their resistance or transferring all the damage they avoided.", "Hero takes minimum damage from their element."],
+            "info":"SEACAT p.17"
         },
         {
             "name":"Beneficiary of Choice",
             "tags":["fortune"],
             "flavor":"Some give, they receive.",
             "description":"Hero’s mysterious sponsors say they represent the ",
-            "table":["Archaic Independence Front","Council Metropolitan","De Werker Aristocracie","God Factory","Nu-Vome Consortium","Solar Gateway Initiative","Wine Vampire Endowment","Zu Kompleks DeityTM"],
+            "table":[
+                "Archaic Independence Front", 
+                "Council Metropolitan", 
+                "De Werker Aristocracie", 
+                "God Factory", 
+                "Nu-Vome Consortium", 
+                "Solar Gateway Initiative", 
+                "Wine Vampire Endowment", 
+                "Zu Kompleks DeityTM"
+            ],
             "ranks":[
-                "Hero gains 1 charisma (maximum +6). Once per week, they can receive a mysterious package, no larger than a small coffin, containing a non-magical machine or item of their choice.",
-                "Hero gains 1 ba defence. Once per day, hero receives guidance via a deep implant. Either [+] on their next test or a true answer (the player may simply narrate something they “know”, subject to the referee’s soft veto).",
-                "When a hero would die, they instead find themselves awake and unable to move in a strange coccoon, with shadowy shapes talking about “preparing the backup”. Next thing they know, they’re back in their bed missing some memories (hero permanently loses 1 skill)."
-            ]
+                "Hero gains 1 charisma (maximum +6). Once per week, they can receive a mysterious package, no larger than a small coffin, containing a non-magical machine or item of their choice.", 
+                "Hero gains 1 ba defence. Once per day, hero receives guidance via a deep implant. Either [+] on their next test or a true answer (the player may simply narrate something they “know”, subject to the referee’s soft veto).", 
+                "When a hero would die, they instead find themselves awake and unable to move in a strange coccoon, with shadowy shapes talking about “preparing the backup”. Next thing they know, they’re back in their bed missing some memories (hero permanently loses 1 skill)."],
+            "info":"SEACAT p.17"
         },
         {
             "name":"Bloodclad",
@@ -60,19 +55,18 @@
             "flavor":"Action hero style.",
             "ranks":[
                 "When below half life, hero only takes half physical damage. They’re tougher covered in their own shiny blood!",
-                "Below half life, hero can shrug off one ha attack per round.",
-                "At 0 life, hero can shrug off one more ha attack per round."
-            ]
+                "Below half life, hero can shrug off one physical attack each round."
+            ],
+            "info":"SEACAT p.17"
         },
-        {
-            "name":"Bloody Nimble ",
+                {
+            "name":"Bloody Nimble",
             "tags":["power"],
             "flavor":"Speed overwhelming.",
             "ranks":[
                 "Once per turn hero can spend 1 life to gain one additional action. This boost is not an action.",
-                "Hero can choose to spend 3 life to gain two actions instead.",
-                "If the hero suffers any damage, they gain [+] to initiative and agility tests for one round."
-            ]
+                "Hero can choose to spend 3 life to gain two additional actions instead."            ],
+            "info":"SEACAT p.17"
         },
         {
             "name":"Body Magic",
@@ -80,9 +74,10 @@
             "flavor":"There is no mind but flesh.",
             "ranks":[
                 "Hero can choose to use their strength or endurance stat when casting spells or making magical tests.",
-                "Additionally, can add  strength or endurance to dice rolled when casting spells or during ka conflicts.",
+                "Additionally, can add strength or endurance to dice rolled when casting spells or during ka conflicts.",
                 "Increase strength or endurance by 1. May use their strength or endurance stat for ka defences."
-            ]
+            ],
+            "info":"SEACAT p.17"
         },
         {
             "name":"Bravely Runs Away",
@@ -92,7 +87,8 @@
                 "Opponents suffer [-] when hero is retreating. Any sacrifices to avoid encounters are worth twice as much.",
                 "[+] to all tests while being chased. Ally morale does not suffer when hero retreats.",
                 "Cowardly reputation. [+] to surprise attacks and against fear effects. Takes half damage from social attacks."
-            ]
+            ],
+            "info":"SEACAT p.18"
         },
         {
             "name":"Break the Weak",
@@ -100,43 +96,51 @@
             "flavor":"Cut them down like wheat.",
             "ranks":[
                 "When hero physically strikes an opponent of lower level than themselves, the opponent is out of the fight (and probably dead).",
-                "When the hero knocks an opponent out of the fight, they get a free attack against a nearby target.",
-                "Hero gains 1d4 life every time they strike a lower level opponent."
-            ]
+                "When the hero knocks an opponent out of the fight, they get a free attack against a nearby enemy."
+            ],
+            "info":"SEACAT p.18"
         },
         {
             "name":"Channeling Hands",
             "tags":["fantascience"],
             "flavor":"Be the conduit.",
             "description":"Hero conducts the element of ",
-            "table":["Light","Fire","Sky ","Water","Green","Metal","Radiation","Void"],
+            "table":[
+                "Light", 
+                "Fire", 
+                "Sky", 
+                "Water", 
+                "Green", 
+                "Metal", 
+                "Radiation", 
+                "Void"
+            ],
             "ranks":[
-                "Hero’s bare hands can flare with the element. They can’t throw it, but they can affect matter. Also, their unarmed attacks deal elemental damage damage.",
-                "Elemental conduit grows. Unarmed elemental damage increases two steps (e.g. 1d3 to 1d6).",
+                "Hero’s bare hands can flare with the element. They can’t throw it, but they can affect matter. Also, their unarmed attacks deal elemental damage damage.", 
+                "Elemental conduit grows. Unarmed elemental damage increases two steps (e.g. 1d3 to 1d6).", 
                 "Conduit grows. Damage increases two more steps (e.g. 1d6 to 1d12)."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Chromatic Avatar",
             "tags":["fantascience"],
             "flavor":"There is power in this hue.",
             "description":"Hero is chosen by the colour ",
-            "table":["Purple","Blue","Green","Yellow","Orange","Red"],
+            "table":[
+                "Purple", 
+                "Blue", 
+                "Green", 
+                "Yellow", 
+                "Orange", 
+                "Red"
+            ],
             "ranks":[
-                "The hero is vividly coloured. They have [+] to tests against targets of their own hue, for the little differences are the worst differences.",
-                "They are resistant to damage from objects of their own hue and gain [+] to effects with tools of their own hue.",
+                "The hero is vividly coloured. They have [+] to tests against targets of their own hue, for the little differences are the worst differences.", 
+                "They are resistant to damage from objects of their own hue and gain [+] to effects with tools of their own hue.", 
                 "With one hand they can drain other hues from objects, with the other they can impart their own hue to objects. This is about as fast and effective as regular hand painting, so changing the colour of a large object will take quite a while."
-            ]
-        },
-        {
-            "name":"Citoyen Formidable",
-            "tags":["fortune"],
-            "flavor":"The city makes the citizen.",
-            "ranks":[
-                "The natural city-slicker. Hero gains [+] to social interactions, travel, and navigation in cities.",
-                "Social and physical attacks against the streetwise hero suffer [-] in cities.",
-                "Hero deals damage with [+] in cities. The environment is full of improvised weapons."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Combat Monster",
@@ -144,8 +148,9 @@
             "flavor":"Fight alone. Fight dirty.",
             "ranks":[
                 "When the hero fights alone, they have [+] to attacks and tests to trip, trick, or otherwise hinder their enemy. But they never benefit from flanking or other help in combat.",
-                "When the hero fights alone, their opponents never gain [+] from flanking or outnumbering the hero.","When the hero fights an equal or higher level opponent alone, they gain [+] to damage and damage dice explode."
-            ]
+                "When the hero fights alone, their opponents never gain [+] from flanking or surrounding them."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Critical Master",
@@ -153,9 +158,9 @@
             "flavor":"Knows where it hurts.",
             "ranks":[
                 "Hero’s critical hit multiplier is now equal to their proficiency or x3, whichever is higher.",
-                "Critical hit multiplier is now equal to level, proficiency or x4, whichever is higher (max x6).",
-                "Multiplier is now equal to level or x5, whichever is higher (max x8)"
-            ]
+                "Critical hit multiplier is now equal to level, proficiency or x4, whichever is higher (maximum x6)."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Death Hunger",
@@ -163,8 +168,9 @@
             "flavor":"Death awakens the blood demon.",
             "ranks":[
                 "Player tracks enemies taken out by the hero in a battle scene. Each enemy taken out grants a cumulative +1 to attacks until the end of the scene.",
-                "Hero also gains cumulative +1 to damage for every enemy taken out.","Hero also regains 1d6 life for every enemy dropped."
-            ]
+                "Hero also gains cumulative +1 to damage for every enemy taken out."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Devastator",
@@ -172,20 +178,20 @@
             "flavor":"Damage is everything.",
             "ranks":[
                 "Hero’s attacks always deal extra damage equal to their proficiency or +3, whichever is higher.",
-                "Extra damage is now equal to their level, proficiency or +4, whichever is higher.",
-                "Extra damage is equal to level or +6, whichever is higher."
-            ]
+                "Extra damage is now equal to their level, proficiency or +4, whichever is higher."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Disembodied",
             "tags":["fantascience"],
             "flavor":"Has no eyes to weep.",
-            "table":[" They can use this physical form to move or even \"talk\" by directly vibrating its atoms",""],
             "ranks":[
-                "The hero is a disembodied spirit-personality (ka-ba). They are immune to physical attacks, but their direct interaction with the physical world is also limited. They cannot exert a force more substantial than a gentle breeze or a slight temperature differential by themselves.",
-                "Their direct force is as strong as a stiff breeze or a moderate temperature difference. They can manifest within a pig-sized object, perhaps a chest or a skeleton. This manifestation costs 2 life per hour or so.",
-                "They can create a strong gust of wind or a sharp temperature difference. They can also manifest within a boulder-sized object, perhaps a house or dinosaur. This manifestation costs 4 life per hour or so."
-            ]
+                "The hero is a disembodied spirit-personality (ka-ba). They are immune to physical attacks, but their direct interaction with the physical world is also limited. They cannot exert a force more substantial than a gentle breeze or a slight temperature differential by themselves. However, they can manifest in a stone-sized physical form, perhaps a potted plant or a rat. They can use this physical form to move or even 'talk' by directly vibrating its atoms. This costs 1 life per hour or so.",
+                "Their direct force is as strong as a stiff breeze or a moderate temperature difference. They can manifest within a pig- sized object, perhaps a chest or a skeleton. This manifestation costs 2 life per hour or so.",
+                "They can create a strong gust of wind or a sharp temperature difference. They can also manifest within a boulder-sized object, perhaps a house or dinosaur. This manifestation costs 4 life per hour or so. Note: Manifesting in a sentient form usually causes a more-or-less violent aura contest for control between the hero and the form."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Dosemaster",
@@ -193,9 +199,9 @@
             "flavor":"Measured in all things.",
             "ranks":[
                 "Hero knows their doses. They don’t roll dice when healing with meds and potions or when applying poisons. Instead, they treat the maximum result as the number of charges. E.g., a med that normally restores 1d8 life always restores 8 life in the dosemaster's capable hands.",
-                "Hero rolls an additional matching die, increasing the charges they can nurse out of a med dose.",
-                "Hero can microdose poisons and meds, using them to provide resistance to similar poisons, vaccinating against diseases, and doubling the effects of potions."
-            ]
+                "Hero rolls an additional matching die, increasing the charges they can nurse out of a med dose."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Echolocator",
@@ -203,40 +209,42 @@
             "flavor":"Voices paint pictures.",
             "ranks":[
                 "Hero can use echolocation. Gains 1 agility.",
-                "Hero can dimly see around corners and through closed doors using echolocation and vibrations. Gains 1 agility.",
-                "Hero can detect heartbeats, subvocal tics, breathing rates, and blood pressure by sound and touch. Gains 1 aura and [+] to detecting inconsistencies."
-            ]
+                "Hero can dimly see around corners and through closed doors using echolocation and vibrations. Gains 1 agility."
+            ],
+            "info":"SEACAT p.39"
         },
         {
-            "name":"Electromagic Hacker ",
+            "name":"Electromagic Hacker",
             "tags":["fantascience"],
             "flavor":"Talk long enough into the machine, and it will talk back.",
             "ranks":[
                 "Hero can hack adjacent oldtech creatures and equipment. In combat, hacking is one action, each command is another action.",
                 "[+] to hacking tests if touching target.",
                 "Hero can give target one free command per turn."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Empty Shell",
             "tags":["biomachine"],
             "flavor":"No hell or heaven awaits.",
             "ranks":[
-                "Hero has no soul or ka. All curse spells always fail against them. Their ka defence is permanently 7, and cannot be modified. They are resistant against all ka damage. They can never be restored to life if killed.",
-                "Hero can absorb a soul leaving its dying body, gaining 1 aura until the next session. This destroys the absorbed soul. While they have an absorbed soul, they appear normal and not like a soulless husk.",
-                "Their ka defence is permanently 13. They are resistant to all magical damage."
-            ]
+                "Hero has no soul or ka. All curse spells always fail against them. They are resistant against all mind-affecting attacks. They can never be restored to life if they die.",
+                "Hero can absorb a soul leaving its dying body, gaining 1 Aura until the next session. This destroys the absorbed soul. While they have an absorbed soul, they appear normal and not like a soulless husk."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Eternal Champion",
             "tags":["fortune"],
             "flavor":"Carrying the torch of purpose beyond the gates of time and hate.",
-            "table":[""],
+            "description":"(This ability is not compatible withabilities that decrease a hero’smagic cost.)",
             "ranks":[
                 "Hero bonds with an eternal weapon (an L3 sidekick), sometimes as its master, sometimes as its slave. They apply their proficiency to tests with their eternal weapon, even if they don’t have a relevant skill. Further, the hero’s life increases by 1 point for each of their levels (current and future). Also, they can use their eternal weapon’s life for spell-casting. But their magic cost is increased by 1.",
                 "When wielding the eternal weapon, all defences are increased by their proficiency. E.g., a hero with pro +2 increases every defence from 10 to 12.",
                 "When wielding the eternal weapon, all the hero’s critical hit damage multipliers are increased by their proficiency. E.g., pro +4 increases a multiplier from x2 to x6. This applies to all attacks, not just with the weapon."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Expert Sidekicks",
@@ -244,19 +252,19 @@
             "flavor":"Friends are the best.",
             "ranks":[
                 "A number of sidekicks equal to the hero’s proficiency can be experts. This means they add the hero’s proficiency to their sum when testing something they’re good at.",
-                "The number of possible expert sidekicks increases to the hero’s level or proficiency or 4, whichever is highest.",
-                "The hero’s expert sidekicks add twice the hero’s proficiency."
-            ]
+                "The number of possible expert sidekicks increases to the hero’s level or proficiency or 4, whichever is highest."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Fleshsong Audiophile",
             "tags":["fantascience"],
-            "flavor":"Codes of creation singing in the flesh of the mortal and damned.",
+            "flavor":"Codes of creation singing in the flesh of the mortal and the damned.",
             "ranks":[
                 "Hero is creepily well acquainted with biology; [+] to all biological research tests. When they touch flesh, it sings and tells them what it has experienced. After a few minutes of physical contact, they can ask or answer one question about a living creature's medical history and condition.",
-                "[+] to all biological tests, including biomancer spells. Flesh songs answer questions about medical histories of dead organisms.",
-                "Can detect presence of living creatures now and in the past from environmental residues—traces in dirt and water—from touch alone."
-            ]
+                "[+] to all biological tests, including biomancer spells. Flesh songs answer questions about medical histories of dead organisms."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Fluid Anatomy",
@@ -266,40 +274,41 @@
                 "Hero's insides rearrange and rebuild to keep them going despite dreadful trauma. Hero can spend 1 stat point to turn a critical hit into a normal hit.",
                 "Can spend 1 stat point to regain life equal to hero’s level.",
                 "Can remove 1 burden per session."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
-            "name":"Fool’s Luck",
+            "name":"Fool's Luck",
             "tags":["fortune"],
             "flavor":"They don’t know their luck.",
             "ranks":[
                 "Hero rerolls every natural 1.",
                 "Hero gains [+] to tests when they have no relevant skill.",
                 "Everytime they roll a natural 1, they gain a [+] to their next roll."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Friend of the Element",
             "tags":["fantascience"],
             "flavor":"Accept the love of the source.",
             "description":"Hero is beloved of ",
-            "table":["Light","Fire","Sky ","Water","Green","Metal","Radiation","Void"],
+            "table":[
+                "Light", 
+                "Fire", 
+                "Sky", 
+                "Water", 
+                "Green", 
+                "Metal", 
+                "Radiation", 
+                "Void"
+            ],
             "ranks":[
-                "Hero gains [+] to all elemental attacks.",
-                "Hero now has [+] to all element-related die-rolls, including damage.",
+                "Hero gains [+] to all elemental attacks.", 
+                "Hero now has [+] to all element-related die-rolls, including damage.", 
                 "Hero always deals double damage with element."
-            ]
-        },
-        {
-            "name":"Futureproof",
-            "tags":["fantascience"],
-            "flavor":"The hubris of technology, undone.",
-            "description":"Technology abhors you. Machinery crumbles at your touch. Lasers glance off you like water off a duck.",
-            "ranks":[
-                "[+] to tests against technological effects or targets. Hero suffers [-] when using technological items.",
-                "Hero's touch deals 1d8 damage to machines. They can no longer use advanced technological items.",
-                "Machines touched by the hero make a relevant ha (or ka if available) test or shut down. Sentient machines dislike the hero."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Gastrointestinal Upgrade",
@@ -307,19 +316,9 @@
             "flavor":"Everything should be fuel.",
             "ranks":[
                 "Hero’s gut is a marvel of technomagic. They are immune to food poisoning and gain [+] vs. all other ingested toxins. Also, they can digest anything organic, from wood to bone to petroleum.",
-                "Hero has a matter converter installed in their body and can derive sustenance from inorganic material.",
-                "Hero has a ka-mill in their wormhole heart. They eat the souls of their victims, temporarily increasing their life total by 1d6 points for every level of a creature they ritually consume (to a maxi-mum equal to their life total)."
-            ]
-        },
-        {
-            "name":"Gentle Traveller",
-            "tags":["fortune"],
-            "flavor":"Oh, what wonders!",
-            "table":["Good luck","Health","Wisdom"],
-            "ranks":[
-                "Favourite travelling bag. Hero gains a special inventory that can hold 3 stone-sized items or 99 soap-sized items. It’s magical. If they lose the bag, it always somehow reappears.",
-                "Personal daimon. Hero gains a little voice that whispers in their ear. It does not occupy an inventory slot, but does require a name. \tOnce per game session, the daimon gives one of the following:"
-            ]
+                "Hero has a matter converter installed in their body and can derive sustenance from inorganic material."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Gifted",
@@ -327,9 +326,9 @@
             "flavor":"They have that special touch.",
             "ranks":[
                 "Hero’s pro increases by 1.",
-                "Increases by 1 more.",
-                "Increases 1 more."
-            ]
+                "Increases by 1 more."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Glittering Incorruptible",
@@ -339,19 +338,8 @@
                 "Hero’s source code has been enhanced by chance or ancient germline intervention. The hero cannot suffer mutations through corruption. Instead, they take a point of harm. The ill hero requires a week’s rest to recover.",
                 "Hero’s source code actively resists all diseases and toxins. Hero can choose to lose 1 stat point to avoid all other effects of a disease or poison.",
                 "Hero can not be reduced to 0 life through social attacks. They are simply too golden."
-            ]
-        },
-        {
-            "name":"Goodnight Messenger",
-            "tags":["fantascience"],
-            "flavor":"The end. The end.",
-            "description":"They are a subconscious message from the ",
-            "table":["Backup iteration","Beginning of this cosmos","Eating dark","End of time","Divine renaissance ark","Wormway engineers"],
-            "ranks":[
-                "Sub-creation antenna. Hero gains a boon [+] whenever someone near them casts a spell.",
-                "Unraveller. Hero gains resistence to magic damage. All spell effects near them explode.",
-                "Entropy prophet. Hero gains ka defence equal to their level. All spell damage dice near the hero are increased by their level."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Gravitas",
@@ -359,9 +347,10 @@
             "flavor":"The presence abides.",
             "ranks":[
                 "Hero’s mere presence is an argument. They can choose to use their aura or endurance stat when making social tests.",
-                "Additionally, can add  aura or endurance to dice rolled during social conflicts.",
+                "Additionally, can add aura or endurance to dice rolled during social conflicts.",
                 "Increase aura or endurance by 1. May use their aura or endurance stat for ba defences."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Hacked Shorttimer",
@@ -371,8 +360,10 @@
                 "Hero comes from stock crudely optimized for improved short term performance. They gain 1 strength, endurance, or agility. Sadly, their bio-cobbled body imposes [-] against diseases, venoms, or toxins.",
                 "The optimization went further than was wise. Hero gains 1 more strength, endurance, or agility. Their physical stat maximum is increased to 6. Alas, they suffer [+] damage from one type of attack: physical, social, or mental.",
                 "Flawed divinity. Hero gains 1 more strength, endurance, or agility, and 1 charisma. Their physical stat maximum is increased to 7. Hero suffers [-] against one kind of elemental assault."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
+
         {
             "name":"Honour Bound",
             "tags":["fortune"],
@@ -381,27 +372,17 @@
                 "Hero possesses an aura of honour, granting [+] to social tests in nomadic and clan-based societies.",
                 "Powerful mana protects the hero from dishounorable opponents (i.e. city-dwellers or hunter-gatherers). Their social attacks against the hero have [-].",
                 "Tribal aura. Hero takes half damage from all social attacks in the wild lands."
-            ]
-        },
-        {
-            "name":"Hyperlogical",
-            "tags":["brains"],
-            "flavor":"Who needs a heart anyway?",
-            "ranks":[
-                "Immune to fear, charm, and emotional appeals. [-] to reading social cues. [+] to logical reasoning.",
-                "All according to plan. Gains [+] to tests on the second and subsequent rounds of a conflict.",
-                "Necessary sacrifices. Gains 1 action whenever an ally is defeated in a conflict. Gains 1 life whenever an ally is injured. Gains [+] whenever they are injured."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Improved",
             "tags":["biomachine"],
             "flavor":"A fantascience product.",
             "ranks":[
-                "Hero chooses a beneficial mutation.",
-                "Hero gains 1 stat point and chooses a mutation.",
-                "Hero gains gains 1 more stat point and a mutation or trait."
-            ]
+                "Hero chooses a beneficial mutation."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Inspiring Hero",
@@ -411,7 +392,8 @@
             "ranks":[
                 "A number of sidekicks equal to the hero’s proficiency fights with unmatched ferocity. They add the hero’s proficiency score to all their attacks and tests during battle scenes.",
                 "The number of possible inspired sidekicks increases to the hero’s level or proficiency or 4, whichever is highest."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Insufferably Cute",
@@ -419,72 +401,32 @@
             "flavor":"Just the cutest.",
             "ranks":[
                 "A winsome face. [+] to social interactions, but all interactions take twice as long as everyone fusses over the hero.",
-                "Small and cuddly. [-] to all direct attacks against the hero, but the hero’s inventory is permanently reduced by 3.",
-                "Mascot. All allies near the hero gain [+] while protecting them."
-            ]
-        },
-        {
-            "name":"Jade Brain",
-            "tags":["biomachine"],
-            "flavor":"There are colours beyond god.",
-            "ranks":[
-                "Hero’s brain is replaced with a perfect crystal. At any time, they can spend 1 life and 1 days to store a copy of their personality in a memory pearl. Hero also gains 1 thought.",
-                "Hero gains a crystal third eye. They gain [+] to light and force tests. Hero also gains 1 aura.",
-                "Hero can project their hopes and fears into others, gaining [+] when sharing their emotions or reading other’s intent. Hero also gains 1 ba and ka defence."
-            ]
-        },
-        {
-            "name":"Just Too Ordinary",
-            "tags":["brains"],
-            "flavor":"Common as muck.",
-            "ranks":[
-                "Hero seems eminently ordinary. They can immediately lose themselves in a crowd. [+] to disguising them as someone else. Over time, they actually physically begin to resemble the average inhabitant of their locale.",
-                "Catalyst. Hero gains [+] to shifting the mood of crowds they are a member of. When fighting with the rank and file, their companions gain [+] to tests. [+] to ba tests among lower classes.",
-                "Social dynamite. Hero gains 1 charisma and can make themselves look completely striking and unforgettable. [+] to ba rolls against different social classes. Can spend 1 life encoura-ging nearby allies, giving them [+] to rolls for the rest of the round."
-            ]
-        },
-        {
-            "name":"Ka Marked",
-            "tags":["power"],
-            "flavor":"Chosen by the overgods.",
-            "description":"Hero’s soul bears the blazing mark of the ",
-            "table":["All-Purifying Engine","Decaying Cosmos","Deep All-Generator","Eating Dark","Endless Horizon","Iron Guardian","Morning Star","Viridian Permutator"],
-            "ranks":[
-                "Awesome self-confidence. Hero adds their charisma to ha and ka defence. Hero can also spend 1 life to detect sympatethic priests and believers in their vicinity. Such people love them.",
-                "Dangerously infallible. Hero gains 1 charisma. Hero can also spend 1 life to ‘detect’ that an unsympathetic creature in their vicinity is evil and dangerous. They gain [+] to tests and damage rolls against this marked target.",
-                "Hark the celestial voices. Hero adds their charisma to ha and ka attacks. The hero’s allies and other nearby sympathetic creatures gain [+] to rolls against targets marked by the hero."
-            ]
+                "Small and cuddly. [-] to all direct attacks against the hero, but the hero’s inventory is permanently reduced by 3."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Lazarus Soldier",
             "tags":["power"],
-            "flavor":"Didn’t let them grind ya down.",
+            "flavor":"Didn't let them grind ya down.",
             "ranks":[
                 "The first time the hero is reduced to 0 life in a session they immediately regain 6+level life.",
                 "When the hero would be permanently removed from play, the player can return them into play in the next scene. The hero gains a permanent scar or burden occupying one inventory slot and loses a rank of Lazarus Soldier.",
                 "After the hero dies, they return to life on the next full moon or another significant astrological event. This creates a probabilistic dysfunction and unleashes an undead plague."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Lifewind Inhalation",
             "tags":["power"],
-            "flavor":"Deep breaths, action hero.",
+            "flavor":"Deep breaths, action hero, deep breaths.",
             "description":"Absorb the vital principles of sky and green through superior patterns of consciousness.",
             "ranks":[
                 "Hero recovers twice as much life when spending a hero die to recover life.",
                 "Thrice as much life. Additionally, spending a hero die to recover life grants one boon.",
                 "Four times. Additionally, spending a hero die to recover life makes them glow bright as a torch for a few hours."
-            ]
-        },
-        {
-            "name":"Luckless Mess",
-            "tags":["fortune"],
-            "flavor":"Everything goes wrong.",
-            "ranks":[
-                "Hero and all creatures near hero increase critical fail range 1 step. Hero’s critical failures are always humorous, never actually harmful.",
-                "Whenever anybody rolls a critical failure nearby, the hero regains a hero die.",
-                "Critical fail ranges increase 1 more step. The hero gains 1d6 life or 1 stat point whenever anybody near them rolls a critical failure."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Luminous",
@@ -494,7 +436,8 @@
                 "The hero’s insides are aglow. They can release it from their mouth or eyes with the radiance of a powerful torch.",
                 "Hero gains [+] to ka attacks and magic tests in brightly illuminated spaces.",
                 "They sparkle like diamonds and are resistant to physical damage in bright light."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Machine Whisperer",
@@ -502,9 +445,9 @@
             "flavor":"Soothe the savage robot.",
             "ranks":[
                 "Talking machines naturally like the hero. [+] to social tests with machines.",
-                "Complex machines always try to help the hero. Complicated locks try to unlock themselves when whispered to, audio-visual orbs try to fix themselves when banged vigorously.",
-                "[+] to effects when using machines. Golem guns do more damage, vechs leap further, cracklewand fields last longer."
-            ]
+                "Complex machines always try to help the hero. Complicated locks try to unlock themselves when whispered to, audio-visual orbs try to fix themselves when banged vigorously."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Master Blaster",
@@ -514,19 +457,20 @@
                 "Hero rolls all exploding damage dice (e.g. 1d6*) with [+].",
                 "[+] to all explosive tests, including attacks and spells. Hero feels the energy trapped in matter yearning to be free like a phoenix.",
                 "Oops. Blaster blew up. Time for a new hero."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Memory Palace",
             "tags":["brains"],
             "flavor":"A prison of dreams traps the unwary.",
-            "description":"A true wizard’s mind is a scary old palace, full of dark holes where magical parasites hide.",
-            "table":[" The more fanciful, the better"],
+            "description":"A true wizard’s mind is a scary old palace, full of dark holes where magical parasites hide. (Players should fancifully describe their hero’s memory palace. The more fanciful, the better.)",
             "ranks":[
                 "The hero squirrels away extra spell burdens in their mind as magic memories. The memory palace has a number of magic rooms equal to their level. This is a bonus inventory just for carrying spells.",
                 "Hero also gains memory points equal to their level. These are used to cast memorized spells as if they were life points.",
                 "Hero’s memory point total from this ability is doubled."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Meticulous Ritualist",
@@ -536,7 +480,8 @@
                 "Hero gains [+] to tests when casting all spells taking over a dozen minutes to cast.",
                 "Hero also rolls effects of their ritual spells with [+].",
                 "Hero reduces price of all ritual spells they cast by 2 (minimum of 1)."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"More Than Human",
@@ -544,9 +489,10 @@
             "flavor":"The cosmos gazing at itself.",
             "ranks":[
                 "An awareness of common consciousness grants the hero [+] to communicating with synthetics, golems, and void creatures.",
-                "The hero is incredibly versatile, adapting to alien dimensions, higher colours, strange gravities, and non-euclidean spaces within a few minutes. This negates environmental penalties, though the hero may still dies from exposure, lack of air, etc.",
+                "The hero is incredibly versatile, adapting to alien dimensions, higher colours, strange gravities, and non- euclidean spaces within a few minutes. This negates environmental penalties, though the hero may still dies from exposure, lack of air, etc.",
                 "Tapping the cosmic mind, the hero gains [+] to all social and mental interactions with alien sentiences. Additionally, the hero can willingly abandon their mortal shell and become a ka-ba spirit. This is a one-way trip. Afterwards, humans count as alien sentiences for the hero."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Motorbreath",
@@ -556,7 +502,8 @@
                 "Hear the roar. [+] when using machines with engines.",
                 "Eat the dust. Gains an extra action when using a machine with an engine.",
                 "Break on through. [+] to damage and initiative with machines with engines. Critical range increased one step in vehicular combat."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Natural Born Comrade",
@@ -566,7 +513,8 @@
                 "Hero gains [+] to social tests among their equals. Whenever they give away most of their wealth in social conflict and keep an equal or smaller proportion for themselves, all their attacks are twice as effective.",
                 "Wealthier opponents have [-] to social and physical attacks against the hero. Hero deals double social and physical damage to wealthier opponents.",
                 "Hero suffers no penalties from opulent wealth in the eyes of the poor since they are only safeguarding the wealth for the common folk."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Neural Machine Symbiote",
@@ -574,21 +522,10 @@
             "flavor":"Silver ships slip through my veins.",
             "description":"Tiny silver animalcules flow through the hero’s bloodstream, glittering golden wires thread their neural networks.",
             "ranks":[
-                "Hero can pilot golems and other thinking machines hands-free. The symbiote accelerates their mind (hero gains 1 thought).",
-                "The symbiote accelerate all reflexes (hero gains 1 agility) and lets the hero talk with machines and other neurally enhanced humans at great distances.",
-                "Join the silver collective. Hero gains 3 bonus inventory slots for mental constructs, memories, skills, or burdens. Gains [+] to any tests that require access to complex memories or data. Sometimes receives instructions from a collective neural identity."
-            ]
-        },
-        {
-            "name":"Neuroempathy",
-            "tags":["brains"],
-            "flavor":"Mirror-neurons mirror neurons.",
-            "description":"The hero says they always understand how others are feeling.",
-            "ranks":[
-                "Empathic projection. [+] when soothing, consoling, or other tests that require empathy.",
-                "Full tele-empathy. Can read emotions of visible creatures. [+] against lies and deception.",
-                "Empathic blot. Deals double ka or ba damage when making an emotional attack."
-            ]
+                "Hero can pilot golems and other thinking machines hands- free. The symbiote accelerates their mind (hero gains 1 thought).",
+                "The symbiote accelerate all reflexes (hero gains 1 agility) and lets the hero talk with machines and other neurally enhanced humans at great distances."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Noblesse Obliged",
@@ -598,7 +535,8 @@
                 "Hero owns a country estate and a fancy title. Social attacks can never remove the hero from play. Hero gains an additional hurt state, “attending to personal matters in the countryside.” This hurt state immediately removes the hero from play for the session. Still, it prevents further injury, as they are ensconced in their “cottage”.",
                 "Lucky death of a relative brings finances to match the title. Hero gains [+] whenever money would be an issue. Because money, or at least credit, is not an issue.",
                 "Friends in high places. Once per session, the hero can call on a favour to get out of a pickle or rum do. Hero gains [+] in all courts of law and public opinion."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Omniactivation",
@@ -606,9 +544,9 @@
             "flavor":"The red button will be pushed.",
             "ranks":[
                 "Hero ignores all restrictions on all fantascientific devices. Doors recognize them, sentient bombs talk to them. Does the hero understand what they do? Unlikely.",
-                "Once per session, the hero can touch a dead fantascientific machine or artifact and it sparks to life, giving off one last gasp of utility. A dead autowagon rolls forward a last few meters. A visual calculator’s last output glows dimly on its cathode sphere for a few minutes. An electronic lock reactivates and bolts a door.",
-                "When faced with any fantascientific creature, the hero can spend 1 life to ‘discover’ a backdoor switch. Even odds whether this weakens the creature, or activates a new mode."
-            ]
+                "Once per session, the hero can touch a dead fantascientific machine or artifact and it sparks to life, giving off one last gasp of utility. A dead autowagon rolls forward a last few meters. A visual calculator’s last output glows dimly on its cathode sphere for a few minutes. An electronic lock reactivates and bolts a door."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Overlooked by the Gods",
@@ -617,18 +555,19 @@
             "ranks":[
                 "All holy or sacred tests rolled against the hero suffer [-].",
                 "All curses and blessings have minimal effect against the hero. Hero gains 1 aura.",
-                "Hero gains [+] to all attacks and direct tests against the extra-normal ‘gods’ and their ‘divine’ servitors. They just slide off those creatures’ perception fields."
-            ]
+                "Hero gains [+] to all attacks and direct tests against the extra- normal 'gods' and their 'divine' servitors. They just slide off those creatures' perception fields."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Panmolecular Sensorium",
             "tags":["biomachine"],
             "flavor":"Hear the songs of the oceans. Read stories in wind and stream.",
             "ranks":[
-                "Hero’s sensorium is expanded with new cutaneous and olfactory organs that let them read trace molecular remains. Their sense of smell is as acute as a bloodhound’s, and they can ‘taste’ with their fingertips. [+] when tracking, testing food for poison, sampling fuel for impurities, and other such tests.",
-                "Hero can literally smell emotions. [+] to discerning intentions, picking up lies, and ferreting out tricks.",
-                "Hero detects submolecular changes in reality. They smell magic and gain +2 ka defences."
-            ]
+                "Hero’s sensorium is expanded with new cutaneous and olfactory organs that let them read trace molecular remains. Their sense of smell is as acute as a bloodhound’s, and they can ‘taste’ with their fingertips. [+] when tracking, testing food for poison, sampling fuel for impurities, and other similar tests.",
+                "Hero can literally smell emotions. [+] to discerning intentions, picking up lies, and ferreting out tricks."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Perfectly Balanced",
@@ -638,7 +577,8 @@
                 "Hero always balances on any narrow surface or tight rope. Can also perfectly balance objects.",
                 "Like water, hero never loses their mental or social equilibrium. Resistant to fear, shame, regret, worry, and anxiety.",
                 "Gains [+] to balance competing claims and pass legal or moral judgements."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Pheromone Panoply",
@@ -647,30 +587,21 @@
             "description":"Write poetry with biochemistry.",
             "ranks":[
                 "The hero has modified biological chemo-factories in their body. These provide communication molecules on demand. [+] to charming or intimidating social attacks. Can scare away or ‘blind’ creatures like ants and termites that rely primarily on chemical signals for communication.",
-                "Hero can use their pheromone panoply to communicate with and try to command insects or other creatures that depend on pheromones.",
-                "Hero uses pheromones to enhance their mind-affecting ka and all ba attacks. Damage dice increase one step and become exploding."
-            ]
-        },
-        {
-            "name":"Pocket Packer",
-            "tags":["fortune"],
-            "flavor":"More for everyone.",
-            "ranks":[
-                "Whenever the group discovers a nice pile of treasure, the hero pockets an extra €1d6 x level of valuables without any-body noticing. This is quantum treasure that appears without affecting the main horde. Hero also gains [+] to picking pockets.",
-                "Hero can always nick an unmemorable souvenir or memento from any location, machine or creature without anybody noticing until it is too late. The extra coins they pocket are now worth €2d6 x level.",
-                "The extra valuables are now worth €3d6 x level. Hero also gains [+] to gambling, card tricks, and using hidden weapons."
-            ]
+                "Hero can use their pheromone panoply to communicate with and try to command insects or other creatures that depend on pheromones."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Polybody Unity",
             "tags":["brains"],
             "flavor":"More bodies, more choices.",
-            "table":[" Each body beyond the first in visual range grants 5 life points"," The player can invest xp in a body to increase its stats and life totals as though it were an extra"," In this case, the player rolls a new set of mental stats and uses the set with a higher aura score"],
+            "description":"(If a hero sends off a body on its own, the player decides how much life is assigned. The player can invest xp in a body to increase its stats and life totals. Heroes may merge with a new body instead of outright stealing their body. In this case, the player rolls a new set of mental stats and uses the set with a higher aura score. The hero gains one bonus skill and replaces a number of other skills equal to their new thought score.)",
             "ranks":[
-                "Hero has an additional body. Their bodies are connected in a real-time glandular psyche-to-psyche network. Neither body has priority, and they have a single mind. The hero can have up to 3 bodies. Adding a body is very expensive. It takes about a week, and requires a surgeon-psychopomp.",
+                "Hero has an additional body. Their bodies are connected in a real-time glandular psyche-to- psyche network. Neither body has priority, and they have a single mind. The hero can have up to 3 bodies. Adding a body is very expensive. It takes about a week, and requires a surgeon- psychopomp. Each additional body is treated as a secondary character with its own physical stats and action pool. Each body beyond the first in visual range grants 5 life points. Area attacks against polybody characters multiply their damage by the number of bodies present.",
                 "Hero can have up to 6 bodies. Some of their bodies can be animals.",
                 "Hero can have up to 9 bodies. Some of their bodies can be synthetics."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Porcelain Skin",
@@ -678,9 +609,9 @@
             "flavor":"They made people prettier once upon a time.",
             "ranks":[
                 "Hero's uncannily smooth skin is resistant to diseases and scarring. Gains 1 charisma.",
-                "Hero’s luminous skin is resistant to acid, chemicals and fire (half damage). Gains 1 more charisma.",
-                "Hero’s diamond-smooth skin resists slashing and piercing damage. Gains 1 ha defence."
-            ]
+                "Hero’s luminous skin is resistant to acid, chemicals and fire (half damage). Gains 1 more charisma."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Protector of Innocents",
@@ -690,7 +621,8 @@
                 "Hero gains [+] to attacks and tests when fighting to protect an unarmed or helpless innocent.",
                 "Once per turn hero can instantly redirect an attack from a nearby creature to themselves (this is not an action). Hero can redirect additional attacks at the cost of 1 life per attack. Word gets around. Downtrodden communities scrape together resources to help the hero.",
                 "[-] to all attacks and damage against the hero while defending an innocent."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Psion Scion",
@@ -700,7 +632,8 @@
                 "Low-level empathic field grants [+] to trickery, lies, and illusions.",
                 "[+] to direct mental attacks against a single target.",
                 "Empathetic enlightenment. [+] to assist, console, and otherwise help scared and vulnerable creatures. Resistant to fear and trickery."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Qanat of Power",
@@ -710,17 +643,19 @@
                 "The hero casts all spells as though they were 2 level higher.",
                 "When the hero casts a spell, they channel 1 life point from the void, reducing their spell price.",
                 "Casts as 4 levels higher."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Querulous Kvetch",
             "tags":["power"],
             "flavor":"Complaining is a cure.",
             "ranks":[
-                "Instead of any other burden, the hero may choose the special burden: “grumbling quietly.” It imposes no penalties. Hero can only bear one such burden at a time.",
-                "Hero gains a second special burden: “griping and groaning.” When the hero gains this burden, sneaking becomes difficult [-].",
-                "Hero gains a third special burden: “kvetching viciously.” When the hero gains this burden, they suffer [-] to social inter-actions. They also gain [+] to one action per round."
-            ]
+                "Hero gains an additional hurt state, “grumbling quietly.” It imposes no penalties.",
+                "Hero gains one more hurt state, “griping and groaning.” When the hero reaches this state, sneaking becomes difficult [-].",
+                "Hero gains a third hurt state, “kvetching viciously.” When the hero reaches this state, they suffer [-] to social interactions. They also gain [+] to one action."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Radiant Panoptics",
@@ -730,7 +665,8 @@
                 "Hero’s infraoptic symbiotes detect heat signatures and traces. Gains [+] to survival and investigation tests.",
                 "Hero can “see” in the absence of visible light using a panoply of electromagnetic sense organs.",
                 "Hero’s senses can probe through several layers of base matter. Gains [+] when searching for hidden objects or trying to figure out if somebody is standing behind the draperies."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Rauber Baron",
@@ -740,7 +676,8 @@
                 "Hero is savvy. Hero has [+] to all business-related rolls. Including treasure rolls.",
                 "Hero is surprisingly well-off. Hero can deal physical damage with social attacks. It’s called paid help. Once per session, they acquire an expensive item on “credit”.",
                 "Hero reveals they have a servile butler running a monopolistic corporation on their behalf. Hero can deal mental damage with social attacks. It’s called owning a media subsidiary. Once per session, they turn out to own a useful building or asset."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Renowned Racer",
@@ -750,18 +687,20 @@
                 "[+] to tests during vehicular chases. Fame (and notoriety) also grant the hero [+] in many social interactions.",
                 "Some of them were death races. [+] when manoeuvring to attack or defend with a vehicle.",
                 "Gains an extra driving action every turn."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
-            "name":"Rubberskin ",
+            "name":"Rubberskin",
             "tags":["fantascience"],
             "flavor":"Nemesis of the thunder demons.",
             "description":"Skin laced with symbiotic insulating caucho-fungoid.",
             "ranks":[
-                " The hero is resistant to electromagical and energy attacks (halving all damage).",
+                "The hero is resistant to electromagical and energy attacks (halving all damage).",
                 "The caucho-fungoid is interwoven with the whole body. Immune to electromagical and energy attacks.",
                 "No longer fully human but an evolved caucho-fungoid chimera. Electromagic and energy attacks heal the hero. They don’t repair broken bones or open wounds. Those still need surgery."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Secured Flesh",
@@ -770,20 +709,21 @@
             "description":"The hero knows how their body works, keeping it strong and stable.",
             "ranks":[
                 "[+] to all tests against mutations, dangerous spells, or anything else that might corrupt their body (e.g. disease).",
-                "Hero takes half damage from toxins, venoms, poisons, and diseases. Hero recovers maximum life from hero dice.",
-                "Regeneration backup. Hero removes 1 physical burden per night of sleep. Hero recovers double life from hero dice."
-            ]
+                "Hero takes half damage from toxins, venoms, poisons, and diseases."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Self-Improvement Protocols",
             "tags":["biomachine"],
             "flavor":"Machines in the bloodstream do what they will.",
-            "table":[" If all of a hero’s stats are at 0, they need to uninstall an upgrade before getting a new one"],
+            "description":"Note: Each installed upgrade reduces a stat by 1 to a minimum of 0. If all of a hero’s stats are at 0, they need to uninstall an upgrade before getting a new one.",
             "ranks":[
                 "The hero is upgraded with photovoltaics, feeding only on light, and a direct machine communication array. However, their biological body degrades due to inevitable errors integrating the ancient biomachines, permanently reducing a stat by 1.",
                 "The hero’s upgrade capacity is increased. They gain 1 biomachine slot per level (maximum of 5) in addition to their regular inventory. They may choose upgrades from the corruption and mutation tables.",
                 "Their upgrade capacity is increased to 2 biomachine slots per level (maximum of 11)."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Sparklefingers",
@@ -793,17 +733,18 @@
                 "The hero's unarmed attacks can deal 1d4 electric damage instead of 1d3 physical damage. Conducting materials extend attack range.",
                 "Electric touch increases to 1d6 damage. Hero can spend a few hours to recharge dead batteries.",
                 "Increases to 1d8 damage. In medical settings hero's touch gives [+] or [-]; restarting stopped hearts, improving muscle tone, reducing viral replication."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Spiritbreaker",
             "tags":["power"],
-            "flavor":"Make their noses bleed..",
+            "flavor":"Make their noses bleed.",
             "ranks":[
                 "When hero spiritually strikes an opponent of lower level than themselves, the opponent is out of the conflict (and probably unconscious).",
-                "When the hero knocks an opponent out of the conflict, they get a free ka attack against a nearby target.",
-                "When the hero’s ka attack hits, they gain 1d4 life."
-            ]
+                "When the hero knocks an opponent out of the conflict, they get a free ka attack against a nearby target."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Spell Detonator",
@@ -811,9 +752,10 @@
             "flavor":"Things must boom.",
             "ranks":[
                 "Hero’s spell damage dice become explosive. E.g., a magic bullet (1d4) becomes 1d4*.",
-                "Spell damage dice explode on highest & second-highest rolls.",
+                "Spell damage dice explode on highest and second-highest rolls.",
                 "[+] to all spell damage."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Stargazer",
@@ -822,21 +764,31 @@
             "description":"Gazed upon Mother Star and saw through the Veil of Ignorance cast upon humanity by the Dark Sorcerer at the top of the false heaven. Saw through their whips and chains, and now they are as gossamer.",
             "ranks":[
                 "[+] to all tests against magic.",
-                "The moon-tide roars within the hero. They deal double damage to magic-corrupted monsters and abominations. And dark wizards.",
-                "Enlightened. Immune to madness. Resistant to chaos, confusion and the pain of existence."
-            ]
+                "The moon-tide roars within the hero. They deal double damage to magic-corrupted monsters and abominations. And dark wizards."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Symbiotic Friend",
             "tags":["biomachine"],
             "flavor":"There’s a little more than me.",
             "description":"The hero has a small, telepathically bonded pet living on or in their flesh. It is a ",
-            "table":["Chirping monkey-lizard","Air-breathing fish","Furry rabbit-snake","Many-handed cuttlefish","Rainbow land-crab","Glistening biomech newt","Burrowing glass bird","Iridescent scarab colony"],
+            "table":[
+                "chirping monkey-lizard", 
+                "air-breathing fish", 
+                "furry rabbit-snake", 
+                "many-handed cuttlefish", 
+                "rainbow land-crab", 
+                "glistening biomech newt",
+                "burrowing glass bird",
+                "iridescent scarab colony"
+            ],
             "ranks":[
                 "The symbiotic friend can perform a single skill with the same bonus as the hero. It occupies no inventory slots.",
-                "The friend is an expert, using double the hero’s pro score.",
-                "It is an incarnation of skill. Its sum with that skill is +13."
-            ]
+                "The friend is an expert, using double the hero’s proficiency score.",
+                "It is an incarnation of skill. Its sum bonus with that skill is +13."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Symbolic Receiver",
@@ -844,76 +796,44 @@
             "flavor":"That’s … that’s not really a thing.",
             "description":"There are patterns everywhere, and they all emit meaning into the receiver’s head. The hero knows what every symbol means, or says they do.",
             "ranks":[
-                "Hero can always tell if a symbol is positive or negative. Price of all symbolic spells reduced by 1 (minimum 1). Symbolic spells include magic circles, magical exploding symbol traps, and the like.",
-                "[+] to all tests when casting or nullifying symbolic spells.",
-                "Casts all symbolic spells as 2 levels higher. Gains 1 ka defence."
-            ]
+                "Hero can always tell if a symbol is broadly positive or negative. Price of all symbolic spells reduced by 1 (minimum of 1). Symbolic spells include magic circles of protection, magical exploding symbol traps, and the like.",
+                "[+] to all tests when casting or nullifying symbolic spells."            
+            ],
+            "info":"SEACAT p.39"
         },
         {
-            "name":"Technopriest",
-            "tags":["fantascience"],
-            "flavor":"Sufficiently advanced magic.",
-            "description":"Anointed by the ",
-            "table":["Archways of perception","Cogwheel of eternal return","Egg of the first land","Glittering fast stars","Ill nano of re-creation","Whether weaver"],
-            "ranks":[
-                "[+] when channelling forces beyond mortal ken. Reduces prices of imbued spells by 1 (minimum 1). Rolls spell effects with [+] in sanctified areas.",
-                "Rider behind the eyes. Can focus and maintain one spell per round as a free action. Can spend 1 life and a few minutes to sanctify a small area.",
-                "Conduit of the ageless. Gains 1 ha and ka defence. Can let their rider take control. While the rider is in control, hero casts all spells as though they were level 17. Hero also gains 1 burden per round. Will the rider also leave?"
-            ]
-        },
-        {
-            "name":"Traitorous",
-            "tags":["fortune"],
-            "flavor":"The opportune moment arrives.",
-            "ranks":[
-                "Deals 1d6* bonus damage with hidden weapons, surprise attacks, and attacks from hiding. Their critical hit multiplier with such attacks increases 1 step.",
-                "Hero gains [+] to charming or befriending creatures. Hero gains [+] to tests against friends. Also, their traitorous bonus damage increases to 2d6*.",
-                "Bonus damage increases to 3d6*. Critical threat range and hit multiplier increase 1 step."
-            ]
-        },
-        {
-            "name":"Tree Hugger",
-            "tags":["brains"],
-            "flavor":"Friend of herbs & fluffy creatures.",
-            "description":"Hero feels at home in ",
-            "table":["Exotic beaches","Manicured parklands","Painted deserts","Refreshing forests","Scenic mountains","Urban jungles"],
-            "ranks":[
-                "Hero gains 1 aura and 1 ka defence. In their native environment they blend in flawlessly, gaining [+] to hiding and moving without trace. They also add their aura stat to all defences while there.",
-                "Beautiful soul. Gains 1 thought. As an action, the hero can call upon a vast store of inspiring sayings to bolster all nearby allies, who gain [+] to their hero dice rolls. Alternatively, they can infuriate the same allies with their sayings, granting [+] to their physical tests.",
-                "Furious spirit. Gains 1 strength. Hero gains [+] to attacks against targets who threaten their beloved natural environment or disagree with their firm beliefs in even the most minute detail."
-            ]
-        },
-        {
-            "name":"True Warrior ",
+            "name":"True Warrior",
             "tags":["power"],
             "flavor":"Beyond reality’s gates, only war.",
-            "table":[""],
+            "description":"(This ability is not compatible with abilities that decrease a hero’s magic cost.)",
             "ranks":[
                 "Hero’s connection with the essential nature of struggle increases their life by 2 points for each of their levels (current and future). But their magic cost is increased by 1.",
-                "The hero learns a new praxa and gains 1 ha defence.",
-                "Adds proficiency bonus to all physical damage and gains 1 ha defence."
-            ]
+                "The hero learns a new weapon skill.",
+                "Adds proficiency bonus to all physical damage."
+            ],
+            "info":"SEACAT p.39"
         },
         {
-            "name":"True Wizard ",
+            "name":"True Wizard",
             "tags":["fantascience"],
             "flavor":"Welcome to the universe.",
-            "table":[" This ability is not compatible with abilities that increase a hero’s magic cost"],
+            "description":"Magic cost can never be reduced below 1. This ability is not compatible with abilities that increase a hero’s magic cost.",
             "ranks":[
                 "Hero’s magic cost is reduced by 1. But the connection with the void of wizardry reduces hero’s life by 2 points for each of their levels (current and future).",
-                "The hero learns a new magic skill and gains 1 ka defence.",
-                "Hero reduces all spell prices by one (minimum of 1) and gains 1 ka defence."
-            ]
+                "The hero learns a new magic skill.",
+                "Hero reduces all spell prices by one (minimum of 1)."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Unblinking",
             "tags":["biomachine"],
             "flavor":"An inhuman stare.",
             "ranks":[
-                "The hero never needs to blink. [+] whenever undivided attention is useful. Harder to surprise. Also, creeps people out.",
-                "[+] to casting and nullifying horrific spells as hero gazes directly into the eye of madness.",
-                "Reptilian. Hero can stand completely motionless and gains [+] to tests in any round where their side has lost initiative."
-            ]
+                "The hero never needs to blink. [+] whenever undivided attention is useful. Harder to surprise. Also, they can creep people out.",
+                "[+] to casting and nullifying horrific spells as hero gazes clearly and directly into the eye of madness."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Uncanny Confidence",
@@ -923,7 +843,8 @@
                 "Hero adds their pro to all social damage rolls.",
                 "Hero adds their pro to their social defence.",
                 "Hero gains [+] to all social damage rolls."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Undying Parasite Heart",
@@ -933,19 +854,30 @@
                 "The hero’s heart is a ba-symbiote which stores their memory-patterns. The symbiote is a perfect auto-replicant and cannot die of old age. When the ‘heart’ is placed in a suitable excavated body cavity, it sprouts tendrils and a crystalline neural web, taking over the host in days. Every time the hero is ‘reborn’ this way, they lose a mental stat point, coming closer to their final end as a twitching madness of pulsing, tentacled flesh.",
                 "The monstrous heart is larger and stronger. The hero permanently gains 1 endurance and [+] to long-distance running and other endurance sports.",
                 "The monstrous heart is even stronger. The hero permanently gains 1 endurance. Every time it takes over a new host, the hero acquires one of the host’s skills. If the hero has no available skill slots left, they may use inventory slots to store additional skills in subsidiary neural organs."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Uplifted Exemplar",
             "tags":["biomachine"],
             "flavor":"Now they understand.",
             "description":"The hero was a ",
-            "table":["Capybara","Chimpanzee","Pig","Pigmy Rhino","Mouse","Tortoise","Wolf","Zebra"],
+            "table":[
+                "Capybara",
+                "Chimpanzee",
+                "Pig",
+                "Pigmy Rhino",
+                "Mouse",
+                "Tortoise",
+                "Wolf",
+                "Zebra"
+            ],
             "ranks":[
                 "Now they are a bestial humanoid one-off with super-human aptitudes and opposable thumbs. Hero gains 1 stat point and one heightened sense appropriate to their base animal. The heightened sense grants [+] in relevant situations.",
                 "The uplift did not stop. It kept working, changing. Hero gains 2 thought. Their thought stat maximum is increased to 7.",
                 "Hero gains 1 more thought. Maximum increased to 8. Superhuman manual dexterity and astounding brainpower give the hero [+] with improvised equipment, weapons, and world domination plots."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Vacuum Hardened",
@@ -953,29 +885,21 @@
             "flavor":"When did they forget Old World?",
             "ranks":[
                 "Hero can survive a full day in hard vacuum due to significant nano-magical modification. Gains 1 endurance.",
-                "Survives a full month in hard vacuum. Hero can derive sustenance from radiothermal batteries or other such devices. Gains 1 endurance.",
-                "Survives indefinitely in hard vacuum. Hero can synthesize life-sustaining trace minerals and compounds with their internal artazothic organ. Gains 1 aura."
-            ]
+                "Survives a full month in hard vacuum. Hero can derive sustenance from radiothermal batteries or other such devices.",
+                "Survives indefinitely in hard vacuum. Hero can synthesize life-sustaining trace minerals and compounds with their internal artazothic organ."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Vibrant Soul",
             "tags":["power"],
             "flavor":"The spirit is faster than the flesh.",
             "ranks":[
-                "A fiery, malevolent eye. The hero can use one of their actions to make a spiritual ka attack before other creatures act, outside the initiative order.",
+                "A fiery glare, a malevolent eye. The hero can use one of their actions to make a spiritual ka attack before other creatures act, outside the normal initiative order.",
                 "The hero gains an additional action they can use for spiritual attacks or tests.",
                 "[+] to initiative tests."
-            ]
-        },
-        {
-            "name":"Vibrant Soul",
-            "tags":["power"],
-            "flavor":"The spirit is faster than the flesh.",
-            "ranks":[
-                "A fiery, malevolent eye. The hero can use one of their actions to make a spiritual ka attack before other creatures act, outside the initiative order.",
-                "The hero gains an additional action they can use for spiritual attacks or tests.",
-                "[+] to initiative tests."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Void of Memories",
@@ -985,18 +909,20 @@
             "ranks":[
                 "Hero gains memory points equal to their highest mental stat. These are used to cast memorized spells as if they were life points. Also, hero learns a void spell.",
                 "Hero’s memory points from this trait are doubled.",
-                "The points are doubled again (quadrupled in total)."
-            ]
+                "The points are doubled again."
+            ],
+            "info":"SEACAT p.39"
         },
         {
-            "name":"Vome Enhancement",
+            "name":"Vome Optic Enhancement",
             "tags":["biomachine"],
-            "flavor":"Now they look into you.",
+            "flavor":"Now you see them looking into you.",
             "ranks":[
                 "Technomagical machines swirl in the hero’s eyes, whirring and clicking, focusing and demanding. Hero’s eyes provide low-light vision, sure, but their eyes are also ridiculously sharp and come with built-in filters. They can stare into the sun-line safely. The optics provide [+] to all long-distance aimed attacks.",
                 "The hero’s optophotonics can convert the hero’s own life force into a ray attack (1d12 damage, long range, #precise, costs 1 life per attack).",
-                "Hero gains 3 inventory slots. The optophotonics expand and invade other tissues. The hero gains an integrated toolkit for one skill of their choice. This toolkit takes up one slot. The hero also gains a random mutation."
-            ]
+                "Optophotonic toolkit upgrade lets the hero use their eye rays as a built in laser toolkit for precision welding, surgery, engraving, etc."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"War Mind",
@@ -1004,30 +930,21 @@
             "flavor":"All combat is in the spirit.",
             "ranks":[
                 "Hero fights smarter, not harder. They can choose to use their aura or thought stat when making physical tests.",
-                "Additionally, can add aura or thought to dice rolled during physical conflicts.",
+                "Additionally, can add  aura or thought to dice rolled during physical conflicts.",
                 "Increase aura or thought by 1. May use their aura or endurance stat for ha defences."
-            ]
-        },
-        {
-            "name":"Weaponslave",
-            "tags":["power"],
-            "flavor":"It calls me its master.",
-            "description":"A weapon has found the hero. The hero believes they are its slave.",
-            "ranks":[
-                "While the hero carries their weapon, their strength or agility increases by 2. Without it, their endurance and aura are reduced by 1 each. If the weapon is lost, it always finds its way back at the start of the next session. Further, whenever it strikes a creature, the hero regains 1 life. When it kills a target with a soul, the hero regains 1d6 life or 1 stat point.",
-                "While the weaponslave bears their weapon, all their spell prices are reduced by 2 (minimum 1). Without the weapon, their magic cost is increased by 1. Further, the weapon’s healing powers are doubled, and if the hero is injured, it tempts them to use its powers.",
-                "While the hero bears their weapon, all their defences are increased by 2. Without the weapon, they take double damage from all sources. Finally, the weapon’s healing effect is tripled (restoring 3 life per strike)."
-            ]
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Wizardkiller",
             "tags":["power"],
             "flavor":"Smash.",
             "ranks":[
-                "Hero gains 1 ka defence and [+] to damage against wizards and magical creatures. Hero’s magic cost increased by 1.",
-                "Hero gains 1 ka defence and [+] to hit wizards and magical creatures. Hero’s magic cost increased by 1 more.",
-                "Hero gains 2 ka defence and deals double damage to wizards and magical creatures. Hero cannot cast spells."
-            ]
+                "Hero gains [+] to damage against wizards and magical creatures. Hero’s magic cost increased by 1.",
+                "Hero gains [+] to hit wizards and magical creatures. Hero’s magic cost increased by 1 more.",
+                "Hero deals double damage to wizards and magical creatures. Hero cannot cast spells."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Words Like Daggers",
@@ -1035,21 +952,31 @@
             "flavor":"Speak truth to break the spirit.",
             "ranks":[
                 "When hero successfully socially attacks an an opponent of lower level than themselves, the opponent is out of the conflict.",
-                "When the hero knocks an opponent out of the conflict, they get a free social attack against a nearby character.",
-                "Pleasure in pain. Gains 1d6 life whenever their ba attack succeeds."
-            ]
+                "When the hero knocks an opponent out of the conflict, they get a free social attack against a nearby character."
+            ],
+            "info":"SEACAT p.39"
         },
         {
             "name":"Zootic Masterform",
             "tags":["brains"],
             "flavor":"The pet is the boss.",
-            "description":"To hero appears to be a ",
-            "table":["Cat","Rat","Dog","Owl","Parrot","Snake","Toad","Spider"],
+            "description":"The hero appears to be a ",
+            "table":[
+                "Cat",
+                "Rat",
+                "Dog",
+                "Owl",
+                "Parrot",
+                "Snake",
+                "Toad",
+                "Spider"
+            ],
             "ranks":[
                 "Hero’s strength and endurance are reduced to 0, their agility and thought increase correspondingly. Their inventory is reduced by 3. Given a few hours, they can empathically enthral a human or other oversized member of the local dominant culture to care for them and serve them. Their human servant is not a mind-controlled slave, yet still generally acts in the hero’s interest. They can have one human servant at a time.",
                 "Zootelepathy. The animal hero can communicate  telepathically with their enthralled servant and make them speak, like a ventriloquist with their dummy. Once per session, the hero can dominate their enthralled servant for a few minutes. After the domination, the servant falls unconscious for a few hours.",
                 "Mass zootelepathy. The animal hero can simultaneously enthral a number of humans equal to their level."
-            ]
+            ],
+            "info":"SEACAT p.39"
         }
     ]
 }

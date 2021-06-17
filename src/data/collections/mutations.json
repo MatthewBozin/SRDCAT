@@ -3,7 +3,7 @@
     "data":[
         {
             "name":"Action Mimicry",
-            "tags":["beneficial"],
+            "tags":["beneficial","mental"],
             "flavor":"Uplifted monkey see, uplifted monkey do.",
             "ranks":[
                 "Hero always gains [+] to tests when copying an action they have seen successfully performed (e.g., after seeing somebody climb the wall of the Red Tower, they gain [+] on their test).",
@@ -13,7 +13,7 @@
         },
         {
             "name":"Agility of the Arbitrary Autarch",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical"],
             "flavor":"As daemons follow no earth-bound command, neither should we.",
             "ranks":[
                 "+1 agility and maximum agility increased to 6.",
@@ -23,7 +23,7 @@
         },
         {
             "name":"Another Mind",
-            "tags":["deleterious"],
+            "tags":["deleterious","mental","physical","chimerism"],
             "flavor":"The seed of truth grows within.",
             "ranks":[
                 {
@@ -52,7 +52,7 @@
         },
         {
             "name":"Astral Eyes",
-            "tags":["deleterious"],
+            "tags":["deleterious","mental","cosmic"],
             "flavor":"The world you is a veil hiding the deeper beauty of the fields of ka.",
             "ranks":[
                 {
@@ -72,7 +72,7 @@
         },
         {
             "name":"Avatar Infection",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","cosmic"],
             "flavor":"They have been chosen by fate to bear witness to creation.",
             "ranks":[
                 "When the hero’s body is killed or otherwise shut down, it secretes an ichor cocoon and reassembles at a rate of 1 life per day. Reassembly is complete when the hero is at full life. Each reassembly reduces endurance by 1. This may accidentally duplicate the hero if their ka-ba was otherwise engaged or preserved at the time.",
@@ -82,7 +82,7 @@
         },
         {
             "name":"Blue God’s Sign",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","corruption"],
             "flavor":"From rot comes purification.",
             "ranks":[
                 "The filth of chaos oozes from the hero’s pores. They become resilient to disease, but the smell is pestilential.",
@@ -93,7 +93,7 @@
         },
         {
             "name":"Cosmic Channeling",
-            "tags":["beneficial"],
+            "tags":["beneficial","mental","cosmic"],
             "flavor":"All magic. From the same void.",
             "ranks":[
                 "When the hero sees a spell cast, they may make a moderate aura test to see if they grab an echo of the spell in their ego-matrix (inventory). They can cast each echo once. The spell price must still be paid.",
@@ -103,16 +103,17 @@
         },
         {
             "name":"Deep Skill Augmentation",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","technological"],
             "flavor":"A protein machine ghost infects the hero’s brain, feeding them memories and skills from someone long dead.",
             "ranks":[
-                "Hero gains [+] to all tests with one of their skills.","Hero gains [+] with a second skill. One mental stat increases by 1, another stat decreases by 1.",
+                "Hero gains [+] to all tests with one of their skills.",
+                "Hero gains [+] with a second skill. One mental stat increases by 1, another stat decreases by 1.",
                 "Rewiring is completed. The hero becomes tetrachromatic, seeing a wider spectrum of colours. They gain +1 charisma. The ghost of a dead personality becomes a lodger in their brain."
             ]
         },
         {
             "name":"Eater’s Curse",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","corruption"],
             "flavor":"Its hunger shall consume the cosmos.",
             "ranks":[
                 "Teeth fall out. Chewing is difficult.",
@@ -123,7 +124,7 @@
         },
         {
             "name":"Endurance of Ecstasy",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical"],
             "flavor":"Through the joy of existence shared, all sufferings are easier.",
             "ranks":[
                 "+1 endurance and maximum endurance increased to 6. ",
@@ -133,7 +134,7 @@
         },
         {
             "name":"Existential Dysfunction",
-            "tags":["deleterious"],
+            "tags":["deleterious","spiritual","cosmic"],
             "flavor":"Beyond reality, other ways.",
             "ranks":[
                 "A barely perceptible darkness cloaks the hero, like diaphanous wreaths of pure nothingness. They become sensitive to bright lights.",
@@ -144,7 +145,7 @@
         },
         {
             "name":"Extraordinary Precognition",
-            "tags":["beneficial"],
+            "tags":["beneficial","mental"],
             "flavor":"Feel the pain of the future.",
             "ranks":[
                 "Hero can glimpse the future. It hurts. Spend 1 life to gain [+] on any test to avoid damage.",
@@ -154,9 +155,8 @@
         },
         {
             "name":"Fingers of the Other Side",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"Reality will conform to revelation.",
-
             "ranks":[
                 {
                     "base":"Vestigial fingers or toes protrude from the flesh on the hero’s ",
@@ -175,9 +175,8 @@
         },
         {
             "name":"The Fur Feral",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"The wild will break free.",
-
             "ranks":[
                 "The body grows heavy, beset by chronic fatigue. Hairs become thorn-like, nails thicken and curl.",
                 "Follicles grow oversized, and masses of keratinous fibres replace normal hair, covering the body in a spongy layer. Movement becomes clumsy, but blows are cushioned (+1 ha defence).",
@@ -196,7 +195,7 @@
         },
         {
             "name":"Hostile Heaven’s Armour",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"In the heavens, there is only war.",
 
             "ranks":[
@@ -208,14 +207,12 @@
         },
         {
             "name":"Idle One’s Claws",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","corruption"],
             "flavor":"The predator does not work, it takes.",
-
             "ranks":[
                 "Random hand withers and weakens. Using tools with that hand becomes difficult.",
                 "Hand locks into a deformed claw. Using tools is impossible.",
                 "Bones and gristle flow and reform into a trefoil ripping, cutting claw array. Hero gains an unarmed attack (1d6).",
-
                 {
                     "base":"The claws bleed void stuff into this near world. The merest scratch from them causes ",
                     "entries":[
@@ -230,14 +227,12 @@
         },
         {
             "name":"Ineffable Patterns of Being",
-            "tags":["deleterious"],
+            "tags":["deleterious","mental","cosmic"],
             "flavor":"ERROR. Reality compile fail. There is no abort, there is only retry.",
-
             "ranks":[
                 "Intelligence is reduced. Hero’s twitching mind cannot avoid alien things lurking in the corners of reality.",
                 "Personality becomes alien. Hero no longer feels some human emotions while acquiring other stranger ones.",
                 "Mind becomes temporally scattered. Hero gains mild precognition, avoiding immediate threats with unnatural speed and precision. At the same time, they can no longer focus on the here and now.",
-
                 {
                     "base":"Hero’s ba or personality is smeared out completely, replaced by something alien. Hero becomes immune to all mental attacks and acquires an ineffable goal, perhaps to ",
                     "entries":[
@@ -252,7 +247,7 @@
         },
         {
             "name":"Lifebound Gift",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","cosmic"],
             "flavor":"The hero’s being is bound more tightly to the given world. Their life force burns brighter.",
             "ranks":[
                 "Hero gains +1 life for every current and future level.",
@@ -262,7 +257,7 @@
         },
         {
             "name":"Magic Mule",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical"],
             "flavor":"Such broad shoulders, such strong back.",
             "ranks":[
                 "The hero can carry twice as much as a normal human: two sacks without encumbrance, plus one cumbersome sack total. The additional sack can only hold physical objects.",
@@ -272,7 +267,7 @@
         },
         {
             "name":"Metabolic Hyperdrive",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical"],
             "flavor":"The difference under the skin.",
             "ranks":[
                 "The hero derives sustenance from anything organic, and their stomach is immune to organic poisons. Unfortunately, alcohol barely works on them anymore.",
@@ -282,9 +277,8 @@
         },
         {
             "name":"A New Face",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"Hypocrisy stripped reveals a new visage.",
-
             "ranks":[
                 {
                     "base":"An additional eye and teeth develop on the ",
@@ -292,9 +286,9 @@
                         "hand or arm",
                         "leg or foot",
                         "back or shoulder",
-                        "4) chest or groin"
+                        "chest or groin"
                     ],
-                    "end":"They are non-functional. If removed, they grow back."
+                    "end":". They are non-functional. If removed, they grow back."
                 },
                 "The eye becomes functional. Additional buds form. Cartilage and gums form around the teeth.",
                 "A second eye joins the first. Nose-bud forms. A functional mouth forms around the teeth. The hero can ingest sustenance and speak with the second mouth.",
@@ -312,7 +306,7 @@
         },
         {
             "name":"Oldtech Immunity Ghost",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","technological"],
             "flavor":"The hero gains a semi-sentient distributed immune system.",
             "ranks":[
                 "[+] to all tests against diseases, poisons, radiations, or other environmental effects.",
@@ -322,7 +316,7 @@
         },
         {
             "name":"Optidrone Upgrade",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","technological"],
             "flavor":"Eyes like the star gods.",
             "ranks":[
                 "Hero’s eyes become as sharp as those of a hawk.",
@@ -332,7 +326,7 @@
         },
         {
             "name":"Plastic Bone Structures",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","technological"],
             "flavor":"Flexibility at all costs.",
             "ranks":[
                 "The hero can slowly adjust their bones’ shape and size, squeezing through small spaces, growing taller or shorter, or mimicking other people’s faces.",
@@ -342,9 +336,8 @@
         },
         {
             "name":"Playset Corpus",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"The body is a delicate playground.",
-
             "ranks":[
                 "The hero’s joints become grotesquely hypermobile. Movement is slow and deliberate.",
                 "Limbs strangely flexible. Additional joints appear. Though more agile, the hero is weaker. Clothes fit awkwardly. They can rotate their head like an owl.",
@@ -354,7 +347,7 @@
         },
         {
             "name":"Predatory Assimilator",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical"],
             "flavor":"Almost a ghoul.",
             "ranks":[
                 "The hero heals by eating biomatter close to their basic body pattern. Recover 1 life for every stone of flesh consumed (an adult humanoid averages 10 stone). For humans: chimps and lemurs are good, pigs less so. In a healing-frenzy, they can ingest a stone of flesh per action.",
@@ -364,9 +357,8 @@
         },
         {
             "name":"Protean Infinity",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"Fixity of form was a mistake.",
-
             "ranks":[
                 "Bones become brittle and prone to breaking. Hero becomes more vulnerable to physical damage.",
                 "Bones soften, while fluid organs develop and strengthen to provide stability.",
@@ -376,7 +368,7 @@
         },
         {
             "name":"Psionic Eruption",
-            "tags":["beneficial"],
+            "tags":["beneficial","mental"],
             "flavor":"Inhuman mental abilities. Fear awakens in baseliners’ hearts.",
             "ranks":[
                 "Hero acquires a spell. When using this spell, their magic cost is always 1.",
@@ -386,7 +378,7 @@
         },
         {
             "name":"Radiation’s Skin",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","corruption"],
             "flavor":"The fires of the celestial truths were not made to reside within the skin of man.",
 
             "ranks":[
@@ -398,7 +390,7 @@
         },
         {
             "name":"Secret Weapon",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","technological"],
             "flavor":"They were the weapon all along.",
             "ranks":[
                 {
@@ -419,9 +411,8 @@
         },
         {
             "name":"Sky-Brought Curse",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"They sailed on wings among the galaxies.",
-
             "ranks":[
                 "Vestigial wings or flagellae bulge and flail on the hero’s back.",
                 "The primitive wings erupt in a tangle of membranes, struts, and tines. The hero can slow their fall or boost their jump. ",
@@ -431,9 +422,8 @@
         },
         {
             "name":"Song Wormed",
-            "tags":["deleterious"],
+            "tags":["deleterious","mental","cosmic"],
             "flavor":"There are songs in the lines of creation.",
-
             "ranks":[
                 "Ears wither away to nubs. Hearing is impaired.",
                 {
@@ -451,9 +441,8 @@
         },
         {
             "name":"Sign of the Third Hand",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"New hands reach new truths.",
-                
             "ranks":[
                 {
                     "base":"A vestigial ",
@@ -461,9 +450,9 @@
                         "tail",
                         "arm",
                         "tentacle",
-                        "4) arthropod limb grows on the body"
+                        "arthropod limb grows on the body"
                     ],
-                    "end":"It dangles uselessly. If cut off, it grows back."
+                    "end":". It dangles uselessly. If cut off, it grows back."
                 },
                 "Limb grows stronger. Capable of picking up light objects. Clothes no longer fit.",
                 "The new appendage grows larger and stronger than the original limbs. The whole hero can lift themselves by their third ‘arm’. Additional vestigial limb buds form.",
@@ -472,7 +461,7 @@
         },
         {
             "name":"Strength of the Solitary Sun",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical"],
             "flavor":"As though powered by the nuclear furnaces of the cosmos itself.",
             "ranks":[
                 "+1 strength and maximum strength increased to 6.",
@@ -482,7 +471,7 @@
         },
         {
             "name":"Thoughtful as Thoth Trueseer",
-            "tags":["beneficial"],
+            "tags":["beneficial","mental"],
             "flavor":"With progressive insight, human constraints and fears fade away.",
             "ranks":[
                 "+1 thought and maximum thought increased to 6.",
@@ -492,7 +481,7 @@
         },
         {
             "name":"Transhuman Reflexes",
-            "tags":["beneficial"],
+            "tags":["beneficial","physical","technological"],
             "flavor":"Neural rewiring and fast-twitch nodes lifted from the dark sky supersoldier programs.",
             "ranks":[
                 "Hero gains [+] on initiative tests and always gets one (more) action during any surprise round.",
@@ -502,7 +491,7 @@
         },
         {
             "name":"Ultimate Chimerism ",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"No beast shall dominate another beast in the chimerical time.",
                 
             "ranks":[
@@ -523,9 +512,8 @@
         },
         {
             "name":"Waking Bones’ Lament",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","corruption"],
             "flavor":"There is no life eternal but death.",
-                
             "ranks":[
                 "Hero becomes bony and raw. Skin is like parchment, digestion slows and weakens.",
                 "Only sinew and gristle remain beneath paper skin. Joints click and rattle. The skeletal hero can only digest blended soups.",
@@ -536,7 +524,7 @@
                         "jade",
                         "bronze",
                         "ebony",
-                        "4) porcelain"
+                        "porcelain"
                     ],
                     "end":"They no longer eat, directly leeching nearby creatures' life force to stay alive instead "
                 }
@@ -544,9 +532,8 @@
         },
         {
             "name":"Waterdrinker’s Raiment",
-            "tags":["deleterious"],
+            "tags":["deleterious","physical","chimerism"],
             "flavor":"From void sea come, to void sea return.",
-        
             "ranks":[
                 "Vestigial gills and cutaneous gas bladders form on the neck and abdomen of the hero. They can hold their breath quite a bit longer than before.",
                 "An array of functional gills and gas-exchange organs turns the hero into an amphibian.",

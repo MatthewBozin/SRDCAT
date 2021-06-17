@@ -1,3 +1,5 @@
+import architecture from "./architecture.json";
+
 /*
 1. Utility
 2. Combat
@@ -21,11 +23,28 @@ const s = function (array) {
 
 const multiRoll = (value) => {
   let total = 0;
+  let ifexploding = value.slice(-1);
+  if (ifexploding === "*") {
+    value = value.slice(0, -1);
+  }
   let dice = value.split("d");
   let times = parseInt(dice[0]);
   let size = parseInt(dice[1]);
   for (let i = 0; i < times; i++) {
-    total += r(size);
+    let subtotal = 0;
+    let result = r(size) + 1;
+    subtotal += result;
+    if (result === size && ifexploding === "*") {
+      console.log("BOOM");
+      while (true) {
+        let newresult = r(size) + 1;
+        subtotal += newresult;
+        if (newresult !== size) {
+          break;
+        }
+      }
+    }
+    total += subtotal;
   }
   return total;
 };
@@ -277,6 +296,21 @@ const sackstonesoap = (weight, mode) => {
   return sackstonesoap;
 };
 
+const messageStats = (stat) => {
+  return (
+    <span>
+      {stat.map((eachstat, index) => {
+        return (
+          <span key={index}>
+            <i>{architecture.statMasks[eachstat]}</i>
+            {index < 0 && index > stat.length && <span> or </span>}
+          </span>
+        );
+      })}
+    </span>
+  );
+};
+
 export {
   r,
   s,
@@ -293,4 +327,5 @@ export {
   toggleState,
   toggle,
   withProAdv,
+  messageStats,
 };

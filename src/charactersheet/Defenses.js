@@ -35,8 +35,12 @@ const Defenses = () => {
     for (let item of character.items) {
       console.log(item);
       console.log(defense);
-      if (item.stat === defense.name && item.worn === true) {
-        total += parseInt(item.number);
+      for (let item of character.items) {
+        for (let i = 0; i < item.stat.length; i++) {
+          if (item.stat[i] === defense.name && item.worn === true) {
+            total += parseInt(item.number[i]);
+          }
+        }
       }
     }
     if (defense.name === "BA") {
