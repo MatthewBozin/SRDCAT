@@ -24,7 +24,7 @@ const RandomCharModal = () => {
   const charGen = (heroType) => {
     let levels = charLevels[heroType];
     let newchar = {};
-    let collections = ["skills", "traits", "items", "mutations"];
+    let collections = ["skills", "traits", "items", "spells"];
     let attributes = architecture.attributeArray;
     let saves = ["HA", "KA", "BA"];
     let otherstats = [

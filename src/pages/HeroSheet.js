@@ -17,7 +17,6 @@ const HeroSheet = () => {
   const categoryArray = [
     { name: "Skills", value: "skills" },
     { name: "Traits", value: "traits" },
-    { name: "Mutations", value: "mutations" },
     { name: "Spells", value: "spells" },
   ];
 

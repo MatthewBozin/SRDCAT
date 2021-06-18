@@ -13,34 +13,29 @@ const AddSubtract = (props) => {
     toaster.notify("Card (" + props.card.name + ") added to character!", {
       duration: 2000,
     });
-    setCharacter(() => {
-      let instanced = props.card;
-      if (instanced.table !== undefined) {
-        instanced.savedresult = 0;
-      }
-      instanced.savedrank = 0;
-      character[context.collections].push(instanced);
-
-      if (context.collections !== "items") {
-        let jsonArray = character[context.collections].map(JSON.stringify);
-        let uniqueSet = new Set(jsonArray);
-        let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
-        character[context.collections] = uniqueArray;
-      }
-      const newCharacter = JSON.parse(JSON.stringify(character));
-      return newCharacter;
-    });
+    let instanced = props.card;
+    if (instanced.table !== undefined) {
+      instanced.savedresult = 0;
+    }
+    instanced.savedrank = 0;
+    let newchar = character;
+    newchar[context.collections].push(instanced);
+    if (context.collections !== "items") {
+      let jsonArray = newchar[context.collections].map(JSON.stringify);
+      let uniqueSet = new Set(jsonArray);
+      let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
+      newchar[context.collections] = uniqueArray;
+    }
+    setCharacter(JSON.parse(JSON.stringify(newchar)));
   };
 
   const deleteCard = () => {
     toaster.notify("Card (" + props.card.name + ") removed from character!", {
       duration: 2000,
     });
-    setCharacter(() => {
-      character[props.deleteFrom].splice(props.placement, 1);
-      const newCharacter = JSON.parse(JSON.stringify(character));
-      return newCharacter;
-    });
+    let newchar = character;
+    newchar[props.deleteFrom].splice(props.placement, 1);
+    setCharacter(JSON.parse(JSON.stringify(newchar)));
   };
 
   if (props.form === "plus") {

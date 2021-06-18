@@ -11,7 +11,11 @@ const Search = () => {
 
   const submitSearch = () => {
     let context2 = context;
-    context2.search = data;
+    if (context2.search === "") {
+      context2.search = data;
+    } else {
+      context2.search = context2.search + "+" + data;
+    }
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });
@@ -41,9 +45,13 @@ const Search = () => {
           toFilter.push(item.toLowerCase());
         });
       }
-      if (toFilter.includes(context.search.toLowerCase())) {
-        newData.push(element);
+      let searchSplit = context.search.toLowerCase().split("+");
+      for (let searchTerm of searchSplit) {
+        if (!toFilter.includes(searchTerm)) {
+          return;
+        }
       }
+      newData.push(element);
     });
     return newData;
   };

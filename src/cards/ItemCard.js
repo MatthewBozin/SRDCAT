@@ -26,7 +26,7 @@ const ItemCard = (props) => {
   const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
   //mod becomes mods: []
 
-  const { name, type, tags, flavor, weight, value, number, stat, modifiers } =
+  const { name, tags, flavor, weight, value, number, stat, modifiers } =
     props.card;
 
   const calcAttackInfo = () => {
@@ -158,10 +158,10 @@ const ItemCard = (props) => {
             <NameValuePair name={"Value"} value={displayValue(value)} />
             <div>
               <span className="padded5px">
-                {type === "defensive" && (
+                {tags.includes("defensive") && (
                   <span className="orangetext">Defense: </span>
                 )}
-                {type === "offensive" && (
+                {tags.includes("offensive") && (
                   <span className="orangetext">Damage: </span>
                 )}
                 {stat.map((eachstat, index) => {
@@ -197,16 +197,18 @@ const ItemCard = (props) => {
           </span>
         )}
       </article>
-      <ItemAttackModal
-        attack={attack}
-        setAttack={setAttack}
-        attackModalOpen={attackModalOpen}
-        setAttackModalOpen={setAttackModalOpen}
-        character={character}
-        name={name}
-        number={number}
-        stat={stat}
-      />
+      {props.deleteFrom === "items" && (
+        <ItemAttackModal
+          attack={attack}
+          setAttack={setAttack}
+          attackModalOpen={attackModalOpen}
+          setAttackModalOpen={setAttackModalOpen}
+          character={character}
+          name={name}
+          number={number}
+          stat={stat}
+        />
+      )}
       <ItemSaleModal
         saleModalOpen={saleModalOpen}
         setSaleModalOpen={setSaleModalOpen}

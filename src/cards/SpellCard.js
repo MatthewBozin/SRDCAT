@@ -114,9 +114,8 @@ const SpellCard = (props) => {
             {modifiers.map((mod, index) => {
               let modifier = modsdata[mod];
               return (
-                <div>
+                <div key={index}>
                   <NameValuePair
-                    key={index}
                     name={modifier.name}
                     value={modifier.description}
                   />
@@ -127,15 +126,17 @@ const SpellCard = (props) => {
           </span>
         )}
       </div>
-      <SpellCastModal
-        castModalOpen={castModalOpen}
-        setCastModalOpen={setCastModalOpen}
-        character={character}
-        setCharacter={setCharacter}
-        name={name}
-        description={description}
-        ranks={ranks}
-      />
+      {props.deleteFrom === "spells" && (
+        <SpellCastModal
+          castModalOpen={castModalOpen}
+          setCastModalOpen={setCastModalOpen}
+          character={character}
+          setCharacter={setCharacter}
+          name={name}
+          description={description}
+          ranks={ranks}
+        />
+      )}
     </div>
   );
 };

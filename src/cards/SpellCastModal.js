@@ -1,7 +1,6 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import SpellCostCard from "./SpellCostCard.js";
-import "toasted-notes/src/styles.css";
 import { toggle } from "../data/exports.js";
 
 function SpellCastModal(props) {

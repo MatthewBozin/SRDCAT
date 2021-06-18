@@ -27,28 +27,6 @@ const Card = (props) => {
     savedresult = props.card.savedresult;
   }
 
-  const ifItem2 = () => {
-    if (value !== undefined && crafting !== undefined) {
-      let fullcraft = crafting.join(", ");
-      return (
-        <div>
-          <div>
-            <span className="padded5px">
-              <span className="orangetext">Value: </span>
-              <span>{value}</span>
-            </span>
-          </div>
-          <div>
-            <span className="padded5px">
-              <span className="orangetext">Crafting: </span>
-              <span>{fullcraft}</span>
-            </span>
-          </div>
-        </div>
-      );
-    }
-  };
-
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
       return "col-xs-12 col-md-6 col-lg-6 col-xl-4";
@@ -72,12 +50,6 @@ const Card = (props) => {
               placement={props.placement}
               deleteFrom={props.deleteFrom}
             />
-            {/*props.deleteFrom === "items" && (
-              <span className="rightfloat mright15px">
-                <FaHammer className="icon" />
-                <FaRecycle className="icon" />
-              </span>
-            )*/}
           </span>
         </div>
         {expanded === false && props.deleteFrom === "none" && (
@@ -94,13 +66,8 @@ const Card = (props) => {
               return <Tag tag={tag} key={index} />;
             })}
             <Flavor flavor={flavor} />
-            <Description description={description} />
-            {ifItem2()}
-            {typeof table === "string" && (
-              <span className="padded5px">
-                <span className="orangetext">Damage: </span>
-                <span>{table}</span>
-              </span>
+            {description !== undefined && (
+              <Description description={description} />
             )}
             {table !== undefined && (
               <span>

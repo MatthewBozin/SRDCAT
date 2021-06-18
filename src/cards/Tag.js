@@ -6,7 +6,13 @@ const Tag = (props) => {
 
   const setTagSearch = () => {
     let context2 = context;
-    context2.search = props.tag;
+    if (context2.search === "") {
+      context2.search = props.tag;
+    } else {
+      if (!context2.search.split("+").includes(props.tag)) {
+        context2.search = context2.search + "+" + props.tag;
+      }
+    }
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });
