@@ -45,7 +45,7 @@
     },
     "rushed":{
         "name":"Rushed",
-        "description":"The wizard can perform the rite in half the time, but all willing parties involved take 2d6 damage."
+        "description":"The wizard can perform the spell in half the time, but all willing parties involved take 1d6 damage."
     },
     "spell-item":{
         "name":"Spell-Item",
@@ -62,9 +62,5 @@
     "vorpal-edge":{
         "name":"Vorpal Edge",
         "description":"Can be used as an improvised melee weapon to deal 1d4 damage. On critical hits, it severs extremities."
-    },
-    "willing":{
-        "name":"Willing",
-        "description":"If all parties involved are willing, success is automatic. If any party is unwilling, the wizard must test with [-] in order to cast."
     }
 }

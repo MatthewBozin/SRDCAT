@@ -15,6 +15,7 @@ const Navlet = (props) => {
         setContext(() => {
           let newcontext = context;
           newcontext.collections = props.navlet.name;
+          newcontext.search = "";
           let final = JSON.parse(JSON.stringify(newcontext));
           return final;
         })

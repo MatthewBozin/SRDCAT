@@ -1,7 +1,7 @@
 import React from "react";
 
 const Description = (props) => {
-  return <div className="padded5px">{props.description}</div>;
+  return <span className="padded5px">{props.description}</span>;
 };
 
 export default Description;

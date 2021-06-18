@@ -10,7 +10,6 @@ import {
   toggleState,
   toggle,
   withProAdv,
-  messageStats,
 } from "../data/exports.js";
 
 function ItemAttackModal(props) {
@@ -29,15 +28,6 @@ function ItemAttackModal(props) {
     stat,
     number,
   } = props;
-
-  let messagestats = "";
-
-  for (let i = 0; i < stat.length; i++) {
-    messagestats += architecture.statMasks[stat[i]];
-    if (i !== stat.length && stat.length !== 0) {
-      messagestats += " or ";
-    }
-  }
 
   const modularString = (object) => {
     let data = withProAdv(object);

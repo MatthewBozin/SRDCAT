@@ -11,7 +11,7 @@
                 {"power":3, "effect":"Rite takes a few minutes."},
                 {"power":4, "effect":"Rite takes a dozen seconds."}
             ],
-            "modifiers":["healers-burden","rushed","telemagic","willing"]
+            "modifiers":["healers-burden","rushed","telemagic"]
         },
         {
             "name":"Healing Sleep",
@@ -24,7 +24,7 @@
                 {"power":5, "effect":"The target is helpless for six hours"},
                 {"power":7, "effect":"The target is helpless for an hour."}
             ],
-            "modifiers":["telemagic","willing"]
+            "modifiers":["telemagic"]
         },
         {
             "name":"Metempsychosis",
@@ -37,7 +37,7 @@
                 {"power":5, "effect":"Sudden action transmigration. The wizard Imbues the patient with a translator parasite. It takes the parasite a day to embed, after that the wizard can translate all of patient’s stats in a few minutes. This causes the original body to spontaneously combust."},
                 {"power":7, "effect":"Telemetempsychosis. The wizard uses an imbued translator parasite entangled with a destination vessel. The parasite needs a day to embed, but after that, translation is nearly instantaneous, with a range of several hundred thousand kilometres. This causes the original body to violently combust."}
             ],
-            "modifiers":["morphic-shock","overwriting","precast-vessel","telemagic","willing"]
+            "modifiers":["morphic-shock","overwriting","precast-vessel","telemagic"]
         },
         {
             "name":"Parasoma Transference",
@@ -51,7 +51,7 @@
                 {"power":4, "effect":"Recipient gains 1d4 life per point."},
                 {"power":6, "effect":"Recipient gains 1d6 life per point."}
             ],
-            "modifiers":["telemagic","willing"]
+            "modifiers":["telemagic"]
         }
     ]
 }

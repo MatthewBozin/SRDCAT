@@ -8,6 +8,7 @@ const Collections = () => {
   const [context] = useContext(Context);
 
   const filter = (filterBy) => {
+    //filterBy sets which property in the card the filter pays attention to. currently it's set to "tags"
     let contextData = require(`../data/collections/` + context.collections);
     let newData = [];
     contextData.data.map((element) => {
@@ -20,9 +21,14 @@ const Collections = () => {
           toFilter.push(item.toLowerCase());
         });
       }
-      if (toFilter.includes(context.search.toLowerCase())) {
-        newData.push(element);
+      //toFilter is the case (or cases) to compare to the search terms. ex: ["offensive","chain"]
+      let searchSplit = context.search.toLowerCase().split("+");
+      for (let searchTerm of searchSplit) {
+        if (!toFilter.includes(searchTerm)) {
+          return;
+        }
       }
+      newData.push(element);
     });
     return newData;
   };

@@ -8,7 +8,7 @@
             "number":["2d12"],
             "weight":20,
             "value":"2d6* x 500",
-            "modifiers":["clumsy","guidance"]
+            "modifiers":["clumsy","daemon-guidance"]
         },
         {
             "name":"Accountant Monk Robes",
@@ -58,7 +58,7 @@
             "number":["2d6"],
             "weight":20,
             "value":"2d6* x 100",
-            "modifiers":["armour-penetrating","long-range","shells","slow"]
+            "modifiers":["armour-penetrating","long-range","shells","slow-meltdown"]
         },
         {
             "name":"Bone Rank Leather Greatcoat",
@@ -128,7 +128,7 @@
             "number":["4d6"],
             "weight":30,
             "value":"2d6* x 200",
-            "modifiers":["clumsy","degrading","powered","siege","slow"]
+            "modifiers":["clumsy","degrading","powered","siege","long-reload"]
         },
         {
             "name":"Ghostbone Axe",
@@ -178,7 +178,7 @@
             "number":["3"],
             "weight":10,
             "value":"3d6* x 2000",
-            "modifiers":["toggle-conceal","reflective","sun-forged","sharp-edge"]
+            "modifiers":["toggle-conceal","reflective","prismatic","sun-forged","sharp-edge"]
         },
         {
             "name":"Hidden Stalker Ring",
@@ -228,7 +228,7 @@
             "number":["7"],
             "weight":30,
             "value":"5d6 x 500",
-            "modifiers":["large","permanent","recycling","smelly","strength-servos","vital-30","weaponized"]
+            "modifiers":["large","iron-tomb","recycling","smelly","strength-servos","vital-30","weaponized"]
         },
         {
             "name":"Jolly Poncho",
@@ -388,7 +388,7 @@
             "number":["2d4"],
             "weight":10,
             "value":"2d6* x 50",
-            "modifiers":["grievous","overcharge","powered"]
+            "modifiers":["grievous","plasma-overcharge","powered"]
         },
         {
             "name":"Porcelain Prince Panoply",
@@ -418,7 +418,7 @@
             "number":["4"],
             "weight":20,
             "value":"6d6 x 200",
-            "modifiers":["ancestral","cool","feeding"]
+            "modifiers":["ancestral","cool","biomass-feast"]
         },
         {
             "name":"Siege Tortoise Suit",

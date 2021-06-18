@@ -1,7 +1,7 @@
 {
     "absorbing":{
         "name":"Absorbing",
-        "description":"Hero can use it to negate the damage from 1 critical hit. This destroys the helmet."
+        "description":"Hero can destroy the item to negate the damage from 1 critical hit."
     },
     "ammo":{
         "name":"Ammo",
@@ -13,7 +13,7 @@
     },
     "ancestral":{
         "name":"Ancestral",
-        "description":"Mail also grants ka 2."
+        "description":"Ancestral blessings grant ka 2."
     },
     "armour-penetrating":{
         "name":"Armour Penetrating",
@@ -43,6 +43,10 @@
         "name":"Big",
         "description":"[-] to attacks in confined spaces."
     },
+    "biomass-feast":{
+        "name":"Biomass Feast",
+        "description":"The item feeds on flesh to repair itself. It can also gain mass, granting the wearer 5 temporary life per stone (max +10 life)."
+    },
     "blatant":{
         "name":"Blatant",
         "description":"[-] to stealth and deception."
@@ -57,7 +61,7 @@
     },
     "break-spell":{
         "name":"Break spell",
-        "description":"Wielder can sacrifice the spell-breaker to negate one spell targeting them."
+        "description":"Wielder can destroy this item to negate one spell targeting them."
     },
     "camouflaged":{
         "name":"Camouflaged",
@@ -65,7 +69,7 @@
     },
     "chameleon-field":{
         "name":"Chameleon field",
-        "description":"Ring grants [+] to hiding and sneaking."
+        "description":"Grants [+] to hiding and sneaking."
     },
     "chitin-weave":{
         "name":"Chitin weave",
@@ -73,7 +77,7 @@
     },
     "chromatyped":{
         "name":"Chromatyped",
-        "description":"Robes are resistant to damage from sources of one of the six sacred colours."
+        "description":"Wearer is resistant to damage from sources of one of the six sacred colours."
     },
     "circuit-breaker":{
         "name":"Circuit breaker",
@@ -93,7 +97,11 @@
     },
     "cool":{
         "name":"Cool",
-        "description":"The other cool. Resistance to ba damage in the wastelands."
+        "description":"[+] to tests against heat effects but imposes [-] to physical tests in cold environments."
+    },
+    "daemon-guidance":{
+        "name":"Daemon Guidance",
+        "description":"Wielder can spend 1 action and 1 life to commune with the daemon within the item. They gain [+] to their next roll using the item."
     },
     "daimonized":{
         "name":"Daimonized",
@@ -101,7 +109,7 @@
     },
     "dead-warded":{
         "name":"Dead-warded ",
-        "description":"Undead are repulsed by the Iksan rationalist runes woven into the lining of the greatcoat. All undead attacks against the wearer suffer [-]."
+        "description":"Iksan rationalist runes repulse undead. All undead attacks against the wearer suffer [-]."
     },
     "decorated":{
         "name":"Decorated",
@@ -129,15 +137,11 @@
     },
     "force-field":{
         "name":"Force field",
-        "description":"Incoming high vel-ocity & energy attacks suffer [-]."
+        "description":"Incoming high velocity & energy attacks suffer [-]."
     },
     "explosive":{
         "name":"Explosive",
         "description":"Damages creatures and objects adjacent to the target."
-    },
-    "feeding":{
-        "name":"Feeding",
-        "description":"The mail feeds on flesh to repair itself. It can also gain mass, granting the wearer 5 temporary life per stone (max +10 life)."
     },
     "fortune-in-misfortune":{
         "name":"Fortune in misfortune",
@@ -171,10 +175,6 @@
         "name":"Grievous",
         "description":"Ignores damage resistances."
     },
-    "guidance":{
-        "name":"Guidance",
-        "description":"Wielder can spend 1 action and 1 life to commune with the daemon accelerator. The accelerated flail then gains [+] to strike one target."
-    },
     "hindering":{
         "name":"Hindering",
         "description":"[+] to tests to slow, trip, or otherwise hinder opponents."
@@ -187,6 +187,10 @@
         "name":"Infrared",
         "description":"Sustained heat-ray fire ignites fires."
     },
+    "iron-tomb":{
+        "name":"Iron Tomb",
+        "description":"The monstrous biomech bonds with the wearer's flesh and bone. Removing it deals 3d10 damage and imposes a burden or permanently reduces a stat by 1."
+    },
     "jade-essence":{
         "name":"Jade essence",
         "description":"When the wearer would suffer a burden, they can sacrifice the jade modifier to absorb it instead. The gear continues to function, but the modifier is lost."
@@ -197,7 +201,7 @@
     },
     "less-lethal":{
         "name":"Less lethal",
-        "description":"Though marketed as non-lethal, this is a lie. Still, victims who make death tests after being whacked by the LVBS roll with [+]."
+        "description":"Though marketed as non-lethal, this is a lie. Still, victims who make death tests due to being hit with the item roll with [+]."
     },
     "life-charged":{
         "name":"Life-charged",
@@ -210,6 +214,10 @@
     "long-range":{
         "name":"Long Range",
         "description":"No penalty to hit far away targets, [-] against adjacent."
+    },
+    "long-reload":{
+        "name":"Long Reload",
+        "description":"Weapon can only fire once per round."
     },
     "luminous":{
         "name":"Luminous",
@@ -225,7 +233,7 @@
     },
     "mildly-possessed":{
         "name":"Mildly possessed",
-        "description":"The sword gibbers and talks to itself. Especially when silence would be more helpful."
+        "description":"The item gibbers and talks to itself. Especially when silence would be more helpful."
     },
     "mobile":{
         "name":"Mobile",
@@ -239,17 +247,13 @@
         "name":"Ornate",
         "description":"Incoming ba damage is reduced [-]."
     },
-    "overcharge":{
-        "name":"Overcharge",
-        "description":"With a bit of judicious hacking, the power dampers can be disabled. The blade flares out, dealing 4d4 damage, but suffering [-] to attacks. In this configuration, the plasma knife burns 3 charges per conflict."
-    },
     "parrying":{
         "name":"Parrying",
         "description":"Grants 3 ha defence."
     },
-    "permanent":{
-        "name":"Permanent",
-        "description":"The monstrous biomech bonds with the wearer's flesh and bone. Removing it deals 3d10 damage and imposes a burden or permanently reduces a stat by 1."
+    "plasma-overcharge":{
+        "name":"Plasma Overcharge",
+        "description":"With a bit of judicious hacking, the power dampers can be disabled. The blade flares out, dealing 4d4 damage, but suffering [-] to attacks. In this configuration, the plasma knife burns 3 charges per conflict."
     },
     "pointy":{
         "name":"Pointy",
@@ -257,7 +261,7 @@
     },
     "power-curve":{
         "name":"Power curve",
-        "description":"Heat-ray output is stronger at short range, dealing more damage [+] to adjacent targets."
+        "description":"Output is stronger at short range, dealing more damage [+] to adjacent targets."
     },
     "power-drop":{
         "name":"Power drop",
@@ -270,6 +274,10 @@
     "precise":{
         "name":"Precise",
         "description":"Wielder gains [+] to attacks if they have not been jostled or injured that round."
+    },
+    "prismatic":{
+        "name":"Prismatic",
+        "description":"Wearer takes minimum damage from incoming energy attacks."
     },
     "ranged":{
         "name":"Ranged",
@@ -289,7 +297,7 @@
     },
     "reflective":{
         "name":"Reflective",
-        "description":"Wearer always takes minimum damage from energy attacks. 1-in-6 chance energy strikes rebound into a random nearby target. Critical hits always ricochet into a random nearby target, with a 1-in-6 chance of hitting the shooter."
+        "description":"Incoming energy attacks rebound into a random nearby target."
     },
     "sharp-edge":{
         "name":"Sharp Edge",
@@ -307,9 +315,9 @@
         "name":"Siege hardpoints",
         "description":"Wearer can wield large weapons with a single hand. They can wield a siege weapon two-handed."
     },
-    "slow":{
-        "name":"Slow",
-        "description":"If it fires more than once per round, the projector begins to overheat, increasing the chance of a critical failure by 1 each additional time it is fired. The projector cools down in a quarter of an hour or so."
+    "slow-meltdown":{
+        "name":"Slow Meltdown",
+        "description":"If it fires more than once per round, the weapon begins to overheat, increasing the chance of a critical failure by 1 each additional time it is fired. It cools down in a quarter of an hour or so."
     },
     "smelly":{
         "name":"Smelly",
@@ -349,7 +357,7 @@
     },
     "sword-breaker":{
         "name":"Sword-breaker",
-        "description":"The back of the cutlass is notched. Opponents with bladed weapons suffer an increased critical failure range (weapon breaks on a natural attack roll of 1 or 2)."
+        "description":"The back of the weapon is notched. Opponents with bladed weapons suffer an increased critical failure range (weapon breaks on a natural attack roll of 1 or 2)."
     },
     "team-colours":{
         "name":"Team colours",
@@ -361,7 +369,7 @@
     },
     "toggle-conceal":{
         "name":"Toggle-Conceal",
-        "description":"At the push of a button, the force-shield disappears, leaving only the projection bracer."
+        "description":"At the push of a button, the item can disappear or reappear."
     },
     "tool":{
         "name":"Tool",
