@@ -1,0 +1,18 @@
+{"data": 
+    [
+        {
+            "name":"Ebéteen Mindbender Priest",
+            "level":2,
+            "life":14,
+            "facets":["consoling","coruscating","obfuscating"],
+            "tags":["animal","human"],
+            "description":"Doling out the pleasures and the pain of the Living God.",
+            "attacks":[
+                {"defensename":"HA","defenseamount":6,"bonus":"+4","attackname":"pain ray","damage":"1d8+1"},
+                {"defensename":"KA","defenseamount":13,"bonus":"+6","attackname":"insight blade","damage":"1d10"},
+                {"defensename":"BA","defenseamount":13,"bonus":"+4","attackname":"shame & regret","damage":"2d6"}
+            ],
+            "modifiers":["promise-of-redemption","puppet-strings"]
+        }
+    ]
+}

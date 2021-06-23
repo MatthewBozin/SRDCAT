@@ -52,6 +52,20 @@
                 {"power":6, "effect":"Recipient gains 1d6 life per point."}
             ],
             "modifiers":["telemagic"]
+        },
+        {
+            "name":"TEST",
+            "tags":["abmortal-sanatry"],
+            "flavor":"What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
+            "description":"The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
+            "ranks":[
+                {"power":1, "effect":"Basic shunt. For each point transferred, recipient gains 1 life."},
+                {"power":2, "effect":"Enriched shunt. For each point, recipient gains 1d2 life."},
+                {"power":3, "effect":"Power shunt. Recipient gains 1d3 life per point."},
+                {"power":4, "effect":"Recipient gains 1d4 life per point."},
+                {"power":6, "effect":"Recipient gains 1d6 life per point."}
+            ],
+            "modifiers":["dangerous"]
         }
     ]
 }
