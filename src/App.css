@@ -351,4 +351,7 @@ button:hover {
   .limitwidth {
     width: 97.5%;
   }
+  .navletSpan {
+    display: none;
+  }
 }

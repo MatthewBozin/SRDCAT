@@ -18,6 +18,7 @@
         {"name":"items","display":"Items"},
         {"name":"skills","display":"Skills"},
         {"name":"traits","display":"Traits"},
-        {"name":"spells","display":"Spells"}
+        {"name":"spells","display":"Spells"},
+        {"name":"creatures","display":"Creatures"}
     ]
 }

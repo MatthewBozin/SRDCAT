@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import ItemCard from "./ItemCard";
 import SpellCard from "./SpellCard";
+import CreatureCard from "./CreatureCard";
 import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
@@ -21,6 +22,18 @@ const CardList = (props) => {
     if (props.category === "spells") {
       return (
         <SpellCard
+          key={placement}
+          card={card}
+          form={props.form}
+          placement={placement}
+          deleteFrom={props.deleteFrom}
+          category={props.category}
+        />
+      );
+    }
+    if (props.category === "creatures") {
+      return (
+        <CreatureCard
           key={placement}
           card={card}
           form={props.form}

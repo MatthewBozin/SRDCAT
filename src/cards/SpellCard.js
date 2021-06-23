@@ -10,7 +10,7 @@ import Ranks from "./Ranks";
 import AddSubtract from "./AddSubtract";
 import Table from "./Table";
 import NameValuePair from "./NameValuePair";
-import modsdata from "../data/collections/modifiers3.json";
+import modsdata from "../data/collections/modSpells.json";
 
 const SpellCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -135,6 +135,7 @@ const SpellCard = (props) => {
           name={name}
           description={description}
           ranks={ranks}
+          modifiers={modifiers}
         />
       )}
     </div>

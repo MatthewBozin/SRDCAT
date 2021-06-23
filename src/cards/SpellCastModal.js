@@ -12,6 +12,7 @@ function SpellCastModal(props) {
     setCastModalOpen,
     description,
     ranks,
+    modifiers,
   } = props;
 
   return (
@@ -26,6 +27,13 @@ function SpellCastModal(props) {
       </Modal.Header>
       <Modal.Body className="modalbackground">
         <div>{description}</div>
+        {modifiers.includes("dangerous") && (
+          <div>
+            <hr />{" "}
+            <span className="orangetext">Casting this spell is dangerous.</span>{" "}
+            <hr />
+          </div>
+        )}
         {ranks.map((rank, index) => {
           return (
             <SpellCostCard

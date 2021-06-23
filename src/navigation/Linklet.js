@@ -1,9 +1,20 @@
 import React, { useContext } from "react";
 import Context from "../data/context.js";
 import { Link } from "react-router-dom";
+import { ReactComponent as Collections } from "../data/icons/collections.svg";
+import { ReactComponent as Herosheet } from "../data/icons/herosheet.svg";
 
 const Linklet = (props) => {
   const [context, setContext] = useContext(Context);
+
+  const displayIcon = () => {
+    switch (props.type) {
+      case "collections":
+        return <Collections className="iconsvg" />;
+      case "herosheet":
+        return <Herosheet className="iconsvg" />;
+    }
+  };
 
   return (
     <Link
@@ -22,7 +33,8 @@ const Linklet = (props) => {
       }
       to={props.link}
     >
-      {props.text}
+      {displayIcon()}
+      <span className="navletSpan">{props.text}</span>
     </Link>
   );
 };
