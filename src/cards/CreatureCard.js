@@ -14,15 +14,14 @@ import "toasted-notes/src/styles.css";
 
 const CreatureCard = (props) => {
   const [expanded, setExpanded] = useState(false);
+  let cards = require(`../data/collections/creatures`);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [character, setCharacter] = useContext(Character);
   const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
   //mod becomes mods: []
 
   const { name, level, life, facets, tags, description, attacks, modifiers } =
-    props.card;
-
-  console.log(modifiers);
+    cards.data[props.card.name];
 
   // const calcAttackInfo = () => {
   //   let modifiers = [];

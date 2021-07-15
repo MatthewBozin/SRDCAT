@@ -1,6 +1,6 @@
 {"data": 
-    [
-        {
+    {
+        "ebeteenmindbenderpriest":{
             "name":"Ebéteen Mindbender Priest",
             "level":2,
             "life":14,
@@ -14,5 +14,5 @@
             ],
             "modifiers":["promise-of-redemption","puppet-strings"]
         }
-    ]
+    }
 }

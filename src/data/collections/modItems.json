@@ -31,6 +31,10 @@
         "name": "Aura booster",
         "description": "+3 aura."
     },
+    "back-mounted":{
+        "name":"Back-Mounted",
+        "description":"The item requires a back-mounted component, and cannot be wielded unless the user's back is free."
+    },
     "balancer": {
         "name": "Balancer",
         "description": "Ignores all undead immunities and resistances."

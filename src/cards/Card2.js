@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Name from "./Name";
 import Tag from "./Tag";
 import Flavor from "./Flavor";
@@ -6,23 +6,15 @@ import Description from "./Description";
 import Ranks from "./Ranks";
 import AddSubtract from "./AddSubtract";
 import Table from "./Table";
-import Context from "../data/context";
 
 const Card = (props) => {
   const [expanded, setExpanded] = useState(false);
-  const [context] = useContext(Context);
-  let cards;
-  if (props.deleteFrom !== "none") {
-    cards = require(`../data/collections/` + props.deleteFrom);
-  } else {
-    cards = require(`../data/collections/` + context.collections);
-  }
 
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, ranks, table } =
-    cards.data[props.card.name];
+
+  const { name, tags, flavor, description, ranks, table } = props.card;
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {

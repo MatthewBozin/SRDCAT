@@ -1,6 +1,6 @@
 {
-    "data":[
-        {
+    "data":{
+        "agriculturalistfarmer":{
             "name":"Agriculturalist Farmer",
             "tags":["background"],
             "flavor":"An autonomous popular people’s collective ruled by an autocrat.",
@@ -25,7 +25,7 @@
                 "Resilient as the grass. Regains 1 life the turn after being reduced to 0 life."
             ]
         },
-        {
+        "artistaesthetic":{
             "name":"Artist Aesthetic",
             "tags":["background"],
             "flavor":"The unmanifest idea is worthless.",
@@ -46,7 +46,7 @@
                 "All publicity is good. Once per turn gains life from a ba attack instead of losing it."
             ]
         },
-        {
+        "apparatchik":{
             "name":"Apparatchik",
             "tags":["background"],
             "flavor":"The highly trained bureaucrat reproduces the bureaucracy.",
@@ -67,7 +67,7 @@
                 "Protected. Gains +2 ba defence."
             ]
         },
-        {
+        "archaeologistfreiherr":{
             "name":"Archaeologist Freiherr",
             "tags":["adventure"],
             "flavor":"Behold, the golden idol!",
@@ -86,7 +86,7 @@
                 "When they deal maximum damage with a bare-knuckle attack (1d3 damage), the target loses an action on its next turn."
             ]
         },
-        {
+        "athleteofsomerenown":{
             "name":"Athlete of Some Renown ",
             "tags":["adventure"],
             "flavor":"Run, rabbit, run.",
@@ -109,7 +109,7 @@
                 "Grin and bear it. Spend 1 life to ignore the effects of 1 burden for 1 round."
             ]
         },
-        {
+        "biggametourist":{
             "name":"Big Game Tourist",
             "tags":["adventure"],
             "flavor":"It’s a fair chase, honest.",
@@ -130,7 +130,7 @@
                 "[+] to damage     with    big guns and/or against trophy creatures."
             ]
         },
-        {
+        "butcherbanker":{
             "name":"Butcher Banker",
             "tags":["background"],
             "flavor":"Blood and money. Both must flow.",
@@ -149,7 +149,7 @@
                 "[+] to damage with cleavers, nightsticks, walking stick swords, bladed bowler  hats, rods of office, and other regalia of the moneyed clans. Resistant to damage from cash."
             ]
         },
-        {
+        "captainintheauxiliaries":{
             "name":"Captain in the Auxiliaries",
             "tags":["adventure"],
             "flavor":"Lead that cannon fodder.",
@@ -168,7 +168,7 @@
                 "Immune to ba damage from shame and scandals."
             ]
         },
-        {
+        "catburglar":{
             "name":"Cat Burglar",
             "tags":["adventure"],
             "flavor":"Door, window, wall. Same thing.",
@@ -187,7 +187,7 @@
                 "Sonic lockpicks. May spend 1 life to re-roll a failed test to disarm a lock, trap, or ward."
             ]
         },
-        {
+        "chevalier":{
             "name":"Chevalier",
             "tags":["background"],
             "flavor":"A beacon of chivalry.",
@@ -217,7 +217,7 @@
                 "Resistant to ha  and ba damage from social inferiors."
             ]
         },
-        {
+        "circusacrobat":{
             "name":"Circus Acrobat",
             "tags":["adventure"],
             "flavor":"Make no bones about it.",
@@ -236,7 +236,7 @@
                 "Lucky catch. Once per round, can spend 1 life to re-roll an agility test."
             ]
         },
-        {
+        "corpocratsuitwearer":{
             "name":"Corpocrat Suitwearer",
             "tags":["background"],
             "flavor":"The business.",
@@ -257,7 +257,7 @@
                 "Fail upwards. Gains 1 life whenever they fail a ka or ba test."
             ]
         },
-        {
+        "dreamvoyager":{
             "name":"Dream Voyager",
             "tags":["adventure"],
             "flavor":"If the vizier dies while they dream, who is at fault?",
@@ -276,7 +276,7 @@
                 "While astrally projecting, the hero may spend 1 life to possess a creature using a ka attack. The possession lasts until the hero wakes up or their astral body is evicted from its host."
             ]
         },
-        {
+        "driverjilljackorjo":{
             "name":"Driver Jill, Jack or Jo",
             "tags":["adventure"],
             "flavor":"Speed in the sign of yellow.",
@@ -295,7 +295,7 @@
                 "When a vehicle they are driving is reduced to 0 life, the hero can spend 1 life. The vehicle immediately gains 1d6 life and one defect."
             ]
         },
-        {
+        "explorerofthevastlands":{
             "name":"Explorer of the Vastlands",
             "tags":["adventure"],
             "flavor":"Over seven rivers and seven hills.",
@@ -315,7 +315,7 @@
                 "[+] against parasites and diseases.",
                 "[+] on all misfortune and encounter rolls. Also, suppose the hero exits play by falling off a cliff, being carried away by a gigantic ape, swallowed by a sea creature, or some other adventurous trope. In that case, they can return in the next session with one trait randomly swapped and one stat reduced by 1."]
         },
-        {
+        "fisherpasha":{
             "name":"Fisher Pasha",
             "tags":["background"],
             "flavor":"Gentle and atmospheric.",
@@ -334,7 +334,7 @@
                 "At peace. Immune to fear  and  charm effects."
             ]
         },
-        {
+        "foragerofthefuture":{
             "name":"Forager of the Future",
             "tags":["adventure"],
             "flavor":"Food wriggles everywhere!",
@@ -345,7 +345,7 @@
                 "Advanced machines, oldtech golems, androids, and other long, long ago spirits have [-] to attacks against the hero."
             ]
         },
-        {
+        "gladiator":{
             "name":"Gladiator",
             "tags":["adventure"],
             "flavor":"Blood soothes the decadent fools.",
@@ -363,7 +363,7 @@
                 "[+] to ba damage dealt with physical attacks.",
                 "Spectacular finish. When the hero reduces an enemy to 0 life with ba damage, nearby opponents suffer [-] to attacks until the end of the next turn."]
         },
-        {
+        "groomtothesuperiorspecies":{
             "name":"Groom to the Superior Species",
             "tags":["adventure"],
             "flavor":"All for the love of master.",
@@ -388,7 +388,7 @@
                 "Hero gains 2 to all defences when near their master."
             ]
         },
-        {
+        "handyworker":{
             "name":"Handyworker",
             "tags":["background"],
             "flavor":"The trades. Unsurprisingly useful.",
@@ -408,7 +408,7 @@
                 "Secret ways. Hero gains 1 ka defence. Once per session, they   can   spend 1d6 life to \"find\" a secret crawlspace left by the cosmic plumbers and duct builders. It leads somewhere nearby the hero has visited, for example, the back alley behind the county jail.",
                 "Secret recipes. Hero regains life equal to their level by consuming a stone's worth of uncommon root vegetables (e.g. turnips, radishes, rutabagas, kohlrabis, ginger, or daikon)."]
         },
-        {
+        "historianofthedownfall":{
             "name":"Historian of the Downfall",
             "tags":["adventure"],
             "flavor":"The war. The war never changes.",
@@ -427,7 +427,7 @@
                 "Increases defence of each oldtech armour, ward, or prestige piece by 1. Increases damage dice of oldtech equipment one step."
             ]
         },
-        {
+        "housekeeperofgoodrepute":{
             "name":"Housekeeper of Good Repute",
             "tags":["background"],
             "flavor":"My home is my castrum.",
@@ -446,7 +446,7 @@
                 "Smug self-confidence. Gains 2 ka defence."
             ]
         },
-        {
+        "hunterofthelatedays":{
             "name":"Hunter of the Late Days",
             "tags":["adventure"],
             "flavor":"It doesn’t know it's already food.",
@@ -467,7 +467,7 @@
                 "If they have a belonging or leaving of their prey, they can use their third eye to track it by its aura signature. Only ritual puri-fication throws off such  pursuit."
             ]
         },
-        {
+        "investigatorprivate":{
             "name":"Investigator Private",
             "tags":["adventure"],
             "flavor":"Elementary, my dear sidekick.",
@@ -488,7 +488,7 @@
                 "Perfectly scripted comeback. Resistant to verbal and legal ka or ba attacks."
             ]
         },
-        {
+        "labourerinreserve":{
             "name":"Labourer in Reserve",
             "tags":["background"],
             "flavor":"Nothing to lose but their chains.",
@@ -513,7 +513,7 @@
                 "[+] to damage vs. social superiors and class enemies."
             ]
         },
-        {
+        "makercogsmith":{
             "name":"Maker Cogsmith",
             "tags":["background"],
             "flavor":"Did you try plugging it in?",
@@ -532,8 +532,8 @@
                 "Friendly machines near hero gain [+] to one action per turn."
             ]
         },
-        {
-            "name":"Master Packer ",
+        "masterpacker":{
+            "name":"Master Packer",
             "tags":["adventure"],
             "flavor":"No magic bag, just a system.",
             "description":"Packs gear and cargo and supplies very effectively. Doesn’t bruise fruit or break eggs. Finds space for the caravan pet. Warehousing and logistics experience. Has a semi-aware ",
@@ -551,7 +551,7 @@
                 "Two more slots. Continues with fibonacci sequence at higher ranks."
             ]
         },
-        {
+        "mulewhisperer":{
             "name":"Mule Whisperer",
             "tags":["adventure"],
             "flavor":"It’s not talking to animals per se.",
@@ -576,8 +576,8 @@
                 "Animal has [+] to avoid damage and injury."
             ]
         },
-        {
-            "name":"Navigator of Other Worlds ",
+        "navigatorofotherworlds":{
+            "name":"Navigator of Other Worlds",
             "tags":["adventure"],
             "flavor":"When the seven signs align.",
             "description":"Masters maps and telescopes and cartography. Avoids getting lost and tracks down lost treasures and new discoveries. Charts course by stars, winds, waypoints and    worms. Folds the gateways and bends space. Claims to have visited ",
@@ -595,8 +595,8 @@
                 "[+] to using gates. Once per session, can spend 1d6 life to activate any gate and use it as a one-way portal to one place they know intimately."
             ]
         },
-        {
-            "name":"Negotiatior of Relations  ",
+        "negotiatorofrelations":{
+            "name":"Negotiatior of Relations",
             "tags":["background"],
             "flavor":"They think they got the better deal.",
             "description":"Reads people and listens to them. Figures out what they want, and how to get it for them. Generates win-win outcomes while meeting key jargon milestones. Does a bit of discrete espionage. Handles organizations and bureaucracies. Hates corruption, approves of lobbying. Was an ",
@@ -616,7 +616,7 @@
                 "[+] negotiating safe getaway arrangements."
             ]
         },
-        {
+        "noblesocialite":{
             "name":"Noble Socialite",
             "tags":["background"],
             "flavor":"The life of the party.",
@@ -635,8 +635,8 @@
                 "Gains 1 ba defence. Increases effectiveness of social attacks (gossip) one step."
             ]
         },
-        {
-            "name":"Nomad Rustler ",
+        "nomadrustler":{
+            "name":"Nomad Rustler",
             "tags":["adventure"],
             "flavor":"Go, go, guerrilla.",
             "description":"Irregular tactics and guerrilla combat. Snipes, ambushes and shoots on the run. Rides like lightning, wears large hats, finds water holes. Steals cattle. Hides tracks, plays tricks. Excellent endurance when running away. Experienced in ",
@@ -654,7 +654,7 @@
                 "Gains [+] to attacks against pursuers."
             ]
         },
-        {
+        "outsideralien":{
             "name":"Outsider Alien",
             "tags":["adventure"],
             "flavor":"Not normal here.",
@@ -673,7 +673,7 @@
                 "Channel opens. [+] to using strange, alien artefacts. Amulet now increases ka defence by 2."
             ]
         },
-        {
+        "pilotofvechs":{
             "name":"Pilot of Vechs",
             "tags":["adventure"],
             "flavor":"This might be an unfair fight.",
@@ -692,7 +692,7 @@
                 "Biovech transfer. When their vech is reduced to 0 life, the hero can spend 1d6 life to set its life to 1 instead."
             ]
         },
-        {
+        "postmodernsoldier":{
             "name":"Postmodern Soldier",
             "tags":["adventure"],
             "flavor":"Once there were many like them.",
@@ -711,7 +711,7 @@
                 "Gains +1 ba and ka defence from badges and medals."
             ]
         },
-        {
+        "praxaofthebows":{
             "name":"Praxa of the Bows",
             "tags":["combat",""],
             "flavor":"Shoot an arrow, split a tree.",
@@ -730,7 +730,7 @@
                 "2 attacks per action w. bows."
             ]
         },
-        {
+        "praxaofthechains":{
             "name":"Praxa of the Chains",
             "tags":["combat"],
             "flavor":"Against the army of the dead.",
@@ -749,8 +749,8 @@
                 "Critical range increases one more step, and chains decapitate undead on critical."
             ]
         },
-        {
-            "name":"Praxa of the Good Guns ",
+        "praxaofthegoodguns":{
+            "name":"Praxa of the Good Guns",
             "tags":["combat"],
             "flavor":"The big gun is good big time.",
             "description":"Uses and maintains massive ranged weapons, like cannons, catapults, and null walkers. Repairs simple machines. Good at ballistics too. Croons to ",
@@ -768,7 +768,7 @@
                 "Big gun damage dice explode."
             ]
         },
-        {
+        "praxaoftheenergies":{
             "name":"Praxa of the Energies",
             "tags":["combat"],
             "flavor":"An elite order of laser monks?",
@@ -787,7 +787,7 @@
                 "Full power modulation. Chooses damage dice results instead of rolling."
             ]
         },
-        {
+        "praxaofthehammeraxes":{
             "name":"Praxa of the Hammeraxes",
             "tags":["combat"],
             "flavor":"Has buttered scones for tea.",
@@ -806,7 +806,7 @@
                 "H&a critical multiplier increases one more step."
             ]
         },
-        {
+        "praxaoftheknives":{
             "name":"Praxa of the Knives",
             "tags":["combat"],
             "flavor":"The shark has such teeth, dear.",
@@ -825,7 +825,7 @@
                 "Knives deal double damage."
             ]
         },
-        {
+        "praxaofthemortalshells":{
             "name":"Praxa of the Mortal Shells",
             "tags":["combat"],
             "flavor":"Champions made for war eternal.",
@@ -844,7 +844,7 @@
                 "Unarmed and improvised damage dice increase 1 more step. Gains 1 ha defence."
             ]
         },
-        {
+        "praxaofthepistoliers":{
             "name":"Praxa of the Pistoliers",
             "tags":["combat"],
             "flavor":"Archaemagic cloaks and wands with pistol grips.",
@@ -863,7 +863,7 @@
                 "Attacks twice per action with pistols."
             ]
         },
-        {
+        "praxaofthepoles":{
             "name":"Praxa of the Poles",
             "tags":["combat"],
             "flavor":"Poke with the pointy end, please.",
@@ -882,7 +882,7 @@
                 "Critical multiplier with polearms increases one step."
             ]
         },
-        {
+        "praxaoftherifles":{
             "name":"Praxa of the Rifles",
             "tags":["combat"],
             "flavor":"The longest arm.",
@@ -901,7 +901,7 @@
                 "Rifle critical range increased one step."
             ]
         },
-        {
+        "praxaoftherods":{
             "name":"Praxa of the Rods",
             "tags":["combat"],
             "flavor":"Spare the rod, spoil the fight.",
@@ -920,7 +920,7 @@
                 "Rods ignore ha armour."
             ]
         },
-        {
+        "praxaoftheswords":{
             "name":"Praxa of the Swords",
             "tags":["combat"],
             "flavor":"Double stake or split, ace of spades.",
@@ -939,7 +939,7 @@
                 "Sword critical range increases one more step."
             ]
         },
-        {
+        "professorinpanhumanities":{
             "name":"Professor in Panhumanities",
             "tags":["background"],
             "flavor":"Practical applications coming soon.",
@@ -964,7 +964,7 @@
                 "Armour of authority. Gains 2 ba and 1 ka defence."
             ]
         },
-        {
+        "protocollier":{
             "name":"Protocollier",
             "tags":["background"],
             "flavor":"Once mined coal, now make protocol.",
@@ -983,7 +983,7 @@
                 "Gains +1 ba defence from protocolary gear and ritual armour."
             ]
         },
-        {
+        "psychicveteran":{
             "name":"Psychic Veteran",
             "tags":["adventure"],
             "flavor":"A fire of unknown origin took their friends away.",
@@ -1002,7 +1002,7 @@
                 "Third eye razor. [+] to all mental attacks. Mental damage dice explode."
             ]
         },
-        {
+        "revolutionary":{
             "name":"Revolutionary",
             "tags":["adventure"],
             "flavor":"Change is always coming.",
@@ -1021,7 +1021,7 @@
                 "The first shall be last. When the hero hits, they can spend 1 life to deal extra damage equal to target’s ba defence."
             ]
         },
-        {
+        "rideratease":{
             "name":"Rider at Ease",
             "tags":["adventure"],
             "flavor":"This steed is Fleetfoot the Ninth.",
@@ -1057,7 +1057,7 @@
                 "[+] to damage while riding."
             ]
         },
-        {
+        "secretservant":{
             "name":"Secret Servant",
             "tags":["adventure"],
             "flavor":"From chaos, with love.",
@@ -1076,7 +1076,7 @@
                 "Mind-blowing. Critical multiplier of ba and ka attacks increases 1 step."
             ]
         },
-        {
+        "shadowmerchant":{
             "name":"Shadow Merchant",
             "tags":["adventure"],
             "flavor":"Somebody would have sold the Hand of God sooner or later.",
@@ -1095,7 +1095,7 @@
                 "Bling. Each shiny item hero owns adds +1 ba defence."
             ]
         },
-        {
+        "shopkeeper":{
             "name":"Shopkeeper",
             "tags":["background"],
             "flavor":"Now this is a party.",
@@ -1116,7 +1116,7 @@
                 "Bling. Each shiny item hero owns adds +1 ba defence."
             ]
         },
-        {
+        "siduofthebestfolk":{
             "name":"Sidu of the Bestfolk",
             "tags":["social"],
             "flavor":"Some folk are simply better.",
@@ -1135,7 +1135,7 @@
                 "When reduced to 0 life by social attacks, may immediately spend 1 physical statpoint to regain 1d6 + level life."
             ]
         },
-        {
+        "siduoftheironfist":{
             "name":"Sidu of the Iron Fist",
             "tags":["social"],
             "flavor":"The army settles in the soul.",
@@ -1154,7 +1154,7 @@
                 "Ba defense from ornate military attire doubled."
             ]
         },
-        {
+        "siduoftheleastfolk":{
             "name":"Sidu of the Leastfolk",
             "tags":["social"],
             "flavor":"The last must be first.",
@@ -1173,7 +1173,7 @@
                 "Reduces ba damage by 1 for every nearby ally (minimum 1)."
             ]
         },
-        {
+        "siduofthelegalities":{
             "name":"Sidu of the Legalities",
             "tags":["social"],
             "flavor":"The word made order from chaos.",
@@ -1192,7 +1192,7 @@
                 "[+] to damage with legal attacks."
             ]
         },
-        {
+        "siduoftheoutcaste":{
             "name":"Sidu of the Outcaste",
             "tags":["social"],
             "flavor":"Freedom and misery.",
@@ -1211,7 +1211,7 @@
                 "All ba attacks against the outcaste deal double damage. Social attacks cannot reduce the outcaste to 0 life."
             ]
         },
-        {
+        "siduoftherhetors":{
             "name":"Sidu of the Rhetors",
             "tags":["social"],
             "flavor":"Words soothe the savage beast.",
@@ -1230,7 +1230,7 @@
                 "Ba attack critical multiplier increases one step."
             ]
         },
-        {
+        "siduofthesacreddeed":{
             "name":"Sidu of the Sacred Deed",
             "tags":["social"],
             "flavor":"As above so below.",
@@ -1249,7 +1249,7 @@
                 "Deals double damage with all religious ba attacks."
             ]
         },
-        {
+        "siduofthesoiltwined":{
             "name":"Sidu of the Soiltwined",
             "tags":["social"],
             "flavor":"True tradition tills the terroir.",
@@ -1268,7 +1268,7 @@
                 "Gains 1 ka defence. When reduced to 0 life by ba attacks, may immediately pay 1 mental stat point to gain 1d6 + level life."
             ]
         },
-        {
+        "siduofthestaunchkeepers":{
             "name":"Sidu of the Staunchkeepers",
             "tags":["social"],
             "flavor":"Debt is the mother of coin.",
@@ -1287,7 +1287,7 @@
                 "Doubles ba defence from cash."
             ]
         },
-        {
+        "siduoftheunfettered":{
             "name":"Sidu of the Unfettered",
             "tags":["social"],
             "flavor":"Beyond good and evil.",
@@ -1306,7 +1306,7 @@
                 "[+] to all magical damage."
             ]
         },
-        {
+        "siduoftheuptought":{
             "name":"Sidu of the Uptought",
             "tags":["social"],
             "flavor":"Knowledge is the one true currency.",
@@ -1325,7 +1325,7 @@
                 "Critical multiplier for all ba damage dealt increased one step."
             ]
         },
-        {
+        "singerofthelastlands":{
             "name":"Singer of the Lastlands",
             "tags":["adventure"],
             "flavor":"The Old-World will never die.",
@@ -1344,7 +1344,7 @@
                 "Memories revived through music. Hero gains [+] to all tests to read, decipher, figure out, and activate relics of the Old-world."
             ]
         },
-        {
+        "spelunker":{
             "name":"Spelunker",
             "tags":["adventure"],
             "flavor":"Heaven is down. Always down.",
@@ -1363,7 +1363,7 @@
                 "Gains the ability to 'hear' the  dim outlines of auras in pitch darkness and 'see' space with a rudimentary form of echolocation. Also, once per session, can spend 1d6 life to 'discover' a passage connecting somewhere more profound and more mysterious. Or possibly just the palace's central sewer outflow."
             ]
         },
-        {
+        "storminfantry":{
             "name":"Storm Infantry ",
             "tags":["background"],
             "flavor":"Break on through to the other side.",
@@ -1382,7 +1382,7 @@
                 "Allies fighting next to the hero gain [+] to physical attacks."
             ]
         },
-        {
+        "streetperformer":{
             "name":"Street Performer",
             "tags":["background"],
             "flavor":"Joy of the many, coin of the few.",
@@ -1401,7 +1401,7 @@
                 "Hypervigilant. Hero gains 1 hakaba defence. Also, whenever they would be surprised, they can test aura instead."
             ]
         },
-        {
+        "survivorinthevast":{
             "name":"Survivor in the Vast",
             "tags":["adventure"],
             "flavor":"Slept in the belly of a dead bear.",
@@ -1422,7 +1422,7 @@
                 "Resistant to damage while hiding or running away."
             ]
         },
-        {
+        "tacticianoftheendlesswar":{
             "name":"Tactician of the Endless War",
             "tags":["adventure"],
             "flavor":"There is an art to war.",
@@ -1443,7 +1443,7 @@
                 "Meant to be. When injured by an opponent, they can spend 1d6 life to create an opening for their allies. Then, all nearby allies gain [+] on their test or damage rolls on their next turn."
             ]
         },
-        {
+        "thespian":{
             "name":"Thespian",
             "tags":["background"],
             "flavor":"The gods were merely actors.",
@@ -1468,7 +1468,7 @@
                 "A maze of personalities. Can perfectly copy another person's behaviour and mannerisms after a week's study. This persona occupies a slot on the hero sheet. Also, gains 1 ka defence."
             ]
         },
-        {
+        "timelostinterloper":{
             "name":"Timelost Interloper",
             "tags":["adventure"],
             "flavor":"A flint blade for a laser sword.",
@@ -1487,7 +1487,7 @@
                 "Gains resistance to ka damage. Recognizes the ghost behind the machine."
             ]
         },
-        {
+        "tinkertoymaker":{
             "name":"Tinker Toymaker",
             "tags":["background"],
             "flavor":"Toys are people too.",
@@ -1517,7 +1517,7 @@
                 "Golems and other machines are reluctant to harm the hero and suffer [-] to tests against them. At any time, the toymaker can spend a few minutes and 1 life to restore 1d6 life to a mechanical creature."
             ]
         },
-        {
+        "uselessfreeloader":{
             "name":"Useless Freeloader",
             "tags":["background"],
             "flavor":"It gets around.",
@@ -1535,7 +1535,7 @@
                 "Gains [+] when wheedling freebies. Resistant against ba attacks that should shame or embarrass them.",
                 "Gains 2 ba and ka defence. Whenever the hero fails a test, they can grant [+] to another hero attempting the same task. Afterwards, the useless freeloader generously shares some credit for the success."]
         },
-        {
+        "vedaoftheabmortaldoctor":{
             "name":"Veda of the Abmortal Doctor",
             "tags":["magic"],
             "flavor":"Doctor what?",
@@ -1554,133 +1554,133 @@
                 "[+] when reviving, resurrecting, reanimating, and regenerating."
             ]
         },
-        {
+        "vedaoftheallchemist":{
             "name":"Veda of the All-Chemist",
             "tags":["magic"],
             "flavor":"It’s supposed to explode.",
             "description":"Understands chemical processes and matter modification equipment. Makes explosives, cook drugs. Transmutes refuse into treasures (like excreta into gunpowder).",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheawakenedsphere":{
             "name":"Veda of the Awakened Sphere",
             "tags":["magic"],
             "flavor":"The noösphere is hungry.",
             "description":"Studies and adapts natural systems. Reads leaves and listens to churning microbes. Hears the voices of the wind. Smells the songs of the ocean. Uses biological equipment and handles hunting weapons.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthebiomechane":{
             "name":"Veda of the Biomechané",
             "tags":["magic"],
             "flavor":"Skin-deep poems carved in flesh.",
             "description":"Plays the living spirit of flesh and bough. Dams injuries and diseases, modifies biological processes, sculpts angels and monsters. Wields knives and saws, needles and probes. Unofficially dabbles in mad science body horror.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthecosmicarchitects":{
             "name":"Veda of the Cosmic Architects",
             "tags":["magic"],
             "flavor":"It’s not a secret club.",
             "description":"Builds buildings. Shapes stones. Understands dungeons. Forms mystery cults. Treads the boundary between life and death. Plays with magic gates. Wields hammers and   chisels.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheexistentialvoid":{
             "name":"Veda of the Existential Void",
             "tags":["magic"],
             "flavor":"Where imagination fails the void dwells.",
             "description":"Journeys the hidden paths. Braves the madness and fast decay. Dreams of of stars and hopes, mistakes undone, futures rewritten, promises remade.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheflyingserpent":{
             "name":"Veda of the Flying Serpent",
             "tags":["magic"],
             "flavor":"Prayers to the feathery one.",
             "description":"Mixes poisons, potions, and medicines. Entreaties the tiny machines that swim in all living things. Harvests herbs that heal and those that ill. Wields knives, pestles, and mortars.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthegolemmafexes":{
             "name":"Veda of the Golemmafexes",
             "tags":["magic"],
             "flavor":"Roboticist to the initiated.",
             "description":"Heals and maintains ancient autonomous machines. Follows preserved manuals of ritual assembly to copy platonic golems. Communicates with machines via the ancient art of coding. Uses integrated energy weapons and void screwdrivers.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheironsymphony":{
             "name":"Veda of the Iron Symphony ",
             "tags":["magic"],
             "flavor":"The spheres are ringing.",
             "description":"Uses music to unite and divide, to share and preserve. Makes a band and tours the Vastlands. Ignores ingested poisons and shatters objects with instrumentals alone. Wrecks inns and hotels, leaves heartbreak behind. Casts the spells of the vibrating spheres.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthelawnecromantic":{
             "name":"Veda of the Law Necromantic",
             "tags":["magic"],
             "flavor":"Life and death are legal matters.",
             "description":"Talks to the dead and interprets their wishes. Mediates between living and dead. Consults the wisdom of past ages. Brings things back from the long sleep where they dreamless lay. Impeccable taste in candles, perfumes, skulls and gowns.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthelightheldfast":{
             "name":"Veda of the Light Held Fast",
             "tags":["magic"],
             "flavor":"It would work if you just believed.",
             "description":"Uses placebos and nocebos to change the world. Stores and retrieves information with living crystals. Focus and refract magics through oldtech gems. Creates plays of light and shadow. Wields crystal wands.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthemotherelectric":{
             "name":"Veda of the Mother Electric",
             "tags":["magic"],
             "flavor":"Creation hums the song Electric.",
             "description":"Practices the old rites of electric equipment maintenance and repair. Uses heavy energy weapons and ka batteries. Casts spells with blueprint scrolls.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheoldtechnologies":{
             "name":"Veda of the Old Technologies",
             "tags":["magic"],
             "flavor":"It's how they did things Long Ago.",
             "description":"Understands the fantascience of Oldtech. Activates or deactivates nearly anything. Reverse-engineers how to use ancient technomagical artifacts. Jury rigs a feeble  emulation of the glories of the Long Ago.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheplantkings":{
             "name":"Veda of the Plant Kings",
             "tags":["magic"],
             "flavor":"Just because the trees talk, doesn’t mean they’re crazy.",
             "description":"Talks to plants and hears what they have to say. Encourages verdant growth and opulent fruition. Promotes mobility and advancement for the plant kingdom. Harvests   strange fruits. Wields sickles, axes, clubs and blunts.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftherightmaker":{
             "name":"Veda of the Rightmaker",
             "tags":["magic"],
             "flavor":"Soothe the savage mob.",
             "description":"Feels society and community in their bones. Sacrifices the few for the many. Understands the exigencies of survival transcend morality. Judges with stern impartiality. Wields great swords and ornate guns.",
             "ranks":["Gets ITEM (table)."]
         },
-        {
+        "vedaoftheseeingbecoming":{
             "name":"Veda of the Seeming Becoming",
             "tags":["magic"],
             "flavor":"They’re magic beans.",
             "description":"Researches who wants what and how much they’re willing to pay. Makes rough guesses and drives data. Writes adventuring campaigns. Handles public relations. Wields   confusion and obfuscation.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthesevensummons":{
             "name":"Veda of the Seven Summons",
             "tags":["magic"],
             "flavor":"It wants to serve us. Trust me.",
             "description":"Finds the multitudes inhabiting the realms beyond the aether veils and in this dark material reality binds them. Bends, breaks, and enthralls daimons. Makes them give up their secrets. Pretends to their trust and loyalty.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthesoulbreaker":{
             "name":"Veda of the Soul Breaker",
             "tags":["magic"],
             "flavor":"Did I dream I was a human, or was I a human dreaming I was a spark of infinity?",
             "description":"Reads people’s intentions and desires. Intuits strength of character and weakness of desire. Twists plans and dreams. Subvert the ka and steals the body with the    terrifying spells of the ultras.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaofthewitchingsong":{
             "name":"Veda of the Witching Song",
             "tags":["magic"],
             "flavor":"Ears for the all-song.",
             "description":"Listens to the world around them, the folk big and small, and hears what they say. Mixes herbs and opens the spirit eye to protect against daemons and slanders. Heals with words and attentions. Works in possibilities and glances.",
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vedaoftheworldsword":{
             "name":"Veda of the World’s Word",
             "tags":["magic"],
             "flavor":"The will of the world is written in the wind and the seed.",
@@ -1688,7 +1688,7 @@
             "table":["Hedonic flesh-firstism","Opiate stasis","Mystery objectivism","Pan-noöspherical gratitude","Builder beatification","Sociotheism","Cogflower growth gospel","Ur-rationalism","Ancestral apotheosis","Pre-singularity nostalgism","Rainbow panoply polytheism","Machine idolatry"],
             "ranks":["Gets SPELL (table)."]
         },
-        {
+        "vometechnician":{
             "name":"Vome Technician",
             "tags":["adventure"],
             "flavor":"Once these machines were our servants.",
@@ -1700,7 +1700,7 @@
                 "Re-vome. Imbue 1 life to revive a dead vome as a friendly sidekick. Can maintain a number of friendly vomes equal to their level. Additional revived vomes return to their baseline programming."
             ]
         },
-        {
+        "whitecollardrone":{
             "name":"White Collar Drone",
             "tags":["background"],
             "flavor":"Just killing time.",
@@ -1708,7 +1708,7 @@
             "table":["Writes erotic poetry","Builds tiny model towns","Plays make-believe games","Dresses up in costumes","Joined a motor-golem gang","Summons small daemons"],
             "ranks":["Gets ITEM (table)."]
         },
-        {
+        "writerofbelleslettres":{
             "name":"Writer of Belles Lettres",
             "tags":["background"],
             "flavor":"Calligraphy and purple prose.",
@@ -1716,7 +1716,7 @@
             "table":["Belle epoque novel","Postconstructivist poetry","Oldtech fiction","Generative stories","Epistolary tales","Subtextual plays"],
             "ranks":["Gets ITEM (table)."]
         },
-        {
+        "zuerror":{
             "name":"Zu Error",
             "tags":["error"],
             "flavor":"Error. Reality. Reboot.",
@@ -1724,5 +1724,5 @@
             "table":["Hard clerical labour","Bare-knuckle fighting","Competitive drinking","Maniacal fantastic scribbling","Rigid traditionalism","Revolutionary action"],
             "ranks":["Gets ITEM (table)."]
         }
-    ]
+    }
 }

@@ -3,17 +3,15 @@ import Navbar from "../navigation/Navbar";
 import Search from "../cards/Search";
 import CardList from "../cards/CardList";
 import Context from "../data/context";
-let contextData = require(`../data/orders.json`);
 
 const Collections = () => {
   const [context] = useContext(Context);
 
   const filter = (filterBy) => {
     //filterBy sets which property in the card the filter pays attention to. currently it's set to "tags"
-    let contextObjects = require(`../data/collections/` + context.collections);
+    let contextData = require(`../data/collections/` + context.collections);
     let newData = [];
-    contextData[context.collections].map((name) => {
-      let element = contextObjects.data[name];
+    contextData.data.map((element) => {
       let toFilter;
       if (typeof element[filterBy] === "string") {
         toFilter = element[filterBy].toLowerCase();
@@ -30,7 +28,7 @@ const Collections = () => {
           return;
         }
       }
-      newData.push(name);
+      newData.push(element);
     });
     return newData;
   };
@@ -60,7 +58,7 @@ const Collections = () => {
 
     return (
       <CardList
-        content={contextData[context.collections]}
+        content={data.data}
         form={"plus"}
         deleteFrom={"none"}
         category={context.collections}

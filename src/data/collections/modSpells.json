@@ -7,10 +7,6 @@
         "name":"Attack",
         "description":"The spell is cast as an attack action. A caster uses their relevant magical skill to test against their foe’s defence and affect them."
     },
-    "back-mounted":{
-        "name":"Back-Mounted",
-        "description":"The item requires a back-mounted component, and cannot be wielded unless the user's back is free."
-    },
     "daemon-guidance":{
         "name":"Daemon Guidance",
         "description":"Wielder can spend 1 action and one life to commune with the Daemon within the item. They gain [+] to strike one target."

@@ -137,6 +137,13 @@ hr {
   transition: 0.3s;
 }
 
+.iconsvgselected {
+  width: 30px;
+  color: #d5d4d6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .cardname {
   font-size: 24px;
   margin-left: 15px;

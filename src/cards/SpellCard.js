@@ -16,13 +16,14 @@ const SpellCard = (props) => {
   const [expanded, setExpanded] = useState(false);
   const [castModalOpen, setCastModalOpen] = useState(false);
   const [character, setCharacter] = useContext(Character);
+  let cards = require(`../data/collections/spells`);
 
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
 
   const { name, tags, flavor, description, ranks, table, modifiers } =
-    props.card;
+    cards.data[props.card.name];
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {
