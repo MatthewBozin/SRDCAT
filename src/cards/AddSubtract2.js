@@ -8,19 +8,16 @@ import "toasted-notes/src/styles.css";
 const AddSubtract = (props) => {
   const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
-  let cards = require(`../data/collections/` + context.collections);
 
   const addCard = () => {
-    toaster.notify(
-      "Card (" + cards.data[props.card.name].name + ") added to character!",
-      {
-        duration: 2000,
-      }
-    );
-    let instanced = { name: props.card.name, savedrank: 0 };
-    if (cards.data[props.card.name].table !== undefined) {
+    toaster.notify("Card (" + props.card.name + ") added to character!", {
+      duration: 2000,
+    });
+    let instanced = props.card;
+    if (instanced.table !== undefined) {
       instanced.savedresult = 0;
     }
+    instanced.savedrank = 0;
     let newchar = character;
     newchar[context.collections].push(instanced);
     if (context.collections !== "items") {

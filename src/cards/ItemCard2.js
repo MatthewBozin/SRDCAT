@@ -19,8 +19,6 @@ import "toasted-notes/src/styles.css";
 
 const ItemCard = (props) => {
   const [expanded, setExpanded] = useState(false);
-  let cards = require(`../data/collections/items`);
-
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
   const [itemNotWorn, setItemNotWorn] = useState(true);
@@ -29,7 +27,7 @@ const ItemCard = (props) => {
   //mod becomes mods: []
 
   const { name, tags, flavor, weight, value, number, stat, modifiers } =
-    cards.data[props.card.name];
+    props.card;
 
   const calcAttackInfo = () => {
     let modifiers = [];

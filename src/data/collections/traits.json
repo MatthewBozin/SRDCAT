@@ -1,6 +1,6 @@
 {
-    "data": [
-        {
+    "data": {
+        "actionmimicry":{
             "name":"Action Mimicry",
             "tags":["mutation","ka"],
             "flavor":"Uplifted monkey see, uplifted monkey do.",
@@ -10,7 +10,7 @@
                 "Hero gains [+] to copying other creatures' behaviours and mannerisms."
             ]
         },
-        {
+        "aestheticcreation":{
             "name":"Aesthetic Creation",
             "tags":["trait","ba","technological"],
             "flavor":"Made in Beautiful.",
@@ -20,7 +20,7 @@
                 "Hero chooses a cosmetic mutation and gains 1 ba defence."
             ]
         },
-        {
+        "agilityofthearbitraryautarch":{
             "name":"Agility of the Arbitrary Autarch",
             "tags":["mutation","ha"],
             "flavor":"As daemons follow no earth-bound command, neither should we.",
@@ -30,7 +30,7 @@
                 "+2 agility or hero gains an additional action."
             ]
         },
-        {
+        "anothermind":{
             "name":"Another Mind",
             "tags":["mutation","ka","chimerism"],
             "flavor":"The seed of truth grows within.",
@@ -59,7 +59,7 @@
                 }
             ]
         },
-        {
+        "artfuldodger":{
             "name":"Artful Dodger",
             "tags":["trait","ha","combat"],
             "flavor":"Important for staying alive.",
@@ -69,7 +69,7 @@
                 "Experience in staying ahead. Adds highest mental stat to ha defence and highest physical stat to ba defence."
             ]
         },
-        {
+        "artiforganism":{
             "name":"Artiforganism",
             "tags":["trait","ha","technological"],
             "flavor":"The unborn. The made.",
@@ -79,7 +79,7 @@
                 "Upgradeable. Hero gains 4 inventory slots for mutations and other enhancements."
             ]
         },
-        {
+        "astraleyes":{
             "name":"Astral Eyes",
             "tags":["mutation","ka","cosmic"],
             "flavor":"The world you is a veil hiding the deeper beauty of the fields of ka.",
@@ -99,7 +99,7 @@
                 "Faceted crystalline growths spread to the edges of the empty sockets, like queer jewellery. Hero can directly perceive the ka of living creatures."
             ]
         },
-        {
+        "auralcorona":{
             "name":"Aural Corona",
             "tags":["trait","ka","cosmic"],
             "flavor":"Flaring off the elemental excess.",
@@ -111,7 +111,7 @@
                 "Hero takes minimum damage from their element."
             ]
         },
-        {
+        "avatarinfection":{
             "name":"Avatar Infection",
             "tags":["mutation","ha","cosmic"],
             "flavor":"They have been chosen by fate to bear witness to creation.",
@@ -121,7 +121,7 @@
                 "When the hero’s body is killed or shut down, it immediately breaks down into a luminous body radiating peace and freedom. Over a few days, it  solidifies into a physical body. Each solidification increases one stat by 1 and reduces another stat by 1. It imposes an additional ‘burden of witnessing’ on the hero. This burden cannot be removed normally. After bearing seven such burdens, the hero is jaded and has no further desire to adventure."
             ]
         },
-        {
+        "beneficiaryofchoice":{
             "name":"Beneficiary of Choice",
             "tags":["trait","ba"],
             "flavor":"Some give, they receive.",
@@ -133,7 +133,7 @@
                 "When a hero would die, they instead find themselves awake and unable to move in a strange coccoon, with shadowy shapes talking about “preparing the backup”. Next thing they know, they’re back in their bed missing some memories (hero permanently loses 1 skill)."
             ]
         },
-        {
+        "bloodclad":{
             "name":"Bloodclad",
             "tags":["trait","ha","combat"],
             "flavor":"Action hero style.",
@@ -143,7 +143,7 @@
                 "At 0 life, hero can shrug off one more ha attack per round."
             ]
         },
-        {
+        "bloodynimble":{
             "name":"Bloody Nimble ",
             "tags":["trait","ha","combat"],
             "flavor":"Speed overwhelming.",
@@ -153,7 +153,7 @@
                 "If the hero suffers any damage, they gain [+] to initiative and agility tests for one round."
             ]
         },
-        {
+        "bluegodssign":{
             "name":"Blue God’s Sign",
             "tags":["mutation","ha","chimerism"],
             "flavor":"From rot comes purification.",
@@ -164,7 +164,7 @@
                 "A whiteish substance with the consistency of clotted yoghurt continually drips from the symbiotes. This milk of the Blue God has strong analgesic and numbing properties. The hero becomes entirely resistant to diseases and poisons."
             ]
         },
-        {
+        "bodymagic":{
             "name":"Body Magic",
             "tags":["trait","ha","technological"],
             "flavor":"There is no mind but flesh.",
@@ -174,7 +174,7 @@
                 "Increase strength or endurance by 1. May use their strength or endurance stat for ka defences."
             ]
         },
-        {
+        "bravelyrunsaway":{
             "name":"Bravely Runs Away",
             "tags":["trait","ba","combat"],
             "flavor":"Can’t touch this.",
@@ -184,7 +184,7 @@
                 "Cowardly reputation. [+] to surprise attacks and against fear effects. Takes half damage from social attacks."
             ]
         },
-        {
+        "breaktheweak":{
             "name":"Break the Weak",
             "tags":["trait","ha","combat"],
             "flavor":"Cut them down like wheat.",
@@ -194,7 +194,7 @@
                 "Hero gains 1d4 life every time they strike a lower level opponent."
             ]
         },
-        {
+        "channelinghands":{
             "name":"Channeling Hands",
             "tags":["trait","ka","cosmic"],
             "flavor":"Be the conduit.",
@@ -206,7 +206,7 @@
                 "Conduit grows. Damage increases two more steps (e.g. 1d6 to 1d12)."
             ]
         },
-        {
+        "chromaticavatar":{
             "name":"Chromatic Avatar",
             "tags":["trait","ka","cosmic"],
             "flavor":"There is power in this hue.",
@@ -218,7 +218,7 @@
                 "With one hand they can drain other hues from objects, with the other they can impart their own hue to objects. This is about as fast and effective as regular hand painting, so changing the colour of a large object will take quite a while."
             ]
         },
-        {
+        "citoyenformidable":{
             "name":"Citoyen Formidable",
             "tags":["trait","ba"],
             "flavor":"The city makes the citizen.",
@@ -228,7 +228,7 @@
                 "Hero deals damage with [+] in cities. The environment is full of improvised weapons."
             ]
         },
-        {
+        "combatmonster":{
             "name":"Combat Monster",
             "tags":["trait","ha","combat"],
             "flavor":"Fight alone. Fight dirty.",
@@ -237,7 +237,7 @@
                 "When the hero fights alone, their opponents never gain [+] from flanking or outnumbering the hero.","When the hero fights an equal or higher level opponent alone, they gain [+] to damage and damage dice explode."
             ]
         },
-        {
+        "cosmicchanneling":{
             "name":"Cosmic Channeling",
             "tags":["mutation","ka","cosmic"],
             "flavor":"All magic. From the same void.",
@@ -247,7 +247,7 @@
                 "It is now an easy test to capture spell echoes."
             ]
         },
-        {
+        "criticalmaster":{
             "name":"Critical Master",
             "tags":["trait","ha","combat"],
             "flavor":"Knows where it hurts.",
@@ -257,7 +257,7 @@
                 "Multiplier is now equal to level or x5, whichever is higher (max x8)"
             ]
         },
-        {
+        "deathhunger":{
             "name":"Death Hunger",
             "tags":["trait","ha","combat"],
             "flavor":"Death awakens the blood demon.",
@@ -266,7 +266,7 @@
                 "Hero also gains cumulative +1 to damage for every enemy taken out.","Hero also regains 1d6 life for every enemy dropped."
             ]
         },
-        {
+        "deepskillaugmentation":{
             "name":"Deep Skill Augmentation",
             "tags":["mutation","ha","technological"],
             "flavor":"A protein machine ghost infects the hero’s brain, feeding them memories and skills from someone long dead.",
@@ -276,7 +276,7 @@
                 "Rewiring is completed. The hero becomes tetrachromatic, seeing a wider spectrum of colours. They gain +1 charisma. The ghost of a dead personality becomes a lodger in their brain."
             ]
         },
-        {
+        "devastator":{
             "name":"Devastator",
             "tags":["trait","ha","combat"],
             "flavor":"Damage is everything.",
@@ -286,7 +286,7 @@
                 "Extra damage is equal to level or +6, whichever is higher."
             ]
         },
-        {
+        "disembodied":{
             "name":"Disembodied",
             "tags":["trait","ka","cosmic"],
             "flavor":"Has no eyes to weep.",
@@ -297,7 +297,7 @@
                 "They can create a strong gust of wind or a sharp temperature difference. They can also manifest within a boulder-sized object, perhaps a house or dinosaur. This manifestation costs 4 life per hour or so."
             ]
         },
-        {
+        "dosemaster":{
             "name":"Dosemaster",
             "tags":["trait","ka","technological"],
             "flavor":"Measured in all things.",
@@ -307,7 +307,7 @@
                 "Hero can microdose poisons and meds, using them to provide resistance to similar poisons, vaccinating against diseases, and doubling the effects of potions."
             ]
         },
-        {
+        "eaterscurse":{
             "name":"Eater’s Curse",
             "tags":["mutation","ha","chimerism"],
             "flavor":"Its hunger shall consume the cosmos.",
@@ -318,7 +318,7 @@
                 "Entire head unfolds into biting maw. Bite attack (1d8)."
             ]
         },
-        {
+        "echolocator":{
             "name":"Echolocator",
             "tags":["trait","ha","technological"],
             "flavor":"Voices paint pictures.",
@@ -328,7 +328,7 @@
                 "Hero can detect heartbeats, subvocal tics, breathing rates, and blood pressure by sound and touch. Gains 1 aura and [+] to detecting inconsistencies."
             ]
         },
-        {
+        "electromagichacker":{
             "name":"Electromagic Hacker",
             "tags":["trait","ka","technological"],
             "flavor":"Talk long enough into the machine, and it will talk back.",
@@ -338,7 +338,7 @@
                 "Hero can give target one free command per turn."
             ]
         },
-        {
+        "emptyshell":{
             "name":"Empty Shell",
             "tags":["trait","ka","technological"],
             "flavor":"No hell or heaven awaits.",
@@ -348,7 +348,7 @@
                 "Their ka defence is permanently 13. They are resistant to all magical damage."
             ]
         },
-        {
+        "enduranceofecstasy":{
             "name":"Endurance of Ecstasy",
             "tags":["mutation","ha"],
             "flavor":"Through the joy of existence shared, all sufferings are easier.",
@@ -358,7 +358,7 @@
                 "+2 endurance or hero gains two bonus slots for burdens."
             ]
         },
-        {
+        "eternalchampion":{
             "name":"Eternal Champion",
             "tags":["trait","ba","cosmic"],
             "flavor":"Carrying the torch of purpose beyond the gates of time and hate.",
@@ -369,7 +369,7 @@
                 "When wielding the eternal weapon, all the hero’s critical hit damage multipliers are increased by their proficiency. E.g., pro +4 increases a multiplier from x2 to x6. This applies to all attacks, not just with the weapon."
             ]
         },
-        {
+        "existentialdysfunction":{
             "name":"Existential Dysfunction",
             "tags":["mutation","ka","cosmic"],
             "flavor":"Beyond reality, other ways.",
@@ -380,7 +380,7 @@
                 "The hero is no longer quite there, appearing as somehow translucent and absent. They have a harder time interacting with the physical world and carrying heavy loads. At the same time, the world also has a harder time affecting them. "
             ]
         },
-        {
+        "expertsidekicks":{
             "name":"Expert Sidekicks",
             "tags":["trait","ba"],
             "flavor":"Friends are the best.",
@@ -390,7 +390,7 @@
                 "The hero’s expert sidekicks add twice the hero’s proficiency."
             ]
         },
-        {
+        "extraordinaryprecognition":{
             "name":"Extraordinary Precognition",
             "tags":["mutation","ka"],
             "flavor":"Feel the pain of the future.",
@@ -400,7 +400,7 @@
                 "Dooms were always written. When disaster befalls the hero and their companions, the hero can spend 7 life and one prized possession. All along, they were not there. They had even warned their companions, but they chose not to listen. The hero makes their escape, aware that there was truly nothing they could do to save anybody but themselves. "
             ]
         },
-        {
+        "fingersoftheotherside":{
             "name":"Fingers of the Other Side",
             "tags":["mutation","ha","chimerism"],
             "flavor":"Reality will conform to revelation.",
@@ -420,7 +420,7 @@
                 "The digits are so many and so powerful they can unfold like a fan and easily trap or catch anything trying to pass by."
             ]
         },
-        {
+        "fleshsongaudiophile":{
             "name":"Fleshsong Audiophile",
             "tags":["trait","ka","technological"],
             "flavor":"Codes of creation singing in the flesh of the mortal and damned.",
@@ -430,7 +430,7 @@
                 "Can detect presence of living creatures now and in the past from environmental residues—traces in dirt and water—from touch alone."
             ]
         },
-        {
+        "fluidanatomy":{
             "name":"Fluid Anatomy",
             "tags":["trait","ha","chimerism"],
             "flavor":"They have organs they shouldn’t have in places they shouldn’t be.",
@@ -440,7 +440,7 @@
                 "Can remove 1 burden per session."
             ]
         },
-        {
+        "foolsluck":{
             "name":"Fool’s Luck",
             "tags":["trait","ba","cosmic"],
             "flavor":"They don’t know their luck.",
@@ -450,7 +450,7 @@
                 "Everytime they roll a natural 1, they gain a [+] to their next roll."
             ]
         },
-        {
+        "friendoftheelement":{
             "name":"Friend of the Element",
             "tags":["trait","ba","cosmic"],
             "flavor":"Accept the love of the source.",
@@ -462,7 +462,7 @@
                 "Hero always deals double damage with element."
             ]
         },
-        {
+        "thefurferal":{
             "name":"The Fur Feral",
             "tags":["mutation","ha","chimerism"],
             "flavor":"The wild will break free.",
@@ -482,7 +482,7 @@
                 }
             ]
         },
-        {
+        "futureproof":{
             "name":"Futureproof",
             "tags":["trait","ka","technological"],
             "flavor":"The hubris of technology, undone.",
@@ -493,7 +493,7 @@
                 "Machines touched by the hero make a relevant ha (or ka if available) test or shut down. Sentient machines dislike the hero."
             ]
         },
-        {
+        "gastrointestinalupgrade":{
             "name":"Gastrointestinal Upgrade",
             "tags":["trait","ha","technological"],
             "flavor":"Everything should be fuel.",
@@ -503,7 +503,7 @@
                 "Hero has a ka-mill in their wormhole heart. They eat the souls of their victims, temporarily increasing their life total by 1d6 points for every level of a creature they ritually consume (to a maxi-mum equal to their life total)."
             ]
         },
-        {
+        "gentletraveller":{
             "name":"Gentle Traveller",
             "tags":["trait","ba"],
             "flavor":"Oh, what wonders!",
@@ -521,7 +521,7 @@
                 }
             ]
         },
-        {
+        "gifted":{
             "name":"Gifted",
             "tags":["trait","ha","ka","ba","cosmic"],
             "flavor":"They have that special touch.",
@@ -531,7 +531,7 @@
                 "Increases 1 more."
             ]
         },
-        {
+        "glitteringincorruptible":{
             "name":"Glittering Incorruptible",
             "tags":["trait","ha","ba","technological"],
             "flavor":"The body is a temple of purity.",
@@ -541,7 +541,7 @@
                 "Hero can not be reduced to 0 life through social attacks. They are simply too golden."
             ]
         },
-        {
+        "goodnightmessenger":{
             "name":"Goodnight Messenger",
             "tags":["trait","ka","technological"],
             "flavor":"The end. The end.",
@@ -553,7 +553,7 @@
                 "Entropy prophet. Hero gains ka defence equal to their level. All spell damage dice near the hero are increased by their level."
             ]
         },
-        {
+        "gravitas":{
             "name":"Gravitas",
             "tags":["trait","ba"],
             "flavor":"The presence abides.",
@@ -563,7 +563,7 @@
                 "Increase aura or endurance by 1. May use their aura or endurance stat for ba defences."
             ]
         },
-        {
+        "hackedshorttimer":{
             "name":"Hacked Shorttimer",
             "tags":["trait","ha","technological"],
             "flavor":"We were better for a while.",
@@ -573,7 +573,7 @@
                 "Flawed divinity. Hero gains 1 more strength, endurance, or agility, and 1 charisma. Their physical stat maximum is increased to 7. Hero suffers [-] against one kind of elemental assault."
             ]
         },
-        {
+        "honourbound":{
             "name":"Honour Bound",
             "tags":["trait","ba"],
             "flavor":"Where courts dare not tread, honour is the law.",
@@ -583,7 +583,7 @@
                 "Tribal aura. Hero takes half damage from all social attacks in the wild lands."
             ]
         },
-        {
+        "hostileheavensarmor":{
             "name":"Hostile Heaven’s Armour",
             "tags":["mutation","ha","chimerism"],
             "flavor":"In the heavens, there is only war.",
@@ -595,7 +595,7 @@
                 "The bony structures develop into a terrifying suit of biological armour (+5 ha defence)."
             ]
         },
-        {
+        "hyperlogical":{
             "name":"Hyperlogical",
             "tags":["trait","ka"],
             "flavor":"Who needs a heart anyway?",
@@ -605,7 +605,7 @@
                 "Necessary sacrifices. Gains 1 action whenever an ally is defeated in a conflict. Gains 1 life whenever an ally is injured. Gains [+] whenever they are injured."
             ]
         },
-        {
+        "idleonesclaws":{
             "name":"Idle One’s Claws",
             "tags":["mutation","ha","chimerism"],
             "flavor":"The predator does not work, it takes.",
@@ -625,7 +625,7 @@
                 }
             ]
         },
-        {
+        "improved":{
             "name":"Improved",
             "tags":["trait","technological"],
             "flavor":"A fantascience product.",
@@ -635,7 +635,7 @@
                 "Hero gains gains 1 more stat point and a mutation or trait."
             ]
         },
-        {
+        "ineffablepatternsofbeing":{
             "name":"Ineffable Patterns of Being",
             "tags":["mutation","ka","cosmic"],
             "flavor":"ERROR. Reality compile fail. There is no abort, there is only retry.",
@@ -655,7 +655,7 @@
                 }
             ]
         },
-        {
+        "inspiringhero":{
             "name":"Inspiring Hero",
             "tags":["trait","ba"],
             "flavor":"For great glory!",
@@ -665,7 +665,7 @@
                 "The number of possible inspired sidekicks increases to the hero’s level or proficiency or 4, whichever is highest."
             ]
         },
-        {
+        "insufferablycute":{
             "name":"Insufferably Cute",
             "tags":["trait","ba","social"],
             "flavor":"Just the cutest.",
@@ -675,7 +675,7 @@
                 "Mascot. All allies near the hero gain [+] while protecting them."
             ]
         },
-        {
+        "jadebrain":{
             "name":"Jade Brain",
             "tags":["trait","ka","technological"],
             "flavor":"There are colours beyond god.",
@@ -685,7 +685,7 @@
                 "Hero can project their hopes and fears into others, gaining [+] when sharing their emotions or reading other’s intent. Hero also gains 1 ba and ka defence."
             ]
         },
-        {
+        "justtooordinary":{
             "name":"Just Too Ordinary",
             "tags":["trait","ba","social"],
             "flavor":"Common as muck.",
@@ -695,7 +695,7 @@
                 "Social dynamite. Hero gains 1 charisma and can make themselves look completely striking and unforgettable. [+] to ba rolls against different social classes. Can spend 1 life encoura-ging nearby allies, giving them [+] to rolls for the rest of the round."
             ]
         },
-        {
+        "kamarked":{
             "name":"Ka Marked",
             "tags":["trait","ba","cosmic"],
             "flavor":"Chosen by the overgods.",
@@ -707,7 +707,7 @@
                 "Hark the celestial voices. Hero adds their charisma to ha and ka attacks. The hero’s allies and other nearby sympathetic creatures gain [+] to rolls against targets marked by the hero."
             ]
         },
-        {
+        "lazarussoldier":{
             "name":"Lazarus Soldier",
             "tags":["trait","ha","combat"],
             "flavor":"Didn’t let them grind ya down.",
@@ -717,7 +717,7 @@
                 "After the hero dies, they return to life on the next full moon or another significant astrological event. This creates a probabilistic dysfunction and unleashes an undead plague."
             ]
         },
-        {
+        "lifeboundgift":{
             "name":"Lifebound Gift",
             "tags":["mutation","ha","cosmic"],
             "flavor":"The hero’s being is bound more tightly to the given world. Their life force burns brighter.",
@@ -727,7 +727,7 @@
                 "Hero gains a second, mystical heart, which holds 2 life for every current and future level. The hero can only use these life points to pay spell prices or as gifts to other living creatures."
             ]
         },
-        {
+        "lifewindinhalation":{
             "name":"Lifewind Inhalation",
             "tags":["trait","ha","combat"],
             "flavor":"Deep breaths, action hero.",
@@ -738,7 +738,7 @@
                 "Four times. Additionally, spending a hero die to recover life makes them glow bright as a torch for a few hours."
             ]
         },
-        {
+        "lucklessmess":{
             "name":"Luckless Mess",
             "tags":["trait","cosmic"],
             "flavor":"Everything goes wrong.",
@@ -748,7 +748,7 @@
                 "Critical fail ranges increase 1 more step. The hero gains 1d6 life or 1 stat point whenever anybody near them rolls a critical failure."
             ]
         },
-        {
+        "luminous":{
             "name":"Luminous",
             "tags":["trait","ha","technological"],
             "flavor":"Let the light shine out.",
@@ -758,7 +758,7 @@
                 "They sparkle like diamonds and are resistant to physical damage in bright light."
             ]
         },
-        {
+        "machinewhisperer":{
             "name":"Machine Whisperer",
             "tags":["trait","ba","technological"],
             "flavor":"Soothe the savage robot.",
@@ -768,7 +768,7 @@
                 "[+] to effects when using machines. Golem guns do more damage, vechs leap further, cracklewand fields last longer."
             ]
         },
-        {
+        "magicmule":{
             "name":"Magic Mule",
             "tags":["mutation","ha"],
             "flavor":"Such broad shoulders, such strong back.",
@@ -778,7 +778,7 @@
                 "The hero can carry five additional cumbersome sacks for a total of ten. That’s about a ton."
             ]
         },
-        {
+        "masterblaster":{
             "name":"Master Blaster",
             "tags":["trait","ka","combat"],
             "flavor":"Only Blaster leave!",
@@ -788,7 +788,7 @@
                 "Oops. Blaster blew up. Time for a new hero."
             ]
         },
-        {
+        "memorypalace":{
             "name":"Memory Palace",
             "tags":["trait","ka","cosmic"],
             "flavor":"A prison of dreams traps the unwary.",
@@ -799,7 +799,7 @@
                 "Hero’s memory point total from this ability is doubled."
             ]
         },
-        {
+        "metabolichyperdrive":{
             "name":"Metabolic Hyperdrive",
             "tags":["mutation","ha","technological"],
             "flavor":"The difference under the skin.",
@@ -809,7 +809,7 @@
                 "Abmortality engines in the hero’s body keep their genetic source code in perfect condition and breakdown all toxins and drugs that might interfere with their functioning. The hero can also shutdown, going into a week-long debugging mode, which purges all harmful viruses and organisms from their body."
             ]
         },
-        {
+        "meticulousritualist":{
             "name":"Meticulous Ritualist",
             "tags":["trait","ka","technological"],
             "flavor":"Accurate ritual records must be kept for meaningful summoning!",
@@ -819,7 +819,7 @@
                 "Hero reduces price of all ritual spells they cast by 2 (minimum of 1)."
             ]
         },
-        {
+        "morethenhuman":{
             "name":"More Than Human",
             "tags":["trait","ba","technological"],
             "flavor":"The cosmos gazing at itself.",
@@ -829,7 +829,7 @@
                 "Tapping the cosmic mind, the hero gains [+] to all social and mental interactions with alien sentiences. Additionally, the hero can willingly abandon their mortal shell and become a ka-ba spirit. This is a one-way trip. Afterwards, humans count as alien sentiences for the hero."
             ]
         },
-        {
+        "motorbreath":{
             "name":"Motorbreath",
             "tags":["trait","ka","technological"],
             "flavor":"Give me that which I desire.",
@@ -839,7 +839,7 @@
                 "Break on through. [+] to damage and initiative with machines with engines. Critical range increased one step in vehicular combat."
             ]
         },
-        {
+        "naturalborncomrade":{
             "name":"Natural Born Comrade",
             "tags":["trait","ba","social"],
             "flavor":"Icon of the hunter scavengers.",
@@ -849,7 +849,7 @@
                 "Hero suffers no penalties from opulent wealth in the eyes of the poor since they are only safeguarding the wealth for the common folk."
             ]
         },
-        {
+        "neuralmachinesymbiote":{
             "name":"Neural Machine Symbiote",
             "tags":["trait","ka","technological"],
             "flavor":"Silver ships slip through my veins.",
@@ -860,7 +860,7 @@
                 "Join the silver collective. Hero gains 3 bonus inventory slots for mental constructs, memories, skills, or burdens. Gains [+] to any tests that require access to complex memories or data. Sometimes receives instructions from a collective neural identity."
             ]
         },
-        {
+        "neuroempathy":{
             "name":"Neuroempathy",
             "tags":["trait","ba","social"],
             "flavor":"Mirror-neurons mirror neurons.",
@@ -871,7 +871,7 @@
                 "Empathic blot. Deals double ka or ba damage when making an emotional attack."
             ]
         },
-        {
+        "anewface":{
             "name":"A New Face",
             "tags":["mutation","ha","chimerism"],
             "flavor":"Hypocrisy stripped reveals a new visage.",
@@ -900,7 +900,7 @@
                 }
             ]
         },
-        {
+        "noblesseobliged":{
             "name":"Noblesse Obliged",
             "tags":["trait","ba","social"],
             "flavor":"Better folks are bred, not made.",
@@ -910,7 +910,7 @@
                 "Friends in high places. Once per session, the hero can call on a favour to get out of a pickle or rum do. Hero gains [+] in all courts of law and public opinion."
             ]
         },
-        {
+        "oldtechimmunityghost":{
             "name":"Oldtech Immunity Ghost",
             "tags":["mutation","ha","technological"],
             "flavor":"The hero gains a semi-sentient distributed immune system.",
@@ -920,7 +920,7 @@
                 "Their second resistance also becomes immunity, and their immune system becomes a fully sentient hive-symbiote (L3, caustic) that communicates via direct brain link. The symbiote can perform molecular-level analyses of substances. It also has an acerbic sense of humour. "
             ]
         },
-        {
+        "omniactivation":{
             "name":"Omniactivation",
             "tags":["trait","ka","technological"],
             "flavor":"The red button will be pushed.",
@@ -930,7 +930,7 @@
                 "When faced with any fantascientific creature, the hero can spend 1 life to ‘discover’ a backdoor switch. Even odds whether this weakens the creature, or activates a new mode."
             ]
         },
-        {
+        "optidroneupgrade":{
             "name":"Optidrone Upgrade",
             "tags":["mutation","ha","technological"],
             "flavor":"Eyes like the star gods.",
@@ -940,7 +940,7 @@
                 "Hero gains the ability to remove their eyes and use them as remote drones. Each eye can survive for up to a day outside of its socket. It costs the hero 1 life and 1 hour to grow a new eye. They can grow as many eyes at a time as they have sockets."
             ]
         },
-        {
+        "overlookedbythegods":{
             "name":"Overlooked by the Gods",
             "tags":["trait","ba","cosmic"],
             "flavor":"Omniscience is a lie.",
@@ -950,7 +950,7 @@
                 "Hero gains [+] to all attacks and direct tests against the extra-normal ‘gods’ and their ‘divine’ servitors. They just slide off those creatures’ perception fields."
             ]
         },
-        {
+        "panmolecularsensorium":{
             "name":"Panmolecular Sensorium",
             "tags":["trait","ka","technological"],
             "flavor":"Hear the songs of the oceans. Read stories in wind and stream.",
@@ -960,7 +960,7 @@
                 "Hero detects submolecular changes in reality. They smell magic and gain +2 ka defences."
             ]
         },
-        {
+        "perfectlybalanced":{
             "name":"Perfectly Balanced",
             "tags":["trait","ka"],
             "flavor":"Suspended between steps.",
@@ -970,7 +970,7 @@
                 "Gains [+] to balance competing claims and pass legal or moral judgements."
             ]
         },
-        {
+        "pheromonepanoply":{
             "name":"Pheromone Panoply",
             "tags":["trait","ha","ba","technological"],
             "flavor":"Scent worth a hundred memories.",
@@ -981,7 +981,7 @@
                 "Hero uses pheromones to enhance their mind-affecting ka and all ba attacks. Damage dice increase one step and become exploding."
             ]
         },
-        {
+        "plasticbonestructures":{
             "name":"Plastic Bone Structures",
             "tags":["mutation","ha","technological"],
             "flavor":"Flexibility at all costs.",
@@ -991,7 +991,7 @@
                 "The hero adjusts their bones  so swiftly that they gain [+] in physical conflict when relevant."
             ]
         },
-        {
+        "playsetcorpus":{
             "name":"Playset Corpus",
             "tags":["mutation","ha","chimerism"],
             "flavor":"The body is a delicate playground.",
@@ -1002,7 +1002,7 @@
                 "Hero can rearrange their bone structure almost at will. Bones travel within their flesh, creating alien forms reminiscent of the vatula-vyakula of the Restless Second Creation."
             ]
         },
-        {
+        "pocketpacker":{
             "name":"Pocket Packer",
             "tags":["trait","ba"],
             "flavor":"More for everyone.",
@@ -1012,7 +1012,7 @@
                 "The extra valuables are now worth €3d6 x level. Hero also gains [+] to gambling, card tricks, and using hidden weapons."
             ]
         },
-        {
+        "polybodyunity":{
             "name":"Polybody Unity",
             "tags":["trait","ka","chimerism"],
             "flavor":"More bodies, more choices.",
@@ -1023,7 +1023,7 @@
                 "Hero can have up to 9 bodies. Some of their bodies can be synthetics."
             ]
         },
-        {
+        "porcelainskin":{
             "name":"Porcelain Skin",
             "tags":["trait","ha","technological"],
             "flavor":"They made people prettier once upon a time.",
@@ -1033,7 +1033,7 @@
                 "Hero’s diamond-smooth skin resists slashing and piercing damage. Gains 1 ha defence."
             ]
         },
-        {
+        "protectorofinnocents":{
             "name":"Protector of Innocents",
             "tags":["trait","ba","combat"],
             "flavor":"Despite the gore, a noble cause.",
@@ -1043,7 +1043,7 @@
                 "[-] to all attacks and damage against the hero while defending an innocent."
             ]
         },
-        {
+        "predatoryassimilator":{
             "name":"Predatory Assimilator",
             "tags":["mutation","ha"],
             "flavor":"Almost a ghoul.",
@@ -1053,7 +1053,7 @@
                 "Recover 4 life for every stone or 1 stat for 2 stones. Remove 1 burden by consuming 10 stones and vomiting them out again (this does not restore life or stats)."
             ]
         },
-        {
+        "proteaninfinity":{
             "name":"Protean Infinity",
             "tags":["mutation","ha","chimerism"],
             "flavor":"Fixity of form was a mistake.",
@@ -1064,7 +1064,7 @@
                 "Hero becomes a protean thing of strange organelles and fluid body plan."
             ]
         },
-        {
+        "psionscion":{
             "name":"Psion Scion",
             "tags":["trait","ka","cosmic"],
             "flavor":"A soft blanket for the soul.",
@@ -1074,7 +1074,7 @@
                 "Empathetic enlightenment. [+] to assist, console, and otherwise help scared and vulnerable creatures. Resistant to fear and trickery."
             ]
         },
-        {
+        "psioniceruption":{
             "name":"Psionic Eruption",
             "tags":["mutation","ka"],
             "flavor":"Inhuman mental abilities. Fear awakens in baseliners’ hearts.",
@@ -1084,7 +1084,7 @@
                 "Hero gains +2 ka defence."
             ]
         },
-        {
+        "qanatofpower":{
             "name":"Qanat of Power",
             "tags":["trait","ka","technological"],
             "flavor":"Hidden channels, rushing energies.",
@@ -1094,7 +1094,7 @@
                 "Casts as 4 levels higher."
             ]
         },
-        {
+        "querulouskvetch":{
             "name":"Querulous Kvetch",
             "tags":["trait","ba"],
             "flavor":"Complaining is a cure.",
@@ -1104,7 +1104,7 @@
                 "Hero gains a third special burden: “kvetching viciously.” When the hero gains this burden, they suffer [-] to social inter-actions. They also gain [+] to one action per round."
             ]
         },
-        {
+        "radiantpanoptics":{
             "name":"Radiant Panoptics",
             "tags":["trait","ka","technological"],
             "flavor":"The inverse of colour blindness. Redline machine microbes swirl in the hero’s eyes.",
@@ -1114,7 +1114,7 @@
                 "Hero’s senses can probe through several layers of base matter. Gains [+] when searching for hidden objects or trying to figure out if somebody is standing behind the draperies."
             ]
         },
-        {
+        "radiationsskin":{
             "name":"Radiation’s Skin",
             "tags":["mutation","ha","chimerism"],
             "flavor":"The fires of the celestial truths were not made to reside within the skin of man.",
@@ -1126,7 +1126,7 @@
                 "Skin is entirely replaced with a ghostly radiant aura that leaves faint burns and bruises on organic materials. The aura-skin gives off a greenish light, strong enough to read by if one squints."
             ]
         },
-        {
+        "rauberbaron":{
             "name":"Rauber Baron",
             "tags":["trait","ba","social"],
             "flavor":"Money is magic.",
@@ -1136,7 +1136,7 @@
                 "Hero reveals they have a servile butler running a monopolistic corporation on their behalf. Hero can deal mental damage with social attacks. It’s called owning a media subsidiary. Once per session, they turn out to own a useful building or asset."
             ]
         },
-        {
+        "renownedracer":{
             "name":"Renowned Racer",
             "tags":["trait","ka","technological"],
             "flavor":"The grand velocity trophy proves life has meaning.",
@@ -1146,8 +1146,8 @@
                 "Gains an extra driving action every turn."
             ]
         },
-        {
-            "name":"Rubberskin ",
+        "rubberskin":{
+            "name":"Rubberskin",
             "tags":["trait","ha","technological"],
             "flavor":"Nemesis of the thunder demons.",
             "description":"Skin laced with symbiotic insulating caucho-fungoid.",
@@ -1157,7 +1157,7 @@
                 "No longer fully human but an evolved caucho-fungoid chimera. Electromagic and energy attacks heal the hero. They don’t repair broken bones or open wounds. Those still need surgery."
             ]
         },
-        {
+        "secretweapon":{
             "name":"Secret Weapon",
             "tags":["mutation","ha","technological"],
             "flavor":"They were the weapon all along.",
@@ -1178,7 +1178,7 @@
                 "Damage increased 1 more step and +1 ha defence."
             ]
         },
-        {
+        "securedflesh":{
             "name":"Secured Flesh",
             "tags":["trait","ha","technological"],
             "flavor":"I am that I am.",
@@ -1189,7 +1189,7 @@
                 "Regeneration backup. Hero removes 1 physical burden per night of sleep. Hero recovers double life from hero dice."
             ]
         },
-        {
+        "selfimprovementprotocols":{
             "name":"Self-Improvement Protocols",
             "tags":["trait","ha","technological"],
             "flavor":"Machines in the bloodstream do what they will.",
@@ -1200,7 +1200,7 @@
                 "Their upgrade capacity is increased to 2 biomachine slots per level (maximum of 11)."
             ]
         },
-        {
+        "signofthethirdhand":{
             "name":"Sign of the Third Hand",
             "tags":["mutation","ha","chimerism"],
             "flavor":"New hands reach new truths.",
@@ -1220,7 +1220,7 @@
                 "Another appendage, just as powerful, bursts forth. Limb buds stud the body."
             ]
         },
-        {
+        "skybroughtcurse":{
             "name":"Sky-Brought Curse",
             "tags":["mutation","ha","chimerism"],
             "flavor":"They sailed on wings among the galaxies.",
@@ -1231,7 +1231,7 @@
                 "The massive powered wings drain bone and gristle and flesh from the rest of the hero, leaving them stick-thin but capable of flight."
             ]
         },
-        {
+        "songwormed":{
             "name":"Song Wormed",
             "tags":["mutation","ka","cosmic"],
             "flavor":"There are songs in the lines of creation.",
@@ -1250,7 +1250,7 @@
                 "Lacy, antennae-like horns erupt from the hero’s head, letting them understand the strange radiations they could previously only detect."
             ]
         },
-        {
+        "sparklefingers":{
             "name":"Sparklefingers",
             "tags":["trait","ka","technological","combat"],
             "flavor":"Conducting the ambient electromagic of the world.",
@@ -1260,7 +1260,7 @@
                 "Increases to 1d8 damage. In medical settings hero's touch gives [+] or [-]; restarting stopped hearts, improving muscle tone, reducing viral replication."
             ]
         },
-        {
+        "spiritbreaker":{
             "name":"Spiritbreaker",
             "tags":["trait","ka","combat"],
             "flavor":"Make their noses bleed..",
@@ -1270,7 +1270,7 @@
                 "When the hero’s ka attack hits, they gain 1d4 life."
             ]
         },
-        {
+        "spelldetonator":{
             "name":"Spell Detonator",
             "tags":["trait","ka","combat"],
             "flavor":"Things must boom.",
@@ -1280,7 +1280,7 @@
                 "[+] to all spell damage."
             ]
         },
-        {
+        "stargazer":{
             "name":"Stargazer",
             "tags":["trait","ka","cosmic"],
             "flavor":"Through madness, enlightenment.",
@@ -1291,7 +1291,7 @@
                 "Enlightened. Immune to madness. Resistant to chaos, confusion and the pain of existence."
             ]
         },
-        {
+        "strengthofthesolitarysun":{
             "name":"Strength of the Solitary Sun",
             "tags":["mutation","ha"],
             "flavor":"As though powered by the nuclear furnaces of the cosmos itself.",
@@ -1301,7 +1301,7 @@
                 "+2 strength or max to 9."
             ]
         },
-        {
+        "symbioticfriend":{
             "name":"Symbiotic Friend",
             "tags":["trait","ba","technological"],
             "flavor":"There’s a little more than me.",
@@ -1313,7 +1313,7 @@
                 "It is an incarnation of skill. Its sum with that skill is +13."
             ]
         },
-        {
+        "symbolicreceiver":{
             "name":"Symbolic Receiver",
             "tags":["trait","ka","technological"],
             "flavor":"That’s … that’s not really a thing.",
@@ -1324,7 +1324,7 @@
                 "Casts all symbolic spells as 2 levels higher. Gains 1 ka defence."
             ]
         },
-        {
+        "technopriest":{
             "name":"Technopriest",
             "tags":["trait","ka","technological"],
             "flavor":"Sufficiently advanced magic.",
@@ -1336,7 +1336,7 @@
                 "Conduit of the ageless. Gains 1 ha and ka defence. Can let their rider take control. While the rider is in control, hero casts all spells as though they were level 17. Hero also gains 1 burden per round. Will the rider also leave?"
             ]
         },
-        {
+        "thoughtfulasthothtrueseer":{
             "name":"Thoughtful as Thoth Trueseer",
             "tags":["mutation","ka"],
             "flavor":"With progressive insight, human constraints and fears fade away.",
@@ -1346,7 +1346,7 @@
                 "+2 thought or hero becomes immune to enchantments and other mind-control technologies."
             ]
         },
-        {
+        "traitorous":{
             "name":"Traitorous",
             "tags":["trait","ba","combat"],
             "flavor":"The opportune moment arrives.",
@@ -1356,7 +1356,7 @@
                 "Bonus damage increases to 3d6*. Critical threat range and hit multiplier increase 1 step."
             ]
         },
-        {
+        "transhumanreflexes":{
             "name":"Transhuman Reflexes",
             "tags":["mutation","ha","technological"],
             "flavor":"Neural rewiring and fast-twitch nodes lifted from the dark sky supersoldier programs.",
@@ -1366,7 +1366,7 @@
                 "Hero gains an additional action or mild precognition (+2 to all defences)."
             ]
         },
-        {
+        "treehugger":{
             "name":"Tree Hugger",
             "tags":["trait","ka"],
             "flavor":"Friend of herbs & fluffy creatures.",
@@ -1378,8 +1378,8 @@
                 "Furious spirit. Gains 1 strength. Hero gains [+] to attacks against targets who threaten their beloved natural environment or disagree with their firm beliefs in even the most minute detail."
             ]
         },
-        {
-            "name":"True Warrior ",
+        "truewarrior":{
+            "name":"True Warrior",
             "tags":["trait","ha","combat"],
             "flavor":"Beyond reality’s gates, only war.",
             "description":["(This ability is not compatible with abilities that decrease a hero’s magic cost.)"],
@@ -1389,8 +1389,8 @@
                 "Adds proficiency bonus to all physical damage and gains 1 ha defence."
             ]
         },
-        {
-            "name":"True Wizard ",
+        "truewizard":{
+            "name":"True Wizard",
             "tags":["trait","ka","technological"],
             "flavor":"Welcome to the universe.",
             "description":["(Magic cost can never be reduced below 1. This ability is not compatible with abilities that increase a hero’s magic cost.)"],
@@ -1400,8 +1400,8 @@
                 "Hero reduces all spell prices by one (minimum of 1) and gains 1 ka defence."
             ]
         },
-        {
-            "name":"Ultimate Chimerism ",
+        "ultimatechimerism":{
+            "name":"Ultimate Chimerism",
             "tags":["mutation","ha","chimerism"],
             "flavor":"No beast shall dominate another beast in the chimerical time.",
                 
@@ -1421,7 +1421,7 @@
                 "The hero pupates, and in a grotesque transformation, their abdomen, hips, and lower limbs are duplicated. With four legs, their movement is faster or more sure, but they are less manoeuvrable. Chairs and tight spaces become uncomfortable."
             ]
         },
-        {
+        "unblinking":{
             "name":"Unblinking",
             "tags":["trait","ka","technological"],
             "flavor":"An inhuman stare.",
@@ -1431,7 +1431,7 @@
                 "Reptilian. Hero can stand completely motionless and gains [+] to tests in any round where their side has lost initiative."
             ]
         },
-        {
+        "uncannyconfidence":{
             "name":"Uncanny Confidence",
             "tags":["trait","ba","social","combat"],
             "flavor":"Reality bends before belief.",
@@ -1441,7 +1441,7 @@
                 "Hero gains [+] to all social damage rolls."
             ]
         },
-        {
+        "undyingparasiteheart":{
             "name":"Undying Parasite Heart",
             "tags":["trait","ha","technological"],
             "flavor":"Have a little piece of their heart.",
@@ -1451,7 +1451,7 @@
                 "The monstrous heart is even stronger. The hero permanently gains 1 endurance. Every time it takes over a new host, the hero acquires one of the host’s skills. If the hero has no available skill slots left, they may use inventory slots to store additional skills in subsidiary neural organs."
             ]
         },
-        {
+        "upliftedexemplar":{
             "name":"Uplifted Exemplar",
             "tags":["trait","ha","ka","technological"],
             "flavor":"Now they understand.",
@@ -1463,7 +1463,7 @@
                 "Hero gains 1 more thought. Maximum increased to 8. Superhuman manual dexterity and astounding brainpower give the hero [+] with improvised equipment, weapons, and world domination plots."
             ]
         },
-        {
+        "vacuumhardened":{
             "name":"Vacuum Hardened",
             "tags":["trait","ha","technological"],
             "flavor":"When did they forget Old World?",
@@ -1473,7 +1473,7 @@
                 "Survives indefinitely in hard vacuum. Hero can synthesize life-sustaining trace minerals and compounds with their internal artazothic organ. Gains 1 aura."
             ]
         },
-        {
+        "vibrantsoul":{
             "name":"Vibrant Soul",
             "tags":["trait","ka","combat"],
             "flavor":"The spirit is faster than the flesh.",
@@ -1483,7 +1483,7 @@
                 "[+] to initiative tests."
             ]
         },
-        {
+        "voidofmemories":{
             "name":"Void of Memories",
             "tags":["trait","ka","cosmic"],
             "flavor":"The spells are eating my mind!",
@@ -1494,7 +1494,7 @@
                 "The points are doubled again (quadrupled in total)."
             ]
         },
-        {
+        "vomeenhancement":{
             "name":"Vome Enhancement",
             "tags":["trait","ha","technological"],
             "flavor":"Now they look into you.",
@@ -1504,7 +1504,7 @@
                 "Hero gains 3 inventory slots. The optophotonics expand and invade other tissues. The hero gains an integrated toolkit for one skill of their choice. This toolkit takes up one slot. The hero also gains a random mutation."
             ]
         },
-        {
+        "wakingboneslament":{
             "name":"Waking Bones’ Lament",
             "tags":["mutation","ha","chimerism"],
             "flavor":"There is no life eternal but death.",
@@ -1524,7 +1524,7 @@
                 }
             ]
         },
-        {
+        "warmind":{
             "name":"War Mind",
             "tags":["trait","ka","combat"],
             "flavor":"All combat is in the spirit.",
@@ -1534,7 +1534,7 @@
                 "Increase aura or thought by 1. May use their aura or endurance stat for ha defences."
             ]
         },
-        {
+        "waterdrinkersraiment":{
             "name":"Waterdrinker’s Raiment",
             "tags":["mutation","ha","chimerism"],
             "flavor":"From void sea come, to void sea return.",
@@ -1545,7 +1545,7 @@
                 "Glowing biochemical factories pockmark the body and let them breathe strange gases and liquids."
             ]
         },
-        {
+        "weaponslave":{
             "name":"Weaponslave",
             "tags":["trait","ba","combat"],
             "flavor":"It calls me its master.",
@@ -1556,7 +1556,7 @@
                 "While the hero bears their weapon, all their defences are increased by 2. Without the weapon, they take double damage from all sources. Finally, the weapon’s healing effect is tripled (restoring 3 life per strike)."
             ]
         },
-        {
+        "wizardkiller":{
             "name":"Wizardkiller",
             "tags":["trait","ka","combat"],
             "flavor":"Smash.",
@@ -1566,7 +1566,7 @@
                 "Hero gains 2 ka defence and deals double damage to wizards and magical creatures. Hero cannot cast spells."
             ]
         },
-        {
+        "wordslikedaggers":{
             "name":"Words Like Daggers",
             "tags":["trait","ba","social"],
             "flavor":"Speak truth to break the spirit.",
@@ -1576,7 +1576,7 @@
                 "Pleasure in pain. Gains 1d6 life whenever their ba attack succeeds."
             ]
         },
-        {
+        "zooticmasterform":{
             "name":"Zootic Masterform",
             "tags":["trait","ka"],
             "flavor":"The pet is the boss.",
@@ -1588,5 +1588,5 @@
                 "Mass zootelepathy. The animal hero can simultaneously enthral a number of humans equal to their level."
             ]
         }
-    ]
+    }
 }

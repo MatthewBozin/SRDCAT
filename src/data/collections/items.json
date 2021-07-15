@@ -1,12 +1,12 @@
 {
-    "data": [
-        {
+    "data": {
+        "acceleratedflail":{
             "name": "Accelerated Flail",
             "tags": [
                 "offensive",
                 "chain"
             ],
-            "flavor": "A spiked head1 of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
+            "flavor": "A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
             "stat": [
                 "HA"
             ],
@@ -20,7 +20,7 @@
                 "daemon-guidance"
             ]
         },
-        {
+        "accountantmonkrobes":{
             "name": "Accountant Monk Robes",
             "tags": [
                 "defensive",
@@ -40,7 +40,7 @@
                 "lo-kinetic"
             ]
         },
-        {
+        "amberancestorcuirass":{
             "name": "Amber Ancestor Cuirass",
             "tags": [
                 "defensive",
@@ -61,7 +61,7 @@
                 "memories"
             ]
         },
-        {
+        "amberwandgun":{
             "name": "Amber Wandgun",
             "tags": [
                 "offensive",
@@ -81,7 +81,7 @@
                 "ranged"
             ]
         },
-        {
+        "blessedcap":{
             "name": "Blessed Cap",
             "tags": [
                 "defensive",
@@ -100,7 +100,7 @@
                 "team-colours"
             ]
         },
-        {
+        "biggamegun":{
             "name": "Big Game Gun",
             "tags": [
                 "offensive",
@@ -122,7 +122,7 @@
                 "slow-meltdown"
             ]
         },
-        {
+        "bonerankleathergreatcoat":{
             "name": "Bone Rank Leather Greatcoat",
             "tags": [
                 "defensive",
@@ -145,7 +145,7 @@
                 "spirit-boost"
             ]
         },
-        {
+        "bourgeoisblade":{
             "name": "Bourgeois Blade",
             "tags": [
                 "offensive",
@@ -166,7 +166,7 @@
                 "decorated"
             ]
         },
-        {
+        "centuriongoldsuit":{
             "name": "Centurion Gold Suit",
             "tags": [
                 "defensive",
@@ -190,7 +190,7 @@
                 "reasonably-inspiring"
             ]
         },
-        {
+        "chainsickle":{
             "name": "Chain Sickle",
             "tags": [
                 "offensive",
@@ -212,7 +212,7 @@
                 "two-hands"
             ]
         },
-        {
+        "chainsword":{
             "name": "Chainsword",
             "tags": [
                 "offensive",
@@ -233,7 +233,7 @@
                 "zombie-ripper"
             ]
         },
-        {
+        "crucifixbow":{
             "name": "Crucifix Bow",
             "tags": [
                 "offensive",
@@ -253,7 +253,7 @@
                 "ranged"
             ]
         },
-        {
+        "crystalsiegerod":{
             "name": "Crystal Siege Rod",
             "tags": [
                 "offensive",
@@ -276,7 +276,7 @@
                 "long-reload"
             ]
         },
-        {
+        "ghostboneaxe":{
             "name": "Ghostbone Axe",
             "tags": [
                 "offensive",
@@ -297,7 +297,7 @@
                 "two-hands"
             ]
         },
-        {
+        "goldenhammer":{
             "name": "Golden Hammer",
             "tags": [
                 "offensive",
@@ -319,7 +319,7 @@
                 "versatile"
             ]
         },
-        {
+        "golembow":{
             "name": "Golem Bow",
             "tags": [
                 "offensive",
@@ -340,7 +340,7 @@
                 "ranged"
             ]
         },
-        {
+        "golemdriverleatherjacket":{
             "name": "Golem Driver Leather Jacket",
             "tags": [
                 "defensive",
@@ -359,11 +359,12 @@
                 "cool"
             ]
         },
-        {
+        "hardlightshield":{
             "name": "Hard Light Shield",
             "tags": [
                 "defensive",
-                "armour"
+                "armour",
+                "hard-light"
             ],
             "flavor": "A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
             "stat": [
@@ -382,7 +383,7 @@
                 "sharp-edge"
             ]
         },
-        {
+        "hiddenstalkerring":{
             "name": "Hidden Stalker Ring",
             "tags": [
                 "defensive",
@@ -401,7 +402,7 @@
                 "chameleon-field"
             ]
         },
-        {
+        "horaniwarmaul":{
             "name": "Horani War Maul",
             "tags": [
                 "offensive",
@@ -422,7 +423,7 @@
                 "two-handed"
             ]
         },
-        {
+        "iksanheatray":{
             "name": "Iksan Heat Ray",
             "tags": [
                 "offensive",
@@ -445,7 +446,7 @@
                 "ranged"
             ]
         },
-        {
+        "iksanlevellersuit":{
             "name": "Iksan Leveller Suit",
             "tags": [
                 "defensive",
@@ -465,7 +466,7 @@
                 "jade-essence"
             ]
         },
-        {
+        "ironminotaursuit":{
             "name": "Iron Minotaur Suit",
             "tags": [
                 "defensive",
@@ -490,7 +491,7 @@
                 "weaponized"
             ]
         },
-        {
+        "jollyponcho":{
             "name": "Jolly Poncho",
             "tags": [
                 "defensive",
@@ -511,7 +512,7 @@
                 "fortune-in-misfortune"
             ]
         },
-        {
+        "leadendragonsuit":{
             "name": "Leaden Dragon Suit",
             "tags": [
                 "defensive",
@@ -533,7 +534,7 @@
                 "vital-100"
             ]
         },
-        {
+        "lignumvitaebattlestick":{
             "name": "Lignum Vitae Battle Stick",
             "tags": [
                 "offensive",
@@ -552,7 +553,7 @@
                 "less-lethal"
             ]
         },
-        {
+        "longeyefusil":{
             "name": "Longeye Fusil",
             "tags": [
                 "offensive",
@@ -573,7 +574,7 @@
                 "precise"
             ]
         },
-        {
+        "lucitespellbreaker":{
             "name": "Lucite Spell-Breaker",
             "tags": [
                 "offensive",
@@ -594,7 +595,7 @@
                 "break-spell"
             ]
         },
-        {
+        "luminoushalberd":{
             "name": "Luminous Halberd",
             "tags": [
                 "offensive",
@@ -614,7 +615,7 @@
                 "spirit-ward"
             ]
         },
-        {
+        "machineghostbelt":{
             "name": "Machine Ghost Belt",
             "tags": [
                 "defensive",
@@ -633,7 +634,7 @@
                 "ghost-weave"
             ]
         },
-        {
+        "magnificentfireballpistol":{
             "name": "Magnificent Fireball Pistol",
             "tags": [
                 "offensive",
@@ -654,7 +655,7 @@
                 "ranged"
             ]
         },
-        {
+        "malachitegolemsuit":{
             "name": "Malachite Golem Suit",
             "tags": [
                 "defensive",
@@ -675,7 +676,7 @@
                 "vital-30"
             ]
         },
-        {
+        "mirrorofheaven":{
             "name": "Mirror-of-Heaven",
             "tags": [
                 "defensive",
@@ -695,7 +696,27 @@
                 "spell-reflector"
             ]
         },
-        {
+        "naniteswarmprojector":{
+            "name":"Nanite Swarm Projector",
+            "tags":[
+                "offensive", 
+                "big-gun", 
+                "nanotech"
+            ],
+            "flavor":"The swarm devours eternal.",
+            "stat":[
+                "HA"
+            ],
+            "number":[
+                "12d2*"
+            ],
+            "weight": 100,
+            "value":"2d6* x 5000",
+            "modifiers":[
+                "back-mounted"
+            ]
+        },
+        "neoprimitivebow":{
             "name": "Neoprimitive Bow",
             "tags": [
                 "offensive",
@@ -716,7 +737,7 @@
                 "two-hands"
             ]
         },
-        {
+        "obsidianchameleonsuit":{
             "name": "Obsidian Chameleon Suit",
             "tags": [
                 "defensive",
@@ -737,7 +758,7 @@
                 "vital-60"
             ]
         },
-        {
+        "onyxghostsuit":{
             "name": "Onyx Ghost Suit",
             "tags": [
                 "defensive",
@@ -760,7 +781,7 @@
                 "vital-50"
             ]
         },
-        {
+        "orangelandglitterplate":{
             "name": "Orangeland Glitterplate",
             "tags": [
                 "defensive",
@@ -780,7 +801,7 @@
                 "ornate"
             ]
         },
-        {
+        "pointyhelmet":{
             "name": "Pointy Helmet",
             "tags": [
                 "defensive",
@@ -800,8 +821,8 @@
                 "pointy"
             ]
         },
-        {
-            "name": "Plasma Knife ",
+        "plasmaknife":{
+            "name": "Plasma Knife",
             "tags": [
                 "offensive",
                 "energy",
@@ -822,7 +843,7 @@
                 "powered"
             ]
         },
-        {
+        "porcelainprincepanoply":{
             "name": "Porcelain Prince Panoply",
             "tags": [
                 "defensive",
@@ -843,7 +864,7 @@
                 "tinkling"
             ]
         },
-        {
+        "redgodrobes":{
             "name": "Red God Robes",
             "tags": [
                 "defensive",
@@ -865,7 +886,7 @@
                 "spell-control"
             ]
         },
-        {
+        "redlivingmail":{
             "name": "Red Living Mail",
             "tags": [
                 "defensive",
@@ -886,7 +907,7 @@
                 "biomass-feast"
             ]
         },
-        {
+        "siegetortoisesuit":{
             "name": "Siege Tortoise Suit",
             "tags": [
                 "defensive",
@@ -908,7 +929,7 @@
                 "vital-50"
             ]
         },
-        {
+        "storminfantryshield":{
             "name": "Storm Infantry Shield",
             "tags": [
                 "defensive",
@@ -928,7 +949,7 @@
                 "breakable"
             ]
         },
-        {
+        "stuckforceshiv":{
             "name": "Stuckforce Shiv",
             "tags": [
                 "offensive",
@@ -947,7 +968,7 @@
                 "vorpal-edge"
             ]
         },
-        {
+        "shocksword":{
             "name": "Shock-sword",
             "tags": [
                 "offensive",
@@ -970,7 +991,7 @@
                 "powered"
             ]
         },
-        {
+        "souleaternightblade":{
             "name": "Soul-eater Nightblade",
             "tags": [
                 "offensive",
@@ -990,7 +1011,7 @@
                 "mildly-possessed"
             ]
         },
-        {
+        "steppeshipcutlass":{
             "name": "Steppe-ship Cutlass",
             "tags": [
                 "offensive",
@@ -1010,7 +1031,7 @@
                 "tool"
             ]
         },
-        {
+        "switchbladerevolver":{
             "name": "Switchblade Revolver",
             "tags": [
                 "offensive",
@@ -1033,7 +1054,7 @@
                 "stiletto"
             ]
         },
-        {
+        "synthcrystalrayrifle":{
             "name": "Synth Crystal Ray Rifle",
             "tags": [
                 "offensive",
@@ -1055,7 +1076,7 @@
                 "powered"
             ]
         },
-        {
+        "trenchrifle":{
             "name": "Trench Rifle",
             "tags": [
                 "offensive",
@@ -1076,7 +1097,7 @@
                 "long-range"
             ]
         },
-        {
+        "utilityaxe":{
             "name": "Utility Axe",
             "tags": [
                 "offensive",
@@ -1095,7 +1116,7 @@
                 "tool"
             ]
         },
-        {
+        "vastlanderrobes":{
             "name": "Vastlander Robes",
             "tags": [
                 "defensive",
@@ -1115,7 +1136,7 @@
                 "cool"
             ]
         },
-        {
+        "voidwormtoothknife":{
             "name": "Voidworm Tooth Knife",
             "tags": [
                 "offensive",
@@ -1136,7 +1157,7 @@
                 "ammo"
             ]
         },
-        {
+        "wizardlyquarterstaff":{
             "name": "Wizardly Quarterstaff",
             "tags": [
                 "offensive",
@@ -1157,5 +1178,5 @@
                 "defensive"
             ]
         }
-    ]
+    }
 }

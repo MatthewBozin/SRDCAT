@@ -28,14 +28,16 @@ const SaveCharModal = () => {
       let charprop = character[property];
       if (typeof charprop == "object") {
         //if charprop === "items"
+        let cards = require(`../data/collections/` + property);
         let stringprop = "";
-        for (let card of charprop) {
+        for (let object of charprop) {
+          let card = cards.data[object.name];
           let stringcard = "";
           stringcard += "Name: " + card.name + "\n";
           if (card.description !== undefined) {
             stringcard += "Description: " + card.description;
             if (card.table !== undefined) {
-              let result = card.table[card.savedresult].toLowerCase();
+              let result = card.table[object.savedresult].toLowerCase();
               stringcard += " " + result + ".";
             }
             stringcard += "\n";
@@ -43,9 +45,9 @@ const SaveCharModal = () => {
           if (card.ranks !== undefined) {
             for (let i = 0; i < card.ranks.length; i++) {
               let i2 = i + 1;
-              if (i <= card.savedrank && typeof card.ranks[i] !== "object") {
+              if (i <= object.savedrank && typeof card.ranks[i] !== "object") {
                 stringcard += "Rank " + i2 + ": " + card.ranks[i] + "\n";
-              } else {
+              } else if (property === "spells") {
                 stringcard +=
                   "Cost " +
                   card.ranks[i].power +

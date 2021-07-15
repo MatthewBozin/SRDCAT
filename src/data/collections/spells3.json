@@ -1,6 +1,6 @@
 {
-    "data":{
-        "burdensharingarrangement":{
+    "data":[
+        {
             "name":"Burden Sharing Arrangement",
             "tags":["abmortal-sanatry"],
             "flavor":"Undertake a spiritual ka-voyage through the patient's eyes or other primary sense organs.",
@@ -13,7 +13,7 @@
             ],
             "modifiers":["healers-burden","rushed","telemagic"]
         },
-        "healingsleep":{
+        {
             "name":"Healing Sleep",
             "tags":["abmortal-sanatry"],
             "flavor":"Douse the patient's aura and send their essential hakaba code through the gates of horn and ivory to heal in the presence of the oneiroi Quiescus and Sanatos.",
@@ -26,7 +26,7 @@
             ],
             "modifiers":["telemagic"]
         },
-        "metempsychosis":{
+        {
             "name":"Metempsychosis",
             "tags":["abmortal-sanatry"],
             "flavor":"Though individual abmortals may expect to live forever, accidents do happen. Fortunately, the finest of sanators have a solution: transmigration of the hakaba code.",
@@ -39,7 +39,7 @@
             ],
             "modifiers":["morphic-shock","overwriting","precast-vessel","telemagic"]
         },
-        "parasomatransference":{
+        {
             "name":"Parasoma Transference",
             "tags":["abmortal-sanatry"],
             "flavor":"What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
@@ -53,7 +53,7 @@
             ],
             "modifiers":["telemagic"]
         },
-        "test":{
+        {
             "name":"TEST",
             "tags":["abmortal-sanatry"],
             "flavor":"What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
@@ -67,5 +67,5 @@
             ],
             "modifiers":["dangerous"]
         }
-    }
+    ]
 }

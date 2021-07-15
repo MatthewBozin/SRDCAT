@@ -282,14 +282,23 @@ const sackstonesoap = (weight, mode) => {
     { amount: soaps, name: "Soaps" },
   ];
   let sackstonesoap = "";
-  for (let element of array) {
+  for (let i = 0; i < array.length; i++) {
+    let element = array[i];
     let amount = parseInt(element.amount);
     if (amount === 0 || amount === "" || amount !== amount) {
       if (mode === "inventory") {
-        sackstonesoap += element.name + ": 0 ";
+        sackstonesoap += " 0 " + element.name;
+        if (i !== array.length - 1) {
+          sackstonesoap += ", ";
+        }
       }
     } else {
-      sackstonesoap += element.name + ": " + element.amount + " ";
+      sackstonesoap += element.amount + " " + element.name;
+      if (i < array.length - 1) {
+        if (parseInt(array[i + 1].amount) !== 0) {
+          sackstonesoap += ", ";
+        }
+      }
     }
   }
   return sackstonesoap;

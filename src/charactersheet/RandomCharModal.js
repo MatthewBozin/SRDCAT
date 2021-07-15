@@ -5,6 +5,7 @@ import Character from "../data/character.js";
 import { s, r } from "../data/exports.js";
 import architecture from "../data/architecture.json";
 import RandomCharCard from "./RandomCharCard.js";
+let contextData = require(`../data/orders.json`);
 
 const RandomCharModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -33,6 +34,7 @@ const RandomCharModal = () => {
       "actions",
       "MCOST",
       "LIFE",
+      "MAXLIFE",
       "HERODICE",
       "XP",
       "CASH",
@@ -52,11 +54,8 @@ const RandomCharModal = () => {
           let i = 0;
           while (true) {
             let card = newchar[collection][r(newchar[collection].length - 1)];
-            console.log(newchar[collection]);
-            if (card.savedrank < card.ranks.length - 1) {
-              console.log("yes");
-              console.log(card.savedrank);
-              console.log(card.ranks.length);
+            let cardObject = data.data[card.name];
+            if (card.savedrank < cardObject.ranks.length - 1) {
               card.savedrank += 1;
               break;
             }
@@ -64,14 +63,14 @@ const RandomCharModal = () => {
               break;
             }
             i++;
-            console.log(i);
           }
         } else {
-          let selection = s(data.data);
+          let selectionName = s(contextData[collection]);
+          let selection = data.data[selectionName];
+          let selectionObject = { name: selectionName, savedRank: 0 };
           if (selection.table !== undefined) {
-            selection.savedresult = r(selection.table.length);
+            selectionObject.savedresult = r(selection.table.length);
           }
-          selection.savedrank = 0;
           //below adds rank to card instead of adding duplicate
           if (
             newchar[collection].includes(selection) &&
@@ -84,12 +83,17 @@ const RandomCharModal = () => {
                 }
               }
             } else {
-              let newselection = s(data.data);
+              let newSelectionName = s(contextData[collection]);
+              let newSelection = data.data[newSelectionName];
+              let newSelectionObject = { name: selectionName, savedRank: 0 };
+              if (newSelection.table !== undefined) {
+                newSelectionObject.savedresult = r(newSelection.table.length);
+              }
               //makeshift solution for now, might need while statement
-              newchar[collection].push(newselection);
+              newchar[collection].push(newSelectionObject);
             }
           } else {
-            newchar[collection].push(selection);
+            newchar[collection].push(selectionObject);
           }
         }
       }

@@ -7,17 +7,11 @@ import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
   const ifCard = (card, placement) => {
-    let cardObject;
-    if (typeof card === "object") {
-      cardObject = card;
-    } else {
-      cardObject = { name: card, savedrank: 0 };
-    }
     if (props.category === "items") {
       return (
         <ItemCard
           key={placement}
-          card={cardObject}
+          card={card}
           form={props.form}
           placement={placement}
           deleteFrom={props.deleteFrom}
@@ -29,7 +23,7 @@ const CardList = (props) => {
       return (
         <SpellCard
           key={placement}
-          card={cardObject}
+          card={card}
           form={props.form}
           placement={placement}
           deleteFrom={props.deleteFrom}
@@ -41,7 +35,7 @@ const CardList = (props) => {
       return (
         <CreatureCard
           key={placement}
-          card={cardObject}
+          card={card}
           form={props.form}
           placement={placement}
           deleteFrom={props.deleteFrom}
@@ -52,7 +46,7 @@ const CardList = (props) => {
     return (
       <Card
         key={placement}
-        card={cardObject}
+        card={card}
         form={props.form}
         placement={placement}
         deleteFrom={props.deleteFrom}

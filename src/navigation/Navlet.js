@@ -10,17 +10,31 @@ const Navlet = (props) => {
   const [context, setContext] = useContext(Context);
 
   const displayIcon = () => {
-    console.log(context.collections);
     switch (props.navlet.name) {
       case "items":
+        if (context.collections === props.navlet.name) {
+          return <Items className="iconsvgselected" />;
+        }
         return <Items className="iconsvg" />;
       case "skills":
+        if (context.collections === props.navlet.name) {
+          return <Skills className="iconsvgselected" />;
+        }
         return <Skills className="iconsvg" />;
       case "traits":
+        if (context.collections === props.navlet.name) {
+          return <Traits className="iconsvgselected" />;
+        }
         return <Traits className="iconsvg" />;
       case "spells":
+        if (context.collections === props.navlet.name) {
+          return <Spells className="iconsvgselected" />;
+        }
         return <Spells className="iconsvg" />;
       case "creatures":
+        if (context.collections === props.navlet.name) {
+          return <Creatures className="iconsvgselected" />;
+        }
         return <Creatures className="iconsvg" />;
     }
   };
