@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import Context from "../data/context";
 import { FaSearch } from "react-icons/fa";
 import { s } from "../data/exports.js";
+import orders from "../data/orders.json";
 
 const Search = () => {
   const [context, setContext] = useContext(Context);
@@ -35,13 +36,14 @@ const Search = () => {
 
   const filter = (filterBy) => {
     let newData = [];
-    contextData.data.map((element) => {
+    orders[context.collections].map((element) => {
       let toFilter;
-      if (typeof element[filterBy] === "string") {
-        toFilter = element[filterBy].toLowerCase();
+      let elementFull = contextData.data[element];
+      if (typeof elementFull[filterBy] === "string") {
+        toFilter = elementFull[filterBy].toLowerCase();
       } else {
         toFilter = [];
-        element[filterBy].map((item) => {
+        elementFull[filterBy].map((item) => {
           toFilter.push(item.toLowerCase());
         });
       }
@@ -61,7 +63,7 @@ const Search = () => {
     let finalresult;
 
     if (context.search === "") {
-      resultpool = contextData.data;
+      resultpool = orders[context.collections];
     } else {
       resultpool = filter("tags");
       if (resultpool.length === 0) {
@@ -80,8 +82,9 @@ const Search = () => {
       }
     }
     finalresult = s(resultpool);
+    let finalresultname = contextData.data[finalresult].name;
     let context2 = context;
-    context2.search = finalresult.name;
+    context2.search = finalresultname;
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });
