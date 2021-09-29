@@ -1,24 +1,29 @@
 {
-    "navmasters":[
-        {
-            "name":"herosheet",
-            "type":"herosheet",
-            "text":"Hero Sheet",
-            "link":"/hero"
-        },
-        {
-            "name":"collections",
-            "type":"collections",
-            "text":"Collections",
-            "link":"/"
-        }
-    ],
-    "navlets":
-    [
-        {"name":"items","display":"Items"},
-        {"name":"skills","display":"Skills"},
-        {"name":"traits","display":"Traits"},
-        {"name":"spells","display":"Spells"},
-        {"name":"creatures","display":"Creatures"}
-    ]
+  "navmasters": [
+    {
+      "name": "worldsheet",
+      "type": "worldsheet",
+      "text": "World Sheet",
+      "link": "world"
+    },
+    {
+      "name": "herosheet",
+      "type": "herosheet",
+      "text": "Hero Sheet",
+      "link": "/hero"
+    },
+    {
+      "name": "collections",
+      "type": "collections",
+      "text": "Collections",
+      "link": "/"
+    }
+  ],
+  "navlets": [
+    { "name": "items", "display": "Items" },
+    { "name": "skills", "display": "Skills" },
+    { "name": "traits", "display": "Traits" },
+    { "name": "spells", "display": "Spells" },
+    { "name": "creatures", "display": "Creatures" }
+  ]
 }

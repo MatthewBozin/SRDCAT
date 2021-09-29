@@ -1,19 +1,39 @@
 import React, { useState, useContext } from "react";
 import Character from "../data/character.js";
+import WorldState from "../data/worldstate.js";
 import { FaRegEdit, FaRegCheckSquare } from "react-icons/fa";
 
-function CharName() {
+function SlotName(props) {
   const [character, setCharacter] = useContext(Character);
+  const [worldState, setWorldState] = useContext(WorldState);
   const [isForm, setIsForm] = useState(false);
   const [name, setName] = useState("");
 
+  const gate = () => {
+    if (props.context === "character") {
+      return character;
+    }
+    if (props.context === "worldstate") {
+      return worldState;
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCharacter(() => {
-      character.name = name;
-      const newCharacter = JSON.parse(JSON.stringify(character));
-      return newCharacter;
-    });
+    if (props.context === "character") {
+      setCharacter(() => {
+        gate().name = name;
+        const newCharacter = JSON.parse(JSON.stringify(gate()));
+        return newCharacter;
+      });
+    }
+    if (props.context === "worldstate") {
+      setWorldState(() => {
+        gate().name = name;
+        const newWorldState = JSON.parse(JSON.stringify(gate()));
+        return newWorldState;
+      });
+    }
     setIsForm(false);
   };
 
@@ -39,7 +59,7 @@ function CharName() {
       );
     return (
       <div className="row mleft5px">
-        <span className="bordered padded5px margin5px">{character.name}</span>
+        <span className="bordered padded5px margin5px">{gate().name}</span>
         <span>
           <FaRegEdit
             onClick={() => {
@@ -55,4 +75,4 @@ function CharName() {
   return <div className="mleft5px fullwidth">{nameDisplay()}</div>;
 }
 
-export default CharName;
+export default SlotName;

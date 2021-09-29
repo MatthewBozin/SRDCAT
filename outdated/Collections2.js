@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Navbar from "../navigation/Navbar";
-import Search from "../cards/Search";
-import CardList from "../cards/CardList";
-import Context from "../data/context";
+import Navbar from "../src/navigation/Navbar";
+import Search from "../src/cards/Search";
+import CardList from "../src/cards/CardList";
+import Context from "../src/data/context";
 
 const Collections = () => {
   const [context] = useContext(Context);

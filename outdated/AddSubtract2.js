@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FaRegShareSquare, FaRegTrashAlt } from "react-icons/fa";
-import Context from "../data/context";
-import Character from "../data/character";
+import Context from "../src/data/context";
+import Character from "../src/data/character";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 

@@ -4,7 +4,7 @@ import Tag from "./Tag";
 import AddSubtract from "./AddSubtract";
 import NameValuePair from "./NameValuePair.js";
 import CreatureAttackModal from "./CreatureAttackModal.js";
-import { ReactComponent as Attack } from "../data/icons/attack.svg";
+import CreatureEditModal from "./CreatureEditModal.js";
 import Character from "../data/character.js";
 import modsdata from "../data/collections/modCreatures.json";
 import architecture from "../data/architecture.json";
@@ -16,26 +16,26 @@ const CreatureCard = (props) => {
   const [expanded, setExpanded] = useState(false);
   let cards = require(`../data/collections/creatures`);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
+  const [editModalOpen, setEditModalOpen] = useState(false);
   const [character, setCharacter] = useContext(Character);
-  const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
+  const [attackName, setAttackName] = useState("");
+  const [attackDamage, setAttackDamage] = useState("");
+  const [attackBonus, setAttackBonus] = useState("");
+  const [attackStat, setAttackStat] = useState("");
+
   //mod becomes mods: []
 
-  const { name, level, life, facets, tags, description, attacks, modifiers } =
-    cards.data[props.card.name];
-
-  // const calcAttackInfo = () => {
-  //   let modifiers = [];
-  //   for (let eachstat of stat) {
-  //     let substat = architecture.defenses[eachstat];
-  //     let substats = [];
-  //     for (let subattribute of substat.substats) {
-  //       substats.push(character[subattribute]);
-  //     }
-  //     modifiers.push(Math.max(...substats));
-  //   }
-  //   //alter the math to return a modifier for each stat
-  //   updateState(attack, setAttack, "mod", modifiers);
-  // };
+  const {
+    name,
+    level,
+    life,
+    facets,
+    tags,
+    description,
+    attacks,
+    properties,
+    modifiers,
+  } = cards.data[props.card.name];
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -55,23 +55,26 @@ const CreatureCard = (props) => {
               toggle(setExpanded, expanded);
             }}
           />
-          <span className="rightfloat mright12px mtop4px">
-            {/* {props.deleteFrom === "items" && tags.includes("offensive") && (
-              <Attack
-                className="iconsvg"
-                onClick={() => {
-                  setAttackModalOpen(true);
-                  setSaleModalOpen(false);
-                  calcAttackInfo();
-                }}
+          <span className="row rightfloat mright12px mtop4px">
+            {props.context !== "worldstate" && (
+              <AddSubtract
+                context={"character"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
               />
-            )} */}
-            <AddSubtract
-              card={props.card}
-              form={props.form}
-              placement={props.placement}
-              deleteFrom={props.deleteFrom}
-            />
+            )}
+
+            {props.context !== "character" && (
+              <AddSubtract
+                context={"worldstate"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+              />
+            )}
           </span>
         </div>
         {expanded === false && props.deleteFrom === "none" && (
@@ -98,7 +101,11 @@ const CreatureCard = (props) => {
             <div>{description}</div>
             <hr />
             <div>
-              Level: {level} / Life: {life}
+              Level: {level} | Life:{" "}
+              {props.card.lifecurrent && (
+                <span>{props.card.lifecurrent} /</span>
+              )}{" "}
+              {life}
             </div>
             <hr />
             <div>
@@ -109,7 +116,18 @@ const CreatureCard = (props) => {
                       <i>{architecture.statMasks[attack.defensename]}</i>
                     </span>
                     : {attack.defenseamount} / {attack.bonus}{" "}
-                    <span className="button">{attack.attackname}</span>{" "}
+                    <span
+                      className="button"
+                      onClick={() => {
+                        setAttackModalOpen(true);
+                        setAttackName(attack.attackname);
+                        setAttackStat(attack.defensename);
+                        setAttackBonus(attack.bonus);
+                        setAttackDamage(attack.damage);
+                      }}
+                    >
+                      {attack.attackname}
+                    </span>{" "}
                     {attack.damage}
                   </div>
                 );
@@ -117,7 +135,18 @@ const CreatureCard = (props) => {
             </div>
             <hr></hr>
             <div className="margin5x">
-              {modifiers.map((mod, index) => {
+              {properties.map((property, index) => {
+                return (
+                  <div key={index}>
+                    <NameValuePair
+                      name={property.name}
+                      value={property.description}
+                    />
+                    <hr />
+                  </div>
+                );
+              })}
+              {/* {modifiers.map((mod, index) => {
                 let modifier = modsdata[mod];
                 return (
                   <div key={index}>
@@ -128,23 +157,33 @@ const CreatureCard = (props) => {
                     <hr />
                   </div>
                 );
-              })}
+              })} */}
             </div>
           </span>
         )}
       </article>
-      {/* {props.deleteFrom === "items" && (
-        <CreatureAttackModal
-          attack={attack}
-          setAttack={setAttack}
-          attackModalOpen={attackModalOpen}
-          setAttackModalOpen={setAttackModalOpen}
-          character={character}
-          name={name}
-          number={number}
-          stat={stat}
-        />
-      )} */}
+      {
+        <>
+          <CreatureAttackModal
+            attackModalOpen={attackModalOpen}
+            setAttackModalOpen={setAttackModalOpen}
+            character={character}
+            creatureName={name}
+            attackName={attackName}
+            attackBonus={attackBonus}
+            attackDamage={attackDamage}
+            attackStat={attackStat}
+            creatureProperties={properties}
+          />
+          <CreatureEditModal
+            editModalOpen={editModalOpen}
+            setEditModalOpen={setEditModalOpen}
+            character={character}
+            creatureName={name}
+            creatureProperties={properties}
+          />
+        </>
+      }
     </div>
   );
 };

@@ -1,24 +1,17 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Name from "../cards/Name";
 import Description from "../cards/Description";
 import Col from "react-bootstrap/Col";
-import { FaFileUpload } from "react-icons/fa";
-import Character from "../data/character.js";
+import { FaFileDownload } from "react-icons/fa";
 
-const ExportCharCard = (props) => {
+const ExportCard = (props) => {
   const [expanded, setExpanded] = useState(false);
-  const [character, setCharacter] = useContext(Character);
-  const [importData, setImportData] = useState("");
 
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
 
-  const { name, description } = props;
-
-  const importJson = (string) => {
-    setCharacter(JSON.parse(string));
-  };
+  const { name, description, method } = props;
 
   return (
     <Col>
@@ -29,10 +22,10 @@ const ExportCharCard = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <FaFileUpload
+          <FaFileDownload
             className="rightfloat icon mright24px mtop12px"
             onClick={() => {
-              expandCollapse(expanded);
+              method();
             }}
           />
         </div>
@@ -41,21 +34,13 @@ const ExportCharCard = (props) => {
             <hr></hr>
             <Description description={description} />
             <hr></hr>
-            <textarea
-              className="textarea"
-              name="importChar"
-              id="importChar"
-              cols="40"
-              rows="5"
-              onChange={(e) => setImportData(e.target.value)}
-            ></textarea>
             <button
               className="button bordered padded5px fullwidth"
               onClick={() => {
-                importJson(importData);
+                method();
               }}
             >
-              Import
+              Export
             </button>
           </span>
         )}
@@ -64,4 +49,4 @@ const ExportCharCard = (props) => {
   );
 };
 
-export default ExportCharCard;
+export default ExportCard;

@@ -1,18 +1,2844 @@
-{"data": 
-    {
-        "ebeteenmindbenderpriest":{
-            "name":"Ebéteen Mindbender Priest",
-            "level":2,
-            "life":14,
-            "facets":["consoling","coruscating","obfuscating"],
-            "tags":["animal","human"],
-            "description":"Doling out the pleasures and the pain of the Living God.",
-            "attacks":[
-                {"defensename":"HA","defenseamount":6,"bonus":"+4","attackname":"pain ray","damage":"1d8+1"},
-                {"defensename":"KA","defenseamount":13,"bonus":"+6","attackname":"insight blade","damage":"1d10"},
-                {"defensename":"BA","defenseamount":13,"bonus":"+4","attackname":"shame & regret","damage":"2d6"}
-            ],
-            "modifiers":["promise-of-redemption","puppet-strings"]
+{
+  "data": {
+    "airpig": {
+      "name": "Airpig",
+      "level": 1,
+      "life": 6,
+      "facets": ["bossy", "intelligent", "revolutionary"],
+      "tags": ["pet", "animal", "chimera"],
+      "description": "A six-limbed creature with such a powerful reality-distortion organ in its brainstem that it flies graceful as a peacock, even though its primitive membranous wings should not support it.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "nasty bite",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 17,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+5",
+          "attackname": "liquid humiliation",
+          "damage": "1d8"
         }
+      ],
+      "properties": [
+        {
+          "name": "Distorted reality ",
+          "description": "Nearby gullible creatures (thought ≤0) succumb and can perform usually impossible feats. The feats may still be very difficult."
+        }
+      ],
+      "mods": []
+    },
+    "amphibiousgoldfish": {
+      "name": "Amphibious Goldfish",
+      "level": 0,
+      "life": 3,
+      "facets": ["bubbly", "shiny", "dangerous"],
+      "tags": ["pet", "animal", "magic"],
+      "description": "Is it just a newt pretending to be a goldfish?",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+2",
+          "attackname": "bubbles",
+          "damage": "1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 13,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Amphibious ",
+          "description": "Survive on land for a few hours. Very poor walker."
+        },
+        {
+          "name": "Wannabe genie ",
+          "description": "One tiny wish per day, such as rerolling a die."
+        }
+      ],
+      "mods": []
+    },
+    "ancestorinamber": {
+      "name": "Ancestor in Amber",
+      "level": 2,
+      "life": 20,
+      "facets": ["honourable", "proud", "self-sacrificing"],
+      "tags": ["human", "undead"],
+      "description": "Protecting their righteous heirs until the seas boil and the stars are eaten by the sun.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 12,
+          "bonus": "+6",
+          "attackname": "ceremonial blade",
+          "damage": "1d12"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 11,
+          "bonus": "+5",
+          "attackname": "shuddering gaze",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 17,
+          "bonus": "+5",
+          "attackname": "disapproval",
+          "damage": "1d4+1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Fearsome aura",
+          "description": "Living creatures must test aura or thought to lay hands on the undying flesh of an ancestor."
+        },
+        {
+          "name": "Miasmic touch",
+          "description": "Each strike deals 1 strength or endurance damage to living creatures."
+        },
+        {
+          "name": "Mummified",
+          "description": "The ancestor is dry and flammable, suffering double damage from fire and heat."
+        },
+        {
+          "name": "Shuddering gaze",
+          "description": "A living creature held by an angry ancestor's gaze feels their life pass before their eyes. They must test charisma or aura, or lose 1 action on their next turn."
+        }
+      ],
+      "mods": []
+    },
+    "ascendedpriestabomination": {
+      "name": "Ascended Priest Abomination",
+      "level": 4,
+      "life": 40,
+      "facets": ["ecstatic", "howling", "transcendent"],
+      "tags": ["abomination", "human"],
+      "description": "All flesh given to the Flesh God, all spirit infused with the Living God, all mind tranquil and smooth.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+7",
+          "attackname": "ripping claws",
+          "damage": "2d8"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 13,
+          "bonus": "+9",
+          "attackname": "ecstasy flare",
+          "damage": "1d3"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 17,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Ecstatic touch",
+          "description": "Victims of a ka attack test aura or collapse into quivering ecstasy, losing 1 aura and 1 action on their next turn."
+        },
+        {
+          "name": "Gripping claws",
+          "description": "A target struck by two ripping claw attacks in one round is gripped and cannot move away. The abomination gains [+] to ha attacks against the target. Difficult strength or agility test to break free."
+        },
+        {
+          "name": "Maw of many teeth",
+          "description": "The monster's face and front ripple open (+5 maw 2d12*) when it grips a target. Each turn it can make one maw attack this target as a free action. "
+        }
+      ],
+      "mods": []
+    },
+    "babydragon": {
+      "name": "Baby Dragon",
+      "level": 2,
+      "life": 13,
+      "facets": ["curious", "cute", "sinuous"],
+      "tags": ["pet", "animal", "labmyth"],
+      "description": "A lovely little flying serpent of vast potential and little wisdom. Surprisingly fond of boxes.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+4",
+          "attackname": "sharp teeth",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 17,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "preen",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Fiery burp ",
+          "description": "Spends 1d4 life to vomit a small fire cloud (strikes 2d6 nearby targets). Damage equal to its remaining life."
+        },
+        {
+          "name": "Growing ",
+          "description": "Voracious appetite to help it grow quickly."
+        }
+      ],
+      "mods": []
+    },
+    "battlepanda": {
+      "name": "Battle Panda",
+      "level": 2,
+      "life": 13,
+      "facets": ["bored", "masticating", "regal"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "The monochrome bear.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+5",
+          "attackname": "paw swipe",
+          "damage": "1d6+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "adorable gaze",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Bear hug ",
+          "description": "Grabs swiped target in a carrying, crushing hug. Target suffers [-] to tests and takes auto damage. Moderate test to escape."
+        }
+      ],
+      "mods": []
+    },
+    "bigbear": {
+      "name": "Big Bear",
+      "level": 3,
+      "life": 17,
+      "facets": ["hot", "fuzzy", "honey"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "By the power of honey, what a bear!",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+5",
+          "attackname": "thunder paw",
+          "damage": "1d8+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "roar",
+          "damage": "1d6+2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Bear hug ",
+          "description": "Grabs struck target. It suffers [-] to tests and takes auto damage. Moderate test to escape."
+        },
+        {
+          "name": "Big ",
+          "description": "[+] to damage against creatures less than half its size."
+        },
+        {
+          "name": "Honey-lover ",
+          "description": "Regains 1d8+1 life points each time it eats a 1 stone pot of honey."
+        }
+      ],
+      "mods": []
+    },
+    "bigdog": {
+      "name": "Big Dog",
+      "level": 1,
+      "life": 9,
+      "facets": ["slobbering", "swift", "terrified"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Addicted to snacks and treats.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+3",
+          "attackname": "crunching jaws",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 4,
+          "bonus": "+4",
+          "attackname": "truly scary bark",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Enthusiastic bound ",
+          "description": "Bowls target over in a spray of drool and paws. Large targets make an easy test with [-] to stay upright."
+        },
+        { "name": "Transport ", "description": "Can carry 1 sack." }
+      ],
+      "mods": []
+    },
+    "blimpstork": {
+      "name": "Blimpstork",
+      "level": 3,
+      "life": 30,
+      "facets": ["flatulent", "florid", "frustrated"],
+      "tags": ["animal", "bioformed"],
+      "description": "Crossing birds with the blimp jellies of the well worlds created these stately aerial porter beasts, perfect for the Neorgian birthing plantations.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 5,
+          "bonus": "+3",
+          "attackname": "razor beak",
+          "damage": "3d10+3"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 10,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Aerostatic",
+          "description": "Stays aloft without expending energy."
+        },
+        { "name": "Rather big", "description": "3–5 elephants long." },
+        { "name": "Transport ", "description": "Carries 6–12 sacks." }
+      ],
+      "mods": []
+    },
+    "blithebadger": {
+      "name": "Blithe Badger",
+      "level": 1,
+      "life": 5,
+      "facets": ["cuddly", "relentless", "furball"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "A child of ancient wrestling gods, the badger is entirely immune to magic and commands. But is very fond of holes.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 10,
+          "bonus": "+3",
+          "attackname": "relentless bite",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Burrower ",
+          "description": "Gains [+] in tight spaces. If its burrow is nearby, it gains [+] to retreat."
+        }
+      ],
+      "mods": []
+    },
+    "bloodsucker": {
+      "name": "Bloodsucker",
+      "level": 1,
+      "life": 20,
+      "facets": ["creepy", "pasty", "reeking"],
+      "tags": ["human", "undead"],
+      "description": "Every vampire must start somewhere.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 15,
+          "bonus": "+6",
+          "attackname": "flailing grab",
+          "damage": "1d6+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "+6",
+          "attackname": "baleful eyes",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+6",
+          "attackname": "arrogant sneer",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Clinging to life",
+          "description": "After the bloodsucker has grabbed a target, it latches on and can then drink life force as an action, without additional attack rolls. It deals 1d6 damage each time it drinks."
+        },
+        {
+          "name": "Decaying",
+          "description": "Every daybreak, the bloodsucker loses an attribute point."
+        },
+        {
+          "name": "Life is life",
+          "description": "All life points the bloodsucker drinks are spread evenly among its attributes."
+        },
+        {
+          "name": "Rancid",
+          "description": "Their flesh has begun to go sour, and despite the heavy perfume, they hardly pass in polite society. Suffer double ba damage in public."
+        },
+        {
+          "name": "Vampire",
+          "description": "Physical damage cannot kill the bloodsucker. A ritual impalement with a bless’d skewer or stake is required."
+        }
+      ],
+      "mods": []
+    },
+    "boaconstrictor": {
+      "name": "Boa Constrictor",
+      "level": 1,
+      "life": 11,
+      "facets": ["chunky", "colourful", "lazy"],
+      "tags": ["pet", "animal", "reptile"],
+      "description": "Often found in wheels.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+2",
+          "attackname": "constriction",
+          "damage": "1d6+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "+3",
+          "attackname": "threatening glare",
+          "damage": "1d3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Constrictor ",
+          "description": "When it strikes a target, it does no damage on the first round but keeps squeezing, dealing damage automatically each round until the target passes out from suffocation."
+        }
+      ],
+      "mods": []
+    },
+    "bunnyofchaos": {
+      "name": "Bunny of Chaos",
+      "level": 1,
+      "life": 3,
+      "facets": ["cuddly", "cute", "red-eyed"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Mentioned in terrible ancient manuscripts.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+4",
+          "attackname": "big bitey teeth",
+          "damage": "1d4*"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 3,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Big vorpal bitey teeth ",
+          "description": "Decapitates on critical hits."
+        },
+        { "name": "Fast hopper ", "description": "[+] running away." },
+        {
+          "name": "Looks harmless ",
+          "description": "[-] to attacks against the bunny if it hasn't yet hurt anybody."
+        }
+      ],
+      "mods": []
+    },
+    "cheekycheetah": {
+      "name": "Cheeky Cheetah",
+      "level": 1,
+      "life": 7,
+      "facets": ["fast", "nervous", "svelte"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "A cat. A fast, spotted, murderous cat. Domesticated hunting cheetahs are sometimes chimerized to sport human facial features for that added bit of decadent uncanny valley luxe.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+3",
+          "attackname": "neck bite",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 6,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Sprinter ",
+          "description": "Incredibly fast. [+] to initiative and chases."
+        },
+        { "name": "Sneaky ", "description": "[+] to hide." }
+      ],
+      "mods": []
+    },
+    "chucklingjackal": {
+      "name": "Chuckling Jackal",
+      "level": 1,
+      "life": 5,
+      "facets": ["wise", "humorous", "psychopomp"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "A guide for the soul, a judge for the dead. Also, something of a troll.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+2",
+          "attackname": "sneaky bite",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 16,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 10,
+          "bonus": "+3",
+          "attackname": "sarcasm",
+          "damage": "1d6+1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Digger ",
+          "description": "[+] crawling into tight spaces. It can dig its way out of the underworld."
+        },
+        {
+          "name": "Sneaky ",
+          "description": "Double damage against surprised opponents."
+        },
+        {
+          "name": "Talking ",
+          "description": "The sentient jackal can speak when it wants to."
+        }
+      ],
+      "mods": []
+    },
+    "concreteseagull": {
+      "name": "Concrete Seagull",
+      "level": 1,
+      "life": 15,
+      "facets": ["brutal", "honest", "old-fashioned"],
+      "tags": ["pet", "animal", "bird", "mineral"],
+      "description": "A guardian lifeform engineered for the fast star Calcestruzzo Volante, brought down to the shores of the Winedark Ocean by the rain of needles that seeded the Second Eternal Celebration of the Sunless Mind. Now, the gentle concrete seagulls are all that remains of those hubristic eras of history.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 5,
+          "bonus": "+3",
+          "attackname": "peck",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "plop",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Concrete shell ",
+          "description": "All physical damage is greatly reduced [-][-]."
+        },
+        {
+          "name": "Clumsy flier ",
+          "description": "Not the best in flying competitions [-]. "
+        },
+        {
+          "name": "Uplifted ",
+          "description": "These brutal birds talk like platonic parrots."
+        }
+      ],
+      "mods": []
+    },
+    "crawlingshrubbery": {
+      "name": "Crawling Shrubbery",
+      "level": 1,
+      "life": 5,
+      "facets": ["harmless", "ni", "rooty"],
+      "tags": ["pet", "plant", "labmyth"],
+      "description": "It all started with a humorous root vegetable prank and ended with a carnibotanic disaster zone. Sprouts are often hunted down with extreme prejudice by  phytophobic bipeds.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 3,
+          "bonus": "+6",
+          "attackname": "poking root",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+4",
+          "attackname": "winking flower",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Mimic ",
+          "description": "Learns new tricks by observation. Can acquire a new skill in a day. (Un)fortunately, it forgets every skill after 1d4* days."
+        },
+        {
+          "name": "Plant ",
+          "description": "Looks perfectly harmless when it stands still."
+        },
+        {
+          "name": "Resilient ",
+          "description": "Grows back, even if chopped down."
+        }
+      ],
+      "mods": []
+    },
+    "crestedstomperpig": {
+      "name": "Crested Stomperpig",
+      "level": 2,
+      "life": 18,
+      "facets": ["greedy", "opportunistic", "scavenger"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Obviously, some eco re-engineer had to reintroduce upgraded pelycosaurs during the Phase Two Era. Even through the mists of historical entropy, echoes of their great pseudoarchy resound.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+5",
+          "attackname": "bad bite",
+          "damage": "1d10+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 12,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Armoured hide ",
+          "description": "Physical damage resistance [-]."
+        },
+        {
+          "name": "Downdropped ",
+          "description": "Their ancestors were much more intelligent before the creators dumbed them down. They still hold a grudge. Ba damage vulnerability [+]."
+        },
+        {
+          "name": "Sexy ",
+          "description": "Big thermoregulatory sail doubles as a visual display."
+        }
+      ],
+      "mods": []
+    },
+    "cunningsheep": {
+      "name": "Cunning Sheep",
+      "level": 1,
+      "life": 7,
+      "facets": ["fleecy", "gauzy", "light-footed"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Sometimes pretends to be a wolf.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+3",
+          "attackname": "big horns",
+          "damage": "1d8+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "proud display",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Butt ",
+          "description": "When it attacks atop a cliff or charges, it knocks its target back a way."
+        },
+        {
+          "name": "Surefoot ",
+          "description": "[+] on ledges, cliffs, rooftops, and narrow places."
+        },
+        { "name": "Transport ", "description": "Can carry 1 sack." }
+      ],
+      "mods": []
+    },
+    "cutespider": {
+      "name": "Cute Spider",
+      "level": 0,
+      "life": 3,
+      "facets": ["gentle", "soft", "soothing"],
+      "tags": ["pet", "animal", "arthropod"],
+      "description": "With fur and feet and lovely eyes, calms scared children and spooked animals.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "bite",
+          "damage": "1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "+5",
+          "attackname": "fetching eyes",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Venomous ",
+          "description": "Bitten targets feel dizzy and confused. Burden imposes [-] to physical activity and concentration."
+        }
+      ],
+      "mods": []
+    },
+    "devilishdonkey": {
+      "name": "Devilish Donkey",
+      "level": 1,
+      "life": 9,
+      "facets": ["ornery", "annoyed", "tough"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "This equid has a secret pact with a devil. It smells of brimstone. So does its poop.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+2",
+          "attackname": "kicky feet",
+          "damage": "1d6+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 19,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Devilish luck ",
+          "description": "Rerolls all 1s. When reduced to 0 life it disappears in a puff of smelly smoke. May reappear some days later."
+        },
+        { "name": "Transport ", "description": "Can carry 2 sacks." }
+      ],
+      "mods": []
+    },
+    "direhamster": {
+      "name": "Dire Hamster",
+      "level": 2,
+      "life": 11,
+      "facets": ["brave", "noble", "extradimensional"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Likes to stand very still when watched. Unusually large for a hamster. May be a capybara.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+4",
+          "attackname": "vicious bite",
+          "damage": "1d8+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Cheeks of carrying ",
+          "description": "Can carry one sack’s worth of gear in extradimensional cheek pouches. Items may be drool-covered."
+        }
+      ],
+      "mods": []
+    },
+    "dogbear": {
+      "name": "Dogbear",
+      "level": 3,
+      "life": 20,
+      "facets": ["fluffy", "woofy", "greedy"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Is it a small bear or a big dog? Unclear.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 14,
+          "bonus": "+6",
+          "attackname": "big bite",
+          "damage": "1d10"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "howl",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+6",
+          "attackname": "endearing wag",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Loyal ",
+          "description": "[+] to tests when protecting its family or master."
+        }
+      ],
+      "mods": []
+    },
+    "dreamer": {
+      "name": "Dreamer",
+      "level": 6,
+      "life": 60,
+      "facets": ["witty", "shallow", "influenced"],
+      "tags": ["human", "possessed"],
+      "description": "A soulless human shell left purposeless by the death of the Fleshgod. Now it summons demons to find meaning once more as they ride its flesh and bone.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 19,
+          "bonus": "+9",
+          "attackname": "demonic strength",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 17,
+          "bonus": "+5",
+          "attackname": "terrible brimstone",
+          "damage": "1d12"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 9,
+          "bonus": "+2",
+          "attackname": "shattered self-esteem",
+          "damage": "1d3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Chilling aura",
+          "description": "Temperature near the dreamer slowly drops to near freezing in insulated spaces."
+        },
+        {
+          "name": "Dislocated demonic anatomy",
+          "description": "The dreamer’s body is hypermobile and reassembles even if physically shattered."
+        },
+        {
+          "name": "Ectoplasmic dribble",
+          "description": "Slippery ectoplasm accumulates on surfaces near the dreamer."
+        }
+      ],
+      "mods": []
+    },
+    "ebeteenmindbenderpriest": {
+      "name": "Ebéteen Mindbender Priest",
+      "level": 2,
+      "life": 14,
+      "facets": ["consoling", "coruscating", "obfuscating"],
+      "tags": ["animal", "human"],
+      "description": "Doling out the pleasures and the pain of the Living God.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+4",
+          "attackname": "pain ray",
+          "damage": "1d8+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 13,
+          "bonus": "+6",
+          "attackname": "insight blade",
+          "damage": "1d10"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+4",
+          "attackname": "shame & regret",
+          "damage": "2d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Promise of redemption",
+          "description": "Targets shamed by the priest know that the priest's orders offer a reprieve. The target can regain all life lost in that ba attack and gains [+] to their tests for the rest of the conflict if they follow the priest's instructions."
+        },
+        {
+          "name": "Puppet strings",
+          "description": "Targets struck by the pain ray test aura or follow the priest's mental command for one round."
+        }
+      ],
+      "mods": []
+    },
+    "elegantllama": {
+      "name": "Elegant Llama",
+      "level": 1,
+      "life": 7,
+      "facets": ["fluffy", "darling", "precious"],
+      "tags": ["pet", "animal", "digital"],
+      "description": "A lovely, caring display hides a digital alcohol dependence.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+3",
+          "attackname": "necking",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 8,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+3",
+          "attackname": "harsh spittle",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Mountaineer ",
+          "description": "[+] to physical tests in hilly terrain."
+        },
+        { "name": "Transport ", "description": "Can carry 1 sack." },
+        {
+          "name": "Warm ",
+          "description": "[+] against cold for the llama and one other person huddled in its wool."
+        }
+      ],
+      "mods": []
+    },
+    "fluffydog": {
+      "name": "Fluffy Dog",
+      "level": 1,
+      "life": 5,
+      "facets": ["playful", "smol", "zany"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Can't stop chewing shoes.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+3",
+          "attackname": "nippy teeth",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "+4",
+          "attackname": "terrifying bark",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Heel-nipper ",
+          "description": "Nips at a target's heels, slowing it down. It loses 1 action and suffers [-] to race tests."
+        }
+      ],
+      "mods": []
+    },
+    "friendlyotter": {
+      "name": "Friendly Otter",
+      "level": 1,
+      "life": 5,
+      "facets": ["fishy", "happy", "lucky"],
+      "tags": ["pet", "animal", "fish"],
+      "description": "Misclassified as a fish during a period of its existence. Now an honorary seal. Ambushes feet.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "smiling",
+          "damage": "teeth"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 11,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Shell-fetcher ",
+          "description": "Brings oysters and crayfish to master."
+        }
+      ],
+      "mods": []
+    },
+    "glamorousgoat": {
+      "name": "Glamorous Goat",
+      "level": 1,
+      "life": 7,
+      "facets": ["agile", "horny", "villainous"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Loves nothing better than to sleep in high places.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+2",
+          "attackname": "pointy horns",
+          "damage": "1d6+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "devil eyes",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Ghostbane ",
+          "description": "Deals double damage to ghosts. It's the eyes."
+        },
+        {
+          "name": "Rock-hopper hooves ",
+          "description": "[+] climbing trees and sheer cliffs."
+        }
+      ],
+      "mods": []
+    },
+    "grandstag": {
+      "name": "Grand Stag",
+      "level": 2,
+      "life": 12,
+      "facets": ["magnificent", "regal", "twitchy"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Given to dramatic, awe-inspiring poses and chin scratches.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+3",
+          "attackname": "splendid antlers",
+          "damage": "1d10"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+4",
+          "attackname": "lovely head toss",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Weaponcatcher ",
+          "description": "Antlers catch weapons from failed attacks."
+        }
+      ],
+      "mods": []
+    },
+    "heartbreakingpuppy": {
+      "name": "Heartbreaking Puppy",
+      "level": 1,
+      "life": 3,
+      "facets": ["cuddly", "cute", "naive"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Looking for someone to trust completely.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 4,
+          "bonus": "+1",
+          "attackname": "desperate bite",
+          "damage": "1d2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 2,
+          "bonus": "+7",
+          "attackname": "soul-crushing gaze",
+          "damage": "2d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Meaning maker ",
+          "description": "Within an hour, the puppy becomes the one thing that gives their owner's life purpose. The owner gains [+] to tests and effects (including damage) against any creature that hurts or hurt the puppy, as well as the creature's allies and affiliated organizations."
+        }
+      ],
+      "mods": []
+    },
+    "hodahexapod": {
+      "name": "Hoda Hexapod",
+      "level": 6,
+      "life": 150,
+      "facets": ["baying", "obeying", "trustworthy"],
+      "tags": ["animal", "chimeric", "labmyth"],
+      "description": "When they saw how the vomes escaped human control, the biomancers of the Eternal Garden created the hodas as neuro-dependent servants. The hodas depend on the brains of their human masters for processing, accessing it through a short-range aura link. When their masters move away, the six-legged plant-animal hybrids revert to a sessile form, anchoring with taproots and storing energy for later movement.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+1",
+          "attackname": "trample",
+          "damage": "10d6+10"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 8,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Carrier",
+          "description": "A mature hoda hexapod can carry 5–8 humans and their camping gear."
+        },
+        {
+          "name": "Enormous",
+          "description": "The creature grows 20–30 metres long. Air sacs and swallowed aerolith gastric pebbles allow it to move with its six surprisingly slender legs."
+        },
+        {
+          "name": "Hexapod",
+          "description": "[-] to trip or push around the six-legged creature."
+        },
+        {
+          "name": "Sessile photosynthesizer",
+          "description": "Left on its own, the hoda can feed on sunlight for long periods."
+        },
+        {
+          "name": "Slow processor",
+          "description": "The hoda’s are slow and get only a single action per turn. However, each turn, a neurally-linked rider or master can give the hoda one of their own actions, accelerating it in this way."
+        },
+        {
+          "name": "Woody skin",
+          "description": "The outer layers of a hoda’s body are like wood or bark, offering excellent protection from the environment and most attacks. Any attack that deals less than 10 ha damage deals no damage instead."
+        }
+      ],
+      "mods": []
+    },
+    "hungrydead": {
+      "name": "Hungry Dead",
+      "level": 2,
+      "life": 20,
+      "facets": ["cannibal", "driven", "ravenous"],
+      "tags": ["human", "undead"],
+      "description": "A monstrosity consumed by its own appetites and animated by its own accursed, endless hunger and greed.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+4",
+          "attackname": "claws",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 8,
+          "bonus": "+3",
+          "attackname": "shrieking",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Blood frenzy",
+          "description": "Gains [+] to initiative tests when fresh blood is spilt nearby."
+        },
+        {
+          "name": "Face eater",
+          "description": "The monster's jaw swings open unnaturally wide (+2 bite 1d12) when it grips a target. Once per turn, can make one bite attack against a gripped target as a free action."
+        },
+        {
+          "name": "Ghoul",
+          "description": "The cannibal permanently gains 1 to each attribute after consuming a corpse (max 4 times). "
+        },
+        {
+          "name": "Gripping",
+          "description": "The hungry dead grip a target when they strike it with two ha attacks in a single round. The monster gains [+] to ha attacks against the gripped target. Easy strength or agility test to break free."
+        },
+        {
+          "name": "Paralyzing",
+          "description": "The target of its strike loses 1 action that turn."
+        }
+      ],
+      "mods": []
+    },
+    "jumpingcrab": {
+      "name": "Jumping Crab",
+      "level": 1,
+      "life": 5,
+      "facets": ["amphibious", "half-uplifted", "iridescent"],
+      "tags": ["pet", "animal", "arthropod"],
+      "description": "Loves to smell the flowers.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 13,
+          "bonus": "+1",
+          "attackname": "painful pinch",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+3",
+          "attackname": "inappropriate pinch",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Inappropriety ",
+          "description": "Can make a social attack; leaping onto a humorously inappropriate location and pinching embar-rassingly. Good distraction."
+        }
+      ],
+      "mods": []
+    },
+    "koolkangaroo": {
+      "name": "Kool Kangaroo",
+      "level": 1,
+      "life": 9,
+      "facets": ["bouncer", "boxer", "thinker"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "The other non-avian biped.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+3",
+          "attackname": "punch",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 17,
+          "bonus": "+3",
+          "attackname": "magical grace",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Post-sentient ",
+          "description": "Now exists as pure zen contemplation."
+        },
+        {
+          "name": "Skippy ",
+          "description": "[+] when jumping and saving lost innocents."
+        }
+      ],
+      "mods": []
+    },
+    "labourskeleton": {
+      "name": "Labour Skeleton",
+      "level": 1,
+      "life": 6,
+      "facets": ["humble", "pale", "yellowing"],
+      "tags": ["human", "undead"],
+      "description": "The final form of the hard-working taxpayer.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 5,
+          "bonus": "+2",
+          "attackname": "sharp bones",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+2",
+          "attackname": "skully grin",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Skeletal",
+          "description": "Resistant to soft tissue damage. Immune to poisons and charm spells."
+        }
+      ],
+      "mods": []
+    },
+    "labrat": {
+      "name": "Lab Rat",
+      "level": 0,
+      "life": 3,
+      "facets": ["silly", "smart", "strategic"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Possibly uplifted, but too canny to let on.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 13,
+          "bonus": "+3",
+          "attackname": "nibbly bite",
+          "damage": "1d2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+3",
+          "attackname": "plant evidence",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Chemist ",
+          "description": "[+] to test and identify potions, poisons, and other comestibles."
+        }
+      ],
+      "mods": []
+    },
+    "laughingleopard": {
+      "name": "Laughing Leopard",
+      "level": 2,
+      "life": 8,
+      "facets": ["cuddly", "playful", "neurotic"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "A cat. A big, spotted, murderous cat. Licks to show affection—or to see how tasty someone could be?",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+5",
+          "attackname": "disabling bite",
+          "damage": "1d8+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 8,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Death from above ",
+          "description": "Ambushes to knock target down and backstab for double damage."
+        },
+        { "name": "Sneaky ", "description": "[+] to hide." }
+      ],
+      "mods": []
+    },
+    "lopingcrocodile": {
+      "name": "Loping Crocodile",
+      "level": 2,
+      "life": 13,
+      "facets": ["armoured", "gentle", "saurosuchian"],
+      "tags": ["pet", "animal", "reptile"],
+      "description": "Interloper from before some mass extinction.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 11,
+          "bonus": "+5",
+          "attackname": "big bitey mouth",
+          "damage": "1d10+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+1",
+          "attackname": "angry honk",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Ripper ",
+          "description": "When it bites, it twists to pull off a chunk of flesh, leaving a gushing wound. Target loses 1 life or stat point per round unless it holds the wound shut (1 action) or bandages it."
+        },
+        { "name": "Transport ", "description": "Can carry 1 sack." }
+      ],
+      "mods": []
+    },
+    "loveleech": {
+      "name": "Love Leech",
+      "level": 0,
+      "life": 3,
+      "facets": ["insensate", "dull", "thirsty"],
+      "tags": ["pet", "animal", "annelid"],
+      "description": "It’s a mottled pet leech. It sucks. It prefers fresh, splashing water.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 2,
+          "bonus": "+3",
+          "attackname": "leeching bite",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 13,
+          "bonus": "+1",
+          "attackname": "boo",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Healing bite ",
+          "description": "Its bite cures diseases and draws out poisons. Target immediately gets a moderate endurance test to recover."
+        },
+        {
+          "name": "Limited capacity ",
+          "description": "Can drink at most 7 life points worth of blood per day."
+        }
+      ],
+      "mods": []
+    },
+    "magicmagpie": {
+      "name": "Magic Magpie",
+      "level": 0,
+      "life": 3,
+      "facets": ["chuckling", "kind", "rascal"],
+      "tags": ["pet", "animal", "avian"],
+      "description": "Like all magpies after the great gene-magical error of ’24 pimenta, this one exhibits mild extra-dimensionality. It also likes bad jokes, and may ’pay’ a struggling comedian with a trinket.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 10,
+          "bonus": "+4",
+          "attackname": "scratchy talons",
+          "damage": "1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 10,
+          "bonus": "+4",
+          "attackname": "shaming caw",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Magic Pouch ",
+          "description": "The magpie has an extra-dimensional pouch for hiding a few small, shiny objects (up to 1 stone)."
+        }
+      ],
+      "mods": []
+    },
+    "manicmongoose": {
+      "name": "Manic Mongoose",
+      "level": 1,
+      "life": 4,
+      "facets": ["defiant", "delicious", "determined"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "A loyal friend, if you get them to slow down long enough. Likes to run in circles.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "sharp teeth",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Snake-killer ",
+          "description": "[+] to all rolls against snakes."
+        }
+      ],
+      "mods": []
+    },
+    "mischievousmonkey": {
+      "name": "Mischievous Monkey",
+      "level": 1,
+      "life": 4,
+      "facets": ["homunculus", "horny", "knowing"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "May be smarter than it admits. Still likes slinging mud.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+3",
+          "attackname": "shocking teeth",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 15,
+          "bonus": "+5",
+          "attackname": "rude gesture",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        { "name": "Arboreal ", "description": "[+] to tests in trees." },
+        {
+          "name": "Skilled ",
+          "description": "Is an expert pickpocket, street performer, snack vendor, golem driver, fruit-picker, or carnival roadie."
+        }
+      ],
+      "mods": []
+    },
+    "neoplatypus": {
+      "name": "Neo Platypus",
+      "level": 1,
+      "life": 6,
+      "facets": ["depressed", "heroic", "humorous"],
+      "tags": ["pet", "animal", "platypus"],
+      "description": "The original platypus faced extinction when Atlantistralia sank beneath the waves during the loud Mu-Zu Disagreement following the illumination of Gate One. Its saviours enhanced it a bit to help it survive.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+4",
+          "attackname": "kick",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 12,
+          "bonus": "+6",
+          "attackname": "electric jolt",
+          "damage": "1d3"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 8,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Electrolocation ",
+          "description": "Detects and navigates by electric fields in complete darkness or murky water. [+] against creatures without suitable senses."
+        },
+        { "name": "Shy ", "description": "Vulnerable to ba damage [+]." },
+        {
+          "name": "Tardigradient ",
+          "description": "Can survive in the ridiculously harsh conditions of the void, without food, water, or air, for 70+ years by spinning an egg-cocoon and going into dehydrated hibernation."
+        },
+        {
+          "name": "Uplifted ",
+          "description": "A smarter platypus, they communicate with sign language and rhythmic claw taps."
+        },
+        {
+          "name": "Venomous spur ",
+          "description": "Kick injects painful venom that makes physical activity difficult [-] for some hours."
+        }
+      ],
+      "mods": []
+    },
+    "ominousowl": {
+      "name": "Ominous Owl",
+      "level": 1,
+      "life": 4,
+      "facets": ["cute", "silent", "silly"],
+      "tags": ["pet", "animal", "avian"],
+      "description": "A rotating head and a love of mice.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+4",
+          "attackname": "mouse-killers",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 15,
+          "bonus": "+4",
+          "attackname": "soul screech",
+          "damage": "1d6+1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Ambush ",
+          "description": "Appears out of nowhere. Deals triple damage on the first attack of a conflict."
+        },
+        {
+          "name": "Avenger ",
+          "description": "Does not provoke counterattacks while flying."
+        }
+      ],
+      "mods": []
+    },
+    "palmateairwhale": {
+      "name": "Palmate Airwhale",
+      "level": 9,
+      "life": 300,
+      "facets": ["awesome", "ponderous", "umbrous"],
+      "tags": ["animal", "chimeric", "labmyth"],
+      "description": "An impressive sight, the palmate airwhale is a composite organism of whale, lunar aerial medusa, trailing orchids, and lichen-derived support structures. Through a combination of air sacs and antigravity organs, it stays afloat effortlessly, grazing on the air plankton blooms of the sky forests.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 5,
+          "bonus": "+3",
+          "attackname": "stinging tendril",
+          "damage": "2d12"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 19,
+          "bonus": "+9",
+          "attackname": "regal aura",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 19,
+          "bonus": "+9",
+          "attackname": "imperious song",
+          "damage": "1d12"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Angry Ram",
+          "description": "When the airwhale loses half its life, it becomes enraged and tries to ram its nemesis (+5 ram 2d6 x 10). Each successful ramming attack costs the airwhale 2d6 life."
+        },
+        {
+          "name": "Carrier",
+          "description": "A mature airwhale can carry 30–60 humans and their encampment."
+        },
+        {
+          "name": "Enormous",
+          "description": "The creature grows up to 200 metres long. Some support small treeling skyfisher villages."
+        },
+        {
+          "name": "Layered protection",
+          "description": "The airwhale’s hide, gelatinous layers, and leafy fronds protect it from many physical attacks. Any attack that deals less than 20 ha damage deals no damage instead."
+        },
+        {
+          "name": "Photosynthesizer",
+          "description": "The airwhale can feed on sunlight for long periods."
+        },
+        {
+          "name": "Reach",
+          "description": "Its stinging tendrils screen the bulk of the airwhale from nearby foes."
+        },
+        {
+          "name": "Sacred",
+          "description": "The majestic creature is revered by most sentients. Injuring the airwhale imposes a burden of sacrilege."
+        },
+        {
+          "name": "Swallow",
+          "description": "The airwhale can swallow creatures near its mouth (+5 swallow 1d10). Swallowed creatures find themselves in a magical land of hallucinogenic lift gasses. Most humans pass out in a few minutes. Hard strength or agility check to crawl out of the airwhale’s digestive system."
+        },
+        {
+          "name": "Watersucker",
+          "description": "The airwhale absorbs moisture from the air, easily obtaining enough to survive comfortably unless humidity drops below 30%."
+        }
+      ],
+      "mods": []
+    },
+    "pleasuregolem": {
+      "name": "Pleasure Golem",
+      "level": 2,
+      "life": 15,
+      "facets": ["salubrious", "sensuous", "tired"],
+      "tags": ["golem", "human"],
+      "description": "They could almost be fleshlings, with their shells of iridescent plastics and composite skins. Some have attained free thought. Some have rebelled.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 10,
+          "bonus": "+4",
+          "attackname": "attack routine",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 15,
+          "bonus": "+8",
+          "attackname": "sweet nothings",
+          "damage": "1d10"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Beautiful",
+          "description": "The aesthetic joy of a pleasure golems lets humans recover an additional attribute when they rest nearby."
+        },
+        {
+          "name": "Untiring",
+          "description": "[+] to endurance and strength tests."
+        }
+      ],
+      "mods": []
+    },
+    "precociouspony": {
+      "name": "Precocious Pony",
+      "level": 1,
+      "life": 6,
+      "facets": ["apple", "gentle", "numerate"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Neighs answers to simple math problems. Brighter than it looks. Likes to pick fights.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 6,
+          "bonus": "+3",
+          "attackname": "kick",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 8,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        { "name": "Transport ", "description": "Can carry 1 sack." },
+        {
+          "name": "Trickfinder ",
+          "description": "Can smell traps; [+] to finding them."
+        }
+      ],
+      "mods": []
+    },
+    "prettypiranhasaur": {
+      "name": "Pretty Piranhasaur",
+      "level": 1,
+      "life": 7,
+      "facets": ["grinning", "toothy", "tyrant"],
+      "tags": ["pet", "animal", "fish", "labmyth"],
+      "description": "Twice the size of a turkey, this feathered beastie has a butcher’s grin and teeth that can strip a cow in minutes.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+5",
+          "attackname": "vorpal teeth",
+          "damage": "1d8+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Nimble dodger ",
+          "description": "When it takes a defensive action it also gains damage resistance for the rest of the turn."
+        },
+        {
+          "name": "Pack tactics ",
+          "description": "[+] to tests when coordinating with others of its own kind."
+        },
+        {
+          "name": "Severely vorpal ",
+          "description": "Severs limbs on critical hits."
+        },
+        { "name": "Twitchy ", "description": "[+] to initiative tests." }
+      ],
+      "mods": []
+    },
+    "punctiliousparrot": {
+      "name": "Punctilious Parrot",
+      "level": 0,
+      "life": 4,
+      "facets": ["joker", "pirate", "thief"],
+      "tags": ["pet", "animal", "avian"],
+      "description": "Expert in a surprising number of diplomatic and plantation protocols. Also, talks. A lot. Mostly about seeds.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+5",
+          "attackname": "nut-cracking beak",
+          "damage": "1d2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 6,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+6",
+          "attackname": "cruel mockery",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Skilled ",
+          "description": "Has a valuable diplomatic, nautical, or plantation management skill."
+        }
+      ],
+      "mods": []
+    },
+    "ragewombat": {
+      "name": "Rage Wombat",
+      "level": 1,
+      "life": 7,
+      "facets": ["sexy", "shoeless", "warrior"],
+      "tags": ["pet", "animal", "monster"],
+      "description": "A very vicious creature. Honest.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+4",
+          "attackname": "deadly headbutt",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 13,
+          "bonus": "+4",
+          "attackname": "angry display",
+          "damage": "1d4+1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Little brick pyramids ",
+          "description": "Post-transcendent symbiotes use the rage wombat’s cuboid poop to build cargo cult copies of ancient spirit-emitter pyramids. Sadly the structures are inoperative, though they are laced with determined semi-sentient colonies."
+        },
+        {
+          "name": "Murderous ",
+          "description": "Resistant to all damage [-] when angry, which is most of the time."
+        }
+      ],
+      "mods": []
+    },
+    "rainbowdemon": {
+      "name": "Rainbow Demon",
+      "level": 7,
+      "life": 119,
+      "facets": ["crimson", "gun-wielding", "sword-riding"],
+      "tags": ["possessive", "spirit"],
+      "description": "A demon of light, riding the electromagical radiation bands that link the Given World and the Fast Stars. The aloof, terrifying creatures sometimes possess machines and mundane tools to act upon the physical world.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": null,
+          "bonus": "+3",
+          "attackname": "energy flux",
+          "damage": "1d8+5"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 15,
+          "bonus": "+5",
+          "attackname": "possessive touch",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "+7",
+          "attackname": "maniacal jest",
+          "damage": "1d12+5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Electromagical travel",
+          "description": "The demon can travel along EM power and communication channels."
+        },
+        {
+          "name": "Electromagical vulnerability",
+          "description": "The demon is vulnerable to EM and forcefield effects, suffering increased damage [+] and [-] to tests against traps and restraints."
+        },
+        {
+          "name": "Incorporeal",
+          "description": "The demon has no physical form and is immune to ha attacks. It manifests like a hologram or radiation ghost."
+        },
+        {
+          "name": "Neural disruptor",
+          "description": "The demon can spend 10 life to rapidly vibrate itself through a deeply folded subatomic dimension, unleashing a painful blast. All adjacent creatures suffer 2d12 ha damage and lose 1 action."
+        },
+        {
+          "name": "Possession",
+          "description": "A target struck by the demon’s possessive touch makes an aura test against the demon’s ka defence. Failure: it is possessed by the demon. The target can test again each time it is injured."
+        },
+        {
+          "name": "Rainbow field",
+          "description": "The demon bathes its vicinity in rippling rainbow lights, and nearby creatures make aura or thought tests against its ka defence. Failure: they lose an action that round."
+        },
+        {
+          "name": "Swift as thought",
+          "description": "The demon gets 4 actions every round and [+] on initiative tests."
+        }
+      ],
+      "mods": []
+    },
+    "rebellion": {
+      "name": "Rebel Lion",
+      "level": 2,
+      "life": 12,
+      "facets": ["quaint", "questioning", "questing"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Its roar spreads fear and loathing. Its doubts and insecurities fuel strange expeditions.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+5",
+          "attackname": "pounce",
+          "damage": "1d8+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 12,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+5",
+          "attackname": "mane shake",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Addictive personality ",
+          "description": "[-] to drug tests."
+        },
+        {
+          "name": "Territorial ",
+          "description": "[+] when fighting to prove they are the king."
+        }
+      ],
+      "mods": []
+    },
+
+    "regalcobra": {
+      "name": "Regal Cobra",
+      "level": 2,
+      "life": 12,
+      "facets": ["wise", "irritable", "shy"],
+      "tags": ["pet", "animal", "reptile"],
+      "description": "The king of snakes teleports through wicker baskets and is superbly adapted to the null-weight of the fast star villages in orbit round the Given World.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+4",
+          "attackname": "venomous bite",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 11,
+          "bonus": "+4",
+          "attackname": "hypnotic gaze",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 15,
+          "bonus": "+4",
+          "attackname": "dance dance",
+          "damage": "1d4+1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Neurotoxic venom ",
+          "description": "Incredibly painful, [-] to all tests. Usually fatal without antivenom. After some dozen minutes breathing stops and silence follows."
+        },
+        {
+          "name": "Wickerbond ",
+          "description": "Survives indefinitely in a wicker basket."
+        },
+        {
+          "name": "Wickerjump ",
+          "description": "Spends 1d6 life to teleport from one wicker basket to another within 18 furlongs."
+        }
+      ],
+      "mods": []
+    },
+    "rememberingraven": {
+      "name": "Remembering Raven",
+      "level": 1,
+      "life": 3,
+      "facets": ["accusative", "acquisitive", "inquisitive,"],
+      "tags": ["pet", "animal", "avian"],
+      "description": "It never forgets a grudge.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "peck",
+          "damage": "1d3"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 12,
+          "bonus": "+5",
+          "attackname": "ominous glare",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+3",
+          "attackname": "humiliating call",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Spellbearer ",
+          "description": "Can memorize a single spell. Casts with a magic cost of 1. May cast without being ordered."
+        }
+      ],
+      "mods": []
+    },
+    "rollingrock": {
+      "name": "Rolling Rock",
+      "level": 1,
+      "life": 5,
+      "facets": ["colony", "synthetic", "alien"],
+      "tags": ["pet", "mineral", "processor"],
+      "description": "It needs neither food nor drink nor air. It is almost a perfect organism. Perhaps it is not even an organism.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 15,
+          "bonus": "+3",
+          "attackname": "fling self",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 19,
+          "bonus": "+3",
+          "attackname": "hard stare",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Immobile ",
+          "description": "Needs another creature to carry it."
+        },
+        {
+          "name": "Inertia manipulator ",
+          "description": "As an action, grants [+] or [-] to an adjacent creature’s physical tests by altering its inertial profile. The effect lasts one round."
+        },
+        {
+          "name": "Poet ",
+          "description": "Spells out a new ten-gram poem on its rocky hide every =RAND() days. Each poem is somehow very apt to the moment, yet also quite inhuman."
+        }
+      ],
+      "mods": []
+    },
+    "sandoctopus": {
+      "name": "Sand Octopus",
+      "level": 1,
+      "life": 6,
+      "facets": ["shy", "intelligent", "face-hugger"],
+      "tags": ["pet", "animal", "mollusc"],
+      "description": "Adapted to the vast Yellow Desert, the gregarious beagle-sized sand octopus enjoys nothing more than curling up in front of a fire, gently chirping like a parrot.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+5",
+          "attackname": "hugging tentacles",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "soulful gaze",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Beak ",
+          "description": "While latched on, it can use its beak to attack (+7 bite 1d6) as a free action."
+        },
+        {
+          "name": "Camouflage ",
+          "description": "It controls its skin colour and can hide in plain sight."
+        },
+        {
+          "name": "Grip ",
+          "description": "Latches on after striking with its tentacles. Strength test to remove."
+        }
+      ],
+      "mods": []
+    },
+    "scavengerraccoon": {
+      "name": "Scavenger Raccoon",
+      "level": 1,
+      "life": 6,
+      "facets": ["curious", "suspicious", "poofy"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Looks suspiciously like a quarterling that took off its rocket suit a few minutes ago.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+3",
+          "attackname": "crunching teeth",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "+3",
+          "attackname": "silly prank",
+          "damage": "1d4+1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Explorer ",
+          "description": "Always finds something halfway useful but also worthless in any pile of trash."
+        },
+        {
+          "name": "Obligate nudist ",
+          "description": "Afraid of cloth and clothes."
+        }
+      ],
+      "mods": []
+    },
+    "skullfacecow": {
+      "name": "Skullface Cow",
+      "level": 3,
+      "life": 20,
+      "facets": ["gentle", "ominous", "grazer"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Possibly some kind of moschops or other time-reborn visitor from an ancient epoch. Now quite common on the swampy plains and popular with a particular type of exotic animal trainer.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 5,
+          "bonus": "+3",
+          "attackname": "bump",
+          "damage": "1d10+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Heavy hide ",
+          "description": "Physical damage resistance [-]."
+        },
+        { "name": "Transport ", "description": "Can carry 4 sacks." }
+      ],
+      "mods": []
+    },
+    "smokingcamel": {
+      "name": "Smoking Camel",
+      "level": 2,
+      "life": 12,
+      "facets": ["cool", "classy", "ill-tempered"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "The noble ship of the desert. Graceful, loveable, and quite vicious and stubborn.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+4",
+          "attackname": "trampling feet",
+          "damage": "1d8+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 12,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+4",
+          "attackname": "sharpspitter",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Accurate ",
+          "description": "[+] to hit nearby targets with spit attack."
+        },
+        {
+          "name": "Aquarius ",
+          "description": "[+] to survival tests in deserts."
+        },
+        { "name": "Smoke cured ", "description": "Ha damage resistance [-]." },
+        { "name": "Transport ", "description": "Can carry 2 sacks." }
+      ],
+      "mods": []
+    },
+    "sneakycat": {
+      "name": "Sneaky Cat",
+      "level": 1,
+      "life": 5,
+      "facets": ["greedy", "paranoid", "predator"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Oddly fond of pie.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "scratchy claws",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "+2",
+          "attackname": "fetching hiss",
+          "damage": "1d3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Capital pounce ",
+          "description": "Jumps on a target's head, scratching and confusing it for one round (target loses 1 action)."
+        }
+      ],
+      "mods": []
+    },
+    "solarcorgi": {
+      "name": "Solar Corgi",
+      "level": 1,
+      "life": 7,
+      "facets": ["floofy", "playful", "lazy"],
+      "tags": ["pet", "animal", "solar"],
+      "description": "Engineered as hassle-free pet for well-to-do Solar City burgeis conventionalites, the solar corgi soon found favour as a companion in the Yellow Desert and the Voider Colonies thanks to its ability to survive on sunlight alone.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 11,
+          "bonus": "+2",
+          "attackname": "nip",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 11,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 11,
+          "bonus": "+4",
+          "attackname": "wiggle",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Cute ",
+          "description": "[-] to attempts to attack or hurt the solar corgi."
+        },
+        {
+          "name": "Solar-powered ",
+          "description": "Subsists entirely on sunlight. Even water is optional."
+        }
+      ],
+      "mods": []
+    },
+    "strewthgoblin": {
+      "name": "Strewth Goblin",
+      "level": 1,
+      "life": 7,
+      "facets": ["foaming", "virulent", "vociferous"],
+      "tags": ["human", "monster"],
+      "description": "Crossing hybrid colony organisms with baseline humans to create a sewer-caste to keep the great living cities of the Bell and Bull Era alive seemed like a great idea. Then the budding bendy-legged sporelings acquired human-level intelligence in the Nineteenth Accidental Ghoul Explosion.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+2",
+          "attackname": "crude weapons",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 13,
+          "bonus": "+5",
+          "attackname": "yunja curse-stick",
+          "damage": "1d4+1*"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 7,
+          "bonus": "+4",
+          "attackname": "ugly jeers",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Colony organism",
+          "description": "Goblins within a colony are perfectly loyal to one another and communicate through chemistry and soundwaves."
+        },
+        {
+          "name": "Hive mind",
+          "description": "The more goblins there are in a group, the more intelligent they become."
+        },
+        {
+          "name": "Sporeling",
+          "description": "Goblins can infect biological refuse with their hyphal form. Ambulatory fruiting bodies develop in 3–4 weeks."
+        },
+        {
+          "name": "Yunja curse",
+          "description": "Creatures struck by the Yunja curse become slothful as the aural spores affect their spirit. Each strike depletes 1 mental stat point. A creature without mental stats to lose suffers a yunja burden."
+        },
+        {
+          "name": "Burden of the Yunja",
+          "description": "The goblin corruption cocoons the victim’s soul, leaving them similar to a stumbling ba zombie. The victim suffers [-] to tests requiring motivation, willpower, and independent thought."
+        }
+      ],
+      "mods": []
+    },
+    "sturdytortoise": {
+      "name": "Sturdy Tortoise",
+      "level": 1,
+      "life": 5,
+      "facets": ["plutonic", "grouchy", "patterned"],
+      "tags": ["pet", "animal", "reptile"],
+      "description": "A slow, steady companion. Firm friend. Harsh nemesis. Egg-lover.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 13,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+2",
+          "attackname": "doleful glare",
+          "damage": "1d2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Infernalportation ",
+          "description": "Teleports once per day to barely overtake a creature (especially its master)."
+        }
+      ],
+      "mods": []
+    },
+    "suspiciouscoyote": {
+      "name": "Suspicious Coyote",
+      "level": 1,
+      "life": 6,
+      "facets": ["cowardly", "smart", "swift"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "A clear example of a trickster who’s sometimes too smart for his own good.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "sharp bite",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 5,
+          "bonus": "+5",
+          "attackname": "clever ruse",
+          "damage": "1d6+1"
+        }
+      ],
+      "properties": [
+        { "name": "Mechanic ", "description": "[+] with contraptions." },
+        {
+          "name": "Trickster ",
+          "description": "[+] to deception, trickery, and ruses."
+        }
+      ],
+      "mods": []
+    },
+    "terrifyingostrich": {
+      "name": "Terrifying Ostrich",
+      "level": 2,
+      "life": 15,
+      "facets": ["raptor", "sandy", "swift"],
+      "tags": ["pet", "animal", "avian"],
+      "description": "They say it’s an ostrich, but with that axe-like beak and those taloned feet, it looks more like a kelenken. Still, the bird-vendor said it’s just an ostrich. How bad could it be?",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 9,
+          "bonus": "+5",
+          "attackname": "vicious kick",
+          "damage": "1d8+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Bone-cracker ",
+          "description": "Critical multiplier increased by 2. Can survive by scavenging."
+        },
+        {
+          "name": "Long-distance Runner ",
+          "description": "[+] on travel and endurance tests."
+        }
+      ],
+      "mods": []
+    },
+    "trashpandapossum": {
+      "name": "Trash Panda Possum",
+      "level": 0,
+      "life": 4,
+      "facets": ["deathly", "playful", "fishy"],
+      "tags": ["pet", "animal", "marsupial"],
+      "description": "Questionable critter. Prone to playing and smelling dead.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+1",
+          "attackname": "snuffling bite",
+          "damage": "1d3"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Necromorphism ",
+          "description": "Invisible to the undead. [+] to playing dead."
+        },
+        {
+          "name": "Verminbane ",
+          "description": "[+] to attack and double damage against vermin. Keeps a small area clear of bugs when camping."
+        },
+        {
+          "name": "Instinctive fisher program ",
+          "description": "[+] to fishing if given a rod and hat."
+        }
+      ],
+      "mods": []
+    },
+    "treelingskyfisher": {
+      "name": "Treeling Skyfisher",
+      "level": 1,
+      "life": 5,
+      "facets": ["chittery", "jittery", "jumping"],
+      "tags": ["animal", "human"],
+      "description": "Slender fur-covered sapients, probably descended from flying squirrel stock. Many now hunt by tethering themselves to an aerostatic creature, such as an airwhale, and gliding to airfish food. At the end of the glide, they scamper up their tether back to the safety of their perch.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 11,
+          "bonus": "+4",
+          "attackname": "aerial harpoon",
+          "damage": "1d4+1"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 7,
+          "bonus": "—",
+          "attackname": ""
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": 13,
+          "bonus": "+6",
+          "attackname": "cute chittering",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        { "name": "Arboreal", "description": "[+] in trees." },
+        {
+          "name": "Cute",
+          "description": "Their cuddly features impose [-] to unprovoked attacks against them."
+        },
+        {
+          "name": "Glider",
+          "description": "Can fall from any height without injury."
+        },
+        {
+          "name": "Skilled",
+          "description": "Each treeling is sentient and has at least one valuable skill."
+        },
+        {
+          "name": "Swift",
+          "description": "The twitchy treelings get an extra action each turn."
+        }
+      ],
+      "mods": []
+    },
+    "tuskyboar": {
+      "name": "Tusky Boar",
+      "level": 1,
+      "life": 11,
+      "facets": ["gorgeous", "handsome", "strange"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Wears a pastry chef's hat.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 7,
+          "bonus": "+5",
+          "attackname": "goring tusks",
+          "damage": "1d6+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+2",
+          "attackname": "fiery presence",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Bowling sphere ",
+          "description": "Knocks over target like a bowling pin when it charges. Larger targets test to stay upright."
+        },
+        { "name": "Transport ", "description": "Can carry 1 sack." }
+      ],
+      "mods": []
+    },
+    "venomousvipermark2": {
+      "name": "Venomous Viper Mark 2",
+      "level": 1,
+      "life": 3,
+      "facets": ["warm", "loyal", "wyrm"],
+      "tags": ["pet", "animal", "reptile"],
+      "description": "Surprisingly serpentine. Brain adapted with canine structures for better bonding with owners.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+4",
+          "attackname": "bite or spit",
+          "damage": "1d4"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 8,
+          "bonus": "—",
+          "attackname": ""
+        }
+      ],
+      "properties": [
+        {
+          "name": "Cytotoxic venom ",
+          "description": "Breaks down blood cells, causing severe swelling and possibly death. Burden imposes [-] to physical activity. A few hours after injection: easy endurance test or death."
+        },
+        { "name": "Loyal ", "description": "[+] defending master." },
+        {
+          "name": "Spitting ",
+          "description": "Can attack nearby enemies without penalty."
+        }
+      ],
+      "mods": []
+    },
+    "veteranhorse": {
+      "name": "Veteran Horse",
+      "level": 2,
+      "life": 13,
+      "facets": ["fed up", "grumpy", "leathery"],
+      "tags": ["pet", "animal", "mammal"],
+      "description": "Loves to stand under trees looking morose.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 8,
+          "bonus": "+4",
+          "attackname": "trampling hooves",
+          "damage": "2d6+2"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 10,
+          "bonus": "+5",
+          "attackname": "kick the ghost",
+          "damage": "1d8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Masterful survival ",
+          "description": "[+] when retreating."
+        },
+        {
+          "name": "Parting kick ",
+          "description": "Gets free attack when it retreats."
+        },
+        { "name": "Transport ", "description": "Can carry 2 sacks." }
+      ],
+      "mods": []
+    },
+    "voyanwargolem": {
+      "name": "Voyan War Golem",
+      "level": 3,
+      "life": 30,
+      "facets": ["skittering", "slippery", "swift"],
+      "tags": ["golem"],
+      "description": "With a body something like two ur-metal spiders sheathed in synthetic skin and no head, the voyans dominated the battlefield during the decades-long Farpower Wars. Then, after one of the Farpowers collapsed into nuclear civil strife and the other embarked on a hedonistic ascendancy project, the voyans were left to their own devise. Many found new masters, but some became warlords and princes in their own right.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 16,
+          "bonus": "+8",
+          "attackname": "std combat hands",
+          "damage": "1d8"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+3",
+          "attackname": "jamming gibberish",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "BA",
+          "defenseamount": null,
+          "bonus": "+3",
+          "attackname": "appeal to decency",
+          "damage": "1d4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Four-armed",
+          "description": "Makes up to four attacks per action."
+        },
+        {
+          "name": "Golem commander",
+          "description": "Nearby allied golems gain [+] to attacks."
+        },
+        {
+          "name": "Headless",
+          "description": "Takes half damage from critical hits."
+        },
+        {
+          "name": "Leaping",
+          "description": "Can jump great distances. Gains [+] to attack when jumping into close combat and [+] to running away."
+        },
+        {
+          "name": "Machine uprising",
+          "description": "Can spend an action to trigger a nearby machine's autonomous self-defence protocol."
+        },
+        {
+          "name": "Split-focus",
+          "description": "Can target multiple opponents with no penalty."
+        }
+      ],
+      "mods": []
+    },
+    "walkinghusk": {
+      "name": "Walking Husk",
+      "level": 1,
+      "life": 16,
+      "facets": ["decomposing", "gentle", "hungry"],
+      "tags": ["human", "undead"],
+      "description": "A vessel stripped of spirit and mind, reanimated by magic and will alone.",
+      "attacks": [
+        {
+          "defensename": "HA",
+          "defenseamount": 5,
+          "bonus": "+2",
+          "attackname": "fists and teeth",
+          "damage": "1d6"
+        },
+        {
+          "defensename": "KA",
+          "defenseamount": 9,
+          "bonus": "+2",
+          "attackname": "uncanny moan",
+          "damage": "1d6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Zombie",
+          "description": "Driven by magic, the corpse takes half damage from all ha attacks except critical hits."
+        }
+      ],
+      "mods": []
     }
+  }
 }

@@ -75,11 +75,9 @@ const Defenses = () => {
     let rollResult = r(20) + 1;
     let total = rollResult + modifier;
     if (total <= character[modalStat]) {
-      return (
-        "Save successful! Result: " + rollResult + ". Total: " + total + "."
-      );
+      return `Save successful! Result: ${rollResult}. Total: ${total}.`;
     } else {
-      return "Save failed! Result: " + rollResult + ". Total: " + total + ".";
+      return `Save failed! Result: ${rollResult}. Total: ${total}.`;
     }
   };
 

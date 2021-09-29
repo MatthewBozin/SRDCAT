@@ -7,7 +7,7 @@ import Character from "../data/character.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
-const ExportCharCard = (props) => {
+const ExportCard = (props) => {
   const { name, rank, modulate } = props;
 
   const [castText, setCastText] = useState("");
@@ -20,14 +20,7 @@ const ExportCharCard = (props) => {
     newchar.LIFE -= totalCost;
     setCharacter(JSON.parse(JSON.stringify(newchar)));
     setCastText(
-      character.name +
-        " casted " +
-        name +
-        " at base cost " +
-        rank.power +
-        " for a total cost of " +
-        totalCost +
-        " life!"
+      `${character.name} casted ${name} at base cost ${rank.power} for a total cost of ${totalCost} life!`
     );
   };
 
@@ -97,4 +90,4 @@ const ExportCharCard = (props) => {
   );
 };
 
-export default ExportCharCard;
+export default ExportCard;

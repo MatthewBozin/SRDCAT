@@ -3,15 +3,26 @@ import Name from "../cards/Name";
 import Description from "../cards/Description";
 import Col from "react-bootstrap/Col";
 import Character from "../data/character.js";
+import WorldState from "../data/worldstate.js";
 import { FaRegTrashAlt, FaRegFolderOpen } from "react-icons/fa";
 
-const SaveCharCard = (props) => {
+const SaveCard = (props) => {
   const [character] = useContext(Character);
+  const [worldState] = useContext(WorldState);
   const [expanded, setExpanded] = useState(false);
   const [confirm, setConfirm] = useState(false);
   const [confirmType, setConfirmType] = useState({});
 
-  const { char, saveChar, loadChar, deleteChar, slot } = props;
+  const { context, eachSlot, saveSlot, loadSlot, deleteSlot, slot } = props;
+
+  const gate = () => {
+    if (context === "character") {
+      return character;
+    }
+    if (context === "worldstate") {
+      return worldState;
+    }
+  };
 
   const expandCollapse = (status) => {
     setExpanded(!status);
@@ -24,13 +35,13 @@ const SaveCharCard = (props) => {
   const confirmAction = () => {
     switch (confirmType.type) {
       case "overwrite":
-        saveChar(slot, character);
+        saveSlot(slot, gate());
         break;
       case "delete":
-        deleteChar(slot);
+        deleteSlot(slot);
         break;
       case "load":
-        loadChar(slot);
+        loadSlot(slot);
     }
     confirmToggle(confirm);
   };
@@ -43,13 +54,13 @@ const SaveCharCard = (props) => {
     { name: "Type", value: "type" },
   ];
 
-  if (char.name === undefined) {
+  if (eachSlot.name === undefined) {
     return (
       <div>
         <span className="padded5px outerbox">(empty)</span>
         <button
           onClick={() => {
-            saveChar(slot, character);
+            saveSlot(slot, gate());
           }}
           className="button bordered padded5px margin5px"
         >
@@ -63,7 +74,7 @@ const SaveCharCard = (props) => {
         <article className="outerbox">
           <div className="row">
             <Name
-              name={char.name}
+              name={eachSlot.name}
               expanded={expanded}
               expandCollapse={expandCollapse}
             />
@@ -73,7 +84,7 @@ const SaveCharCard = (props) => {
                 onClick={() => {
                   confirmToggle();
                   setConfirmType({
-                    text: "Load This Hero",
+                    text: `Load this ${props.context}`,
                     type: "load",
                   });
                 }}
@@ -81,10 +92,10 @@ const SaveCharCard = (props) => {
               <FaRegTrashAlt
                 className="icon mright3px"
                 onClick={() => {
-                  //deleteChar(slot);
+                  //deleteSlot(slot);
                   confirmToggle();
                   setConfirmType({
-                    text: "Delete This Hero",
+                    text: `Delete this ${props.context}`,
                     type: "delete",
                   });
                 }}
@@ -94,12 +105,12 @@ const SaveCharCard = (props) => {
           {expanded === true && (
             <span>
               <hr></hr>
-              <Description description={"A character."} />
+              <Description description={"(placeholder)"} />
               <hr></hr>
               {stats.map((stat, index) => {
                 return (
                   <div className="padded5px" key={index}>
-                    {stat.name}: {char[stat.value]}
+                    {stat.name}: {eachSlot[stat.value]}
                   </div>
                 );
               })}
@@ -134,4 +145,4 @@ const SaveCharCard = (props) => {
   }
 };
 
-export default SaveCharCard;
+export default SaveCard;
