@@ -1,1182 +1,583 @@
 {
-    "data": {
-        "acceleratedflail":{
-            "name": "Accelerated Flail",
-            "tags": [
-                "offensive",
-                "chain"
-            ],
-            "flavor": "A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d12"
-            ],
-            "weight": 20,
-            "value": "2d6* x 500",
-            "modifiers": [
-                "clumsy",
-                "daemon-guidance"
-            ]
-        },
-        "accountantmonkrobes":{
-            "name": "Accountant Monk Robes",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "Flowing accoutrements of the Cogflower Inquisition. Very little metaphysical nonsense can pass these mathemagical threads.",
-            "stat": [
-                "KA"
-            ],
-            "number": [
-                "5"
-            ],
-            "weight": 20,
-            "value": "3d6* x 12000",
-            "modifiers": [
-                "ascetic",
-                "lo-kinetic"
-            ]
-        },
-        "amberancestorcuirass":{
-            "name": "Amber Ancestor Cuirass",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "4",
-                "4"
-            ],
-            "weight": 20,
-            "value": "6d6 x 1000",
-            "modifiers": [
-                "memories"
-            ]
-        },
-        "amberwandgun":{
-            "name": "Amber Wandgun",
-            "tags": [
-                "offensive",
-                "pistol"
-            ],
-            "flavor": "A genteel wand that discharges an arcing bolt of pain and fire.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 100",
-            "modifiers": [
-                "powered",
-                "ranged"
-            ]
-        },
-        "blessedcap":{
-            "name": "Blessed Cap",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "A cap in the style of a local sportsball military display unit, blessed by a technopriest.",
-            "stat": [
-                "KA"
-            ],
-            "number": [
-                "1"
-            ],
-            "weight": 10,
-            "value": "1d10 + 50",
-            "modifiers": [
-                "team-colours"
-            ]
-        },
-        "biggamegun":{
-            "name": "Big Game Gun",
-            "tags": [
-                "offensive",
-                "biggun"
-            ],
-            "flavor": "An infantry-portable heavy orichalcum projector traditionally used by  Neoprimitive Human liberation fighters against the Farpower voyan war golems. Their manufacture has    since passed into the gunsmithing lore of many cultural survivals from the misty aeons.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d6"
-            ],
-            "weight": 20,
-            "value": "2d6* x 100",
-            "modifiers": [
-                "armour-penetrating",
-                "long-range",
-                "shells",
-                "slow-meltdown"
-            ]
-        },
-        "bonerankleathergreatcoat":{
-            "name": "Bone Rank Leather Greatcoat",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "An ash-white greatcoat of supple texture and terrifyingly austere cut. Has special pockets for sacred books and pens.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "2",
-                "2"
-            ],
-            "weight": 10,
-            "value": "3d6* x 300",
-            "modifiers": [
-                "dead-warded",
-                "ghostbone",
-                "spirit-boost"
-            ]
-        },
-        "bourgeoisblade":{
-            "name": "Bourgeois Blade",
-            "tags": [
-                "offensive",
-                "sword"
-            ],
-            "flavor": "A posh sword, more status symbol than weapon.",
-            "stat": [
-                "HA",
-                "BA"
-            ],
-            "number": [
-                "1d6",
-                "1d8"
-            ],
-            "weight": 10,
-            "value": "2d6* x 200",
-            "modifiers": [
-                "decorated"
-            ]
-        },
-        "centuriongoldsuit":{
-            "name": "Centurion Gold Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A gilded golem suit with actual ornate winglets to make the wearer more obvious on the battlefield—and to send and receive semaphore commands.",
-            "stat": [
-                "HA",
-                "BA"
-            ],
-            "number": [
-                "3",
-                "7"
-            ],
-            "weight": 30,
-            "value": "3d6* x 4000",
-            "modifiers": [
-                "blatant",
-                "daimonized",
-                "ornate",
-                "reasonably-inspiring"
-            ]
-        },
-        "chainsickle":{
-            "name": "Chain Sickle",
-            "tags": [
-                "offensive",
-                "chain"
-            ],
-            "flavor": "A weapon developed independently several times during the great servile rebellion time split, it has since become a symbol of the Agricolyte Peasant Republics.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 1",
-            "modifiers": [
-                "disarming",
-                "hindering",
-                "parrying",
-                "two-hands"
-            ]
-        },
-        "chainsword":{
-            "name": "Chainsword",
-            "tags": [
-                "offensive",
-                "chain"
-            ],
-            "flavor": "A ripping chain of shark-like metal teeth powered by a roaring golem hilt-and-gauntlet combination. An elegant weapon of the second zombie apocalypse renaissance.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d12"
-            ],
-            "weight": 20,
-            "value": "2d6* x 100",
-            "modifiers": [
-                "versatile",
-                "vorpal",
-                "zombie-ripper"
-            ]
-        },
-        "crucifixbow":{
-            "name": "Crucifix Bow",
-            "tags": [
-                "offensive",
-                "bow"
-            ],
-            "flavor": "A silent war crossbow used by the cloud empire survivals.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d10"
-            ],
-            "weight": 10,
-            "value": "2d6* x 20",
-            "modifiers": [
-                "arrows",
-                "ranged"
-            ]
-        },
-        "crystalsiegerod":{
-            "name": "Crystal Siege Rod",
-            "tags": [
-                "offensive",
-                "biggun"
-            ],
-            "flavor": "A smoke quartz disintegration ray amplifier housed in a heavily-glyphed brass and brazilwood casing.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "4d6"
-            ],
-            "weight": 30,
-            "value": "2d6* x 200",
-            "modifiers": [
-                "clumsy",
-                "degrading",
-                "powered",
-                "siege",
-                "long-reload"
-            ]
-        },
-        "ghostboneaxe":{
-            "name": "Ghostbone Axe",
-            "tags": [
-                "offensive",
-                "hammeraxe"
-            ],
-            "flavor": "An axe made from the bones of the Early World's shimmering titans. The energies still bound within these gifts of creation devastate abominations against the circle of life.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d8"
-            ],
-            "weight": 20,
-            "value": "2d6* x 200",
-            "modifiers": [
-                "balancer",
-                "ghostbreaker",
-                "two-hands"
-            ]
-        },
-        "goldenhammer":{
-            "name": "Golden Hammer",
-            "tags": [
-                "offensive",
-                "hammeraxe"
-            ],
-            "flavor": "These glittering weapons of pure-printed novalloy are used as currency by the tribes of Newo Georgioi, who till the lands in mock agrarian idyll under the commanding gaze of     the autofac Great Printer Marcus IV. The hammers are decent weapons, but the self-repairing novalloy can only be reforged into other objects by true oldtech autofacs.",
-            "stat": [
-                "HA",
-                "BA"
-            ],
-            "number": [
-                "1d10",
-                "1d10"
-            ],
-            "weight": 20,
-            "value": "2d6 * 100",
-            "modifiers": [
-                "impressive",
-                "versatile"
-            ]
-        },
-        "golembow":{
-            "name": "Golem Bow",
-            "tags": [
-                "offensive",
-                "bow"
-            ],
-            "flavor": "A war bow with a specialized full-arm golem harness that loads and draws the weapon for the archer. After the Steam Lords mandated augmented golem-multi-arm training for     their free labourer caste from childhood, their piston archers revolutionized Long Sea warfare for a generation. Then the 3rd ansible revolution wiped out the Steam Lords.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d12"
-            ],
-            "weight": 10,
-            "value": "2d6* x 200",
-            "modifiers": [
-                "arrows",
-                "life-charged",
-                "ranged"
-            ]
-        },
-        "golemdriverleatherjacket":{
-            "name": "Golem Driver Leather Jacket",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "One sleeve tastefully ripped for that daring wastelander look.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "3"
-            ],
-            "weight": 20,
-            "value": "3d6* x 2",
-            "modifiers": [
-                "cool"
-            ]
-        },
-        "hardlightshield":{
-            "name": "Hard Light Shield",
-            "tags": [
-                "defensive",
-                "armour",
-                "hard-light"
-            ],
-            "flavor": "A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "3"
-            ],
-            "weight": 10,
-            "value": "3d6* x 2000",
-            "modifiers": [
-                "toggle-conceal",
-                "reflective",
-                "prismatic",
-                "sun-forged",
-                "sharp-edge"
-            ]
-        },
-        "hiddenstalkerring":{
-            "name": "Hidden Stalker Ring",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "The ring-shaped focus for a hacked reality encoder spirit uses ghost tendrils to enhance (hijack) the wearer's nervous system and project a chameleon field, making them  harder to detect.",
-            "stat": [
-                "KA"
-            ],
-            "number": [
-                "2"
-            ],
-            "weight": 10,
-            "value": "1d10* x 200",
-            "modifiers": [
-                "chameleon-field"
-            ]
-        },
-        "horaniwarmaul":{
-            "name": "Horani War Maul",
-            "tags": [
-                "offensive",
-                "rod"
-            ],
-            "flavor": "A big two-handed mace forged from the brainstone and neural column of an Iron War golem. Fortunately, few of those wrecks remain in the Horaberg Colline Mountains, the   traditional homeland of the Horani radical machinist collectives.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d20"
-            ],
-            "weight": 30,
-            "value": "2d6* x 1000",
-            "modifiers": [
-                "big",
-                "clumsy",
-                "two-handed"
-            ]
-        },
-        "iksanheatray":{
-            "name": "Iksan Heat Ray",
-            "tags": [
-                "offensive",
-                "energy",
-                "rifle"
-            ],
-            "flavor": "A ruby wand encased in a bakelite and ironwood amplifier casing. Originally mass-produced by the Reasonable Army, new heat-rays are usually ornate one-offs produced by   crystal wizards for the luxury laser hunting market.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 100",
-            "modifiers": [
-                "infrared",
-                "power-curve",
-                "powered",
-                "ranged"
-            ]
-        },
-        "iksanlevellersuit":{
-            "name": "Iksan Leveller Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "Brightly coloured plates of ceramic threaded with silvery metallic links.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "7"
-            ],
-            "weight": 30,
-            "value": "5d6 x 300",
-            "modifiers": [
-                "chromatyped",
-                "jade-essence"
-            ]
-        },
-        "ironminotaursuit":{
-            "name": "Iron Minotaur Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A monstrosity of godmeat and bronze cooked up in the churning crypt vats of the Living Flesh God.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "7"
-            ],
-            "weight": 30,
-            "value": "5d6 x 500",
-            "modifiers": [
-                "large",
-                "iron-tomb",
-                "recycling",
-                "smelly",
-                "strength-servos",
-                "vital-30",
-                "weaponized"
-            ]
-        },
-        "jollyponcho":{
-            "name": "Jolly Poncho",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "A bright yellow poncho with a hood. The edges are trimmed with geometric patterns and russet tassels.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "1",
-                "2"
-            ],
-            "weight": 10,
-            "value": "1d10 x 400",
-            "modifiers": [
-                "fortune-in-misfortune"
-            ]
-        },
-        "leadendragonsuit":{
-            "name": "Leaden Dragon Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A massive suit of malevolently sliding plates and spikes woven around a golem servo harness designed to augment the endurance of its wearer.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "3"
-            ],
-            "weight": 30,
-            "value": "3d6 x 800",
-            "modifiers": [
-                "exoskeleton",
-                "golem-harness",
-                "reactive",
-                "vital-100"
-            ]
-        },
-        "lignumvitaebattlestick":{
-            "name": "Lignum Vitae Battle Stick",
-            "tags": [
-                "offensive",
-                "rod"
-            ],
-            "flavor": "Carved and polished from the glowing heartwood of the heavy tree, the stick sinks in water. Widely used as a “compliance tool” by the imperial uplifters of the Four Sky  Regency, it has remained a traditional badge of rank among the officer-chiefs of the regency camelherder tribes of the Pale Plains beyond the Yellowland.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 1",
-            "modifiers": [
-                "less-lethal"
-            ]
-        },
-        "longeyefusil":{
-            "name": "Longeye Fusil",
-            "tags": [
-                "offensive",
-                "rifle"
-            ],
-            "flavor": "A sniper rifle made to the specifications of the golem fusiliers by the drone human fabricators of the Crust Belt.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d10"
-            ],
-            "weight": 10,
-            "value": "2d6* x 100",
-            "modifiers": [
-                "ammunition",
-                "long-range",
-                "precise"
-            ]
-        },
-        "lucitespellbreaker":{
-            "name": "Lucite Spell-Breaker",
-            "tags": [
-                "offensive",
-                "rod"
-            ],
-            "flavor": "A small club or truncheon of pure lucite reinforced with sinew and copper bands.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "1d4",
-                "1d4"
-            ],
-            "weight": 10,
-            "value": "2d6* x 10",
-            "modifiers": [
-                "break-spell"
-            ]
-        },
-        "luminoushalberd":{
-            "name": "Luminous Halberd",
-            "tags": [
-                "offensive",
-                "polearm"
-            ],
-            "flavor": "A glowing two-handed weapon favoured by the Bund-Bund warriors of the technopapacy.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d10"
-            ],
-            "weight": 20,
-            "value": "2d6 x 50",
-            "modifiers": [
-                "luminous",
-                "spirit-ward"
-            ]
-        },
-        "machineghostbelt":{
-            "name": "Machine Ghost Belt",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "Looping, coiling links of living machine corpses, still sparkling with the ghosts of ancient sapience subroutines.",
-            "stat": [
-                "KA"
-            ],
-            "number": [
-                "3"
-            ],
-            "weight": 20,
-            "value": "1d6* x 20",
-            "modifiers": [
-                "ghost-weave"
-            ]
-        },
-        "magnificentfireballpistol":{
-            "name": "Magnificent Fireball Pistol",
-            "tags": [
-                "offensive",
-                "pistol"
-            ],
-            "flavor": "One of the most stupidly over-powered inventions ever fed into an autofac production matrix. The fireball wandpistols convert the dross of mortal life force into powerful    balls of fire. Hardly a fair trade, in the eyes of the noble land barons.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "3d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 2000",
-            "modifiers": [
-                "explosive",
-                "life-charged",
-                "ranged"
-            ]
-        },
-        "malachitegolemsuit":{
-            "name": "Malachite Golem Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A composite suit of polished semi-magical stone and woven layers of force magic designed to counter massed firearms. The coiling, gurgling force fields seem to cover the suit    in rippling waves of viscous liquid.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "5"
-            ],
-            "weight": 20,
-            "value": "3d6 x 600",
-            "modifiers": [
-                "force-field",
-                "strength-servos",
-                "vital-30"
-            ]
-        },
-        "mirrorofheaven":{
-            "name": "Mirror-of-Heaven",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "A cerulean mirror hung on fine chains of woven unicorn sinew in and the tears of the starborn.",
-            "stat": [
-                "KA"
-            ],
-            "number": [
-                "9"
-            ],
-            "weight": 30,
-            "value": "1d10* x 15000",
-            "modifiers": [
-                "fragile",
-                "spell-reflector"
-            ]
-        },
-        "naniteswarmprojector":{
-            "name":"Nanite Swarm Projector",
-            "tags":[
-                "offensive", 
-                "big-gun", 
-                "nanotech"
-            ],
-            "flavor":"The swarm devours eternal.",
-            "stat":[
-                "HA"
-            ],
-            "number":[
-                "12d2*"
-            ],
-            "weight": 100,
-            "value":"2d6* x 5000",
-            "modifiers":[
-                "back-mounted"
-            ]
-        },
-        "neoprimitivebow":{
-            "name": "Neoprimitive Bow",
-            "tags": [
-                "offensive",
-                "bow"
-            ],
-            "flavor": "A hunting bow designed in a museum style from the lost ages.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 1",
-            "modifiers": [
-                "arrows",
-                "ranged",
-                "two-hands"
-            ]
-        },
-        "obsidianchameleonsuit":{
-            "name": "Obsidian Chameleon Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A rough, pebbly synthetic skin overlaid on a fungal golem metaskeleton. Designed for agility and covert operations.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "5"
-            ],
-            "weight": 20,
-            "value": "3d6 x 3000",
-            "modifiers": [
-                "camouflaged",
-                "neurogolem",
-                "vital-60"
-            ]
-        },
-        "onyxghostsuit":{
-            "name": "Onyx Ghost Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A ghost-infused golem suit of coiling onyx snakes and shifting spirit stones. As it moves, it whispers with hints of lives wasted and dreams destroyed.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "5",
-                "5"
-            ],
-            "weight": 20,
-            "value": "6d6 x 10000",
-            "modifiers": [
-                "aura-booster",
-                "ghost-stones",
-                "vital-50"
-            ]
-        },
-        "orangelandglitterplate":{
-            "name": "Orangeland Glitterplate",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "Flattering form-fitted breastplate of translucent ceramic reinforced with shards of hard light.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "4"
-            ],
-            "weight": 20,
-            "value": "6d6 x 200",
-            "modifiers": [
-                "fashionable",
-                "ornate"
-            ]
-        },
-        "pointyhelmet":{
-            "name": "Pointy Helmet",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A fine helm with the razor sharp horn of a labmythical beast.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2"
-            ],
-            "weight": 10,
-            "value": "3d6* x 20",
-            "modifiers": [
-                "absorbing",
-                "pointy"
-            ]
-        },
-        "plasmaknife":{
-            "name": "Plasma Knife",
-            "tags": [
-                "offensive",
-                "energy",
-                "knife"
-            ],
-            "flavor": "An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d4"
-            ],
-            "weight": 10,
-            "value": "2d6* x 50",
-            "modifiers": [
-                "grievous",
-                "plasma-overcharge",
-                "powered"
-            ]
-        },
-        "porcelainprincepanoply":{
-            "name": "Porcelain Prince Panoply",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A full suit of integrated ceramic-steel composite, best donned with the help of another polybody.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "10"
-            ],
-            "weight": 40,
-            "value": "3d6* x 400",
-            "modifiers": [
-                "mobile",
-                "reflective",
-                "tinkling"
-            ]
-        },
-        "redgodrobes":{
-            "name": "Red God Robes",
-            "tags": [
-                "defensive",
-                "ward"
-            ],
-            "flavor": "Elegantly fashionable robes in the second empire style ward off superstition, slander, and even the occasional stiletto.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "1",
-                "3"
-            ],
-            "weight": 20,
-            "value": "1d10* x 1000",
-            "modifiers": [
-                "commanding",
-                "spell-control"
-            ]
-        },
-        "redlivingmail":{
-            "name": "Red Living Mail",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "Chitinous, half-living armour of flowing arthropod links, infused with the biomancy of the Living Flesh God.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "4"
-            ],
-            "weight": 20,
-            "value": "6d6 x 200",
-            "modifiers": [
-                "ancestral",
-                "cool",
-                "biomass-feast"
-            ]
-        },
-        "siegetortoisesuit":{
-            "name": "Siege Tortoise Suit",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A powerful suit originally developed for Izvoreni siege troopers during the slow wars of the time-space lens tunnels.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "5"
-            ],
-            "weight": 20,
-            "value": "3d6 x 400",
-            "modifiers": [
-                "large",
-                "siege-hardpoints",
-                "strength-servos",
-                "vital-50"
-            ]
-        },
-        "storminfantryshield":{
-            "name": "Storm Infantry Shield",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A large shield to absorb and deflect blows, laced with diffusers to disperse energy attacks. Painted with vivid and terrifying designs to recall the lost immortals of old.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "3"
-            ],
-            "weight": 20,
-            "value": "3d6* x 1",
-            "modifiers": [
-                "bashing",
-                "breakable"
-            ]
-        },
-        "stuckforceshiv":{
-            "name": "Stuckforce Shiv",
-            "tags": [
-                "offensive",
-                "knife"
-            ],
-            "flavor": "A shard of fractured force field held in uneasy equilibrium by a stabilizer pearl bound in jade cement. These blades are the residue of magical struggles beyond what anyone  could imagine today; some say they are the leftovers of creation itself.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d3"
-            ],
-            "weight": 10,
-            "value": "2d6 x 100",
-            "modifiers": [
-                "vorpal-edge"
-            ]
-        },
-        "shocksword":{
-            "name": "Shock-sword",
-            "tags": [
-                "offensive",
-                "energy",
-                "sword"
-            ],
-            "flavor": "A composite amber and ceramic blade, rippling with electromagical fields. Neon knight gangs use decorated custom grips and colourful auras to stand out from one another.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d10"
-            ],
-            "weight": 10,
-            "value": "2d6* x 50",
-            "modifiers": [
-                "boost",
-                "circuit-breaker",
-                "mildly-neuralgic",
-                "powered"
-            ]
-        },
-        "souleaternightblade":{
-            "name": "Soul-eater Nightblade",
-            "tags": [
-                "offensive",
-                "sword"
-            ],
-            "flavor": "The spirit of the Eater in Darkness dwells in this blade.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d8"
-            ],
-            "weight": 10,
-            "value": "2d6* x 20",
-            "modifiers": [
-                "soul-stealer",
-                "mildly-possessed"
-            ]
-        },
-        "steppeshipcutlass":{
-            "name": "Steppe-ship Cutlass",
-            "tags": [
-                "offensive",
-                "sword"
-            ],
-            "flavor": "A masterpiece of precision engineering, the hilt holds an array of valuable tools: corkscrew, bottle opener, bread knife, butter spreader, saw, nail file, nail clipper,  scissors, swappable screwdriver, wrench, magnifying lens, compass, and whistle.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 4",
-            "modifiers": [
-                "sword-breaker",
-                "tool"
-            ]
-        },
-        "switchbladerevolver":{
-            "name": "Switchblade Revolver",
-            "tags": [
-                "offensive",
-                "knife",
-                "pistol"
-            ],
-            "flavor": "An ugly, snub-nosed affair.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 5",
-            "modifiers": [
-                "ammo",
-                "concealed",
-                "ranged",
-                "stiletto"
-            ]
-        },
-        "synthcrystalrayrifle":{
-            "name": "Synth Crystal Ray Rifle",
-            "tags": [
-                "offensive",
-                "energy",
-                "rifle"
-            ],
-            "flavor": "A massive thing of humming compressors and radiating batteries, it emits blistering energy pulses.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d8"
-            ],
-            "weight": 20,
-            "value": "2d6* x 500",
-            "modifiers": [
-                "long-range",
-                "power-drop",
-                "powered"
-            ]
-        },
-        "trenchrifle":{
-            "name": "Trench Rifle",
-            "tags": [
-                "offensive",
-                "polearm",
-                "rifle"
-            ],
-            "flavor": "A heavy, sturdy weapon of oiled wood and blue steel. Tipped with a bayonet that could have been mounted on a partisan.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "2d6"
-            ],
-            "weight": 20,
-            "value": "2d6* x 50",
-            "modifiers": [
-                "ammunition",
-                "long-range"
-            ]
-        },
-        "utilityaxe":{
-            "name": "Utility Axe",
-            "tags": [
-                "offensive",
-                "hammeraxe"
-            ],
-            "flavor": "A multitool axe in bright primary colours in the styles of the venerable Maintenance Warguilds. ",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 1",
-            "modifiers": [
-                "tool"
-            ]
-        },
-        "vastlanderrobes":{
-            "name": "Vastlander Robes",
-            "tags": [
-                "defensive",
-                "armour"
-            ],
-            "flavor": "A set of robes in the relaxed styles of the vastlanders.",
-            "stat": [
-                "HA"
-            ],
-            "number": [
-                "1"
-            ],
-            "weight": 10,
-            "value": "3d6* x 1",
-            "modifiers": [
-                "chitin-weave",
-                "cool"
-            ]
-        },
-        "voidwormtoothknife":{
-            "name": "Voidworm Tooth Knife",
-            "tags": [
-                "offensive",
-                "knife"
-            ],
-            "flavor": "The flickering half-real tooth of a void worm—a terrifying para-creature that gnaws the unrealistic wormways between the worlds. The teeth wash up on the shores of the Voidly    Seas, where the beachcombers of reality polish them into blades.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "1d4",
-                "1d4"
-            ],
-            "weight": 10,
-            "value": "2d6 x 10",
-            "modifiers": [
-                "ammo"
-            ]
-        },
-        "wizardlyquarterstaff":{
-            "name": "Wizardly Quarterstaff",
-            "tags": [
-                "offensive",
-                "polearm"
-            ],
-            "flavor": "A simple staff whose odd shadow seems to fight ghosts in a spirit realm illumined by strange suns.",
-            "stat": [
-                "HA",
-                "KA"
-            ],
-            "number": [
-                "1d6",
-                "1d6"
-            ],
-            "weight": 10,
-            "value": "2d6* x 20",
-            "modifiers": [
-                "defensive"
-            ]
-        }
+  "data": {
+    "acceleratedflail": {
+      "name": "Accelerated Flail",
+      "tags": ["offensive", "chain"],
+      "flavor": "A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
+      "stat": ["HA"],
+      "number": ["2d12"],
+      "weight": 20,
+      "value": "2d6* x 500",
+      "modifiers": ["clumsy", "daemon-guidance"]
+    },
+    "accountantmonkrobes": {
+      "name": "Accountant Monk Robes",
+      "tags": ["defensive", "ward"],
+      "flavor": "Flowing accoutrements of the Cogflower Inquisition. Very little metaphysical nonsense can pass these mathemagical threads.",
+      "stat": ["KA"],
+      "number": ["5"],
+      "weight": 20,
+      "value": "3d6* x 12000",
+      "modifiers": ["ascetic", "lo-kinetic"]
+    },
+    "amberancestorcuirass": {
+      "name": "Amber Ancestor Cuirass",
+      "tags": ["defensive", "armour"],
+      "flavor": "Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.",
+      "stat": ["HA", "KA"],
+      "number": ["4", "4"],
+      "weight": 20,
+      "value": "6d6 x 1000",
+      "modifiers": ["memories"]
+    },
+    "amberwandgun": {
+      "name": "Amber Wandgun",
+      "tags": ["offensive", "pistol"],
+      "flavor": "A genteel wand that discharges an arcing bolt of pain and fire.",
+      "stat": ["HA"],
+      "number": ["2d6"],
+      "weight": 10,
+      "value": "2d6* x 100",
+      "modifiers": ["powered", "ranged"]
+    },
+    "blessedcap": {
+      "name": "Blessed Cap",
+      "tags": ["defensive", "ward"],
+      "flavor": "A cap in the style of a local sportsball military display unit, blessed by a technopriest.",
+      "stat": ["KA"],
+      "number": ["1"],
+      "weight": 10,
+      "value": "1d10 + 50",
+      "modifiers": ["team-colours"]
+    },
+    "biggamegun": {
+      "name": "Big Game Gun",
+      "tags": ["offensive", "biggun"],
+      "flavor": "An infantry-portable heavy orichalcum projector traditionally used by  Neoprimitive Human liberation fighters against the Farpower voyan war golems. Their manufacture has    since passed into the gunsmithing lore of many cultural survivals from the misty aeons.",
+      "stat": ["HA"],
+      "number": ["2d6"],
+      "weight": 20,
+      "value": "2d6* x 100",
+      "modifiers": [
+        "armour-penetrating",
+        "long-range",
+        "shells",
+        "slow-meltdown"
+      ]
+    },
+    "bonerankleathergreatcoat": {
+      "name": "Bone Rank Leather Greatcoat",
+      "tags": ["defensive", "armour"],
+      "flavor": "An ash-white greatcoat of supple texture and terrifyingly austere cut. Has special pockets for sacred books and pens.",
+      "stat": ["HA", "KA"],
+      "number": ["2", "2"],
+      "weight": 10,
+      "value": "3d6* x 300",
+      "modifiers": ["dead-warded", "ghostbone", "spirit-boost"]
+    },
+    "bourgeoisblade": {
+      "name": "Bourgeois Blade",
+      "tags": ["offensive", "sword"],
+      "flavor": "A posh sword, more status symbol than weapon.",
+      "stat": ["HA", "BA"],
+      "number": ["1d6", "1d8"],
+      "weight": 10,
+      "value": "2d6* x 200",
+      "modifiers": ["decorated"]
+    },
+    "centuriongoldsuit": {
+      "name": "Centurion Gold Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A gilded golem suit with actual ornate winglets to make the wearer more obvious on the battlefield—and to send and receive semaphore commands.",
+      "stat": ["HA", "BA"],
+      "number": ["3", "7"],
+      "weight": 30,
+      "value": "3d6* x 4000",
+      "modifiers": ["blatant", "daimonized", "ornate", "reasonably-inspiring"]
+    },
+    "chainsickle": {
+      "name": "Chain Sickle",
+      "tags": ["offensive", "chain"],
+      "flavor": "A weapon developed independently several times during the great servile rebellion time split, it has since become a symbol of the Agricolyte Peasant Republics.",
+      "stat": ["HA"],
+      "number": ["1d6"],
+      "weight": 10,
+      "value": "2d6* x 1",
+      "modifiers": ["disarming", "hindering", "parrying", "two-hands"]
+    },
+    "chainsword": {
+      "name": "Chainsword",
+      "tags": ["offensive", "chain"],
+      "flavor": "A ripping chain of shark-like metal teeth powered by a roaring golem hilt-and-gauntlet combination. An elegant weapon of the second zombie apocalypse renaissance.",
+      "stat": ["HA"],
+      "number": ["1d12"],
+      "weight": 20,
+      "value": "2d6* x 100",
+      "modifiers": ["versatile", "vorpal", "zombie-ripper"]
+    },
+    "crucifixbow": {
+      "name": "Crucifix Bow",
+      "tags": ["offensive", "bow"],
+      "flavor": "A silent war crossbow used by the cloud empire survivals.",
+      "stat": ["HA"],
+      "number": ["1d10"],
+      "weight": 10,
+      "value": "2d6* x 20",
+      "modifiers": ["arrows", "ranged"]
+    },
+    "crystalsiegerod": {
+      "name": "Crystal Siege Rod",
+      "tags": ["offensive", "biggun"],
+      "flavor": "A smoke quartz disintegration ray amplifier housed in a heavily-glyphed brass and brazilwood casing.",
+      "stat": ["HA"],
+      "number": ["4d6"],
+      "weight": 30,
+      "value": "2d6* x 200",
+      "modifiers": ["clumsy", "degrading", "powered", "siege", "long-reload"]
+    },
+    "ghostboneaxe": {
+      "name": "Ghostbone Axe",
+      "tags": ["offensive", "hammeraxe"],
+      "flavor": "An axe made from the bones of the Early World's shimmering titans. The energies still bound within these gifts of creation devastate abominations against the circle of life.",
+      "stat": ["HA"],
+      "number": ["2d8"],
+      "weight": 20,
+      "value": "2d6* x 200",
+      "modifiers": ["balancer", "ghostbreaker", "two-hands"]
+    },
+    "goldenhammer": {
+      "name": "Golden Hammer",
+      "tags": ["offensive", "hammeraxe"],
+      "flavor": "These glittering weapons of pure-printed novalloy are used as currency by the tribes of Newo Georgioi, who till the lands in mock agrarian idyll under the commanding gaze of     the autofac Great Printer Marcus IV. The hammers are decent weapons, but the self-repairing novalloy can only be reforged into other objects by true oldtech autofacs.",
+      "stat": ["HA", "BA"],
+      "number": ["1d10", "1d10"],
+      "weight": 20,
+      "value": "2d6 * 100",
+      "modifiers": ["impressive", "versatile"]
+    },
+    "golembow": {
+      "name": "Golem Bow",
+      "tags": ["offensive", "bow"],
+      "flavor": "A war bow with a specialized full-arm golem harness that loads and draws the weapon for the archer. After the Steam Lords mandated augmented golem-multi-arm training for     their free labourer caste from childhood, their piston archers revolutionized Long Sea warfare for a generation. Then the 3rd ansible revolution wiped out the Steam Lords.",
+      "stat": ["HA"],
+      "number": ["1d12"],
+      "weight": 10,
+      "value": "2d6* x 200",
+      "modifiers": ["arrows", "life-charged", "ranged"]
+    },
+    "golemdriverleatherjacket": {
+      "name": "Golem Driver Leather Jacket",
+      "tags": ["defensive", "armour"],
+      "flavor": "One sleeve tastefully ripped for that daring wastelander look.",
+      "stat": ["HA"],
+      "number": ["3"],
+      "weight": 20,
+      "value": "3d6* x 2",
+      "modifiers": ["cool"]
+    },
+    "hardlightshield": {
+      "name": "Hard Light Shield",
+      "tags": ["defensive", "armour", "hard-light"],
+      "flavor": "A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
+      "stat": ["HA"],
+      "number": ["3"],
+      "weight": 10,
+      "value": "3d6* x 2000",
+      "modifiers": [
+        "toggle-conceal",
+        "reflective",
+        "prismatic",
+        "sun-forged",
+        "sharp-edge"
+      ]
+    },
+    "hiddenstalkerring": {
+      "name": "Hidden Stalker Ring",
+      "tags": ["defensive", "ward"],
+      "flavor": "The ring-shaped focus for a hacked reality encoder spirit uses ghost tendrils to enhance (hijack) the wearer's nervous system and project a chameleon field, making them  harder to detect.",
+      "stat": ["KA"],
+      "number": ["2"],
+      "weight": 10,
+      "value": "1d10* x 200",
+      "modifiers": ["chameleon-field"]
+    },
+    "horaniwarmaul": {
+      "name": "Horani War Maul",
+      "tags": ["offensive", "rod"],
+      "flavor": "A big two-handed mace forged from the brainstone and neural column of an Iron War golem. Fortunately, few of those wrecks remain in the Horaberg Colline Mountains, the   traditional homeland of the Horani radical machinist collectives.",
+      "stat": ["HA"],
+      "number": ["1d20"],
+      "weight": 30,
+      "value": "2d6* x 1000",
+      "modifiers": ["big", "clumsy", "two-handed"]
+    },
+    "iksanheatray": {
+      "name": "Iksan Heat Ray",
+      "tags": ["offensive", "energy", "rifle"],
+      "flavor": "A ruby wand encased in a bakelite and ironwood amplifier casing. Originally mass-produced by the Reasonable Army, new heat-rays are usually ornate one-offs produced by   crystal wizards for the luxury laser hunting market.",
+      "stat": ["HA"],
+      "number": ["2d6"],
+      "weight": 10,
+      "value": "2d6* x 100",
+      "modifiers": ["infrared", "power-curve", "powered", "ranged"]
+    },
+    "iksanlevellersuit": {
+      "name": "Iksan Leveller Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "Brightly coloured plates of ceramic threaded with silvery metallic links.",
+      "stat": ["HA"],
+      "number": ["7"],
+      "weight": 30,
+      "value": "5d6 x 300",
+      "modifiers": ["chromatyped", "jade-essence"]
+    },
+    "ironminotaursuit": {
+      "name": "Iron Minotaur Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A monstrosity of godmeat and bronze cooked up in the churning crypt vats of the Living Flesh God.",
+      "stat": ["HA"],
+      "number": ["7"],
+      "weight": 30,
+      "value": "5d6 x 500",
+      "modifiers": [
+        "large",
+        "iron-tomb",
+        "recycling",
+        "smelly",
+        "strength-servos",
+        "vital-30",
+        "weaponized"
+      ]
+    },
+    "jollyponcho": {
+      "name": "Jolly Poncho",
+      "tags": ["defensive", "ward"],
+      "flavor": "A bright yellow poncho with a hood. The edges are trimmed with geometric patterns and russet tassels.",
+      "stat": ["HA", "KA"],
+      "number": ["1", "2"],
+      "weight": 10,
+      "value": "1d10 x 400",
+      "modifiers": ["fortune-in-misfortune"]
+    },
+    "leadendragonsuit": {
+      "name": "Leaden Dragon Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A massive suit of malevolently sliding plates and spikes woven around a golem servo harness designed to augment the endurance of its wearer.",
+      "stat": ["HA"],
+      "number": ["3"],
+      "weight": 30,
+      "value": "3d6 x 800",
+      "modifiers": ["exoskeleton", "golem-harness", "reactive", "vital-100"]
+    },
+    "lignumvitaebattlestick": {
+      "name": "Lignum Vitae Battle Stick",
+      "tags": ["offensive", "rod"],
+      "flavor": "Carved and polished from the glowing heartwood of the heavy tree, the stick sinks in water. Widely used as a “compliance tool” by the imperial uplifters of the Four Sky  Regency, it has remained a traditional badge of rank among the officer-chiefs of the regency camelherder tribes of the Pale Plains beyond the Yellowland.",
+      "stat": ["HA"],
+      "number": ["1d6"],
+      "weight": 10,
+      "value": "2d6* x 1",
+      "modifiers": ["less-lethal"]
+    },
+    "longeyefusil": {
+      "name": "Longeye Fusil",
+      "tags": ["offensive", "rifle"],
+      "flavor": "A sniper rifle made to the specifications of the golem fusiliers by the drone human fabricators of the Crust Belt.",
+      "stat": ["HA"],
+      "number": ["1d10"],
+      "weight": 10,
+      "value": "2d6* x 100",
+      "modifiers": ["ammunition", "long-range", "precise"]
+    },
+    "lucitespellbreaker": {
+      "name": "Lucite Spell-Breaker",
+      "tags": ["offensive", "rod"],
+      "flavor": "A small club or truncheon of pure lucite reinforced with sinew and copper bands.",
+      "stat": ["HA", "KA"],
+      "number": ["1d4", "1d4"],
+      "weight": 10,
+      "value": "2d6* x 10",
+      "modifiers": ["break-spell"]
+    },
+    "luminoushalberd": {
+      "name": "Luminous Halberd",
+      "tags": ["offensive", "polearm"],
+      "flavor": "A glowing two-handed weapon favoured by the Bund-Bund warriors of the technopapacy.",
+      "stat": ["HA"],
+      "number": ["1d10"],
+      "weight": 20,
+      "value": "2d6 x 50",
+      "modifiers": ["luminous", "spirit-ward"]
+    },
+    "machineghostbelt": {
+      "name": "Machine Ghost Belt",
+      "tags": ["defensive", "ward"],
+      "flavor": "Looping, coiling links of living machine corpses, still sparkling with the ghosts of ancient sapience subroutines.",
+      "stat": ["KA"],
+      "number": ["3"],
+      "weight": 20,
+      "value": "1d6* x 20",
+      "modifiers": ["ghost-weave"]
+    },
+    "magnificentfireballpistol": {
+      "name": "Magnificent Fireball Pistol",
+      "tags": ["offensive", "pistol"],
+      "flavor": "One of the most stupidly over-powered inventions ever fed into an autofac production matrix. The fireball wandpistols convert the dross of mortal life force into powerful    balls of fire. Hardly a fair trade, in the eyes of the noble land barons.",
+      "stat": ["HA"],
+      "number": ["3d6"],
+      "weight": 10,
+      "value": "2d6* x 2000",
+      "modifiers": ["explosive", "life-charged", "ranged"]
+    },
+    "malachitegolemsuit": {
+      "name": "Malachite Golem Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A composite suit of polished semi-magical stone and woven layers of force magic designed to counter massed firearms. The coiling, gurgling force fields seem to cover the suit    in rippling waves of viscous liquid.",
+      "stat": ["HA"],
+      "number": ["5"],
+      "weight": 20,
+      "value": "3d6 x 600",
+      "modifiers": ["force-field", "strength-servos", "vital-30"]
+    },
+    "mirrorofheaven": {
+      "name": "Mirror-of-Heaven",
+      "tags": ["defensive", "ward"],
+      "flavor": "A cerulean mirror hung on fine chains of woven unicorn sinew in and the tears of the starborn.",
+      "stat": ["KA"],
+      "number": ["9"],
+      "weight": 30,
+      "value": "1d10* x 15000",
+      "modifiers": ["fragile", "spell-reflector"]
+    },
+    "naniteswarmprojector": {
+      "name": "Nanite Swarm Projector",
+      "tags": ["offensive", "big-gun", "nanotech"],
+      "flavor": "The swarm devours eternal.",
+      "stat": ["HA"],
+      "number": ["12d2*"],
+      "weight": 100,
+      "value": "2d6* x 5000",
+      "modifiers": ["back-mounted"]
+    },
+    "neoprimitivebow": {
+      "name": "Neoprimitive Bow",
+      "tags": ["offensive", "bow"],
+      "flavor": "A hunting bow designed in a museum style from the lost ages.",
+      "stat": ["HA"],
+      "number": ["1d6"],
+      "weight": 10,
+      "value": "2d6* x 1",
+      "modifiers": ["arrows", "ranged", "two-hands"]
+    },
+    "obsidianchameleonsuit": {
+      "name": "Obsidian Chameleon Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A rough, pebbly synthetic skin overlaid on a fungal golem metaskeleton. Designed for agility and covert operations.",
+      "stat": ["HA"],
+      "number": ["5"],
+      "weight": 20,
+      "value": "3d6 x 3000",
+      "modifiers": ["camouflaged", "neurogolem", "vital-60"]
+    },
+    "onyxghostsuit": {
+      "name": "Onyx Ghost Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A ghost-infused golem suit of coiling onyx snakes and shifting spirit stones. As it moves, it whispers with hints of lives wasted and dreams destroyed.",
+      "stat": ["HA", "KA"],
+      "number": ["5", "5"],
+      "weight": 20,
+      "value": "6d6 x 10000",
+      "modifiers": ["aura-booster", "ghost-stones", "vital-50"]
+    },
+    "orangelandglitterplate": {
+      "name": "Orangeland Glitterplate",
+      "tags": ["defensive", "armour"],
+      "flavor": "Flattering form-fitted breastplate of translucent ceramic reinforced with shards of hard light.",
+      "stat": ["HA"],
+      "number": ["4"],
+      "weight": 20,
+      "value": "6d6 x 200",
+      "modifiers": ["fashionable", "ornate"]
+    },
+    "pointyhelmet": {
+      "name": "Pointy Helmet",
+      "tags": ["defensive", "armour"],
+      "flavor": "A fine helm with the razor sharp horn of a labmythical beast.",
+      "stat": ["HA"],
+      "number": ["2"],
+      "weight": 10,
+      "value": "3d6* x 20",
+      "modifiers": ["absorbing", "pointy"]
+    },
+    "plasmaknife": {
+      "name": "Plasma Knife",
+      "tags": ["offensive", "energy", "knife"],
+      "flavor": "An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.",
+      "stat": ["HA"],
+      "number": ["2d4"],
+      "weight": 10,
+      "value": "2d6* x 50",
+      "modifiers": ["grievous", "plasma-overcharge", "powered"]
+    },
+    "porcelainprincepanoply": {
+      "name": "Porcelain Prince Panoply",
+      "tags": ["defensive", "armour"],
+      "flavor": "A full suit of integrated ceramic-steel composite, best donned with the help of another polybody.",
+      "stat": ["HA"],
+      "number": ["10"],
+      "weight": 40,
+      "value": "3d6* x 400",
+      "modifiers": ["mobile", "reflective", "tinkling"]
+    },
+    "redgodrobes": {
+      "name": "Red God Robes",
+      "tags": ["defensive", "ward"],
+      "flavor": "Elegantly fashionable robes in the second empire style ward off superstition, slander, and even the occasional stiletto.",
+      "stat": ["HA", "KA"],
+      "number": ["1", "3"],
+      "weight": 20,
+      "value": "1d10* x 1000",
+      "modifiers": ["commanding", "spell-control"]
+    },
+    "redlivingmail": {
+      "name": "Red Living Mail",
+      "tags": ["defensive", "armour"],
+      "flavor": "Chitinous, half-living armour of flowing arthropod links, infused with the biomancy of the Living Flesh God.",
+      "stat": ["HA"],
+      "number": ["4"],
+      "weight": 20,
+      "value": "6d6 x 200",
+      "modifiers": ["ancestral", "cool", "biomass-feast"]
+    },
+    "siegetortoisesuit": {
+      "name": "Siege Tortoise Suit",
+      "tags": ["defensive", "armour"],
+      "flavor": "A powerful suit originally developed for Izvoreni siege troopers during the slow wars of the time-space lens tunnels.",
+      "stat": ["HA"],
+      "number": ["5"],
+      "weight": 20,
+      "value": "3d6 x 400",
+      "modifiers": ["large", "siege-hardpoints", "strength-servos", "vital-50"]
+    },
+    "storminfantryshield": {
+      "name": "Storm Infantry Shield",
+      "tags": ["defensive", "armour"],
+      "flavor": "A large shield to absorb and deflect blows, laced with diffusers to disperse energy attacks. Painted with vivid and terrifying designs to recall the lost immortals of old.",
+      "stat": ["HA"],
+      "number": ["3"],
+      "weight": 20,
+      "value": "3d6* x 1",
+      "modifiers": ["bashing", "breakable"]
+    },
+    "stuckforceshiv": {
+      "name": "Stuckforce Shiv",
+      "tags": ["offensive", "knife"],
+      "flavor": "A shard of fractured force field held in uneasy equilibrium by a stabilizer pearl bound in jade cement. These blades are the residue of magical struggles beyond what anyone  could imagine today; some say they are the leftovers of creation itself.",
+      "stat": ["HA"],
+      "number": ["2d3"],
+      "weight": 10,
+      "value": "2d6 x 100",
+      "modifiers": ["vorpal-edge"]
+    },
+    "shocksword": {
+      "name": "Shock-sword",
+      "tags": ["offensive", "energy", "sword"],
+      "flavor": "A composite amber and ceramic blade, rippling with electromagical fields. Neon knight gangs use decorated custom grips and colourful auras to stand out from one another.",
+      "stat": ["HA"],
+      "number": ["1d10"],
+      "weight": 10,
+      "value": "2d6* x 50",
+      "modifiers": ["boost", "circuit-breaker", "mildly-neuralgic", "powered"]
+    },
+    "souleaternightblade": {
+      "name": "Soul-eater Nightblade",
+      "tags": ["offensive", "sword"],
+      "flavor": "The spirit of the Eater in Darkness dwells in this blade.",
+      "stat": ["HA"],
+      "number": ["1d8"],
+      "weight": 10,
+      "value": "2d6* x 20",
+      "modifiers": ["soul-stealer", "mildly-possessed"]
+    },
+    "steppeshipcutlass": {
+      "name": "Steppe-ship Cutlass",
+      "tags": ["offensive", "sword"],
+      "flavor": "A masterpiece of precision engineering, the hilt holds an array of valuable tools: corkscrew, bottle opener, bread knife, butter spreader, saw, nail file, nail clipper,  scissors, swappable screwdriver, wrench, magnifying lens, compass, and whistle.",
+      "stat": ["HA"],
+      "number": ["1d6"],
+      "weight": 10,
+      "value": "2d6* x 4",
+      "modifiers": ["sword-breaker", "tool"]
+    },
+    "switchbladerevolver": {
+      "name": "Switchblade Revolver",
+      "tags": ["offensive", "knife", "pistol"],
+      "flavor": "An ugly, snub-nosed affair.",
+      "stat": ["HA"],
+      "number": ["1d6"],
+      "weight": 10,
+      "value": "2d6* x 5",
+      "modifiers": ["ammo", "concealed", "ranged", "stiletto"]
+    },
+    "synthcrystalrayrifle": {
+      "name": "Synth Crystal Ray Rifle",
+      "tags": ["offensive", "energy", "rifle"],
+      "flavor": "A massive thing of humming compressors and radiating batteries, it emits blistering energy pulses.",
+      "stat": ["HA"],
+      "number": ["2d8"],
+      "weight": 20,
+      "value": "2d6* x 500",
+      "modifiers": ["long-range", "power-drop", "powered"]
+    },
+    "trenchrifle": {
+      "name": "Trench Rifle",
+      "tags": ["offensive", "polearm", "rifle"],
+      "flavor": "A heavy, sturdy weapon of oiled wood and blue steel. Tipped with a bayonet that could have been mounted on a partisan.",
+      "stat": ["HA"],
+      "number": ["2d6"],
+      "weight": 20,
+      "value": "2d6* x 50",
+      "modifiers": ["ammunition", "long-range"]
+    },
+    "utilityaxe": {
+      "name": "Utility Axe",
+      "tags": ["offensive", "hammeraxe"],
+      "flavor": "A multitool axe in bright primary colours in the styles of the venerable Maintenance Warguilds. ",
+      "stat": ["HA"],
+      "number": ["1d6"],
+      "weight": 10,
+      "value": "2d6* x 1",
+      "modifiers": ["tool"]
+    },
+    "vastlanderrobes": {
+      "name": "Vastlander Robes",
+      "tags": ["defensive", "armour"],
+      "flavor": "A set of robes in the relaxed styles of the vastlanders.",
+      "stat": ["HA"],
+      "number": ["1"],
+      "weight": 10,
+      "value": "3d6* x 1",
+      "modifiers": ["chitin-weave", "cool"]
+    },
+    "voidwormtoothknife": {
+      "name": "Voidworm Tooth Knife",
+      "tags": ["offensive", "knife"],
+      "flavor": "The flickering half-real tooth of a void worm—a terrifying para-creature that gnaws the unrealistic wormways between the worlds. The teeth wash up on the shores of the Voidly    Seas, where the beachcombers of reality polish them into blades.",
+      "stat": ["HA", "KA"],
+      "number": ["1d4", "1d4"],
+      "weight": 10,
+      "value": "2d6 x 10",
+      "modifiers": ["ammo"]
+    },
+    "wizardlyquarterstaff": {
+      "name": "Wizardly Quarterstaff",
+      "tags": ["offensive", "polearm"],
+      "flavor": "A simple staff whose odd shadow seems to fight ghosts in a spirit realm illumined by strange suns.",
+      "stat": ["HA", "KA"],
+      "number": ["1d6", "1d6"],
+      "weight": 10,
+      "value": "2d6* x 20",
+      "modifiers": ["defensive"]
     }
+  }
 }

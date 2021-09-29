@@ -79,29 +79,16 @@ function ItemAttackModal(props) {
       if (damage.adv === "-") {
         damageAdv = " [-] ";
       }
-      let message =
-        character.name +
-        " attacks with their " +
-        name +
-        withProAdv(attack).string +
-        "!\nThe attack is a " +
-        attackRes +
-        "\n" +
-        damageResult.total +
-        " " +
-        architecture.statMasks[stat[index]] +
-        " damage" +
-        damageAdv +
-        " dealt!";
+      let message = `${character.name} attacks with their ${name}${
+        withProAdv(attack).string
+      }!\nThe attack is a ${attackRes}\n${damageResult.total} ${
+        architecture.statMasks[stat[index]]
+      } damage${damageAdv} dealt!`;
       setAttackMessage(message);
     } else {
-      let message =
-        character.name +
-        " attacks with their " +
-        name +
-        withProAdv(attack).string +
-        "!\nThe attack is a " +
-        attackRes;
+      let message = `${character.name} attacks with their ${name}${
+        withProAdv(attack).string
+      }!\nThe attack is a ${attackRes}`;
       setAttackResult(attackRes);
       setAttackMessage(message);
     }

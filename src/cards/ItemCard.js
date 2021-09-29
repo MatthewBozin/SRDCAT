@@ -82,7 +82,7 @@ const ItemCard = (props) => {
               toggle(setExpanded, expanded);
             }}
           />
-          <span className="rightfloat mright12px mtop4px">
+          <span className="row rightfloat mright12px mtop4px">
             {props.deleteFrom === "items" && tags.includes("offensive") && (
               <Attack
                 className="iconsvg"
@@ -123,19 +123,32 @@ const ItemCard = (props) => {
               )}
             {capitalism(props.deleteFrom) && (
               <FaDollarSign
-                className="icon"
+                className="icon mright12px mtop10px"
                 onClick={() => {
                   setSaleModalOpen(true);
                   setAttackModalOpen(false);
                 }}
               />
             )}
-            <AddSubtract
-              card={props.card}
-              form={props.form}
-              placement={props.placement}
-              deleteFrom={props.deleteFrom}
-            />
+            {props.context !== "worldstate" && (
+              <AddSubtract
+                context={"character"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+              />
+            )}
+
+            {props.context !== "character" && (
+              <AddSubtract
+                context={"worldstate"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+              />
+            )}
           </span>
         </div>
         {expanded === false && props.deleteFrom === "none" && (

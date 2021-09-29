@@ -3,6 +3,7 @@ import Context from "../data/context.js";
 import { Link } from "react-router-dom";
 import { ReactComponent as Collections } from "../data/icons/collections.svg";
 import { ReactComponent as Herosheet } from "../data/icons/herosheet.svg";
+import { FaGlobe } from "react-icons/fa";
 
 const Linklet = (props) => {
   const [context, setContext] = useContext(Context);
@@ -19,6 +20,11 @@ const Linklet = (props) => {
           return <Herosheet className="iconsvgselected" />;
         }
         return <Herosheet className="iconsvg" />;
+      case "worldsheet":
+        if (context.link === props.type) {
+          return <FaGlobe className="pbottom5px" />;
+        }
+        return <FaGlobe className="pbottom5px" />;
     }
   };
 

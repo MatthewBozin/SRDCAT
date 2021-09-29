@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import CardList from "../cards/CardList";
-import Context from "../data/context.js";
-import Character from "../data/character.js";
-import StatSheet from "../charactersheet/StatSheet";
-import CharName from "../charactersheet/CharName";
-import SaveCharModal from "../charactersheet/SaveCharModal";
-import ExportCharModal from "../charactersheet/ExportCharModal";
-import RandomCharModal from "../charactersheet/RandomCharModal";
-import { sackstonesoap } from "../data/exports.js";
+import CardList from "../src/cards/CardList";
+import Context from "../src/data/context.js";
+import Character from "../src/data/character.js";
+import StatSheet from "../src/charactersheet/StatSheet";
+import SlotName from "../src/charactersheet/SlotName";
+import SaveModal from "../src/charactersheet/SaveModal";
+import ExportModal from "../src/charactersheet/ExportModal";
+import RandomCharModal from "../src/charactersheet/RandomCharModal";
+import { sackstonesoap } from "../src/data/exports.js";
 import { Link } from "react-router-dom";
 
 const HeroSheet = () => {
@@ -42,11 +42,11 @@ const HeroSheet = () => {
     <div className="charsheet">
       <div className="outerbox limitwidth">
         <span className="row rightfloat mright12px">
-          <SaveCharModal />
-          <ExportCharModal />
+          <SaveModal />
+          <ExportModal />
           <RandomCharModal />
         </span>
-        <CharName />
+        <SlotName />
         <StatSheet />
       </div>
       <div className="outerbox limitwidth">

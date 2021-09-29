@@ -61,6 +61,7 @@ const SpellCard = (props) => {
               />
             )}
             <AddSubtract
+              context={"character"}
               card={props.card}
               form={props.form}
               placement={props.placement}

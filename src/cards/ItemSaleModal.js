@@ -41,12 +41,7 @@ function ItemSaleModal(props) {
       newCharacter.CASH -= salePrice;
       newCharacter["items"].push(props.card);
       toaster.notify(
-        "Item bought: " +
-          name +
-          "! Cost: " +
-          salePrice +
-          ", Current Cash: " +
-          newCharacter.CASH,
+        `Item bought: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`,
         {
           duration: 3000,
         }
@@ -56,12 +51,7 @@ function ItemSaleModal(props) {
       newCharacter.CASH += salePrice;
       newCharacter[props.deleteFrom].splice(props.placement, 1);
       toaster.notify(
-        "Item sold: " +
-          name +
-          "! Cost: " +
-          salePrice +
-          ", Current Cash: " +
-          newCharacter.CASH,
+        `Item sold: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`,
         {
           duration: 3000,
         }

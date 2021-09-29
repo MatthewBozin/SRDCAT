@@ -2,15 +2,17 @@ import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { FaFileDownload } from "react-icons/fa";
 import Character from "../data/character.js";
+import WorldState from "../data/worldstate.js";
 import architecture from "../data/architecture.json";
-import ExportCharCard from "./ExportCharCard.js";
-import ImportCharCard from "./ImportCharCard.js";
+import ExportCard from "./ExportCard.js";
+import ImportCard from "./ImportCard.js";
 import { sackstonesoap } from "../data/exports.js";
 
-const SaveCharModal = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+const ExportModal = (props) => {
   const [character] = useContext(Character);
-  const [charexport, setCharExport] = useState("");
+  const [worldState] = useContext(WorldState);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [slotexport, setSlotExport] = useState("");
 
   const modalOpening = () => {
     setModalOpen(true);
@@ -20,17 +22,26 @@ const SaveCharModal = () => {
     setModalOpen(false);
   };
 
+  const gate = () => {
+    if (props.context === "character") {
+      return character;
+    }
+    if (props.context === "worldstate") {
+      return worldState;
+    }
+  };
+
   let properties = architecture.properties;
 
   const exportTxt = () => {
     let txtstring = "";
     for (let property of properties) {
-      let charprop = character[property];
-      if (typeof charprop == "object") {
-        //if charprop === "items"
+      let slotprop = gate()[property];
+      if (typeof slotprop == "object") {
+        //if slotprop === "items"
         let cards = require(`../data/collections/` + property);
         let stringprop = "";
-        for (let object of charprop) {
+        for (let object of slotprop) {
           let card = cards.data[object.name];
           let stringcard = "";
           stringcard += "Name: " + card.name + "\n";
@@ -84,6 +95,22 @@ const SaveCharModal = () => {
                 "\n";
             }
           }
+          if (property === "creatures") {
+            stringcard += `Level ${card.level} / Life ${card.life}\n`;
+            let facets = ``;
+            for (let facet of card.facets) {
+              facets += `${facet}, `;
+            }
+            stringcard += `${facets}`;
+            for (let attack of card.attacks) {
+              let attackstring = `${attack.defensename}: ${attack.defenseamount} / ${attack.bonus} ${attack.name} ${attack.damage}\n`;
+              stringcard += attackstring;
+            }
+            for (let prop of card.properties) {
+              let propstring = `${prop.name}: ${prop.description}\n`;
+              stringcard += propstring;
+            }
+          }
           stringprop +=
             stringcard + "----------------------------------------\n";
         }
@@ -93,11 +120,11 @@ const SaveCharModal = () => {
           "\n=========================\n" +
           stringprop;
       } else {
-        let txtproperty = charprop.toString();
+        let txtproperty = slotprop.toString();
         txtstring += property + ": " + txtproperty + "\n";
       }
     }
-    setCharExport(txtstring);
+    setSlotExport(txtstring);
   };
 
   /*const process = (toProcess) => {
@@ -111,7 +138,7 @@ const SaveCharModal = () => {
   };*/
 
   const exportJson = () => {
-    setCharExport(JSON.stringify(character));
+    setSlotExport(JSON.stringify(gate()));
   };
 
   const exportCsv = () => {
@@ -129,18 +156,18 @@ const SaveCharModal = () => {
         csvstring += process(charProperty);
       }
     }
-    //setCharExport(csvstring);*/
-    setCharExport("Feature under construction.");
+    //setSlotExport(csvstring);*/
+    setSlotExport("Feature under construction.");
   };
 
   const ifCharExport = () => {
-    if (charexport !== "") {
+    if (slotexport !== "") {
       return (
         <div>
           <button
             className="button bordered padded5px fullwidth"
             onClick={() => {
-              navigator.clipboard.writeText(charexport);
+              navigator.clipboard.writeText(slotexport);
               //possible nonfunctionality with older browsers?
             }}
           >
@@ -149,7 +176,7 @@ const SaveCharModal = () => {
           <button
             className="button bordered padded5px fullwidth"
             onClick={() => {
-              setCharExport("");
+              setSlotExport("");
             }}
           >
             reset
@@ -193,10 +220,11 @@ const SaveCharModal = () => {
       />
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          {character.name} Export/Import Options
+          {gate().name} Export/Import Options
         </Modal.Header>
         <Modal.Body className="modalbackground">
-          <ImportCharCard
+          <ImportCard
+            context={props.context}
             name={"Import as .json"}
             description={
               "Copy and paste character JSON data into the textarea."
@@ -205,7 +233,7 @@ const SaveCharModal = () => {
           <hr />
           {exportTypes.map((type, index) => {
             return (
-              <ExportCharCard
+              <ExportCard
                 key={index}
                 name={type.name}
                 description={type.description}
@@ -215,10 +243,10 @@ const SaveCharModal = () => {
           })}
           <br />
           {ifCharExport()}
-          <div className={"textwrap"}>{charexport}</div>
+          <div className={"textwrap"}>{slotexport}</div>
         </Modal.Body>
       </Modal>
     </div>
   );
 };
-export default SaveCharModal;
+export default ExportModal;

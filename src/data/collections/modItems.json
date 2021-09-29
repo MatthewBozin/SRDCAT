@@ -33,7 +33,7 @@
     },
     "back-mounted":{
         "name":"Back-Mounted",
-        "description":"The item requires a back-mounted component, and cannot be wielded unless the user's back is free."
+        "description":"The item cannot be wielded unless the user's back is free."
     },
     "balancer": {
         "name": "Balancer",

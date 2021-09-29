@@ -1,27 +1,27 @@
 {
   "properties": [
-      "name",
-      "STR",
-      "END",
-      "AGI",
-      "CHA",
-      "AUR",
-      "THO",
-      "HA",
-      "KA",
-      "BA",
-      "LIFE",
-      "MAXLIFE",
-      "LEVEL",
-      "PRO",
-      "MCOST",
-      "HERODICE",
-      "XP",
-      "CASH",
-      "skills",
-      "traits",
-      "items",
-      "spells"
+    "name",
+    "STR",
+    "END",
+    "AGI",
+    "CHA",
+    "AUR",
+    "THO",
+    "HA",
+    "KA",
+    "BA",
+    "LIFE",
+    "MAXLIFE",
+    "LEVEL",
+    "PRO",
+    "MCOST",
+    "HERODICE",
+    "XP",
+    "CASH",
+    "skills",
+    "traits",
+    "items",
+    "spells"
   ],
   "charLevels": {
     "specialextra": {
@@ -118,10 +118,15 @@
     "XP": 0,
     "skills": [],
     "traits": [],
-    "mutations": [],
     "items": [],
     "spells": [],
+    "creatures": [],
     "type": "Special Extra"
+  },
+  "currentWorld": {
+    "name": "Grasslands Ultraviolet",
+    "items": [],
+    "creatures": []
   },
   "charTypes": [
     {
@@ -153,14 +158,7 @@
       "description": "The embodiment of a culture hero, an archetype taken flesh. After reaching the pinnacle of power, the only paths left open are change and decline. There is nowhere further to go."
     }
   ],
-  "attributeArray":[
-      "STR",
-      "END",
-      "AGI",
-      "CHA",
-      "AUR",
-      "THO"
-    ],
+  "attributeArray": ["STR", "END", "AGI", "CHA", "AUR", "THO"],
   "defenses": {
     "HA": {
       "name": "HA",
@@ -202,22 +200,22 @@
       "value": 19
     }
   ],
-  "statMasks":{
-    "STR":"Strength",
-    "END":"Endurance",
-    "AGI":"Agility",
-    "CHA":"Charisma",
-    "AUR":"Aura",
-    "THO":"Thought",
-    "HA":"ha",
-    "KA":"ka",
-    "BA":"ba",
-    "LIFE":"Life",
-    "HERODICE":"Hero Dice",
-    "XP":"Xp",
-    "CASH":"Cash",
-    "LEVEL":"Level",
-    "PRO":"Pro",
-    "MCOST":"Magic Cost"
+  "statMasks": {
+    "STR": "Strength",
+    "END": "Endurance",
+    "AGI": "Agility",
+    "CHA": "Charisma",
+    "AUR": "Aura",
+    "THO": "Thought",
+    "HA": "ha",
+    "KA": "ka",
+    "BA": "ba",
+    "LIFE": "Life",
+    "HERODICE": "Hero Dice",
+    "XP": "Xp",
+    "CASH": "Cash",
+    "LEVEL": "Level",
+    "PRO": "Pro",
+    "MCOST": "Magic Cost"
   }
 }

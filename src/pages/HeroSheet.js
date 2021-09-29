@@ -3,9 +3,9 @@ import CardList from "../cards/CardList";
 import Context from "../data/context.js";
 import Character from "../data/character.js";
 import StatSheet from "../charactersheet/StatSheet";
-import CharName from "../charactersheet/CharName";
-import SaveCharModal from "../charactersheet/SaveCharModal";
-import ExportCharModal from "../charactersheet/ExportCharModal";
+import SlotName from "../charactersheet/SlotName";
+import SaveModal from "../charactersheet/SaveModal";
+import ExportModal from "../charactersheet/ExportModal";
 import RandomCharModal from "../charactersheet/RandomCharModal";
 import { sackstonesoap } from "../data/exports.js";
 import { Link } from "react-router-dom";
@@ -18,6 +18,7 @@ const HeroSheet = () => {
     { name: "Skills", value: "skills" },
     { name: "Traits", value: "traits" },
     { name: "Spells", value: "spells" },
+    { name: "Creatures", value: "creatures" },
   ];
 
   const getEncumbrance = () => {
@@ -43,11 +44,11 @@ const HeroSheet = () => {
     <div className="charsheet">
       <div className="outerbox limitwidth">
         <span className="row rightfloat mright12px">
-          <SaveCharModal />
-          <ExportCharModal />
+          <SaveModal savepath={"SRDcharacters"} context={"character"} />
+          <ExportModal context={"character"} />
           <RandomCharModal />
         </span>
-        <CharName />
+        <SlotName context={"character"} />
         <StatSheet />
       </div>
       <div className="outerbox limitwidth">
@@ -79,6 +80,7 @@ const HeroSheet = () => {
             <span className="mleft5px">{weightString()}</span>
           </div>
           <CardList
+            context={"character"}
             content={character.items}
             form={"minus"}
             deleteFrom={"items"}
@@ -106,6 +108,7 @@ const HeroSheet = () => {
                 </span>
               </div>
               <CardList
+                context={"character"}
                 content={character[category.value]}
                 form={"minus"}
                 deleteFrom={category.value}
