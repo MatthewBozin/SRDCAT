@@ -21,7 +21,7 @@ const HeroSheet = () => {
       <div className="outerbox limitwidth">
         <span className="row rightfloat mright12px">
           <SaveModal savepath={"SRDworlds"} context={"worldstate"} />
-          <ExportModal context={"character"} />
+          <ExportModal context={"worldstate"} />
         </span>
         <SlotName context={"worldstate"} />
       </div>

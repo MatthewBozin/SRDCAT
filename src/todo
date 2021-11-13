@@ -1,37 +1,30 @@
-on rolls:
-  toggle "[+]", "[-]"
-  toggle "Add PRO"
+worldstate -> scene
 
-stats:
-  are modified by internal logic
-    level:
-      press "level up", calculates xp needed, if yes, subtracts xp and adds level
-    pro:
-      modifies self on level
-    mcost:
-      modifies self on [?]
+scene imports top level location modifiers and props(?) from list
 
-cards with ranks are set to rank: 1 in data.json
-  in hero sheet, card rank state is preserved
+PERSONAS
+-TC or player
+-will help transition to websockets
+-button next to SRDCAT title swaps between?
 
+TC: worldstate available instead of character sheet
+-skills/traits/spells are not invisible
+-locations/props are visible
 
+COMMAND LINE
+-actions can generate snippets of pseudocode that dms and players can share
+-inputting the pseudocode into the command line will cause an action
+-ex: creature attacks player, which generates pseudocode:
+damage 10, save THO 18
+dm sends pseudocode to player
+player inputs into their command line:
+SRDcat immediately subtracts 10 from their life and rolls a THO save with target 18
+-CAN BE UPGRADED TO WEBSOCKET EVENTS
 
-
-
-
-
-
-
-
-
-
-  /*
-  lists crafting materials, deprecated
-  const getMats = (materials) => {
-    for (let element of character.materials) {
-      materials += element + ", ";
-    }
-    let mmaterials = materials.slice(0, -2);
-    return <span>{mmaterials}</span>;
-  };
-  */
+examples:
+damage 10, save THO 18 or damage 3
+function splits by ", " to determine individual actions
+then splits by keywords like "or" to determine conditionals
+then splits by " " to parse for functions and parameters
+special function words like "damage" or "save" trigger specific functions
+words after functions words are treated as parameters
