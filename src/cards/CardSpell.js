@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import Character from "../data/character.js";
-import SpellCastModal from "./SpellCastModal.js";
+import ModalSpellCast from "./ModalSpellCast.js";
 import { ReactComponent as Cast } from "../data/icons/magic.svg";
 import Name from "./Name";
 import Tag from "./Tag";
@@ -12,8 +12,12 @@ import Table from "./Table";
 import NameValuePair from "./NameValuePair";
 import modsdata from "../data/collections/modSpells.json";
 
-const SpellCard = (props) => {
-  const [expanded, setExpanded] = useState(false);
+const CardSpell = (props) => {
+  let ifExpanded = false;
+  if (props.expanded) {
+    ifExpanded = props.expanded;
+  }
+  const [expanded, setExpanded] = useState(ifExpanded);
   const [castModalOpen, setCastModalOpen] = useState(false);
   const [character, setCharacter] = useContext(Character);
   let cards = require(`../data/collections/spells`);
@@ -66,6 +70,7 @@ const SpellCard = (props) => {
               form={props.form}
               placement={props.placement}
               deleteFrom={props.deleteFrom}
+              category={props.category}
             />
           </span>
         </div>
@@ -129,7 +134,7 @@ const SpellCard = (props) => {
         )}
       </div>
       {props.deleteFrom === "spells" && (
-        <SpellCastModal
+        <ModalSpellCast
           castModalOpen={castModalOpen}
           setCastModalOpen={setCastModalOpen}
           character={character}
@@ -144,4 +149,4 @@ const SpellCard = (props) => {
   );
 };
 
-export default SpellCard;
+export default CardSpell;

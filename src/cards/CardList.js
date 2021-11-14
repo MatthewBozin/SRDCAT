@@ -1,8 +1,10 @@
 import React from "react";
 import Card from "./Card";
-import ItemCard from "./ItemCard";
-import SpellCard from "./SpellCard";
-import CreatureCard from "./CreatureCard";
+import CardItem from "./CardItem";
+import CardSpell from "./CardSpell";
+import CardCreature from "./CardCreature";
+import CardExpedition from "./CardExpedition";
+import CardProp from "./CardProp";
 import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
@@ -15,7 +17,7 @@ const CardList = (props) => {
     }
     if (props.category === "items") {
       return (
-        <ItemCard
+        <CardItem
           context={props.context}
           key={placement}
           card={cardObject}
@@ -28,7 +30,7 @@ const CardList = (props) => {
     }
     if (props.category === "spells") {
       return (
-        <SpellCard
+        <CardSpell
           context={props.context}
           key={placement}
           card={cardObject}
@@ -41,7 +43,33 @@ const CardList = (props) => {
     }
     if (props.category === "creatures") {
       return (
-        <CreatureCard
+        <CardCreature
+          context={props.context}
+          key={placement}
+          card={cardObject}
+          form={props.form}
+          placement={placement}
+          deleteFrom={props.deleteFrom}
+          category={props.category}
+        />
+      );
+    }
+    if (props.category === "expeditions") {
+      return (
+        <CardExpedition
+          context={props.context}
+          key={placement}
+          card={cardObject}
+          form={props.form}
+          placement={placement}
+          deleteFrom={props.deleteFrom}
+          category={props.category}
+        />
+      );
+    }
+    if (props.category === "props") {
+      return (
+        <CardProp
           context={props.context}
           key={placement}
           card={cardObject}

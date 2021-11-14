@@ -11,6 +11,8 @@ TC: worldstate available instead of character sheet
 -skills/traits/spells are not invisible
 -locations/props are visible
 
+-Change persona only from home screen
+
 COMMAND LINE
 -actions can generate snippets of pseudocode that dms and players can share
 -inputting the pseudocode into the command line will cause an action
@@ -22,9 +24,17 @@ SRDcat immediately subtracts 10 from their life and rolls a THO save with target
 -CAN BE UPGRADED TO WEBSOCKET EVENTS
 
 examples:
-damage 10, save THO 18 or damage 3
+damage 10, save THO 18: damage 3
 function splits by ", " to determine individual actions
-then splits by keywords like "or" to determine conditionals
+then splits by keywords like "or" or "else" (or most likely ": ") to determine conditionals
 then splits by " " to parse for functions and parameters
 special function words like "damage" or "save" trigger specific functions
 words after functions words are treated as parameters
+
+THIS MEANS THE APP CAN RUN ITS OWN PSEUDOCODE COMMANDS
+for instance, as random roll result
+
+card modal: literally a modal that contains a functional card (harvest from CardList?)
+table: if (typeof result === "object") {display card modal}
+this way, tables can properly link to other cards without disrupting the user's place
+button option to display table as list?

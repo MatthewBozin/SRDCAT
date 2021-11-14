@@ -1,11 +1,19 @@
 {
-  "navmasters": [
+  "TC": [
     {
       "name": "worldsheet",
       "type": "worldsheet",
       "text": "World Sheet",
       "link": "world"
     },
+    {
+      "name": "collections",
+      "type": "collections",
+      "text": "Collections",
+      "link": "/"
+    }
+  ],
+  "PC": [
     {
       "name": "herosheet",
       "type": "herosheet",
@@ -19,11 +27,17 @@
       "link": "/"
     }
   ],
-  "navlets": [
-    { "name": "items", "display": "Items" },
+  "navletsPC": [
     { "name": "skills", "display": "Skills" },
     { "name": "traits", "display": "Traits" },
     { "name": "spells", "display": "Spells" },
+    { "name": "items", "display": "Items" },
     { "name": "creatures", "display": "Creatures" }
+  ],
+  "navletsTC": [
+    { "name": "items", "display": "Items" },
+    { "name": "creatures", "display": "Creatures" },
+    { "name": "expeditions", "display": "Expeditions" },
+    { "name": "props", "display": "Props" }
   ]
 }

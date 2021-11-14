@@ -12,7 +12,7 @@ const AddSubtract = (props) => {
   const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
   const [worldState, setWorldState] = useContext(WorldState);
-  let cards = require(`../data/collections/` + context.collections);
+  let cards = require(`../data/collections/` + props.category);
 
   const gate = () => {
     if (props.context === "character") {
@@ -34,16 +34,16 @@ const AddSubtract = (props) => {
     if (cards.data[props.card.name].table !== undefined) {
       instanced.savedresult = 0;
     }
-    if (context.collections === "creatures") {
+    if (props.category === "creatures") {
       instanced.lifecurrent = cards.data[props.card.name].life;
     }
     let newslot = gate();
-    newslot[context.collections].push(instanced);
-    if (context.collections !== "items") {
-      let jsonArray = newslot[context.collections].map(JSON.stringify);
+    newslot[props.category].push(instanced);
+    if (props.category !== "items") {
+      let jsonArray = newslot[props.category].map(JSON.stringify);
       let uniqueSet = new Set(jsonArray);
       let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
-      newslot[context.collections] = uniqueArray;
+      newslot[props.category] = uniqueArray;
     }
     if (props.context === "character") {
       setCharacter(JSON.parse(JSON.stringify(newslot)));
@@ -75,10 +75,10 @@ const AddSubtract = (props) => {
   if (props.form === "plus") {
     return (
       <div>
-        {props.context === "character" && (
+        {props.context === "character" && context.persona === "PC" && (
           <Herosheet className="iconsvg mright3px" onClick={addCard} />
         )}
-        {props.context === "worldstate" && (
+        {props.context === "worldstate" && context.persona === "TC" && (
           <FaGlobe className="icon mright12px" onClick={addCard} />
         )}
       </div>

@@ -16,6 +16,7 @@ function App() {
   const currentWorld = architecture.currentWorld;
 
   const [context, setContext] = useState({
+    persona: "PC",
     collections: "items",
     link: "collections",
     search: "",

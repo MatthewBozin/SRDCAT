@@ -1,4 +1,6 @@
 {
+  "props": ["testprop"],
+  "expeditions": ["testexpedition"],
   "creatures": [
     "airpig",
     "amphibiousgoldfish",

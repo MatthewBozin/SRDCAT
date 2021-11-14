@@ -5,7 +5,7 @@ import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 import { calcSale, minitest, haggleRoll, toggle } from "../data/exports.js";
 
-function ItemSaleModal(props) {
+function ModalItemSale(props) {
   const [salePrice, setSalePrice] = useState(0);
   const [failSale, setFailSale] = useState(false);
 
@@ -117,4 +117,4 @@ function ItemSaleModal(props) {
   );
 }
 
-export default ItemSaleModal;
+export default ModalItemSale;

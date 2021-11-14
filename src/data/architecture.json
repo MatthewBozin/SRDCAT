@@ -125,6 +125,8 @@
   },
   "currentWorld": {
     "name": "Grasslands Ultraviolet",
+    "props": [],
+    "expeditions": [],
     "items": [],
     "creatures": []
   },
