@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import SpellCostCard from "./SpellCostCard.js";
 import { toggle } from "../data/exports.js";
 
-function SpellCastModal(props) {
+function ModalSpellCast(props) {
   const {
     character,
     setCharacter,
@@ -65,4 +65,4 @@ function SpellCastModal(props) {
   );
 }
 
-export default SpellCastModal;
+export default ModalSpellCast;

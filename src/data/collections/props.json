@@ -1,0 +1,11 @@
+{
+  "data": {
+    "testprop": {
+      "name": "Test Prop",
+      "tags": ["test"],
+      "flavor": "flavor text",
+      "description": "a test expedition",
+      "actions": ["Does a thing.", "Does another thing."]
+    }
+  }
+}

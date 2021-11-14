@@ -4,8 +4,8 @@ import Tag from "../src/cards/Tag";
 import Flavor from "../src/cards/Flavor";
 import AddSubtract from "../src/cards/AddSubtract";
 import NameValuePair from "../src/cards/NameValuePair.js";
-import ItemAttackModal from "../src/cards/ItemAttackModal.js";
-import ItemSaleModal from "../src/cards/ItemSaleModal.js";
+import ModalItemAttack from "../src/cards/ModalItemAttack.js";
+import ModalItemSale from "../src/cards/ModalItemSale.js";
 import { FaDollarSign } from "react-icons/fa";
 import { ReactComponent as Attack } from "../data/icons/attack.svg";
 import { ReactComponent as Defend } from "../data/icons/defend.svg";
@@ -17,7 +17,7 @@ import { sackstonesoap, updateState, toggle } from "../src/data/exports.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
-const ItemCard = (props) => {
+const CardItem = (props) => {
   const [expanded, setExpanded] = useState(false);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
@@ -198,7 +198,7 @@ const ItemCard = (props) => {
         )}
       </article>
       {props.deleteFrom === "items" && (
-        <ItemAttackModal
+        <ModalItemAttack
           attack={attack}
           setAttack={setAttack}
           attackModalOpen={attackModalOpen}
@@ -209,7 +209,7 @@ const ItemCard = (props) => {
           stat={stat}
         />
       )}
-      <ItemSaleModal
+      <ModalItemSale
         saleModalOpen={saleModalOpen}
         setSaleModalOpen={setSaleModalOpen}
         character={character}
@@ -224,4 +224,4 @@ const ItemCard = (props) => {
   );
 };
 
-export default ItemCard;
+export default CardItem;

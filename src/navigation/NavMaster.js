@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useContext } from "react";
 import Linklet from "./Linklet.js";
 import navbar from "../data/navbar.json";
+import Context from "../data/context.js";
 
 const NavMaster = () => {
+  const [context, setContext] = useContext(Context);
+
+  const personaToggle = () => {
+    let newContext = context;
+    if (context.persona === "PC") {
+      newContext.persona = "TC";
+    } else {
+      newContext.persona = "PC";
+    }
+    setContext(JSON.parse(JSON.stringify(newContext)));
+  };
+
   return (
     <h4 className="outerbox">
       <div className="row mleft5px fullwidth">
         <span className="row heading">SRDCAT</span>
+        <span
+          className="button bordered row heading mleft30px"
+          onClick={() => {
+            personaToggle();
+          }}
+        >
+          {context.persona}
+        </span>
         <div className="rightfloat mright12px">
-          {navbar.navmasters.map((navmaster, index) => {
+          {navbar[context.persona].map((navmaster, index) => {
             return (
               <Linklet
                 text={navmaster.text}

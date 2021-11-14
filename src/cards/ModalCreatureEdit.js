@@ -13,7 +13,7 @@ import {
   withProAdv,
 } from "../data/exports.js";
 
-function CreatureEditModal(props) {
+function ModalCreatureEdit(props) {
   const { editModalOpen, setEditModalOpen, creatureName, creatureProperties } =
     props;
 
@@ -44,4 +44,4 @@ function CreatureEditModal(props) {
   );
 }
 
-export default CreatureEditModal;
+export default ModalCreatureEdit;

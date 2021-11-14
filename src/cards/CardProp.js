@@ -3,13 +3,16 @@ import Name from "./Name";
 import Tag from "./Tag";
 import Flavor from "./Flavor";
 import Description from "./Description";
-import Ranks from "./Ranks";
 import AddSubtract from "./AddSubtract";
-import Table from "./Table";
 import Context from "../data/context";
+import Table from "./Table";
 
 const Card = (props) => {
-  const [expanded, setExpanded] = useState(false);
+  let ifExpanded = false;
+  if (props.expanded) {
+    ifExpanded = props.expanded;
+  }
+  const [expanded, setExpanded] = useState(ifExpanded);
   const [context] = useContext(Context);
   let cards;
   if (props.deleteFrom !== "none") {
@@ -21,13 +24,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, ranks, table } =
+  const { name, tags, flavor, description, actions } =
     cards.data[props.card.name];
-
-  let savedrank = 0;
-  if (props.card.savedrank !== undefined) {
-    savedrank = props.card.savedrank;
-  }
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {
@@ -52,7 +50,7 @@ const Card = (props) => {
           />
           <span className="rightfloat mtop4px mright12px">
             <AddSubtract
-              context={"character"}
+              context={"worldstate"}
               card={props.card}
               form={props.form}
               placement={props.placement}
@@ -78,34 +76,18 @@ const Card = (props) => {
             {description !== undefined && (
               <Description description={description} />
             )}
-            {table !== undefined && (
-              <span>
+            <hr></hr>
+            {actions !== undefined && (
+              <div>
+                Actions:{" "}
                 <Table
-                  table={table}
+                  table={actions}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
                 />
-              </span>
+              </div>
             )}
-            <hr></hr>
-            <div className="padded5px">
-              {ranks.length < 2 ? (
-                <span>
-                  <Ranks ranks={ranks} deleteFrom="single" />
-                </span>
-              ) : (
-                <span>
-                  <Ranks
-                    ranks={ranks}
-                    savedrank={savedrank}
-                    deleteFrom={props.deleteFrom}
-                    placement={props.placement}
-                    category={props.category}
-                  />
-                </span>
-              )}
-            </div>
           </span>
         )}
       </div>

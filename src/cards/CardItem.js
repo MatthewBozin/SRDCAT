@@ -4,8 +4,8 @@ import Tag from "./Tag";
 import Flavor from "./Flavor";
 import AddSubtract from "./AddSubtract";
 import NameValuePair from "./NameValuePair.js";
-import ItemAttackModal from "./ItemAttackModal.js";
-import ItemSaleModal from "./ItemSaleModal.js";
+import ModalItemAttack from "./ModalItemAttack.js";
+import ModalItemSale from "./ModalItemSale.js";
 import { FaDollarSign } from "react-icons/fa";
 import { ReactComponent as Attack } from "../data/icons/attack.svg";
 import { ReactComponent as Defend } from "../data/icons/defend.svg";
@@ -17,8 +17,12 @@ import { sackstonesoap, updateState, toggle } from "../data/exports.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
-const ItemCard = (props) => {
-  const [expanded, setExpanded] = useState(false);
+const CardItem = (props) => {
+  let ifExpanded = false;
+  if (props.expanded) {
+    ifExpanded = props.expanded;
+  }
+  const [expanded, setExpanded] = useState(ifExpanded);
   let cards = require(`../data/collections/items`);
 
   const [attackModalOpen, setAttackModalOpen] = useState(false);
@@ -137,6 +141,7 @@ const ItemCard = (props) => {
                 form={props.form}
                 placement={props.placement}
                 deleteFrom={props.deleteFrom}
+                category={props.category}
               />
             )}
 
@@ -147,6 +152,7 @@ const ItemCard = (props) => {
                 form={props.form}
                 placement={props.placement}
                 deleteFrom={props.deleteFrom}
+                category={props.category}
               />
             )}
           </span>
@@ -213,7 +219,7 @@ const ItemCard = (props) => {
         )}
       </article>
       {props.deleteFrom === "items" && (
-        <ItemAttackModal
+        <ModalItemAttack
           attack={attack}
           setAttack={setAttack}
           attackModalOpen={attackModalOpen}
@@ -224,7 +230,7 @@ const ItemCard = (props) => {
           stat={stat}
         />
       )}
-      <ItemSaleModal
+      <ModalItemSale
         saleModalOpen={saleModalOpen}
         setSaleModalOpen={setSaleModalOpen}
         character={character}
@@ -239,4 +245,4 @@ const ItemCard = (props) => {
   );
 };
 
-export default ItemCard;
+export default CardItem;

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import architecture from "../data/architecture.json";
-import NameValuePair from "./NameValuePair.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 import {
@@ -13,22 +12,21 @@ import {
   withProAdv,
 } from "../data/exports.js";
 
-function CreatureAttackModal(props) {
+function ModalItemAttack(props) {
   const [target, setTarget] = useState(10);
   const [attackResult, setAttackResult] = useState("");
   const [attackMessage, setAttackMessage] = useState("");
-  const [attack, setAttack] = useState({ adv: "" });
   const [damage, setDamage] = useState({ adv: "" });
 
   const {
+    attack,
+    setAttack,
     attackModalOpen,
     setAttackModalOpen,
-    creatureName,
-    attackName,
-    attackBonus,
-    attackDamage,
-    attackStat,
-    creatureProperties,
+    character,
+    name,
+    stat,
+    number,
   } = props;
 
   const modularString = (object) => {
@@ -40,11 +38,17 @@ function CreatureAttackModal(props) {
     );
   };
 
-  const confirmAttack = () => {
+  const confirmAttack = (index) => {
     let pro = 0;
+    if (attack.pro === "single") {
+      pro += character.PRO;
+    }
+    if (attack.pro === "double") {
+      pro += character.PRO * 2;
+    }
 
-    let attackRes = test(target, attack.adv, pro, attackBonus);
-    let damageResult = damagecalc(attackDamage, damage.adv);
+    let attackRes = test(target, attack.adv, pro, attack.mod[index]);
+    let damageResult = damagecalc(number[index], damage.adv);
 
     if (attackRes.startsWith("Critical S")) {
       damageResult.total = damageResult.total * 2;
@@ -61,7 +65,8 @@ function CreatureAttackModal(props) {
     ) {
       setAttackResult(
         <div>
-          {attackRes} <br /> {damageResult.total} {attackStat} damage dealt!{" "}
+          {attackRes} <br /> {damageResult.total}{" "}
+          {architecture.statMasks[stat[index]]} damage dealt!{" "}
           {damageResult.explosions !== 0 && (
             <span>(Explosions: {damageResult.explosions})</span>
           )}
@@ -74,14 +79,14 @@ function CreatureAttackModal(props) {
       if (damage.adv === "-") {
         damageAdv = " [-] ";
       }
-      let message = `${creatureName} attacks using their ${attackName} ${
+      let message = `${character.name} attacks with their ${name}${
         withProAdv(attack).string
-      }!\nThe attack is a ${attackRes}\n${
-        damageResult.total
-      } ${attackStat} damage ${damageAdv} dealt!`;
+      }!\nThe attack is a ${attackRes}\n${damageResult.total} ${
+        architecture.statMasks[stat[index]]
+      } damage${damageAdv} dealt!`;
       setAttackMessage(message);
     } else {
-      let message = `${creatureName} attacks using their ${attackName}${
+      let message = `${character.name} attacks with their ${name}${
         withProAdv(attack).string
       }!\nThe attack is a ${attackRes}`;
       setAttackResult(attackRes);
@@ -97,26 +102,50 @@ function CreatureAttackModal(props) {
       }}
     >
       <Modal.Header className="modalbackground">
-        <span className="cardname">Attack using {attackName}!</span>
+        <span className="cardname">Attack using your {name}</span>
       </Modal.Header>
       <Modal.Body className="modalbackground">
-        <div>Attacker: {creatureName}</div>
-        <hr />
-        {creatureProperties.map((property, index) => {
-          if (property.of !== attackName) return;
-          return (
-            <div key={index}>
-              <NameValuePair
-                name={property.name}
-                value={property.description}
-              />
-              <hr />
-            </div>
-          );
-        })}
-        <div>
-          Attack Bonus{modularString(attack)}: {attackBonus}
-        </div>
+        {attack.pro === "single" && (
+          <div>
+            Attack Bonus {modularString(attack)}:
+            {stat.map((eachstat, index) => {
+              return (
+                <span key={index}>
+                  {" "}
+                  <i>{architecture.statMasks[eachstat]}</i>{" "}
+                  {attack.mod[index] + character.PRO}
+                </span>
+              );
+            })}{" "}
+          </div>
+        )}
+        {attack.pro === "double" && (
+          <div>
+            Attack Bonus {modularString(attack)}:
+            {stat.map((eachstat, index) => {
+              return (
+                <span key={index}>
+                  {" "}
+                  <i>{architecture.statMasks[eachstat]}</i>{" "}
+                  {attack.mod[index] + character.PRO * 2}
+                </span>
+              );
+            })}{" "}
+          </div>
+        )}
+        {attack.pro === "" && (
+          <div>
+            Attack Bonus {modularString(attack)}:
+            {stat.map((eachstat, index) => {
+              return (
+                <span key={index}>
+                  {" "}
+                  <i>{architecture.statMasks[eachstat]}</i> {attack.mod[index]}
+                </span>
+              );
+            })}{" "}
+          </div>
+        )}
         <div className="flex">
           <button
             className="button bordered padded5px margin5px flexgrow"
@@ -126,6 +155,36 @@ function CreatureAttackModal(props) {
           >
             [-]
           </button>
+          {attack.pro === "" && (
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleState(attack, setAttack, "pro", "single", character.PRO);
+              }}
+            >
+              PRO
+            </button>
+          )}
+          {attack.pro === "single" && (
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleState(attack, setAttack, "pro", "double", character.PRO);
+              }}
+            >
+              PRO x2
+            </button>
+          )}
+          {attack.pro === "double" && (
+            <button
+              className="button bordered padded5px margin5px flexgrow"
+              onClick={() => {
+                toggleState(attack, setAttack, "pro", "", character.PRO);
+              }}
+            >
+              No PRO
+            </button>
+          )}
           <button
             className="button bordered padded5px margin5px flexgrow"
             onClick={() => {
@@ -137,7 +196,15 @@ function CreatureAttackModal(props) {
         </div>
         <hr />
         <div>
-          Damage{modularString(damage)}: {attackDamage}
+          Damage {modularString(damage)}:{" "}
+          {stat.map((eachstat, index) => {
+            return (
+              <span key={index}>
+                {number[index]} <i>{architecture.statMasks[eachstat]}</i>
+                {index + 1 < stat.length && <span> or </span>}
+              </span>
+            );
+          })}
         </div>
         <div className="flex">
           <button
@@ -158,9 +225,7 @@ function CreatureAttackModal(props) {
           </button>
         </div>
         <hr />
-        <div>
-          Target {architecture.statMasks[attackStat]}: {target}
-        </div>
+        <div>Target: {target}</div>
         <div className="flex">
           <button
             className="button bordered padded5px margin5px flexgrow"
@@ -181,14 +246,19 @@ function CreatureAttackModal(props) {
         </div>
         <hr />
         <div className="flex">
-          <button
-            className="button bordered padded5px margin5px flexgrow"
-            onClick={() => {
-              confirmAttack();
-            }}
-          >
-            Confirm Attack
-          </button>
+          {stat.map((eachstat, index) => {
+            return (
+              <button
+                key={index}
+                className="button bordered padded5px margin5px flexgrow"
+                onClick={() => {
+                  confirmAttack(index);
+                }}
+              >
+                Attack with {architecture.statMasks[eachstat]}
+              </button>
+            );
+          })}
         </div>
         {attackResult !== "" && (
           <div>
@@ -211,4 +281,4 @@ function CreatureAttackModal(props) {
   );
 }
 
-export default CreatureAttackModal;
+export default ModalItemAttack;

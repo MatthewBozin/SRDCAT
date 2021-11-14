@@ -3,8 +3,8 @@ import Name from "./Name";
 import Tag from "./Tag";
 import AddSubtract from "./AddSubtract";
 import NameValuePair from "./NameValuePair.js";
-import CreatureAttackModal from "./CreatureAttackModal.js";
-import CreatureEditModal from "./CreatureEditModal.js";
+import ModalCreatureAttack from "./ModalCreatureAttack.js";
+import ModalCreatureEdit from "./ModalCreatureEdit.js";
 import Character from "../data/character.js";
 import modsdata from "../data/collections/modCreatures.json";
 import architecture from "../data/architecture.json";
@@ -12,8 +12,12 @@ import { updateState, toggle } from "../data/exports.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
-const CreatureCard = (props) => {
-  const [expanded, setExpanded] = useState(false);
+const CardCreature = (props) => {
+  let ifExpanded = false;
+  if (props.expanded) {
+    ifExpanded = props.expanded;
+  }
+  const [expanded, setExpanded] = useState(ifExpanded);
   let cards = require(`../data/collections/creatures`);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
@@ -63,6 +67,7 @@ const CreatureCard = (props) => {
                 form={props.form}
                 placement={props.placement}
                 deleteFrom={props.deleteFrom}
+                category={props.category}
               />
             )}
 
@@ -73,6 +78,7 @@ const CreatureCard = (props) => {
                 form={props.form}
                 placement={props.placement}
                 deleteFrom={props.deleteFrom}
+                category={props.category}
               />
             )}
           </span>
@@ -164,7 +170,7 @@ const CreatureCard = (props) => {
       </article>
       {
         <>
-          <CreatureAttackModal
+          <ModalCreatureAttack
             attackModalOpen={attackModalOpen}
             setAttackModalOpen={setAttackModalOpen}
             character={character}
@@ -175,7 +181,7 @@ const CreatureCard = (props) => {
             attackStat={attackStat}
             creatureProperties={properties}
           />
-          <CreatureEditModal
+          <ModalCreatureEdit
             editModalOpen={editModalOpen}
             setEditModalOpen={setEditModalOpen}
             character={character}
@@ -188,4 +194,4 @@ const CreatureCard = (props) => {
   );
 };
 
-export default CreatureCard;
+export default CardCreature;

@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { r, rdamage } from "../data/exports.js";
 import { FaDiceD20 } from "react-icons/fa";
 import Character from "../data/character.js";
+import ModalCardDisplay from "./ModalCardDisplay.js";
 
 const Table = (props) => {
   let placement = r(props.table.length);
@@ -12,6 +13,7 @@ const Table = (props) => {
   const entry = props.table[index];
   const [damage, setDamage] = useState("");
   const [character, setCharacter] = useContext(Character);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const roll = () => {
     let newplacement = r(props.table.length);
@@ -31,7 +33,32 @@ const Table = (props) => {
     });
   };
 
-  if (typeof props.table == "string") {
+  if (typeof entry === "object") {
+    //return card display modal
+    //and return index button thing (use creature attack)
+    return (
+      <span>
+        <button className="button clearborder" onClick={roll}>
+          <FaDiceD20 className="button scaleup125" />
+        </button>
+        <span
+          className="button"
+          onClick={() => {
+            setModalOpen(true);
+          }}
+        >
+          {entry.name}
+        </span>
+        <ModalCardDisplay
+          modalOpen={modalOpen}
+          setModalOpen={setModalOpen}
+          entry={entry}
+        ></ModalCardDisplay>
+      </span>
+    );
+  }
+
+  if (typeof props.table === "string") {
     return (
       <span>
         <button
