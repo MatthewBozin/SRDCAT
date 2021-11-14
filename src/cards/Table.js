@@ -47,7 +47,7 @@ const Table = (props) => {
             setModalOpen(true);
           }}
         >
-          {entry.name}
+          {entry.display}
         </span>
         <ModalCardDisplay
           modalOpen={modalOpen}
