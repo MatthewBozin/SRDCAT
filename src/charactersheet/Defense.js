@@ -16,7 +16,7 @@ const Defense = (props) => {
     for (let item of character.items) {
       let CardItem = cards.data[item.name];
       for (let i = 0; i < CardItem.stat.length; i++) {
-        if (CardItem.stat[i] === defense.name && CardItem.worn === true) {
+        if (CardItem.stat[i] === defense.name && item.worn === true) {
           total += parseInt(CardItem.number[i]);
         }
       }

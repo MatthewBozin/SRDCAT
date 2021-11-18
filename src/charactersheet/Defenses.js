@@ -34,16 +34,17 @@ const Defenses = () => {
     total += character[defense.name];
     let cards = require(`../data/collections/items`);
 
+    //for (let item of character.items) {
     for (let item of character.items) {
-      for (let item of character.items) {
-        let CardItem = cards.data[item.name];
-        for (let i = 0; i < CardItem.stat.length; i++) {
-          if (CardItem.stat[i] === defense.name && CardItem.worn === true) {
-            total += parseInt(CardItem.number[i]);
-          }
+      console.log(item);
+      let CardItem = cards.data[item.name];
+      for (let i = 0; i < CardItem.stat.length; i++) {
+        if (CardItem.stat[i] === defense.name && item.worn === true) {
+          total += parseInt(CardItem.number[i]);
         }
       }
     }
+    //}
     if (defense.name === "BA") {
       total += Math.round(character.CASH / 250);
     }
