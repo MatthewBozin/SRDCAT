@@ -2,16 +2,10 @@ worldstate -> scene
 
 scene imports top level location modifiers and props(?) from list
 
-PERSONAS
--TC or player
--will help transition to websockets
--button next to SRDCAT title swaps between?
-
-TC: worldstate available instead of character sheet
--skills/traits/spells are not invisible
--locations/props are visible
-
 -Change persona only from home screen
+
+Change creature life (lifecurrent) into modifiable amount
+-Turn it into a modal?
 
 COMMAND LINE
 -actions can generate snippets of pseudocode that dms and players can share
@@ -34,7 +28,19 @@ words after functions words are treated as parameters
 THIS MEANS THE APP CAN RUN ITS OWN PSEUDOCODE COMMANDS
 for instance, as random roll result
 
-card modal: literally a modal that contains a functional card (harvest from CardList?)
+In tables: button option to display table as list?
+
+DONEZO LINE ---------------------------------------------------------------------------------
+
+PERSONAS
+-TC or player
+-will help transition to websockets
+-button next to SRDCAT title swaps between?
+
+TC: worldstate available instead of character sheet
+-skills/traits/spells are not invisible
+-locations/props are visible
+
+CARD DISPLAY MODAL: literally a modal that contains a functional card (harvest from CardList?)
 table: if (typeof result === "object") {display card modal}
 this way, tables can properly link to other cards without disrupting the user's place
-button option to display table as list?
