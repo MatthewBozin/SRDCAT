@@ -21,7 +21,7 @@ const Defense = (props) => {
         }
       }
     }
-    if (defense.name === "BA") {
+    if (defense.name === "ba") {
       total += Math.round((character.CASH - 125) / 250);
     }
     return total;

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import Modal from "react-bootstrap/Modal";
-import { r } from "../data/exports";
+import { r } from "../utils/exports";
 import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import Defense from "./Defense.js";
@@ -9,7 +9,7 @@ import architecture from "../data/architecture.json";
 const Defenses = () => {
   const [character] = useContext(Character);
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalStat, setModalStat] = useState("HA");
+  const [modalStat, setModalStat] = useState("ha");
   const [result, setResult] = useState("");
   const [edit, setEdit] = useState(false);
   const [currentStat, setCurrentStat] = useState(character[modalStat]);
@@ -17,7 +17,7 @@ const Defenses = () => {
   const defenses = architecture.defenses;
   const statMasks = architecture.statMasks;
 
-  const deforder = ["HA", "KA", "BA"];
+  const deforder = ["ha", "ka", "ba"];
 
   const bonuses = [
     [0, 1, 2],
@@ -45,7 +45,7 @@ const Defenses = () => {
       }
     }
     //}
-    if (defense.name === "BA") {
+    if (defense.name === "ba") {
       total += Math.round(character.CASH / 250);
     }
     return total;

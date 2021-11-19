@@ -17,7 +17,7 @@ const ExportCard = (props) => {
 
   const cast = () => {
     let newchar = character;
-    newchar.LIFE -= totalCost;
+    newchar.life -= totalCost;
     setCharacter(JSON.parse(JSON.stringify(newchar)));
     setCastText(
       `${character.name} casted ${name} at base cost ${rank.power} for a total cost of ${totalCost} life!`
@@ -49,7 +49,7 @@ const ExportCard = (props) => {
           </button>
         </div>
         <div className="margin5px outerbox">
-          <NameValuePair name={"Current Life"} value={character.LIFE} />
+          <NameValuePair name={"Current Life"} value={character.life} />
           <NameValuePair name={"Base Cost"} value={rank.power} />
           <NameValuePair
             name={"Character Magic Cost"}
@@ -57,12 +57,12 @@ const ExportCard = (props) => {
           />
           <NameValuePair name={"Effect"} value={rank.effect} />
         </div>
-        {totalCost >= character.LIFE && (
+        {totalCost >= character.life && (
           <div className="outerbox">
             You don't have the life to cast this spell!
           </div>
         )}
-        {totalCost < character.LIFE && (
+        {totalCost < character.life && (
           <div
             className="button bordered margin5px center"
             onClick={() => {

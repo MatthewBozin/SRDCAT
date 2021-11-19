@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Context from "../data/context";
 import { FaSearch } from "react-icons/fa";
-import { s } from "../data/exports.js";
+import { s } from "../utils/exports.js";
 import orders from "../data/orders.json";
 
 const Search = () => {

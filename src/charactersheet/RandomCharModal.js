@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { FaDiceD20 } from "react-icons/fa";
 import Character from "../data/character.js";
-import { s, r } from "../data/exports.js";
+import { s, r } from "../utils/exports.js";
 import architecture from "../data/architecture.json";
 import RandomCharCard from "./RandomCharCard.js";
 let contextData = require(`../data/orders.json`);
@@ -27,14 +27,14 @@ const RandomCharModal = () => {
     let newchar = {};
     let collections = ["skills", "traits", "items", "spells", "creatures"];
     let attributes = architecture.attributeArray;
-    let saves = ["HA", "KA", "BA"];
+    let saves = ["ha", "ka", "ba"];
     let otherstats = [
-      "LEVEL",
+      "level",
       "PRO",
       "actions",
       "MCOST",
-      "LIFE",
-      "MAXLIFE",
+      "life",
+      "maxlife",
       "HERODICE",
       "XP",
       "CASH",

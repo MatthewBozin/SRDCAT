@@ -5,7 +5,7 @@ import Character from "../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import RollCard from "./RollCard.js";
 import architecture from "../data/architecture.json";
-import { test, toggleState, toggle, withProAdv } from "../data/exports.js";
+import { test, toggleState, toggle, withProAdv } from "../utils/exports.js";
 
 const Stats = () => {
   const [character, setCharacter] = useContext(Character);
@@ -15,8 +15,8 @@ const Stats = () => {
   const [edit, setEdit] = useState(false);
   const [testInfo, setTestInfo] = useState({ pro: "", mod: 0, adv: "" });
 
-  const SEA = ["STR", "END", "AGI"];
-  const CAT = ["CHA", "AUR", "THO"];
+  const SEA = ["str", "end", "agi"];
+  const CAT = ["cha", "aur", "tho"];
 
   const targets = architecture.targets;
 

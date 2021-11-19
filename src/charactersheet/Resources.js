@@ -12,7 +12,7 @@ const Resources = () => {
   const [setButton, setSetButton] = useState(false);
 
   const statMasks = architecture.statMasks;
-  const resources = ["LIFE", "HERODICE", "XP", "CASH"];
+  const resources = ["life", "HERODICE", "XP", "CASH"];
   const amounts = [
     [1, 5, 10],
     [-1, -5, -10],
@@ -153,9 +153,9 @@ const Resources = () => {
                 }}
                 id={"modalform" + character[modalStat]}
               />
-              {modalStat === "LIFE" && (
+              {modalStat === "life" && (
                 <span className="mtop45px button--override">
-                  / {character.MAXLIFE}
+                  / {character.maxlife}
                 </span>
               )}
             </div>

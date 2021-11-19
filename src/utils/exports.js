@@ -1,4 +1,4 @@
-import architecture from "./architecture.json";
+import architecture from "../data/architecture.json";
 
 /*
 1. Utility

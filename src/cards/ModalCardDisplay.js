@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { toggle } from "../data/exports.js";
+import { toggle } from "../utils/exports.js";
 import Card from "./Card";
 import CardItem from "./CardItem";
 import CardSpell from "./CardSpell";

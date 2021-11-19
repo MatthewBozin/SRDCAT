@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import NameValuePair from "./NameValuePair.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
-import { calcSale, minitest, haggleRoll, toggle } from "../data/exports.js";
+import { calcSale, minitest, haggleRoll, toggle } from "../utils/exports.js";
 
 function ModalItemSale(props) {
   const [salePrice, setSalePrice] = useState(0);
@@ -22,7 +22,7 @@ function ModalItemSale(props) {
 
   const haggle = () => {
     let price = calcSale(value);
-    let testResult = minitest(character.PRO, character.CHA);
+    let testResult = minitest(character.PRO, character.cha);
     let multiplier = haggleRoll(testResult, props.deleteFrom);
     setSalePrice(Math.round(price * multiplier));
   };

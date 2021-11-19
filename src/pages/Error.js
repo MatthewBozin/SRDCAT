@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { s } from "../data/exports.js";
+import { s } from "../utils/exports.js";
 
 function Error() {
   const snippets = [

@@ -8,7 +8,7 @@ import ModalCreatureEdit from "./ModalCreatureEdit.js";
 import Character from "../data/character.js";
 import modsdata from "../data/collections/modCreatures.json";
 import architecture from "../data/architecture.json";
-import { updateState, toggle } from "../data/exports.js";
+import { updateState, toggle } from "../utils/exports.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
