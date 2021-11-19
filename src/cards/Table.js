@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { r, rdamage } from "../data/exports.js";
+import { r, rdamage } from "../utils/exports.js";
 import { FaDiceD20 } from "react-icons/fa";
 import Character from "../data/character.js";
 import ModalCardDisplay from "./ModalCardDisplay.js";

@@ -7,7 +7,7 @@ import SlotName from "../charactersheet/SlotName";
 import SaveModal from "../charactersheet/SaveModal";
 import ExportModal from "../charactersheet/ExportModal";
 import RandomCharModal from "../charactersheet/RandomCharModal";
-import { sackstonesoap } from "../data/exports.js";
+import { sackstonesoap } from "../utils/exports.js";
 import { Link } from "react-router-dom";
 
 const HeroSheet = () => {

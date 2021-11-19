@@ -12,7 +12,7 @@ const Resources = () => {
   const [setButton, setSetButton] = useState(false);
 
   const statMasks = architecture.statMasks;
-  const stats = ["LEVEL", "PRO", "MCOST"];
+  const stats = ["level", "PRO", "MCOST"];
   const amounts = [
     [1, 5, 10],
     [-1, -5, -10],

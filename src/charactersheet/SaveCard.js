@@ -47,8 +47,8 @@ const SaveCard = (props) => {
   };
 
   const stats = [
-    { name: "Level", value: "LEVEL" },
-    { name: "Life", value: "LIFE" },
+    { name: "Level", value: "level" },
+    { name: "Life", value: "life" },
     { name: "Cash", value: "CASH" },
     { name: "XP", value: "XP" },
     { name: "Type", value: "type" },

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import SpellCostCard from "./SpellCostCard.js";
-import { toggle } from "../data/exports.js";
+import { toggle } from "../utils/exports.js";
 
 function ModalSpellCast(props) {
   const {

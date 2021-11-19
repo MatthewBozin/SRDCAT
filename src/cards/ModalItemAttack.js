@@ -10,7 +10,7 @@ import {
   toggleState,
   toggle,
   withProAdv,
-} from "../data/exports.js";
+} from "../utils/exports.js";
 
 function ModalItemAttack(props) {
   const [target, setTarget] = useState(10);

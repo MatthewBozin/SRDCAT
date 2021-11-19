@@ -11,7 +11,7 @@ import {
   toggleState,
   toggle,
   withProAdv,
-} from "../data/exports.js";
+} from "../utils/exports.js";
 
 function ModalCreatureAttack(props) {
   const [target, setTarget] = useState(10);

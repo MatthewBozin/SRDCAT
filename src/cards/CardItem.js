@@ -13,7 +13,7 @@ import { ReactComponent as DefendAlt } from "../data/icons/defendbasealt.svg";
 import Character from "../data/character.js";
 import modsdata from "../data/collections/modItems.json";
 import architecture from "../data/architecture.json";
-import { sackstonesoap, updateState, toggle } from "../data/exports.js";
+import { sackstonesoap, updateState, toggle } from "../utils/exports.js";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 

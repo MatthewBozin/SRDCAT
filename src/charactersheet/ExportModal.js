@@ -6,7 +6,7 @@ import WorldState from "../data/worldstate.js";
 import architecture from "../data/architecture.json";
 import ExportCard from "./ExportCard.js";
 import ImportCard from "./ImportCard.js";
-import { sackstonesoap } from "../data/exports.js";
+import { sackstonesoap } from "../utils/exports.js";
 
 const ExportModal = (props) => {
   const [character] = useContext(Character);

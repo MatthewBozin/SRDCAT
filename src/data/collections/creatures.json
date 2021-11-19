@@ -4,25 +4,26 @@
       "name": "Airpig",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["bossy", "intelligent", "revolutionary"],
       "tags": ["pet", "animal", "chimera"],
       "description": "A six-limbed creature with such a powerful reality-distortion organ in its brainstem that it flies graceful as a peacock, even though its primitive membranous wings should not support it.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "nasty bite",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 17,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+5",
           "attackname": "liquid humiliation",
@@ -41,19 +42,20 @@
       "name": "Amphibious Goldfish",
       "level": 0,
       "life": 3,
+      "maxlife": 3,
       "facets": ["bubbly", "shiny", "dangerous"],
       "tags": ["pet", "animal", "magic"],
       "description": "Is it just a newt pretending to be a goldfish?",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+2",
           "attackname": "bubbles",
           "damage": "1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 13,
           "bonus": "—",
           "attackname": ""
@@ -75,26 +77,27 @@
       "name": "Ancestor in Amber",
       "level": 2,
       "life": 20,
+      "maxlife": 20,
       "facets": ["honourable", "proud", "self-sacrificing"],
       "tags": ["human", "undead"],
       "description": "Protecting their righteous heirs until the seas boil and the stars are eaten by the sun.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 12,
           "bonus": "+6",
           "attackname": "ceremonial blade",
           "damage": "1d12"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 11,
           "bonus": "+5",
           "attackname": "shuddering gaze",
           "damage": "1d6"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 17,
           "bonus": "+5",
           "attackname": "disapproval",
@@ -125,26 +128,27 @@
       "name": "Ascended Priest Abomination",
       "level": 4,
       "life": 40,
+      "maxlife": 40,
       "facets": ["ecstatic", "howling", "transcendent"],
       "tags": ["abomination", "human"],
       "description": "All flesh given to the Flesh God, all spirit infused with the Living God, all mind tranquil and smooth.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+7",
           "attackname": "ripping claws",
           "damage": "2d8"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 13,
           "bonus": "+9",
           "attackname": "ecstasy flare",
           "damage": "1d3"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 17,
           "bonus": "—",
           "attackname": ""
@@ -170,25 +174,26 @@
       "name": "Baby Dragon",
       "level": 2,
       "life": 13,
+      "maxlife": 13,
       "facets": ["curious", "cute", "sinuous"],
       "tags": ["pet", "animal", "labmyth"],
       "description": "A lovely little flying serpent of vast potential and little wisdom. Surprisingly fond of boxes.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+4",
           "attackname": "sharp teeth",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 17,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "preen",
@@ -211,19 +216,20 @@
       "name": "Battle Panda",
       "level": 2,
       "life": 13,
+      "maxlife": 13,
       "facets": ["bored", "masticating", "regal"],
       "tags": ["pet", "animal", "mammal"],
       "description": "The monochrome bear.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+5",
           "attackname": "paw swipe",
           "damage": "1d6+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "adorable gaze",
@@ -242,19 +248,20 @@
       "name": "Big Bear",
       "level": 3,
       "life": 17,
+      "maxlife": 17,
       "facets": ["hot", "fuzzy", "honey"],
       "tags": ["pet", "animal", "mammal"],
       "description": "By the power of honey, what a bear!",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+5",
           "attackname": "thunder paw",
           "damage": "1d8+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "roar",
@@ -281,19 +288,20 @@
       "name": "Big Dog",
       "level": 1,
       "life": 9,
+      "maxlife": 9,
       "facets": ["slobbering", "swift", "terrified"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Addicted to snacks and treats.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+3",
           "attackname": "crunching jaws",
           "damage": "1d8"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 4,
           "bonus": "+4",
           "attackname": "truly scary bark",
@@ -313,19 +321,20 @@
       "name": "Blimpstork",
       "level": 3,
       "life": 30,
+      "maxlife": 30,
       "facets": ["flatulent", "florid", "frustrated"],
       "tags": ["animal", "bioformed"],
       "description": "Crossing birds with the blimp jellies of the well worlds created these stately aerial porter beasts, perfect for the Neorgian birthing plantations.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 5,
           "bonus": "+3",
           "attackname": "razor beak",
           "damage": "3d10+3"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 10,
           "bonus": "—",
           "attackname": ""
@@ -345,19 +354,20 @@
       "name": "Blithe Badger",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["cuddly", "relentless", "furball"],
       "tags": ["pet", "animal", "mammal"],
       "description": "A child of ancient wrestling gods, the badger is entirely immune to magic and commands. But is very fond of holes.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 10,
           "bonus": "+3",
           "attackname": "relentless bite",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
@@ -375,26 +385,27 @@
       "name": "Bloodsucker",
       "level": 1,
       "life": 20,
+      "maxlife": 20,
       "facets": ["creepy", "pasty", "reeking"],
       "tags": ["human", "undead"],
       "description": "Every vampire must start somewhere.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 15,
           "bonus": "+6",
           "attackname": "flailing grab",
           "damage": "1d6+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "+6",
           "attackname": "baleful eyes",
           "damage": "1d6"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+6",
           "attackname": "arrogant sneer",
@@ -429,19 +440,20 @@
       "name": "Boa Constrictor",
       "level": 1,
       "life": 11,
+      "maxlife": 11,
       "facets": ["chunky", "colourful", "lazy"],
       "tags": ["pet", "animal", "reptile"],
       "description": "Often found in wheels.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+2",
           "attackname": "constriction",
           "damage": "1d6+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "+3",
           "attackname": "threatening glare",
@@ -460,19 +472,20 @@
       "name": "Bunny of Chaos",
       "level": 1,
       "life": 3,
+      "maxlife": 3,
       "facets": ["cuddly", "cute", "red-eyed"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Mentioned in terrible ancient manuscripts.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+4",
           "attackname": "big bitey teeth",
           "damage": "1d4*"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 3,
           "bonus": "—",
           "attackname": ""
@@ -495,19 +508,20 @@
       "name": "Cheeky Cheetah",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["fast", "nervous", "svelte"],
       "tags": ["pet", "animal", "mammal"],
       "description": "A cat. A fast, spotted, murderous cat. Domesticated hunting cheetahs are sometimes chimerized to sport human facial features for that added bit of decadent uncanny valley luxe.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+3",
           "attackname": "neck bite",
           "damage": "1d8"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 6,
           "bonus": "—",
           "attackname": ""
@@ -526,25 +540,26 @@
       "name": "Chuckling Jackal",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["wise", "humorous", "psychopomp"],
       "tags": ["pet", "animal", "mammal"],
       "description": "A guide for the soul, a judge for the dead. Also, something of a troll.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+2",
           "attackname": "sneaky bite",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 16,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 10,
           "bonus": "+3",
           "attackname": "sarcasm",
@@ -571,25 +586,26 @@
       "name": "Concrete Seagull",
       "level": 1,
       "life": 15,
+      "maxlife": 15,
       "facets": ["brutal", "honest", "old-fashioned"],
       "tags": ["pet", "animal", "bird", "mineral"],
       "description": "A guardian lifeform engineered for the fast star Calcestruzzo Volante, brought down to the shores of the Winedark Ocean by the rain of needles that seeded the Second Eternal Celebration of the Sunless Mind. Now, the gentle concrete seagulls are all that remains of those hubristic eras of history.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 5,
           "bonus": "+3",
           "attackname": "peck",
           "damage": "1d8"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "plop",
@@ -616,19 +632,20 @@
       "name": "Crawling Shrubbery",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["harmless", "ni", "rooty"],
       "tags": ["pet", "plant", "labmyth"],
       "description": "It all started with a humorous root vegetable prank and ended with a carnibotanic disaster zone. Sprouts are often hunted down with extreme prejudice by  phytophobic bipeds.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 3,
           "bonus": "+6",
           "attackname": "poking root",
           "damage": "1d4"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+4",
           "attackname": "winking flower",
@@ -655,25 +672,26 @@
       "name": "Crested Stomperpig",
       "level": 2,
       "life": 18,
+      "maxlife": 18,
       "facets": ["greedy", "opportunistic", "scavenger"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Obviously, some eco re-engineer had to reintroduce upgraded pelycosaurs during the Phase Two Era. Even through the mists of historical entropy, echoes of their great pseudoarchy resound.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+5",
           "attackname": "bad bite",
           "damage": "1d10+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 12,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "—",
           "attackname": ""
@@ -699,25 +717,26 @@
       "name": "Cunning Sheep",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["fleecy", "gauzy", "light-footed"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Sometimes pretends to be a wolf.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+3",
           "attackname": "big horns",
           "damage": "1d8+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "proud display",
@@ -741,25 +760,26 @@
       "name": "Cute Spider",
       "level": 0,
       "life": 3,
+      "maxlife": 3,
       "facets": ["gentle", "soft", "soothing"],
       "tags": ["pet", "animal", "arthropod"],
       "description": "With fur and feet and lovely eyes, calms scared children and spooked animals.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "bite",
           "damage": "1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "+5",
           "attackname": "fetching eyes",
@@ -778,19 +798,20 @@
       "name": "Devilish Donkey",
       "level": 1,
       "life": 9,
+      "maxlife": 9,
       "facets": ["ornery", "annoyed", "tough"],
       "tags": ["pet", "animal", "mammal"],
       "description": "This equid has a secret pact with a devil. It smells of brimstone. So does its poop.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+2",
           "attackname": "kicky feet",
           "damage": "1d6+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 19,
           "bonus": "—",
           "attackname": ""
@@ -809,19 +830,20 @@
       "name": "Dire Hamster",
       "level": 2,
       "life": 11,
+      "maxlife": 11,
       "facets": ["brave", "noble", "extradimensional"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Likes to stand very still when watched. Unusually large for a hamster. May be a capybara.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+4",
           "attackname": "vicious bite",
           "damage": "1d8+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
@@ -839,26 +861,27 @@
       "name": "Dogbear",
       "level": 3,
       "life": 20,
+      "maxlife": 20,
       "facets": ["fluffy", "woofy", "greedy"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Is it a small bear or a big dog? Unclear.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 14,
           "bonus": "+6",
           "attackname": "big bite",
           "damage": "1d10"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "howl",
           "damage": "1d4"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+6",
           "attackname": "endearing wag",
@@ -877,26 +900,27 @@
       "name": "Dreamer",
       "level": 6,
       "life": 60,
+      "maxlife": 60,
       "facets": ["witty", "shallow", "influenced"],
       "tags": ["human", "possessed"],
       "description": "A soulless human shell left purposeless by the death of the Fleshgod. Now it summons demons to find meaning once more as they ride its flesh and bone.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 19,
           "bonus": "+9",
           "attackname": "demonic strength",
           "damage": "1d8"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 17,
           "bonus": "+5",
           "attackname": "terrible brimstone",
           "damage": "1d12"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 9,
           "bonus": "+2",
           "attackname": "shattered self-esteem",
@@ -923,26 +947,27 @@
       "name": "Ebéteen Mindbender Priest",
       "level": 2,
       "life": 14,
+      "maxlife": 14,
       "facets": ["consoling", "coruscating", "obfuscating"],
       "tags": ["animal", "human"],
       "description": "Doling out the pleasures and the pain of the Living God.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+4",
           "attackname": "pain ray",
           "damage": "1d8+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 13,
           "bonus": "+6",
           "attackname": "insight blade",
           "damage": "1d10"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+4",
           "attackname": "shame & regret",
@@ -965,25 +990,26 @@
       "name": "Elegant Llama",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["fluffy", "darling", "precious"],
       "tags": ["pet", "animal", "digital"],
       "description": "A lovely, caring display hides a digital alcohol dependence.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+3",
           "attackname": "necking",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 8,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+3",
           "attackname": "harsh spittle",
@@ -1007,19 +1033,20 @@
       "name": "Fluffy Dog",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["playful", "smol", "zany"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Can't stop chewing shoes.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+3",
           "attackname": "nippy teeth",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "+4",
           "attackname": "terrifying bark",
@@ -1038,19 +1065,20 @@
       "name": "Friendly Otter",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["fishy", "happy", "lucky"],
       "tags": ["pet", "animal", "fish"],
       "description": "Misclassified as a fish during a period of its existence. Now an honorary seal. Ambushes feet.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "smiling",
           "damage": "teeth"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 11,
           "bonus": "—",
           "attackname": ""
@@ -1068,19 +1096,20 @@
       "name": "Glamorous Goat",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["agile", "horny", "villainous"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Loves nothing better than to sleep in high places.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+2",
           "attackname": "pointy horns",
           "damage": "1d6+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "devil eyes",
@@ -1103,25 +1132,26 @@
       "name": "Grand Stag",
       "level": 2,
       "life": 12,
+      "maxlife": 12,
       "facets": ["magnificent", "regal", "twitchy"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Given to dramatic, awe-inspiring poses and chin scratches.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+3",
           "attackname": "splendid antlers",
           "damage": "1d10"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+4",
           "attackname": "lovely head toss",
@@ -1140,19 +1170,20 @@
       "name": "Heartbreaking Puppy",
       "level": 1,
       "life": 3,
+      "maxlife": 3,
       "facets": ["cuddly", "cute", "naive"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Looking for someone to trust completely.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 4,
           "bonus": "+1",
           "attackname": "desperate bite",
           "damage": "1d2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 2,
           "bonus": "+7",
           "attackname": "soul-crushing gaze",
@@ -1171,19 +1202,20 @@
       "name": "Hoda Hexapod",
       "level": 6,
       "life": 150,
+      "maxlife": 150,
       "facets": ["baying", "obeying", "trustworthy"],
       "tags": ["animal", "chimeric", "labmyth"],
       "description": "When they saw how the vomes escaped human control, the biomancers of the Eternal Garden created the hodas as neuro-dependent servants. The hodas depend on the brains of their human masters for processing, accessing it through a short-range aura link. When their masters move away, the six-legged plant-animal hybrids revert to a sessile form, anchoring with taproots and storing energy for later movement.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+1",
           "attackname": "trample",
           "damage": "10d6+10"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 8,
           "bonus": "—",
           "attackname": ""
@@ -1221,19 +1253,20 @@
       "name": "Hungry Dead",
       "level": 2,
       "life": 20,
+      "maxlife": 20,
       "facets": ["cannibal", "driven", "ravenous"],
       "tags": ["human", "undead"],
       "description": "A monstrosity consumed by its own appetites and animated by its own accursed, endless hunger and greed.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+4",
           "attackname": "claws",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 8,
           "bonus": "+3",
           "attackname": "shrieking",
@@ -1268,25 +1301,26 @@
       "name": "Jumping Crab",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["amphibious", "half-uplifted", "iridescent"],
       "tags": ["pet", "animal", "arthropod"],
       "description": "Loves to smell the flowers.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 13,
           "bonus": "+1",
           "attackname": "painful pinch",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+3",
           "attackname": "inappropriate pinch",
@@ -1305,26 +1339,27 @@
       "name": "Kool Kangaroo",
       "level": 1,
       "life": 9,
+      "maxlife": 9,
       "facets": ["bouncer", "boxer", "thinker"],
       "tags": ["pet", "animal", "mammal"],
       "description": "The other non-avian biped.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+3",
           "attackname": "punch",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 17,
           "bonus": "+3",
           "attackname": "magical grace",
           "damage": "1d4"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "—",
           "attackname": ""
@@ -1346,19 +1381,20 @@
       "name": "Labour Skeleton",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["humble", "pale", "yellowing"],
       "tags": ["human", "undead"],
       "description": "The final form of the hard-working taxpayer.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 5,
           "bonus": "+2",
           "attackname": "sharp bones",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+2",
           "attackname": "skully grin",
@@ -1377,25 +1413,26 @@
       "name": "Lab Rat",
       "level": 0,
       "life": 3,
+      "maxlife": 3,
       "facets": ["silly", "smart", "strategic"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Possibly uplifted, but too canny to let on.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 13,
           "bonus": "+3",
           "attackname": "nibbly bite",
           "damage": "1d2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+3",
           "attackname": "plant evidence",
@@ -1414,19 +1451,20 @@
       "name": "Laughing Leopard",
       "level": 2,
       "life": 8,
+      "maxlife": 8,
       "facets": ["cuddly", "playful", "neurotic"],
       "tags": ["pet", "animal", "mammal"],
       "description": "A cat. A big, spotted, murderous cat. Licks to show affection—or to see how tasty someone could be?",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+5",
           "attackname": "disabling bite",
           "damage": "1d8+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 8,
           "bonus": "—",
           "attackname": ""
@@ -1445,19 +1483,20 @@
       "name": "Loping Crocodile",
       "level": 2,
       "life": 13,
+      "maxlife": 13,
       "facets": ["armoured", "gentle", "saurosuchian"],
       "tags": ["pet", "animal", "reptile"],
       "description": "Interloper from before some mass extinction.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 11,
           "bonus": "+5",
           "attackname": "big bitey mouth",
           "damage": "1d10+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+1",
           "attackname": "angry honk",
@@ -1477,19 +1516,20 @@
       "name": "Love Leech",
       "level": 0,
       "life": 3,
+      "maxlife": 3,
       "facets": ["insensate", "dull", "thirsty"],
       "tags": ["pet", "animal", "annelid"],
       "description": "It’s a mottled pet leech. It sucks. It prefers fresh, splashing water.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 2,
           "bonus": "+3",
           "attackname": "leeching bite",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 13,
           "bonus": "+1",
           "attackname": "boo",
@@ -1512,25 +1552,26 @@
       "name": "Magic Magpie",
       "level": 0,
       "life": 3,
+      "maxlife": 3,
       "facets": ["chuckling", "kind", "rascal"],
       "tags": ["pet", "animal", "avian"],
       "description": "Like all magpies after the great gene-magical error of ’24 pimenta, this one exhibits mild extra-dimensionality. It also likes bad jokes, and may ’pay’ a struggling comedian with a trinket.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 10,
           "bonus": "+4",
           "attackname": "scratchy talons",
           "damage": "1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 10,
           "bonus": "+4",
           "attackname": "shaming caw",
@@ -1549,19 +1590,20 @@
       "name": "Manic Mongoose",
       "level": 1,
       "life": 4,
+      "maxlife": 4,
       "facets": ["defiant", "delicious", "determined"],
       "tags": ["pet", "animal", "mammal"],
       "description": "A loyal friend, if you get them to slow down long enough. Likes to run in circles.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "sharp teeth",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "—",
           "attackname": ""
@@ -1579,25 +1621,26 @@
       "name": "Mischievous Monkey",
       "level": 1,
       "life": 4,
+      "maxlife": 4,
       "facets": ["homunculus", "horny", "knowing"],
       "tags": ["pet", "animal", "mammal"],
       "description": "May be smarter than it admits. Still likes slinging mud.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+3",
           "attackname": "shocking teeth",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 15,
           "bonus": "+5",
           "attackname": "rude gesture",
@@ -1617,26 +1660,27 @@
       "name": "Neo Platypus",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["depressed", "heroic", "humorous"],
       "tags": ["pet", "animal", "platypus"],
       "description": "The original platypus faced extinction when Atlantistralia sank beneath the waves during the loud Mu-Zu Disagreement following the illumination of Gate One. Its saviours enhanced it a bit to help it survive.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+4",
           "attackname": "kick",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 12,
           "bonus": "+6",
           "attackname": "electric jolt",
           "damage": "1d3"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 8,
           "bonus": "—",
           "attackname": ""
@@ -1667,19 +1711,20 @@
       "name": "Ominous Owl",
       "level": 1,
       "life": 4,
+      "maxlife": 4,
       "facets": ["cute", "silent", "silly"],
       "tags": ["pet", "animal", "avian"],
       "description": "A rotating head and a love of mice.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+4",
           "attackname": "mouse-killers",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 15,
           "bonus": "+4",
           "attackname": "soul screech",
@@ -1702,26 +1747,27 @@
       "name": "Palmate Airwhale",
       "level": 9,
       "life": 300,
+      "maxlife": 300,
       "facets": ["awesome", "ponderous", "umbrous"],
       "tags": ["animal", "chimeric", "labmyth"],
       "description": "An impressive sight, the palmate airwhale is a composite organism of whale, lunar aerial medusa, trailing orchids, and lichen-derived support structures. Through a combination of air sacs and antigravity organs, it stays afloat effortlessly, grazing on the air plankton blooms of the sky forests.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 5,
           "bonus": "+3",
           "attackname": "stinging tendril",
           "damage": "2d12"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 19,
           "bonus": "+9",
           "attackname": "regal aura",
           "damage": "1d8"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 19,
           "bonus": "+9",
           "attackname": "imperious song",
@@ -1772,25 +1818,26 @@
       "name": "Pleasure Golem",
       "level": 2,
       "life": 15,
+      "maxlife": 15,
       "facets": ["salubrious", "sensuous", "tired"],
       "tags": ["golem", "human"],
       "description": "They could almost be fleshlings, with their shells of iridescent plastics and composite skins. Some have attained free thought. Some have rebelled.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 10,
           "bonus": "+4",
           "attackname": "attack routine",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 15,
           "bonus": "+8",
           "attackname": "sweet nothings",
@@ -1813,19 +1860,20 @@
       "name": "Precocious Pony",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["apple", "gentle", "numerate"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Neighs answers to simple math problems. Brighter than it looks. Likes to pick fights.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 6,
           "bonus": "+3",
           "attackname": "kick",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 8,
           "bonus": "—",
           "attackname": ""
@@ -1844,19 +1892,20 @@
       "name": "Pretty Piranhasaur",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["grinning", "toothy", "tyrant"],
       "tags": ["pet", "animal", "fish", "labmyth"],
       "description": "Twice the size of a turkey, this feathered beastie has a butcher’s grin and teeth that can strip a cow in minutes.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+5",
           "attackname": "vorpal teeth",
           "damage": "1d8+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
@@ -1883,25 +1932,26 @@
       "name": "Punctilious Parrot",
       "level": 0,
       "life": 4,
+      "maxlife": 4,
       "facets": ["joker", "pirate", "thief"],
       "tags": ["pet", "animal", "avian"],
       "description": "Expert in a surprising number of diplomatic and plantation protocols. Also, talks. A lot. Mostly about seeds.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+5",
           "attackname": "nut-cracking beak",
           "damage": "1d2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 6,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+6",
           "attackname": "cruel mockery",
@@ -1920,19 +1970,20 @@
       "name": "Rage Wombat",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["sexy", "shoeless", "warrior"],
       "tags": ["pet", "animal", "monster"],
       "description": "A very vicious creature. Honest.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+4",
           "attackname": "deadly headbutt",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 13,
           "bonus": "+4",
           "attackname": "angry display",
@@ -1955,26 +2006,27 @@
       "name": "Rainbow Demon",
       "level": 7,
       "life": 119,
+      "maxlife": 119,
       "facets": ["crimson", "gun-wielding", "sword-riding"],
       "tags": ["possessive", "spirit"],
       "description": "A demon of light, riding the electromagical radiation bands that link the Given World and the Fast Stars. The aloof, terrifying creatures sometimes possess machines and mundane tools to act upon the physical world.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": null,
           "bonus": "+3",
           "attackname": "energy flux",
           "damage": "1d8+5"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 15,
           "bonus": "+5",
           "attackname": "possessive touch",
           "damage": "1d8"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "+7",
           "attackname": "maniacal jest",
@@ -2017,25 +2069,26 @@
       "name": "Rebel Lion",
       "level": 2,
       "life": 12,
+      "maxlife": 12,
       "facets": ["quaint", "questioning", "questing"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Its roar spreads fear and loathing. Its doubts and insecurities fuel strange expeditions.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+5",
           "attackname": "pounce",
           "damage": "1d8+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 12,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+5",
           "attackname": "mane shake",
@@ -2059,26 +2112,27 @@
       "name": "Regal Cobra",
       "level": 2,
       "life": 12,
+      "maxlife": 12,
       "facets": ["wise", "irritable", "shy"],
       "tags": ["pet", "animal", "reptile"],
       "description": "The king of snakes teleports through wicker baskets and is superbly adapted to the null-weight of the fast star villages in orbit round the Given World.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+4",
           "attackname": "venomous bite",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 11,
           "bonus": "+4",
           "attackname": "hypnotic gaze",
           "damage": "1d8"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 15,
           "bonus": "+4",
           "attackname": "dance dance",
@@ -2105,26 +2159,27 @@
       "name": "Remembering Raven",
       "level": 1,
       "life": 3,
+      "maxlife": 3,
       "facets": ["accusative", "acquisitive", "inquisitive,"],
       "tags": ["pet", "animal", "avian"],
       "description": "It never forgets a grudge.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "peck",
           "damage": "1d3"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 12,
           "bonus": "+5",
           "attackname": "ominous glare",
           "damage": "1d6"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+3",
           "attackname": "humiliating call",
@@ -2143,19 +2198,20 @@
       "name": "Rolling Rock",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["colony", "synthetic", "alien"],
       "tags": ["pet", "mineral", "processor"],
       "description": "It needs neither food nor drink nor air. It is almost a perfect organism. Perhaps it is not even an organism.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 15,
           "bonus": "+3",
           "attackname": "fling self",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 19,
           "bonus": "+3",
           "attackname": "hard stare",
@@ -2182,25 +2238,26 @@
       "name": "Sand Octopus",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["shy", "intelligent", "face-hugger"],
       "tags": ["pet", "animal", "mollusc"],
       "description": "Adapted to the vast Yellow Desert, the gregarious beagle-sized sand octopus enjoys nothing more than curling up in front of a fire, gently chirping like a parrot.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+5",
           "attackname": "hugging tentacles",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "soulful gaze",
@@ -2227,25 +2284,26 @@
       "name": "Scavenger Raccoon",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["curious", "suspicious", "poofy"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Looks suspiciously like a quarterling that took off its rocket suit a few minutes ago.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+3",
           "attackname": "crunching teeth",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "+3",
           "attackname": "silly prank",
@@ -2268,19 +2326,20 @@
       "name": "Skullface Cow",
       "level": 3,
       "life": 20,
+      "maxlife": 20,
       "facets": ["gentle", "ominous", "grazer"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Possibly some kind of moschops or other time-reborn visitor from an ancient epoch. Now quite common on the swampy plains and popular with a particular type of exotic animal trainer.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 5,
           "bonus": "+3",
           "attackname": "bump",
           "damage": "1d10+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "—",
           "attackname": ""
@@ -2299,25 +2358,26 @@
       "name": "Smoking Camel",
       "level": 2,
       "life": 12,
+      "maxlife": 12,
       "facets": ["cool", "classy", "ill-tempered"],
       "tags": ["pet", "animal", "mammal"],
       "description": "The noble ship of the desert. Graceful, loveable, and quite vicious and stubborn.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+4",
           "attackname": "trampling feet",
           "damage": "1d8+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 12,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+4",
           "attackname": "sharpspitter",
@@ -2342,19 +2402,20 @@
       "name": "Sneaky Cat",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["greedy", "paranoid", "predator"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Oddly fond of pie.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "scratchy claws",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "+2",
           "attackname": "fetching hiss",
@@ -2373,25 +2434,26 @@
       "name": "Solar Corgi",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["floofy", "playful", "lazy"],
       "tags": ["pet", "animal", "solar"],
       "description": "Engineered as hassle-free pet for well-to-do Solar City burgeis conventionalites, the solar corgi soon found favour as a companion in the Yellow Desert and the Voider Colonies thanks to its ability to survive on sunlight alone.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 11,
           "bonus": "+2",
           "attackname": "nip",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 11,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 11,
           "bonus": "+4",
           "attackname": "wiggle",
@@ -2414,26 +2476,27 @@
       "name": "Strewth Goblin",
       "level": 1,
       "life": 7,
+      "maxlife": 7,
       "facets": ["foaming", "virulent", "vociferous"],
       "tags": ["human", "monster"],
       "description": "Crossing hybrid colony organisms with baseline humans to create a sewer-caste to keep the great living cities of the Bell and Bull Era alive seemed like a great idea. Then the budding bendy-legged sporelings acquired human-level intelligence in the Nineteenth Accidental Ghoul Explosion.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+2",
           "attackname": "crude weapons",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 13,
           "bonus": "+5",
           "attackname": "yunja curse-stick",
           "damage": "1d4+1*"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 7,
           "bonus": "+4",
           "attackname": "ugly jeers",
@@ -2468,18 +2531,19 @@
       "name": "Sturdy Tortoise",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["plutonic", "grouchy", "patterned"],
       "tags": ["pet", "animal", "reptile"],
       "description": "A slow, steady companion. Firm friend. Harsh nemesis. Egg-lover.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 13,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+2",
           "attackname": "doleful glare",
@@ -2498,19 +2562,20 @@
       "name": "Suspicious Coyote",
       "level": 1,
       "life": 6,
+      "maxlife": 6,
       "facets": ["cowardly", "smart", "swift"],
       "tags": ["pet", "animal", "mammal"],
       "description": "A clear example of a trickster who’s sometimes too smart for his own good.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "sharp bite",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 5,
           "bonus": "+5",
           "attackname": "clever ruse",
@@ -2530,19 +2595,20 @@
       "name": "Terrifying Ostrich",
       "level": 2,
       "life": 15,
+      "maxlife": 15,
       "facets": ["raptor", "sandy", "swift"],
       "tags": ["pet", "animal", "avian"],
       "description": "They say it’s an ostrich, but with that axe-like beak and those taloned feet, it looks more like a kelenken. Still, the bird-vendor said it’s just an ostrich. How bad could it be?",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 9,
           "bonus": "+5",
           "attackname": "vicious kick",
           "damage": "1d8+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
@@ -2564,19 +2630,20 @@
       "name": "Trash Panda Possum",
       "level": 0,
       "life": 4,
+      "maxlife": 4,
       "facets": ["deathly", "playful", "fishy"],
       "tags": ["pet", "animal", "marsupial"],
       "description": "Questionable critter. Prone to playing and smelling dead.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+1",
           "attackname": "snuffling bite",
           "damage": "1d3"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
@@ -2602,25 +2669,26 @@
       "name": "Treeling Skyfisher",
       "level": 1,
       "life": 5,
+      "maxlife": 5,
       "facets": ["chittery", "jittery", "jumping"],
       "tags": ["animal", "human"],
       "description": "Slender fur-covered sapients, probably descended from flying squirrel stock. Many now hunt by tethering themselves to an aerostatic creature, such as an airwhale, and gliding to airfish food. At the end of the glide, they scamper up their tether back to the safety of their perch.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 11,
           "bonus": "+4",
           "attackname": "aerial harpoon",
           "damage": "1d4+1"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 7,
           "bonus": "—",
           "attackname": ""
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": 13,
           "bonus": "+6",
           "attackname": "cute chittering",
@@ -2652,19 +2720,20 @@
       "name": "Tusky Boar",
       "level": 1,
       "life": 11,
+      "maxlife": 11,
       "facets": ["gorgeous", "handsome", "strange"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Wears a pastry chef's hat.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 7,
           "bonus": "+5",
           "attackname": "goring tusks",
           "damage": "1d6+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+2",
           "attackname": "fiery presence",
@@ -2684,19 +2753,20 @@
       "name": "Venomous Viper Mark 2",
       "level": 1,
       "life": 3,
+      "maxlife": 3,
       "facets": ["warm", "loyal", "wyrm"],
       "tags": ["pet", "animal", "reptile"],
       "description": "Surprisingly serpentine. Brain adapted with canine structures for better bonding with owners.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+4",
           "attackname": "bite or spit",
           "damage": "1d4"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 8,
           "bonus": "—",
           "attackname": ""
@@ -2719,19 +2789,20 @@
       "name": "Veteran Horse",
       "level": 2,
       "life": 13,
+      "maxlife": 13,
       "facets": ["fed up", "grumpy", "leathery"],
       "tags": ["pet", "animal", "mammal"],
       "description": "Loves to stand under trees looking morose.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 8,
           "bonus": "+4",
           "attackname": "trampling hooves",
           "damage": "2d6+2"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 10,
           "bonus": "+5",
           "attackname": "kick the ghost",
@@ -2755,26 +2826,27 @@
       "name": "Voyan War Golem",
       "level": 3,
       "life": 30,
+      "maxlife": 30,
       "facets": ["skittering", "slippery", "swift"],
       "tags": ["golem"],
       "description": "With a body something like two ur-metal spiders sheathed in synthetic skin and no head, the voyans dominated the battlefield during the decades-long Farpower Wars. Then, after one of the Farpowers collapsed into nuclear civil strife and the other embarked on a hedonistic ascendancy project, the voyans were left to their own devise. Many found new masters, but some became warlords and princes in their own right.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 16,
           "bonus": "+8",
           "attackname": "std combat hands",
           "damage": "1d8"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+3",
           "attackname": "jamming gibberish",
           "damage": "1d6"
         },
         {
-          "defensename": "BA",
+          "defensename": "ba",
           "defenseamount": null,
           "bonus": "+3",
           "attackname": "appeal to decency",
@@ -2813,19 +2885,20 @@
       "name": "Walking Husk",
       "level": 1,
       "life": 16,
+      "maxlife": 16,
       "facets": ["decomposing", "gentle", "hungry"],
       "tags": ["human", "undead"],
       "description": "A vessel stripped of spirit and mind, reanimated by magic and will alone.",
       "attacks": [
         {
-          "defensename": "HA",
+          "defensename": "ha",
           "defenseamount": 5,
           "bonus": "+2",
           "attackname": "fists and teeth",
           "damage": "1d6"
         },
         {
-          "defensename": "KA",
+          "defensename": "ka",
           "defenseamount": 9,
           "bonus": "+2",
           "attackname": "uncanny moan",
