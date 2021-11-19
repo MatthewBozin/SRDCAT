@@ -14,7 +14,7 @@ function ModalCardDisplay(props) {
   const { name, category } = entry;
 
   const card = name;
-  const deleteFrom = "none";
+  const deleteFrom = "";
   const form = "plus";
 
   const ifCard = (card, placement) => {
