@@ -12,8 +12,8 @@ const HeroSheet = () => {
   const [worldState] = useContext(WorldState);
 
   const categoryArray = [
-    { name: "Props", value: "props" },
     { name: "Expeditions", value: "expeditions" },
+    { name: "Props", value: "props" },
     { name: "Items", value: "items" },
     { name: "Creatures", value: "creatures" },
   ];

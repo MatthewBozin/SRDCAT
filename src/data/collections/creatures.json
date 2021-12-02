@@ -32,7 +32,7 @@
       ],
       "properties": [
         {
-          "name": "Distorted reality ",
+          "name": "Distorted reality",
           "description": "Nearby gullible creatures (thought ≤0) succumb and can perform usually impossible feats. The feats may still be very difficult."
         }
       ],
@@ -63,11 +63,11 @@
       ],
       "properties": [
         {
-          "name": "Amphibious ",
+          "name": "Amphibious",
           "description": "Survive on land for a few hours. Very poor walker."
         },
         {
-          "name": "Wannabe genie ",
+          "name": "Wannabe genie",
           "description": "One tiny wish per day, such as rerolling a die."
         }
       ],

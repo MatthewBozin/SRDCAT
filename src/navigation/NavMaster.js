@@ -10,10 +10,17 @@ const NavMaster = () => {
     let newContext = context;
     if (context.persona === "PC") {
       newContext.persona = "TC";
+      if (!navbar.navletCheckTC.includes(context.collections)) {
+        newContext.collections = "expeditions";
+      }
     } else {
       newContext.persona = "PC";
+      if (!navbar.navletCheckPC.includes(context.collections)) {
+        newContext.collections = "skills";
+      }
     }
     setContext(JSON.parse(JSON.stringify(newContext)));
+    console.log(context);
   };
 
   return (
