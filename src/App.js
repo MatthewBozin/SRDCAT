@@ -41,6 +41,16 @@ function App() {
     array.push(currentWorld);
     localStorage.setItem("SRDworlds", JSON.stringify(array));
   }
+
+  const heroOrWorld = () => {
+    if (context.persona === "PC") {
+      return <HeroSheet />;
+    }
+    if (context.persona === "TC") {
+      return <WorldSheet />;
+    }
+  };
+
   return (
     <div>
       <Context.Provider value={[context, setContext]}>
@@ -52,12 +62,7 @@ function App() {
                 <Route exact path="/">
                   <Collections />
                 </Route>
-                <Route path="/hero">
-                  <HeroSheet />
-                </Route>
-                <Route path="/world">
-                  <WorldSheet />
-                </Route>
+                <Route path="/sheet">{heroOrWorld}</Route>
                 <Route path="*">
                   <Error />
                 </Route>

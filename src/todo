@@ -7,6 +7,12 @@ scene imports top level location modifiers and props(?) from list
 Change creature life (lifecurrent) into modifiable amount
 -Turn it into a modal?
 
+ENCOUNTERS
+-separate from expeditions
+-encounters have creatures and items
+
+-...and then expeditions have encounters
+
 COMMAND LINE
 -actions can generate snippets of pseudocode that dms and players can share
 -inputting the pseudocode into the command line will cause an action

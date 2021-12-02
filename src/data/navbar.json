@@ -4,7 +4,7 @@
       "name": "worldsheet",
       "type": "worldsheet",
       "text": "World Sheet",
-      "link": "world"
+      "link": "sheet"
     },
     {
       "name": "collections",
@@ -18,7 +18,7 @@
       "name": "herosheet",
       "type": "herosheet",
       "text": "Hero Sheet",
-      "link": "/hero"
+      "link": "sheet"
     },
     {
       "name": "collections",
@@ -35,9 +35,11 @@
     { "name": "creatures", "display": "Creatures" }
   ],
   "navletsTC": [
-    { "name": "items", "display": "Items" },
-    { "name": "creatures", "display": "Creatures" },
     { "name": "expeditions", "display": "Expeditions" },
-    { "name": "props", "display": "Props" }
-  ]
+    { "name": "props", "display": "Props" },
+    { "name": "items", "display": "Items" },
+    { "name": "creatures", "display": "Creatures" }
+  ],
+  "navletCheckPC": ["skills", "traits", "spells", "items", "creatures"],
+  "navletCheckTC": ["expeditions", "props", "items", "creatures"]
 }
