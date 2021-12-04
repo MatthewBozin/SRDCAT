@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FaRegShareSquare, FaRegTrashAlt } from "react-icons/fa";
+import { FaPlusCircle, FaRegTrashAlt } from "react-icons/fa";
 import { ReactComponent as Herosheet } from "../data/icons/herosheet.svg";
 import { FaGlobe } from "react-icons/fa";
 import Context from "../data/context";
@@ -76,10 +76,10 @@ const AddSubtract = (props) => {
     return (
       <div>
         {props.context === "character" && context.persona === "PC" && (
-          <Herosheet className="iconsvg mright3px" onClick={addCard} />
+          <FaPlusCircle className="icon mright12px" onClick={addCard} />
         )}
         {props.context === "worldstate" && context.persona === "TC" && (
-          <FaGlobe className="icon mright12px" onClick={addCard} />
+          <FaPlusCircle className="icon mright12px" onClick={addCard} />
         )}
       </div>
     );
