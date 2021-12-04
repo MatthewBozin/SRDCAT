@@ -5,7 +5,7 @@ import { ReactComponent as Skills } from "../data/icons/skills.svg";
 import { ReactComponent as Traits } from "../data/icons/traits.svg";
 import { ReactComponent as Spells } from "../data/icons/magic.svg";
 import { ReactComponent as Creatures } from "../data/icons/creatures.svg";
-import { FaTree } from "react-icons/fa";
+import { FaTree, FaPuzzlePiece } from "react-icons/fa";
 
 const Navlet = (props) => {
   const [context, setContext] = useContext(Context);
@@ -39,14 +39,14 @@ const Navlet = (props) => {
         return <Creatures className="iconsvg" />;
       case "expeditions":
         if (context.collections === props.navlet.name) {
-          return <FaTree className="icon mtop10px" />;
+          return <FaTree className="iconsvg" />;
         }
-        return <FaTree className="icon mtop10px" />;
+        return <FaTree className="iconsvg" />;
       case "props":
         if (context.collections === props.navlet.name) {
-          return <FaTree className="icon mtop10px" />;
+          return <FaPuzzlePiece className="iconsvg" />;
         }
-        return <FaTree className="icon mtop10px" />;
+        return <FaPuzzlePiece className="iconsvg" />;
     }
   };
 
