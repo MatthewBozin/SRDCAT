@@ -1,1 +1,22 @@
-{ "data": {} }
+{
+  "data": {
+    "battle": {
+      "name": "Battle",
+      "tags": ["physical", "combat"],
+      "description": "a test scene",
+      "set": [],
+      "actors": [
+        { "name": "airpig", "display": "Airpig", "category": "creatures" },
+        {
+          "name": "amphibiousgoldfish",
+          "display": "Amphibious Goldfish",
+          "category": "creatures"
+        }
+      ],
+      "props": [
+        { "name": "stalactite", "display": "Stalactite", "category": "props" }
+      ],
+      "results": ["star shards"]
+    }
+  }
+}

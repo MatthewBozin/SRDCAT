@@ -1,5 +1,6 @@
 {
-  "props": ["testprop"],
+  "props": ["stalactite", "bloodbasin"],
+  "scenes": ["battle"],
   "expeditions": ["testexpedition"],
   "creatures": [
     "airpig",

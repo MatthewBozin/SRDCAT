@@ -7,11 +7,34 @@ scene imports top level location modifiers and props(?) from list
 Change creature life (lifecurrent) into modifiable amount
 -Turn it into a modal?
 
-ENCOUNTERS
--separate from expeditions
--encounters have creatures and items
+At some point, the TC section needs to produce the equivalent of encounters.
 
--...and then expeditions have encounters
+SCENES
+scenes have:
+-a set (where is it located, what is the environment)
+-actors (list of creatures, like an encounter)
+-props (new category)
+-results (how does the scene conclude/what are the consequences)
+
+-SCENES CAN BE MORE GENERIC, AND PULL OBJECTS FROM EXPEDITIONS IN ORDER TO POPULATE
+--"build scene" button?
+-EXPEDITION -> SESSION
+
+VotBO EXPEDITIONS
+have:
+-zones
+-events (can create scenes?)
+--event link points to event card with button "run scene" that opens scene as little character sheet
+-rewards/advancements (need new name) (adaptations + resources are tags within this category?)
+-denizens
+-geneses (allow characters found in these worlds to be uniquely tied to them)
+-conditions
+-special (things that do not fit in any other category, unique rules, etc.)
+
+tags for social/physical/spiritual
+build by tag
+modifiers
+generator adds modifiers to creatures
 
 COMMAND LINE
 -actions can generate snippets of pseudocode that dms and players can share
@@ -34,8 +57,6 @@ words after functions words are treated as parameters
 THIS MEANS THE APP CAN RUN ITS OWN PSEUDOCODE COMMANDS
 for instance, as random roll result
 
-In tables: button option to display table as list?
-
 ---
 
 single paragraph describing my skills, education,
@@ -54,3 +75,5 @@ TC: worldstate available instead of character sheet
 CARD DISPLAY MODAL: literally a modal that contains a functional card (harvest from CardList?)
 table: if (typeof result === "object") {display card modal}
 this way, tables can properly link to other cards without disrupting the user's place
+
+TABLE DISPLAY MODAL: TABLES HAVE BUTTON OPTION THAT OPENS MODAL TO DISPLAY THE TABEL AS A LIST
