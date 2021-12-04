@@ -106,7 +106,7 @@ const CardItem = (props) => {
                     toggle(setItemNotWorn, itemNotWorn);
                     toggleWear();
                     toaster.notify(name + " worn!", {
-                      duration: 2000,
+                      duration: 1000,
                     });
                   }}
                 />
@@ -120,7 +120,7 @@ const CardItem = (props) => {
                     toggle(setItemNotWorn, itemNotWorn);
                     toggleWear();
                     toaster.notify(name + " taken off!", {
-                      duration: 2000,
+                      duration: 1000,
                     });
                   }}
                 />
