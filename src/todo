@@ -2,6 +2,7 @@ worldstate -> scene
 
 scene imports top level location modifiers and props(?) from list
 
+-SRDCAT icon leads to home screen
 -Change persona only from home screen
 
 Change creature life (lifecurrent) into modifiable amount
