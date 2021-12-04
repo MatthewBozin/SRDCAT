@@ -27,7 +27,7 @@ const AddSubtract = (props) => {
     toaster.notify(
       `Card (${cards.data[props.card.name].name}) added to ${props.context}!`,
       {
-        duration: 2000,
+        duration: 1000,
       }
     );
     let instanced = { name: props.card.name, savedrank: 0 };
@@ -59,7 +59,7 @@ const AddSubtract = (props) => {
         props.context
       }!`,
       {
-        duration: 2000,
+        duration: 1000,
       }
     );
     let newslot = gate();
