@@ -9,7 +9,8 @@ import CardExpedition from "./CardExpedition";
 import CardProp from "./CardProp";
 
 function ModalCardDisplay(props) {
-  const { modalOpen, setModalOpen, entry } = props;
+  const { entry } = props;
+  const [cardModalOpen, setCardModalOpen] = useState(false);
 
   const { name, category } = entry;
 
@@ -103,15 +104,24 @@ function ModalCardDisplay(props) {
   };
 
   return (
-    <Modal
-      show={modalOpen}
-      onHide={() => {
-        toggle(setModalOpen, modalOpen);
-      }}
-    >
-      <Modal.Header className="modalbackground"></Modal.Header>
-      <Modal.Body className="modalbackground">{ifCard(card, 0)}</Modal.Body>
-    </Modal>
+    <span>
+      <span
+        className="button"
+        onClick={() => {
+          setCardModalOpen(true);
+        }}
+      >
+        {entry.display}
+      </span>
+      <Modal
+        show={cardModalOpen}
+        onHide={() => {
+          toggle(setCardModalOpen, cardModalOpen);
+        }}
+      >
+        <Modal.Body className="modalbackground">{ifCard(card, 0)}</Modal.Body>
+      </Modal>
+    </span>
   );
 }
 
