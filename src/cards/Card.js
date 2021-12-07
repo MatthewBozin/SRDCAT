@@ -22,7 +22,7 @@ const Card = (props) => {
     setExpanded(!status);
   };
   const { name, tags, flavor, description, ranks, table } =
-    cards.data[props.card.name];
+    cards[props.card.name];
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {

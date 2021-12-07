@@ -39,7 +39,7 @@ const CardCreature = (props) => {
     attacks,
     properties,
     modifiers,
-  } = cards.data[props.card.name];
+  } = cards[props.card.name];
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {

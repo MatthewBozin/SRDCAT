@@ -42,7 +42,7 @@ const ExportModal = (props) => {
         let cards = require(`../data/collections/` + property);
         let stringprop = "";
         for (let object of slotprop) {
-          let card = cards.data[object.name];
+          let card = cards[object.name];
           let stringcard = "";
           stringcard += "Name: " + card.name + "\n";
           if (card.description !== undefined) {

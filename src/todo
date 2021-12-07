@@ -1,4 +1,7 @@
-worldstate -> scene
+REFACTORS:
+-separate charactersheet/cards components into subfolders (modals, cards, etc.)
+-turn item mods into properties
+-remove "data" step from object json lists
 
 scene imports top level location modifiers and props(?) from list
 
@@ -19,7 +22,18 @@ scenes have:
 
 -SCENES CAN BE MORE GENERIC, AND PULL OBJECTS FROM EXPEDITIONS IN ORDER TO POPULATE
 --"build scene" button?
--EXPEDITION -> SESSION
+-scenes pull objects from above (from the expedition's list) and below (props) that match the scene's tags
+
+conditions as props?
+
+A SESSION IS NOT A PLACE, A SESSION IS A DATA STRUCTURE THAT HOLDS ALL DATA NEEDED FOR A PERIOD OF TIME
+-aka sessions are the analogue for character sheets
+-TCs build a session the way PCs build a character
+SESSIONS DON'T HAVE ZONES, THEY HAVE ENVIRONMENTS (THE DATA COLLECTIONS THEY PULL FROM IN ORDER TO GENERATE RESULTS/BUILD SCENES)
+-the Expedition data type becomes an Environment
+-zones are merged into environments
+-TC chooses an environment from a drop down (?) on world sheet
+-from there, TC can choose to auto-build a scene based on environment/scene logic, or to manually build it
 
 VotBO EXPEDITIONS
 have:

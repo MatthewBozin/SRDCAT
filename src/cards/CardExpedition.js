@@ -34,7 +34,7 @@ const Card = (props) => {
     events,
     resources,
     zones,
-  } = cards.data[props.card.name];
+  } = cards[props.card.name];
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {

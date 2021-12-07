@@ -1,25 +1,24 @@
 {
-  "data": {
-    "testexpedition": {
-      "name": "Test Expedition",
-      "tags": ["test"],
-      "flavor": "flavor text",
-      "description": "a test expedition",
-      "conditions": ["sour rain", "flurries of ash", "burnt skies"],
-      "denizens": [
-        { "name": "airpig", "display": "Airpig", "category": "creatures" },
-        {
-          "name": "amphibiousgoldfish",
-          "display": "Amphibious Goldfish",
-          "category": "creatures"
-        }
-      ],
-      "events": [
-        "sour rain poisons 1 sack of supplies",
-        "bitten by scorpion spider"
-      ],
-      "resources": ["star shards"],
-      "zones": ["pylonshrine"]
-    }
+  "testexpedition": {
+    "name": "The Low Road and the High",
+    "tags": ["uvg"],
+    "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
+    "description": "Description stuff.",
+    "conditions": [
+      "pristine stillness",
+      "dank fungal spores",
+      "unnatural darkness"
+    ],
+    "denizens": [
+      { "name": "airpig", "display": "Airpig", "category": "creatures" },
+      {
+        "name": "amphibiousgoldfish",
+        "display": "Amphibious Goldfish",
+        "category": "creatures"
+      }
+    ],
+    "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
+    "resources": ["star fungus"],
+    "zones": ["pylonshrine"]
   }
 }

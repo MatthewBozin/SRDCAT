@@ -1,17 +1,15 @@
 {
-  "data": {
-    "stalactite": {
-      "name": "Stalactite",
-      "tags": ["obstacle"],
-      "flavor": "flavor text",
-      "description": "[-] to ranged attacks targeting someone hiding behind it."
-    },
-    "bloodbasin": {
-      "name": "Blood Basin",
-      "tags": ["interactible"],
-      "flavor": "flavor text",
-      "description": "Fear the old blood.",
-      "actions": ["Cut your hand and feed the basin."]
-    }
+  "stalactite": {
+    "name": "Stalactite",
+    "tags": ["obstacle", "cave"],
+    "flavor": "flavor text",
+    "description": "[-] to ranged attacks targeting someone hiding behind it."
+  },
+  "bloodbasin": {
+    "name": "Blood Basin",
+    "tags": ["interactible", "cave"],
+    "flavor": "flavor text",
+    "description": "Fear the old blood.",
+    "actions": ["Cut your hand and feed the basin."]
   }
 }

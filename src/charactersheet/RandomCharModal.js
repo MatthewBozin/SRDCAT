@@ -54,7 +54,7 @@ const RandomCharModal = () => {
           let i = 0;
           while (true) {
             let card = newchar[collection][r(newchar[collection].length - 1)];
-            let cardObject = data.data[card.name];
+            let cardObject = data[card.name];
             if (card.savedrank < cardObject.ranks.length - 1) {
               card.savedrank += 1;
               break;
@@ -66,7 +66,7 @@ const RandomCharModal = () => {
           }
         } else {
           let selectionName = s(contextData[collection]);
-          let selection = data.data[selectionName];
+          let selection = data[selectionName];
           let selectionObject = { name: selectionName, savedRank: 0 };
           if (selection.table !== undefined) {
             selectionObject.savedresult = r(selection.table.length);
@@ -84,7 +84,7 @@ const RandomCharModal = () => {
               }
             } else {
               let newSelectionName = s(contextData[collection]);
-              let newSelection = data.data[newSelectionName];
+              let newSelection = data[newSelectionName];
               let newSelectionObject = { name: selectionName, savedRank: 0 };
               if (newSelection.table !== undefined) {
                 newSelectionObject.savedresult = r(newSelection.table.length);
