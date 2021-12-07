@@ -13,7 +13,7 @@ const Collections = () => {
     let contextObjects = require(`../data/collections/` + context.collections);
     let newData = [];
     contextData[context.collections].map((name) => {
-      let element = contextObjects.data[name];
+      let element = contextObjects[name];
       let toFilter;
       if (typeof element[filterBy] === "string") {
         toFilter = element[filterBy].toLowerCase();

@@ -25,17 +25,17 @@ const AddSubtract = (props) => {
 
   const addCard = () => {
     toaster.notify(
-      `Card (${cards.data[props.card.name].name}) added to ${props.context}!`,
+      `Card (${cards[props.card.name].name}) added to ${props.context}!`,
       {
         duration: 1000,
       }
     );
     let instanced = { name: props.card.name, savedrank: 0 };
-    if (cards.data[props.card.name].table !== undefined) {
+    if (cards[props.card.name].table !== undefined) {
       instanced.savedresult = 0;
     }
     if (props.category === "creatures") {
-      instanced.lifecurrent = cards.data[props.card.name].life;
+      instanced.lifecurrent = cards[props.card.name].life;
     }
     let newslot = gate();
     newslot[props.category].push(instanced);
@@ -55,9 +55,7 @@ const AddSubtract = (props) => {
 
   const deleteCard = () => {
     toaster.notify(
-      `Card (${cards.data[props.card.name].name}) removed from ${
-        props.context
-      }!`,
+      `Card (${cards[props.card.name].name}) removed from ${props.context}!`,
       {
         duration: 1000,
       }

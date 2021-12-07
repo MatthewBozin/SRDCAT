@@ -25,7 +25,7 @@ const HeroSheet = () => {
     let cards = require(`../data/collections/items`);
     let encumbrance = 0;
     for (let element of character.items) {
-      encumbrance += cards.data[element.name].weight;
+      encumbrance += cards[element.name].weight;
     }
     for (let element of character.spells) {
       encumbrance += 10;

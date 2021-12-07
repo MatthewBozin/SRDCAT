@@ -33,7 +33,7 @@ const CardItem = (props) => {
   //mod becomes mods: []
 
   const { name, tags, flavor, weight, value, number, stat, modifiers } =
-    cards.data[props.card.name];
+    cards[props.card.name];
 
   const calcAttackInfo = () => {
     let modifiers = [];

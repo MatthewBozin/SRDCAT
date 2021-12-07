@@ -37,7 +37,7 @@ const Defenses = () => {
     //for (let item of character.items) {
     for (let item of character.items) {
       console.log(item);
-      let CardItem = cards.data[item.name];
+      let CardItem = cards[item.name];
       for (let i = 0; i < CardItem.stat.length; i++) {
         if (CardItem.stat[i] === defense.name && item.worn === true) {
           total += parseInt(CardItem.number[i]);

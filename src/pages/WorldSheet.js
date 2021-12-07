@@ -14,8 +14,6 @@ const HeroSheet = () => {
   const categoryArray = [
     { name: "Expeditions", value: "expeditions" },
     { name: "Props", value: "props" },
-    { name: "Items", value: "items" },
-    { name: "Creatures", value: "creatures" },
   ];
 
   return (

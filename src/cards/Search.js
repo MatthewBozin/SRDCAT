@@ -38,7 +38,7 @@ const Search = () => {
     let newData = [];
     orders[context.collections].map((element) => {
       let toFilter;
-      let elementFull = contextData.data[element];
+      let elementFull = contextData[element];
       if (typeof elementFull[filterBy] === "string") {
         toFilter = elementFull[filterBy].toLowerCase();
       } else {
@@ -82,7 +82,7 @@ const Search = () => {
       }
     }
     finalresult = s(resultpool);
-    let finalresultname = contextData.data[finalresult].name;
+    let finalresultname = contextData[finalresult].name;
     let context2 = context;
     context2.search = finalresultname;
     setContext(() => {

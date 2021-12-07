@@ -14,7 +14,7 @@ const Defense = (props) => {
     total += character[defense.name];
     let cards = require(`../data/collections/items`);
     for (let item of character.items) {
-      let CardItem = cards.data[item.name];
+      let CardItem = cards[item.name];
       for (let i = 0; i < CardItem.stat.length; i++) {
         if (CardItem.stat[i] === defense.name && item.worn === true) {
           total += parseInt(CardItem.number[i]);

@@ -1,0 +1,12 @@
+{
+  "pylonshrine": {
+    "name": "Pylon Shrine",
+    "tags": ["technological", "spiritual"],
+    "description": "a test battle",
+    "denizens": [],
+    "props": [
+      { "name": "stalactite", "display": "Stalactite", "category": "props" }
+    ],
+    "results": ["star shards"]
+  }
+}

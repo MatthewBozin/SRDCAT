@@ -24,8 +24,7 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, actions } =
-    cards.data[props.card.name];
+  const { name, tags, flavor, description, actions } = cards[props.card.name];
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {
