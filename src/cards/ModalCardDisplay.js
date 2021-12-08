@@ -5,7 +5,8 @@ import Card from "./Card";
 import CardItem from "./CardItem";
 import CardSpell from "./CardSpell";
 import CardCreature from "./CardCreature";
-import CardExpedition from "./CardExpedition";
+import CardEnvironment from "./CardEnvironment";
+import CardScene from "./CardEnvironment";
 import CardProp from "./CardProp";
 
 function ModalCardDisplay(props) {
@@ -64,9 +65,22 @@ function ModalCardDisplay(props) {
         />
       );
     }
-    if (category === "expeditions") {
+    if (category === "environments") {
       return (
-        <CardExpedition
+        <CardEnvironment
+          key={placement}
+          card={cardObject}
+          form={form}
+          placement={placement}
+          deleteFrom={deleteFrom}
+          category={category}
+          expanded={true}
+        />
+      );
+    }
+    if (category === "scenes") {
+      return (
+        <CardScene
           key={placement}
           card={cardObject}
           form={form}

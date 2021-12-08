@@ -1,7 +1,6 @@
 REFACTORS:
 -separate charactersheet/cards components into subfolders (modals, cards, etc.)
 -turn item mods into properties
--remove "data" step from object json lists
 
 scene imports top level location modifiers and props(?) from list
 
@@ -10,8 +9,6 @@ scene imports top level location modifiers and props(?) from list
 
 Change creature life (lifecurrent) into modifiable amount
 -Turn it into a modal?
-
-At some point, the TC section needs to produce the equivalent of encounters.
 
 SCENES
 scenes have:
@@ -92,3 +89,8 @@ table: if (typeof result === "object") {display card modal}
 this way, tables can properly link to other cards without disrupting the user's place
 
 TABLE DISPLAY MODAL: TABLES HAVE BUTTON OPTION THAT OPENS MODAL TO DISPLAY THE TABEL AS A LIST
+
+-remove "data" step from object json lists
+-expeditions turned into environments
+
+-bug where linklet icon wouldn't reflect sheet -> collections change fixed
