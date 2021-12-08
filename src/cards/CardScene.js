@@ -77,7 +77,7 @@ const Card = (props) => {
               </div>
             )}
             <hr></hr>
-            {actions !== undefined && (
+            {/* {actions !== undefined && (
               <div>
                 Actions:{" "}
                 <Table
@@ -87,7 +87,7 @@ const Card = (props) => {
                   category={props.category}
                 />
               </div>
-            )}
+            )} */}
           </span>
         )}
       </div>

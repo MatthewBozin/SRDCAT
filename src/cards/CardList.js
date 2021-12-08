@@ -3,8 +3,9 @@ import Card from "./Card";
 import CardItem from "./CardItem";
 import CardSpell from "./CardSpell";
 import CardCreature from "./CardCreature";
-import CardExpedition from "./CardExpedition";
+import CardEnvironment from "./CardEnvironment";
 import CardProp from "./CardProp";
+import CardScene from "./CardScene";
 import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
@@ -54,9 +55,22 @@ const CardList = (props) => {
         />
       );
     }
-    if (props.category === "expeditions") {
+    if (props.category === "environments") {
       return (
-        <CardExpedition
+        <CardEnvironment
+          context={props.context}
+          key={placement}
+          card={cardObject}
+          form={props.form}
+          placement={placement}
+          deleteFrom={props.deleteFrom}
+          category={props.category}
+        />
+      );
+    }
+    if (props.category === "scenes") {
+      return (
+        <CardScene
           context={props.context}
           key={placement}
           card={cardObject}

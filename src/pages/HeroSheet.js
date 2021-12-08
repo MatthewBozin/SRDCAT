@@ -60,7 +60,9 @@ const HeroSheet = () => {
                   setContext(() => {
                     let newcontext = context;
                     newcontext.collections = "items";
-                    return newcontext;
+                    newcontext.link = "collections";
+                    let final = JSON.parse(JSON.stringify(newcontext));
+                    return final;
                   })
                 }
                 className="row mleft5px button"
@@ -97,7 +99,9 @@ const HeroSheet = () => {
                       setContext(() => {
                         let newcontext = context;
                         newcontext.collections = category.value;
-                        return newcontext;
+                        newcontext.link = "collections";
+                        let final = JSON.parse(JSON.stringify(newcontext));
+                        return final;
                       })
                     }
                     className="row mleft5px button"
