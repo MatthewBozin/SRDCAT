@@ -66,7 +66,7 @@ const Stats = () => {
           {SEA.map((stat, index) => {
             return (
               <button
-                className="padded5px button bordered padded5px margin5px flexgrow"
+                className="padded5px button bordered padded5px margin5px flexgrow fontsize"
                 key={index}
                 onClick={() => {
                   modalOpenStat(stat);
@@ -81,7 +81,7 @@ const Stats = () => {
           {CAT.map((stat, index) => {
             return (
               <button
-                className="padded5px button bordered padded5px margin5px flexgrow"
+                className="padded5px button bordered padded5px margin5px flexgrow fontsize"
                 key={index}
                 onClick={() => {
                   modalOpenStat(stat);

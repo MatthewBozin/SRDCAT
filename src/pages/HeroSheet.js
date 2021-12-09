@@ -72,7 +72,7 @@ const HeroSheet = () => {
               </Link>
             </span>
           </div>
-          <div className="outerbox">
+          <div className="outerbox fontsize">
             {getEncumbrance() > 100 && (
               <span className="mleft5px orangetext">ENCUMBERED!! </span>
             )}

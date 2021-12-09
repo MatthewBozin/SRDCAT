@@ -89,7 +89,7 @@ const Defenses = () => {
         {deforder.map((defense, index) => {
           return (
             <button
-              className="button bordered padded5px margin5px flexgrow"
+              className="button bordered padded5px margin5px flexgrow fontsize"
               key={index}
               onClick={() => {
                 modalOpenStat(defenses[defense].name);

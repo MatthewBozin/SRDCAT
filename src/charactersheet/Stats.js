@@ -57,7 +57,7 @@ const Resources = () => {
         {stats.map((stat, index) => {
           return (
             <button
-              className="button bordered padded5px margin5px flexgrow"
+              className="button bordered padded5px margin5px flexgrow fontsize"
               key={index}
               onClick={() => {
                 modalOpenStat(stat);
