@@ -70,7 +70,7 @@ const Search = () => {
         resultpool = filter("name");
       }
       if (resultpool.length === 1) {
-        return;
+        resultpool = orders[context.collections];
       }
       if (resultpool.length === 0) {
         let context2 = context;
@@ -102,7 +102,7 @@ const Search = () => {
       <div className="flex fullwidth">
         <input
           id="searchbox"
-          className="button bordered link flexgrow2 pleft5px"
+          className="button bordered link flexgrow2 pleft5px fontsize"
           placeholder={defaultPlaceholder()}
           type="text"
           onChange={(e) => setData(e.target.value)}

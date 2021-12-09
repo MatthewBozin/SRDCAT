@@ -387,4 +387,7 @@ button:hover {
   .icon {
     transform: scale(1.2);
   }
+  .searchbutton {
+    min-width: 40px;
+  }
 }
