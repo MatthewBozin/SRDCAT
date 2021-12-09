@@ -267,7 +267,7 @@ function ModalItemAttack(props) {
               className="button padded5px"
               onClick={() => {
                 toaster.notify("Attack text copied to clipboard!", {
-                  duration: 2000,
+                  duration: 1000,
                 });
                 navigator.clipboard.writeText(attackMessage);
               }}

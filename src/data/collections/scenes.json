@@ -1,1 +1,20 @@
-{ "data": {} }
+{
+  "battleovertreasure": {
+    "name": "Battle Over Treasure",
+    "tags": ["physical", "combat"],
+    "description": "Both the party and their rivals battle over a valuable prize.",
+    "creatures": [],
+    "props": [],
+    "conditions": [],
+    "outcomes": {}
+  },
+  "spottingthetreasure": {
+    "name": "Spotting The Treasure",
+    "tags": ["mental", "choice"],
+    "description": "Both the party and their rivals have spotted a valuable prize.",
+    "creatures": [],
+    "props": [],
+    "conditions": [],
+    "outcomes": {}
+  }
+}

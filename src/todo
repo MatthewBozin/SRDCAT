@@ -1,17 +1,52 @@
-worldstate -> scene
+REFACTORS:
+-separate charactersheet/cards components into subfolders (modals, cards, etc.)
+-turn item mods into properties
 
 scene imports top level location modifiers and props(?) from list
 
+-SRDCAT icon leads to home screen
 -Change persona only from home screen
 
 Change creature life (lifecurrent) into modifiable amount
 -Turn it into a modal?
 
-ENCOUNTERS
--separate from expeditions
--encounters have creatures and items
+SCENES
+scenes have:
+-a set (where is it located, what is the environment)
+-actors (list of creatures, like an encounter)
+-props (new category)
+-results (how does the scene conclude/what are the consequences)
 
--...and then expeditions have encounters
+-SCENES CAN BE MORE GENERIC, AND PULL OBJECTS FROM EXPEDITIONS IN ORDER TO POPULATE
+--"build scene" button?
+-scenes pull objects from above (from the expedition's list) and below (props) that match the scene's tags
+
+conditions as props?
+
+A SESSION IS NOT A PLACE, A SESSION IS A DATA STRUCTURE THAT HOLDS ALL DATA NEEDED FOR A PERIOD OF TIME
+-aka sessions are the analogue for character sheets
+-TCs build a session the way PCs build a character
+SESSIONS DON'T HAVE ZONES, THEY HAVE ENVIRONMENTS (THE DATA COLLECTIONS THEY PULL FROM IN ORDER TO GENERATE RESULTS/BUILD SCENES)
+-the Expedition data type becomes an Environment
+-zones are merged into environments
+-TC chooses an environment from a drop down (?) on world sheet
+-from there, TC can choose to auto-build a scene based on environment/scene logic, or to manually build it
+
+VotBO EXPEDITIONS
+have:
+-zones
+-events (can create scenes?)
+--event link points to event card with button "run scene" that opens scene as little character sheet
+-rewards/advancements (need new name) (adaptations + resources are tags within this category?)
+-denizens
+-geneses (allow characters found in these worlds to be uniquely tied to them)
+-conditions
+-special (things that do not fit in any other category, unique rules, etc.)
+
+tags for social/physical/spiritual
+build by tag
+modifiers
+generator adds modifiers to creatures
 
 COMMAND LINE
 -actions can generate snippets of pseudocode that dms and players can share
@@ -34,8 +69,6 @@ words after functions words are treated as parameters
 THIS MEANS THE APP CAN RUN ITS OWN PSEUDOCODE COMMANDS
 for instance, as random roll result
 
-In tables: button option to display table as list?
-
 ---
 
 single paragraph describing my skills, education,
@@ -54,3 +87,10 @@ TC: worldstate available instead of character sheet
 CARD DISPLAY MODAL: literally a modal that contains a functional card (harvest from CardList?)
 table: if (typeof result === "object") {display card modal}
 this way, tables can properly link to other cards without disrupting the user's place
+
+TABLE DISPLAY MODAL: TABLES HAVE BUTTON OPTION THAT OPENS MODAL TO DISPLAY THE TABEL AS A LIST
+
+-remove "data" step from object json lists
+-expeditions turned into environments
+
+-bug where linklet icon wouldn't reflect sheet -> collections change fixed

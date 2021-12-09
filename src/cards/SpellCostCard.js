@@ -77,7 +77,7 @@ const ExportCard = (props) => {
             className="button padded5px"
             onClick={() => {
               toaster.notify("Spell cast text copied to clipboard!", {
-                duration: 2000,
+                duration: 1000,
               });
               navigator.clipboard.writeText(castText);
             }}

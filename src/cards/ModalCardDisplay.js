@@ -5,11 +5,13 @@ import Card from "./Card";
 import CardItem from "./CardItem";
 import CardSpell from "./CardSpell";
 import CardCreature from "./CardCreature";
-import CardExpedition from "./CardExpedition";
+import CardEnvironment from "./CardEnvironment";
+import CardScene from "./CardEnvironment";
 import CardProp from "./CardProp";
 
 function ModalCardDisplay(props) {
-  const { modalOpen, setModalOpen, entry } = props;
+  const { entry } = props;
+  const [cardModalOpen, setCardModalOpen] = useState(false);
 
   const { name, category } = entry;
 
@@ -63,9 +65,22 @@ function ModalCardDisplay(props) {
         />
       );
     }
-    if (category === "expeditions") {
+    if (category === "environments") {
       return (
-        <CardExpedition
+        <CardEnvironment
+          key={placement}
+          card={cardObject}
+          form={form}
+          placement={placement}
+          deleteFrom={deleteFrom}
+          category={category}
+          expanded={true}
+        />
+      );
+    }
+    if (category === "scenes") {
+      return (
+        <CardScene
           key={placement}
           card={cardObject}
           form={form}
@@ -103,15 +118,24 @@ function ModalCardDisplay(props) {
   };
 
   return (
-    <Modal
-      show={modalOpen}
-      onHide={() => {
-        toggle(setModalOpen, modalOpen);
-      }}
-    >
-      <Modal.Header className="modalbackground"></Modal.Header>
-      <Modal.Body className="modalbackground">{ifCard(card, 0)}</Modal.Body>
-    </Modal>
+    <span>
+      <span
+        className="button"
+        onClick={() => {
+          setCardModalOpen(true);
+        }}
+      >
+        {entry.display}
+      </span>
+      <Modal
+        show={cardModalOpen}
+        onHide={() => {
+          toggle(setCardModalOpen, cardModalOpen);
+        }}
+      >
+        <Modal.Body className="modalbackground">{ifCard(card, 0)}</Modal.Body>
+      </Modal>
+    </span>
   );
 }
 

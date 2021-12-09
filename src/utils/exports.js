@@ -258,11 +258,11 @@ const withProAdv = (object) => {
   }
   if (object.adv === "+") {
     string += "Advantage";
-    mod = "[+]";
+    mod = " [+]";
   }
   if (object.adv === "-") {
     string += "Disadvantage";
-    mod = "[-]";
+    mod = " [-]";
   }
   return { string: string, mod: mod };
 };

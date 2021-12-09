@@ -24,17 +24,7 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const {
-    name,
-    tags,
-    flavor,
-    description,
-    conditions,
-    denizens,
-    events,
-    resources,
-    zones,
-  } = cards.data[props.card.name];
+  const { name, tags, flavor, description, actions } = cards[props.card.name];
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {
@@ -81,66 +71,23 @@ const Card = (props) => {
             {tags.map((tag, index) => {
               return <Tag tag={tag} key={index} />;
             })}
-            <Flavor flavor={flavor} />
             {description !== undefined && (
-              <Description description={description} />
+              <div>
+                <Description description={description} />
+              </div>
             )}
             <hr></hr>
-            {conditions !== undefined && (
+            {/* {actions !== undefined && (
               <div>
-                Conditions:{" "}
+                Actions:{" "}
                 <Table
-                  table={conditions}
+                  table={actions}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
                 />
               </div>
-            )}
-            {denizens !== undefined && (
-              <div>
-                Denizens:{" "}
-                <Table
-                  table={denizens}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
-              </div>
-            )}
-            {events !== undefined && (
-              <div>
-                Events:{" "}
-                <Table
-                  table={events}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
-              </div>
-            )}
-            {resources !== undefined && (
-              <div>
-                Resources:{" "}
-                <Table
-                  table={resources}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
-              </div>
-            )}
-            {zones !== undefined && (
-              <div>
-                Zones:{" "}
-                <Table
-                  table={zones}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
-              </div>
-            )}
+            )} */}
           </span>
         )}
       </div>

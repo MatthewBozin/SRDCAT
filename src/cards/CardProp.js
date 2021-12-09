@@ -24,8 +24,7 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, actions } =
-    cards.data[props.card.name];
+  const { name, tags, flavor, description, actions } = cards[props.card.name];
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {
@@ -72,9 +71,10 @@ const Card = (props) => {
             {tags.map((tag, index) => {
               return <Tag tag={tag} key={index} />;
             })}
-            <Flavor flavor={flavor} />
             {description !== undefined && (
-              <Description description={description} />
+              <div>
+                <Description description={description} />
+              </div>
             )}
             <hr></hr>
             {actions !== undefined && (

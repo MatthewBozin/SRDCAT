@@ -1,6 +1,7 @@
 {
-  "props": ["testprop"],
-  "expeditions": ["testexpedition"],
+  "props": ["stalactite", "bloodbasin"],
+  "scenes": ["battleovertreasure", "spottingthetreasure"],
+  "environments": ["testenvironment"],
   "creatures": [
     "airpig",
     "amphibiousgoldfish",

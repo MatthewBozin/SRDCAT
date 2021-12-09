@@ -27,7 +27,7 @@ const CardSpell = (props) => {
   };
 
   const { name, tags, flavor, description, ranks, table, modifiers } =
-    cards.data[props.card.name];
+    cards[props.card.name];
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {

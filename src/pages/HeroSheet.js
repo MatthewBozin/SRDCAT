@@ -25,7 +25,7 @@ const HeroSheet = () => {
     let cards = require(`../data/collections/items`);
     let encumbrance = 0;
     for (let element of character.items) {
-      encumbrance += cards.data[element.name].weight;
+      encumbrance += cards[element.name].weight;
     }
     for (let element of character.spells) {
       encumbrance += 10;
@@ -60,7 +60,9 @@ const HeroSheet = () => {
                   setContext(() => {
                     let newcontext = context;
                     newcontext.collections = "items";
-                    return newcontext;
+                    newcontext.link = "collections";
+                    let final = JSON.parse(JSON.stringify(newcontext));
+                    return final;
                   })
                 }
                 className="row mleft5px button"
@@ -97,7 +99,9 @@ const HeroSheet = () => {
                       setContext(() => {
                         let newcontext = context;
                         newcontext.collections = category.value;
-                        return newcontext;
+                        newcontext.link = "collections";
+                        let final = JSON.parse(JSON.stringify(newcontext));
+                        return final;
                       })
                     }
                     className="row mleft5px button"

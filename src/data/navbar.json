@@ -35,11 +35,10 @@
     { "name": "creatures", "display": "Creatures" }
   ],
   "navletsTC": [
-    { "name": "expeditions", "display": "Expeditions" },
-    { "name": "props", "display": "Props" },
-    { "name": "items", "display": "Items" },
-    { "name": "creatures", "display": "Creatures" }
+    { "name": "environments", "display": "Environments" },
+    { "name": "scenes", "display": "Scenes" },
+    { "name": "props", "display": "Props" }
   ],
   "navletCheckPC": ["skills", "traits", "spells", "items", "creatures"],
-  "navletCheckTC": ["expeditions", "props", "items", "creatures"]
+  "navletCheckTC": ["environments", "scenes", "props"]
 }

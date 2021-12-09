@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FaRegShareSquare, FaRegTrashAlt } from "react-icons/fa";
+import { FaPlusCircle, FaRegTrashAlt } from "react-icons/fa";
 import { ReactComponent as Herosheet } from "../data/icons/herosheet.svg";
 import { FaGlobe } from "react-icons/fa";
 import Context from "../data/context";
@@ -25,17 +25,17 @@ const AddSubtract = (props) => {
 
   const addCard = () => {
     toaster.notify(
-      `Card (${cards.data[props.card.name].name}) added to ${props.context}!`,
+      `Card (${cards[props.card.name].name}) added to ${props.context}!`,
       {
-        duration: 2000,
+        duration: 1000,
       }
     );
     let instanced = { name: props.card.name, savedrank: 0 };
-    if (cards.data[props.card.name].table !== undefined) {
+    if (cards[props.card.name].table !== undefined) {
       instanced.savedresult = 0;
     }
     if (props.category === "creatures") {
-      instanced.lifecurrent = cards.data[props.card.name].life;
+      instanced.lifecurrent = cards[props.card.name].life;
     }
     let newslot = gate();
     newslot[props.category].push(instanced);
@@ -55,11 +55,9 @@ const AddSubtract = (props) => {
 
   const deleteCard = () => {
     toaster.notify(
-      `Card (${cards.data[props.card.name].name}) removed from ${
-        props.context
-      }!`,
+      `Card (${cards[props.card.name].name}) removed from ${props.context}!`,
       {
-        duration: 2000,
+        duration: 1000,
       }
     );
     let newslot = gate();
@@ -76,10 +74,10 @@ const AddSubtract = (props) => {
     return (
       <div>
         {props.context === "character" && context.persona === "PC" && (
-          <Herosheet className="iconsvg mright3px" onClick={addCard} />
+          <FaPlusCircle className="icon mright12px" onClick={addCard} />
         )}
         {props.context === "worldstate" && context.persona === "TC" && (
-          <FaGlobe className="icon mright12px" onClick={addCard} />
+          <FaPlusCircle className="icon mright12px" onClick={addCard} />
         )}
       </div>
     );

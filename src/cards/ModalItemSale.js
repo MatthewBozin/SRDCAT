@@ -43,7 +43,7 @@ function ModalItemSale(props) {
       toaster.notify(
         `Item bought: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`,
         {
-          duration: 3000,
+          duration: 1000,
         }
       );
     }
@@ -53,7 +53,7 @@ function ModalItemSale(props) {
       toaster.notify(
         `Item sold: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`,
         {
-          duration: 3000,
+          duration: 1000,
         }
       );
     }

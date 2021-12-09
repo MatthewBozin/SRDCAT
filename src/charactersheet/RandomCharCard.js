@@ -37,7 +37,7 @@ const RandomCharCard = (props) => {
             className="rightfloat icon mright24px mtop12px"
             onClick={() => {
               toaster.notify("Random character generated!", {
-                duration: 2000,
+                duration: 1000,
               });
               buttonfunction(buttonprop);
             }}
@@ -61,7 +61,7 @@ const RandomCharCard = (props) => {
               className="button bordered padded5px fullwidth"
               onClick={() => {
                 toaster.notify("Random character generated!", {
-                  duration: 2000,
+                  duration: 1000,
                 });
                 buttonfunction(buttonprop);
               }}

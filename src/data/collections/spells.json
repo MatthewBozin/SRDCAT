@@ -1,71 +1,102 @@
 {
-    "data":{
-        "burdensharingarrangement":{
-            "name":"Burden Sharing Arrangement",
-            "tags":["abmortal-sanatry"],
-            "flavor":"Undertake a spiritual ka-voyage through the patient's eyes or other primary sense organs.",
-            "description":"Over a time period the doctor removes a burden from the target and converts it into a Healer’s Burden stored in an adjacent creature’s aura.",
-            "ranks":[
-                {"power":1, "effect":"Rite takes several hours."},
-                {"power":2, "effect":"Rite takes about half an hour."},
-                {"power":3, "effect":"Rite takes a few minutes."},
-                {"power":4, "effect":"Rite takes a dozen seconds."}
-            ],
-            "modifiers":["healers-burden","rushed","telemagic"]
-        },
-        "healingsleep":{
-            "name":"Healing Sleep",
-            "tags":["abmortal-sanatry"],
-            "flavor":"Douse the patient's aura and send their essential hakaba code through the gates of horn and ivory to heal in the presence of the oneiroi Quiescus and Sanatos.",
-            "description":"The wizard performs an hour-long rite to heal a patient's burden. A patient could be mistaken for dead while their aura is doused. When the code returns to their incarnation, they awaken refreshed, and one of their burdens dissipates.",
-            "ranks":[
-                {"power":1, "effect":"The target is helpless, nigh-soulless, for three days and nights."},
-                {"power":3, "effect":"The target is helpless for a day and a night."},
-                {"power":5, "effect":"The target is helpless for six hours"},
-                {"power":7, "effect":"The target is helpless for an hour."}
-            ],
-            "modifiers":["telemagic"]
-        },
-        "metempsychosis":{
-            "name":"Metempsychosis",
-            "tags":["abmortal-sanatry"],
-            "flavor":"Though individual abmortals may expect to live forever, accidents do happen. Fortunately, the finest of sanators have a solution: transmigration of the hakaba code.",
-            "description":"The wizard breaks down a patient’s essential structure and translates it into another nearby physical form. For best results, the latest incarnation should be a replica of the original, but thrifty abmortals have made do with crude golems, animals, and even crystals or vats of memory liquid.",
-            "ranks":[
-                {"power":1, "effect":"Budget transmigration. The wizard immerses the patient in a frigid bath and spends one day translating one of their mental stats. This ritual damages the patient’s source body, making translating their remaining stats more difficult."},
-                {"power":3, "effect":"Full-corpus transmigration. The wizard uses a gelid sarcolector to translate all of a patient’s mental stats in one day. This destroys the original body."},
-                {"power":5, "effect":"Sudden action transmigration. The wizard Imbues the patient with a translator parasite. It takes the parasite a day to embed, after that the wizard can translate all of patient’s stats in a few minutes. This causes the original body to spontaneously combust."},
-                {"power":7, "effect":"Telemetempsychosis. The wizard uses an imbued translator parasite entangled with a destination vessel. The parasite needs a day to embed, but after that, translation is nearly instantaneous, with a range of several hundred thousand kilometres. This causes the original body to violently combust."}
-            ],
-            "modifiers":["morphic-shock","overwriting","precast-vessel","telemagic"]
-        },
-        "parasomatransference":{
-            "name":"Parasoma Transference",
-            "tags":["abmortal-sanatry"],
-            "flavor":"What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
-            "description":"The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
-            "ranks":[
-                {"power":1, "effect":"Basic shunt. For each point transferred, recipient gains 1 life."},
-                {"power":2, "effect":"Enriched shunt. For each point, recipient gains 1d2 life."},
-                {"power":3, "effect":"Power shunt. Recipient gains 1d3 life per point."},
-                {"power":4, "effect":"Recipient gains 1d4 life per point."},
-                {"power":6, "effect":"Recipient gains 1d6 life per point."}
-            ],
-            "modifiers":["telemagic"]
-        },
-        "test":{
-            "name":"TEST",
-            "tags":["abmortal-sanatry"],
-            "flavor":"What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
-            "description":"The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
-            "ranks":[
-                {"power":1, "effect":"Basic shunt. For each point transferred, recipient gains 1 life."},
-                {"power":2, "effect":"Enriched shunt. For each point, recipient gains 1d2 life."},
-                {"power":3, "effect":"Power shunt. Recipient gains 1d3 life per point."},
-                {"power":4, "effect":"Recipient gains 1d4 life per point."},
-                {"power":6, "effect":"Recipient gains 1d6 life per point."}
-            ],
-            "modifiers":["dangerous"]
-        }
-    }
+  "burdensharingarrangement": {
+    "name": "Burden Sharing Arrangement",
+    "tags": ["abmortal-sanatry"],
+    "flavor": "Undertake a spiritual ka-voyage through the patient's eyes or other primary sense organs.",
+    "description": "Over a time period the doctor removes a burden from the target and converts it into a Healer’s Burden stored in an adjacent creature’s aura.",
+    "ranks": [
+      { "power": 1, "effect": "Rite takes several hours." },
+      { "power": 2, "effect": "Rite takes about half an hour." },
+      { "power": 3, "effect": "Rite takes a few minutes." },
+      { "power": 4, "effect": "Rite takes a dozen seconds." }
+    ],
+    "modifiers": ["healers-burden", "rushed", "telemagic"]
+  },
+  "healingsleep": {
+    "name": "Healing Sleep",
+    "tags": ["abmortal-sanatry"],
+    "flavor": "Douse the patient's aura and send their essential hakaba code through the gates of horn and ivory to heal in the presence of the oneiroi Quiescus and Sanatos.",
+    "description": "The wizard performs an hour-long rite to heal a patient's burden. A patient could be mistaken for dead while their aura is doused. When the code returns to their incarnation, they awaken refreshed, and one of their burdens dissipates.",
+    "ranks": [
+      {
+        "power": 1,
+        "effect": "The target is helpless, nigh-soulless, for three days and nights."
+      },
+      { "power": 3, "effect": "The target is helpless for a day and a night." },
+      { "power": 5, "effect": "The target is helpless for six hours" },
+      { "power": 7, "effect": "The target is helpless for an hour." }
+    ],
+    "modifiers": ["telemagic"]
+  },
+  "metempsychosis": {
+    "name": "Metempsychosis",
+    "tags": ["abmortal-sanatry"],
+    "flavor": "Though individual abmortals may expect to live forever, accidents do happen. Fortunately, the finest of sanators have a solution: transmigration of the hakaba code.",
+    "description": "The wizard breaks down a patient’s essential structure and translates it into another nearby physical form. For best results, the latest incarnation should be a replica of the original, but thrifty abmortals have made do with crude golems, animals, and even crystals or vats of memory liquid.",
+    "ranks": [
+      {
+        "power": 1,
+        "effect": "Budget transmigration. The wizard immerses the patient in a frigid bath and spends one day translating one of their mental stats. This ritual damages the patient’s source body, making translating their remaining stats more difficult."
+      },
+      {
+        "power": 3,
+        "effect": "Full-corpus transmigration. The wizard uses a gelid sarcolector to translate all of a patient’s mental stats in one day. This destroys the original body."
+      },
+      {
+        "power": 5,
+        "effect": "Sudden action transmigration. The wizard Imbues the patient with a translator parasite. It takes the parasite a day to embed, after that the wizard can translate all of patient’s stats in a few minutes. This causes the original body to spontaneously combust."
+      },
+      {
+        "power": 7,
+        "effect": "Telemetempsychosis. The wizard uses an imbued translator parasite entangled with a destination vessel. The parasite needs a day to embed, but after that, translation is nearly instantaneous, with a range of several hundred thousand kilometres. This causes the original body to violently combust."
+      }
+    ],
+    "modifiers": ["morphic-shock", "overwriting", "precast-vessel", "telemagic"]
+  },
+  "parasomatransference": {
+    "name": "Parasoma Transference",
+    "tags": ["abmortal-sanatry"],
+    "flavor": "What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
+    "description": "The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
+    "ranks": [
+      {
+        "power": 1,
+        "effect": "Basic shunt. For each point transferred, recipient gains 1 life."
+      },
+      {
+        "power": 2,
+        "effect": "Enriched shunt. For each point, recipient gains 1d2 life."
+      },
+      {
+        "power": 3,
+        "effect": "Power shunt. Recipient gains 1d3 life per point."
+      },
+      { "power": 4, "effect": "Recipient gains 1d4 life per point." },
+      { "power": 6, "effect": "Recipient gains 1d6 life per point." }
+    ],
+    "modifiers": ["telemagic"]
+  },
+  "test": {
+    "name": "TEST",
+    "tags": ["abmortal-sanatry"],
+    "flavor": "What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
+    "description": "The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
+    "ranks": [
+      {
+        "power": 1,
+        "effect": "Basic shunt. For each point transferred, recipient gains 1 life."
+      },
+      {
+        "power": 2,
+        "effect": "Enriched shunt. For each point, recipient gains 1d2 life."
+      },
+      {
+        "power": 3,
+        "effect": "Power shunt. Recipient gains 1d3 life per point."
+      },
+      { "power": 4, "effect": "Recipient gains 1d4 life per point." },
+      { "power": 6, "effect": "Recipient gains 1d6 life per point." }
+    ],
+    "modifiers": ["dangerous"]
+  }
 }

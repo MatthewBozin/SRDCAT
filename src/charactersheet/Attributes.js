@@ -52,7 +52,8 @@ const Stats = () => {
     number += character[modalStat];
     return (
       <span>
-        {data.string} {data.mod}: (+{number})
+        {data.string}
+        {data.mod}: (+{number})
       </span>
     );
   };
@@ -95,7 +96,7 @@ const Stats = () => {
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           <span className="cardname">
-            Test Your {architecture.statMasks[modalStat]}{" "}
+            Test Your {architecture.statMasks[modalStat]}
             {modularString(testInfo)}
           </span>
           <span>
