@@ -145,119 +145,129 @@ const Stats = () => {
               <hr></hr>
             </div>
           )}
-          {result !== "" && (
+
+          {edit === false && (
             <div>
-              <div
-                className="center button"
-                onClick={() => {
-                  navigator.clipboard.writeText(
-                    character.name +
-                      " tests their " +
-                      architecture.statMasks[modalStat] +
-                      withProAdv(testInfo).string +
-                      "!\nThe test is a " +
-                      result
-                  );
-                }}
-              >
-                {result}
+              <div className="flex">
+                <button
+                  className="button bordered padded5px margin5px flexgrow"
+                  onClick={() => {
+                    toggleState(testInfo, setTestInfo, "adv", "", "-");
+                  }}
+                >
+                  [-]
+                </button>
+                {testInfo.pro === "" && (
+                  <button
+                    className="button bordered padded5px margin5px flexgrow"
+                    onClick={() => {
+                      toggleState(
+                        testInfo,
+                        setTestInfo,
+                        "pro",
+                        "single",
+                        character.PRO
+                      );
+                    }}
+                  >
+                    PRO
+                  </button>
+                )}
+                {testInfo.pro === "single" && (
+                  <button
+                    className="button bordered padded5px margin5px flexgrow"
+                    onClick={() => {
+                      toggleState(
+                        testInfo,
+                        setTestInfo,
+                        "pro",
+                        "double",
+                        character.PRO
+                      );
+                    }}
+                  >
+                    PRO x2
+                  </button>
+                )}
+                {testInfo.pro === "double" && (
+                  <button
+                    className="button bordered padded5px margin5px flexgrow"
+                    onClick={() => {
+                      toggleState(
+                        testInfo,
+                        setTestInfo,
+                        "pro",
+                        "",
+                        character.PRO
+                      );
+                    }}
+                  >
+                    No PRO
+                  </button>
+                )}
+                <button
+                  className="button bordered padded5px margin5px flexgrow"
+                  onClick={() => {
+                    toggleState(testInfo, setTestInfo, "adv", "", "+");
+                  }}
+                >
+                  [+]
+                </button>
               </div>
               <hr />
+              <div>
+                <div>
+                  {targets.map((target, index) => {
+                    return (
+                      <RollCard
+                        key={index}
+                        name={target.name}
+                        description={target.description}
+                        target={target.value}
+                        method={() => {
+                          let prof = 0;
+                          if (testInfo.pro === "single") {
+                            prof += character.PRO;
+                          }
+                          if (testInfo.pro === "double") {
+                            prof += character.PRO * 2;
+                          }
+                          setResult(() => {
+                            return test(
+                              target.value,
+                              testInfo.adv,
+                              prof,
+                              character[modalStat]
+                            );
+                          });
+                        }}
+                      />
+                    );
+                  })}
+                </div>
+                {result !== "" && (
+                  <div>
+                    <hr />
+                    <div
+                      className="center button"
+                      onClick={() => {
+                        navigator.clipboard.writeText(
+                          character.name +
+                            " tests their " +
+                            architecture.statMasks[modalStat] +
+                            withProAdv(testInfo).string +
+                            "!\nThe test is a " +
+                            result
+                        );
+                      }}
+                    >
+                      {result}
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           )}
-
-          <div className="flex">
-            <button
-              className="button bordered padded5px margin5px flexgrow"
-              onClick={() => {
-                toggleState(testInfo, setTestInfo, "adv", "", "-");
-              }}
-            >
-              [-]
-            </button>
-            {testInfo.pro === "" && (
-              <button
-                className="button bordered padded5px margin5px flexgrow"
-                onClick={() => {
-                  toggleState(
-                    testInfo,
-                    setTestInfo,
-                    "pro",
-                    "single",
-                    character.PRO
-                  );
-                }}
-              >
-                PRO
-              </button>
-            )}
-            {testInfo.pro === "single" && (
-              <button
-                className="button bordered padded5px margin5px flexgrow"
-                onClick={() => {
-                  toggleState(
-                    testInfo,
-                    setTestInfo,
-                    "pro",
-                    "double",
-                    character.PRO
-                  );
-                }}
-              >
-                PRO x2
-              </button>
-            )}
-            {testInfo.pro === "double" && (
-              <button
-                className="button bordered padded5px margin5px flexgrow"
-                onClick={() => {
-                  toggleState(testInfo, setTestInfo, "pro", "", character.PRO);
-                }}
-              >
-                No PRO
-              </button>
-            )}
-            <button
-              className="button bordered padded5px margin5px flexgrow"
-              onClick={() => {
-                toggleState(testInfo, setTestInfo, "adv", "", "+");
-              }}
-            >
-              [+]
-            </button>
-          </div>
-          <hr />
-          <div>
-            <div>
-              {targets.map((target, index) => {
-                return (
-                  <RollCard
-                    key={index}
-                    name={target.name}
-                    description={target.description}
-                    target={target.value}
-                    method={() => {
-                      let prof = 0;
-                      if (testInfo.pro === "single") {
-                        prof += character.PRO;
-                      }
-                      if (testInfo.pro === "double") {
-                        prof += character.PRO * 2;
-                      }
-                      setResult(() => {
-                        return test(
-                          target.value,
-                          testInfo.adv,
-                          prof,
-                          character[modalStat]
-                        );
-                      });
-                    }}
-                  />
-                );
-              })}
-            </div>
-          </div>
         </Modal.Body>
       </Modal>
     </div>

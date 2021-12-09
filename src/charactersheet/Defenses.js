@@ -76,9 +76,9 @@ const Defenses = () => {
     let rollResult = r(20) + 1;
     let total = rollResult + modifier;
     if (total <= character[modalStat]) {
-      return `Save successful! Result: ${rollResult}. Total: ${total}.`;
+      return `Success! Result: ${rollResult}. Total: ${total}.`;
     } else {
-      return `Save failed! Result: ${rollResult}. Total: ${total}.`;
+      return `Failure! Result: ${rollResult}. Total: ${total}.`;
     }
   };
 
@@ -153,28 +153,46 @@ const Defenses = () => {
               <hr></hr>
             </div>
           )}
-          <div className="center">{result}</div>
-          <div>
-            {bonuses.map((bonusrow, index) => {
-              return (
-                <div className="flex" key={index}>
-                  {bonusrow.map((bonus, index) => {
-                    return (
-                      <button
-                        className="button bordered padded5px margin5px flexgrow"
-                        key={index}
-                        onClick={() => {
-                          setResult(save(bonus));
-                        }}
-                      >
-                        +{bonus}
-                      </button>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </div>
+          {edit === false && (
+            <div>
+              <div>
+                {bonuses.map((bonusrow, index) => {
+                  return (
+                    <div className="flex" key={index}>
+                      {bonusrow.map((bonus, index) => {
+                        return (
+                          <button
+                            className="button bordered padded5px margin5px flexgrow"
+                            key={index}
+                            onClick={() => {
+                              setResult(save(bonus));
+                            }}
+                          >
+                            +{bonus}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  );
+                })}
+              </div>
+              <hr></hr>
+              <div
+                className="center button"
+                onClick={() => {
+                  navigator.clipboard.writeText(
+                    character.name +
+                      " makes a " +
+                      architecture.statMasks[modalStat] +
+                      " save !\nThe save is a " +
+                      result
+                  );
+                }}
+              >
+                {result}
+              </div>
+            </div>
+          )}
         </Modal.Body>
       </Modal>
     </div>
