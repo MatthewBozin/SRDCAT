@@ -75,9 +75,12 @@ const ExportModal = (props) => {
           //stringcard += "rank: " + card.ranks[card.savedrank] + "\n";
           //item properties
           if (property === "items") {
-            stringcard += "Type: " + card.type + "\n";
+            stringcard += "Tags: ";
+            for (let tag of card.tags) {
+              stringcard += tag + " ";
+            }
             stringcard +=
-              "Weight: " + sackstonesoap(card.weight, "none") + "\n";
+              "\nWeight: " + sackstonesoap(card.weight, "none") + "\n";
             //import weight to sackstonesoaps
             stringcard += "Value: " + card.value + "\n";
             if (card.stat !== undefined) {

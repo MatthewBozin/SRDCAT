@@ -36,7 +36,6 @@ const Defenses = () => {
 
     //for (let item of character.items) {
     for (let item of character.items) {
-      console.log(item);
       let CardItem = cards[item.name];
       for (let i = 0; i < CardItem.stat.length; i++) {
         if (CardItem.stat[i] === defense.name && item.worn === true) {
@@ -75,7 +74,7 @@ const Defenses = () => {
   const save = (modifier) => {
     let rollResult = r(20) + 1;
     let total = rollResult + modifier;
-    if (total <= character[modalStat]) {
+    if (total <= calcDefense(defenses[modalStat])) {
       return `Success! Result: ${rollResult}. Total: ${total}.`;
     } else {
       return `Failure! Result: ${rollResult}. Total: ${total}.`;
