@@ -41,7 +41,8 @@ const ExportModal = (props) => {
         //if slotprop === "items"
         let cards = require(`../data/collections/` + property);
         let stringprop = "";
-        for (let object of slotprop) {
+        for (let i = 0; i < slotprop.length; i++) {
+          let object = slotprop[i];
           let card = cards[object.name];
           let stringcard = "";
           stringcard += "Name: " + card.name + "\n";
@@ -111,8 +112,12 @@ const ExportModal = (props) => {
               stringcard += propstring;
             }
           }
-          stringprop +=
-            stringcard + "----------------------------------------\n";
+          console.log(i);
+          console.log(slotprop.length);
+          stringprop += stringcard;
+          if (i + 1 !== slotprop.length) {
+            stringprop += "----------------------------------------\n";
+          }
         }
         txtstring +=
           "=========================\n" +
