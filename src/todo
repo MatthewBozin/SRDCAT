@@ -10,6 +10,8 @@ scene imports top level location modifiers and props(?) from list
 Change creature life (lifecurrent) into modifiable amount
 -Turn it into a modal?
 
+-redo items with properties like creatures
+
 SCENES
 scenes have:
 -a set (where is it located, what is the environment)

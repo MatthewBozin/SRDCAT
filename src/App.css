@@ -121,7 +121,6 @@ hr {
   cursor: pointer;
   transform: scale(1.5);
   margin-left: 18px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
@@ -130,7 +129,6 @@ hr {
   color: #fa5c5c;
   cursor: pointer;
   transform: scale(1.5);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 

@@ -112,8 +112,6 @@ const ExportModal = (props) => {
               stringcard += propstring;
             }
           }
-          console.log(i);
-          console.log(slotprop.length);
           stringprop += stringcard;
           if (i + 1 !== slotprop.length) {
             stringprop += "----------------------------------------\n";
