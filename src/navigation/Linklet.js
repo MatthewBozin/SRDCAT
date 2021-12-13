@@ -7,7 +7,6 @@ import { FaGlobe } from "react-icons/fa";
 
 const Linklet = (props) => {
   const [context, setContext] = useContext(Context);
-  console.log(context);
 
   const displayIcon = () => {
     switch (props.type) {

@@ -20,7 +20,7 @@ const ExportCard = (props) => {
     newchar.life -= totalCost;
     setCharacter(JSON.parse(JSON.stringify(newchar)));
     setCastText(
-      `${character.name} casted ${name} at base cost ${rank.power} for a total cost of ${totalCost} life!`
+      `${character.name} cast ${name} at base cost ${rank.power} for a total cost of ${totalCost} life!`
     );
   };
 
@@ -72,20 +72,20 @@ const ExportCard = (props) => {
             Cast Spell
           </div>
         )}
-        {castText !== "" && (
-          <div
-            className="button padded5px"
-            onClick={() => {
-              toaster.notify("Spell cast text copied to clipboard!", {
-                duration: 1000,
-              });
-              navigator.clipboard.writeText(castText);
-            }}
-          >
-            {castText}
-          </div>
-        )}
       </article>
+      {castText !== "" && (
+        <div
+          className="button padded5px"
+          onClick={() => {
+            toaster.notify("Spell cast text copied to clipboard!", {
+              duration: 1000,
+            });
+            navigator.clipboard.writeText(castText);
+          }}
+        >
+          {castText}
+        </div>
+      )}
     </Col>
   );
 };

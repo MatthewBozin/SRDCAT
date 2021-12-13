@@ -70,6 +70,7 @@ const Stats = () => {
                 key={index}
                 onClick={() => {
                   modalOpenStat(stat);
+                  setEdit(false);
                 }}
               >
                 <Stat stat={stat} />
@@ -85,6 +86,7 @@ const Stats = () => {
                 key={index}
                 onClick={() => {
                   modalOpenStat(stat);
+                  setEdit(false);
                 }}
               >
                 <Stat stat={stat} />
@@ -96,7 +98,9 @@ const Stats = () => {
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           <span className="cardname">
-            Test Your {architecture.statMasks[modalStat]}
+            {edit === false && <span className="cardname">Test</span>}
+            {edit === true && <span className="cardname">Edit</span>}
+            Your {architecture.statMasks[modalStat]}
             {modularString(testInfo)}
           </span>
           <span>
@@ -112,7 +116,6 @@ const Stats = () => {
           {edit === true && (
             <div>
               <div className="outerbox">
-                <div className="cardname center">Edit Stat</div>
                 <div className="flex">
                   <button
                     className="button bordered padded5px margin5px flexgrow"

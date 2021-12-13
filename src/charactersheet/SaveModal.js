@@ -139,7 +139,7 @@ const SaveModal = (props) => {
                 addSlot(gate());
               }}
             >
-              Save Slot
+              Save
             </button>
           </Col>
         </Modal.Body>

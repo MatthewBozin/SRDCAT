@@ -55,7 +55,7 @@ const CardSpell = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mright12px mtop4px">
+          <span className="row rightfloat mright12px mtop4px">
             {props.deleteFrom !== "none" && (
               <Cast
                 className="iconsvg"

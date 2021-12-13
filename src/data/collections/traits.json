@@ -81,7 +81,7 @@
       {
         "base": "Eyes turn ",
         "entries": ["milky", "pitch black", "translucent", "like amber orbs"],
-        "end": "Vision is impaired."
+        "end": ". Vision is impaired."
       },
       "Eyes evaporate out of their sockets. Hero is blind.",
       "A heavy, misty gas leaks out of the hero’s sockets. They perceive auras with new organs growing where their eyes once rolled in fear and terror.",

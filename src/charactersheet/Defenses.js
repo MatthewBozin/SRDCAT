@@ -92,6 +92,7 @@ const Defenses = () => {
               key={index}
               onClick={() => {
                 modalOpenStat(defenses[defense].name);
+                setEdit(false);
               }}
             >
               <Defense defense={defenses[defense]} />
@@ -101,7 +102,8 @@ const Defenses = () => {
       </div>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
-          <span className="cardname orangetext center">
+          <span className="cardname center">
+            {edit === true && <span className="cardname">Edit</span>}
             <i>{statMasks[modalStat]}</i> save: (
             {calcDefense(defenses[modalStat])})
           </span>
@@ -119,7 +121,6 @@ const Defenses = () => {
             //flex these
             <div>
               <div className="outerbox">
-                <div className="cardname center">Edit Defense</div>
                 <div className="flex">
                   <button
                     className="button bordered padded5px margin5px flexgrow"
@@ -183,7 +184,7 @@ const Defenses = () => {
                     character.name +
                       " makes a " +
                       architecture.statMasks[modalStat] +
-                      " save !\nThe save is a " +
+                      " save!\nThe save is a " +
                       result
                   );
                 }}
