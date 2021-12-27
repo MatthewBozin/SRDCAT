@@ -1,5 +1,6 @@
 import React from "react";
 import Description from "./Description";
+import Tag from "./Tag";
 
 const CardModifier = (props) => {
   let cards;
@@ -7,7 +8,7 @@ const CardModifier = (props) => {
     cards = require(`../data/collections/` + props.deleteFrom);
   }
 
-  const { name, description } = cards[props.card.name];
+  const { name, description, tags } = cards[props.card.name];
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -22,6 +23,12 @@ const CardModifier = (props) => {
         <div className="row">
           <div className="orangetext cardname">{name}</div>
         </div>
+        <span>
+          {tags.map((tag, index) => {
+            return <Tag tag={tag} key={index} />;
+          })}
+        </span>
+        <hr></hr>
         <Description description={description} />
       </div>
     </div>

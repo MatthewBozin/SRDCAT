@@ -10,6 +10,14 @@ scene imports top level location modifiers and props(?) from list
 Change creature life (lifecurrent) into modifiable amount
 -Turn it into a modal?
 
+---
+
+When items appear in character inventory, add "craft" icon with modal that allows players to add modifiers?
+
+ModalCreatureEdit
+
+---
+
 SCENES
 scenes have:
 -a set (where is it located, what is the environment)
@@ -32,21 +40,12 @@ SESSIONS DON'T HAVE ZONES, THEY HAVE ENVIRONMENTS (THE DATA COLLECTIONS THEY PUL
 -TC chooses an environment from a drop down (?) on world sheet
 -from there, TC can choose to auto-build a scene based on environment/scene logic, or to manually build it
 
-VotBO EXPEDITIONS
-have:
--zones
--events (can create scenes?)
---event link points to event card with button "run scene" that opens scene as little character sheet
--rewards/advancements (need new name) (adaptations + resources are tags within this category?)
--denizens
--geneses (allow characters found in these worlds to be uniquely tied to them)
--conditions
--special (things that do not fit in any other category, unique rules, etc.)
-
 tags for social/physical/spiritual
 build by tag
 modifiers
 generator adds modifiers to creatures
+
+---
 
 COMMAND LINE
 -actions can generate snippets of pseudocode that dms and players can share
@@ -68,10 +67,6 @@ words after functions words are treated as parameters
 
 THIS MEANS THE APP CAN RUN ITS OWN PSEUDOCODE COMMANDS
 for instance, as random roll result
-
----
-
-single paragraph describing my skills, education,
 
 DONEZO LINE ---------------------------------------------------------------------------------
 

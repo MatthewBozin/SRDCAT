@@ -1,14 +1,17 @@
 {
   "foolishaura": {
     "name": "Foolish Aura",
+    "tags": ["item", "defensive"],
     "description": "-1 THO but [+] vs ka attacks."
   },
   "foolishglimmer": {
     "name": "Foolish Glimmer",
+    "tags": ["item", "offensive"],
     "description": "[+] to ka damage vs those who can feel greed."
   },
   "foolsluck": {
     "name": "Fool's Luck",
+    "tags": ["boon"],
     "description": "Gain 1 reroll for the rest of the session."
   }
 }
