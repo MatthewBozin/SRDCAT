@@ -125,7 +125,7 @@
   },
   "currentWorld": {
     "name": "Grasslands Ultraviolet",
-    "environment": "testenvironment",
+    "environment": "lowroadandhigh",
     "props": [],
     "environments": [],
     "items": [],

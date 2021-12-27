@@ -1,15 +1,86 @@
 {
-  "stalactite": {
-    "name": "Stalactite",
+  "stalagmite": {
+    "name": "Stalagmite",
     "tags": ["obstacle", "cave"],
-    "flavor": "flavor text",
-    "description": "[-] to ranged attacks targeting someone hiding behind it."
+    "description": "Found in caves.",
+    "properties": [
+      {
+        "name": "Cover",
+        "description": "[-] to ranged attacks targeting someone hiding behind it."
+      }
+    ]
   },
   "bloodbasin": {
     "name": "Blood Basin",
     "tags": ["interactible", "cave"],
-    "flavor": "flavor text",
     "description": "Fear the old blood.",
-    "actions": ["Cut your hand and feed the basin."]
+    "actions": [
+      {
+        "name": "Feed the basin",
+        "options": [
+          {
+            "name": "Cut your hand",
+            "description": "-1d6 life."
+          }
+        ]
+      }
+    ]
+  },
+  "heavymetaldoor": {
+    "name": "Heavy Metal Door",
+    "tags": ["interactible", "connection", "structure"],
+    "description": "Imbued with oldtech, inscribed with images of guitar-wielding shamans of old.",
+    "actions": [
+      {
+        "name": "Open the door",
+        "options": [
+          {
+            "name": "Push the door open",
+            "description": "Extreme STR test."
+          },
+          {
+            "name": "Play a shredding solo",
+            "description": "Difficult CHA test, needs instrument and backup dancers."
+          },
+          {
+            "name": "Decipher oldtech unlock codes",
+            "description": "Difficult THO test, needs relevant skill."
+          }
+        ]
+      }
+    ]
+  },
+  "foolsgold": {
+    "name": "Fool's Gold",
+    "tags": ["resource"],
+    "description": "Veins of aurous metal, glittering with the follies of the long-dead.",
+    "actions": [
+      {
+        "name": "Collect",
+        "options": [
+          {
+            "name": "Mine from a vein",
+            "description": "Average STR test to retrieve, then difficult AUR test to avoid obsessing over the gold."
+          }
+        ]
+      },
+      {
+        "name": "Craft",
+        "options": [
+          {
+            "name": "Forge into charm",
+            "description": "Adds 'Foolish glimmer' modifier: [+] to ka damage vs those who can feel greed."
+          },
+          {
+            "name": "Forge into ward",
+            "description": "Adds 'Foolish aura' modifier: -1 THO but [+] vs ka attacks."
+          },
+          {
+            "name": "Add to meal",
+            "description": "Adds 'Fool's Luck' modifier: Gain 1 reroll for the rest of the session."
+          }
+        ]
+      }
+    ]
   }
 }

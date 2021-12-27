@@ -34,6 +34,7 @@ const Card = (props) => {
     events,
     resources,
     zones,
+    connections,
   } = cards[props.card.name];
 
   let savedresult = undefined;

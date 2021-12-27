@@ -22,6 +22,16 @@ const RandomCharModal = () => {
   const charLevels = architecture.charLevels;
   const charTypes = architecture.charTypes;
 
+  const ifListIncludes = (array, target) => {
+    console.log(array);
+    console.log(target);
+    for (let element of array) {
+      console.log(element.name);
+      if (element.name === target.name) return true;
+    }
+    return false;
+  };
+
   const charGen = (heroType) => {
     let levels = charLevels[heroType];
     let newchar = {};
@@ -55,6 +65,7 @@ const RandomCharModal = () => {
           while (true) {
             let card = newchar[collection][r(newchar[collection].length - 1)];
             let cardObject = data[card.name];
+            if (!cardObject.ranks) break;
             if (card.savedrank < cardObject.ranks.length - 1) {
               card.savedrank += 1;
               break;
@@ -67,15 +78,16 @@ const RandomCharModal = () => {
         } else {
           let selectionName = s(contextData[collection]);
           let selection = data[selectionName];
-          let selectionObject = { name: selectionName, savedRank: 0 };
+          let selectionObject = { name: selectionName, savedrank: 0 };
           if (selection.table !== undefined) {
             selectionObject.savedresult = r(selection.table.length);
           }
           //below adds rank to card instead of adding duplicate
           if (
-            newchar[collection].includes(selection) &&
+            ifListIncludes(newchar[collection], selectionObject) &&
             collection !== "items"
           ) {
+            console.log("duplicate");
             if (selection.ranks.length > 1) {
               for (let card in newchar[collection]) {
                 if (card.name === selection.name) {
@@ -85,7 +97,7 @@ const RandomCharModal = () => {
             } else {
               let newSelectionName = s(contextData[collection]);
               let newSelection = data[newSelectionName];
-              let newSelectionObject = { name: selectionName, savedRank: 0 };
+              let newSelectionObject = { name: selectionName, savedrank: 0 };
               if (newSelection.table !== undefined) {
                 newSelectionObject.savedresult = r(newSelection.table.length);
               }

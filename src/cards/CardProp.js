@@ -6,6 +6,8 @@ import Description from "./Description";
 import AddSubtract from "./AddSubtract";
 import Context from "../data/context";
 import Table from "./Table";
+import NameValuePair from "./NameValuePair.js";
+import ModalPropAction from "./ModalPropAction";
 
 const Card = (props) => {
   let ifExpanded = false;
@@ -24,7 +26,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, actions } = cards[props.card.name];
+  const { name, tags, flavor, description, properties, actions } =
+    cards[props.card.name];
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {
@@ -76,16 +79,30 @@ const Card = (props) => {
                 <Description description={description} />
               </div>
             )}
-            <hr></hr>
             {actions !== undefined && (
               <div>
-                Actions:{" "}
-                <Table
-                  table={actions}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
+                <hr></hr>
+                {actions.map((action, index) => {
+                  return (
+                    <div>
+                      <ModalPropAction action={action} />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {properties !== undefined && (
+              <div>
+                <hr></hr>
+                {properties.map((property, index) => {
+                  return (
+                    <NameValuePair
+                      name={property.name}
+                      value={property.description}
+                      key={index}
+                    />
+                  );
+                })}
               </div>
             )}
           </span>

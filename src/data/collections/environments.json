@@ -1,5 +1,5 @@
 {
-  "testenvironment": {
+  "lowroadandhigh": {
     "name": "The Low Road and the High",
     "tags": ["uvg"],
     "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
@@ -19,6 +19,44 @@
     ],
     "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
     "resources": ["star fungus"],
-    "zones": ["pylonshrine"]
+    "zones": ["pylonshrine"],
+    "connections": [
+      {
+        "direction": "North",
+        "destination": "steppeofthelimenomads",
+        "description": "Harsh lands, forbidding to travelers, dotted with odd remnants of the 'Best-Forgotten' ages.",
+        "time": 7
+      }
+    ]
+  },
+  "steppeofthelimenomads": {
+    "name": "Steppe of the Lime Nomads",
+    "tags": ["uvg"],
+    "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
+    "description": "Description stuff.",
+    "conditions": [
+      "pristine stillness",
+      "dank fungal spores",
+      "unnatural darkness"
+    ],
+    "denizens": [
+      { "name": "airpig", "display": "Airpig", "category": "creatures" },
+      {
+        "name": "amphibiousgoldfish",
+        "display": "Amphibious Goldfish",
+        "category": "creatures"
+      }
+    ],
+    "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
+    "resources": ["star fungus"],
+    "zones": ["pylonshrine"],
+    "connections": [
+      {
+        "direction": "South",
+        "destination": "lowroadandhigh",
+        "description": "Crumbling pylons of dryland coral tower above the pitted modern road.",
+        "time": 7
+      }
+    ]
   }
 }
