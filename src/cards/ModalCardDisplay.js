@@ -8,6 +8,7 @@ import CardCreature from "./CardCreature";
 import CardEnvironment from "./CardEnvironment";
 import CardScene from "./CardEnvironment";
 import CardProp from "./CardProp";
+import CardModifier from "./CardModifier.js";
 
 function ModalCardDisplay(props) {
   const { entry } = props;
@@ -94,6 +95,19 @@ function ModalCardDisplay(props) {
     if (category === "props") {
       return (
         <CardProp
+          key={placement}
+          card={cardObject}
+          form={form}
+          placement={placement}
+          deleteFrom={deleteFrom}
+          category={category}
+          expanded={true}
+        />
+      );
+    }
+    if (category === "modifiers") {
+      return (
+        <CardModifier
           key={placement}
           card={cardObject}
           form={form}

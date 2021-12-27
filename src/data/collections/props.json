@@ -20,7 +20,11 @@
         "options": [
           {
             "name": "Cut your hand",
-            "description": "-1d6 life."
+            "description": "-1d6 life: the basin hungers for more."
+          },
+          {
+            "name": "Feast of blood",
+            "description": "-1d20 life: gain the *traits.bloodclad* trait."
           }
         ]
       }
@@ -45,10 +49,6 @@
           {
             "name": "Decipher oldtech unlock codes",
             "description": "Difficult THO test, needs relevant skill."
-          },
-          {
-            "name": "Test",
-            "description": "Difficult THO test, *traits.auralcorona* needs relevant skill."
           }
         ]
       }
@@ -73,15 +73,15 @@
         "options": [
           {
             "name": "Forge into charm",
-            "description": "Adds 'Foolish glimmer' modifier: [+] to ka damage vs those who can feel greed."
+            "description": "Adds the *modifiers.foolishglimmer* modifier."
           },
           {
             "name": "Forge into ward",
-            "description": "Adds 'Foolish aura' modifier: -1 THO but [+] vs ka attacks."
+            "description": "Adds the *modifiers.foolishaura* modifier."
           },
           {
             "name": "Add to meal",
-            "description": "Adds 'Fool's Luck' modifier: Gain 1 reroll for the rest of the session."
+            "description": "Adds the *modifiers.foolsluck* modifier."
           }
         ]
       }
