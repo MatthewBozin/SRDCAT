@@ -23,13 +23,47 @@ const RandomCharModal = () => {
   const charTypes = architecture.charTypes;
 
   const ifListIncludes = (array, target) => {
-    console.log(array);
-    console.log(target);
+    //console.log(array);
+    //console.log(target);
     for (let element of array) {
-      console.log(element.name);
+      //console.log(element.name);
       if (element.name === target.name) return true;
     }
     return false;
+  };
+
+  const addCard = (collection, data, newchar) => {
+    let selectionName = s(contextData[collection]);
+    let selection = data[selectionName];
+    let selectionObject = { name: selectionName, savedrank: 0 };
+    if (selection.table !== undefined) {
+      selectionObject.savedresult = r(selection.table.length);
+    }
+    //below adds rank to card instead of adding duplicate
+    if (
+      ifListIncludes(newchar[collection], selectionObject) &&
+      collection !== "items"
+    ) {
+      console.log("duplicate");
+      if (selection.ranks.length > 1) {
+        for (let card in newchar[collection]) {
+          if (card.name === selection.name) {
+            card.savedrank += 1;
+          }
+        }
+      } else {
+        let newSelectionName = s(contextData[collection]);
+        let newSelection = data[newSelectionName];
+        let newSelectionObject = { name: selectionName, savedrank: 0 };
+        if (newSelection.table !== undefined) {
+          newSelectionObject.savedresult = r(newSelection.table.length);
+        }
+        //makeshift solution for now, might need while statement
+        newchar[collection].push(newSelectionObject);
+      }
+    } else {
+      newchar[collection].push(selectionObject);
+    }
   };
 
   const charGen = (heroType) => {
@@ -57,15 +91,19 @@ const RandomCharModal = () => {
         //modifier that adds increased chance of increasing a card rank instead of adding new card
         //based on how high levels[collection] is
         if (
-          //collection !== "items" &&
-          r(levels[collection]) > 3 &&
-          newchar[collection].length > 3
+          (collection === "skills" || collection === "traits") &&
+          r(levels[collection]) > 1 &&
+          newchar[collection].length > 0
         ) {
+          console.log("bleb");
           let i = 0;
           while (true) {
             let card = newchar[collection][r(newchar[collection].length - 1)];
             let cardObject = data[card.name];
-            if (!cardObject.ranks) break;
+            if (!cardObject.ranks || cardObject.ranks.length === 1) {
+              addCard(collection, data, newchar);
+              break;
+            }
             if (card.savedrank < cardObject.ranks.length - 1) {
               card.savedrank += 1;
               break;
@@ -76,37 +114,7 @@ const RandomCharModal = () => {
             i++;
           }
         } else {
-          let selectionName = s(contextData[collection]);
-          let selection = data[selectionName];
-          let selectionObject = { name: selectionName, savedrank: 0 };
-          if (selection.table !== undefined) {
-            selectionObject.savedresult = r(selection.table.length);
-          }
-          //below adds rank to card instead of adding duplicate
-          if (
-            ifListIncludes(newchar[collection], selectionObject) &&
-            collection !== "items"
-          ) {
-            console.log("duplicate");
-            if (selection.ranks.length > 1) {
-              for (let card in newchar[collection]) {
-                if (card.name === selection.name) {
-                  card.savedrank += 1;
-                }
-              }
-            } else {
-              let newSelectionName = s(contextData[collection]);
-              let newSelection = data[newSelectionName];
-              let newSelectionObject = { name: selectionName, savedrank: 0 };
-              if (newSelection.table !== undefined) {
-                newSelectionObject.savedresult = r(newSelection.table.length);
-              }
-              //makeshift solution for now, might need while statement
-              newchar[collection].push(newSelectionObject);
-            }
-          } else {
-            newchar[collection].push(selectionObject);
-          }
+          addCard(collection, data, newchar);
         }
       }
     }

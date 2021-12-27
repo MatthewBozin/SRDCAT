@@ -30,11 +30,8 @@ function ModalTableDisplay(props) {
               //return card display modal
               //and return index button thing (use creature attack)
               return (
-                <div>
-                  <ModalCardDisplay
-                    entry={entry}
-                    key={index}
-                  ></ModalCardDisplay>
+                <div key={index}>
+                  <ModalCardDisplay entry={entry}></ModalCardDisplay>
                 </div>
               );
             }
