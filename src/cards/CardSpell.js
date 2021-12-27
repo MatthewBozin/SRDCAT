@@ -11,12 +11,14 @@ import AddSubtract from "./AddSubtract";
 import Table from "./Table";
 import NameValuePair from "./NameValuePair";
 import modsdata from "../data/collections/modSpells.json";
+import Context from "../data/context";
 
 const CardSpell = (props) => {
   let ifExpanded = false;
   if (props.expanded) {
     ifExpanded = props.expanded;
   }
+  const [context] = useContext(Context);
   const [expanded, setExpanded] = useState(ifExpanded);
   const [castModalOpen, setCastModalOpen] = useState(false);
   const [character, setCharacter] = useContext(Character);
@@ -64,14 +66,16 @@ const CardSpell = (props) => {
                 }}
               />
             )}
-            <AddSubtract
-              context={"character"}
-              card={props.card}
-              form={props.form}
-              placement={props.placement}
-              deleteFrom={props.deleteFrom}
-              category={props.category}
-            />
+            {context.persona === "PC" && (
+              <AddSubtract
+                context={"character"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+                category={props.category}
+              />
+            )}
           </span>
         </div>
         {expanded === false && props.deleteFrom === "none" && (

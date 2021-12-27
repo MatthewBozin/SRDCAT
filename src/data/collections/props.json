@@ -45,6 +45,10 @@
           {
             "name": "Decipher oldtech unlock codes",
             "description": "Difficult THO test, needs relevant skill."
+          },
+          {
+            "name": "Test",
+            "description": "Difficult THO test, *traits.auralcorona* needs relevant skill."
           }
         ]
       }

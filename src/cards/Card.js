@@ -9,7 +9,11 @@ import Table from "./Table";
 import Context from "../data/context";
 
 const Card = (props) => {
-  const [expanded, setExpanded] = useState(false);
+  let ifExpanded = false;
+  if (props.expanded) {
+    ifExpanded = props.expanded;
+  }
+  const [expanded, setExpanded] = useState(ifExpanded);
   const [context] = useContext(Context);
   let cards;
   if (props.deleteFrom !== "none") {
@@ -50,16 +54,18 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mtop4px mright12px">
-            <AddSubtract
-              context={"character"}
-              card={props.card}
-              form={props.form}
-              placement={props.placement}
-              deleteFrom={props.deleteFrom}
-              category={props.category}
-            />
-          </span>
+          {context.persona === "PC" && (
+            <span className="rightfloat mtop4px mright12px">
+              <AddSubtract
+                context={"character"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+                category={props.category}
+              />
+            </span>
+          )}
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>

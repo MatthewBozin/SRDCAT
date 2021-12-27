@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import { toggle } from "../utils/exports.js";
 import { FaListAlt } from "react-icons/fa";
 import NameValuePair from "./NameValuePair.js";
+import HyperText from "./HyperText.js";
 
 function ModalPropAction(props) {
   const [actionModalOpen, setActionModalOpen] = useState(false);
@@ -30,11 +31,10 @@ function ModalPropAction(props) {
               //return card display modal
               //and return index button thing (use creature attack)
               return (
-                <NameValuePair
-                  name={option.name}
-                  value={option.description}
-                  key={index}
-                />
+                <div key={index}>
+                  <span className="orangetext">{option.name}: </span>
+                  <HyperText text={option.description} />
+                </div>
               );
             }
             return <div>{option}</div>;
