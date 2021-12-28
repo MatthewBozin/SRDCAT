@@ -2,10 +2,8 @@ import React, { useState, useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import Character from "../../data/character.js";
 
-function ModalCreatureEdit(props) {
+function ModalLifeEdit(props) {
   const [character, setCharacter] = useContext(Character);
-  console.log(props.placement);
-  console.log(character.creatures[props.placement]);
   const [modalOpen, setModalOpen] = useState(false);
   const [data, setData] = useState(
     character.creatures[props.placement].lifecurrent
@@ -116,4 +114,4 @@ function ModalCreatureEdit(props) {
   );
 }
 
-export default ModalCreatureEdit;
+export default ModalLifeEdit;

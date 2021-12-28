@@ -107,7 +107,10 @@ const CardCreature = (props) => {
             <hr />
             <div>
               Level: {level} |{" "}
-              <ModalLifeEdit placement={props.placement} life={life} />
+              {props.context !== undefined && (
+                <ModalLifeEdit placement={props.placement} life={life} />
+              )}
+              {props.context === undefined && <span>Life: {life}</span>}
             </div>
 
             <hr />
