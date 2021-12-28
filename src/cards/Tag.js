@@ -19,8 +19,15 @@ const Tag = (props) => {
   };
 
   return (
-    <span className="padded5px button orangetext" onClick={setTagSearch}>
-      #{props.tag}
+    <span>
+      {context.link === "collections" && (
+        <span className="padded5px button orangetext" onClick={setTagSearch}>
+          #{props.tag}
+        </span>
+      )}
+      {context.link !== "collections" && (
+        <span className="padded5px orangetext">#{props.tag}</span>
+      )}
     </span>
   );
 };

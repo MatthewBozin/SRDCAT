@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { toggle } from "../utils/exports.js";
-import { FaListAlt } from "react-icons/fa";
-import NameValuePair from "./NameValuePair.js";
 import HyperText from "./HyperText.js";
 
 function ModalPropAction(props) {

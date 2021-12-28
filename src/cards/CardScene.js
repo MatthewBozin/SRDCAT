@@ -1,11 +1,9 @@
 import React, { useState, useContext } from "react";
 import Name from "./Name";
 import Tag from "./Tag";
-import Flavor from "./Flavor";
 import Description from "./Description";
 import AddSubtract from "./AddSubtract";
 import Context from "../data/context";
-import Table from "./Table";
 
 const Card = (props) => {
   let ifExpanded = false;
@@ -24,12 +22,7 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, actions } = cards[props.card.name];
-
-  let savedresult = undefined;
-  if (props.card.savedresult !== undefined) {
-    savedresult = props.card.savedresult;
-  }
+  const { name, tags, description } = cards[props.card.name];
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {

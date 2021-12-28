@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import { FaPlusCircle, FaRegTrashAlt } from "react-icons/fa";
-import { ReactComponent as Herosheet } from "../data/icons/herosheet.svg";
-import { FaGlobe } from "react-icons/fa";
 import Context from "../data/context";
 import Character from "../data/character";
 import WorldState from "../data/worldstate.js";

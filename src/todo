@@ -7,14 +7,15 @@ scene imports top level location modifiers and props(?) from list
 -SRDCAT icon leads to home screen
 -Change persona only from home screen
 
-Change creature life (lifecurrent) into modifiable amount
--Turn it into a modal?
-
 ---
 
 When items appear in character inventory, add "craft" icon with modal that allows players to add modifiers?
 
 ModalCreatureEdit
+
+---
+
+Replace toasted notes with modals that close after 1s
 
 ---
 
@@ -89,3 +90,5 @@ TABLE DISPLAY MODAL: TABLES HAVE BUTTON OPTION THAT OPENS MODAL TO DISPLAY THE T
 -expeditions turned into environments
 
 -bug where linklet icon wouldn't reflect sheet -> collections change fixed
+
+Change creature life (lifecurrent) into modifiable amount via a modal

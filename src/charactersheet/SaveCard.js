@@ -40,7 +40,7 @@ const SaveCard = (props) => {
       case "delete":
         deleteSlot(slot);
         break;
-      case "load":
+      default:
         loadSlot(slot);
     }
     confirmToggle(confirm);

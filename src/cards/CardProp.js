@@ -1,11 +1,9 @@
 import React, { useState, useContext } from "react";
 import Name from "./Name";
 import Tag from "./Tag";
-import Flavor from "./Flavor";
 import Description from "./Description";
 import AddSubtract from "./AddSubtract";
 import Context from "../data/context";
-import Table from "./Table";
 import NameValuePair from "./NameValuePair.js";
 import ModalPropAction from "./ModalPropAction";
 
@@ -26,13 +24,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, properties, actions } =
+  const { name, tags, description, properties, actions } =
     cards[props.card.name];
-
-  let savedresult = undefined;
-  if (props.card.savedresult !== undefined) {
-    savedresult = props.card.savedresult;
-  }
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {

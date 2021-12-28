@@ -5,11 +5,10 @@ import AddSubtract from "./AddSubtract";
 import NameValuePair from "./NameValuePair.js";
 import ModalCreatureAttack from "./ModalCreatureAttack.js";
 import ModalCreatureEdit from "./ModalCreatureEdit.js";
+import ModalLifeEdit from "./ModalLifeEdit.js";
 import Character from "../data/character.js";
-import modsdata from "../data/collections/modCreatures.json";
 import architecture from "../data/architecture.json";
-import { updateState, toggle } from "../utils/exports.js";
-import toaster from "toasted-notes";
+import { toggle } from "../utils/exports.js";
 import "toasted-notes/src/styles.css";
 
 const CardCreature = (props) => {
@@ -21,7 +20,7 @@ const CardCreature = (props) => {
   let cards = require(`../data/collections/creatures`);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
-  const [character, setCharacter] = useContext(Character);
+  const [character] = useContext(Character);
   const [attackName, setAttackName] = useState("");
   const [attackDamage, setAttackDamage] = useState("");
   const [attackBonus, setAttackBonus] = useState("");
@@ -107,12 +106,10 @@ const CardCreature = (props) => {
             <div>{description}</div>
             <hr />
             <div>
-              Level: {level} | Life:{" "}
-              {props.card.lifecurrent && (
-                <span>{props.card.lifecurrent} /</span>
-              )}{" "}
-              {life}
+              Level: {level} |{" "}
+              <ModalLifeEdit placement={props.placement} life={life} />
             </div>
+
             <hr />
             <div>
               {attacks.map((attack, index) => {
