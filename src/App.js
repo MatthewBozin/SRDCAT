@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Context from "./data/context.js";
 import Character from "./data/character.js";
 import Worldstate from "./data/worldstate.js";
-import NavMaster from "./navigation/NavMaster";
+import NavMaster from "./components/navigation/NavMaster";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Collections from "./pages/Collections";

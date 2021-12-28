@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Navbar from "../navigation/Navbar";
-import Search from "../cards/Search";
-import CardList from "../cards/CardList";
+import Navbar from "../components/navigation/Navbar";
+import Search from "../components/cards/Search";
+import CardList from "../components/cards/CardList";
 import Context from "../data/context";
 let contextData = require(`../data/orders.json`);
 

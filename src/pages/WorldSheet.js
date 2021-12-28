@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import Context from "../data/context.js";
 import WorldState from "../data/worldstate.js";
-import SlotName from "../charactersheet/SlotName";
-import SaveModal from "../charactersheet/SaveModal";
-import ExportModal from "../charactersheet/ExportModal";
-import CardEnvironment from "../cards/CardEnvironment";
-import CardScene from "../cards/CardScene";
+import SlotName from "../components/charactersheet/SlotName";
+import SaveModal from "../components/charactersheet/SaveModal";
+import ExportModal from "../components/charactersheet/ExportModal";
+import CardEnvironment from "../components/cards/CardEnvironment";
+import CardScene from "../components/cards/CardScene";
 import { Link } from "react-router-dom";
 
 const HeroSheet = () => {

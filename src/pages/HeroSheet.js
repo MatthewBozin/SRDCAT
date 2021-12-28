@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import CardList from "../cards/CardList";
+import CardList from "../components/cards/CardList";
 import Context from "../data/context.js";
 import Character from "../data/character.js";
-import StatSheet from "../charactersheet/StatSheet";
-import SlotName from "../charactersheet/SlotName";
-import SaveModal from "../charactersheet/SaveModal";
-import ExportModal from "../charactersheet/ExportModal";
-import RandomCharModal from "../charactersheet/RandomCharModal";
+import StatSheet from "../components/charactersheet/StatSheet";
+import SlotName from "../components/charactersheet/SlotName";
+import SaveModal from "../components/charactersheet/SaveModal";
+import ExportModal from "../components/charactersheet/ExportModal";
+import RandomCharModal from "../components/charactersheet/RandomCharModal";
 import { sackstonesoap } from "../utils/exports.js";
 import { Link } from "react-router-dom";
 
