@@ -20,12 +20,12 @@ const Tag = (props) => {
 
   return (
     <span>
-      {context.link === "collections" && (
+      {props.form === "plus" && (
         <span className="padded5px button orangetext" onClick={setTagSearch}>
           #{props.tag}
         </span>
       )}
-      {context.link !== "collections" && (
+      {props.form === "minus" && (
         <span className="padded5px orangetext">#{props.tag}</span>
       )}
     </span>

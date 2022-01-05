@@ -63,22 +63,25 @@ const HeroSheet = () => {
       <div className="outerbox limitwidth">
         {!worldState.scene && (
           <div>
-            You have no scene selected.
-            <Link
-              onClick={() =>
-                setContext(() => {
-                  let newcontext = context;
-                  newcontext.collections = "scenes";
-                  newcontext.link = "collections";
-                  let final = JSON.parse(JSON.stringify(newcontext));
-                  return final;
-                })
-              }
-              className="button bordered"
-              to="/"
-            >
-              Build Scene
-            </Link>
+            <div>Scene Builder</div>
+            <div>
+              You have no scene selected.
+              <Link
+                onClick={() =>
+                  setContext(() => {
+                    let newcontext = context;
+                    newcontext.collections = "scenes";
+                    newcontext.link = "collections";
+                    let final = JSON.parse(JSON.stringify(newcontext));
+                    return final;
+                  })
+                }
+                className="button bordered"
+                to="/"
+              >
+                Build Scene
+              </Link>
+            </div>
           </div>
         )}
         {worldState.scene && (

@@ -4,6 +4,7 @@ import Tag from "../bits/Tag";
 import Description from "../bits/Description";
 import AddSubtract from "../bits/AddSubtract";
 import Context from "../../data/context";
+import ModalAction from "./ModalAction";
 
 const Card = (props) => {
   let ifExpanded = false;
@@ -22,7 +23,7 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, description } = cards[props.card.name];
+  const { name, tags, description, actions } = cards[props.card.name];
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -54,7 +55,7 @@ const Card = (props) => {
         {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
         )}
@@ -62,25 +63,25 @@ const Card = (props) => {
           <span>
             <hr></hr>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
             {description !== undefined && (
               <div>
                 <Description description={description} />
               </div>
             )}
-            <hr></hr>
-            {/* {actions !== undefined && (
+            {actions !== undefined && (
               <div>
-                Actions:{" "}
-                <Table
-                  table={actions}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
+                <hr></hr>
+                {actions.map((action, index) => {
+                  return (
+                    <div>
+                      <ModalAction action={action} key={index} />
+                    </div>
+                  );
+                })}
               </div>
-            )} */}
+            )}
           </span>
         )}
       </div>

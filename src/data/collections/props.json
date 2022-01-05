@@ -27,6 +27,19 @@
             "description": "-1d20 life: gain the *traits.bloodclad* trait."
           }
         ]
+      },
+      {
+        "name": "Take the Blood",
+        "options": [
+          {
+            "name": "Drink it all",
+            "description": "+1d20 life, difficult END test or contract the [haemophilia] burden. The basin is depleted."
+          },
+          {
+            "name": "Drink a sip",
+            "description": "+1d6 life. moderate CHA test or basin is depleted."
+          }
+        ]
       }
     ]
   },

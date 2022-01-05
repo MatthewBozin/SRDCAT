@@ -25,7 +25,7 @@ const CardModifier = (props) => {
         </div>
         <span>
           {tags.map((tag, index) => {
-            return <Tag tag={tag} key={index} />;
+            return <Tag tag={tag} form={props.form} key={index} />;
           })}
         </span>
         <hr></hr>

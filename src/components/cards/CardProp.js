@@ -5,7 +5,7 @@ import Description from "../bits/Description";
 import AddSubtract from "../bits/AddSubtract";
 import Context from "../../data/context";
 import NameValuePair from "../bits/NameValuePair.js";
-import ModalPropAction from "./ModalPropAction";
+import ModalAction from "./ModalAction";
 
 const Card = (props) => {
   let ifExpanded = false;
@@ -57,7 +57,7 @@ const Card = (props) => {
         {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
         )}
@@ -65,7 +65,7 @@ const Card = (props) => {
           <span>
             <hr></hr>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
             {description !== undefined && (
               <div>
@@ -78,7 +78,7 @@ const Card = (props) => {
                 {actions.map((action, index) => {
                   return (
                     <div>
-                      <ModalPropAction action={action} key={index} />
+                      <ModalAction action={action} key={index} />
                     </div>
                   );
                 })}

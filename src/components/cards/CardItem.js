@@ -10,6 +10,7 @@ import { FaDollarSign } from "react-icons/fa";
 import { ReactComponent as Attack } from "../../data/icons/attack.svg";
 import { ReactComponent as Defend } from "../../data/icons/defend.svg";
 import { ReactComponent as DefendAlt } from "../../data/icons/defendbasealt.svg";
+import Context from "../../data/context.js";
 import Character from "../../data/character.js";
 import modsdata from "../../data/collections/modItems.json";
 import architecture from "../../data/architecture.json";
@@ -28,6 +29,7 @@ const CardItem = (props) => {
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
   const [itemNotWorn, setItemNotWorn] = useState(true);
+  const [context, setContext] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
   const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
   //mod becomes mods: []
@@ -87,17 +89,20 @@ const CardItem = (props) => {
             }}
           />
           <span className="row rightfloat mright12px mtop4px">
-            {props.deleteFrom === "items" && tags.includes("offensive") && (
-              <Attack
-                className="iconsvg"
-                onClick={() => {
-                  setAttackModalOpen(true);
-                  setSaleModalOpen(false);
-                  calcAttackInfo();
-                }}
-              />
-            )}
-            {props.deleteFrom === "items" &&
+            {context.link !== "collections" &&
+              props.deleteFrom === "items" &&
+              tags.includes("offensive") && (
+                <Attack
+                  className="iconsvg"
+                  onClick={() => {
+                    setAttackModalOpen(true);
+                    setSaleModalOpen(false);
+                    calcAttackInfo();
+                  }}
+                />
+              )}
+            {context.link !== "collections" &&
+              props.deleteFrom === "items" &&
               tags.includes("defensive") &&
               itemNotWorn === true && (
                 <Defend
@@ -111,7 +116,8 @@ const CardItem = (props) => {
                   }}
                 />
               )}
-            {props.deleteFrom === "items" &&
+            {context.link !== "collections" &&
+              props.deleteFrom === "items" &&
               tags.includes("defensive") &&
               itemNotWorn === false && (
                 <DefendAlt
@@ -125,7 +131,7 @@ const CardItem = (props) => {
                   }}
                 />
               )}
-            {capitalism(props.deleteFrom) && (
+            {context.persona === "PC" && capitalism(props.deleteFrom) && (
               <FaDollarSign
                 className="icon mright12px mtop10px"
                 onClick={() => {
@@ -160,7 +166,7 @@ const CardItem = (props) => {
         {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
         )}
@@ -168,7 +174,7 @@ const CardItem = (props) => {
           <span>
             <hr></hr>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
             <Flavor flavor={flavor} />
             <hr></hr>

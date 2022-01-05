@@ -5,8 +5,7 @@
     "description": "Both the party and their rivals battle over a valuable prize.",
     "creatures": [],
     "props": [],
-    "conditions": [],
-    "outcomes": {}
+    "actions": []
   },
   "spottingthetreasure": {
     "name": "Spotting The Treasure",
@@ -14,7 +13,33 @@
     "description": "Both the party and their rivals have spotted a valuable prize.",
     "creatures": [],
     "props": [],
-    "conditions": [],
-    "outcomes": {}
+    "actions": [
+      {
+        "name": "Face the rivals",
+        "options": [
+          {
+            "name": "Attack them",
+            "description": "Leads to the *scenes.battleovertreasure* scene."
+          },
+          {
+            "name": "Debate them",
+            "description": "Leads to the [ba combat over treasure?] scene."
+          }
+        ]
+      },
+      {
+        "name": "Race the rivals",
+        "options": [
+          {
+            "name": "On foot",
+            "description": "Leads to the [foot race for treasure] scene."
+          },
+          {
+            "name": "With vehicles",
+            "description": "Leads to the [road race for treasure] scene."
+          }
+        ]
+      }
+    ]
   }
 }

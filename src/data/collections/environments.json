@@ -1,14 +1,9 @@
 {
   "lowroadandhigh": {
     "name": "The Low Road and the High",
-    "tags": ["uvg"],
+    "tags": ["environment", "uvg"],
     "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
     "description": "Description stuff.",
-    "conditions": [
-      "pristine stillness",
-      "dank fungal spores",
-      "unnatural darkness"
-    ],
     "denizens": [
       { "name": "airpig", "display": "Airpig", "category": "creatures" },
       {
@@ -18,12 +13,23 @@
       }
     ],
     "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
-    "resources": ["star fungus"],
+    "gains": [
+      {
+        "name": "anothermind",
+        "display": "Another Mind",
+        "category": "traits"
+      },
+      "star fungus"
+    ],
     "zones": ["pylonshrine"],
     "connections": [
       {
         "direction": "North",
-        "destination": "steppeofthelimenomads",
+        "destination": {
+          "name": "steppeofthelimenomads",
+          "display": "Steppe of the Lime Nomads",
+          "category": "environments"
+        },
         "description": "Harsh lands, forbidding to travelers, dotted with odd remnants of the 'Best-Forgotten' ages.",
         "time": 7
       }
@@ -31,14 +37,9 @@
   },
   "steppeofthelimenomads": {
     "name": "Steppe of the Lime Nomads",
-    "tags": ["uvg"],
+    "tags": ["environment", "uvg"],
     "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
     "description": "Description stuff.",
-    "conditions": [
-      "pristine stillness",
-      "dank fungal spores",
-      "unnatural darkness"
-    ],
     "denizens": [
       { "name": "airpig", "display": "Airpig", "category": "creatures" },
       {
@@ -48,15 +49,47 @@
       }
     ],
     "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
-    "resources": ["star fungus"],
+    "gains": [
+      {
+        "name": "anothermind",
+        "display": "Another Mind",
+        "category": "traits"
+      },
+      "star fungus"
+    ],
     "zones": ["pylonshrine"],
     "connections": [
       {
         "direction": "South",
-        "destination": "lowroadandhigh",
+        "destination": {
+          "name": "lowroadandhigh",
+          "display": "The Low Road and the High",
+          "category": "environments"
+        },
         "description": "Crumbling pylons of dryland coral tower above the pitted modern road.",
         "time": 7
       }
     ]
+  },
+  "harmonium": {
+    "name": "Harmonium",
+    "tags": ["environment", "votbo"],
+    "flavor": "ONLY PERFECT AND CONSTANT APPLICATION OF THE HARMONY CAN KEEP THE DREAMER/ORACLE/HEIR ASLEEP",
+    "description": "A world of platonic planes, fragile metalworks and resonant glass. The Bell of Slumber awaits high above, and the Bell of Awakening lurks deep below. Stop the Bell of Slumber and ring the Bell of Awakening, and the Dreamer shall awaken once more.",
+    "denizens": [
+      { "name": "airpig", "display": "Airpig", "category": "creatures" },
+      {
+        "name": "amphibiousgoldfish",
+        "display": "Amphibious Goldfish",
+        "category": "creatures"
+      }
+    ],
+    "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
+    "gains": [
+      { "name": "utilityaxe", "display": "Utility Axe", "category": "items" },
+      { "name": "foolsgold", "display": "Fool's Gold", "category": "props" },
+      { "name": "anothermind", "display": "Another Mind", "category": "traits" }
+    ],
+    "zones": ["pylonshrine"]
   }
 }

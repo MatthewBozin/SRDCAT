@@ -85,7 +85,7 @@ const CardCreature = (props) => {
         {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
         )}
@@ -93,7 +93,7 @@ const CardCreature = (props) => {
           <span>
             <hr></hr>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
             <hr></hr>
             {facets.map((facet, index) => {

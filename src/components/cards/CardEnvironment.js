@@ -6,6 +6,7 @@ import Description from "../bits/Description";
 import AddSubtract from "../bits/AddSubtract";
 import Context from "../../data/context";
 import Table from "../bits/Table";
+import ModalConnection from "./ModalConnection";
 
 const Card = (props) => {
   let ifExpanded = false;
@@ -29,10 +30,9 @@ const Card = (props) => {
     tags,
     flavor,
     description,
-    conditions,
     denizens,
     events,
-    resources,
+    gains,
     zones,
     connections,
   } = cards[props.card.name];
@@ -72,7 +72,7 @@ const Card = (props) => {
         {expanded === false && props.deleteFrom === "none" && (
           <span>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
         )}
@@ -80,24 +80,13 @@ const Card = (props) => {
           <span>
             <hr></hr>
             {tags.map((tag, index) => {
-              return <Tag tag={tag} key={index} />;
+              return <Tag tag={tag} form={props.form} key={index} />;
             })}
             <Flavor flavor={flavor} />
             {description !== undefined && (
               <Description description={description} />
             )}
             <hr></hr>
-            {conditions !== undefined && (
-              <div>
-                Conditions:{" "}
-                <Table
-                  table={conditions}
-                  savedresult={savedresult}
-                  placement={props.placement}
-                  category={props.category}
-                />
-              </div>
-            )}
             {denizens !== undefined && (
               <div>
                 Denizens:{" "}
@@ -120,11 +109,11 @@ const Card = (props) => {
                 />
               </div>
             )}
-            {resources !== undefined && (
+            {gains !== undefined && (
               <div>
-                Resources:{" "}
+                Gains:{" "}
                 <Table
-                  table={resources}
+                  table={gains}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
@@ -140,6 +129,12 @@ const Card = (props) => {
                   placement={props.placement}
                   category={props.category}
                 />
+              </div>
+            )}
+            {connections !== undefined && (
+              <div>
+                <hr></hr>
+                <ModalConnection connections={connections}></ModalConnection>
               </div>
             )}
           </span>

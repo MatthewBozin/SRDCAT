@@ -1,7 +1,7 @@
 {
   "props": ["stalagmite", "bloodbasin", "heavymetaldoor", "foolsgold"],
   "scenes": ["battleovertreasure", "spottingthetreasure"],
-  "environments": ["lowroadandhigh", "steppeofthelimenomads"],
+  "environments": ["lowroadandhigh", "steppeofthelimenomads", "harmonium"],
   "creatures": [
     "airpig",
     "amphibiousgoldfish",

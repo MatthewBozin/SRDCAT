@@ -80,7 +80,7 @@ const AddSubtract = (props) => {
       </div>
     );
   }
-  if (props.form === "minus") {
+  if (props.form === "minus" && context.link !== "collections") {
     return (
       <FaRegTrashAlt
         className="icon mright12px mtop10px"
@@ -89,6 +89,9 @@ const AddSubtract = (props) => {
         }}
       />
     );
+  }
+  if (props.form === "minus" && context.link === "collections") {
+    return null;
   }
 };
 

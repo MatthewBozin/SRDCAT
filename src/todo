@@ -1,8 +1,31 @@
+TAGS FOR EVENTS
+ex: carousing/tourism, misfortune
+
+1 - disaster - and roll again with [-]
+2-7 - mishap
+8-13 - weather
+14–19 - tourism
+20 - discovery - and roll again with [+]
+
+CONDITIONS become permanent environmental modifier that modifies the basic rules of the area
+Transient conditions/weather get moved into events table
+
+DISCOVERIES have special denizens/events/resources (but lower amounts than environments)
+
+---
+
 REFACTORS:
 -separate charactersheet/cards components into subfolders (modals, cards, etc.)
 -turn item mods into properties
 
 scene imports top level location modifiers and props(?) from list
+"save scene" functionality, saves to list of scenes
+in parallel with save worldstate
+scenes can contain hyperlink choices like props, choices can lead to other scenes,
+and props can lead to scenes
+zones as subtype of environments
+
+challenge mode: scene combines flavor text from all included props into a description
 
 -SRDCAT icon leads to home screen
 -Change persona only from home screen

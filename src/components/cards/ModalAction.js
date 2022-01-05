@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import { toggle } from "../../utils/exports.js";
 import HyperText from "../bits/HyperText.js";
 
-function ModalPropAction(props) {
+function ModalAction(props) {
   const [actionModalOpen, setActionModalOpen] = useState(false);
   const { action } = props;
 
@@ -23,6 +23,7 @@ function ModalPropAction(props) {
           toggle(setActionModalOpen, actionModalOpen);
         }}
       >
+        <Modal.Header className="modalbackground">{action.name}</Modal.Header>
         <Modal.Body className="modalbackground">
           {action.options.map((option, index) => {
             if (typeof option === "object") {
@@ -43,4 +44,4 @@ function ModalPropAction(props) {
   );
 }
 
-export default ModalPropAction;
+export default ModalAction;
