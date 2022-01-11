@@ -190,10 +190,8 @@ const roll = (adv, pro) => {
   return { result: result, total: total, text: text };
 };
 
-const test = (target, adv, pro, mod) => {
-  let rollData = roll(adv, pro);
-  let rollResult = rollData.result;
-  let rollTotal = parseInt(rollData.total) + parseInt(mod);
+const adjudicate = (rollData) => {
+  let { rollResult, rollTotal, target, text } = rollData;
   let resultString = "";
   if (rollResult === 20 || rollResult === 1) {
     resultString += "Critical ";
@@ -213,8 +211,22 @@ const test = (target, adv, pro, mod) => {
     resultString += " with a Drawback";
   }
 
-  resultString += "! " + rollData.text + ". Total: " + rollTotal + ".";
+  resultString += "! " + text + ". Total: " + rollTotal + ".";
   return resultString;
+};
+
+const test = (target, adv, pro, mod) => {
+  let rollInfo = roll(adv, pro);
+  let rollResult = rollInfo.result;
+  let rollTotal = parseInt(rollInfo.total) + parseInt(mod);
+  let rollData = {
+    rollResult: rollResult,
+    rollTotal: rollTotal,
+    target: target,
+    text: rollInfo.text,
+  };
+  let resultString = adjudicate(rollData);
+  return { resultString: resultString, rollData: rollData };
 };
 
 const haggleRoll = (result, mode) => {
@@ -328,6 +340,7 @@ export {
   calcSale,
   roll,
   minitest,
+  adjudicate,
   test,
   haggleRoll,
   sackstonesoap,

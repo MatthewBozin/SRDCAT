@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import Character from "../../data/character.js";
 import Modal from "react-bootstrap/Modal";
 import architecture from "../../data/architecture.json";
 import toaster from "toasted-notes";
@@ -6,6 +7,7 @@ import "toasted-notes/src/styles.css";
 import {
   r,
   test,
+  adjudicate,
   damagecalc,
   toggleState,
   toggle,
@@ -13,8 +15,11 @@ import {
 } from "../../utils/exports.js";
 
 function ModalItemAttack(props) {
+  const [character, setCharacter] = useContext(Character);
   const [target, setTarget] = useState(10);
   const [attackResult, setAttackResult] = useState("");
+  const [lastAttackData, setlastAttackData] = useState("");
+  const [lastDamageData, setlastDamageData] = useState("");
   const [attackMessage, setAttackMessage] = useState("");
   const [damage, setDamage] = useState({ adv: "" });
 
@@ -23,7 +28,6 @@ function ModalItemAttack(props) {
     setAttack,
     attackModalOpen,
     setAttackModalOpen,
-    character,
     name,
     stat,
     number,
@@ -38,34 +42,16 @@ function ModalItemAttack(props) {
     );
   };
 
-  const confirmAttack = (index) => {
-    let pro = 0;
-    if (attack.pro === "single") {
-      pro += character.PRO;
-    }
-    if (attack.pro === "double") {
-      pro += character.PRO * 2;
-    }
-
-    let attackRes = test(target, attack.adv, pro, attack.mod[index]);
-    let damageResult = damagecalc(number[index], damage.adv);
-
-    if (attackRes.startsWith("Critical S")) {
-      damageResult.total = damageResult.total * 2;
-      let critRoll = r(20) + 1;
-      if (critRoll === "20") {
-        damageResult.total = damageResult.total * 2;
-        attackRes.concat("Double ", attackRes);
-      }
-    }
+  const determineMessage = (attackResult, damageResult, index) => {
+    let attackText = attackResult.resultString;
     if (
-      attackRes.startsWith("S") ||
-      attackRes.startsWith("B") ||
-      attackRes.startsWith("Critical S")
+      attackText.startsWith("S") ||
+      attackText.startsWith("B") ||
+      attackText.startsWith("Critical S")
     ) {
       setAttackResult(
         <div>
-          {attackRes} <br /> {damageResult.total}{" "}
+          {attackText} <br /> {damageResult.total}{" "}
           {architecture.statMasks[stat[index]]} damage dealt!{" "}
           {damageResult.explosions !== 0 && (
             <span>(Explosions: {damageResult.explosions})</span>
@@ -81,17 +67,56 @@ function ModalItemAttack(props) {
       }
       let message = `${character.name} attacks with their ${name}${
         withProAdv(attack).string
-      }!\nThe attack is a ${attackRes}\n${damageResult.total} ${
+      }!\nThe attack is a ${attackText}\n${damageResult.total} ${
         architecture.statMasks[stat[index]]
       } damage${damageAdv} dealt!`;
       setAttackMessage(message);
     } else {
       let message = `${character.name} attacks with their ${name}${
         withProAdv(attack).string
-      }!\nThe attack is a ${attackRes}`;
-      setAttackResult(attackRes);
+      }!\nThe attack is a ${attackText}`;
+      setAttackResult(attackText);
       setAttackMessage(message);
     }
+  };
+
+  const confirmAttack = (index) => {
+    let pro = 0;
+    if (attack.pro === "single") {
+      pro += character.PRO;
+    }
+    if (attack.pro === "double") {
+      pro += character.PRO * 2;
+    }
+
+    let attackResult = test(target, attack.adv, pro, attack.mod[index]);
+    let damageResult = damagecalc(number[index], damage.adv);
+    attackResult.index = index;
+    setlastAttackData(attackResult.rollData);
+    setlastDamageData(damageResult);
+
+    determineMessage(attackResult, damageResult, index);
+  };
+
+  const spendHeroDie = () => {
+    let dieRoll = r(6) + 1;
+    let newRollData = {
+      rollResult: lastAttackData.rollResult + dieRoll,
+      rollTotal: lastAttackData.rollTotal + dieRoll,
+      target: lastAttackData.target,
+      text: lastAttackData.text,
+    };
+
+    let newResultString = adjudicate(newRollData);
+    let newAttackResult = {
+      resultString: newResultString,
+      rollData: newRollData,
+    };
+    determineMessage(newAttackResult, lastDamageData, lastAttackData.index);
+    let newCharacter = character;
+    newCharacter.HERODICE -= 1;
+    setCharacter(JSON.parse(JSON.stringify(newCharacter)));
+    console.log(character.HERODICE);
   };
 
   return (
@@ -274,6 +299,18 @@ function ModalItemAttack(props) {
             >
               {attackResult}
             </div>
+            <hr />
+            {character.HERODICE > 0 && (
+              <div
+                className="button bordered"
+                onClick={() => {
+                  spendHeroDie();
+                }}
+              >
+                Spend Hero Die ({character.HERODICE} remaining)
+              </div>
+            )}
+            {character.HERODICE < 1 && <div>No hero dice remaining.</div>}
           </div>
         )}
       </Modal.Body>

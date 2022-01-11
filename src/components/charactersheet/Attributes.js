@@ -5,7 +5,14 @@ import Character from "../../data/character.js";
 import { FaRegEdit } from "react-icons/fa";
 import RollCard from "./RollCard.js";
 import architecture from "../../data/architecture.json";
-import { test, toggleState, toggle, withProAdv } from "../../utils/exports.js";
+import {
+  r,
+  adjudicate,
+  test,
+  toggleState,
+  toggle,
+  withProAdv,
+} from "../../utils/exports.js";
 
 const Stats = () => {
   const [character, setCharacter] = useContext(Character);
@@ -56,6 +63,28 @@ const Stats = () => {
         {data.mod}: (+{number})
       </span>
     );
+  };
+
+  const spendHeroDie = () => {
+    let dieRoll = r(6) + 1;
+    let newRollData = {
+      rollResult: result.rollData.rollResult + dieRoll,
+      rollTotal: result.rollData.rollTotal + dieRoll,
+      target: result.rollData.target,
+      text: result.rollData.text,
+    };
+    let newResultString = adjudicate(newRollData);
+    let newResult = {
+      resultString: newResultString,
+      rollData: newRollData,
+    };
+    setResult(() => {
+      return newResult;
+    });
+    let newCharacter = character;
+    newCharacter.HERODICE -= 1;
+    setCharacter(JSON.parse(JSON.stringify(newCharacter)));
+    console.log(character.HERODICE);
   };
 
   return (
@@ -236,19 +265,20 @@ const Stats = () => {
                             prof += character.PRO * 2;
                           }
                           setResult(() => {
-                            return test(
+                            let result = test(
                               target.value,
                               testInfo.adv,
                               prof,
                               character[modalStat]
                             );
+                            return result;
                           });
                         }}
                       />
                     );
                   })}
                 </div>
-                {result !== "" && (
+                {result.resultString !== undefined && (
                   <div>
                     <hr />
                     <div
@@ -260,12 +290,26 @@ const Stats = () => {
                             architecture.statMasks[modalStat] +
                             withProAdv(testInfo).string +
                             "!\nThe test is a " +
-                            result
+                            result.resultString
                         );
                       }}
                     >
-                      {result}
+                      {result.resultString}
                     </div>
+                    <hr />
+                    {character.HERODICE > 0 && (
+                      <div
+                        className="button bordered"
+                        onClick={() => {
+                          spendHeroDie();
+                        }}
+                      >
+                        Spend Hero Die ({character.HERODICE} remaining)
+                      </div>
+                    )}
+                    {character.HERODICE < 1 && (
+                      <div>No hero dice remaining.</div>
+                    )}
                   </div>
                 )}
               </div>

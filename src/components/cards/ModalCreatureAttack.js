@@ -43,25 +43,26 @@ function ModalCreatureAttack(props) {
   const confirmAttack = () => {
     let pro = 0;
 
-    let attackRes = test(target, attack.adv, pro, attackBonus);
+    let attackResult = test(target, attack.adv, pro, attackBonus);
+    let attackText = attackResult.resultString;
     let damageResult = damagecalc(attackDamage, damage.adv);
 
-    if (attackRes.startsWith("Critical S")) {
+    if (attackText.startsWith("Critical S")) {
       damageResult.total = damageResult.total * 2;
       let critRoll = r(20) + 1;
       if (critRoll === "20") {
         damageResult.total = damageResult.total * 2;
-        attackRes.concat("Double ", attackRes);
+        attackText.concat("Double ", attackText);
       }
     }
     if (
-      attackRes.startsWith("S") ||
-      attackRes.startsWith("B") ||
-      attackRes.startsWith("Critical S")
+      attackText.startsWith("S") ||
+      attackText.startsWith("B") ||
+      attackText.startsWith("Critical S")
     ) {
       setAttackResult(
         <div>
-          {attackRes} <br /> {damageResult.total} {attackStat} damage dealt!{" "}
+          {attackText} <br /> {damageResult.total} {attackStat} damage dealt!{" "}
           {damageResult.explosions !== 0 && (
             <span>(Explosions: {damageResult.explosions})</span>
           )}
@@ -76,15 +77,15 @@ function ModalCreatureAttack(props) {
       }
       let message = `${creatureName} attacks using their ${attackName} ${
         withProAdv(attack).string
-      }!\nThe attack is a ${attackRes}\n${
+      }!\nThe attack is a ${attackText}\n${
         damageResult.total
       } ${attackStat} damage ${damageAdv} dealt!`;
       setAttackMessage(message);
     } else {
       let message = `${creatureName} attacks using their ${attackName}${
         withProAdv(attack).string
-      }!\nThe attack is a ${attackRes}`;
-      setAttackResult(attackRes);
+      }!\nThe attack is a ${attackText}`;
+      setAttackResult(attackText);
       setAttackMessage(message);
     }
   };
