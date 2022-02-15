@@ -4,7 +4,6 @@ import Context from "../../data/context";
 import Character from "../../data/character";
 import WorldState from "../../data/worldstate.js";
 import toaster from "toasted-notes";
-import "toasted-notes/src/styles.css";
 
 const AddSubtract = (props) => {
   const [context] = useContext(Context);
@@ -23,7 +22,11 @@ const AddSubtract = (props) => {
 
   const addCard = () => {
     toaster.notify(
-      `Card (${cards[props.card.name].name}) added to ${props.context}!`,
+      () => (
+        <div className="outerbox modalbackground">{`Card (${
+          cards[props.card.name].name
+        }) added to ${props.context}!`}</div>
+      ),
       {
         duration: 1000,
       }
@@ -53,7 +56,11 @@ const AddSubtract = (props) => {
 
   const deleteCard = () => {
     toaster.notify(
-      `Card (${cards[props.card.name].name}) removed from ${props.context}!`,
+      () => (
+        <div className="outerbox modalbackground">{`Card (${
+          cards[props.card.name].name
+        }) removed from ${props.context}!`}</div>
+      ),
       {
         duration: 1000,
       }

@@ -3,7 +3,6 @@ import Modal from "react-bootstrap/Modal";
 import architecture from "../../data/architecture.json";
 import NameValuePair from "../bits/NameValuePair.js";
 import toaster from "toasted-notes";
-import "toasted-notes/src/styles.css";
 import {
   r,
   test,
@@ -197,9 +196,16 @@ function ModalCreatureAttack(props) {
             <div
               className="button padded5px"
               onClick={() => {
-                toaster.notify("Attack text copied to clipboard!", {
-                  duration: 1000,
-                });
+                toaster.notify(
+                  () => (
+                    <div className="outerbox modalbackground">
+                      {"Attack text copied to clipboard!"}
+                    </div>
+                  ),
+                  {
+                    duration: 1000,
+                  }
+                );
                 navigator.clipboard.writeText(attackMessage);
               }}
             >

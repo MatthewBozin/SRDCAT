@@ -16,7 +16,6 @@ import modsdata from "../../data/collections/modItems.json";
 import architecture from "../../data/architecture.json";
 import { sackstonesoap, updateState, toggle } from "../../utils/exports.js";
 import toaster from "toasted-notes";
-import "toasted-notes/src/styles.css";
 
 const CardItem = (props) => {
   let ifExpanded = false;
@@ -110,10 +109,16 @@ const CardItem = (props) => {
                   onClick={() => {
                     toggle(setItemNotWorn, itemNotWorn);
                     toggleWear();
-                    // toaster.notify(name + " worn!", {
-                    //   duration: 1000,
-                    // });
-                    toaster.notify(<div>item worn</div>);
+                    toaster.notify(
+                      () => (
+                        <div className="outerbox modalbackground">
+                          {name + " worn!"}
+                        </div>
+                      ),
+                      {
+                        duration: 1000,
+                      }
+                    );
                   }}
                 />
               )}
@@ -126,9 +131,16 @@ const CardItem = (props) => {
                   onClick={() => {
                     toggle(setItemNotWorn, itemNotWorn);
                     toggleWear();
-                    toaster.notify(name + " taken off!", {
-                      duration: 1000,
-                    });
+                    toaster.notify(
+                      () => (
+                        <div className="outerbox modalbackground">
+                          {name + " taken off!"}
+                        </div>
+                      ),
+                      {
+                        duration: 1000,
+                      }
+                    );
                   }}
                 />
               )}

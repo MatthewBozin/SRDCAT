@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Character from "../../data/character.js";
 import toaster from "toasted-notes";
-import "toasted-notes/src/styles.css";
 
 const ExportCard = (props) => {
   const { name, rank, modulate } = props;
@@ -77,9 +76,16 @@ const ExportCard = (props) => {
         <div
           className="button padded5px"
           onClick={() => {
-            toaster.notify("Spell cast text copied to clipboard!", {
-              duration: 1000,
-            });
+            toaster.notify(
+              () => (
+                <div className="outerbox modalbackground">
+                  {"Spell cast text copied to clipboard!"}
+                </div>
+              ),
+              {
+                duration: 1000,
+              }
+            );
             navigator.clipboard.writeText(castText);
           }}
         >

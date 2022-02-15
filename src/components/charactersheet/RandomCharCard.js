@@ -36,9 +36,16 @@ const RandomCharCard = (props) => {
           <FaDiceD20
             className="rightfloat icon mright24px mtop12px"
             onClick={() => {
-              toaster.notify("Random character generated!", {
-                duration: 1000,
-              });
+              toaster.notify(
+                () => (
+                  <div className="outerbox modalbackground">
+                    {"Random character generated!"}
+                  </div>
+                ),
+                {
+                  duration: 1000,
+                }
+              );
               buttonfunction(buttonprop);
             }}
           />
@@ -60,9 +67,16 @@ const RandomCharCard = (props) => {
             <button
               className="button bordered padded5px fullwidth"
               onClick={() => {
-                toaster.notify("Random character generated!", {
-                  duration: 1000,
-                });
+                toaster.notify(
+                  () => (
+                    <div className="outerbox modalbackground">
+                      {"Random character generated!"}
+                    </div>
+                  ),
+                  {
+                    duration: 1000,
+                  }
+                );
                 buttonfunction(buttonprop);
               }}
             >

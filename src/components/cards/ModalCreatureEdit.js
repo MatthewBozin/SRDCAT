@@ -3,7 +3,6 @@ import Modal from "react-bootstrap/Modal";
 import architecture from "../../data/architecture.json";
 import NameValuePair from "../bits/NameValuePair.js";
 import toaster from "toasted-notes";
-import "toasted-notes/src/styles.css";
 import {
   r,
   test,

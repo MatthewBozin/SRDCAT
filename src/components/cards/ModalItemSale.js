@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import NameValuePair from "../bits/NameValuePair.js";
 import toaster from "toasted-notes";
-import "toasted-notes/src/styles.css";
 import { calcSale, minitest, haggleRoll, toggle } from "../../utils/exports.js";
 
 function ModalItemSale(props) {
@@ -41,9 +40,13 @@ function ModalItemSale(props) {
       newCharacter.CASH -= salePrice;
       newCharacter["items"].push(props.card);
       toaster.notify(
-        `Item bought: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`,
+        () => (
+          <div className="outerbox modalbackground">
+            {`Item bought: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`}
+          </div>
+        ),
         {
-          duration: 1000,
+          duration: 2000,
         }
       );
     }
@@ -51,9 +54,13 @@ function ModalItemSale(props) {
       newCharacter.CASH += salePrice;
       newCharacter[props.deleteFrom].splice(props.placement, 1);
       toaster.notify(
-        `Item sold: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`,
+        () => (
+          <div className="outerbox modalbackground">
+            {`Item sold: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`}
+          </div>
+        ),
         {
-          duration: 1000,
+          duration: 2000,
         }
       );
     }
