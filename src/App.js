@@ -9,6 +9,7 @@ import Collections from "./pages/Collections";
 import HeroSheet from "./pages/HeroSheet";
 import WorldSheet from "./pages/WorldSheet";
 import Error from "./pages/Error";
+import Footer from "./components/navigation/Footer.js";
 import architecture from "./data/architecture.json";
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
                   <Error />
                 </Route>
               </Switch>
+              <Footer />
             </Router>
           </Character.Provider>
         </Worldstate.Provider>

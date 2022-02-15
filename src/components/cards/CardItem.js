@@ -110,9 +110,10 @@ const CardItem = (props) => {
                   onClick={() => {
                     toggle(setItemNotWorn, itemNotWorn);
                     toggleWear();
-                    toaster.notify(name + " worn!", {
-                      duration: 1000,
-                    });
+                    // toaster.notify(name + " worn!", {
+                    //   duration: 1000,
+                    // });
+                    toaster.notify(<div>item worn</div>);
                   }}
                 />
               )}

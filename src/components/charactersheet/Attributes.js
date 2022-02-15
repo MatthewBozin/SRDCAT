@@ -299,7 +299,7 @@ const Stats = () => {
                     <hr />
                     {character.HERODICE > 0 && (
                       <div
-                        className="button bordered"
+                        className="button bordered padded5px margin5px center flexgrow"
                         onClick={() => {
                           spendHeroDie();
                         }}

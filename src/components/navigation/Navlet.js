@@ -73,9 +73,7 @@ const Navlet = (props) => {
       }
     >
       {displayIcon()}
-      {context.collections === props.navlet.name && (
-        <span className="navletSpan">{props.navlet.display}</span>
-      )}
+      <span className="navletSpan">{props.navlet.display}</span>
     </button>
   );
 };
