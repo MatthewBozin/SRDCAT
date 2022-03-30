@@ -45,6 +45,7 @@ const Search = () => {
         toFilter = [];
         elementFull[filterBy].map((item) => {
           toFilter.push(item.toLowerCase());
+          return;
         });
       }
       let searchSplit = context.search.toLowerCase().split("+");
@@ -54,6 +55,7 @@ const Search = () => {
         }
       }
       newData.push(element);
+      return;
     });
     return newData;
   };

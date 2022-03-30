@@ -7,6 +7,7 @@ import SlotName from "../components/charactersheet/SlotName";
 import SaveModal from "../components/charactersheet/SaveModal";
 import ExportModal from "../components/charactersheet/ExportModal";
 import RandomCharModal from "../components/charactersheet/RandomCharModal";
+import Notes from "../components/charactersheet/Notes";
 import { sackstonesoap } from "../utils/exports.js";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const HeroSheet = () => {
     for (let element of character.items) {
       encumbrance += cards[element.name].weight;
     }
-    for (let element of character.spells) {
+    for (let i = 0; i < character.spells.length; i++) {
       encumbrance += 10;
     }
     encumbrance += Math.round(character.CASH / 25);
@@ -122,6 +123,9 @@ const HeroSheet = () => {
             </div>
           );
         })}
+      </div>
+      <div className="outerbox">      
+        <Notes />
       </div>
     </div>
   );

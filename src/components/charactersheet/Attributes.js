@@ -84,7 +84,6 @@ const Stats = () => {
     let newCharacter = character;
     newCharacter.HERODICE -= 1;
     setCharacter(JSON.parse(JSON.stringify(newCharacter)));
-    console.log(character.HERODICE);
   };
 
   return (

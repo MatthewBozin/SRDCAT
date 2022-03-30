@@ -10,6 +10,7 @@ const Resources = () => {
   const [modalStat, setModalStat] = useState("");
   const [data, setData] = useState(character[modalStat]);
   const [setButton, setSetButton] = useState(false);
+  const [add, setAdd] = useState(0);
 
   const statMasks = architecture.statMasks;
   const resources = ["life", "HERODICE", "XP", "CASH"];
@@ -116,6 +117,15 @@ const Resources = () => {
     }
   };
 
+  const addTo = () => {
+    console.log("aaa");
+    if (typeof parseInt(add) === "number") {
+      let newchar = character;
+      newchar[modalStat] += parseInt(add);
+      setCharacter(JSON.parse(JSON.stringify(newchar)));
+    }
+  }
+
   return (
     <div className="outerbox">
       <div className="row mleft5px">RESOURCES</div>
@@ -170,6 +180,20 @@ const Resources = () => {
           </form>
           <div className="flex">{ifStat1(modalStat)}</div>
           <div className="flex">{ifStat2(modalStat)}</div>
+          <div className="outerbox flex">
+            <textarea
+              className="button bordered flexgrow2"
+              id={"add" + character[modalStat]}
+              placeholder="Input number to add."
+              cols="30"
+              rows="1"
+              onChange={(e) => setAdd(e.target.value)}
+          ></textarea>
+            <button
+                className="button bordered padded5px"
+                onClick={addTo}
+            >Add</button>
+          </div>
         </Modal.Body>
       </Modal>
     </div>

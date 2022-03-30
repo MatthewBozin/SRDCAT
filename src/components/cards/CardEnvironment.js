@@ -58,16 +58,18 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mtop4px mright12px">
-            <AddSubtract
-              context={"worldstate"}
-              card={props.card}
-              form={props.form}
-              placement={props.placement}
-              deleteFrom={props.deleteFrom}
-              category={props.category}
-            />
-          </span>
+          {context.link === "collections" && 
+            <span className="rightfloat mtop4px mright12px">
+              <AddSubtract
+                context={"worldstate"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+                category={props.category}
+              />
+            </span>
+          }
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>

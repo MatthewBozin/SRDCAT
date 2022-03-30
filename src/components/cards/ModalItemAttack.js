@@ -111,11 +111,13 @@ function ModalItemAttack(props) {
       resultString: newResultString,
       rollData: newRollData,
     };
+    setlastAttackData(() => {
+      return newRollData;
+    })
     determineMessage(newAttackResult, lastDamageData, lastAttackData.index);
     let newCharacter = character;
     newCharacter.HERODICE -= 1;
     setCharacter(JSON.parse(JSON.stringify(newCharacter)));
-    console.log(character.HERODICE);
   };
 
   return (

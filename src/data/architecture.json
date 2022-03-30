@@ -127,13 +127,16 @@
     "items": [],
     "spells": [],
     "creatures": [],
-    "type": "Special Extra"
+    "type": "Special Extra",
+    "notes": ""
   },
   "currentWorld": {
     "name": "My Session",
     "environment": "lowroadandhigh",
-    "props": [],
     "environments": [],
+    "scene": "test",
+    "scenes": [],
+    "props": [],
     "items": [],
     "creatures": []
   },

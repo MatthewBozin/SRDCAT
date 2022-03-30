@@ -1,15 +1,26 @@
 import React, { useState, useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import Character from "../../data/character.js";
+import WorldState from "../../data/worldstate.js";
+import Context from "../../data/context.js";
 
 function ModalLifeEdit(props) {
   const [character, setCharacter] = useContext(Character);
+  const [worldState, setWorldState] = useContext(WorldState);
+  const [context] = useContext(Context);
+  let baseCreature;
   const [modalOpen, setModalOpen] = useState(false);
+  if (context.persona === "PC") {
+    baseCreature = character.creatures[props.placement]
+  } else if (context.persona === "TC") {
+    baseCreature = worldState.scene.creatures[props.placement]
+  }
+
   const [data, setData] = useState(
-    character.creatures[props.placement].lifecurrent
+    baseCreature.lifecurrent
   );
   const [setButton, setSetButton] = useState(false);
-  const lifeCurrent = character.creatures[props.placement].lifecurrent;
+  const lifeCurrent = baseCreature.lifecurrent;
 
   const amounts = [
     [1, 5, 10],
@@ -18,9 +29,15 @@ function ModalLifeEdit(props) {
   ];
 
   const modResource = (amount) => {
-    let newchar = character;
-    newchar.creatures[props.placement].lifecurrent += parseInt(amount);
-    setCharacter(JSON.parse(JSON.stringify(newchar)));
+    if (context.persona === "PC") {
+      let newchar = character;
+      newchar.creatures[props.placement].lifecurrent += parseInt(amount);
+      setCharacter(JSON.parse(JSON.stringify(newchar)));
+    } else if (context.persona === "TC") {
+      let newWorldState = worldState;
+      worldState.scene.creatures[props.placement].lifecurrent += parseInt(amount);
+      setWorldState(JSON.parse(JSON.stringify(newWorldState)));
+    }
   };
 
   const handleSubmit = (e) => {

@@ -23,7 +23,10 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, description, actions } = cards[props.card.name];
+  const { name, tags, description, actions, creatures } = cards[props.card.name];
+  const cardprops = cards[props.card.name].props;
+
+  console.log(actions);
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -70,12 +73,24 @@ const Card = (props) => {
                 <Description description={description} />
               </div>
             )}
-            {actions !== undefined && (
+            {(creatures.length > 0 || cardprops.length > 0) && <hr></hr>}
+            {creatures.length > 0 && (
+              <div>Creature types: {creatures.map((creature, index) => {
+                return <span key={index}>{creature} </span>
+              })}</div>
+            )}
+            {cardprops.length > 0 && (
+              <div>Prop types: {cardprops.map((prop, index) => {
+                return <span key={index}>{prop} </span>
+              })}</div>
+            )}
+            {actions !== undefined && actions.length > 0 && (
               <div>
                 <hr></hr>
+                Actions:
                 {actions.map((action, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <ModalAction action={action} key={index} />
                     </div>
                   );

@@ -1,6 +1,14 @@
 {
   "props": ["stalagmite", "bloodbasin", "heavymetaldoor", "foolsgold"],
-  "scenes": ["battleovertreasure", "spottingthetreasure"],
+  "scenes": [
+    "astraljourney",
+    "astralrevelation",
+    "battleovertreasure",
+    "citycrawl",
+    "dungeondelve",
+    "spottingthetreasure",
+    "test"
+  ],
   "environments": ["lowroadandhigh", "steppeofthelimenomads", "harmonium"],
   "creatures": [
     "airpig",

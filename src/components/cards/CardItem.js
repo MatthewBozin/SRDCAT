@@ -28,7 +28,7 @@ const CardItem = (props) => {
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
   const [itemNotWorn, setItemNotWorn] = useState(true);
-  const [context, setContext] = useContext(Context);
+  const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
   const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
   //mod becomes mods: []
@@ -254,6 +254,7 @@ const CardItem = (props) => {
         setSaleModalOpen={setSaleModalOpen}
         character={character}
         setCharacter={setCharacter}
+        placement={props.placement}
         name={name}
         value={value}
         card={props.card}

@@ -13,6 +13,7 @@ import Footer from "./components/navigation/Footer.js";
 import architecture from "./data/architecture.json";
 
 function App() {
+
   const currentChar = architecture.currentChar;
   const currentWorld = architecture.currentWorld;
 

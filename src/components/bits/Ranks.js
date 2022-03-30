@@ -13,7 +13,7 @@ const Ranks = (props) => {
     }
   };
 
-  const [context, setContext] = useContext(Context);
+  const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
   const [index, setIndex] = useState(ifRank());
   const rank = props.ranks[index];

@@ -6,11 +6,25 @@ import SaveModal from "../components/charactersheet/SaveModal";
 import ExportModal from "../components/charactersheet/ExportModal";
 import CardEnvironment from "../components/cards/CardEnvironment";
 import CardScene from "../components/cards/CardScene";
+import Scene from "../components/worldsheet/Scene.js";
 import { Link } from "react-router-dom";
 
 const HeroSheet = () => {
   const [context, setContext] = useContext(Context);
-  const [worldState] = useContext(WorldState);
+  const [worldState, setWorldState] = useContext(WorldState);
+  if (worldState.environments.length > 0) {
+    let newWorldState = worldState;
+    newWorldState.environment =
+      worldState.environments[worldState.environments.length - 1].name;
+    newWorldState.environments = [];
+    setWorldState(JSON.parse(JSON.stringify(newWorldState)));
+  }
+  if (worldState.scenes.length > 0) {
+    let newWorldState = worldState;
+    newWorldState.scene = worldState.scenes[worldState.scenes.length - 1].name;
+    newWorldState.scenes = [];
+    setWorldState(JSON.parse(JSON.stringify(newWorldState)));
+  }
 
   if (context.scene) {
     //"run scene button in scene modal?"
@@ -61,41 +75,40 @@ const HeroSheet = () => {
         </Link>
       </div>
       <div className="outerbox limitwidth">
-        {!worldState.scene && (
+        {typeof worldState.scene === "string" && (
           <div>
-            <div>Scene Builder</div>
-            <div>
-              You have no scene selected.
-              <Link
-                onClick={() =>
-                  setContext(() => {
-                    let newcontext = context;
-                    newcontext.collections = "scenes";
-                    newcontext.link = "collections";
-                    let final = JSON.parse(JSON.stringify(newcontext));
-                    return final;
-                  })
-                }
-                className="button bordered"
-                to="/"
-              >
-                Build Scene
-              </Link>
+            <div className="outerbox limitwidth">
+              <div>Current Scene:</div>
+              <CardScene
+                context={context}
+                key={0}
+                card={{ name: worldState.scene }}
+                form={"minus"}
+                placement={0}
+                deleteFrom={"scenes"}
+                category={"scenes"}
+              />
             </div>
+            <Link
+              onClick={() =>
+                setContext(() => {
+                  let newcontext = context;
+                  newcontext.collections = "scenes";
+                  newcontext.link = "collections";
+                  let final = JSON.parse(JSON.stringify(newcontext));
+                  return final;
+                })
+              }
+              className="button bordered"
+              to="/"
+            >
+              Change Scene
+            </Link>
           </div>
         )}
         {worldState.scene && (
-          <div className="outerbox limitwidth">
-            <div>Current Scene:</div>
-            <CardScene
-              context={context}
-              key={0}
-              card={{ name: worldState.scene }}
-              form={"minus"}
-              placement={0}
-              deleteFrom={"environments"}
-              category={"environments"}
-            />
+          <div>
+            <Scene></Scene>
           </div>
         )}
       </div>

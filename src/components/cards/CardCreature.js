@@ -37,7 +37,6 @@ const CardCreature = (props) => {
     description,
     attacks,
     properties,
-    modifiers,
   } = cards[props.card.name];
 
   const noBreakpointsIfHeroSheet = () => {
@@ -46,6 +45,7 @@ const CardCreature = (props) => {
     }
     return "fullwidth mright15px";
   };
+  console.log(props.context);
 
   return (
     <div className={noBreakpointsIfHeroSheet()}>
@@ -59,20 +59,9 @@ const CardCreature = (props) => {
             }}
           />
           <span className="row rightfloat mright12px mtop4px">
-            {props.context !== "worldstate" && (
+            {(props.context === "character" || props.context === "collections") && (
               <AddSubtract
                 context={"character"}
-                card={props.card}
-                form={props.form}
-                placement={props.placement}
-                deleteFrom={props.deleteFrom}
-                category={props.category}
-              />
-            )}
-
-            {props.context !== "character" && (
-              <AddSubtract
-                context={"worldstate"}
                 card={props.card}
                 form={props.form}
                 placement={props.placement}

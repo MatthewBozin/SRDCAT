@@ -78,7 +78,7 @@ const AddSubtract = (props) => {
   if (props.form === "plus") {
     return (
       <div>
-        {props.context === "character" && context.persona === "PC" && (
+        {(props.context === "character" || props.context === "collections") && context.persona === "PC" && (
           <FaPlusCircle className="icon mright12px" onClick={addCard} />
         )}
         {props.context === "worldstate" && context.persona === "TC" && (

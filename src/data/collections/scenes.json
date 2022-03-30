@@ -1,8 +1,40 @@
 {
+  "astraljourney": {
+    "name": "Astral Journey",
+    "tags": ["mental", "exploration"],
+    "description": "The party explores a mystical realm.",
+    "creatures": [],
+    "props": [],
+    "actions": []
+  },
+  "astralrevelation": {
+    "name": "Astral Revelation",
+    "tags": ["mental", "discovery"],
+    "description": "The party discovers a long lost secret of the universe.",
+    "creatures": [],
+    "props": [],
+    "actions": []
+  },
   "battleovertreasure": {
     "name": "Battle Over Treasure",
     "tags": ["physical", "combat"],
     "description": "Both the party and their rivals battle over a valuable prize.",
+    "creatures": [],
+    "props": [],
+    "actions": []
+  },
+  "citycrawl": {
+    "name": "City Crawl",
+    "tags": ["social", "exploration"],
+    "description": "The party explores an settlement.",
+    "creatures": [],
+    "props": [],
+    "actions": []
+  },
+  "dungeondelve": {
+    "name": "Dungeon Delve",
+    "tags": ["physical", "exploration"],
+    "description": "The party explores an undiscovered location.",
     "creatures": [],
     "props": [],
     "actions": []
@@ -41,5 +73,13 @@
         ]
       }
     ]
+  },
+  "test": {
+    "name": "Test",
+    "tags": ["physical", "exploration"],
+    "description": "Test.",
+    "creatures": ["magic", "human"],
+    "props": [],
+    "actions": []
   }
 }

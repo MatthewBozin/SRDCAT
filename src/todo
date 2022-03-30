@@ -38,10 +38,6 @@ ModalCreatureEdit
 
 ---
 
-Replace toasted notes with modals that close after 1s
-
----
-
 SCENES
 scenes have:
 -a set (where is it located, what is the environment)

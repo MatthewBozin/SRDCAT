@@ -1,7 +1,7 @@
 {
   "stalagmite": {
     "name": "Stalagmite",
-    "tags": ["obstacle", "cave"],
+    "tags": ["obstacle", "underground"],
     "description": "Found in caves.",
     "properties": [
       {
@@ -12,7 +12,7 @@
   },
   "bloodbasin": {
     "name": "Blood Basin",
-    "tags": ["interactible", "cave"],
+    "tags": ["curio", "underground"],
     "description": "Fear the old blood.",
     "actions": [
       {
@@ -45,7 +45,7 @@
   },
   "heavymetaldoor": {
     "name": "Heavy Metal Door",
-    "tags": ["interactible", "connection", "structure"],
+    "tags": ["connection", "structure"],
     "description": "Imbued with oldtech, inscribed with images of guitar-wielding shamans of old.",
     "actions": [
       {

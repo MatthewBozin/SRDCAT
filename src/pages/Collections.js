@@ -54,6 +54,7 @@ const Collections = () => {
           form={"plus"}
           deleteFrom={"none"}
           category={context.collections}
+          context={"collections"}
         />
       );
     }
@@ -64,6 +65,7 @@ const Collections = () => {
         form={"plus"}
         deleteFrom={"none"}
         category={context.collections}
+        context={"collections"}
       />
     );
   };
