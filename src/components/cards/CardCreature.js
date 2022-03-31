@@ -4,7 +4,7 @@ import Tag from "../bits/Tag";
 import AddSubtract from "../bits/AddSubtract";
 import NameValuePair from "../bits/NameValuePair.js";
 import ModalCreatureAttack from "./ModalCreatureAttack.js";
-import ModalCreatureEdit from "./ModalCreatureEdit.js";
+//import ModalCreatureEdit from "./ModalCreatureEdit.js";
 import ModalLifeEdit from "./ModalLifeEdit.js";
 import Character from "../../data/character.js";
 import architecture from "../../data/architecture.json";
@@ -19,7 +19,7 @@ const CardCreature = (props) => {
   const [expanded, setExpanded] = useState(ifExpanded);
   let cards = require(`../../data/collections/creatures`);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
-  const [editModalOpen, setEditModalOpen] = useState(false);
+  //const [editModalOpen, setEditModalOpen] = useState(false);
   const [character] = useContext(Character);
   const [attackName, setAttackName] = useState("");
   const [attackDamage, setAttackDamage] = useState("");
@@ -45,7 +45,6 @@ const CardCreature = (props) => {
     }
     return "fullwidth mright15px";
   };
-  console.log(props.context);
 
   return (
     <div className={noBreakpointsIfHeroSheet()}>
@@ -95,9 +94,11 @@ const CardCreature = (props) => {
             <div>{description}</div>
             <hr />
             <div>
-              Level: {level} |{" "}
-              {props.context !== undefined && (
-                <ModalLifeEdit placement={props.placement} life={life} />
+              Level: {level} 
+              {props.context !== "collections" && (
+                <span>
+                  {" "}|{" "}<ModalLifeEdit placement={props.placement} life={life} />
+                </span>
               )}
               {props.context === undefined && <span>Life: {life}</span>}
             </div>
@@ -141,18 +142,6 @@ const CardCreature = (props) => {
                   </div>
                 );
               })}
-              {/* {modifiers.map((mod, index) => {
-                let modifier = modsdata[mod];
-                return (
-                  <div key={index}>
-                    <NameValuePair
-                      name={modifier.name}
-                      value={modifier.description}
-                    />
-                    <hr />
-                  </div>
-                );
-              })} */}
             </div>
           </span>
         )}
@@ -170,13 +159,13 @@ const CardCreature = (props) => {
             attackStat={attackStat}
             creatureProperties={properties}
           />
-          <ModalCreatureEdit
+          {/* <ModalCreatureEdit
             editModalOpen={editModalOpen}
             setEditModalOpen={setEditModalOpen}
             character={character}
             creatureName={name}
             creatureProperties={properties}
-          />
+          /> */}
         </>
       }
     </div>

@@ -67,6 +67,7 @@ const Navlet = (props) => {
           let newcontext = context;
           newcontext.collections = props.navlet.name;
           newcontext.search = "";
+          newcontext.page = 0;
           let final = JSON.parse(JSON.stringify(newcontext));
           return final;
         })

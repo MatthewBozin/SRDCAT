@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import NameValuePair from "../bits/NameValuePair.js";
 import toaster from "toasted-notes";
-import { calcSale, minitest, haggleRoll, toggle } from "../../utils/exports.js";
+import { minitest, haggleRoll, toggle } from "../../utils/exports.js";
 
 function ModalItemSale(props) {
   const [salePrice, setSalePrice] = useState(0);
@@ -14,21 +14,19 @@ function ModalItemSale(props) {
     character,
     setCharacter,
     value,
-    displayValue,
     name,
     deleteFrom,
   } = props;
 
   const haggle = () => {
-    let price = calcSale(value);
     let testResult = minitest(character.PRO, character.cha);
     let multiplier = haggleRoll(testResult, props.deleteFrom);
-    setSalePrice(Math.round(price * multiplier));
+    setSalePrice(Math.round(value * multiplier));
   };
 
   const sale = () => {
     if (salePrice === 0) {
-      setSalePrice(calcSale(value));
+      setSalePrice(value);
     }
     if (salePrice > character.CASH && props.deleteFrom === "none") {
       setFailSale(true);
@@ -84,7 +82,7 @@ function ModalItemSale(props) {
         </span>
       </Modal.Header>
       <Modal.Body className="modalbackground">
-        <NameValuePair name={"Item Value"} value={displayValue(value)} />
+        <NameValuePair name={"Item Value"} value={value} />
         {salePrice === 0 && (
           <button
             className="button bordered padded5px margin5px"

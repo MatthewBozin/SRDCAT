@@ -9,6 +9,15 @@ import CardScene from "./CardScene";
 import Col from "react-bootstrap/Row";
 
 const CardList = (props) => {
+
+  const pageChange = (value) => {
+    if (props.context.page + value < 0) return;
+    if ((props.context.page + value) * 40 > props.content.length) return;
+    let newContext = props.context;
+    newContext.page += value;
+    props.setContext(JSON.parse(JSON.stringify(newContext)));
+  }
+
   const ifCard = (card, placement) => {
     let cardObject;
     if (typeof card === "object") {
@@ -19,7 +28,7 @@ const CardList = (props) => {
     if (props.category === "items") {
       return (
         <CardItem
-          context={props.context}
+          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -32,7 +41,7 @@ const CardList = (props) => {
     if (props.category === "spells") {
       return (
         <CardSpell
-          context={props.context}
+          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -45,7 +54,7 @@ const CardList = (props) => {
     if (props.category === "creatures") {
       return (
         <CardCreature
-          context={props.context}
+          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -58,7 +67,7 @@ const CardList = (props) => {
     if (props.category === "environments") {
       return (
         <CardEnvironment
-          context={props.context}
+          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -71,7 +80,7 @@ const CardList = (props) => {
     if (props.category === "scenes") {
       return (
         <CardScene
-          context={props.context}
+          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -84,7 +93,7 @@ const CardList = (props) => {
     if (props.category === "props") {
       return (
         <CardProp
-          context={props.context}
+          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -96,7 +105,7 @@ const CardList = (props) => {
     }
     return (
       <Card
-        context={props.context}
+        context={props.mode}
         key={placement}
         card={cardObject}
         form={props.form}
@@ -109,20 +118,28 @@ const CardList = (props) => {
 
   return (
     <div>
+      <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>
+      <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
       {props.deleteFrom !== "none" && (
         <div>
           {props.content.map((card, index) => {
-            return ifCard(card, index);
+            if (index >= props.context.page * 40 && index < (props.context.page + 1) * 40) {
+              return ifCard(card, index);
+            }
           })}
         </div>
       )}
       {props.deleteFrom === "none" && (
         <Col>
           {props.content.map((card, index) => {
-            return ifCard(card, index);
+            if (index >= props.context.page * 40 && index < (props.context.page + 1) * 40) {
+              return ifCard(card, index);
+            }
           })}
         </Col>
       )}
+      <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>
+      <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
     </div>
   );
 };

@@ -22,6 +22,7 @@ function App() {
     collections: "items",
     link: "collections",
     search: "",
+    page: 0
   });
   const [character, setCharacter] = useState(currentChar);
   if (

@@ -12,7 +12,6 @@ import { ReactComponent as Defend } from "../../data/icons/defend.svg";
 import { ReactComponent as DefendAlt } from "../../data/icons/defendbasealt.svg";
 import Context from "../../data/context.js";
 import Character from "../../data/character.js";
-import modsdata from "../../data/collections/modItems.json";
 import architecture from "../../data/architecture.json";
 import { sackstonesoap, updateState, toggle } from "../../utils/exports.js";
 import toaster from "toasted-notes";
@@ -33,7 +32,7 @@ const CardItem = (props) => {
   const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
   //mod becomes mods: []
 
-  const { name, tags, flavor, weight, value, number, stat, modifiers } =
+  const { name, tags, flavor, weight, value, number, stat, properties } =
     cards[props.card.name];
 
   const calcAttackInfo = () => {
@@ -48,12 +47,6 @@ const CardItem = (props) => {
     }
     //alter the math to return a modifier for each stat
     updateState(attack, setAttack, "mod", modifiers);
-  };
-
-  const displayValue = (value) => {
-    let valuesplit = value.split("x");
-    let newvalue = valuesplit[0] + " x " + valuesplit[1] + " cash";
-    return newvalue;
   };
 
   const capitalism = (deleteFrom) => {
@@ -195,7 +188,8 @@ const CardItem = (props) => {
               name={"Weight"}
               value={sackstonesoap(weight, "item")}
             />
-            <NameValuePair name={"Value"} value={displayValue(value)} />
+            <NameValuePair name={"Value"} value={value} />
+            {stat &&
             <div>
               <span className="padded5px">
                 {tags.includes("defensive") && (
@@ -219,15 +213,16 @@ const CardItem = (props) => {
                 })}
               </span>
             </div>
+            }
+            
             <hr></hr>
             <div className="margin5x">
-              {modifiers.map((mod, index) => {
-                let modifier = modsdata[mod];
+              {properties.map((property, index) => {
                 return (
                   <div key={index}>
                     <NameValuePair
-                      name={modifier.name}
-                      value={modifier.description}
+                      name={property.name}
+                      value={property.description}
                     />
                     <hr />
                   </div>
@@ -258,7 +253,6 @@ const CardItem = (props) => {
         name={name}
         value={value}
         card={props.card}
-        displayValue={displayValue}
         deleteFrom={props.deleteFrom}
       />
     </div>

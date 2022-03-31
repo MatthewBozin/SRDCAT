@@ -6,7 +6,7 @@ import Context from "../data/context";
 let contextData = require(`../data/orders.json`);
 
 const Collections = () => {
-  const [context] = useContext(Context);
+  const [context, setContext] = useContext(Context);
 
   const filter = (filterBy) => {
     //filterBy sets which property in the card the filter pays attention to. currently it's set to "tags"
@@ -54,7 +54,9 @@ const Collections = () => {
           form={"plus"}
           deleteFrom={"none"}
           category={context.collections}
-          context={"collections"}
+          mode={"collections"}
+          context={context}
+          setContext={setContext}
         />
       );
     }
@@ -65,7 +67,9 @@ const Collections = () => {
         form={"plus"}
         deleteFrom={"none"}
         category={context.collections}
-        context={"collections"}
+        mode={"collections"}
+        context={context}
+        setContext={setContext}
       />
     );
   };
