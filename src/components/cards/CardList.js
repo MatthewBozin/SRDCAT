@@ -7,6 +7,7 @@ import CardEnvironment from "./CardEnvironment";
 import CardProp from "./CardProp";
 import CardScene from "./CardScene";
 import Col from "react-bootstrap/Row";
+import context from "react-bootstrap/esm/AccordionContext";
 
 const CardList = (props) => {
 
@@ -118,11 +119,16 @@ const CardList = (props) => {
 
   return (
     <div>
-      <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>
-      <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
+      {props.mode === "collections" && <div>
+        <button className="button bordered mleft12px" onClick={() => {pageChange(-1)}}>{"<"}</button>
+        <span className="button bordered padded2px"> {props.context.page} </span>
+        <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
+      </div>}
+      
       {props.deleteFrom !== "none" && (
         <div>
           {props.content.map((card, index) => {
+            if (props.mode === "character") return ifCard(card, index);
             if (index >= props.context.page * 40 && index < (props.context.page + 1) * 40) {
               return ifCard(card, index);
             }
@@ -132,14 +138,18 @@ const CardList = (props) => {
       {props.deleteFrom === "none" && (
         <Col>
           {props.content.map((card, index) => {
+            if (props.mode === "character") return ifCard(card, index);
             if (index >= props.context.page * 40 && index < (props.context.page + 1) * 40) {
               return ifCard(card, index);
             }
           })}
         </Col>
       )}
-      <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>
-      <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
+      {props.mode === "collections" && <div>
+        <button className="button bordered mleft12px" onClick={() => {pageChange(-1)}}>{"<"}</button>
+        <span className="button bordered padded2px"> {props.context.page} </span>
+        <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
+      </div>}
     </div>
   );
 };

@@ -88,6 +88,7 @@ const HeroSheet = () => {
             form={"minus"}
             deleteFrom={"items"}
             category={"items"}
+            mode={"character"}
           />
         </div>
         {categoryArray.map((category, index) => {
@@ -119,6 +120,7 @@ const HeroSheet = () => {
                 deleteFrom={category.value}
                 category={category.value}
                 key={index}
+                mode={"character"}
               />
             </div>
           );

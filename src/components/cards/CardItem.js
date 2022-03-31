@@ -198,7 +198,7 @@ const CardItem = (props) => {
                 {tags.includes("offensive") && (
                   <span className="orangetext">Damage: </span>
                 )}
-                {stat.map((eachstat, index) => {
+                {stat && stat.map((eachstat, index) => {
                   return (
                     <span key={index}>
                       {index < stat.length &&
@@ -232,7 +232,7 @@ const CardItem = (props) => {
           </span>
         )}
       </article>
-      {props.deleteFrom === "items" && (
+      {props.deleteFrom === "items" && stat && (
         <ModalItemAttack
           attack={attack}
           setAttack={setAttack}
