@@ -24,8 +24,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, description, properties, actions } =
-    cards[props.card.name];
+
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -39,7 +39,7 @@ const Card = (props) => {
       <div className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
@@ -56,7 +56,7 @@ const Card = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -64,18 +64,18 @@ const Card = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
-            {description !== undefined && (
+            {card.description !== undefined && (
               <div>
-                <Description description={description} />
+                <Description description={card.description} />
               </div>
             )}
-            {actions !== undefined && (
+            {card.actions !== undefined && (
               <div>
                 <hr></hr>
-                {actions.map((action, index) => {
+                {card.actions.map((action, index) => {
                   return (
                     <div>
                       <ModalAction action={action} key={index} />
@@ -84,10 +84,10 @@ const Card = (props) => {
                 })}
               </div>
             )}
-            {properties !== undefined && (
+            {card.properties !== undefined && (
               <div>
                 <hr></hr>
-                {properties.map((property, index) => {
+                {card.properties.map((property, index) => {
                   return (
                     <NameValuePair
                       name={property.name}

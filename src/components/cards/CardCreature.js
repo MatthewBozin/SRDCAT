@@ -28,16 +28,14 @@ const CardCreature = (props) => {
 
   //mod becomes mods: []
 
-  const {
-    name,
-    level,
-    life,
-    facets,
-    tags,
-    description,
-    attacks,
-    properties,
-  } = cards[props.card.name];
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
+
+  if (props.context === "character") {
+    let baseCreature = character.creatures[props.placement];
+    for (let mod of baseCreature.mods) {
+      card.properties.push(mod);
+    }
+  }
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -51,7 +49,7 @@ const CardCreature = (props) => {
       <article className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={() => {
               toggle(setExpanded, expanded);
@@ -72,7 +70,7 @@ const CardCreature = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -80,32 +78,32 @@ const CardCreature = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
             <hr></hr>
-            {facets.map((facet, index) => {
+            {card.facets.map((facet, index) => {
               return (
                 <span key={index}>
                   <i>{facet},</i>{" "}
                 </span>
               );
             })}
-            <div>{description}</div>
+            <div>{card.description}</div>
             <hr />
             <div>
-              Level: {level} 
+              Level: {card.level} 
               {props.context !== "collections" && (
                 <span>
-                  {" "}|{" "}<ModalLifeEdit placement={props.placement} life={life} />
+                  {" "}|{" "}<ModalLifeEdit placement={props.placement} life={card.life} />
                 </span>
               )}
-              {props.context === undefined && <span>Life: {life}</span>}
+              {props.context === undefined && <span>Life: {card.life}</span>}
             </div>
 
             <hr />
             <div>
-              {attacks.map((attack, index) => {
+              {card.attacks.map((attack, index) => {
                 return (
                   <div key={index}>
                     <span className="orangetext">
@@ -131,14 +129,13 @@ const CardCreature = (props) => {
             </div>
             <hr></hr>
             <div className="margin5x">
-              {properties.map((property, index) => {
+              {card.properties.map((property, index) => {
                 return (
                   <div key={index}>
                     <NameValuePair
                       name={property.name}
                       value={property.description}
                     />
-                    <hr />
                   </div>
                 );
               })}
@@ -152,12 +149,12 @@ const CardCreature = (props) => {
             attackModalOpen={attackModalOpen}
             setAttackModalOpen={setAttackModalOpen}
             character={character}
-            creatureName={name}
+            creatureName={card.name}
             attackName={attackName}
             attackBonus={attackBonus}
             attackDamage={attackDamage}
             attackStat={attackStat}
-            creatureProperties={properties}
+            creatureProperties={card.properties}
           />
           {/* <ModalCreatureEdit
             editModalOpen={editModalOpen}

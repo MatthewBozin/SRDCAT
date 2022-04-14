@@ -23,10 +23,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, description, actions, creatures } = cards[props.card.name];
-  const cardprops = cards[props.card.name].props;
 
-  console.log(actions);
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -40,7 +38,7 @@ const Card = (props) => {
       <div className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
@@ -57,7 +55,7 @@ const Card = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -65,30 +63,30 @@ const Card = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
-            {description !== undefined && (
+            {card.description !== undefined && (
               <div>
-                <Description description={description} />
+                <Description description={card.description} />
               </div>
             )}
-            {(creatures.length > 0 || cardprops.length > 0) && <hr></hr>}
-            {creatures.length > 0 && (
-              <div>Creature types: {creatures.map((creature, index) => {
+            {(card.creatures.length > 0 || card.props.length > 0) && <hr></hr>}
+            {card.creatures.length > 0 && (
+              <div>Creature types: {card.creatures.map((creature, index) => {
                 return <span key={index}>{creature} </span>
               })}</div>
             )}
-            {cardprops.length > 0 && (
-              <div>Prop types: {cardprops.map((prop, index) => {
+            {card.props.length > 0 && (
+              <div>Prop types: {card.props.map((prop, index) => {
                 return <span key={index}>{prop} </span>
               })}</div>
             )}
-            {actions !== undefined && actions.length > 0 && (
+            {card.actions !== undefined && card.actions.length > 0 && (
               <div>
                 <hr></hr>
                 Actions:
-                {actions.map((action, index) => {
+                {card.actions.map((action, index) => {
                   return (
                     <div key={index}>
                       <ModalAction action={action} key={index} />

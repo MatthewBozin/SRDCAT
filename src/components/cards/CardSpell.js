@@ -28,8 +28,7 @@ const CardSpell = (props) => {
     setExpanded(!status);
   };
 
-  const { name, tags, flavor, description, ranks, table, modifiers } =
-    cards[props.card.name];
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {
@@ -53,7 +52,7 @@ const CardSpell = (props) => {
       <div className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
@@ -80,7 +79,7 @@ const CardSpell = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -88,15 +87,15 @@ const CardSpell = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
-            <Flavor flavor={flavor} />
-            <Description description={description} />
-            {table !== undefined && (
+            <Flavor flavor={card.flavor} />
+            <Description description={card.description} />
+            {card.table !== undefined && (
               <span>
                 <Table
-                  table={table}
+                  table={card.table}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
@@ -105,14 +104,14 @@ const CardSpell = (props) => {
             )}
             <hr></hr>
             <div className="padded5px">
-              {ranks.length < 2 ? (
+              {card.ranks.length < 2 ? (
                 <span>
-                  <Ranks ranks={ranks} deleteFrom="single" />
+                  <Ranks ranks={card.ranks} deleteFrom="single" />
                 </span>
               ) : (
                 <span>
                   <Ranks
-                    ranks={ranks}
+                    ranks={card.ranks}
                     savedrank={savedrank}
                     deleteFrom={props.deleteFrom}
                     placement={props.placement}
@@ -122,7 +121,7 @@ const CardSpell = (props) => {
               )}
             </div>
             <hr></hr>
-            {modifiers.map((mod, index) => {
+            {card.modifiers.map((mod, index) => {
               let modifier = modsdata[mod];
               return (
                 <div key={index}>
@@ -130,7 +129,6 @@ const CardSpell = (props) => {
                     name={modifier.name}
                     value={modifier.description}
                   />
-                  <hr />
                 </div>
               );
             })}
@@ -143,10 +141,10 @@ const CardSpell = (props) => {
           setCastModalOpen={setCastModalOpen}
           character={character}
           setCharacter={setCharacter}
-          name={name}
-          description={description}
-          ranks={ranks}
-          modifiers={modifiers}
+          name={card.name}
+          description={card.description}
+          ranks={card.ranks}
+          modifiers={card.modifiers}
         />
       )}
     </div>

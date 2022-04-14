@@ -25,8 +25,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const { name, tags, flavor, description, ranks, table } =
-    cards[props.card.name];
+
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   let savedrank = 0;
   if (props.card.savedrank !== undefined) {
@@ -50,7 +50,7 @@ const Card = (props) => {
       <div className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
@@ -69,7 +69,7 @@ const Card = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -77,17 +77,17 @@ const Card = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
-            <Flavor flavor={flavor} />
-            {description !== undefined && (
-              <Description description={description} />
+            <Flavor flavor={card.flavor} />
+            {card.description !== undefined && (
+              <Description description={card.description} />
             )}
-            {table !== undefined && (
+            {card.table !== undefined && (
               <span>
                 <Table
-                  table={table}
+                  table={card.table}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
@@ -96,14 +96,14 @@ const Card = (props) => {
             )}
             <hr></hr>
             <div className="padded5px">
-              {ranks.length < 2 ? (
+              {card.ranks.length < 2 ? (
                 <span>
-                  <Ranks ranks={ranks} deleteFrom="single" />
+                  <Ranks ranks={card.ranks} deleteFrom="single" />
                 </span>
               ) : (
                 <span>
                   <Ranks
-                    ranks={ranks}
+                    ranks={card.ranks}
                     savedrank={savedrank}
                     deleteFrom={props.deleteFrom}
                     placement={props.placement}

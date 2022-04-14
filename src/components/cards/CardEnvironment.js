@@ -25,17 +25,8 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-  const {
-    name,
-    tags,
-    flavor,
-    description,
-    denizens,
-    events,
-    gains,
-    zones,
-    connections,
-  } = cards[props.card.name];
+
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   let savedresult = undefined;
   if (props.card.savedresult !== undefined) {
@@ -54,7 +45,7 @@ const Card = (props) => {
       <div className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
@@ -73,7 +64,7 @@ const Card = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -81,62 +72,62 @@ const Card = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
-            <Flavor flavor={flavor} />
-            {description !== undefined && (
-              <Description description={description} />
+            <Flavor flavor={card.flavor} />
+            {card.description !== undefined && (
+              <Description description={card.description} />
             )}
             <hr></hr>
-            {denizens !== undefined && (
+            {card.denizens !== undefined && (
               <div>
                 Denizens:{" "}
                 <Table
-                  table={denizens}
+                  table={card.denizens}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
                 />
               </div>
             )}
-            {events !== undefined && (
+            {card.events !== undefined && (
               <div>
                 Events:{" "}
                 <Table
-                  table={events}
+                  table={card.events}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
                 />
               </div>
             )}
-            {gains !== undefined && (
+            {card.gains !== undefined && (
               <div>
                 Gains:{" "}
                 <Table
-                  table={gains}
+                  table={card.gains}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
                 />
               </div>
             )}
-            {zones !== undefined && (
+            {card.zones !== undefined && (
               <div>
                 Zones:{" "}
                 <Table
-                  table={zones}
+                  table={card.zones}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
                 />
               </div>
             )}
-            {connections !== undefined && (
+            {card.connections !== undefined && (
               <div>
                 <hr></hr>
-                <ModalConnection connections={connections}></ModalConnection>
+                <ModalConnection connections={card.connections}></ModalConnection>
               </div>
             )}
           </span>

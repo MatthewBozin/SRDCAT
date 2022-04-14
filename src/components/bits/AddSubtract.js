@@ -38,6 +38,10 @@ const AddSubtract = (props) => {
     if (props.category === "creatures") {
       instanced.lifecurrent = cards[props.card.name].life;
     }
+    if (props.category === "items" || props.category === "creatures") {
+      instanced.mods = [];
+      instanced.statmods = {};
+    }
     let newslot = gate();
     newslot[props.category].push(instanced);
     if (props.category !== "items" && props.category !== "creatures") {

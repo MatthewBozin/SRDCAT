@@ -32,12 +32,18 @@ const CardItem = (props) => {
   const [attack, setAttack] = useState({ pro: "", mod: [], adv: "" });
   //mod becomes mods: []
 
-  const { name, tags, flavor, weight, value, number, stat, properties } =
-    cards[props.card.name];
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
+
+  if (props.context === "character") {
+    let baseItem = character.items[props.placement];
+    for (let mod of baseItem.mods) {
+      card.properties.push(mod);
+    }
+  }
 
   const calcAttackInfo = () => {
     let modifiers = [];
-    for (let eachstat of stat) {
+    for (let eachstat of card.stat) {
       let substat = architecture.defenses[eachstat];
       let substats = [];
       for (let subattribute of substat.substats) {
@@ -74,7 +80,7 @@ const CardItem = (props) => {
       <article className="outerbox">
         <div className="row">
           <Name
-            name={name}
+            name={card.name}
             expanded={expanded}
             expandCollapse={() => {
               toggle(setExpanded, expanded);
@@ -83,7 +89,7 @@ const CardItem = (props) => {
           <span className="row rightfloat mright12px mtop4px">
             {context.link !== "collections" &&
               props.deleteFrom === "items" &&
-              tags.includes("offensive") && (
+              card.tags.includes("offensive") && (
                 <Attack
                   className="iconsvg"
                   onClick={() => {
@@ -95,7 +101,7 @@ const CardItem = (props) => {
               )}
             {context.link !== "collections" &&
               props.deleteFrom === "items" &&
-              tags.includes("defensive") &&
+              card.tags.includes("defensive") &&
               itemNotWorn === true && (
                 <Defend
                   className="iconsvg"
@@ -105,7 +111,7 @@ const CardItem = (props) => {
                     toaster.notify(
                       () => (
                         <div className="outerbox modalbackground">
-                          {name + " worn!"}
+                          {card.name + " worn!"}
                         </div>
                       ),
                       {
@@ -117,7 +123,7 @@ const CardItem = (props) => {
               )}
             {context.link !== "collections" &&
               props.deleteFrom === "items" &&
-              tags.includes("defensive") &&
+              card.tags.includes("defensive") &&
               itemNotWorn === false && (
                 <DefendAlt
                   className="iconsvg"
@@ -127,7 +133,7 @@ const CardItem = (props) => {
                     toaster.notify(
                       () => (
                         <div className="outerbox modalbackground">
-                          {name + " taken off!"}
+                          {card.name + " taken off!"}
                         </div>
                       ),
                       {
@@ -171,7 +177,7 @@ const CardItem = (props) => {
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
           </span>
@@ -179,35 +185,35 @@ const CardItem = (props) => {
         {expanded === true && (
           <span>
             <hr></hr>
-            {tags.map((tag, index) => {
+            {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
-            <Flavor flavor={flavor} />
+            <Flavor flavor={card.flavor} />
             <hr></hr>
             <NameValuePair
               name={"Weight"}
-              value={sackstonesoap(weight, "item")}
+              value={sackstonesoap(card.weight, "item")}
             />
-            <NameValuePair name={"Value"} value={value} />
-            {stat &&
+            <NameValuePair name={"Value"} value={card.value} />
+            {card.stat &&
             <div>
               <span className="padded5px">
-                {tags.includes("defensive") && (
+                {card.tags.includes("defensive") && (
                   <span className="orangetext">Defense: </span>
                 )}
-                {tags.includes("offensive") && (
+                {card.tags.includes("offensive") && (
                   <span className="orangetext">Damage: </span>
                 )}
-                {stat && stat.map((eachstat, index) => {
+                {card.stat && card.stat.map((eachstat, index) => {
                   return (
                     <span key={index}>
-                      {index < stat.length &&
+                      {index < card.stat.length &&
                         index !== 0 &&
-                        tags.includes("defensive") && <span> and </span>}
-                      {index < stat.length &&
+                        card.tags.includes("defensive") && <span> and </span>}
+                      {index < card.stat.length &&
                         index !== 0 &&
-                        tags.includes("offensive") && <span> or </span>}
-                      {number[index]} <i>{architecture.statMasks[eachstat]}</i>
+                        card.tags.includes("offensive") && <span> or </span>}
+                      {card.number[index]} <i>{architecture.statMasks[eachstat]}</i>
                     </span>
                   );
                 })}
@@ -217,14 +223,13 @@ const CardItem = (props) => {
             
             <hr></hr>
             <div className="margin5x">
-              {properties.map((property, index) => {
+              {card.properties.map((property, index) => {
                 return (
                   <div key={index}>
                     <NameValuePair
                       name={property.name}
                       value={property.description}
                     />
-                    <hr />
                   </div>
                 );
               })}
@@ -232,16 +237,16 @@ const CardItem = (props) => {
           </span>
         )}
       </article>
-      {props.deleteFrom === "items" && stat && (
+      {props.deleteFrom === "items" && card.stat && (
         <ModalItemAttack
           attack={attack}
           setAttack={setAttack}
           attackModalOpen={attackModalOpen}
           setAttackModalOpen={setAttackModalOpen}
           character={character}
-          name={name}
-          number={number}
-          stat={stat}
+          name={card.name}
+          number={card.number}
+          stat={card.stat}
         />
       )}
       <ModalItemSale
@@ -250,8 +255,8 @@ const CardItem = (props) => {
         character={character}
         setCharacter={setCharacter}
         placement={props.placement}
-        name={name}
-        value={value}
+        name={card.name}
+        value={card.value}
         card={props.card}
         deleteFrom={props.deleteFrom}
       />

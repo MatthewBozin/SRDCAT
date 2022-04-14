@@ -8,7 +8,7 @@ const CardModifier = (props) => {
     cards = require(`../../data/collections/` + props.deleteFrom);
   }
 
-  const { name, description, tags } = cards[props.card.name];
+  let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
@@ -21,15 +21,15 @@ const CardModifier = (props) => {
     <div className={noBreakpointsIfHeroSheet()}>
       <div className="outerbox">
         <div className="row">
-          <div className="orangetext cardname">{name}</div>
+          <div className="orangetext cardname">{card.name}</div>
         </div>
         <span>
-          {tags.map((tag, index) => {
+          {card.tags.map((tag, index) => {
             return <Tag tag={tag} form={props.form} key={index} />;
           })}
         </span>
         <hr></hr>
-        <Description description={description} />
+        <Description description={card.description} />
       </div>
     </div>
   );
