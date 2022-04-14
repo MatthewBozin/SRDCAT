@@ -7,13 +7,12 @@ import CardEnvironment from "./CardEnvironment";
 import CardProp from "./CardProp";
 import CardScene from "./CardScene";
 import Col from "react-bootstrap/Row";
-import context from "react-bootstrap/esm/AccordionContext";
 
 const CardList = (props) => {
 
   const pageChange = (value) => {
     if (props.context.page + value < 0) return;
-    if ((props.context.page + value) * 40 > props.content.length) return;
+    if ((props.context.page + value) * 30 > props.content.length) return;
     let newContext = props.context;
     newContext.page += value;
     props.setContext(JSON.parse(JSON.stringify(newContext)));
@@ -129,7 +128,7 @@ const CardList = (props) => {
         <div>
           {props.content.map((card, index) => {
             if (props.mode === "character") return ifCard(card, index);
-            if (index >= props.context.page * 40 && index < (props.context.page + 1) * 40) {
+            if (index >= props.context.page * 30 && index < (props.context.page + 1) * 30) {
               return ifCard(card, index);
             }
           })}
@@ -139,7 +138,7 @@ const CardList = (props) => {
         <Col>
           {props.content.map((card, index) => {
             if (props.mode === "character") return ifCard(card, index);
-            if (index >= props.context.page * 40 && index < (props.context.page + 1) * 40) {
+            if (index >= props.context.page * 30 && index < (props.context.page + 1) * 30) {
               return ifCard(card, index);
             }
           })}

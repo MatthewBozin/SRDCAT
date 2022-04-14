@@ -40,7 +40,7 @@ const AddSubtract = (props) => {
     }
     let newslot = gate();
     newslot[props.category].push(instanced);
-    if (props.category !== "items") {
+    if (props.category !== "items" && props.category !== "creatures") {
       let jsonArray = newslot[props.category].map(JSON.stringify);
       let uniqueSet = new Set(jsonArray);
       let uniqueArray = Array.from(uniqueSet).map(JSON.parse);

@@ -24,8 +24,7 @@ const ExportCard = (props) => {
   };
 
   return (
-    <Col>
-      <article className="outerbox">
+    <div>
         <div className="row">
           <Name name={"Life Cost: " + totalCost} />
           <button
@@ -47,7 +46,7 @@ const ExportCard = (props) => {
             <FaChevronRight className="pbottom5px" />
           </button>
         </div>
-        <div className="margin5px outerbox">
+        <div className="margin5px">
           <NameValuePair name={"Current Life"} value={character.life} />
           <NameValuePair name={"Base Cost"} value={rank.power} />
           <NameValuePair
@@ -71,7 +70,6 @@ const ExportCard = (props) => {
             Cast Spell
           </div>
         )}
-      </article>
       {castText !== "" && (
         <div
           className="button padded5px"
@@ -92,7 +90,7 @@ const ExportCard = (props) => {
           {castText}
         </div>
       )}
-    </Col>
+    </div>
   );
 };
 
