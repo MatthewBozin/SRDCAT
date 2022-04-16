@@ -25,6 +25,7 @@ const Linklet = (props) => {
           return <FaGlobe className="pbottom5px" />;
         }
         return <FaGlobe className="pbottom5px" />;
+      default: return;
     }
   };
 

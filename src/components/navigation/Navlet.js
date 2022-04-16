@@ -52,6 +52,7 @@ const Navlet = (props) => {
           return <FaPuzzlePiece className="iconsvg" />;
         }
         return <FaPuzzlePiece className="iconsvg" />;
+      default: return;
     }
   };
 

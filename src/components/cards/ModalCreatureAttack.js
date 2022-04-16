@@ -103,7 +103,7 @@ function ModalCreatureAttack(props) {
         <div>Attacker: {creatureName}</div>
         <hr />
         {creatureProperties.map((property, index) => {
-          if (property.of !== attackName) return;
+          if (property.of !== attackName) return null;
           return (
             <div key={index}>
               <NameValuePair

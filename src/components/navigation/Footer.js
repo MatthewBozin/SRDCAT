@@ -8,8 +8,8 @@ const Footer = () => {
         <a
           className="orangetext"
           href="https://www.patreon.com/sakertarsos"
-          rel="noreferror"
           target="_blank"
+          rel="noopener noreferror"
         >
           support
         </a>

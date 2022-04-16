@@ -31,9 +31,15 @@ const CardCreature = (props) => {
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   if (props.context === "character") {
-    let baseCreature = character.creatures[props.placement];
-    for (let mod of baseCreature.mods) {
+    let base = character.creatures[props.placement];
+    for (let mod of base.mods) {
       card.properties.push(mod);
+    }
+    let statmods = Object.keys(base.statmods)
+    for (let statmod of statmods) {
+      if (!card[statmod]) continue;
+      if (typeof card[statmod] !== "number") continue;
+      card[statmod] += base.statmods[statmod];
     }
   }
 

@@ -120,7 +120,7 @@ const CardList = (props) => {
     <div>
       {props.mode === "collections" && <div>
         <button className="button bordered mleft12px" onClick={() => {pageChange(-1)}}>{"<"}</button>
-        <span className="button bordered padded2px"> {props.context.page} </span>
+        <span className="button bordered padded2px">Page {props.context.page + 1} </span>
         <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
       </div>}
       
@@ -131,6 +131,7 @@ const CardList = (props) => {
             if (index >= props.context.page * 30 && index < (props.context.page + 1) * 30) {
               return ifCard(card, index);
             }
+            return null;
           })}
         </div>
       )}
@@ -141,6 +142,7 @@ const CardList = (props) => {
             if (index >= props.context.page * 30 && index < (props.context.page + 1) * 30) {
               return ifCard(card, index);
             }
+            return null;
           })}
         </Col>
       )}

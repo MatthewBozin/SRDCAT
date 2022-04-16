@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import Name from "../bits/Name";
 import NameValuePair from "../bits/NameValuePair";
-import Col from "react-bootstrap/Col";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Character from "../../data/character.js";
 import toaster from "toasted-notes";

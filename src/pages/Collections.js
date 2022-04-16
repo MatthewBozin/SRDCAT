@@ -21,22 +21,24 @@ const Collections = () => {
         toFilter = [];
         element[filterBy].map((item) => {
           toFilter.push(item.toLowerCase());
+          return null;
         });
       }
       //toFilter is the case (or cases) to compare to the search terms. ex: ["offensive","chain"]
       let searchSplit = context.search.toLowerCase().split("+");
       for (let searchTerm of searchSplit) {
         if (!toFilter.includes(searchTerm)) {
-          return;
+          return null;
         }
       }
       newData.push(name);
+      return null;
     });
     return newData;
   };
 
   const ifSearch = () => {
-    let data = require(`../data/collections/` + context.collections);
+    //let data = require(`../data/collections/` + context.collections);
     if (context.search !== "") {
       let filtered = filter("tags");
       if (filtered.length === 0) {

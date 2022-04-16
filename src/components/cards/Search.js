@@ -45,17 +45,17 @@ const Search = () => {
         toFilter = [];
         elementFull[filterBy].map((item) => {
           toFilter.push(item.toLowerCase());
-          return;
+          return null;
         });
       }
       let searchSplit = context.search.toLowerCase().split("+");
       for (let searchTerm of searchSplit) {
         if (!toFilter.includes(searchTerm)) {
-          return;
+          return null;
         }
       }
       newData.push(element);
-      return;
+      return null;
     });
     return newData;
   };

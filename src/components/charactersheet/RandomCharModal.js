@@ -36,13 +36,17 @@ const RandomCharModal = () => {
     let selectionName = s(contextData[collection]);
     let selection = data[selectionName];
     let selectionObject = { name: selectionName, savedrank: 0 };
+    if (collection === "items" || collection === "creatures") {
+      selectionObject.mods = [];
+      selectionObject.statmods = {};
+    }
     if (selection.table !== undefined) {
       selectionObject.savedresult = r(selection.table.length);
     }
     //below adds rank to card instead of adding duplicate
     if (
       ifListIncludes(newchar[collection], selectionObject) &&
-      collection !== "items"
+      collection !== "items" && collection !== "creatures"
     ) {
       console.log("duplicate");
       if (selection.ranks.length > 1) {

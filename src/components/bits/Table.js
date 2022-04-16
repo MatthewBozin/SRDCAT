@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { r, rdamage } from "../../utils/exports.js";
+import { r } from "../../utils/exports.js";
 import { FaDiceD20 } from "react-icons/fa";
 import Character from "../../data/character.js";
 import ModalCardDisplay from "../cards/ModalCardDisplay.js";
@@ -12,7 +12,6 @@ const Table = (props) => {
   }
   const [index, setIndex] = useState(placement);
   const entry = props.table[index];
-  const [damage, setDamage] = useState("");
   const [character, setCharacter] = useContext(Character);
 
   const roll = () => {
@@ -24,12 +23,6 @@ const Table = (props) => {
     }
     setIndex((index) => {
       return newplacement;
-    });
-  };
-
-  const rollDamage = () => {
-    setDamage(() => {
-      return rdamage(props.table);
     });
   };
 
@@ -46,22 +39,6 @@ const Table = (props) => {
       </span>
     );
   }
-
-  if (typeof props.table === "string") {
-    return (
-      <span>
-        <button
-          className="button clearborder"
-          onClick={() => {
-            rollDamage();
-          }}
-        >
-          <FaDiceD20 className="button scaleup125" />
-        </button>
-        <span className="padded5px">{damage}</span>
-      </span>
-    );
-  } else {
     return (
       <span>
         <button className="button clearborder" onClick={roll}>
@@ -71,7 +48,6 @@ const Table = (props) => {
         <span className="padded5px">{entry}</span>
       </span>
     );
-  }
 };
 
 export default Table;
