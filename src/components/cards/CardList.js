@@ -118,10 +118,10 @@ const CardList = (props) => {
 
   return (
     <div>
-      {props.mode === "collections" && <div>
-        <button className="button bordered mleft12px" onClick={() => {pageChange(-1)}}>{"<"}</button>
+      {props.mode === "collections" && <div className="mleft8px">
+        {props.context.page > 0 && <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>}
         <span className="button bordered padded2px">Page {props.context.page + 1} </span>
-        <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
+        {(props.context.page + 1) * 30 <= props.content.length && <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>}
       </div>}
       
       {props.deleteFrom !== "none" && (
@@ -148,7 +148,7 @@ const CardList = (props) => {
       )}
       {props.mode === "collections" && <div>
         <button className="button bordered mleft12px" onClick={() => {pageChange(-1)}}>{"<"}</button>
-        <span className="button bordered padded2px"> {props.context.page} </span>
+        <span className="button bordered padded2px">Page {props.context.page + 1} </span>
         <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>
       </div>}
     </div>
