@@ -45,9 +45,9 @@ const HeroSheet = () => {
     <div className="charsheet">
       <div className="outerbox limitwidth">
         <span className="row rightfloat mright12px">
+          <RandomCharModal />
           <SaveModal savepath={"SRDcharacters"} context={"character"} />
           <ExportModal context={"character"} />
-          <RandomCharModal />
         </span>
         <SlotName context={"character"} />
         <StatSheet />

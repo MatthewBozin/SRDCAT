@@ -1,4 +1,45 @@
 {
+  "acephalothere": {
+    "name": "Acephalothere",
+    "level": 5,
+    "life": 75,
+    "maxlife": 75,
+    "value": 500,
+    "carry": 10,
+    "facets": [],
+    "tags": ["vehicle", "animal", "chimera"],
+    "description": "Massive derived tetrapod whose head has been replaced with a control dome. Requires high pressure direct nutrition injector pumps for feeding.",
+    "attacks": [
+      {
+        "defensename": "ha",
+        "defenseamount": 5,
+        "bonus": "+2",
+        "attackname": "trample",
+        "damage": "1d20*"
+      },
+      {
+        "defensename": "ka",
+        "defenseamount": 19,
+        "bonus": "—",
+        "attackname": ""
+      }
+    ],
+    "properties": [
+      {
+        "name": "Blind",
+        "description": "Sees no evil."
+      },
+      {
+        "name": "Electromagic upgrade",
+        "description": "Only needs life energy sustenance (1 life per hour). Upgrade doubles price of acephalothere."
+      },
+      {
+        "name": "Slow",
+        "description": "[-] to races and chases."
+      }
+    ],
+    "mods": []
+  },
   "airpig": {
     "name": "Airpig",
     "level": 1,

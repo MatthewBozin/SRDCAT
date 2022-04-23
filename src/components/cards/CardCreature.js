@@ -10,6 +10,9 @@ import Character from "../../data/character.js";
 import architecture from "../../data/architecture.json";
 import { toggle } from "../../utils/exports.js";
 import "toasted-notes/src/styles.css";
+import ModalItemSale from "./ModalItemSale.js";
+import { ReactComponent as Dollar} from "../../data/icons/dollar.svg";
+import Context from "../../data/context.js";
 
 const CardCreature = (props) => {
   let ifExpanded = false;
@@ -20,11 +23,13 @@ const CardCreature = (props) => {
   let cards = require(`../../data/collections/creatures`);
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   //const [editModalOpen, setEditModalOpen] = useState(false);
-  const [character] = useContext(Character);
+  const [character, setCharacter] = useContext(Character);
+  const [context] = useContext(Context);
   const [attackName, setAttackName] = useState("");
   const [attackDamage, setAttackDamage] = useState("");
   const [attackBonus, setAttackBonus] = useState("");
   const [attackStat, setAttackStat] = useState("");
+  const [saleModalOpen, setSaleModalOpen] = useState(false);
 
   //mod becomes mods: []
 
@@ -62,6 +67,29 @@ const CardCreature = (props) => {
             }}
           />
           <span className="row rightfloat mright12px mtop4px">
+            {context.persona === "PC" && (props.deleteFrom === "creatures" || props.deleteFrom === "none") && card.value && (
+              <span>
+              <Dollar
+                className="iconsvg mright8px"
+                onClick={() => {
+                  setSaleModalOpen(true);
+                  setAttackModalOpen(false);
+                }}
+              />
+              <ModalItemSale
+                saleModalOpen={saleModalOpen}
+                setSaleModalOpen={setSaleModalOpen}
+                character={character}
+                setCharacter={setCharacter}
+                placement={props.placement}
+                name={card.name}
+                value={card.value}
+                card={props.card}
+                deleteFrom={props.deleteFrom}
+                mode={"creatures"}
+              />
+              </span>
+            )}
             {(props.context === "character" || props.context === "collections") && (
               <AddSubtract
                 context={"character"}
@@ -104,7 +132,9 @@ const CardCreature = (props) => {
                   {" "}|{" "}<ModalLifeEdit placement={props.placement} life={card.life} />
                 </span>
               )}
-              {props.context === undefined && <span>Life: {card.life}</span>}
+              {props.context === "collections" && <span> | Life: {card.life}</span>}
+              {card.value && <span> | Value: {card.value}</span>}
+              {card.carry && <span> | Carry: {card.carry} sacks</span>}
             </div>
 
             <hr />

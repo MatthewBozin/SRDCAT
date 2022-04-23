@@ -61,12 +61,6 @@ const CardItem = (props) => {
     updateState(attack, setAttack, "mod", modifiers);
   };
 
-  const capitalism = (deleteFrom) => {
-    if (deleteFrom === "items" || deleteFrom === "none") {
-      return true;
-    }
-  };
-
   const noBreakpointsIfHeroSheet = () => {
     if (props.deleteFrom === "none") {
       return "col-xs-12 col-md-6 col-lg-6 col-xl-4";
@@ -149,7 +143,8 @@ const CardItem = (props) => {
                   }}
                 />
               )}
-            {context.persona === "PC" && capitalism(props.deleteFrom) && (
+            {context.persona === "PC" && (props.deleteFrom === "items" || props.deleteFrom === "none") && (
+              <span>
               <Dollar
                 className="iconsvg mright8px"
                 onClick={() => {
@@ -157,6 +152,19 @@ const CardItem = (props) => {
                   setAttackModalOpen(false);
                 }}
               />
+              <ModalItemSale
+                saleModalOpen={saleModalOpen}
+                setSaleModalOpen={setSaleModalOpen}
+                character={character}
+                setCharacter={setCharacter}
+                placement={props.placement}
+                name={card.name}
+                value={card.value}
+                card={props.card}
+                deleteFrom={props.deleteFrom}
+                mode={"items"}
+              />
+              </span>
             )}
             {props.context !== "worldstate" && (
               <AddSubtract
@@ -255,17 +263,6 @@ const CardItem = (props) => {
           stat={card.stat}
         />
       )}
-      <ModalItemSale
-        saleModalOpen={saleModalOpen}
-        setSaleModalOpen={setSaleModalOpen}
-        character={character}
-        setCharacter={setCharacter}
-        placement={props.placement}
-        name={card.name}
-        value={card.value}
-        card={props.card}
-        deleteFrom={props.deleteFrom}
-      />
     </div>
   );
 };

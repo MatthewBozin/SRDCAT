@@ -11,6 +11,7 @@
   ],
   "environments": ["lowroadandhigh", "steppeofthelimenomads", "harmonium"],
   "creatures": [
+    "acephalothere",
     "airpig",
     "amphibiousgoldfish",
     "ancestorinamber",

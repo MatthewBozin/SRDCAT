@@ -4,6 +4,7 @@ import Description from "../bits/Description";
 import Col from "react-bootstrap/Col";
 import { ReactComponent as Upload} from "../../data/icons/upload.svg";
 import Character from "../../data/character.js";
+import toaster from "toasted-notes";
 
 const ImportCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -17,7 +18,18 @@ const ImportCard = (props) => {
   const { name, description } = props;
 
   const importJson = (string) => {
-    setCharacter(JSON.parse(string));
+    try {
+      setCharacter(JSON.parse(string));
+    } catch (error) {
+      toaster.notify(
+      () => (
+        <div className="outerbox modalbackground">{`There was an error when importing your hero data.`}</div>
+      ),
+      {
+        duration: 1000,
+      }
+    );
+    }
   };
 
   return (

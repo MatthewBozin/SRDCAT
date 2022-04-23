@@ -36,11 +36,17 @@ function ModalItemSale(props) {
     let newCharacter = JSON.parse(JSON.stringify(character));
     if (props.deleteFrom === "none") {
       newCharacter.CASH -= salePrice;
-      newCharacter["items"].push(props.card);
+      let newCard = JSON.parse(JSON.stringify(props.card));
+      newCard.mods = [];
+      newCard.statmods = {};
+      if (props.mode === "creatures") {
+        newCard.lifeCurrent = newCard.maxlife;
+      }
+      newCharacter[props.mode].push(newCard);
       toaster.notify(
         () => (
           <div className="outerbox modalbackground">
-            {`Item bought: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`}
+            {`Bought: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`}
           </div>
         ),
         {
@@ -48,13 +54,13 @@ function ModalItemSale(props) {
         }
       );
     }
-    if (props.deleteFrom === "items") {
+    if (props.deleteFrom === "items" || props.deleteFrom === "creatures") {
       newCharacter.CASH += salePrice;
       newCharacter[props.deleteFrom].splice(props.placement, 1);
       toaster.notify(
         () => (
           <div className="outerbox modalbackground">
-            {`Item sold: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`}
+            {`Sold: ${name}! Cost: ${salePrice}, Current Cash: ${newCharacter.CASH}`}
           </div>
         ),
         {

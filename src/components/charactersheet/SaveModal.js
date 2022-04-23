@@ -84,7 +84,7 @@ const SaveModal = (props) => {
   return (
     <div>
       <Folder
-        className="iconsvg mtop4px scaleup125"
+        className="iconsvg mtop4px mleft12px scaleup125"
         onClick={() => {
           modalOpening();
         }}
