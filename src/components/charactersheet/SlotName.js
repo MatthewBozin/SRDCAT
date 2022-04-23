@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import Character from "../../data/character.js";
 import WorldState from "../../data/worldstate.js";
 import { ReactComponent as Edit} from "../../data/icons/edit.svg";
-import { FaRegCheckSquare } from "react-icons/fa";
+import { ReactComponent as Checkbox} from "../../data/icons/checkbox.svg";
 
 function SlotName(props) {
   const [character, setCharacter] = useContext(Character);
@@ -43,7 +43,7 @@ function SlotName(props) {
       return (
         <form onSubmit={handleSubmit}>
           <input
-            className="button bordered padded5px margin5px mleft12px"
+            className="button bordered padded5px margin5px"
             placeholder="Enter Name"
             type="text"
             value={name}
@@ -54,7 +54,7 @@ function SlotName(props) {
             type="submit"
             value="Submit"
           >
-            <FaRegCheckSquare className="iconbutton" />
+            <Checkbox className="iconsvg scaleup150 pbottom5px" />
           </button>
         </form>
       );

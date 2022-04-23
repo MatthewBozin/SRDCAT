@@ -7,6 +7,7 @@ import SlotName from "../components/charactersheet/SlotName";
 import SaveModal from "../components/charactersheet/SaveModal";
 import ExportModal from "../components/charactersheet/ExportModal";
 import RandomCharModal from "../components/charactersheet/RandomCharModal";
+import PromotionModal from "../components/charactersheet/PromotionModal";
 import Notes from "../components/charactersheet/Notes";
 import { sackstonesoap } from "../utils/exports.js";
 import { Link } from "react-router-dom";
@@ -48,6 +49,7 @@ const HeroSheet = () => {
           <RandomCharModal />
           <SaveModal savepath={"SRDcharacters"} context={"character"} />
           <ExportModal context={"character"} />
+          <PromotionModal />
         </span>
         <SlotName context={"character"} />
         <StatSheet />

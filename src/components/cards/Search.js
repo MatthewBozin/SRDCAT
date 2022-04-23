@@ -10,7 +10,8 @@ const Search = () => {
 
   const contextData = require(`../../data/collections/` + context.collections);
 
-  const submitSearch = () => {
+  const submitSearch = (e) => {
+    e.preventDefault();
     let context2 = context;
     if (context2.search === "") {
       context2.search = data;
@@ -102,20 +103,22 @@ const Search = () => {
   return (
     <div className="row mleft5px fullwidth">
       <div className="flex fullwidth">
-        <input
-          id="searchbox"
-          className="button bordered link flexgrow2 pleft5px fontsize"
-          placeholder={defaultPlaceholder()}
-          type="text"
-          onChange={(e) => setData(e.target.value)}
-        />
-        <button
-          className="button bordered link searchbutton"
-          onClick={submitSearch}
-          value="Search"
-        >
-          <SearchIcon className="iconsvg" />
-        </button>
+        <form onSubmit={submitSearch}>
+          <button
+            className="button bordered link searchbutton"
+            type="submit"
+            value="Search"
+          >
+            <SearchIcon className="iconsvg" />
+          </button>
+          <input
+            id="searchbox"
+            className="button bordered link flexgrow2 pleft5px fontsize"
+            placeholder={defaultPlaceholder()}
+            type="text"
+            onChange={(e) => setData(e.target.value)}
+          />
+        </form>
         <button
           className="button bordered link searchbutton"
           onClick={resetSearch}

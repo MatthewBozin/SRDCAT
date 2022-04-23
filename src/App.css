@@ -119,8 +119,16 @@ MISC
   width: 100%;
 }
 
+.fontsize18 {
+  font-size: 18px
+}
+
 .fontsize {
   font-size: 20px;
+}
+
+.whitespace {
+  white-space: pre-wrap;
 }
 
 /*
@@ -319,6 +327,10 @@ hr {
 
 .mleft15px {
   margin-left: 15px;
+}
+
+.mleft20px {
+  margin-left: 20px;
 }
 
 .mleft30px {
