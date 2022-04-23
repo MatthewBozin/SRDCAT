@@ -4,7 +4,8 @@ import Description from "../bits/Description";
 import Col from "react-bootstrap/Col";
 import Character from "../../data/character.js";
 import WorldState from "../../data/worldstate.js";
-import { FaRegTrashAlt, FaRegFolderOpen } from "react-icons/fa";
+import { ReactComponent as Trash} from "../../data/icons/trash.svg";
+import { ReactComponent as Folder} from "../../data/icons/folder.svg";
 
 const SaveCard = (props) => {
   const [character] = useContext(Character);
@@ -79,8 +80,8 @@ const SaveCard = (props) => {
               expandCollapse={expandCollapse}
             />
             <span className="rightfloat mright15px">
-              <FaRegFolderOpen
-                className="icon mright3px"
+              <Folder
+                className="iconsvg scaleup125 mright3px"
                 onClick={() => {
                   confirmToggle();
                   setConfirmType({
@@ -88,9 +89,9 @@ const SaveCard = (props) => {
                     type: "load",
                   });
                 }}
-              ></FaRegFolderOpen>
-              <FaRegTrashAlt
-                className="icon mright3px"
+              />
+              <Trash
+                className="iconsvg mright3px mleft8px"
                 onClick={() => {
                   //deleteSlot(slot);
                   confirmToggle();
@@ -99,7 +100,7 @@ const SaveCard = (props) => {
                     type: "delete",
                   });
                 }}
-              ></FaRegTrashAlt>
+              />
             </span>
           </div>
           {expanded === true && (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { toggle } from "../../utils/exports.js";
 import ModalCardDisplay from "./ModalCardDisplay.js";
-import { FaListAlt } from "react-icons/fa";
+import { ReactComponent as List} from "../../data/icons/list.svg";
 
 function ModalTableDisplay(props) {
   const [tableModalOpen, setTableModalOpen] = useState(false);
@@ -16,7 +16,7 @@ function ModalTableDisplay(props) {
           setTableModalOpen(true);
         }}
       >
-        <FaListAlt className="button scaleup125" />
+        <List className="button iconsvg scaleup125" />
       </button>
       <Modal
         show={tableModalOpen}

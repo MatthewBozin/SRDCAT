@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import Stat from "./Stat";
 import Modal from "react-bootstrap/Modal";
 import Character from "../../data/character.js";
-import { FaRegEdit } from "react-icons/fa";
+import { ReactComponent as Edit} from "../../data/icons/edit.svg";
 import RollCard from "./RollCard.js";
 import architecture from "../../data/architecture.json";
 import {
@@ -132,12 +132,12 @@ const Stats = () => {
             {modularString(testInfo)}
           </span>
           <span>
-            <FaRegEdit
-              className="icon rightfloat"
+            <Edit
+              className="iconsvg rightfloat scaleup150"
               onClick={() => {
                 toggle(setEdit, edit);
               }}
-            ></FaRegEdit>
+            />
           </span>
         </Modal.Header>
         <Modal.Body className="modalbackground">

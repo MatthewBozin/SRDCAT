@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { FaFileDownload } from "react-icons/fa";
+import { ReactComponent as Download} from "../../data/icons/download.svg";
 import Character from "../../data/character.js";
 import WorldState from "../../data/worldstate.js";
 import architecture from "../../data/architecture.json";
@@ -218,8 +218,8 @@ const ExportModal = (props) => {
 
   return (
     <div>
-      <FaFileDownload
-        className="icon mtop10px"
+      <Download
+        className="iconsvg mleft12px mtop4px"
         onClick={() => {
           modalOpening();
         }}

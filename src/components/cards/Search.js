@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Context from "../../data/context";
-import { FaSearch } from "react-icons/fa";
+import { ReactComponent as SearchIcon} from "../../data/icons/search.svg";
 import { s } from "../../utils/exports.js";
 import orders from "../../data/orders.json";
 
@@ -114,7 +114,7 @@ const Search = () => {
           onClick={submitSearch}
           value="Search"
         >
-          <FaSearch />
+          <SearchIcon className="iconsvg" />
         </button>
         <button
           className="button bordered link searchbutton"

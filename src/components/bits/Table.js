@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { r } from "../../utils/exports.js";
-import { FaDiceD20 } from "react-icons/fa";
+import { ReactComponent as D20} from "../../data/icons/d20.svg";
 import Character from "../../data/character.js";
 import ModalCardDisplay from "../cards/ModalCardDisplay.js";
 import ModalTableDisplay from "../cards/ModalTableDisplay.js";
@@ -32,7 +32,7 @@ const Table = (props) => {
     return (
       <span>
         <button className="button clearborder" onClick={roll}>
-          <FaDiceD20 className="button scaleup125" />
+          <D20 className="button iconsvg" />
         </button>
         <ModalTableDisplay table={props.table}></ModalTableDisplay>
         <ModalCardDisplay entry={entry}></ModalCardDisplay>
@@ -42,7 +42,7 @@ const Table = (props) => {
     return (
       <span>
         <button className="button clearborder" onClick={roll}>
-          <FaDiceD20 className="button scaleup125" />
+          <D20 className="button iconsvg" />
         </button>
         <ModalTableDisplay table={props.table}></ModalTableDisplay>
         <span className="padded5px">{entry}</span>

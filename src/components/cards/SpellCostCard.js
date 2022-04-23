@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
 import Name from "../bits/Name";
 import NameValuePair from "../bits/NameValuePair";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { ReactComponent as Left} from "../../data/icons/left.svg";
+import { ReactComponent as Right} from "../../data/icons/right.svg";
 import Character from "../../data/character.js";
 import toaster from "toasted-notes";
 
@@ -33,7 +34,7 @@ const ExportCard = (props) => {
               setCastText("");
             }}
           >
-            <FaChevronLeft className="pbottom5px" />
+            <Left className="iconsvg scaledown80" />
           </button>
           <button
             className="button bordered padded2px"
@@ -42,7 +43,7 @@ const ExportCard = (props) => {
               setCastText("");
             }}
           >
-            <FaChevronRight className="pbottom5px" />
+            <Right className="iconsvg scaledown80" />
           </button>
         </div>
         <div className="margin5px">

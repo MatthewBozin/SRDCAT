@@ -4,7 +4,7 @@ import Character from "./data/character.js";
 import Worldstate from "./data/worldstate.js";
 import NavMaster from "./components/navigation/NavMaster";
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Collections from "./pages/Collections";
 import HeroSheet from "./pages/HeroSheet";
 import WorldSheet from "./pages/WorldSheet";
@@ -63,8 +63,9 @@ function App() {
               <NavMaster />
               <Switch>
                 <Route exact path="/">
-                  <Collections />
+                  <Redirect to="/collections" />
                 </Route>
+                <Route path="/collections"><Collections /></Route>
                 <Route path="/sheet">{heroOrWorld}</Route>
                 <Route path="*">
                   <Error />

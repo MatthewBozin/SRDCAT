@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Name from "../bits/Name";
 import Description from "../bits/Description";
 import Col from "react-bootstrap/Col";
-import { FaDiceD20 } from "react-icons/fa";
+import { ReactComponent as D20} from "../../data/icons/d20.svg";
 
 const RollCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -22,12 +22,12 @@ const RollCard = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <FaDiceD20
-            className="icon rightfloat mtop10px"
+          <D20
+            className="iconsvg rightfloat mtop8px"
             onClick={() => {
               method();
             }}
-          ></FaDiceD20>
+          />
         </div>
         {expanded === true && (
           <span>

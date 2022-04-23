@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { FaPlusCircle, FaRegTrashAlt } from "react-icons/fa";
+import { ReactComponent as AddCard} from "../../data/icons/addcard.svg";
+import { ReactComponent as Trash} from "../../data/icons/trash.svg";
 import Context from "../../data/context";
 import Character from "../../data/character";
 import WorldState from "../../data/worldstate.js";
@@ -83,22 +84,20 @@ const AddSubtract = (props) => {
     return (
       <div>
         {(props.context === "character" || props.context === "collections") && context.persona === "PC" && (
-          <FaPlusCircle className="icon mright12px" onClick={addCard} />
+          <AddCard className="iconsvg mright12px" onClick={addCard} />
         )}
         {props.context === "worldstate" && context.persona === "TC" && (
-          <FaPlusCircle className="icon mright12px" onClick={addCard} />
+          <AddCard className="iconsvg mright12px" onClick={addCard} />
         )}
       </div>
     );
   }
   if (props.form === "minus" && context.link !== "collections") {
     return (
-      <FaRegTrashAlt
-        className="icon mright12px mtop10px"
+      <Trash className="iconsvg mright12px" 
         onClick={() => {
           deleteCard();
-        }}
-      />
+        }} />
     );
   }
   if (props.form === "minus" && context.link === "collections") {

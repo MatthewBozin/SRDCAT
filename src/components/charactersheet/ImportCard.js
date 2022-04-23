@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import Name from "../bits/Name";
 import Description from "../bits/Description";
 import Col from "react-bootstrap/Col";
-import { FaFileUpload } from "react-icons/fa";
+import { ReactComponent as Upload} from "../../data/icons/upload.svg";
 import Character from "../../data/character.js";
 
 const ImportCard = (props) => {
@@ -29,8 +29,8 @@ const ImportCard = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <FaFileUpload
-            className="rightfloat icon mright24px mtop12px"
+          <Upload
+            className="rightfloat iconsvg mright24px mtop12px"
             onClick={() => {
               expandCollapse(expanded);
             }}

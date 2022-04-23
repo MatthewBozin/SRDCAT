@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import { r } from "../../utils/exports";
 import Character from "../../data/character.js";
-import { FaRegEdit } from "react-icons/fa";
+import { ReactComponent as Edit} from "../../data/icons/edit.svg";
 import Defense from "./Defense.js";
 import architecture from "../../data/architecture.json";
 
@@ -109,12 +109,12 @@ const Defenses = () => {
             {calcDefense(defenses[modalStat])})
           </span>
           <span>
-            <FaRegEdit
-              className="icon rightfloat"
+            <Edit
+              className="iconsvg rightfloat scaleup150"
               onClick={() => {
                 editToggle(edit);
               }}
-            ></FaRegEdit>
+            />
           </span>
         </Modal.Header>
         <Modal.Body className="modalbackground">

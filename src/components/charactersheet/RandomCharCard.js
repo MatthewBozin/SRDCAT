@@ -3,7 +3,7 @@ import Name from "../bits/Name";
 import Flavor from "../bits/Flavor";
 import Description from "../bits/Description";
 import Col from "react-bootstrap/Col";
-import { FaDiceD20 } from "react-icons/fa";
+import { ReactComponent as D20} from "../../data/icons/d20.svg";
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css";
 
@@ -33,8 +33,8 @@ const RandomCharCard = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <FaDiceD20
-            className="rightfloat icon mright24px mtop12px"
+          <D20
+            className="rightfloat iconsvg mright24px mtop12px"
             onClick={() => {
               toaster.notify(
                 () => (

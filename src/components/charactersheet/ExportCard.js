@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Name from "../bits/Name";
 import Description from "../bits/Description";
 import Col from "react-bootstrap/Col";
-import { FaFileDownload } from "react-icons/fa";
+import { ReactComponent as Download} from "../../data/icons/download.svg";
 
 const ExportCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -22,8 +22,8 @@ const ExportCard = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <FaFileDownload
-            className="rightfloat icon mright24px mtop12px"
+          <Download
+            className="rightfloat iconsvg mright24px mtop4px"
             onClick={() => {
               method();
             }}

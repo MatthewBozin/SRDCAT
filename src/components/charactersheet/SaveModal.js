@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { FaSave } from "react-icons/fa";
+import { ReactComponent as Folder} from "../../data/icons/folder.svg";
 import Character from "../../data/character.js";
 import WorldState from "../../data/worldstate.js";
 import SaveCard from "./SaveCard.js";
@@ -83,8 +83,8 @@ const SaveModal = (props) => {
 
   return (
     <div>
-      <FaSave
-        className="icon mtop10px"
+      <Folder
+        className="iconsvg mtop4px scaleup125"
         onClick={() => {
           modalOpening();
         }}

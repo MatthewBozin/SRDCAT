@@ -6,7 +6,7 @@ import AddSubtract from "../bits/AddSubtract";
 import NameValuePair from "../bits/NameValuePair.js";
 import ModalItemAttack from "./ModalItemAttack.js";
 import ModalItemSale from "./ModalItemSale.js";
-import { FaDollarSign } from "react-icons/fa";
+import { ReactComponent as Dollar} from "../../data/icons/dollar.svg";
 import { ReactComponent as Attack } from "../../data/icons/attack.svg";
 import { ReactComponent as Defend } from "../../data/icons/defend.svg";
 import { ReactComponent as DefendAlt } from "../../data/icons/defendbasealt.svg";
@@ -150,8 +150,8 @@ const CardItem = (props) => {
                 />
               )}
             {context.persona === "PC" && capitalism(props.deleteFrom) && (
-              <FaDollarSign
-                className="icon mright12px mtop10px"
+              <Dollar
+                className="iconsvg mright8px"
                 onClick={() => {
                   setSaleModalOpen(true);
                   setAttackModalOpen(false);

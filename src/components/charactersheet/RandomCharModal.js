@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { FaDiceD20 } from "react-icons/fa";
+import { ReactComponent as D20} from "../../data/icons/d20.svg";
 import Character from "../../data/character.js";
 import { s, r } from "../../utils/exports.js";
 import architecture from "../../data/architecture.json";
@@ -151,8 +151,8 @@ const RandomCharModal = () => {
 
   return (
     <div>
-      <FaDiceD20
-        className="icon mtop10px"
+      <D20
+        className="iconsvg mleft8px mtop4px"
         onClick={() => {
           modalOpening();
         }}

@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
 import Character from "../../data/character.js";
 import WorldState from "../../data/worldstate.js";
-import { FaRegEdit, FaRegCheckSquare } from "react-icons/fa";
+import { ReactComponent as Edit} from "../../data/icons/edit.svg";
+import { FaRegCheckSquare } from "react-icons/fa";
 
 function SlotName(props) {
   const [character, setCharacter] = useContext(Character);
@@ -61,11 +62,11 @@ function SlotName(props) {
       <div className="row mleft5px">
         <span className="bordered padded5px margin5px">{gate().name}</span>
         <span>
-          <FaRegEdit
+          <Edit
             onClick={() => {
               setIsForm(true);
             }}
-            className="icon mtop10px"
+            className="iconsvg mleft5px scaleup150"
           />
         </span>
       </div>

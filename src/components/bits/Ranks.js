@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { ReactComponent as Left} from "../../data/icons/left.svg";
+import { ReactComponent as Right} from "../../data/icons/right.svg";
 import Table from "./Table";
 import Character from "../../data/character.js";
 import Context from "../../data/context";
@@ -72,7 +73,7 @@ const Ranks = (props) => {
               modify(-1);
             }}
           >
-            <FaChevronLeft className="pbottom5px" />
+            <Left className="iconsvg scaledown80" />
           </button>
           <button
             className="button bordered padded2px"
@@ -80,7 +81,7 @@ const Ranks = (props) => {
               modify(1);
             }}
           >
-            <FaChevronRight className="pbottom5px" />
+            <Right className="iconsvg scaledown80" />
           </button>
         </span>
       );

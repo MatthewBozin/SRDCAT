@@ -98,8 +98,16 @@ MISC
   color: #db5858;
 }
 
+.scaledown80 {
+  transform: scale(0.8);
+}
+
 .scaleup125 {
   transform: scale(1.25);
+}
+
+.scaleup150 {
+  transform: scale(1.5);
 }
 
 .textarea {
@@ -343,6 +351,10 @@ hr {
 
 .mtop4px {
   margin-top: 4px;
+}
+
+.mtop8px {
+  margin-top: 8px;
 }
 
 .mtop10px {
