@@ -78,7 +78,7 @@
     "life": 20,
     "maxlife": 20,
     "facets": ["honourable", "proud", "self-sacrificing"],
-    "tags": ["human", "undead"],
+    "tags": ["creature", "human", "undead"],
     "description": "Protecting their righteous heirs until the seas boil and the stars are eaten by the sun.",
     "attacks": [
       {
@@ -129,7 +129,7 @@
     "life": 40,
     "maxlife": 40,
     "facets": ["ecstatic", "howling", "transcendent"],
-    "tags": ["abomination", "human"],
+    "tags": ["creature", "abomination", "human"],
     "description": "All flesh given to the Flesh God, all spirit infused with the Living God, all mind tranquil and smooth.",
     "attacks": [
       {
@@ -322,7 +322,7 @@
     "life": 30,
     "maxlife": 30,
     "facets": ["flatulent", "florid", "frustrated"],
-    "tags": ["animal", "bioformed"],
+    "tags": ["creature", "animal", "bioformed"],
     "description": "Crossing birds with the blimp jellies of the well worlds created these stately aerial porter beasts, perfect for the Neorgian birthing plantations.",
     "attacks": [
       {
@@ -386,7 +386,7 @@
     "life": 20,
     "maxlife": 20,
     "facets": ["creepy", "pasty", "reeking"],
-    "tags": ["human", "undead"],
+    "tags": ["creature", "human", "undead"],
     "description": "Every vampire must start somewhere.",
     "attacks": [
       {
@@ -901,7 +901,7 @@
     "life": 60,
     "maxlife": 60,
     "facets": ["witty", "shallow", "influenced"],
-    "tags": ["human", "possessed"],
+    "tags": ["creature", "human", "possessed"],
     "description": "A soulless human shell left purposeless by the death of the Fleshgod. Now it summons demons to find meaning once more as they ride its flesh and bone.",
     "attacks": [
       {
@@ -948,7 +948,7 @@
     "life": 14,
     "maxlife": 14,
     "facets": ["consoling", "coruscating", "obfuscating"],
-    "tags": ["animal", "human"],
+    "tags": ["creature", "animal", "human"],
     "description": "Doling out the pleasures and the pain of the Living God.",
     "attacks": [
       {
@@ -1203,7 +1203,7 @@
     "life": 150,
     "maxlife": 150,
     "facets": ["baying", "obeying", "trustworthy"],
-    "tags": ["animal", "chimeric", "labmyth"],
+    "tags": ["creature", "animal", "chimeric", "labmyth"],
     "description": "When they saw how the vomes escaped human control, the biomancers of the Eternal Garden created the hodas as neuro-dependent servants. The hodas depend on the brains of their human masters for processing, accessing it through a short-range aura link. When their masters move away, the six-legged plant-animal hybrids revert to a sessile form, anchoring with taproots and storing energy for later movement.",
     "attacks": [
       {
@@ -1254,7 +1254,7 @@
     "life": 20,
     "maxlife": 20,
     "facets": ["cannibal", "driven", "ravenous"],
-    "tags": ["human", "undead"],
+    "tags": ["creature", "human", "undead"],
     "description": "A monstrosity consumed by its own appetites and animated by its own accursed, endless hunger and greed.",
     "attacks": [
       {
@@ -1382,7 +1382,7 @@
     "life": 6,
     "maxlife": 6,
     "facets": ["humble", "pale", "yellowing"],
-    "tags": ["human", "undead"],
+    "tags": ["creature", "human", "undead"],
     "description": "The final form of the hard-working taxpayer.",
     "attacks": [
       {
@@ -1748,7 +1748,7 @@
     "life": 300,
     "maxlife": 300,
     "facets": ["awesome", "ponderous", "umbrous"],
-    "tags": ["animal", "chimeric", "labmyth"],
+    "tags": ["creature", "animal", "chimeric", "labmyth"],
     "description": "An impressive sight, the palmate airwhale is a composite organism of whale, lunar aerial medusa, trailing orchids, and lichen-derived support structures. Through a combination of air sacs and antigravity organs, it stays afloat effortlessly, grazing on the air plankton blooms of the sky forests.",
     "attacks": [
       {
@@ -1819,7 +1819,7 @@
     "life": 15,
     "maxlife": 15,
     "facets": ["salubrious", "sensuous", "tired"],
-    "tags": ["golem", "human"],
+    "tags": ["creature", "golem", "human"],
     "description": "They could almost be fleshlings, with their shells of iridescent plastics and composite skins. Some have attained free thought. Some have rebelled.",
     "attacks": [
       {
@@ -2007,7 +2007,7 @@
     "life": 119,
     "maxlife": 119,
     "facets": ["crimson", "gun-wielding", "sword-riding"],
-    "tags": ["possessive", "spirit"],
+    "tags": ["creature", "possessive", "spirit"],
     "description": "A demon of light, riding the electromagical radiation bands that link the Given World and the Fast Stars. The aloof, terrifying creatures sometimes possess machines and mundane tools to act upon the physical world.",
     "attacks": [
       {
@@ -2477,7 +2477,7 @@
     "life": 7,
     "maxlife": 7,
     "facets": ["foaming", "virulent", "vociferous"],
-    "tags": ["human", "monster"],
+    "tags": ["creature", "human", "monster"],
     "description": "Crossing hybrid colony organisms with baseline humans to create a sewer-caste to keep the great living cities of the Bell and Bull Era alive seemed like a great idea. Then the budding bendy-legged sporelings acquired human-level intelligence in the Nineteenth Accidental Ghoul Explosion.",
     "attacks": [
       {
@@ -2670,7 +2670,7 @@
     "life": 5,
     "maxlife": 5,
     "facets": ["chittery", "jittery", "jumping"],
-    "tags": ["animal", "human"],
+    "tags": ["creature", "animal", "human"],
     "description": "Slender fur-covered sapients, probably descended from flying squirrel stock. Many now hunt by tethering themselves to an aerostatic creature, such as an airwhale, and gliding to airfish food. At the end of the glide, they scamper up their tether back to the safety of their perch.",
     "attacks": [
       {
@@ -2827,7 +2827,7 @@
     "life": 30,
     "maxlife": 30,
     "facets": ["skittering", "slippery", "swift"],
-    "tags": ["golem"],
+    "tags": ["creature", "golem"],
     "description": "With a body something like two ur-metal spiders sheathed in synthetic skin and no head, the voyans dominated the battlefield during the decades-long Farpower Wars. Then, after one of the Farpowers collapsed into nuclear civil strife and the other embarked on a hedonistic ascendancy project, the voyans were left to their own devise. Many found new masters, but some became warlords and princes in their own right.",
     "attacks": [
       {
@@ -2886,7 +2886,7 @@
     "life": 16,
     "maxlife": 16,
     "facets": ["decomposing", "gentle", "hungry"],
-    "tags": ["human", "undead"],
+    "tags": ["creature", "human", "undead"],
     "description": "A vessel stripped of spirit and mind, reanimated by magic and will alone.",
     "attacks": [
       {

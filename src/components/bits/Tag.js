@@ -13,6 +13,8 @@ const Tag = (props) => {
         context2.search = context2.search + "+" + props.tag;
       }
     }
+    if (props.tag === "error") {console.log("Zu observes you, interloper. 'Ware, ware white feathers in the zenith of the sun.");}
+    context2.page = 0;
     setContext(() => {
       return JSON.parse(JSON.stringify(context2));
     });

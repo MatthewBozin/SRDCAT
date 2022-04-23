@@ -121,7 +121,7 @@
   },
   "beneficiaryofchoice": {
     "name": "Beneficiary of Choice",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "Some give, they receive.",
     "description": "Hero’s mysterious sponsors say they represent the ",
     "table": [
@@ -236,7 +236,7 @@
   },
   "citoyenformidable": {
     "name": "Citoyen Formidable",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "The city makes the citizen.",
     "ranks": [
       "The natural city-slicker. Hero gains [+] to social interactions, travel, and navigation in cities.",
@@ -400,7 +400,7 @@
   },
   "expertsidekicks": {
     "name": "Expert Sidekicks",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "Friends are the best.",
     "ranks": [
       "A number of sidekicks equal to the hero’s proficiency can be experts. This means they add the hero’s proficiency to their sum when testing something they’re good at.",
@@ -410,7 +410,7 @@
   },
   "extraordinaryprecognition": {
     "name": "Extraordinary Precognition",
-    "tags": ["mutation", "ka"],
+    "tags": ["mutation", "ka", "psionic"],
     "flavor": "Feel the pain of the future.",
     "ranks": [
       "Hero can glimpse the future. It hurts. Spend 1 life to gain [+] on any test to avoid damage.",
@@ -527,11 +527,10 @@
   },
   "gentletraveller": {
     "name": "Gentle Traveller",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "Oh, what wonders!",
     "ranks": [
       "Favourite travelling bag. Hero gains a special inventory that can hold 3 stone-sized items or 99 soap-sized items. It’s magical. If they lose the bag, it always somehow reappears.",
-      "Personal daimon. Hero gains a little voice that whispers in their ear. It does not occupy an inventory slot, but does require a name. Once per game session, the daimon gives one of the following:",
       {
         "base": "Personal daimon. Hero gains a little voice that whispers in their ear. It does not occupy an inventory slot, but does require a name. Once per game session, the daimon gives one of the following:",
         "entries": [
@@ -584,7 +583,7 @@
   },
   "gravitas": {
     "name": "Gravitas",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "The presence abides.",
     "ranks": [
       "Hero’s mere presence is an argument. They can choose to use their aura or endurance stat when making social tests.",
@@ -604,7 +603,7 @@
   },
   "honourbound": {
     "name": "Honour Bound",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "Where courts dare not tread, honour is the law.",
     "ranks": [
       "Hero possesses an aura of honour, granting [+] to social tests in nomadic and clan-based societies.",
@@ -686,7 +685,7 @@
   },
   "inspiringhero": {
     "name": "Inspiring Hero",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "combat"],
     "flavor": "For great glory!",
     "description": "The intangible quality of a leader has a quantity all of its own.",
     "ranks": [
@@ -1104,7 +1103,7 @@
   },
   "psionscion": {
     "name": "Psion Scion",
-    "tags": ["trait", "ka", "cosmic"],
+    "tags": ["trait", "ka", "psionic"],
     "flavor": "A soft blanket for the soul.",
     "ranks": [
       "Low-level empathic field grants [+] to trickery, lies, and illusions.",
@@ -1114,7 +1113,7 @@
   },
   "psioniceruption": {
     "name": "Psionic Eruption",
-    "tags": ["mutation", "ka"],
+    "tags": ["mutation", "ka", "psionic"],
     "flavor": "Inhuman mental abilities. Fear awakens in baseliners’ hearts.",
     "ranks": [
       "Hero acquires a spell. When using this spell, their magic cost is always 1.",
@@ -1134,7 +1133,7 @@
   },
   "querulouskvetch": {
     "name": "Querulous Kvetch",
-    "tags": ["trait", "ba"],
+    "tags": ["trait", "ba", "social"],
     "flavor": "Complaining is a cure.",
     "ranks": [
       "Instead of any other burden, the hero may choose the special burden: “grumbling quietly.” It imposes no penalties. Hero can only bear one such burden at a time.",
@@ -1649,7 +1648,7 @@
   },
   "zooticmasterform": {
     "name": "Zootic Masterform",
-    "tags": ["trait", "ka"],
+    "tags": ["trait", "ka", "chimerism", "psionic"],
     "flavor": "The pet is the boss.",
     "description": "To hero appears to be a ",
     "table": ["Cat", "Rat", "Dog", "Owl", "Parrot", "Snake", "Toad", "Spider"],

@@ -7,6 +7,8 @@ import CardEnvironment from "./CardEnvironment";
 import CardProp from "./CardProp";
 import CardScene from "./CardScene";
 import Col from "react-bootstrap/Row";
+import { ReactComponent as Left} from "../../data/icons/left.svg";
+import { ReactComponent as Right} from "../../data/icons/right.svg";
 
 const CardList = (props) => {
 
@@ -119,9 +121,9 @@ const CardList = (props) => {
   return (
     <div>
       {props.mode === "collections" && <div className="mleft8px">
-        {props.context.page > 0 && <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>}
-        <span className="button bordered padded2px">Page {props.context.page + 1} </span>
-        {(props.context.page + 1) * 30 <= props.content.length && <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>}
+        {props.context.page > 0 && <button className="button bordered" onClick={() => {pageChange(-1)}}><Left className="iconsvg scaledown80" /></button>}
+        <span className="orangetext padded2px">Page {props.context.page + 1} </span>
+        {(props.context.page + 1) * 30 <= props.content.length && <button className="button bordered" onClick={() => {pageChange(1)}}><Right className="iconsvg scaledown80" /></button>}
       </div>}
       
       {props.deleteFrom !== "none" && (
@@ -147,9 +149,9 @@ const CardList = (props) => {
         </Col>
       )}
       {props.mode === "collections" && <div className="mleft8px">
-        {props.context.page > 0 && <button className="button bordered" onClick={() => {pageChange(-1)}}>{"<"}</button>}
-        <span className="button bordered padded2px">Page {props.context.page + 1} </span>
-        {(props.context.page + 1) * 30 <= props.content.length && <button className="button bordered" onClick={() => {pageChange(1)}}>{">"}</button>}
+        {props.context.page > 0 && <button className="button bordered" onClick={() => {pageChange(-1)}}><Left className="iconsvg scaledown80" /></button>}
+        <span className="orangetext padded2px">Page {props.context.page + 1} </span>
+        {(props.context.page + 1) * 30 <= props.content.length && <button className="button bordered" onClick={() => {pageChange(1)}}><Right className="iconsvg scaledown80" /></button>}
       </div>}
     </div>
   );
