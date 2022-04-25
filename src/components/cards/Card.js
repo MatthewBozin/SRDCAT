@@ -55,7 +55,7 @@ const Card = (props) => {
             expandCollapse={expandCollapse}
           />
           {context.persona === "PC" && (
-            <span className="rightfloat mtop4px mright12px">
+            <span className="rightfloat mtop4px mright8px">
               <AddSubtract
                 context={"character"}
                 card={props.card}

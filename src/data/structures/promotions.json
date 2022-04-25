@@ -13,13 +13,13 @@
     ],
     "extra": [
         {"XP":99,"maxlife":"1d6","defenses":"1d6-4","sum":"1d6-5","skills":"1d8-7","traits":"1d8-7"},
-        {"XP":99,"maxlife":"1d8","defenses":"1d4-2","sum":"1d4-3","skills":"1d6-5","traits":"1d6-5"},
-        {"XP":99,"maxlife":"1d8","defenses":"1d3-1","sum":"1d3-2","skills":"1d4-3","traits":"1d4-3"},
-        {"XP":99,"maxlife":"1d8","defenses":"1d3-1","sum":"1d2-1","skills":"1d3-2","traits":"1d3-2"},
-        {"XP":99,"maxlife":"1d8","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
-        {"XP":99,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
-        {"XP":99,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
-        {"XP":99,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
-        {"XP":99,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d1"}
+        {"XP":300,"maxlife":"1d8","defenses":"1d4-2","sum":"1d4-3","skills":"1d6-5","traits":"1d6-5"},
+        {"XP":600,"maxlife":"1d8","defenses":"1d3-1","sum":"1d3-2","skills":"1d4-3","traits":"1d4-3"},
+        {"XP":1000,"maxlife":"1d8","defenses":"1d3-1","sum":"1d2-1","skills":"1d3-2","traits":"1d3-2"},
+        {"XP":3000,"maxlife":"1d8","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
+        {"XP":5000,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
+        {"XP":10000,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
+        {"XP":30000,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d2-1"},
+        {"XP":50000,"maxlife":"1d10","defenses":"1d3-1","sum":"1d3-1","skills":"1d2-1","traits":"1d1"}
     ]
 }

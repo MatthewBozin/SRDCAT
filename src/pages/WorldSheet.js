@@ -107,9 +107,7 @@ const HeroSheet = () => {
           </div>
         )}
         {worldState.scene && (
-          <div>
             <Scene></Scene>
-          </div>
         )}
       </div>
     </div>

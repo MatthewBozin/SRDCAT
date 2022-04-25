@@ -23,12 +23,12 @@ const Tag = (props) => {
   return (
     <span>
       {props.form === "plus" && (
-        <span className="padded5px button orangetext" onClick={setTagSearch}>
+        <span className="pright5px mbottom5px button orangetext" onClick={setTagSearch}>
           #{props.tag}
         </span>
       )}
       {props.form === "minus" && (
-        <span className="padded5px orangetext">#{props.tag}</span>
+        <span className="pright5px mbottom5px orangetext">#{props.tag}</span>
       )}
     </span>
   );

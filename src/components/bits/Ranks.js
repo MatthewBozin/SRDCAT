@@ -68,7 +68,7 @@ const Ranks = (props) => {
       return (
         <span>
           <button
-            className="button bordered padded2px"
+            className="button bordered"
             onClick={() => {
               modify(-1);
             }}
@@ -76,7 +76,7 @@ const Ranks = (props) => {
             <Left className="iconsvg scaledown80" />
           </button>
           <button
-            className="button bordered padded2px"
+            className="button bordered"
             onClick={() => {
               modify(1);
             }}

@@ -44,16 +44,16 @@ const HeroSheet = () => {
 
   return (
     <div className="charsheet">
-      <div className="outerbox limitwidth">
-        <span className="row rightfloat mright12px">
-          <RandomCharModal />
-          <SaveModal savepath={"SRDcharacters"} context={"character"} />
-          <ExportModal context={"character"} />
-          <PromotionModal />
-        </span>
-        <SlotName context={"character"} />
+        <div className="outerbox">
+          <span className="row rightfloat mright12px">
+            <RandomCharModal />
+            <SaveModal savepath={"SRDcharacters"} context={"character"} />
+            <ExportModal context={"character"} />
+            <PromotionModal />
+          </span>
+          <SlotName context={"character"} />
+        </div>
         <StatSheet />
-      </div>
       <div className="outerbox limitwidth">
         <div className="outerbox">
           <div className="row mleft5px fullwidth">

@@ -66,11 +66,11 @@ const CardCreature = (props) => {
               toggle(setExpanded, expanded);
             }}
           />
-          <span className="row rightfloat mright12px mtop4px">
+          <span className="row rightfloat mright8px mtop4px">
             {context.persona === "PC" && (props.deleteFrom === "creatures" || props.deleteFrom === "none") && card.value && (
               <span>
               <Dollar
-                className="iconsvg mright8px"
+                className="iconsvg"
                 onClick={() => {
                   setSaleModalOpen(true);
                   setAttackModalOpen(false);

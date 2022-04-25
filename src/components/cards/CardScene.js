@@ -42,16 +42,18 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mtop4px mright12px">
-            <AddSubtract
-              context={"worldstate"}
-              card={props.card}
-              form={props.form}
-              placement={props.placement}
-              deleteFrom={props.deleteFrom}
-              category={props.category}
-            />
-          </span>
+          {props.form === "plus" &&
+            <span className="rightfloat mtop4px mright8px">
+              <AddSubtract
+                context={"worldstate"}
+                card={props.card}
+                form={props.form}
+                placement={props.placement}
+                deleteFrom={props.deleteFrom}
+                category={props.category}
+              />
+            </span> 
+          }
         </div>
         {expanded === false && props.deleteFrom === "none" && (
           <span>

@@ -275,6 +275,11 @@ hr {
   text-align: center;
 }
 
+.centerchild {
+  display: flex;
+  justify-content: center;
+}
+
 .limitwidth {
   width: 700px;
   max-width: 100%;
@@ -305,8 +310,16 @@ hr {
   padding-bottom: 5px;
 }
 
+.pbottom8px {
+  padding-bottom: 8px;
+}
+
 .pleft5px {
   padding-left: 5px;
+}
+
+.pright5px {
+  padding-right: 10px;
 }
 
 .margin5px {
@@ -379,6 +392,10 @@ hr {
 
 .mtop100px {
   margin-top: 70px;
+}
+
+.mbottom5px {
+  margin-bottom: 5px;
 }
 
 /*

@@ -50,7 +50,7 @@ const Card = (props) => {
             expandCollapse={expandCollapse}
           />
           {context.link === "collections" && 
-            <span className="rightfloat mtop4px mright12px">
+            <span className="rightfloat mtop4px mright8px">
               <AddSubtract
                 context={"worldstate"}
                 card={props.card}

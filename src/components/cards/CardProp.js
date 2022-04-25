@@ -43,7 +43,7 @@ const Card = (props) => {
             expanded={expanded}
             expandCollapse={expandCollapse}
           />
-          <span className="rightfloat mtop4px mright12px">
+          <span className="rightfloat mtop4px mright8px">
             <AddSubtract
               context={"worldstate"}
               card={props.card}

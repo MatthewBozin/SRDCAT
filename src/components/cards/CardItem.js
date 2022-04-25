@@ -86,7 +86,7 @@ const CardItem = (props) => {
               toggle(setExpanded, expanded);
             }}
           />
-          <span className="row rightfloat mright12px mtop4px">
+          <span className="row rightfloat mright8px mtop4px">
             {context.link !== "collections" &&
               props.deleteFrom === "items" &&
               card.tags.includes("offensive") && (
@@ -146,7 +146,7 @@ const CardItem = (props) => {
             {context.persona === "PC" && (props.deleteFrom === "items" || props.deleteFrom === "none") && (
               <span>
               <Dollar
-                className="iconsvg mright8px"
+                className="iconsvg"
                 onClick={() => {
                   setSaleModalOpen(true);
                   setAttackModalOpen(false);
@@ -211,7 +211,7 @@ const CardItem = (props) => {
             <NameValuePair name={"Value"} value={card.value} />
             {card.stat &&
             <div>
-              <span className="padded5px">
+              <span>
                 {card.tags.includes("defensive") && (
                   <span className="orangetext">Defense: </span>
                 )}

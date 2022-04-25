@@ -109,7 +109,7 @@ const Search = () => {
             type="submit"
             value="Search"
           >
-            <SearchIcon className="iconsvg" />
+            <SearchIcon className="iconsvg scaledown80" />
           </button>
           <input
             id="searchbox"

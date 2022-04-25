@@ -6,7 +6,7 @@ import Resources from "./Resources.js";
 
 const StatSheet = () => {
   return (
-    <div className="padded5px">
+    <div>
       <Attributes />
       <Defenses />
       <Resources />

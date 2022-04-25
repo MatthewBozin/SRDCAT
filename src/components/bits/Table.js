@@ -15,15 +15,19 @@ const Table = (props) => {
   const [character, setCharacter] = useContext(Character);
 
   const roll = () => {
-    let newplacement = r(props.table.length);
-    if (props.savedresult !== undefined) {
-      let newchar = character;
-      newchar[props.category][props.placement].savedresult = newplacement;
-      setCharacter(newchar);
+    while (true) {
+      if(props.table.length < 2) break;
+      let newplacement = r(props.table.length);
+      if (newplacement !== index) {
+        if (props.savedresult !== undefined) {
+          let newchar = character;
+          newchar[props.category][props.placement].savedresult = newplacement;
+          setCharacter(newchar);
+        }
+        setIndex(newplacement);
+        break;
+      }
     }
-    setIndex((index) => {
-      return newplacement;
-    });
   };
 
   if (typeof entry === "object") {
@@ -45,7 +49,7 @@ const Table = (props) => {
           <D20 className="button iconsvg" />
         </button>
         <ModalTableDisplay table={props.table}></ModalTableDisplay>
-        <span className="padded5px">{entry}</span>
+        <span>{entry}</span>
       </span>
     );
 };
