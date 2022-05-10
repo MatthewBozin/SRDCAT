@@ -4,7 +4,6 @@ import Character from "./data/character.js";
 import Worldstate from "./data/worldstate.js";
 import NavMaster from "./components/navigation/NavMaster";
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Collections from "./pages/Collections";
 import HeroSheet from "./pages/HeroSheet";
 import WorldSheet from "./pages/WorldSheet";
@@ -54,25 +53,24 @@ function App() {
     }
   };
 
+  const router = () => {
+    if (context.link === "collections") {
+      return <Collections />
+    } else if (context.link === "sheet") {
+      return heroOrWorld();
+    } else {
+      return <Error />
+    };
+  };
+
   return (
     <div>
       <Context.Provider value={[context, setContext]}>
         <Worldstate.Provider value={[worldState, setWorldState]}>
           <Character.Provider value={[character, setCharacter]}>
-            <Router>
-              <NavMaster />
-              <Switch>
-                <Route exact path="/">
-                  <Redirect to="/collections" />
-                </Route>
-                <Route path="/collections"><Collections /></Route>
-                <Route path="/sheet">{heroOrWorld}</Route>
-                <Route path="*">
-                  <Error />
-                </Route>
-              </Switch>
-              <Footer />
-            </Router>
+            <NavMaster />
+            {router()}
+            <Footer />
           </Character.Provider>
         </Worldstate.Provider>
       </Context.Provider>

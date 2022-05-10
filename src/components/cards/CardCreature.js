@@ -127,12 +127,12 @@ const CardCreature = (props) => {
             <hr />
             <div>
               Level: {card.level} 
-              {props.context !== "collections" && (
+              {context.link !== "collections" && (
                 <span>
                   {" "}|{" "}<ModalLifeEdit placement={props.placement} life={card.life} />
                 </span>
               )}
-              {props.context === "collections" && <span> | Life: {card.life}</span>}
+              {context.link === "collections" && <span> | Life: {card.life}</span>}
               {card.value && <span> | Value: {card.value}</span>}
               {card.carry && <span> | Carry: {card.carry} sacks</span>}
             </div>

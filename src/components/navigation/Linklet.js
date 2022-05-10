@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Context from "../../data/context.js";
-import { Link } from "react-router-dom";
 import { ReactComponent as Collections } from "../../data/icons/collections.svg";
 import { ReactComponent as Herosheet } from "../../data/icons/herosheet.svg";
 import { FaGlobe } from "react-icons/fa";
@@ -30,7 +29,7 @@ const Linklet = (props) => {
   };
 
   return (
-    <Link
+    <div
       className={
         context.link === props.type
           ? "link button--selected bordered"
@@ -39,16 +38,15 @@ const Linklet = (props) => {
       onClick={() =>
         setContext(() => {
           let newcontext = context;
-          newcontext.link = props.type;
+          newcontext.link = props.link;
           let final = JSON.parse(JSON.stringify(newcontext));
           return final;
         })
       }
-      to={props.link}
     >
       {displayIcon()}
       <span className="navletSpan">{props.text}</span>
-    </Link>
+    </div>
   );
 };
 

@@ -10,7 +10,6 @@ import RandomCharModal from "../components/charactersheet/RandomCharModal";
 import PromotionModal from "../components/charactersheet/PromotionModal";
 import Notes from "../components/charactersheet/Notes";
 import { sackstonesoap } from "../utils/exports.js";
-import { Link } from "react-router-dom";
 
 const HeroSheet = () => {
   const [context, setContext] = useContext(Context);
@@ -43,22 +42,23 @@ const HeroSheet = () => {
   };
 
   return (
+  <div>
+    <div className="outerbox">
+        <span className="row rightfloat mright12px">
+          <RandomCharModal />
+          <SaveModal savepath={"SRDcharacters"} context={"character"} />
+          <ExportModal context={"character"} />
+          <PromotionModal />
+        </span>
+        <SlotName context={"character"} />
+      </div>
     <div className="charsheet">
-        <div className="outerbox">
-          <span className="row rightfloat mright12px">
-            <RandomCharModal />
-            <SaveModal savepath={"SRDcharacters"} context={"character"} />
-            <ExportModal context={"character"} />
-            <PromotionModal />
-          </span>
-          <SlotName context={"character"} />
-        </div>
-        <StatSheet />
+      <StatSheet />
       <div className="outerbox limitwidth">
         <div className="outerbox">
           <div className="row mleft5px fullwidth">
             <span>
-              <Link
+              <div
                 onClick={() =>
                   setContext(() => {
                     let newcontext = context;
@@ -72,7 +72,7 @@ const HeroSheet = () => {
                 to="/"
               >
                 Inventory
-              </Link>
+              </div>
             </span>
           </div>
           <div className="outerbox fontsize">
@@ -98,7 +98,7 @@ const HeroSheet = () => {
             <div className="outerbox" key={index}>
               <div className="row mleft5px fullwidth">
                 <span>
-                  <Link
+                  <div
                     onClick={() =>
                       setContext(() => {
                         let newcontext = context;
@@ -112,7 +112,7 @@ const HeroSheet = () => {
                     to="/"
                   >
                     {category.name}
-                  </Link>
+                  </div>
                 </span>
               </div>
               <CardList
@@ -132,6 +132,7 @@ const HeroSheet = () => {
         <Notes />
       </div>
     </div>
+  </div>
   );
 };
 

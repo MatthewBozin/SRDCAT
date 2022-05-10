@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { s } from "../utils/exports.js";
 
 function Error() {
@@ -13,9 +12,9 @@ function Error() {
     <div className="outerbox">
       <div>{error}</div>
       <div>(insert image of engineer penglings repairing RRYPO)</div>
-      <Link className="button bordered" to="/">
+      <div className="button bordered">
         Return Home
-      </Link>
+      </div>
     </div>
   );
 }

@@ -25,7 +25,11 @@ const NavMaster = () => {
   return (
     <h4 className="outerbox">
       <div className="row mleft5px fullwidth">
-        <span className="row heading">SRDCAT</span>
+        <span className="row heading hoverpointer" onClick={() => {
+          let newContext = context;
+          newContext.link = "collections";
+          setContext(JSON.parse(JSON.stringify(newContext)));
+        }}>SRDCAT</span>
         <span
           className="button bordered row heading mleft30px"
           onClick={() => {

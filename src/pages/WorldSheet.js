@@ -7,7 +7,6 @@ import ExportModal from "../components/charactersheet/ExportModal";
 import CardEnvironment from "../components/cards/CardEnvironment";
 import CardScene from "../components/cards/CardScene";
 import Scene from "../components/worldsheet/Scene.js";
-import { Link } from "react-router-dom";
 
 const HeroSheet = () => {
   const [context, setContext] = useContext(Context);
@@ -58,7 +57,7 @@ const HeroSheet = () => {
           deleteFrom={"environments"}
           category={"environments"}
         />
-        <Link
+        <div
           onClick={() =>
             setContext(() => {
               let newcontext = context;
@@ -72,7 +71,7 @@ const HeroSheet = () => {
           to="/"
         >
           Change Environment
-        </Link>
+        </div>
       </div>
       <div className="outerbox limitwidth">
         {typeof worldState.scene === "string" && (
@@ -89,7 +88,7 @@ const HeroSheet = () => {
                 category={"scenes"}
               />
             </div>
-            <Link
+            <div
               onClick={() =>
                 setContext(() => {
                   let newcontext = context;
@@ -103,7 +102,7 @@ const HeroSheet = () => {
               to="/"
             >
               Change Scene
-            </Link>
+            </div>
           </div>
         )}
         {worldState.scene && (
