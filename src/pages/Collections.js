@@ -3,46 +3,18 @@ import Navbar from "../components/navigation/Navbar";
 import Search from "../components/cards/Search";
 import CardList from "../components/cards/CardList";
 import Context from "../data/context";
+import filter from "../utils/filter.js";
 let contextData = require(`../data/orders.json`);
 
 const Collections = () => {
   const [context, setContext] = useContext(Context);
 
-  const filter = (filterBy) => {
-    //filterBy sets which property in the card the filter pays attention to. currently it's set to "tags"
-    let contextObjects = require(`../data/collections/` + context.collections);
-    let newData = [];
-    contextData[context.collections].map((name) => {
-      let element = contextObjects[name];
-      let toFilter;
-      if (typeof element[filterBy] === "string") {
-        toFilter = element[filterBy].toLowerCase();
-      } else {
-        toFilter = [];
-        element[filterBy].map((item) => {
-          toFilter.push(item.toLowerCase());
-          return null;
-        });
-      }
-      //toFilter is the case (or cases) to compare to the search terms. ex: ["offensive","chain"]
-      let searchSplit = context.search.toLowerCase().split("+");
-      for (let searchTerm of searchSplit) {
-        if (!toFilter.includes(searchTerm)) {
-          return null;
-        }
-      }
-      newData.push(name);
-      return null;
-    });
-    return newData;
-  };
-
   const ifSearch = () => {
     //let data = require(`../data/collections/` + context.collections);
     if (context.search !== "") {
-      let filtered = filter("tags");
+      let filtered = filter("tags", context.collections, context.search);
       if (filtered.length === 0) {
-        filtered = filter("name");
+        filtered = filter("name", context.collections, context.search);
       }
       if (filtered.length === 0) {
         return (

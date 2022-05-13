@@ -5,6 +5,7 @@ import Character from "../../data/character.js";
 import { s, r } from "../../utils/exports.js";
 import architecture from "../../data/architecture.json";
 import RandomCharCard from "./RandomCharCard.js";
+import filter from "../../utils/filter.js";
 let contextData = require(`../../data/orders.json`);
 
 const RandomCharModal = () => {
@@ -122,6 +123,10 @@ const RandomCharModal = () => {
         }
       }
     }
+
+    let weaponNames = filter("tags", "items", "offensive");
+    let weapon = { name: s(weaponNames), savedrank: 0, mods: [], statmods: {} };
+    newchar.items.push(weapon);
 
     for (let attribute of attributes) {
       newchar[attribute] = 0;

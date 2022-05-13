@@ -3,6 +3,7 @@ import Context from "../../data/context";
 import { ReactComponent as SearchIcon} from "../../data/icons/search.svg";
 import { s } from "../../utils/exports.js";
 import orders from "../../data/orders.json";
+import filter from "../../utils/filter.js";
 
 const Search = () => {
   const [context, setContext] = useContext(Context);
@@ -35,32 +36,6 @@ const Search = () => {
     });
   };
 
-  const filter = (filterBy) => {
-    let newData = [];
-    orders[context.collections].map((element) => {
-      let toFilter;
-      let elementFull = contextData[element];
-      if (typeof elementFull[filterBy] === "string") {
-        toFilter = elementFull[filterBy].toLowerCase();
-      } else {
-        toFilter = [];
-        elementFull[filterBy].map((item) => {
-          toFilter.push(item.toLowerCase());
-          return null;
-        });
-      }
-      let searchSplit = context.search.toLowerCase().split("+");
-      for (let searchTerm of searchSplit) {
-        if (!toFilter.includes(searchTerm)) {
-          return null;
-        }
-      }
-      newData.push(element);
-      return null;
-    });
-    return newData;
-  };
-
   const randomResult = () => {
     let resultpool;
     let finalresult;
@@ -68,9 +43,9 @@ const Search = () => {
     if (context.search === "") {
       resultpool = orders[context.collections];
     } else {
-      resultpool = filter("tags");
+      resultpool = filter("tags", context.collections, context.search);
       if (resultpool.length === 0) {
-        resultpool = filter("name");
+        resultpool = filter("name", context.collections, context.search);
       }
       if (resultpool.length === 1) {
         resultpool = orders[context.collections];
