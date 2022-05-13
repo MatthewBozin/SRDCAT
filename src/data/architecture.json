@@ -101,6 +101,26 @@
       "XP": 99999,
       "gear": true,
       "CASH": 30000
+    },
+    "votbo": {
+      "name": "OBELISK Crewmember",
+      "skills": 1,
+      "traits": 1,
+      "items": 2,
+      "spells": 0,
+      "creatures": 0,
+      "level": 2,
+      "PRO": 1,
+      "actions": 2,
+      "MCOST": 3,
+      "stats": 6,
+      "statlimit": 3,
+      "life": 16,
+      "maxlife": 16,
+      "HERODICE": 3,
+      "XP": 0,
+      "gear": false,
+      "CASH": 0
     }
   },
   "currentChar": {
@@ -168,6 +188,13 @@
       "stats": ["Level: 9", "Life: 60", "XP: 99999", "Cash: 30000"],
       "flavor": "Obviously not really human.",
       "description": "The embodiment of a culture hero, an archetype taken flesh. After reaching the pinnacle of power, the only paths left open are change and decline. There is nowhere further to go."
+    },
+    {
+      "name": "OBELISK Crewmember",
+      "value": "votbo",
+      "stats": ["Level: 2", "Life: 16", "XP: 0", "Cash: 0"],
+      "flavor": "For games of VOTBO.",
+      "description": "Prospective crewmembers of OBELISK emerge from their pods ready to do research on distant worlds with specialized skills and strange items."
     }
   ],
   "attributeArray": ["str", "end", "agi", "cha", "aur", "tho"],

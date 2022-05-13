@@ -34,7 +34,12 @@ const RandomCharModal = () => {
   };
 
   const addCard = (collection, data, newchar) => {
-    let selectionName = s(contextData[collection]);
+    let selectionName;
+    if (collection === "creatures") {
+      selectionName = s(filter("tags", "creatures", "pet"));
+    } else {
+      selectionName = s(contextData[collection])
+    }
     let selection = data[selectionName];
     let selectionObject = { name: selectionName, savedrank: 0 };
     if (collection === "items" || collection === "creatures") {
@@ -100,7 +105,6 @@ const RandomCharModal = () => {
           r(levels[collection]) > 1 &&
           newchar[collection].length > 0
         ) {
-          console.log("bleb");
           let i = 0;
           while (true) {
             let card = newchar[collection][r(newchar[collection].length - 1)];
