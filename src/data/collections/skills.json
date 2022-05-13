@@ -649,6 +649,17 @@
       "Gains [+] to attacks against pursuers."
     ]
   },
+  "offworldengineer": {
+    "name": "Offworld Engineer",
+    "tags": ["votbo"],
+    "flavor": "",
+    "description": "Patches suits. Oils joints. Persuades golems. Curses like a sailor.",
+    "ranks": [
+      "Repair: can spend 1 supply to make a moderate Tho test: on success, repair a broken piece of equipment.",
+      "[+] to repair tests. Can spend a supply and make a repair test to restore 1d6 life to a mechanical creature.",
+      "Repair is guaranteed. Life restored to mechanical creatures becomes 2d6."
+    ]
+  },
   "outsideralien": {
     "name": "Outsider Alien",
     "tags": ["adventure", "ka"],
@@ -976,6 +987,17 @@
       "[+] to ritual & rite effects.",
       "[+] to damage against breakers of protocol and ritual.",
       "Gains +1 ba defence from protocolary gear and ritual armour."
+    ]
+  },
+  "psionicinitiate": {
+    "name": "Psionic Initiate",
+    "tags": ["votbo"],
+    "flavor": "",
+    "description": "Detects malign interferences. Surveys the astral plane. Debates the healing properties of crystals.",
+    "ranks": [
+      "Gain a random spell. Can automatically detect (and be detected by) other psionic sources in the vicinity.",
+      "Gain [+] to psionic attacks, and [-] vs psionic attacks.",
+      "Will receive a premonition before a negative event, such as a surprise or disaster."
     ]
   },
   "psychicveteran": {
@@ -1512,6 +1534,17 @@
       "Golems and other machines are reluctant to harm the hero and suffer [-] to tests against them. At any time, the toymaker can spend a few minutes and 1 life to restore 1d6 life to a mechanical creature."
     ]
   },
+  "traumadoc": {
+    "name": "Trauma Doc",
+    "tags": ["votbo"],
+    "flavor": "",
+    "description": "Staunches bleeding. Applies hyperchemical medicines. Saves lives on alien worlds.",
+    "ranks": [
+      "First aid: can spend 1 supply to make a moderate Tho test: on success, restore 1d6 life to an organic creature.",
+      "[+] to first aid tests. Life restored is increased to 2d6.",
+      "First aid is guaranteed. Life restored is increased to 3d6."
+    ]
+  },
   "uselessfreeloader": {
     "name": "Useless Freeloader",
     "tags": ["background"],
@@ -1745,6 +1778,39 @@
       "Subtextual plays"
     ],
     "ranks": ["Gets ITEM (table)."]
+  },
+  "xenorticulturalist": {
+    "name": "Xenorticulturalist",
+    "tags": ["votbo"],
+    "flavor": "",
+    "description": "Cultivates buds. Samples spores. Eats shoots and leaves. Evades contraband laws. Accidentally introduces invasive species.",
+    "ranks": [
+      "[+] vs the side effects of plants, herbs, and drugs. Automatically knows one property of any flora encountered.",
+      "Immune to the side effects of plants, herbs and, drugs. Automatically knows two properties of any flora encountered.",
+      "Automatically knows all properties of any flora encountered. Flora are nonhostile to the hero."
+    ]
+  },
+  "xenowrangler": {
+    "name": "Xeno Wrangler",
+    "tags": ["votbo"],
+    "flavor": "",
+    "description": "Wrassles shrieking monstrosities. Captures defiant alien samples. Survives higher-dimensional bites and stings.",
+    "ranks": [
+      "[+] to grappling alien creatures. Can choose to deal nonlethal damage with attacks against alien creatures.",
+      "[+] vs bites, stings, venoms, and poisons. [+] vs fear effects.",
+      "Can use an action to escape a grapple without a test. Can make a ba attack at +5 / 1d20 to subdue or scare off an alien creature."
+    ]
+  },
+  "zerogwarrior": {
+    "name": "Zero-G Warrior",
+    "tags": ["votbo"],
+    "flavor": "OBELISK, we have a problem...",
+    "description": "Radios to ground control. Eats food in creative ways. Patches vacsuits in record time. Performs acrobatic feats in strange gravities.",
+    "ranks": [
+      "Suffers no penalties from being in low-gravity or zero-gravity.",
+      "Can make minor repairs to armor as a free action. [+] to manouvres while in low-gravity or zero-gravity.",
+      "[+] to all tests while in low-gravity or zero-gravity."
+    ]
   },
   "zuerror": {
     "name": "Zu Error",

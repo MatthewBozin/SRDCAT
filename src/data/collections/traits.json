@@ -29,6 +29,16 @@
       "+2 agility or hero gains an additional action."
     ]
   },
+  "alwaysready": {
+    "name": "Always Ready",
+    "tags": ["votbo","trait"],
+    "flavor": "The first few seconds after entering the portal are the most critical.",
+    "ranks": [
+      "[+] to initiative rolls. 2-in-6 chance to not be surprised.",
+      "Gains an extra action in the first round of a combat.",
+      "Gains [+] to all rolls in the first round of a combat."
+    ]
+  },
   "anothermind": {
     "name": "Another Mind",
     "tags": ["mutation", "ka", "chimerism"],
@@ -181,6 +191,16 @@
       "Increase strength or endurance by 1. May use their strength or endurance stat for ka defences."
     ]
   },
+  "bornsurvivor": {
+    "name": "Born Survivor",
+    "tags": ["votbo","trait"],
+    "flavor": "",
+    "ranks": [
+      "If hero would be reduced to 0 life, instead they may spend a hero die and be reduced to 1 life instead.",
+      "[+] to death saves.",
+      "When the hero would die or become permanently lost, they miraculously appear at the end of the session on the brink of death, then remove this trait."
+    ]
+  },
   "bravelyrunsaway": {
     "name": "Bravely Runs Away",
     "tags": ["trait", "ba", "combat"],
@@ -220,6 +240,16 @@
       "Hero’s bare hands can flare with the element. They can’t throw it, but they can affect matter. Also, their unarmed attacks deal elemental damage damage.",
       "Elemental conduit grows. Unarmed elemental damage increases two steps (e.g. 1d3 to 1d6).",
       "Conduit grows. Damage increases two more steps (e.g. 1d6 to 1d12)."
+    ]
+  },
+  "choiceconsumer": {
+    "name": "Choice Consumer",
+    "tags": ["votbo","trait"],
+    "flavor": "",
+    "ranks": [
+      "When you use a consumable or supply, there is a 1-in-6 chance it's not consumed.",
+      "2-in-6 chance. [+] to tests when using a consumable.",
+      "3-in-6 chance. Consumable effects are doubled."
     ]
   },
   "chromaticavatar": {
@@ -262,6 +292,16 @@
       "When the hero sees a spell cast, they may make a moderate aura test to see if they grab an echo of the spell in their ego-matrix (inventory). They can cast each echo once. The spell price must still be paid.",
       "Spell echo prices are halved.",
       "It is now an easy test to capture spell echoes."
+    ]
+  },
+  "crawlspacer": {
+    "name": "Crawlspacer",
+    "tags": ["votbo","trait"],
+    "flavor": "Adapted to life on space-stations. Adept at functioning in tightly cramped environments.",
+    "ranks": [
+      "No penalties to tests for being in constricting environments.",
+      "Can flee from combats even in constricting environments. Can move through allies and enemies in combat.",
+      "[+] to tests in constricting environments."
     ]
   },
   "criticalmaster": {
@@ -323,6 +363,14 @@
       "Hero knows their doses. They don’t roll dice when healing with meds and potions or when applying poisons. Instead, they treat the maximum result as the number of charges. E.g., a med that normally restores 1d8 life always restores 8 life in the dosemaster's capable hands.",
       "Hero rolls an additional matching die, increasing the charges they can nurse out of a med dose.",
       "Hero can microdose poisons and meds, using them to provide resistance to similar poisons, vaccinating against diseases, and doubling the effects of potions."
+    ]
+  },
+  "doublemajor": {
+    "name": "Double Major",
+    "tags": ["votbo","trait"],
+    "flavor": "",
+    "ranks": [
+      "This trait can only be acquired through character generation. Choose a skill and replace this trait with it."
     ]
   },
   "eaterscurse": {
@@ -1007,6 +1055,14 @@
       "Gains [+] to balance competing claims and pass legal or moral judgements."
     ]
   },
+  "petowner": {
+    "name": "Pet Owner",
+    "tags": ["votbo", "trait", "ba"],
+    "flavor": "Bonded with a lovable companion.",
+    "ranks": [
+      "This trait can only be acquired through character generation. Remove this trait and gain a random pet."
+    ]
+  },
   "pheromonepanoply": {
     "name": "Pheromone Panoply",
     "tags": ["trait", "ha", "ba", "technological"],
@@ -1070,16 +1126,6 @@
       "Hero’s diamond-smooth skin resists slashing and piercing damage. Gains 1 ha defence."
     ]
   },
-  "protectorofinnocents": {
-    "name": "Protector of Innocents",
-    "tags": ["trait", "ba", "combat"],
-    "flavor": "Despite the gore, a noble cause.",
-    "ranks": [
-      "Hero gains [+] to attacks and tests when fighting to protect an unarmed or helpless innocent.",
-      "Once per turn hero can instantly redirect an attack from a nearby creature to themselves (this is not an action). Hero can redirect additional attacks at the cost of 1 life per attack. Word gets around. Downtrodden communities scrape together resources to help the hero.",
-      "[-] to all attacks and damage against the hero while defending an innocent."
-    ]
-  },
   "predatoryassimilator": {
     "name": "Predatory Assimilator",
     "tags": ["mutation", "ha"],
@@ -1088,6 +1134,16 @@
       "The hero heals by eating biomatter close to their basic body pattern. Recover 1 life for every stone of flesh consumed (an adult humanoid averages 10 stone). For humans: chimps and lemurs are good, pigs less so. In a healing-frenzy, they can ingest a stone of flesh per action.",
       "Recover 2 life for every stone or 1 stat for 5 stones.",
       "Recover 4 life for every stone or 1 stat for 2 stones. Remove 1 burden by consuming 10 stones and vomiting them out again (this does not restore life or stats)."
+    ]
+  },
+  "protectorofinnocents": {
+    "name": "Protector of Innocents",
+    "tags": ["trait", "ba", "combat"],
+    "flavor": "Despite the gore, a noble cause.",
+    "ranks": [
+      "Hero gains [+] to attacks and tests when fighting to protect an unarmed or helpless innocent.",
+      "Once per turn hero can instantly redirect an attack from a nearby creature to themselves (this is not an action). Hero can redirect additional attacks at the cost of 1 life per attack. Word gets around. Downtrodden communities scrape together resources to help the hero.",
+      "[-] to all attacks and damage against the hero while defending an innocent."
     ]
   },
   "proteaninfinity": {
@@ -1099,6 +1155,14 @@
       "Bones soften, while fluid organs develop and strengthen to provide stability.",
       "Bones dissolve entirely. Only sinew and cartilage support the now alien musculature. Staying vaguely bipedal is an effort. The face collapses and smears. Enclosing armour helps with mobility.",
       "Hero becomes a protean thing of strange organelles and fluid body plan."
+    ]
+  },
+  "protowizard": {
+    "name": "Proto-Wizard",
+    "tags": ["votbo","trait"],
+    "flavor": "",
+    "ranks": [
+      "This trait can only be acquired through character generation. Randomly select a spell and replace this trait with it."
     ]
   },
   "psionscion": {
@@ -1297,6 +1361,14 @@
       "The hero's unarmed attacks can deal 1d4 electric damage instead of 1d3 physical damage. Conducting materials extend attack range.",
       "Electric touch increases to 1d6 damage. Hero can spend a few hours to recharge dead batteries.",
       "Increases to 1d8 damage. In medical settings hero's touch gives [+] or [-]; restarting stopped hearts, improving muscle tone, reducing viral replication."
+    ]
+  },
+  "specialization": {
+    "name": "Specialization",
+    "tags": ["votbo","trait"],
+    "flavor": "",
+    "ranks": [
+      "This trait can only be acquired through character generation. Remove this trait and rank up a skill."
     ]
   },
   "spiritbreaker": {

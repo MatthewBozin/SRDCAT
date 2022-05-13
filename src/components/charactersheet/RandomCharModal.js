@@ -33,10 +33,12 @@ const RandomCharModal = () => {
     return false;
   };
 
-  const addCard = (collection, data, newchar) => {
+  const addCard = (collection, data, newchar, heroType) => {
     let selectionName;
     if (collection === "creatures") {
       selectionName = s(filter("tags", "creatures", "pet"));
+    } else if (heroType === "votbo") {
+      selectionName = s(filter("tags", collection, "votbo"));
     } else {
       selectionName = s(contextData[collection])
     }
@@ -110,7 +112,7 @@ const RandomCharModal = () => {
             let card = newchar[collection][r(newchar[collection].length - 1)];
             let cardObject = data[card.name];
             if (!cardObject.ranks || cardObject.ranks.length === 1) {
-              addCard(collection, data, newchar);
+              addCard(collection, data, newchar, heroType);
               break;
             }
             if (card.savedrank < cardObject.ranks.length - 1) {
@@ -123,12 +125,17 @@ const RandomCharModal = () => {
             i++;
           }
         } else {
-          addCard(collection, data, newchar);
+          addCard(collection, data, newchar, heroType);
         }
       }
     }
 
-    let weaponNames = filter("tags", "items", "offensive");
+    let weaponNames;
+    if (heroType === "votbo") {
+      weaponNames = filter("tags", "items", "offensive+votbo");
+    } else {
+      weaponNames = filter("tags", "items", "offensive");
+    }
     let weapon = { name: s(weaponNames), savedrank: 0, mods: [], statmods: {} };
     newchar.items.push(weapon);
 
