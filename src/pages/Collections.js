@@ -49,8 +49,8 @@ const Collections = () => {
   };
 
   return (
-    <div>
-      <div className="outerbox">
+    <div className="fullwidth">
+      <div className="outerbox fullwidth">
         <Navbar />
         <Search />
       </div>
