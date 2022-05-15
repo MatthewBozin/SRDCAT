@@ -231,7 +231,7 @@ hr {
 }
 
 .searchbutton {
-  min-width: 60px;
+  min-width: 40px;
 }
 
 .charsheet {
@@ -470,6 +470,10 @@ button:hover {
 
 .flexgrow3 {
   flex: 2 0 0;
+}
+
+.flexstart {
+  flex: start;
 }
 
 /*

@@ -103,7 +103,7 @@
       "CASH": 30000
     },
     "votbo": {
-      "name": "OBELISK Crewmember",
+      "name": "OBELISK Crew",
       "skills": 1,
       "traits": 1,
       "items": 0,
@@ -124,7 +124,7 @@
     }
   },
   "currentChar": {
-    "name": "Akres Sarsot",
+    "name": "Name",
     "str": 1,
     "end": 1,
     "agi": 1,

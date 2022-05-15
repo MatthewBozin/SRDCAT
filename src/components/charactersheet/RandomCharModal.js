@@ -168,7 +168,7 @@ const RandomCharModal = () => {
 
     //if (gear == "true") { give hero an item each marked "armor" or "clothes", "weapon" }
 
-    newchar.name = "Novelus Charactericus";
+    newchar.name = "Name";
     newchar.type = levels.name;
 
     setCharacter(newchar);

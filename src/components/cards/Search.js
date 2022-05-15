@@ -77,31 +77,31 @@ const Search = () => {
 
   return (
     <div className="row mleft5px fullwidth">
-      <div className="flex fullwidth">
-        <form onSubmit={submitSearch}>
+      <div className="fullwidth flex">
+        <form onSubmit={submitSearch} className="flex">
+          <input
+            id="searchbox"
+            className="button bordered link flexstart fontsize"
+            placeholder={defaultPlaceholder()}
+            type="text"
+            onChange={(e) => setData(e.target.value)}
+          />
           <button
-            className="button bordered link searchbutton"
+            className="button bordered link flexstart searchbutton"
             type="submit"
             value="Search"
           >
             <SearchIcon className="iconsvg scaledown80" />
           </button>
-          <input
-            id="searchbox"
-            className="button bordered link flexgrow2 pleft5px fontsize"
-            placeholder={defaultPlaceholder()}
-            type="text"
-            onChange={(e) => setData(e.target.value)}
-          />
         </form>
         <button
-          className="button bordered link searchbutton"
+          className="button bordered link flexstart searchbutton"
           onClick={resetSearch}
         >
           <b>C</b>
         </button>
         <button
-          className="button bordered link mright12px searchbutton"
+          className="button bordered link flexstart searchbutton"
           onClick={randomResult}
         >
           <b>R</b>
