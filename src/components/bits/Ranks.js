@@ -88,7 +88,7 @@ const Ranks = (props) => {
     }
   };
 
-  const ifRankType = (type) => {
+  const ifRankType = (type, i) => {
     if (type === "single") {
       return <span className="orangetext">Feature: </span>;
     } else if (props.category === "spells") {
@@ -96,6 +96,9 @@ const Ranks = (props) => {
         <span className="orangetext">Cost {props.ranks[index].power}: </span>
       );
     } else {
+      if (context.link !== "collections") {
+        return <span className="orangetext">Rank {i + 1}: </span>;
+      }
       return <span className="orangetext">Rank {index + 1}: </span>;
     }
   };
@@ -103,10 +106,25 @@ const Ranks = (props) => {
   return (
     <div>
       {rankButtons(props)}
-      <span className="padded5px">
-        {ifRankType(props.deleteFrom)}
-        {rankTable(rank)}
-      </span>
+      {context.link !== "collections" && props.category !== "spells" &&
+        <span>
+          {props.ranks.map((rank, i) => {
+            if (i > index) return;
+            return (
+              <div className="padded5px" key={i}>
+                {ifRankType(props.deleteFrom, i)}
+                {rankTable(rank)}
+              </div>
+            )
+          })}
+        </span>
+      }
+      {(context.link === "collections" || props.category === "spells") && 
+        <div className="padded5px" key={index}>
+          {ifRankType(props.deleteFrom)}
+          {rankTable(rank)}
+        </div>
+      }
     </div>
   );
 };

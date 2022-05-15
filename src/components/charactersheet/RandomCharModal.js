@@ -139,6 +139,15 @@ const RandomCharModal = () => {
     let weapon = { name: s(weaponNames), savedrank: 0, mods: [], statmods: {} };
     newchar.items.push(weapon);
 
+    let armorNames;
+    if (heroType === "votbo") {
+      armorNames = filter("tags", "items", "defensive+votbo");
+    } else {
+      armorNames = filter("tags", "items", "defensive");
+    }
+    let armor = { name: s(armorNames), savedrank: 0, mods: [], statmods: {} };
+    newchar.items.push(armor);
+
     for (let attribute of attributes) {
       newchar[attribute] = 0;
     }
