@@ -9,7 +9,7 @@ const HyperText = (props) => {
   return (
     <span>
       {split.map((text, index) => {
-        if (index % 2 === 0) return <span>{text}</span>;
+        if (index % 2 === 0) return <span key={index}>{text}</span>;
         let data = text.split(`.`);
         const cards = require(`../../data/collections/` + data[0]);
         let display = cards[data[1]].name;

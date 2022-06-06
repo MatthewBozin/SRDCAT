@@ -11,6 +11,8 @@ const AddSubtract = (props) => {
   const [character, setCharacter] = useContext(Character);
   const [worldState, setWorldState] = useContext(WorldState);
   let cards = require(`../../data/collections/` + props.category);
+  console.log(props.context);
+  console.log(context.persona);
 
   const gate = () => {
     if (props.context === "character") {

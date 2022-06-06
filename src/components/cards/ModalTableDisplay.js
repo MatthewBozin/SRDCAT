@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import { toggle } from "../../utils/exports.js";
 import ModalCardDisplay from "./ModalCardDisplay.js";
 import { ReactComponent as List} from "../../data/icons/list.svg";
+import HyperText from "../bits/HyperText.js";
 
 function ModalTableDisplay(props) {
   const [tableModalOpen, setTableModalOpen] = useState(false);
@@ -38,7 +39,7 @@ function ModalTableDisplay(props) {
             }
             return (
               <div key={index}>
-                {index + 1}. {entry}
+                {index + 1}. {<HyperText text={entry} />}
               </div>
             );
           })}

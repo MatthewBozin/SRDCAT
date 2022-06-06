@@ -10,7 +10,7 @@ const StatSheet = () => {
       <Attributes />
       <Defenses />
       <Resources />
-      <Stats />
+      <Stats stats={["level", "PRO", "MCOST"]} name={"STATS"} />
     </div>
   );
 };

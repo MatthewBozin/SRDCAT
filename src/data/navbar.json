@@ -37,7 +37,8 @@
   "navletsTC": [
     { "name": "environments", "display": "Environments" },
     { "name": "scenes", "display": "Scenes" },
-    { "name": "props", "display": "Props" }
+    { "name": "props", "display": "Props" },
+    { "name": "creatures", "display": "Creatures" }
   ],
   "navletCheckPC": ["skills", "traits", "spells", "items", "creatures"],
   "navletCheckTC": ["environments", "scenes", "props"]

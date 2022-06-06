@@ -13,7 +13,7 @@ function ModalLifeEdit(props) {
   if (context.persona === "PC") {
     baseCreature = character.creatures[props.placement]
   } else if (context.persona === "TC") {
-    baseCreature = worldState.scene.creatures[props.placement]
+    baseCreature = worldState.creatures[props.placement]
   }
 
   const [data, setData] = useState(
@@ -35,7 +35,7 @@ function ModalLifeEdit(props) {
       setCharacter(JSON.parse(JSON.stringify(newchar)));
     } else if (context.persona === "TC") {
       let newWorldState = worldState;
-      worldState.scene.creatures[props.placement].lifecurrent += parseInt(amount);
+      worldState.creatures[props.placement].lifecurrent += parseInt(amount);
       setWorldState(JSON.parse(JSON.stringify(newWorldState)));
     }
   };

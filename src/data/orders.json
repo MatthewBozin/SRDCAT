@@ -1,5 +1,12 @@
 {
-  "props": ["stalagmite", "bloodbasin", "heavymetaldoor", "foolsgold"],
+  "zones": ["seacave"],
+  "props": [
+    "stalagmite", 
+    "bloodbasin", 
+    "heavymetaldoor", 
+    "foolsgold", 
+    "microbiomebubble"
+  ],
   "scenes": [
     "astraljourney",
     "astralrevelation",
@@ -9,7 +16,7 @@
     "spottingthetreasure",
     "test"
   ],
-  "environments": ["lowroadandhigh", "steppeofthelimenomads", "harmonium"],
+  "environments": ["tidepools"],
   "creatures": [
     "acephalothere",
     "airpig",

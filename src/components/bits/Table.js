@@ -4,6 +4,7 @@ import { ReactComponent as D20} from "../../data/icons/d20.svg";
 import Character from "../../data/character.js";
 import ModalCardDisplay from "../cards/ModalCardDisplay.js";
 import ModalTableDisplay from "../cards/ModalTableDisplay.js";
+import HyperText from "./HyperText";
 
 const Table = (props) => {
   let placement = r(props.table.length);
@@ -49,7 +50,7 @@ const Table = (props) => {
           <D20 className="button iconsvg" />
         </button>
         <ModalTableDisplay table={props.table}></ModalTableDisplay>
-        <span>{entry}</span>
+        <HyperText text={entry} />
       </span>
     );
 };

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import Name from "../bits/Name";
 import Tag from "../bits/Tag";
+import Flavor from "../bits/Flavor";
 import Description from "../bits/Description";
 import AddSubtract from "../bits/AddSubtract";
 import Context from "../../data/context";
@@ -67,6 +68,11 @@ const Card = (props) => {
             {card.tags.map((tag, index) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
+            {card.flavor !== undefined && (
+              <div>
+                <Flavor flavor={card.flavor} />
+              </div>
+            )}
             {card.description !== undefined && (
               <div>
                 <Description description={card.description} />

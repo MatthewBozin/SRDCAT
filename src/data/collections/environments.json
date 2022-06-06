@@ -1,9 +1,12 @@
 {
-  "lowroadandhigh": {
-    "name": "The Low Road and the High",
-    "tags": ["environment", "uvg"],
-    "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
-    "description": "Description stuff.",
+  "tidepools": {
+    "name": "Tide Pools",
+    "tags": ["voyager"],
+    "flavor": "flavor text",
+    "description": "description text",
+    "conditions": [
+      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
+    ],
     "denizens": [
       { "name": "airpig", "display": "Airpig", "category": "creatures" },
       {
@@ -12,79 +15,16 @@
         "category": "creatures"
       }
     ],
-    "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
-    "gains": [
-      {
-        "name": "anothermind",
-        "display": "Another Mind",
-        "category": "traits"
-      },
-      "star fungus"
+    "encounters": [
+      {}
     ],
-    "zones": ["pylonshrine"],
-    "connections": [
-      {
-        "direction": "North",
-        "destination": {
-          "name": "steppeofthelimenomads",
-          "display": "Steppe of the Lime Nomads",
-          "category": "environments"
-        },
-        "description": "Harsh lands, forbidding to travelers, dotted with odd remnants of the 'Best-Forgotten' ages.",
-        "time": 7
-      }
-    ]
-  },
-  "steppeofthelimenomads": {
-    "name": "Steppe of the Lime Nomads",
-    "tags": ["environment", "uvg"],
-    "flavor": "The cratered viaduct of the High Road runs on crumbling pylons of dying dryland coral across the pallid grasses. Beneath the half-passable testament to the follies of the Long-Long-Ago, the Low Road winds, smeared threads of soil and loam and oil and blood ground into a hard surface by the pounding feet, hooves, wheels, and treads of pilgrims, nomads, caravans, and vechs.",
-    "description": "Description stuff.",
-    "denizens": [
-      { "name": "airpig", "display": "Airpig", "category": "creatures" },
-      {
-        "name": "amphibiousgoldfish",
-        "display": "Amphibious Goldfish",
-        "category": "creatures"
-      }
+    "events": [
+      "A [props.obstacle] stands in your path.", 
+      "Item gets wet.", 
+      "1d3 supplies stolen by seagull.", 
+      "The tide rises: +1 disruption.", 
+      "A glimmer in the distance: +1 knowledge."
     ],
-    "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
-    "gains": [
-      {
-        "name": "anothermind",
-        "display": "Another Mind",
-        "category": "traits"
-      },
-      "star fungus"
-    ],
-    "zones": ["pylonshrine"],
-    "connections": [
-      {
-        "direction": "South",
-        "destination": {
-          "name": "lowroadandhigh",
-          "display": "The Low Road and the High",
-          "category": "environments"
-        },
-        "description": "Crumbling pylons of dryland coral tower above the pitted modern road.",
-        "time": 7
-      }
-    ]
-  },
-  "harmonium": {
-    "name": "Harmonium",
-    "tags": ["environment", "votbo"],
-    "flavor": "ONLY PERFECT AND CONSTANT APPLICATION OF THE HARMONY CAN KEEP THE DREAMER/ORACLE/HEIR ASLEEP",
-    "description": "A world of platonic planes, fragile metalworks and resonant glass. The Bell of Slumber awaits high above, and the Bell of Awakening lurks deep below. Stop the Bell of Slumber and ring the Bell of Awakening, and the Dreamer shall awaken once more.",
-    "denizens": [
-      { "name": "airpig", "display": "Airpig", "category": "creatures" },
-      {
-        "name": "amphibiousgoldfish",
-        "display": "Amphibious Goldfish",
-        "category": "creatures"
-      }
-    ],
-    "events": ["spores poison 1 sack of supplies", "bitten by scorpion spider"],
     "gains": [
       { "name": "utilityaxe", "display": "Utility Axe", "category": "items" },
       { "name": "foolsgold", "display": "Fool's Gold", "category": "props" },

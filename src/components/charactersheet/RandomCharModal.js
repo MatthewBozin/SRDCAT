@@ -48,6 +48,9 @@ const RandomCharModal = () => {
       selectionObject.mods = [];
       selectionObject.statmods = {};
     }
+    if (collection === "creatures") {
+      selectionObject.lifecurrent = selection.life;
+    }
     if (selection.table !== undefined) {
       selectionObject.savedresult = r(selection.table.length);
     }

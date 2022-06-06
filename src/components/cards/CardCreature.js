@@ -35,7 +35,9 @@ const CardCreature = (props) => {
 
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
-  if (props.context === "character") {
+  console.log(context);
+
+  if (context.persona === "PC" && context.link === "sheet") {
     let base = character.creatures[props.placement];
     for (let mod of base.mods) {
       card.properties.push(mod);
@@ -90,7 +92,7 @@ const CardCreature = (props) => {
               />
               </span>
             )}
-            {(props.context === "character" || props.context === "collections") && (
+            {!props.display && (
               <AddSubtract
                 context={"character"}
                 card={props.card}
@@ -127,12 +129,12 @@ const CardCreature = (props) => {
             <hr />
             <div>
               Level: {card.level} 
-              {context.link !== "collections" && (
+              {context.link !== "collections" && !props.display && (
                 <span>
                   {" "}|{" "}<ModalLifeEdit placement={props.placement} life={card.life} />
                 </span>
               )}
-              {context.link === "collections" && <span> | Life: {card.life}</span>}
+              {(context.link === "collections" || props.display) && <span> | Life: {card.life}</span>}
               {card.value && <span> | Value: {card.value}</span>}
               {card.carry && <span> | Carry: {card.carry} sacks</span>}
             </div>

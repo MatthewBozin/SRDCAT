@@ -2,22 +2,32 @@ import { React, useState, useContext } from "react";
 import Stat from "./Stat";
 import Modal from "react-bootstrap/Modal";
 import Character from "../../data/character.js";
+import Worldstate from "../../data/worldstate.js";
 import architecture from "../../data/architecture.json";
+import Context from "../../data/context.js";
 
-const Resources = () => {
+const Stats = (props) => {
+  const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
+  const [worldState, setWorldState] = useContext(Worldstate);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalStat, setModalStat] = useState("");
   const [data, setData] = useState(character[modalStat]);
   const [setButton, setSetButton] = useState(false);
 
   const statMasks = architecture.statMasks;
-  const stats = ["level", "PRO", "MCOST"];
+  const stats = props.stats;
   const amounts = [
     [1, 5, 10],
     [-1, -5, -10],
     ["+1", "+5", "+10"],
   ];
+
+  const add = (original, stat, amount, method) => {
+    let New = original;
+    New[stat] += parseInt(amount);
+    method(JSON.parse(JSON.stringify(New)));
+  }
 
   const modalOpenStat = (stat) => {
     setModalOpen(true);
@@ -28,31 +38,25 @@ const Resources = () => {
     setModalOpen(false);
   };
 
-  const modResource = (amount, resource) => {
-    //character[resource] += parseInt(amount);
-    //setCurrentResource(character[resource]);
-    let newChar = character;
-    newChar[resource] += parseInt(amount);
-    setCharacter(JSON.parse(JSON.stringify(newChar)));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let id = "modalform" + character[modalStat];
     document.getElementById(id).value = "";
     if (data !== undefined) {
-      //character[modalStat] = parseInt(data);
-      //setCurrentResource(character[modalStat]);
-      let newChar = character;
-      newChar[modalStat] += parseInt(data);
-      setCharacter(JSON.parse(JSON.stringify(newChar)));
+      if (context.persona === "PC") {add(character, modalStat, data, setCharacter)}
+      if (context.persona === "TC") {add(worldState, modalStat, data, setWorldState)}
     }
     setSetButton(false);
   };
 
+  const placeholder = () => {
+    if (context.persona === "PC") return character[modalStat];
+      if (context.persona === "TC") return worldState[modalStat];
+  }
+
   return (
     <div className="outerbox">
-      <div className="row mleft5px">STATS</div>
+      <div className="row mleft5px">{props.name}</div>
       <div className="padded5px mleft5px flex">
         {stats.map((stat, index) => {
           return (
@@ -76,7 +80,7 @@ const Resources = () => {
                 </span>
                 <input
                   className="padded5px button clearborder flexgrow2 lefttoright"
-                  placeholder={character[modalStat]}
+                  placeholder={placeholder()}
                   type="text"
                   onClick={() => {
                     setSetButton(true);
@@ -84,7 +88,7 @@ const Resources = () => {
                   onChange={(e) => {
                     setData(e.target.value);
                   }}
-                  id={"modalform" + character[modalStat]}
+                  id={"modalform" + placeholder()}
                 />
               </div>
               {setButton === true && (
@@ -103,7 +107,8 @@ const Resources = () => {
                     className="button bordered padded5px margin5px flexgrow"
                     key={index}
                     onClick={() => {
-                      modResource(amount, modalStat);
+                      if (context.persona === "PC") {add(character, modalStat, amount, setCharacter)}
+                      if (context.persona === "TC") {add(worldState, modalStat, amount, setWorldState)}
                     }}
                   >
                     {amounts[2][index]}
@@ -118,7 +123,8 @@ const Resources = () => {
                     className="button bordered padded5px margin5px flexgrow"
                     key={index}
                     onClick={() => {
-                      modResource(amount, modalStat);
+                      if (context.persona === "PC") {add(character, modalStat, amount, setCharacter)}
+                      if (context.persona === "TC") {add(worldState, modalStat, amount, setWorldState)}
                     }}
                   >
                     {amounts[1][index]}
@@ -133,4 +139,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default Stats;

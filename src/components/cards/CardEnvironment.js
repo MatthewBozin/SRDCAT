@@ -4,6 +4,7 @@ import Tag from "../bits/Tag";
 import Flavor from "../bits/Flavor";
 import Description from "../bits/Description";
 import AddSubtract from "../bits/AddSubtract";
+import NameValuePair from "../bits/NameValuePair";
 import Context from "../../data/context";
 import Table from "../bits/Table";
 import ModalConnection from "./ModalConnection";
@@ -25,7 +26,6 @@ const Card = (props) => {
   const expandCollapse = (status) => {
     setExpanded(!status);
   };
-
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   let savedresult = undefined;
@@ -80,7 +80,15 @@ const Card = (props) => {
               <Description description={card.description} />
             )}
             <hr></hr>
-            {card.denizens !== undefined && (
+            {card.conditions !== undefined && (
+              <div>
+                {card.conditions.map((condition, index) => {
+                  return <NameValuePair name={condition.name} value={condition.description} key={index} />;
+                })}
+                <hr></hr>
+              </div>
+            )}
+            {/* {card.denizens !== undefined && (
               <div>
                 Denizens:{" "}
                 <Table
@@ -90,7 +98,7 @@ const Card = (props) => {
                   category={props.category}
                 />
               </div>
-            )}
+            )} */}
             {card.events !== undefined && (
               <div>
                 Events:{" "}
@@ -102,7 +110,7 @@ const Card = (props) => {
                 />
               </div>
             )}
-            {card.gains !== undefined && (
+            {/* {card.gains !== undefined && (
               <div>
                 Gains:{" "}
                 <Table
@@ -112,7 +120,7 @@ const Card = (props) => {
                   category={props.category}
                 />
               </div>
-            )}
+            )} */}
             {card.zones !== undefined && (
               <div>
                 Zones:{" "}

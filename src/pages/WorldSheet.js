@@ -5,10 +5,12 @@ import SlotName from "../components/charactersheet/SlotName";
 import SaveModal from "../components/charactersheet/SaveModal";
 import ExportModal from "../components/charactersheet/ExportModal";
 import CardEnvironment from "../components/cards/CardEnvironment";
-import CardScene from "../components/cards/CardScene";
-import Scene from "../components/worldsheet/Scene.js";
+//import CardScene from "../components/cards/CardScene";
+//import Scene from "../components/worldsheet/Scene.js";
+import Stats from "../components/charactersheet/Stats";
+import CardList from "../components/cards/CardList.js";
 
-const HeroSheet = () => {
+const WorldSheet = () => {
   const [context, setContext] = useContext(Context);
   const [worldState, setWorldState] = useContext(WorldState);
   if (worldState.environments.length > 0) {
@@ -47,7 +49,7 @@ const HeroSheet = () => {
         <SlotName context={"worldstate"} />
       </div>
       <div className="outerbox limitwidth">
-        <div>Currently at:</div>
+        <div>Current Environment:</div>
         <CardEnvironment
           context={context}
           key={0}
@@ -73,21 +75,19 @@ const HeroSheet = () => {
           Change Environment
         </div>
       </div>
-      <div className="outerbox limitwidth">
+      {/* <div className="outerbox limitwidth">
         {typeof worldState.scene === "string" && (
           <div>
-            <div className="outerbox limitwidth">
-              <div>Current Scene:</div>
-              <CardScene
-                context={context}
-                key={0}
-                card={{ name: worldState.scene }}
-                form={"minus"}
-                placement={0}
-                deleteFrom={"scenes"}
-                category={"scenes"}
-              />
-            </div>
+            <div>Current Scene:</div>
+            <CardScene
+              context={context}
+              key={0}
+              card={{ name: worldState.scene }}
+              form={"minus"}
+              placement={0}
+              deleteFrom={"scenes"}
+              category={"scenes"}
+            />
             <div
               onClick={() =>
                 setContext(() => {
@@ -106,11 +106,29 @@ const HeroSheet = () => {
           </div>
         )}
         {worldState.scene && (
-            <Scene></Scene>
+            <Scene />
         )}
+      </div> */}
+      <div className="outerbox">
+        <div className="row mleft5px fullwidth">
+          <span>
+            <div className="row mleft5px button">
+              ENCOUNTER
+            </div>
+          </span>
+        </div>
+        <CardList
+          context={"worldstate"}
+          content={worldState.creatures}
+          form={"minus"}
+          deleteFrom={"creatures"}
+          category={"creatures"}
+          mode={"worldstate"}
+        />
       </div>
+      <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
     </div>
   );
 };
 
-export default HeroSheet;
+export default WorldSheet;

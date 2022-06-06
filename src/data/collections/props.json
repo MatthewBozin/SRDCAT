@@ -1,7 +1,7 @@
 {
   "stalagmite": {
     "name": "Stalagmite",
-    "tags": ["obstacle", "underground"],
+    "tags": ["terrain", "underground"],
     "description": "Found in caves.",
     "properties": [
       {
@@ -95,6 +95,40 @@
           {
             "name": "Add to meal",
             "description": "Adds the *modifiers.foolsluck* modifier."
+          }
+        ]
+      }
+    ]
+  },
+  "microbiomebubble": {
+    "name": "Microbiome Bubble",
+    "tags": ["curio"],
+    "flavor": "A small gelatinous sphere floats in the waves. Tiny plants and creatures swirl within.",
+    "description": "A tiny ecosystem contained in a gelatinous, self-sustaining bubble. It looks like you could add or take something from this balanced system.",
+    "actions": [
+      {
+        "name": "Add Something",
+        "options": [
+          {
+            "name": "Add some Supplies",
+            "description": "-1d3 supply."
+          },
+          {
+            "name": "Add some Blood",
+            "description": "-1d6 life."
+          }
+        ]
+      },
+      {
+        "name": "Take Something",
+        "options": [
+          {
+            "name": "Take a Sample",
+            "description": "Easy AGI or THO test: gain 1 knowledge."
+          },
+          {
+            "name": "Take it All",
+            "description": "+1d3 disruption."
           }
         ]
       }

@@ -132,7 +132,7 @@ const CardList = (props) => {
       {props.deleteFrom !== "none" && (
         <div>
           {props.content.map((card, index) => {
-            if (props.mode === "character") return ifCard(card, index);
+            if (props.mode === "character" || props.mode === "worldstate") return ifCard(card, index);
             if (index >= props.context.page * 30 && index < (props.context.page + 1) * 30) {
               return ifCard(card, index);
             }
@@ -143,7 +143,7 @@ const CardList = (props) => {
       {props.deleteFrom === "none" && (
         <Col>
           {props.content.map((card, index) => {
-            if (props.mode === "character") return ifCard(card, index);
+            if (props.mode === "character" || props.mode === "worldstate") return ifCard(card, index);
             if (index >= props.context.page * 30 && index < (props.context.page + 1) * 30) {
               return ifCard(card, index);
             }

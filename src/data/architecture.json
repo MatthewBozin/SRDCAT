@@ -152,13 +152,16 @@
   },
   "currentWorld": {
     "name": "My Session",
-    "environment": "lowroadandhigh",
+    "supply": 25,
+    "disruption": 0,
+    "knowledge": 0,
+    "environment": "tidepools",
     "environments": [],
     "scene": "test",
     "scenes": [],
     "props": [],
     "items": [],
-    "creatures": []
+    "creatures": [{"name":"airpig","savedrank":0,"lifecurrent":6,"mods":[],"statmods":{}}]
   },
   "charTypes": [
     {
@@ -255,6 +258,9 @@
     "CASH": "Cash",
     "level": "Level",
     "PRO": "Pro",
-    "MCOST": "Magic Cost"
+    "MCOST": "Magic Cost",
+    "supply": "Supply",
+    "disruption": "Disruption",
+    "knowledge": "Knowledge"
   }
 }

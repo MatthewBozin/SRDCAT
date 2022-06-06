@@ -63,6 +63,7 @@ function ModalCardDisplay(props) {
           deleteFrom={deleteFrom}
           category={category}
           expanded={true}
+          display={true}
         />
       );
     }
