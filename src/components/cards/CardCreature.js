@@ -35,8 +35,6 @@ const CardCreature = (props) => {
 
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
-  console.log(context);
-
   if (context.persona === "PC" && context.link === "sheet") {
     let base = character.creatures[props.placement];
     for (let mod of base.mods) {

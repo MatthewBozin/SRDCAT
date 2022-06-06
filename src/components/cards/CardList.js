@@ -30,7 +30,6 @@ const CardList = (props) => {
     if (props.category === "items") {
       return (
         <CardItem
-          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -43,7 +42,6 @@ const CardList = (props) => {
     if (props.category === "spells") {
       return (
         <CardSpell
-          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -56,7 +54,6 @@ const CardList = (props) => {
     if (props.category === "creatures") {
       return (
         <CardCreature
-          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -69,7 +66,6 @@ const CardList = (props) => {
     if (props.category === "environments") {
       return (
         <CardEnvironment
-          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -82,7 +78,6 @@ const CardList = (props) => {
     if (props.category === "scenes") {
       return (
         <CardScene
-          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -95,7 +90,6 @@ const CardList = (props) => {
     if (props.category === "props") {
       return (
         <CardProp
-          context={props.mode}
           key={placement}
           card={cardObject}
           form={props.form}
@@ -107,7 +101,6 @@ const CardList = (props) => {
     }
     return (
       <Card
-        context={props.mode}
         key={placement}
         card={cardObject}
         form={props.form}

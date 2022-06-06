@@ -34,7 +34,7 @@ const CardItem = (props) => {
 
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
-  if (props.context === "character") {
+  if (context.persona === "PC" && context.link === "sheet") {
     let base = character.items[props.placement];
     for (let mod of base.mods) {
       card.properties.push(mod);
@@ -166,7 +166,7 @@ const CardItem = (props) => {
               />
               </span>
             )}
-            {props.context !== "worldstate" && (
+            {context.persona === "PC" && (
               <AddSubtract
                 context={"character"}
                 card={props.card}
@@ -177,7 +177,7 @@ const CardItem = (props) => {
               />
             )}
 
-            {props.context !== "character" && (
+            {context.persona === "TC" && (
               <AddSubtract
                 context={"worldstate"}
                 card={props.card}
