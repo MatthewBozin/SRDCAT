@@ -37,8 +37,8 @@ const RandomCharModal = () => {
     let selectionName;
     if (collection === "creatures") {
       selectionName = s(filter("tags", "creatures", "pet"));
-    } else if (heroType === "votbo") {
-      selectionName = s(filter("tags", collection, "votbo"));
+    } else if (heroType === "voyager") {
+      selectionName = s(filter("tags", collection, "voyager"));
     } else {
       selectionName = s(contextData[collection])
     }
@@ -134,8 +134,8 @@ const RandomCharModal = () => {
     }
 
     let weaponNames;
-    if (heroType === "votbo") {
-      weaponNames = filter("tags", "items", "offensive+votbo");
+    if (heroType === "voyager") {
+      weaponNames = filter("tags", "items", "offensive+voyager");
     } else {
       weaponNames = filter("tags", "items", "offensive");
     }
@@ -143,8 +143,8 @@ const RandomCharModal = () => {
     newchar.items.push(weapon);
 
     let armorNames;
-    if (heroType === "votbo") {
-      armorNames = filter("tags", "items", "defensive+votbo");
+    if (heroType === "voyager") {
+      armorNames = filter("tags", "items", "defensive+voyager");
     } else {
       armorNames = filter("tags", "items", "defensive");
     }

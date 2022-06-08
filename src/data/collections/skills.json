@@ -651,7 +651,7 @@
   },
   "offworldengineer": {
     "name": "Offworld Engineer",
-    "tags": ["votbo"],
+    "tags": ["voyager"],
     "flavor": "",
     "description": "Patches suits. Oils joints. Persuades golems. Curses like a sailor.",
     "ranks": [
@@ -991,7 +991,7 @@
   },
   "psionicinitiate": {
     "name": "Psionic Initiate",
-    "tags": ["votbo"],
+    "tags": ["voyager"],
     "flavor": "",
     "description": "Detects malign interferences. Surveys the astral plane. Debates the healing properties of crystals.",
     "ranks": [
@@ -1536,7 +1536,7 @@
   },
   "traumadoc": {
     "name": "Trauma Doc",
-    "tags": ["votbo"],
+    "tags": ["voyager"],
     "flavor": "",
     "description": "Staunches bleeding. Applies hyperchemical medicines. Saves lives on alien worlds.",
     "ranks": [
@@ -1781,7 +1781,7 @@
   },
   "xenorticulturalist": {
     "name": "Xenorticulturalist",
-    "tags": ["votbo"],
+    "tags": ["voyager"],
     "flavor": "",
     "description": "Cultivates buds. Samples spores. Eats shoots and leaves. Evades contraband laws. Accidentally introduces invasive species.",
     "ranks": [
@@ -1792,7 +1792,7 @@
   },
   "xenowrangler": {
     "name": "Xeno Wrangler",
-    "tags": ["votbo"],
+    "tags": ["voyager"],
     "flavor": "",
     "description": "Wrassles shrieking monstrosities. Captures defiant alien samples. Survives higher-dimensional bites and stings.",
     "ranks": [
@@ -1803,7 +1803,7 @@
   },
   "zerogwarrior": {
     "name": "Zero-G Warrior",
-    "tags": ["votbo"],
+    "tags": ["voyager"],
     "flavor": "OBELISK, we have a problem...",
     "description": "Radios to ground control. Eats food in creative ways. Patches vacsuits in record time. Performs acrobatic feats in strange gravities.",
     "ranks": [

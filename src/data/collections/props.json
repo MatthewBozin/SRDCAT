@@ -102,7 +102,7 @@
   },
   "microbiomebubble": {
     "name": "Microbiome Bubble",
-    "tags": ["curio"],
+    "tags": ["curio", "voyager"],
     "flavor": "A small gelatinous sphere floats in the waves. Tiny plants and creatures swirl within.",
     "description": "A tiny ecosystem contained in a gelatinous, self-sustaining bubble. It looks like you could add or take something from this balanced system.",
     "actions": [

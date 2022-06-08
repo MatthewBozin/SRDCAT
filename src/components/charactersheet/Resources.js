@@ -118,7 +118,6 @@ const Resources = () => {
   };
 
   const addTo = () => {
-    console.log("aaa");
     if (typeof parseInt(add) === "number") {
       let newchar = character;
       newchar[modalStat] += parseInt(add);

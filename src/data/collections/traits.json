@@ -31,7 +31,7 @@
   },
   "alwaysready": {
     "name": "Always Ready",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "The first few seconds after entering the portal are the most critical.",
     "ranks": [
       "[+] to initiative rolls. 2-in-6 chance to not be surprised.",
@@ -193,7 +193,7 @@
   },
   "bornsurvivor": {
     "name": "Born Survivor",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "",
     "ranks": [
       "If hero would be reduced to 0 life, instead they may spend a hero die and be reduced to 1 life instead.",
@@ -244,7 +244,7 @@
   },
   "choiceconsumer": {
     "name": "Choice Consumer",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "",
     "ranks": [
       "When you use a consumable or supply, there is a 1-in-6 chance it's not consumed.",
@@ -296,7 +296,7 @@
   },
   "crawlspacer": {
     "name": "Crawlspacer",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "Adapted to life on space-stations. Adept at functioning in tightly cramped environments.",
     "ranks": [
       "No penalties to tests for being in constricting environments.",
@@ -367,7 +367,7 @@
   },
   "doublemajor": {
     "name": "Double Major",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "",
     "ranks": [
       "This trait can only be acquired through character generation. Choose a skill and replace this trait with it."
@@ -1057,7 +1057,7 @@
   },
   "petowner": {
     "name": "Pet Owner",
-    "tags": ["votbo", "trait", "ba"],
+    "tags": ["voyager", "trait", "ba"],
     "flavor": "Bonded with a lovable companion.",
     "ranks": [
       "This trait can only be acquired through character generation. Remove this trait and gain a random pet."
@@ -1159,7 +1159,7 @@
   },
   "protowizard": {
     "name": "Proto-Wizard",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "",
     "ranks": [
       "This trait can only be acquired through character generation. Randomly select a spell and replace this trait with it."
@@ -1365,7 +1365,7 @@
   },
   "specialization": {
     "name": "Specialization",
-    "tags": ["votbo","trait"],
+    "tags": ["voyager","trait"],
     "flavor": "",
     "ranks": [
       "This trait can only be acquired through character generation. Remove this trait and rank up a skill."

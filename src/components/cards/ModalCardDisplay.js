@@ -80,6 +80,19 @@ function ModalCardDisplay(props) {
         />
       );
     }
+    if (category === "zones") {
+      return (
+        <CardEnvironment
+          key={placement}
+          card={cardObject}
+          form={form}
+          placement={placement}
+          deleteFrom={deleteFrom}
+          category={category}
+          expanded={true}
+        />
+      );
+    }
     if (category === "scenes") {
       return (
         <CardScene

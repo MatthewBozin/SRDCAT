@@ -27,6 +27,13 @@ function ModalTableDisplay(props) {
       >
         <Modal.Body className="modalbackground">
           {table.map((entry, index) => {
+            if (props.mode === "encounter") {
+              return (
+                <div key={index}>
+                  {index + 1}. {<HyperText text={entry.description} />}
+                </div>
+              );
+            }
             if (typeof entry === "object") {
               //return card display modal
               //and return index button thing (use creature attack)

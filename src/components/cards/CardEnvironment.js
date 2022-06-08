@@ -8,8 +8,12 @@ import NameValuePair from "../bits/NameValuePair";
 import Context from "../../data/context";
 import Table from "../bits/Table";
 import ModalConnection from "./ModalConnection";
+import WorldState from "../../data/worldstate";
 
 const Card = (props) => {
+
+  const [worldState, setWorldState] = useContext(WorldState);
+
   let ifExpanded = false;
   if (props.expanded) {
     ifExpanded = props.expanded;
@@ -39,6 +43,28 @@ const Card = (props) => {
     }
     return "fullwidth mright15px";
   };
+  const loadEncounter = (creatures) => {
+    let newWorldState = worldState;
+    let cards = require(`../../data/collections/creatures`);
+    newWorldState.creatures = [];
+    for (let creature of creatures) {
+      newWorldState.creatures.push({name: creature, lifecurrent: cards[creature].life, mods: [], statmods: {}})
+    }
+    setWorldState(JSON.parse(JSON.stringify(newWorldState)));
+  }
+
+  const loadZone = (zone) => {
+    let newWorldState = worldState;
+    newWorldState.zone = zone.name;
+    setWorldState(JSON.parse(JSON.stringify(newWorldState)));
+  }
+
+  const loadProp = (prop) => {
+    let newWorldState = worldState;
+    newWorldState.props = [];
+    newWorldState.props.push({name: prop.name})
+    setWorldState(JSON.parse(JSON.stringify(newWorldState)));
+  }
 
   return (
     <div className={noBreakpointsIfHeroSheet()}>
@@ -101,12 +127,26 @@ const Card = (props) => {
             )} */}
             {card.events !== undefined && (
               <div>
-                Events:{" "}
+                Event:{" "}
                 <Table
                   table={card.events}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
+                  disruption={worldState.disruption}
+                />
+              </div>
+            )}
+            {card.encounters !== undefined && (
+              <div>
+                Encounter:{" "}
+                <Table
+                  table={card.encounters}
+                  savedresult={savedresult}
+                  placement={props.placement}
+                  category={props.category}
+                  method={loadEncounter}
+                  type={"encounter"}
                 />
               </div>
             )}
@@ -123,12 +163,27 @@ const Card = (props) => {
             )} */}
             {card.zones !== undefined && (
               <div>
-                Zones:{" "}
+                Zone:{" "}
                 <Table
                   table={card.zones}
                   savedresult={savedresult}
                   placement={props.placement}
                   category={props.category}
+                  method={loadZone}
+                  type={"zone"}
+                />
+              </div>
+            )}
+            {card.props !== undefined && (
+              <div>
+                Prop:{" "}
+                <Table
+                  table={card.props}
+                  savedresult={savedresult}
+                  placement={props.placement}
+                  category={props.category}
+                  method={loadProp}
+                  type={"prop"}
                 />
               </div>
             )}

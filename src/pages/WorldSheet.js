@@ -38,7 +38,7 @@ const WorldSheet = () => {
     //space to record notes? (build off of name/search input)
     //has collection boxes like hero sheet
   }
-
+  
   return (
     <div className="charsheet">
       <div className="outerbox limitwidth">
@@ -48,8 +48,22 @@ const WorldSheet = () => {
         </span>
         <SlotName context={"worldstate"} />
       </div>
+      <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
       <div className="outerbox limitwidth">
-        <div>Current Environment:</div>
+        <span>
+          <div className="mleft5px button" 
+            onClick={() =>
+              setContext(() => {
+                let newcontext = context;
+                newcontext.collections = "environments";
+                newcontext.link = "collections";
+                let final = JSON.parse(JSON.stringify(newcontext));
+                return final;
+              })
+            }>
+            ENVIRONMENT
+          </div>
+        </span>
         <CardEnvironment
           context={context}
           key={0}
@@ -59,21 +73,30 @@ const WorldSheet = () => {
           deleteFrom={"environments"}
           category={"environments"}
         />
-        <div
-          onClick={() =>
-            setContext(() => {
-              let newcontext = context;
-              newcontext.collections = "environments";
-              newcontext.link = "collections";
-              let final = JSON.parse(JSON.stringify(newcontext));
-              return final;
-            })
-          }
-          className="button bordered"
-          to="/"
-        >
-          Change Environment
-        </div>
+      </div>
+      <div className="outerbox limitwidth">
+        <span>
+          <div className="mleft5px button" 
+            onClick={() =>
+              setContext(() => {
+                let newcontext = context;
+                newcontext.collections = "environments";
+                newcontext.link = "collections";
+                let final = JSON.parse(JSON.stringify(newcontext));
+                return final;
+              })
+            }>
+            ZONE
+          </div>
+        </span>
+        <CardEnvironment
+          key={0}
+          card={{ name: worldState.zone }}
+          form={"minus"}
+          placement={0}
+          deleteFrom={"zones"}
+          category={"zones"}
+        />
       </div>
       {/* <div className="outerbox limitwidth">
         {typeof worldState.scene === "string" && (
@@ -125,8 +148,15 @@ const WorldSheet = () => {
           category={"creatures"}
           mode={"worldstate"}
         />
+        <CardList
+          context={"worldstate"}
+          content={worldState.props}
+          form={"minus"}
+          deleteFrom={"props"}
+          category={"props"}
+          mode={"worldstate"}
+        />
       </div>
-      <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
     </div>
   );
 };

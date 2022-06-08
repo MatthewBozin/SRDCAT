@@ -102,7 +102,7 @@
       "gear": true,
       "CASH": 30000
     },
-    "votbo": {
+    "voyager": {
       "name": "OBELISK Crew",
       "skills": 1,
       "traits": 1,
@@ -157,11 +157,12 @@
     "knowledge": 0,
     "environment": "tidepools",
     "environments": [],
+    "zone": "seacave",
     "scene": "test",
     "scenes": [],
     "props": [],
     "items": [],
-    "creatures": [{"name":"airpig","savedrank":0,"lifecurrent":6,"mods":[],"statmods":{}}]
+    "creatures": []
   },
   "charTypes": [
     {
@@ -183,7 +184,7 @@
       "value": "epiclegend",
       "stats": ["Level: 6", "Life: 38", "XP: 9999", "Cash: 3000"],
       "flavor": "Quite unforgotten.",
-      "description": "Their achievements will not be forgotten for a thousand years. A legend’s advancement is slowed by high experience costs, but it promises  power overwhelming."
+      "description": "Their achievements will not be forgotten for a thousand years. A legend’s advancement is slowed by high experience costs, but it promises power overwhelming."
     },
     {
       "name": "Avatar of the Final Form",
@@ -194,7 +195,7 @@
     },
     {
       "name": "OBELISK Crewmember",
-      "value": "votbo",
+      "value": "voyager",
       "stats": ["Level: 2", "Life: 16", "XP: 0", "Cash: 0"],
       "flavor": "For games of VOTBO.",
       "description": "Prospective crewmembers of OBELISK emerge from their pods ready to do research on distant worlds with specialized skills and strange items."

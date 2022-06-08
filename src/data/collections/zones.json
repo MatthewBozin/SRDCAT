@@ -2,12 +2,33 @@
   "seacave": {
     "name": "Sea Cave",
     "tags": ["voyager"],
-    "flavor": "read aloud text to read to the players when they uncover it, and are traveling to it",
-    "description": "a test battle",
+    "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it",
+    "description": "actual description of the zone",
+    "conditions": [
+      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
+    ],
+    "encounters": [
+      {"description": "A flock of *creatures.airpig*s nests here.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}
+    ],
     "events": ["research event"],
-    "denizens": [],
     "props": [
-      { "name": "stalactite", "display": "Stalactite", "category": "props" }
+      { "name": "stalagmite", "display": "Stalagmite", "category": "props" }
+    ]
+  },
+  "shorepool": {
+    "name": "Shore Pool",
+    "tags": ["voyager"],
+    "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it",
+    "description": "actual description of the zone",
+    "conditions": [
+      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
+    ],
+    "encounters": [
+      {"description": "A flock of *creatures.airpig*s nests here.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}
+    ],
+    "events": ["research event"],
+    "props": [
+      { "name": "stalagmite", "display": "Stalagmite", "category": "props" }
     ]
   }
 }

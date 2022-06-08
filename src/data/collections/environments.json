@@ -2,21 +2,13 @@
   "tidepools": {
     "name": "Tide Pools",
     "tags": ["voyager"],
-    "flavor": "flavor text",
-    "description": "description text",
+    "flavor": "read aloud text upon exiting the portal",
+    "description": "actual description of the environment",
     "conditions": [
       {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
     ],
-    "denizens": [
-      { "name": "airpig", "display": "Airpig", "category": "creatures" },
-      {
-        "name": "amphibiousgoldfish",
-        "display": "Amphibious Goldfish",
-        "category": "creatures"
-      }
-    ],
     "encounters": [
-      {}
+      {"description": "A flock of *creatures.airpig*s descends from the sky.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}
     ],
     "events": [
       "A [props.obstacle] stands in your path.", 
@@ -25,11 +17,6 @@
       "The tide rises: +1 disruption.", 
       "A glimmer in the distance: +1 knowledge."
     ],
-    "gains": [
-      { "name": "utilityaxe", "display": "Utility Axe", "category": "items" },
-      { "name": "foolsgold", "display": "Fool's Gold", "category": "props" },
-      { "name": "anothermind", "display": "Another Mind", "category": "traits" }
-    ],
-    "zones": ["pylonshrine"]
+    "zones": [{ "name": "seacave", "display": "Seacave", "category": "zones" },{ "name": "shorepool", "display": "Shore Pool", "category": "zones" }]
   }
 }
