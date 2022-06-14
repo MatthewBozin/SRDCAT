@@ -1,20 +1,4 @@
 {
-  "seacave": {
-    "name": "Sea Cave",
-    "tags": ["voyager"],
-    "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it",
-    "description": "actual description of the zone",
-    "conditions": [
-      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
-    ],
-    "encounters": [
-      {"description": "A flock of *creatures.airpig*s nests here.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}
-    ],
-    "events": ["research event"],
-    "props": [
-      { "name": "stalagmite", "display": "Stalagmite", "category": "props" }
-    ]
-  },
   "shorepool": {
     "name": "Shore Pool",
     "tags": ["voyager"],
@@ -24,11 +8,26 @@
       {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
     ],
     "encounters": [
-      {"description": "A flock of *creatures.airpig*s nests here.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}
+      {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]}
     ],
     "events": ["research event"],
     "props": [
-      { "name": "stalagmite", "display": "Stalagmite", "category": "props" }
+      { "name": "microbiomebubble", "display": "Microbiome Bubble", "category": "props" }
+    ]
+  },
+  "tombofthedruids": {
+    "name": "Tomb of the Druids",
+    "tags": ["voyager"],
+    "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it/ or text upon exiting the portal",
+    "description": "Basalt tomb shaped by swarms of reprogrammed stone-regurgitating nematodes. Contains the bio-uplifted remains of legendary eco-hacking liches from ages past.",
+    "conditions": [],
+    "encounters": [
+      {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]}
+    ],
+    "events": ["research event"],
+    "props": [
+      { "name": "humanoidstatues", "display": "Humanoid Statues", "category": "props" },
+      { "name": "druidicbasrelief", "display": "Druidic Bas Relief", "category": "props" }
     ]
   }
 }

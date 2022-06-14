@@ -6,6 +6,8 @@ import AddSubtract from "../bits/AddSubtract";
 import NameValuePair from "../bits/NameValuePair.js";
 import ModalItemAttack from "./ModalItemAttack.js";
 import ModalItemSale from "./ModalItemSale.js";
+import ModalItemTinker from "./ModalItemTinker.js";
+import { ReactComponent as Gear} from "../../data/icons/gear.svg";
 import { ReactComponent as Dollar} from "../../data/icons/dollar.svg";
 import { ReactComponent as Attack } from "../../data/icons/attack.svg";
 import { ReactComponent as Defend } from "../../data/icons/defend.svg";
@@ -26,6 +28,7 @@ const CardItem = (props) => {
 
   const [attackModalOpen, setAttackModalOpen] = useState(false);
   const [saleModalOpen, setSaleModalOpen] = useState(false);
+  const [tinkerModalOpen, setTinkerModalOpen] = useState(false);
   const [itemNotWorn, setItemNotWorn] = useState(true);
   const [context] = useContext(Context);
   const [character, setCharacter] = useContext(Character);
@@ -95,6 +98,7 @@ const CardItem = (props) => {
                   onClick={() => {
                     setAttackModalOpen(true);
                     setSaleModalOpen(false);
+                    setTinkerModalOpen(false);
                     calcAttackInfo();
                   }}
                 />
@@ -145,25 +149,51 @@ const CardItem = (props) => {
               )}
             {context.persona === "PC" && (props.deleteFrom === "items" || props.deleteFrom === "none") && (
               <span>
-              <Dollar
-                className="iconsvg"
-                onClick={() => {
-                  setSaleModalOpen(true);
-                  setAttackModalOpen(false);
-                }}
-              />
-              <ModalItemSale
-                saleModalOpen={saleModalOpen}
-                setSaleModalOpen={setSaleModalOpen}
-                character={character}
-                setCharacter={setCharacter}
-                placement={props.placement}
-                name={card.name}
-                value={card.value}
-                card={props.card}
-                deleteFrom={props.deleteFrom}
-                mode={"items"}
-              />
+                <Dollar
+                  className="iconsvg"
+                  onClick={() => {
+                    setSaleModalOpen(true);
+                    setAttackModalOpen(false);
+                    setTinkerModalOpen(false);
+                  }}
+                />
+                <ModalItemSale
+                  saleModalOpen={saleModalOpen}
+                  setSaleModalOpen={setSaleModalOpen}
+                  character={character}
+                  setCharacter={setCharacter}
+                  placement={props.placement}
+                  name={card.name}
+                  value={card.value}
+                  card={props.card}
+                  deleteFrom={props.deleteFrom}
+                  mode={"items"}
+                />
+              </span>
+            )}
+            {context.persona === "PC" && context.link !== "collections" && (
+              <span>
+                <Gear
+                  className="iconsvg"
+                  onClick={() => {
+                    setTinkerModalOpen(true);
+                    setAttackModalOpen(false);
+                    setSaleModalOpen(false);
+                  }}
+                />
+                <ModalItemTinker
+                  tinkerModalOpen={tinkerModalOpen}
+                  setTinkerModalOpen={setTinkerModalOpen}
+                  character={character}
+                  setCharacter={setCharacter}
+                  placement={props.placement}
+                  name={card.name}
+                  value={card.value}
+                  card={props.card}
+                  tags={card.tags}
+                  deleteFrom={props.deleteFrom}
+                  mode={"items"}
+                />
               </span>
             )}
             {context.persona === "PC" && (

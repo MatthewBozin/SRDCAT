@@ -3,6 +3,7 @@ import Card from "./Card";
 import CardItem from "./CardItem";
 import CardSpell from "./CardSpell";
 import CardCreature from "./CardCreature";
+import CardModifier from "./CardModifier";
 import CardEnvironment from "./CardEnvironment";
 import CardProp from "./CardProp";
 import CardScene from "./CardScene";
@@ -90,6 +91,18 @@ const CardList = (props) => {
     if (props.category === "props") {
       return (
         <CardProp
+          key={placement}
+          card={cardObject}
+          form={props.form}
+          placement={placement}
+          deleteFrom={props.deleteFrom}
+          category={props.category}
+        />
+      );
+    }
+    if (props.category === "modifiers") {
+      return (
+        <CardModifier
           key={placement}
           card={cardObject}
           form={props.form}

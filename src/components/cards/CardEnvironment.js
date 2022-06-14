@@ -61,7 +61,6 @@ const Card = (props) => {
 
   const loadProp = (prop) => {
     let newWorldState = worldState;
-    newWorldState.props = [];
     newWorldState.props.push({name: prop.name})
     setWorldState(JSON.parse(JSON.stringify(newWorldState)));
   }

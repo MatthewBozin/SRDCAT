@@ -1,17 +1,222 @@
 {
-  "foolishaura": {
-    "name": "Foolish Aura",
-    "tags": ["item", "defensive"],
-    "description": "-1 THO but [+] vs ka attacks."
-  },
-  "foolishglimmer": {
-    "name": "Foolish Glimmer",
-    "tags": ["item", "offensive"],
-    "description": "[+] to ka damage vs those who can feel greed."
-  },
-  "foolsluck": {
-    "name": "Fool's Luck",
-    "tags": ["boon"],
-    "description": "Gain 1 reroll for the rest of the session."
-  }
+    "accurate": {
+        "name": "Accurate",
+        "tags": ["items", "offensive"],
+        "description": "[+] to attack rolls."
+    },
+    "critical": {
+        "name": "Critical",
+        "tags": ["items", "offensive"],
+        "description": "Critical range increased one step. E.g. 20 → 19–20. Applies multiple times."
+    },
+    "deadlier": {
+        "name": "Deadlier",
+        "tags": ["items", "offensive"],
+        "description": "Damage dice increase one step. E.g. 1d6 → 1d8. Applies multiple times."
+    },
+    "faster": {
+        "name": "Faster",
+        "tags": ["items", "offensive"],
+        "description": "[+] to initiative. Duel: free attack before initiative."
+    },
+    "finisher": {
+        "name": "Finisher",
+        "tags": ["items", "offensive"],
+        "description": "On crit: target tests charisma vs 10 + hero's level or is knocked out of the fight."
+    },
+    "glimmering": {
+        "name": "Glimmering",
+        "tags": ["items", "offensive"],
+        "description": "Has a glowing aura, as bright as a candle. May be changed to another sensory effect."
+    },
+    "hardhitting": {
+        "name": "Hard-hitting",
+        "tags": ["items", "offensive"],
+        "description": "Critical multiplier increased one step. E.g. x2 → x3. Applies multiple times."
+    },
+    "likemagic": {
+        "name": "Like Magic",
+        "tags": ["items", "offensive"],
+        "description": "Item is ‘magical’ for overcoming resistances and immunities to its usual damage type (ha, ka, or ba)."
+    },
+    "reliable": {
+        "name": "Reliable",
+        "tags": ["items", "offensive"],
+        "description": "[+] to damage rolls."
+    },
+    "unbreakable": {
+        "name": "Unbreakable",
+        "tags": ["items", "offensive"],
+        "description": "Cannot break or jam. Even if misused, like chopping down a tree with a broadsword."
+    },
+    "absorbing": {
+        "name": "Absorbing",
+        "tags": ["items", "defensive"],
+        "description": "Each scene, provides 1 point of protection per hero level. Each point absorbs 1 life damage. Applies thrice."
+    },
+    "better": {
+        "name": "Better",
+        "tags": ["items", "defensive"],
+        "description": "Defence bonus +1. Applies multiple times."
+    },
+    "dazzle": {
+        "name": "Dazzle",
+        "tags": ["items", "defensive"],
+        "description": "Once per scene, hero can hinder [-] one enemy roll as a free action. Applies multiple times."
+    },
+    "flashy": {
+        "name": "Flashy",
+        "tags": ["items", "defensive"],
+        "description": "[+] to leadership or helping an ally once per scene."
+    },
+    "foolishaura": {
+        "name": "Foolish Aura",
+        "tags": ["items", "defensive"],
+        "description": "-1 THO but [+] vs ka attacks."
+    },
+    "foolishglimmer": {
+        "name": "Foolish Glimmer",
+        "tags": ["items", "offensive"],
+        "description": "[+] to ka damage vs those who can feel greed."
+    },
+    "foolsluck": {
+        "name": "Fool's Luck",
+        "tags": ["boon"],
+        "description": "Gain 1 reroll for the rest of the session."
+    },
+    "forgettable": {
+        "name": "Forgettable",
+        "tags": ["items", "defensive"],
+        "description": "[+] to hiding or stealth. [-] to drawing attention."
+    },
+    "lighter": {
+        "name": "Lighter",
+        "tags": ["items", "defensive"],
+        "description": "Occupies 1 less inventory. Applies multiple times."
+    },
+    "spiked": {
+        "name": "Spiked",
+        "tags": ["items", "defensive"],
+        "description": "Covered in attack surfaces (ha, ka, or ba). Attackers always take damage, whether their attacks hit or not. Damage progression: 1 → 2 → 3, etc. Applies multiple times."
+    },
+    "treated": {
+        "name": "Treated",
+        "tags": ["items", "defensive"],
+        "description": "[+] vs damage type (d8 or choice): (1) blunt force, (2) bullets and piercing, (3) slashing, (4) energy, (5) necrotic and cold, (6) thermal and fire, (7) strange magical effects and spells, (8) chemical and acid. Applies to different damage each time."
+    },
+    "unrusting": {
+        "name": "Unrusting",
+        "tags": ["items", "defensive"],
+        "description": "Cannot be corroded or damaged by elemental effects. Even dirt finds it hard to stick."
+    },
+    "unsplintering": {
+        "name": "Unsplintering",
+        "tags": ["items", "defensive"],
+        "description": "When used to negate damage from an attack, the item is knocked flying rather than destroyed."
+    },
+    "accelerated": {
+        "name": "Accelerated",
+        "tags": ["items", "strange"],
+        "description": "Somehow faster in time. [+] to initiative and speed tests, but critical failure range increased one step. E.g. 1 → 2."
+    },
+    "carcinisation": {
+        "name": "Carcinisation",
+        "tags": ["items", "strange"],
+        "description": "The item assumes the general habit or body of a crab."
+    },
+    "cold": {
+        "name": "Cold",
+        "tags": ["items", "strange"],
+        "description": "Unnaturally. Ominously."
+    },
+    "eternal": {
+        "name": "Eternal",
+        "tags": ["items", "strange"],
+        "description": "The item is an anchor through time. It always existed, always will. Past and future echo through it. Once per session, the hero can sacrifice one attribute point to regain 1d6 points in another attribute."
+    },
+    "fluffy": {
+        "name": "Fluffy",
+        "tags": ["items", "strange"],
+        "description": "So fluffy one might die. [+] to relevant ba tests."
+    },
+    "halfthere": {
+        "name": "Half-there",
+        "tags": ["items", "strange"],
+        "description": "And half elsewhere. No penalty vs ghosts and such, but half as effective against anything without a soul (ka)."
+    },
+    "lucky": {
+        "name": "Lucky",
+        "tags": ["items", "strange"],
+        "description": "If the item is lost, dropped, or misplaced, it never breaks and is always found."
+    },
+    "intelligent": {
+        "name": "Intelligent",
+        "tags": ["items", "strange"],
+        "description": "A daemon awakens inside. Its Thought score is d6-1. It resents foolish owners."
+    },
+    "malleable": {
+        "name": "Malleable",
+        "tags": ["items", "strange"],
+        "description": " Items surface can be molded and shaped like clay."
+    },
+    "neorganic": {
+        "name": "Ne-organic",
+        "tags": ["items", "strange"],
+        "description": "It is now a living item. Possibly fleshy."
+    },
+    "opalescent": {
+        "name": "Opalescent",
+        "tags": ["items", "strange"],
+        "description": "The item is translucent and iridescent. Once per session, the hero can spend 1d4 life to reroll any die."
+    },
+    "remembering": {
+        "name": "Remembering",
+        "tags": ["items", "strange"],
+        "description": " Even if broken, it reassembles and repairs itself over a week. Plants die nearby."
+    },
+    "selfrepairing": {
+        "name": "Self-Repairing",
+        "tags": ["items", "voyager"],
+        "description": "Item can spend 1 supply in order to repair itself over 10 minutes."
+    },
+    "stochastic": {
+        "name": "Stochastic",
+        "tags": ["items", "strange"],
+        "description": "Ordered randomness infuses the item. At the start of each session its player rolls a d20. For the rest of the session, when they roll that natural number, they roll a second d20, adding evens but subtracting odds."
+    },
+    "stupid": {
+        "name": "Stupid",
+        "tags": ["items", "strange"],
+        "description": "The item acquires an anti-intelligence. [-] to tests that require tact and nuance. On a natural 13, hero gains 1 hero die."
+    },
+    "toxic": {
+        "name": "Toxic",
+        "tags": ["items", "strange"],
+        "description": "To be near, but especially inside a baseline human."
+    },
+    "vomish": {
+        "name": "Vomish",
+        "tags": ["items", "strange"],
+        "description": " Living machines infest the item. [+] to relevant tests, but when not observed it may crawl away to do its own thing."
+    },
+    "warm": {
+        "name": "Warm",
+        "tags": ["items", "strange"],
+        "description": "Always. Like a comforter."
+    },
+    "xenocolours": {
+        "name": "Xenocolours",
+        "tags": ["items", "strange"],
+        "description": "Pretty. Hues refract the lights of alien suns."
+    },
+    "youthful": {
+        "name": "Youthful",
+        "tags": ["items", "strange"],
+        "description": "Its persona is childlike, time does not wear it down."
+    },
+    "zu": {
+        "name": "Zu",
+        "tags": ["items", "strange"],
+        "description": "The item crawls with alien energies. Once, the hero can set any rolled die to any number. The item then disappears."
+    }
 }

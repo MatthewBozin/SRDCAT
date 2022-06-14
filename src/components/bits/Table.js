@@ -25,9 +25,11 @@ const Table = (props) => {
       if (props.disruption !== undefined) {
         newplacement = r(10) + props.disruption; 
         if (newplacement >= props.table.length) newplacement = props.table.length - 1;
+        setIndex(newplacement);
         break;
       } else {
         newplacement = r(props.table.length);
+        setIndex(newplacement);
       };
       if (newplacement !== index) {
         if (props.savedresult !== undefined) {

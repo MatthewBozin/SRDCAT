@@ -43,6 +43,30 @@
       }
     ]
   },
+  "druidicbasrelief": {
+    "name": "Druidic bas-relief",
+    "tags": ["curio", "voyager"],
+    "description": "Shows emaciated figures in tribal clothing fighting technological horrors descending from the sky.",
+    "actions": [
+      {
+        "name": "Analyze",
+        "options": [
+          {
+            "name": "First success",
+            "description": "Long ago, strange men in flying ships came to this world, bringing the sable oil that devours all things. The tribes of this world, skilled in the ways of living things, fought back. They matched their metal priests spell for spell. They bred great sea monsters that tore their ships from the heavens and smote their ruin upon the earth."
+          },
+          {
+            "name": "Second success",
+            "description": "But it was not enough. Behind it all, the sable oil continued to sicken and devour the life of this world, and the power of the shamans waned. In a last desperate act, they sacrificed their lives in a great spell that replaced the soul within the sable oil with theirs."
+          },
+          {
+            "name": "Third success",
+            "description": "Now the great shamans forever sleep. Should this world be threatened again, the oil will gather, the great beasts will rise, and the shamans will awaken from their slumber to do battle once more."
+          }
+        ]
+      }
+    ]
+  },
   "heavymetaldoor": {
     "name": "Heavy Metal Door",
     "tags": ["connection", "structure"],
@@ -62,6 +86,39 @@
           {
             "name": "Decipher oldtech unlock codes",
             "description": "Difficult THO test, needs relevant skill."
+          }
+        ]
+      }
+    ]
+  },
+  "humanoidstatues": {
+    "name": "Humanoid Statues",
+    "tags": ["curio", "voyager"],
+    "description": "Made of concrete-like material, frozen in unnerving poses.",
+    "actions": [
+      {
+        "name": "Analyze",
+        "options": [
+          {
+            "name": "First success",
+            "description": "They are all in poses of fear and disgust."
+          },
+          {
+            "name": "Second success",
+            "description": "They were not crafted by sentient hands."
+          }
+        ]
+      },
+      {
+        "name": "Break open",
+        "options": [
+          {
+            "name": "Chip slightly",
+            "description": "Traces of organic material within."
+          },
+          {
+            "name": "Crack open",
+            "description": "Mummified human flesh and bones inside."
           }
         ]
       }
@@ -129,6 +186,45 @@
           {
             "name": "Take it All",
             "description": "+1d3 disruption."
+          }
+        ]
+      }
+    ]
+  },
+  "sableoil": {
+    "name": "Sable Oil",
+    "tags": ["resource", "nanotech", "voyager"],
+    "flavor": "",
+    "description": "Self-replicating liquid nanites left over from a failed attempt to colonize the planet. A group of druidic eco-hackers rewrote the nanites' composite crowdcode to defend the planet's ecosystem rather than consume it.",
+    "actions": [
+      {
+        "name": "Persuade",
+        "options": [
+          {
+            "name": "Hack its behavior module",
+            "description": "Difficult THO test."
+          },
+          {
+            "name": "Ask nicely",
+            "description": "Moderate CHA test."
+          }
+        ]
+      },
+      {
+        "name": "Craft",
+        "options": [
+          {
+            "name": "Forge",
+            "description": "Forge: give an item *modifiers.selfrepairing*."
+          }
+        ]
+      },
+      {
+        "name": "Consume",
+        "options": [
+          {
+            "name": "Blood Synthesis",
+            "description": "The Oil eagerly attaches itself to the iron in your blood. Gain [+] to incoming healing for a session."
           }
         ]
       }

@@ -2,7 +2,7 @@
   "tidepools": {
     "name": "Tide Pools",
     "tags": ["voyager"],
-    "flavor": "read aloud text upon exiting the portal",
+    "flavor": "Exhibits high quantities of hydrogen and oxygen. Anomalous biosignatures detected.",
     "description": "actual description of the environment",
     "conditions": [
       {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
@@ -17,6 +17,9 @@
       "The tide rises: +1 disruption.", 
       "A glimmer in the distance: +1 knowledge."
     ],
-    "zones": [{ "name": "seacave", "display": "Seacave", "category": "zones" },{ "name": "shorepool", "display": "Shore Pool", "category": "zones" }]
+    "zones": [
+      { "name": "shorepool", "display": "Shore Pool", "category": "zones"},
+      { "name": "tombofthedruids", "display": "Tomb of the Druids", "category": "zones"}
+    ]
   }
 }

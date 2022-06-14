@@ -2274,6 +2274,48 @@
     ],
     "mods": []
   },
+  "sableoilblob": {
+    "name": "Sable Oil Blob",
+    "level": 3,
+    "life": 40,
+    "maxlife": 40,
+    "facets": ["formless", "watchful", "slithering"],
+    "tags": ["ooze", "synthetic", "voyager"],
+    "description": "Boiling up from between shoreline crevices and oozing down canyons in search of threats to the planet's ecosystem.",
+    "attacks": [
+      {
+        "defensename": "ha",
+        "defenseamount": 8,
+        "bonus": "+2",
+        "attackname": "pseudopod",
+        "damage": "2d6"
+      },
+      {
+        "defensename": "ka",
+        "defenseamount": 8,
+        "bonus": "+2",
+        "attackname": "electrical discharge",
+        "damage": "1d6"
+      },
+      {
+        "defensename": "ba",
+        "defenseamount": null,
+        "bonus": "-",
+        "attackname": ""
+      }
+    ],
+    "properties": [
+      {
+        "name": "Electrical discharge",
+        "description": "Has [area] when in water. Ka save or an electrical item breaks."
+      },
+      {
+        "name": "Metal eater",
+        "description": "Metal items break on contact, then the blob heals 1d6."
+      }
+    ],
+    "mods": []
+  },
   "sandoctopus": {
     "name": "Sand Octopus",
     "level": 1,

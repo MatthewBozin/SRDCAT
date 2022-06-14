@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Description from "../bits/Description";
 import Tag from "../bits/Tag";
+import Name from "../bits/Name";
+import { ReactComponent as AddCard} from "../../data/icons/addcard.svg";
 
 const CardModifier = (props) => {
+  let ifExpanded = false;
+  if (props.expanded) {
+    ifExpanded = props.expanded;
+  }
+  const [expanded, setExpanded] = useState(ifExpanded);
+
+  const expandCollapse = (status) => {
+    setExpanded(!status);
+  };
+
   let cards;
   if (props.deleteFrom !== "none") {
     cards = require(`../../data/collections/` + props.deleteFrom);
   }
+
+  console.log(props.card);
 
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
@@ -21,15 +35,21 @@ const CardModifier = (props) => {
     <div className={noBreakpointsIfHeroSheet()}>
       <div className="outerbox">
         <div className="row">
-          <div className="orangetext cardname">{card.name}</div>
+          <Name name={card.name} expanded={expanded} expandCollapse={expandCollapse} />
+          <span className="row rightfloat mright8px mtop4px">
+            <AddCard className="iconsvg mright12px" onClick={() => {props.addMod(card)}}/>
+          </span>
         </div>
         <span>
           {card.tags.map((tag, index) => {
             return <Tag tag={tag} form={props.form} key={index} />;
           })}
         </span>
-        <hr></hr>
-        <Description description={card.description} />
+        {expanded === true && <span>
+          <hr></hr>
+          <Description description={card.description}/>
+          </span>
+        }
       </div>
     </div>
   );

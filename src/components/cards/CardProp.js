@@ -83,7 +83,7 @@ const Card = (props) => {
                 <hr></hr>
                 {card.actions.map((action, index) => {
                   return (
-                    <div>
+                    <div key={index} >
                       <ModalAction action={action} key={index} />
                     </div>
                   );
