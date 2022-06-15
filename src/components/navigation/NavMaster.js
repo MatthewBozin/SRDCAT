@@ -27,29 +27,31 @@ const NavMaster = () => {
       <div className="row mleft5px fullwidth">
         <span className="row heading hoverpointer" onClick={() => {
           let newContext = context;
-          newContext.link = "collections";
+          newContext.link = "landing";
           setContext(JSON.parse(JSON.stringify(newContext)));
         }}>SRDCAT</span>
-        {<span
+        {/* {<span
           className="button bordered row heading mleft30px"
           onClick={() => {
             personaToggle();
           }}
         >
           {context.persona}
-        </span>}
-        <div className="rightfloat mright12px">
-          {navbar[context.persona].map((navmaster, index) => {
-            return (
-              <Linklet
-                text={navmaster.text}
-                link={navmaster.link}
-                type={navmaster.type}
-                key={index}
-              />
-            );
-          })}
-        </div>
+        </span>} */}
+        {(context.link === "collections" || context.link === "sheet") && 
+          <div className="rightfloat mright12px">
+            {navbar[context.persona].map((navmaster, index) => {
+              return (
+                <Linklet
+                  text={navmaster.text}
+                  link={navmaster.link}
+                  type={navmaster.type}
+                  key={index}
+                />
+              );
+            })}
+          </div>
+        }
       </div>
     </h4>
   );

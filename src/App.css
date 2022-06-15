@@ -24,6 +24,17 @@ SPECIFIC
 ---------------------------------------------
 */
 
+.cardlist {
+  padding-top: 157px;
+}
+
+.navbarr {
+  margin-left: 5px;
+  width: 93.5%;
+  padding-top: 70px;
+  position: fixed;
+}
+
 .navmaster {
   border-style: solid;
   border-width: 1px;
@@ -38,13 +49,6 @@ SPECIFIC
   width: 96.5%;
 }
 
-.navbarr {
-  margin-left: 5px;
-  width: 93.5%;
-  padding-top: 70px;
-  position: fixed;
-}
-
 .search {
   margin-left: 5px;
   width: 93%;
@@ -52,9 +56,6 @@ SPECIFIC
   position: fixed;
 }
 
-.cardlist {
-  padding-top: 157px;
-}
 
 .navsearchcontainer {
   padding-top: 70px;
@@ -85,13 +86,33 @@ MISC
   border-radius: 8px;
 }
 
-.modalbackground {
-  background-color: #2c2831;
-}
-
 .clearborder {
   outline: none;
   border-style: none;
+}
+
+.fontsize8 {
+  font-size: 14px
+}
+
+.fontsize18 {
+  font-size: 18px
+}
+
+.fontsize {
+  font-size: 20px;
+}
+
+.fontsize30 {
+  font-size: 30px;
+}
+
+.fontsize48 {
+  font-size: 48px;
+}
+
+.modalbackground {
+  background-color: #2c2831;
 }
 
 .orangetext {
@@ -119,13 +140,6 @@ MISC
   width: 100%;
 }
 
-.fontsize18 {
-  font-size: 18px
-}
-
-.fontsize {
-  font-size: 20px;
-}
 
 .whitespace {
   white-space: pre-wrap;
@@ -136,10 +150,6 @@ MISC
   OBJECTS
 ------------------------------------------------------------------
 */
-
-#searchbox {
-  width: 100%;
-}
 
 .button {
   background: #2c2831;
@@ -159,42 +169,15 @@ MISC
   cursor: default;
 }
 
-hr {
-  border-color: #d5d4d6;
-  padding: 3px !important;
-  margin: 3px !important;
-}
-
-.heading {
-  margin-top: 4px;
-  margin-left: 0px;
-}
-
-.link {
-  margin: 2px;
-  padding: 2px;
-  float: right;
-  margin-left: 3px;
-}
-
-.outerbox {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #9c4646;
-  border-radius: 8px;
-  margin: 8px;
-  padding: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-.plusminus {
-  margin: 5px;
+.cardname {
+  font-size: 24px;
+  margin-left: 15px;
   padding: 5px;
-  float: right;
-  background: #2c2831;
-  color: #db5858;
-  cursor: pointer;
+}
+
+.charsheet {
+  display: flex;
+  flex-direction: row;
 }
 
 .icon {
@@ -228,23 +211,54 @@ hr {
   transition: 0.3s;
 }
 
-.cardname {
-  font-size: 24px;
-  margin-left: 15px;
-  padding: 5px;
-}
-
-.searchbutton {
-  min-width: 40px;
-}
-
-.charsheet {
-  display: flex;
-  flex-direction: row;
+.heading {
+  margin-top: 4px;
+  margin-left: 0px;
 }
 
 .hoverpointer {
   cursor: default;
+}
+
+hr {
+  border-color: #d5d4d6;
+  padding: 3px !important;
+  margin: 3px !important;
+}
+
+.link {
+  margin: 2px;
+  padding: 2px;
+  float: right;
+  margin-left: 3px;
+}
+
+.outerbox {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9c4646;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.plusminus {
+  margin: 5px;
+  padding: 5px;
+  float: right;
+  background: #2c2831;
+  color: #db5858;
+  cursor: pointer;
+}
+
+#searchbox {
+  width: 100%;
+}
+
+.searchbutton {
+  min-width: 40px;
 }
 
 /*
@@ -252,28 +266,6 @@ hr {
   POSITIONING
 ------------------------------------------------------------------
 */
-
-.rightfloat {
-  float: right;
-  margin-left: auto;
-}
-
-.fullwidth {
-  width: 100%;
-}
-
-.textwrap {
-  word-wrap: break-word;
-  white-space: pre-wrap;
-}
-
-.maxwidth {
-  width: fit-content;
-}
-
-.lefttoright {
-  text-align: right;
-}
 
 .center {
   text-align: center;
@@ -284,50 +276,55 @@ hr {
   justify-content: center;
 }
 
-.limitwidth {
-  width: 700px;
-  max-width: 100%;
-}
-
 .fixed {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
+.fullwidth {
+  width: 100%;
+}
+
+.lefttoright {
+  text-align: right;
+}
+
+.limitwidth {
+  width: 700px;
+  max-width: 100%;
+}
+
+.maxwidth {
+  width: fit-content;
+}
+
+.rightfloat {
+  float: right;
+  margin-left: auto;
+}
+
+.textwrap {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
 /* 
 -------------------------------------------------------------------
-  MARGIN AND PADDING
+MARGIN AND PADDING
 -------------------------------------------------------------------
 */
 
-.padded2px {
-  margin: 2px;
-  padding: 2px;
-}
-
-.padded5px {
-  padding: 5px;
-}
-
-.pbottom5px {
-  padding-bottom: 5px;
-}
-
-.pbottom8px {
-  padding-bottom: 8px;
-}
-
-.pleft5px {
-  padding-left: 5px;
-}
-
-.pright5px {
-  padding-right: 10px;
-}
-
 .margin5px {
   margin: 5px;
+}
+
+.mbottom5px {
+  margin-bottom: 5px;
+}
+
+.mbottom20px {
+  margin-bottom: 20px;
 }
 
 .mleft5px {
@@ -354,6 +351,10 @@ hr {
   margin-left: 30px;
 }
 
+.mleft40px {
+  margin-left: 40px;
+}
+
 .mright3px {
   margin-right: 3px;
 }
@@ -374,12 +375,12 @@ hr {
   margin-right: 24px;
 }
 
-.mtop45px {
-  margin-top: 4.5px;
-}
-
 .mtop4px {
   margin-top: 4px;
+}
+
+.mtop45px {
+  margin-top: 4.5px;
 }
 
 .mtop8px {
@@ -398,8 +399,29 @@ hr {
   margin-top: 70px;
 }
 
-.mbottom5px {
-  margin-bottom: 5px;
+.padded2px {
+  margin: 2px;
+  padding: 2px;
+}
+
+.padded5px {
+  padding: 5px;
+}
+
+.pbottom5px {
+  padding-bottom: 5px;
+}
+
+.pbottom8px {
+  padding-bottom: 8px;
+}
+
+.pleft5px {
+  padding-left: 5px;
+}
+
+.pright5px {
+  padding-right: 10px;
 }
 
 /*
@@ -423,6 +445,12 @@ button:hover {
   color: #d5d4d6;
 }
 
+.button--selected:hover {
+  text-decoration: none;
+  color: #d5d4d6;
+  cursor: default;
+}
+
 .icon:hover {
   text-decoration: none;
   color: #d5d4d6;
@@ -432,18 +460,12 @@ button:hover {
   color: #d5d4d6;
 }
 
-.button--selected:hover {
-  text-decoration: none;
-  color: #d5d4d6;
-  cursor: default;
+.hoverpointer:hover {
+  cursor: pointer;
 }
 
 .outerbox:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.hoverpointer:hover {
-  cursor: pointer;
 }
 
 /*

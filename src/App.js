@@ -4,9 +4,11 @@ import Character from "./data/character.js";
 import Worldstate from "./data/worldstate.js";
 import NavMaster from "./components/navigation/NavMaster";
 import "./App.css";
+import Landing from "./pages/Landing";
 import Collections from "./pages/Collections";
 import HeroSheet from "./pages/HeroSheet";
 import WorldSheet from "./pages/WorldSheet";
+import About from "./pages/About.js";
 import Error from "./pages/Error";
 import Footer from "./components/navigation/Footer.js";
 import architecture from "./data/architecture.json";
@@ -19,7 +21,7 @@ function App() {
   const [context, setContext] = useState({
     persona: "PC",
     collections: "items",
-    link: "collections",
+    link: "landing",
     search: "",
     page: 0
   });
@@ -45,22 +47,16 @@ function App() {
   }
 
   const heroOrWorld = () => {
-    if (context.persona === "PC") {
-      return <HeroSheet />;
-    }
-    if (context.persona === "TC") {
-      return <WorldSheet />;
-    }
+    if (context.persona === "PC") return <HeroSheet />;
+    if (context.persona === "TC") return <WorldSheet />;
   };
 
   const router = () => {
-    if (context.link === "collections") {
-      return <Collections />
-    } else if (context.link === "sheet") {
-      return heroOrWorld();
-    } else {
-      return <Error />
-    };
+    if (context.link === "landing") return <Landing />;
+    if (context.link === "collections") return <Collections />;
+    if (context.link === "sheet") return heroOrWorld();
+    if (context.link === "about") return <About />;
+    return <Error />;
   };
 
   return (
@@ -68,7 +64,7 @@ function App() {
       <Context.Provider value={[context, setContext]}>
         <Worldstate.Provider value={[worldState, setWorldState]}>
           <Character.Provider value={[character, setCharacter]}>
-            <NavMaster />
+            {context.link !== "landing" && <NavMaster />}
             {router()}
             <Footer />
           </Character.Provider>

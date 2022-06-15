@@ -20,8 +20,6 @@ const CardModifier = (props) => {
     cards = require(`../../data/collections/` + props.deleteFrom);
   }
 
-  console.log(props.card);
-
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   const noBreakpointsIfHeroSheet = () => {

@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import NameValuePair from "../bits/NameValuePair.js";
 import CardModifier from "./CardModifier.js";
-import toaster from "toasted-notes";
 import { toggle } from "../../utils/exports.js";
 let contextData = require(`../../data/orders.json`);
 let modifiers = require(`../../data/collections/modifiers.json`);
 
 function ModalItemTinker(props) {
-  const [salePrice, setSalePrice] = useState(0);
   const [message, setMessage] = useState("");
 
   const {
@@ -16,13 +14,8 @@ function ModalItemTinker(props) {
     setTinkerModalOpen,
     character,
     setCharacter,
-    value,
     name,
-    deleteFrom,
   } = props;
-
-  //ADD SOME LOGIC HERE THAT PARES DOWN contextData.modifiers
-  //so that only relevant mods show up
   
   //add random mod button, costs waaaay less
   
