@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import Character from "../../data/character.js";
 import architecture from "../../data/architecture.json";
+import { ReactComponent as Ha} from "../../data/icons/ha.svg";
+import { ReactComponent as Ka} from "../../data/icons/ka.svg";
+import { ReactComponent as Ba} from "../../data/icons/ba.svg";
 
 const Defense = (props) => {
   const [character] = useContext(Character);
@@ -30,6 +33,9 @@ const Defense = (props) => {
 
   return (
     <div>
+      {props.defense.name === "ha" && <Ha className="iconsvg" />}
+      {props.defense.name === "ka" && <Ka className="iconsvg" />}
+      {props.defense.name === "ba" && <Ba className="iconsvg" />}
       <span>{statMasks[props.defense.name]}</span>
       <span className="mleft12px">{calcDefense(props.defense)}</span>
     </div>

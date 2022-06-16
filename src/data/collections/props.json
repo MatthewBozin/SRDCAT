@@ -4,230 +4,147 @@
     "tags": ["terrain", "underground"],
     "description": "Found in caves.",
     "properties": [
-      {
-        "name": "Cover",
-        "description": "[-] to ranged attacks targeting someone hiding behind it."
-      }
-    ]
-  },
-  "bloodbasin": {
-    "name": "Blood Basin",
-    "tags": ["curio", "underground"],
-    "description": "Fear the old blood.",
+      {"name": "Cover","description": "[-] to ranged attacks targeting someone hiding behind it."}]},
+  "arcanophagebacteria": {
+    "name": "Arcanophage Bacteria",
+    "tags": ["resource", "biological", "magical", "voyager"],
+    "flavor": "",
+    "description": "",
     "actions": [
-      {
-        "name": "Feed the basin",
+      {"name": "Consume",
         "options": [
-          {
-            "name": "Cut your hand",
-            "description": "-1d6 life: the basin hungers for more."
-          },
-          {
-            "name": "Feast of blood",
-            "description": "-1d20 life: gain the *traits.bloodclad* trait."
-          }
-        ]
-      },
-      {
-        "name": "Take the Blood",
+          {"name": "Arcane symbiosis","description": "Gain the *traits.arcanophagesymbiosis* mutation."},
+          {"name": "Ingest","description": "Gain resistance to magical effects for the rest of the session."}]},
+      {"name": "Craft",
         "options": [
-          {
-            "name": "Drink it all",
-            "description": "+1d20 life, difficult END test or contract the [haemophilia] burden. The basin is depleted."
-          },
-          {
-            "name": "Drink a sip",
-            "description": "+1d6 life. moderate CHA test or basin is depleted."
-          }
-        ]
-      }
-    ]
-  },
+          {"name": "Coat item","description": "Item loses all magical properties for a session."}]},
+      {"name": "Cultivate",
+        "options": [
+          {"name": "Spell Siphon","description": "Whenever a hero casts a spell with total magic cost over 50, a new colony of arcanophage bacteria buds."}]}]},
+  "biotechsarcophagus": {
+    "name": "Biotech Sarcophagus",
+    "tags": ["discovery", "archaeological", "voyager"],
+    "description": "Layers upon layers of chitin shards interlaced with glowing capillaries, intricately carved with symbols and figures. It shifts and buzzes restlessly, as though dreaming.",
+    "actions": [
+      {"name": "Analyze",
+        "options": [
+          {"name": "First success","description": "The symbols and figures seem to depict insectoid figures perfoming great deeds. There are also symbols meant to grant safe passage to the afterlife, as well as symbols of renewal and rebirth."},
+          {"name": "Second success","description": "Spectroscopic techniques reveal the silhouette of an insectoid figure resting within. It shifts restlessly in a state between life and death."},
+          {"name": "Third success","description": "The glyphs inscribed upon the sarcophagus speak of an inevitable doom machine that awaits at the end of all things, and deathless warrior-wizards sent forward in time to wage war against its influence."}]},
+      {"name": "Biohacking",
+        "options": [
+          {"name": "Body swap","description": "Extremely difficult THO test at [-]. On success: swap bodies with the *creatures.mantidbiolich*."},
+          {"name": "Pheromonal peace protocols","description": "Difficult THO test. On success: the *creatures.mantidbiolich* becomes nonhostile."},
+          {"name": "Stealth open","description": "Medium THO test. On success: the biosarcophagus opens without waking the *creatures.mantidbiolich*, though it is a light sleeper..."}]}]},
   "druidicbasrelief": {
     "name": "Druidic bas-relief",
-    "tags": ["curio", "voyager"],
-    "description": "Shows emaciated figures in tribal clothing fighting technological horrors descending from the sky.",
+    "tags": ["discovery", "archaeological", "voyager"],
+    "description": "Shows insectile figures fighting technological horrors descending from the sky.",
     "actions": [
-      {
-        "name": "Analyze",
+      {"name": "Analyze",
         "options": [
-          {
-            "name": "First success",
-            "description": "Long ago, strange men in flying ships came to this world, bringing the sable oil that devours all things. The tribes of this world, skilled in the ways of living things, fought back. They matched their metal priests spell for spell. They bred great sea monsters that tore their ships from the heavens and smote their ruin upon the earth."
-          },
-          {
-            "name": "Second success",
-            "description": "But it was not enough. Behind it all, the sable oil continued to sicken and devour the life of this world, and the power of the shamans waned. In a last desperate act, they sacrificed their lives in a great spell that replaced the soul within the sable oil with theirs."
-          },
-          {
-            "name": "Third success",
-            "description": "Now the great shamans forever sleep. Should this world be threatened again, the oil will gather, the great beasts will rise, and the shamans will awaken from their slumber to do battle once more."
-          }
-        ]
-      }
-    ]
-  },
-  "heavymetaldoor": {
-    "name": "Heavy Metal Door",
-    "tags": ["connection", "structure"],
-    "description": "Imbued with oldtech, inscribed with images of guitar-wielding shamans of old.",
+          {"name": "First success","description": "Long ago, strange men in flying ships came to this world, bringing the sable oil that devours all things. The insectile tribes of this world, skilled in the ways of living things, fought back. They matched their metal priests spell for spell. They bred great sea monsters that tore their ships from the heavens and smote their ruin upon the earth."},
+          {"name": "Second success","description": "But it was not enough. Behind it all, the sable oil continued to sicken and devour the life of this world, and the power of the shamans waned. In a last desperate act, they sacrificed their lives in a great spell that replaced the soul within the sable oil with theirs."},
+          {"name": "Third success","description": "Now the great shamans forever sleep. Should this world be threatened again, the oil will gather, the great beasts will rise, and the shamans will awaken from their slumber to do battle once more."}]}]},
+  "ecowards": {
+    "name": "Eco-Wards",
+    "tags": ["discovery", "biological", "magical", "voyager"],
+    "description": "Green glowing sigils crawl across the ground and emit ghostly aurora-lights that fill the room.",
     "actions": [
-      {
-        "name": "Open the door",
+      {"name": "Analyze",
         "options": [
-          {
-            "name": "Push the door open",
-            "description": "Extreme STR test."
-          },
-          {
-            "name": "Play a shredding solo",
-            "description": "Difficult CHA test, needs instrument and backup dancers."
-          },
-          {
-            "name": "Decipher oldtech unlock codes",
-            "description": "Difficult THO test, needs relevant skill."
-          }
-        ]
-      }
-    ]
-  },
+          {"name": "First success","description": "These appear to be biomagical wards set up to deter intrusion."},
+          {"name": "Second success","description": "The sigils themselves seem to be made out of bacteria that feed off of and emit thaumokinetic energy."},
+          {"name": "Third success","description": "The bacteria contains genomes that predispose it to symbiosis with humanoid creatures."}]},
+      {"name": "Deactivate",
+        "options": [
+          {"name": "Solve the bioencryption","description": "Extremely difficult THO test."},
+          {"name": "Distract the bacteria","description": "Offer a magical item or 1d20 life and the bacteria will attempt to consume it rather than doing their assigned duty."}]},
+      {"name": "Disturb",
+        "options": [
+          {"name": "Step through","description": "The wards flicker and disappear. A rumbling begins in the distance. A swarm of *creatures.lithiformnematodes* will arrive in 1 turn."},
+          {"name": "Take a sample","description": "Easy AGI test + medium THO test: gain a sample of *props.arcanophagebacteria*."}]}]},
   "humanoidstatues": {
     "name": "Humanoid Statues",
-    "tags": ["curio", "voyager"],
+    "tags": ["discovery", "medical", "voyager"],
     "description": "Made of concrete-like material, frozen in unnerving poses.",
     "actions": [
-      {
-        "name": "Analyze",
+      {"name": "Analyze",
         "options": [
-          {
-            "name": "First success",
-            "description": "They are all in poses of fear and disgust."
-          },
-          {
-            "name": "Second success",
-            "description": "They were not crafted by sentient hands."
-          }
-        ]
-      },
-      {
-        "name": "Break open",
+          {"name": "First success","description": "They are all in poses of fear and disgust."},
+          {"name": "Second success","description": "They were not crafted by sentient hands."}]},
+      {"name": "Break open",
         "options": [
-          {
-            "name": "Chip slightly",
-            "description": "Traces of organic material within."
-          },
-          {
-            "name": "Crack open",
-            "description": "Mummified human flesh and bones inside."
-          }
-        ]
-      }
-    ]
-  },
-  "foolsgold": {
-    "name": "Fool's Gold",
-    "tags": ["resource"],
-    "description": "Veins of aurous metal, glittering with the follies of the long-dead.",
-    "actions": [
-      {
-        "name": "Collect",
-        "options": [
-          {
-            "name": "Mine from a vein",
-            "description": "Average STR test to retrieve, then difficult AUR test to avoid obsessing over the gold."
-          }
-        ]
-      },
-      {
-        "name": "Craft",
-        "options": [
-          {
-            "name": "Forge into charm",
-            "description": "Adds the *modifiers.foolishglimmer* modifier."
-          },
-          {
-            "name": "Forge into ward",
-            "description": "Adds the *modifiers.foolishaura* modifier."
-          },
-          {
-            "name": "Add to meal",
-            "description": "Adds the *modifiers.foolsluck* modifier."
-          }
-        ]
-      }
-    ]
-  },
+          {"name": "Chip slightly","description": "Traces of organic material lie within."},
+          {"name": "Crack open","description": "Mummified human flesh and bones inside. Each statue cracked open has a 1-in-6 chance of having a random piece of explorer's gear."}]}]},
   "microbiomebubble": {
     "name": "Microbiome Bubble",
-    "tags": ["curio", "voyager"],
+    "tags": ["discovery", "biological", "voyager"],
     "flavor": "A small gelatinous sphere floats in the waves. Tiny plants and creatures swirl within.",
-    "description": "A tiny ecosystem contained in a gelatinous, self-sustaining bubble. It looks like you could add or take something from this balanced system.",
+    "description": "A tiny ecosystem contained in a gelatinous, self-sustaining bubble.",
     "actions": [
-      {
-        "name": "Add Something",
+      {"name": "Analyze",
         "options": [
-          {
-            "name": "Add some Supplies",
-            "description": "-1d3 supply."
-          },
-          {
-            "name": "Add some Blood",
-            "description": "-1d6 life."
-          }
-        ]
-      },
-      {
-        "name": "Take Something",
+          {"name": "First success","description": "This ecosystem looks completely self-sustaining and shut out from the outside world."},
+          {"name": "Second success","description": "Adding substances foreign to the microbiome could damage its delicate internal ecobalance."},
+          {"name": "Third success","description": "The microbiome interior experiences a rapid flurry of genetic activity, due to a high quantity of stem cells."}]},
+      {"name": "Add Something",
         "options": [
-          {
-            "name": "Take a Sample",
-            "description": "Easy AGI or THO test: gain 1 knowledge."
-          },
-          {
-            "name": "Take it All",
-            "description": "+1d3 disruption."
-          }
-        ]
-      }
-    ]
-  },
+          {"name": "Add some Supplies","description": "-1d3 supply. The biome grows: [+] to all tests regarding the microbiome bubble, but its interior systems are disrupted. Doing this a second time destroys the bubble."},
+          {"name": "Add some Blood","description": "-1d6 life. Gain 3 knowledge. Bubble becomes a *creatures.roamingmicrobiome* and attacks."}]},
+      {"name": "Harvest",
+        "options": [
+          {"name": "Take a Sample","description": "Easy AGI test: gain *props.rawstemcells*. On failure: +1 disruption."},
+          {"name": "Take it All","description": "+1d3 disruption. Gain 2 *props.rawstemcells*. The microbiome is destroyed."}]}]},
+  "oilvein": {
+    "name": "Oil Vein",
+    "tags": ["discovery", "geological", "voyager"],
+    "description": "A curious black oil seeps upward through the cracks between shoreline rocks.",
+    "actions": [
+      {"name": "Analyze",
+        "options": [
+          {"name": "First success","description": "The oil moves on its own volition. It quests and probes, as though seeking something."},
+          {"name": "Second success","description": "Microscopic inspection reveals unusually intelligent schooling and patterning activity at the molecular level, indicating that it is composed of nanites."},
+          {"name": "Third success","description": "The nanites appear to devour iron and other metals at a rapid rate in order to reproduce and self-sustain."}]},
+      {"name": "Harvest",
+        "options": [
+          {"name": "Take a sample","description": "Easy AGI test: gain *props.sableoil*. On failure: +1 disruption."},
+          {"name": "","description": ""}]}]},
+  "rawstemcells": {
+    "name": "Raw Stem Cells",
+    "tags": ["resource", "biological", "voyager"],
+    "flavor": "A seething mass of pink slime.",
+    "description": "The building blocks of biological systems. Has a number of healing and mutating properties.",
+    "actions": [
+      {"name": "Consume",
+        "options": [
+          {"name": "Biotherapy","description": "Remove a physical burden."},
+          {"name": "Genetic inquest","description": "Swap a mutation for free."},
+          {"name": "Ingest","description": "Rapid cellular reconstruction heals 3d6 life."}]},
+      {"name": "Craft",
+        "options": [
+          {"name": "Forge","description": "Forge: give an offensive item *modifiers.geneslicer*."}]},
+      {"name": "Cultivate",
+        "options": [
+          {"name": "Bleak Harvest","description": "Liquefy a sentient creature into raw stem cells. Sentient Safety and Morality Protocols forbid this within OBELISK."}]}]},
   "sableoil": {
     "name": "Sable Oil",
-    "tags": ["resource", "nanotech", "voyager"],
-    "flavor": "",
+    "tags": ["resource", "technological", "voyager"],
+    "flavor": "Dense black metallic oil that ripples and flows of its own volition.",
     "description": "Self-replicating liquid nanites left over from a failed attempt to colonize the planet. A group of druidic eco-hackers rewrote the nanites' composite crowdcode to defend the planet's ecosystem rather than consume it.",
     "actions": [
-      {
-        "name": "Persuade",
+      {"name": "Persuade",
         "options": [
-          {
-            "name": "Hack its behavior module",
-            "description": "Difficult THO test."
-          },
-          {
-            "name": "Ask nicely",
-            "description": "Moderate CHA test."
-          }
-        ]
-      },
-      {
-        "name": "Craft",
+          {"name": "Hack its behavior module","description": "Difficult THO test."},
+          {"name": "Feed it","description": "Consume one metal item."}]},
+      {"name": "Craft",
         "options": [
-          {
-            "name": "Forge",
-            "description": "Forge: give an item *modifiers.selfrepairing*."
-          }
-        ]
-      },
-      {
-        "name": "Consume",
+          {"name": "Forge","description": "Forge: give an item *modifiers.selfrepairing*."}]},
+      {"name": "Consume",
         "options": [
-          {
-            "name": "Blood Synthesis",
-            "description": "The Oil eagerly attaches itself to the iron in your blood. Gain [+] to incoming healing for a session."
-          }
-        ]
-      }
-    ]
+          {"name": "Blood Synthesis","description": "The Oil eagerly attaches itself to the iron in your blood. Gain [+] to incoming healing for a session."}]},
+      {"name": "Cultivate",
+        "options": [
+          {"name": "Metal Mitosis","description": "Feed the oil a metal item of $200 or more and it will duplicate."}]}]
   }
 }

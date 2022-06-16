@@ -116,13 +116,15 @@ const CardCreature = (props) => {
               return <Tag tag={tag} form={props.form} key={index} />;
             })}
             <hr></hr>
-            {card.facets.map((facet, index) => {
-              return (
-                <span key={index}>
-                  <i>{facet},</i>{" "}
-                </span>
-              );
-            })}
+            {card.facets && <span>
+              {card.facets.map((facet, index) => {
+                return (
+                  <span key={index}>
+                    <i>{facet},</i>{" "}
+                  </span>
+                );
+              })}
+            </span>}
             <div>{card.description}</div>
             <hr />
             <div>

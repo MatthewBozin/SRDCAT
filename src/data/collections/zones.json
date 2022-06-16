@@ -8,11 +8,13 @@
       {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
     ],
     "encounters": [
-      {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]}
+      {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]},
+      {"description": "A *creatures.roamingmicrobiome* rolls down the cliffside.", "creatures": ["roamingmicrobiome"]}
     ],
     "events": ["research event"],
     "props": [
-      { "name": "microbiomebubble", "display": "Microbiome Bubble", "category": "props" }
+      { "name": "microbiomebubble", "display": "Microbiome Bubble", "category": "props" },
+      { "name": "oilvein", "display": "Oil Vein", "category": "props" }
     ]
   },
   "tombofthedruids": {
@@ -22,12 +24,15 @@
     "description": "Basalt tomb shaped by swarms of reprogrammed stone-regurgitating nematodes. Contains the bio-uplifted remains of legendary eco-hacking liches from ages past.",
     "conditions": [],
     "encounters": [
-      {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]}
+      {"description": "With a deep bass rumble, a swarm of *creatures.lithoformnematodes* squidges from a stone wall.", "creatures": ["lithoformnematodes"]},
+      {"description": "The time has come. The sarcophagus opens, and the *creatures.mantidbiolich* emerges to face the enemies of their people once more.", "creatures": ["mantidbiolich"]}
     ],
     "events": ["research event"],
     "props": [
-      { "name": "humanoidstatues", "display": "Humanoid Statues", "category": "props" },
-      { "name": "druidicbasrelief", "display": "Druidic Bas Relief", "category": "props" }
+      { "name": "biotechsarcophagus", "display": "Biotech Sarcophagus", "category": "props" },
+      { "name": "druidicbasrelief", "display": "Druidic Bas Relief", "category": "props" },
+      { "name": "ecowards", "display": "Eco-Wards", "category": "props" },
+      { "name": "humanoidstatues", "display": "Humanoid Statues", "category": "props" }
     ]
   }
 }

@@ -73,7 +73,7 @@ function ModalItemTinker(props) {
     >
       <Modal.Header className="modalbackground">
         <span className="fullwidth">
-          Tinker with {name}
+          Promote {name}
           <span className="rightfloat">Current XP: {character.XP}</span>
           <div>{message}</div>
         </span>

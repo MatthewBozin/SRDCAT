@@ -47,8 +47,8 @@ const WorldSheet = () => {
           <ExportModal context={"worldstate"} />
         </span>
         <SlotName context={"worldstate"} />
+        <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
       </div>
-      <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
       <div className="outerbox limitwidth">
         <span>
           <div className="mleft5px button" 

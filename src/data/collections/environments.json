@@ -5,21 +5,17 @@
     "flavor": "Exhibits high quantities of hydrogen and oxygen. Anomalous biosignatures detected.",
     "description": "actual description of the environment",
     "conditions": [
-      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}
-    ],
+      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}],
     "encounters": [
-      {"description": "A flock of *creatures.airpig*s descends from the sky.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}
-    ],
+      {"description": "A flock of *creatures.airpig*s descends from the sky.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}],
     "events": [
       "A [props.obstacle] stands in your path.", 
       "Item gets wet.", 
       "1d3 supplies stolen by seagull.", 
       "The tide rises: +1 disruption.", 
-      "A glimmer in the distance: +1 knowledge."
-    ],
+      "A glimmer in the distance: +1 knowledge."],
     "zones": [
       { "name": "shorepool", "display": "Shore Pool", "category": "zones"},
-      { "name": "tombofthedruids", "display": "Tomb of the Druids", "category": "zones"}
-    ]
+      { "name": "tombofthedruids", "display": "Tomb of the Druids", "category": "zones"}]
   }
 }
