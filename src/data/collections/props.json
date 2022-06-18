@@ -62,7 +62,7 @@
           {"name": "Distract the bacteria","description": "Offer a magical item or 1d20 life and the bacteria will attempt to consume it rather than doing their assigned duty."}]},
       {"name": "Disturb",
         "options": [
-          {"name": "Step through","description": "The wards flicker and disappear. A rumbling begins in the distance. A swarm of *creatures.lithiformnematodes* will arrive in 1 turn."},
+          {"name": "Step through","description": "The wards flicker and disappear. A rumbling begins in the distance. A swarm of *creatures.lithoformnematodes* will arrive in 1 turn."},
           {"name": "Take a sample","description": "Easy AGI test + medium THO test: gain a sample of *props.arcanophagebacteria*."}]}]},
   "humanoidstatues": {
     "name": "Humanoid Statues",

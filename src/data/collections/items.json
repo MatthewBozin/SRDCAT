@@ -11,7 +11,8 @@
     "acceleratedflail":{
         "name":"Accelerated Flail",
         "tags":["offensive","weapon","chain"],
-        "flavor":"A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?","stat":["ha"],"number":["2d12"],
+        "flavor":"A spiked head of spaceship metals encasing a dynamo-kinetic daemon accelerator attached by a chain to a long thrumming handle. What could go wrong?",
+        "stat":["ha"],"number":["2d12"],
         "weight":20,"value":5000,
         "description":"",
         "properties":[
@@ -20,7 +21,8 @@
     "accountantmonkrobes":{
         "name":"Accountant Monk Robes",
         "tags":["defensive","ward"],
-        "flavor":"Flowing accoutrements of the Cogflower Inquisition. Very little metaphysical nonsense can pass these mathemagical threads.","stat":["ka"],"number":["5"],
+        "flavor":"Flowing accoutrements of the Cogflower Inquisition. Very little metaphysical nonsense can pass these mathemagical threads.",
+        "stat":["ka"],"number":["5"],
         "weight":20,"value":8000,
         "description":"",
         "properties":[
@@ -40,7 +42,8 @@
     "adamantjewelry":{
         "name":"Adamant Jewelry",
         "tags":["defensive","prestige"],
-        "flavor":"It is sharp and unbreakable. So how did they craft it into those weird shapes?","stat":["ba"],"number":["3"],
+        "flavor":"It is sharp and unbreakable. So how did they craft it into those weird shapes?",
+        "stat":["ba"],"number":["3"],
         "weight":10,"value":40000,
         "description":"",
         "properties":[
@@ -78,7 +81,8 @@
     "archmage’shidesuit":{
         "name":"Archmage’s Hide Suit",
         "tags":["defensive","ward"],
-        "flavor":"An inhuman archmage’s hide, preserved and cured into a vestment. It positively crackles with eldritch wrath.","stat":["ka"],"number":["7"],
+        "flavor":"An inhuman archmage’s hide, preserved and cured into a vestment. It positively crackles with eldritch wrath.",
+        "stat":["ka"],"number":["7"],
         "weight":20,"value":300000,
         "description":"",
         "properties":[
@@ -87,7 +91,8 @@
     "amberancestorcuirass":{
         "name":"Amber Ancestor Cuirass",
         "tags":["defensive","armour"],
-        "flavor":"Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.","stat":["ha","ka"],"number":["4","4"],
+        "flavor":"Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.",
+        "stat":["ha","ka"],"number":["4","4"],
         "weight":20,"value":4000,
         "description":"",
         "properties":[
@@ -95,7 +100,8 @@
     "amberwandgun":{
         "name":"Amber Wandgun",
         "tags":["offensive","weapon","pistol"],
-        "flavor":"A genteel wand that discharges an arcing bolt of pain and fire.","stat":["ha"],"number":["2d6"],
+        "flavor":"A genteel wand that discharges an arcing bolt of pain and fire.",
+        "stat":["ha"],"number":["2d6"],
         "weight":10,"value":500,
         "description":"",
         "properties":[
@@ -143,7 +149,8 @@
     "automaticprayerwheel":{
         "name":"Automatic Prayer Wheel",
         "tags":["offensive","charm","word"],
-        "flavor":"As mediated by the Ill-Nano (updated K. Scion v.), a holy text from the creation is encoded in a hexadecimal musical code on a blessed data cylinder. As it spins, it blares out the heavenly message as 4,096 bpm extratonal electronic music.","stat":["ka"],"number":["2d8"],
+        "flavor":"As mediated by the Ill-Nano (updated K. Scion v.), a holy text from the creation is encoded in a hexadecimal musical code on a blessed data cylinder. As it spins, it blares out the heavenly message as 4,096 bpm extratonal electronic music.",
+        "stat":["ka"],"number":["2d8"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -166,7 +173,8 @@
     "backhandedcompliment":{
         "name":"Backhanded Compliment",
         "tags":["offensive","rhetoric","unfettered"],
-        "flavor":"It looked like they were friends.","stat":["ba"],"number":["1d8"],
+        "flavor":"It looked like they were friends.",
+        "stat":["ba"],"number":["1d8"],
         "weight":"1","value":10,
         "description":"",
         "properties":[
@@ -175,7 +183,8 @@
     "beliefstructuresymbol":{
         "name":"Belief Structure Symbol",
         "tags":["offensive","charm","word"],
-        "flavor":"An official, registered, trademarked, patented, and fully approved holy symbol of the legal monopoly belief system.","stat":["ka"],"number":["1d6"],
+        "flavor":"An official, registered, trademarked, patented, and fully approved holy symbol of the legal monopoly belief system.",
+        "stat":["ka"],"number":["1d6"],
         "weight":10,"value":40,
         "description":"",
         "properties":[
@@ -192,7 +201,8 @@
     "biggamegun":{
         "name":"Big Game Gun",
         "tags":["offensive","weapon","biggun"],
-        "flavor":"An infantry-portable heavy orichalcum projector traditionally used by Neoprimitive Human liberation fighters against the Farpower voyan war golems. Their manufacture has since passed into the gunsmithing lore of many cultural survivals from the misty aeons.","stat":["ha"],"number":["2d6"],
+        "flavor":"An infantry-portable heavy orichalcum projector traditionally used by Neoprimitive Human liberation fighters against the Farpower voyan war golems. Their manufacture has since passed into the gunsmithing lore of many cultural survivals from the misty aeons.",
+        "stat":["ha"],"number":["2d6"],
         "weight":20,"value":250,
         "description":"",
         "properties":[
@@ -222,7 +232,8 @@
     "blessedcap":{
         "name":"Blessed Cap",
         "tags":["defensive","ward"],
-        "flavor":"A cap in the style of a local sportsball military display unit, blessed by a technopriest.","stat":["ka"],"number":["1"],
+        "flavor":"A cap in the style of a local sportsball military display unit, blessed by a technopriest.",
+        "stat":["ka"],"number":["1"],
         "weight":10,"value":1,
         "description":"",
         "properties":[
@@ -230,7 +241,8 @@
     "bourgeoisblade":{
         "name":"Bourgeois Blade",
         "tags":["offensive","weapon","sword"],
-        "flavor":"A posh sword, more status symbol than weapon.","stat":["ha","ba"],"number":["1d6","1d8"],
+        "flavor":"A posh sword, more status symbol than weapon.",
+        "stat":["ha","ba"],"number":["1d6","1d8"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -247,10 +259,11 @@
             {"name":"Memory", "description":"Easy charisma test: The spark reveals a private moment from a higher era."},
             {"name":"Truth", "description":"Moderate charisma test: The spark gives a true answer, though it might be an era or two out of date."},
             {"name":"Wow", "description":"The spark puts on a hologram show that impressive the lesser people of fallen eras and grants [+] to the bearer’s ba tests."}]},
-    "bonerankleather greatcoat":{
+    "bonerankleathergreatcoat":{
         "name":"Bone Rank Leather Greatcoat",
         "tags":["defensive","armour"],
-        "flavor":"An ash-white greatcoat of supple texture and terrifyingly austere cut. Has special pockets for sacred books and pens.","stat":["ha","ba"],"number":["2","2"],
+        "flavor":"An ash-white greatcoat of supple texture and terrifyingly austere cut. Has special pockets for sacred books and pens.",
+        "stat":["ha","ba"],"number":["2","2"],
         "weight":10,"value":8000,
         "description":"",
         "properties":[
@@ -260,7 +273,8 @@
     "bountycorporae":{
         "name":"Bounty Corporae",
         "tags":["offensive","rhetoric","legalities"],
-        "flavor":"A bounty is placed on the ha, the body, of the target. Whether it is delivered living or dead, the local juridic automaton will pay out a thousand labour-days (i.e. €1k) in reward.","stat":["ba"],"number":["2d10"],
+        "flavor":"A bounty is placed on the ha, the body, of the target. Whether it is delivered living or dead, the local juridic automaton will pay out a thousand labour-days (i.e. €1k) in reward.",
+        "stat":["ba"],"number":["2d10"],
         "weight":10,"value":2000,
         "description":"",
         "properties":[
@@ -279,7 +293,8 @@
     "cancescepter":{
         "name":"Cancescepter",
         "tags":["offensive","charm","biomechané"],
-        "flavor":"The cancer scepter is a real can of worms.","stat":["ka"],"number":["1d10"],
+        "flavor":"The cancer scepter is a real can of worms.",
+        "stat":["ka"],"number":["1d10"],
         "weight":10,"value":500,
         "description":"",
         "properties":[
@@ -288,7 +303,8 @@
     "cartelhandshake":{
         "name":"Cartel Handshake",
         "tags":["offensive","rhetoric","staunchkeeper"],
-        "flavor":"The mark of the authority is upon the wielder of the handshake.","stat":["ba"],"number":["1d20"],
+        "flavor":"The mark of the authority is upon the wielder of the handshake.",
+        "stat":["ba"],"number":["1d20"],
         "weight":10,"value":5000,
         "description":"",
         "properties":[
@@ -297,7 +313,8 @@
     "centuriongoldsuit":{
         "name":"Centurion Gold Suit",
         "tags":["defensive","armour"],
-        "flavor":"A gilded golem suit with actual ornate winglets to make the wearer more obvious on the battlefield—and to send and receive semaphore commands.","stat":["ha","ba"],"number":["3","7"],
+        "flavor":"A gilded golem suit with actual ornate winglets to make the wearer more obvious on the battlefield—and to send and receive semaphore commands.",
+        "stat":["ha","ba"],"number":["3","7"],
         "weight":30,"value":40000,
         "description":"",
         "properties":[
@@ -308,7 +325,8 @@
     "chainsword":{
         "name":"Chainsword",
         "tags":["offensive","weapon","chain"],
-        "flavor":"A ripping chain of shark-like metal teeth powered by a roaring golem hilt-and-gauntlet combination. An elegant weapon of the second zombie apocalypse renaissance.","stat":["ha"],"number":["1d12"],
+        "flavor":"A ripping chain of shark-like metal teeth powered by a roaring golem hilt-and-gauntlet combination. An elegant weapon of the second zombie apocalypse renaissance.",
+        "stat":["ha"],"number":["1d12"],
         "weight":20,"value":2000,
         "description":"",
         "properties":[
@@ -318,12 +336,14 @@
     "chainmailsuit":{
         "name":"Chain Mail Suit",
         "tags":["defensive","armour"],
-        "flavor":"Something out of a museum.","stat":["ha"],"number":["6"],
+        "flavor":"Something out of a museum.",
+        "stat":["ha"],"number":["6"],
         "weight":30,"value":300,
         "description":""},"golemdriverleather jacket":{
         "name":"Golem Driver Leather Jacket",
         "tags":["defensive","armour"],
-        "flavor":"One sleeve tastefully ripped for that daring wastelander look.","stat":["ha"],"number":["3"],
+        "flavor":"One sleeve tastefully ripped for that daring wastelander look.",
+        "stat":["ha"],"number":["3"],
         "weight":20,"value":20,
         "description":"",
         "properties":[
@@ -331,7 +351,8 @@
     "chainsickle":{
         "name":"Chain Sickle",
         "tags":["offensive","weapon","chain"],
-        "flavor":"A weapon developed independently several times during the great servile rebellion time split, it has since become a symbol of the Agricolyte Peasant Republics.","stat":["ha"],"number":["1d6"],
+        "flavor":"A weapon developed independently several times during the great servile rebellion time split, it has since become a symbol of the Agricolyte Peasant Republics.",
+        "stat":["ha"],"number":["1d6"],
         "weight":10,"value":40,
         "description":"",
         "properties":[
@@ -350,7 +371,8 @@
     "classring":{
         "name":"Class Ring",
         "tags":["offensive","rhetoric","uptaught"],
-        "flavor":"A heavy ring of several metals woven together to symbolize the mastery of techné and arché. The ring is laced with oldtech that increases its kinetic energy.","stat":["ba","ha"],"number":["1d10","1d4"],
+        "flavor":"A heavy ring of several metals woven together to symbolize the mastery of techné and arché. The ring is laced with oldtech that increases its kinetic energy.",
+        "stat":["ba","ha"],"number":["1d10","1d4"],
         "weight":10,"value":400,
         "description":"",
         "properties":[
@@ -359,7 +381,8 @@
     "commandingbadge":{
         "name":"Commanding Badge",
         "tags":["offensive","rhetoric","ironfist"],
-        "flavor":"Proving membership in an authority organization.","stat":["ba"],"number":["1d4"],
+        "flavor":"Proving membership in an authority organization.",
+        "stat":["ba"],"number":["1d4"],
         "weight":"1","value":1,
         "description":"",
         "properties":[
@@ -377,7 +400,8 @@
     "crucifixbow":{
         "name":"Crucifix Bow",
         "tags":["offensive","weapon","bow"],
-        "flavor":"A silent war crossbow used by the cloud empire survivals.","stat":["ha"],"number":["1d10"],
+        "flavor":"A silent war crossbow used by the cloud empire survivals.",
+        "stat":["ha"],"number":["1d10"],
         "weight":10,"value":50,
         "description":"",
         "properties":[
@@ -387,7 +411,8 @@
     "crystalsiegerod":{
         "name":"Crystal Siege Rod",
         "tags":["offensive","weapon","biggun"],
-        "flavor":"A quartz disintegration ray amplifier housed in a heavily-glyphed brass and brazilwood casing.","stat":["4d6"],"number":["1d6","ha"],
+        "flavor":"A quartz disintegration ray amplifier housed in a heavily-glyphed brass and brazilwood casing.",
+        "stat":["ha"],"number":["4d6"],
         "weight":30,"value":1250,
         "description":"",
         "properties":[
@@ -400,7 +425,8 @@
     "dancingshoes":{
         "name":"Dancing Shoes",
         "tags":["defensive","prestige"],
-        "flavor":"Slick. Like they were made for moon-walking.","stat":["ba"],"number":["2"],
+        "flavor":"Slick. Like they were made for moon-walking.",
+        "stat":["ba"],"number":["2"],
         "weight":10,"value":400,
         "description":"",
         "properties":[
@@ -409,7 +435,8 @@
     "degreepostgraduate":{
         "name":"Degree, Postgraduate",
         "tags":["voyager","defensive","prestige"],
-        "flavor":"Awarded with distinction by the OBELISK University subconscious graduate program.","stat":["ba"],"number":["2"],
+        "flavor":"Awarded with distinction by the OBELISK University subconscious graduate program.",
+        "stat":["ba"],"number":["4"],
         "weight":1,"value":0,
         "description":"When a hero receives the degree, they choose a skill they are trained in.",
         "properties":[
@@ -417,7 +444,8 @@
     "delusorycrystal":{
         "name":"Delusory Crystal",
         "tags":["offensive","charm","seeming"],
-        "flavor":"A prism spinning in a gyroscope bends perceptions to better days.","stat":["ka"],"number":["1d6"],
+        "flavor":"A prism spinning in a gyroscope bends perceptions to better days.",
+        "stat":["ka"],"number":["1d6"],
         "weight":10,"value":50,
         "description":"",
         "properties":[
@@ -436,7 +464,8 @@
     "dragon'smenace":{
         "name":"Dragon's Menace",
         "tags":["offensive","rhetoric","unfettered"],
-        "flavor":"A curse inscribed upon the scale of a palace dragon from the Long Ago carries the weight and manipulation of a fossilized time.","stat":["ba"],"number":["1d12"],
+        "flavor":"A curse inscribed upon the scale of a palace dragon from the Long Ago carries the weight and manipulation of a fossilized time.",
+        "stat":["ba"],"number":["1d12"],
         "weight":10,"value":800,
         "description":"",
         "properties":[
@@ -445,7 +474,8 @@
     "duesofsacrifice":{
         "name":"Dues of Sacrifice",
         "tags":["offensive","rhetoric","leastfolk"],
-        "flavor":"Some believe that the arc of history is on the side of the Members. Some believe this arc may also bend bullets. A lining of tracts may certainly stop some.","stat":["ba"],"number":["1d6"],
+        "flavor":"Some believe that the arc of history is on the side of the Members. Some believe this arc may also bend bullets. A lining of tracts may certainly stop some.",
+        "stat":["ba"],"number":["1d6"],
         "weight":10,"value":40,
         "description":"",
         "properties":[
@@ -465,7 +495,8 @@
     "eisendoppelgänger":{
         "name":"Eisen Doppelgänger",
         "tags":["offensive","charm","golem"],
-        "flavor":"A micro-golem skin of iron ants and cosmic fish. It delivers crackling arcs of disruption.","stat":["ka"],"number":["2d12"],
+        "flavor":"A micro-golem skin of iron ants and cosmic fish. It delivers crackling arcs of disruption.",
+        "stat":["ka"],"number":["2d12"],
         "weight":10,"value":160000,
         "description":"",
         "properties":[
@@ -476,7 +507,8 @@
     "electricicon":{
         "name":"Electric Icon",
         "tags":["offensive","charm","electric","seeming"],
-        "flavor":"An electromagnificent painting of the Mother Electric projected from a three-point frame.","stat":["ka"],"number":["1d4"],
+        "flavor":"An electromagnificent painting of the Mother Electric projected from a three-point frame.",
+        "stat":["ka"],"number":["1d4"],
         "weight":20,"value":15,
         "description":"",
         "properties":[
@@ -486,7 +518,8 @@
     "electromagicalimplant":{
         "name":"Electromagical Implant",
         "tags":["defensive","prestige"],
-        "flavor":"A series of dermal implants that can record and display information. The wiring also helps to disperse metaphysical attacks.","stat":["ba","ka"],"number":["2","2"],
+        "flavor":"A series of dermal implants that can record and display information. The wiring also helps to disperse metaphysical attacks.",
+        "stat":["ba","ka"],"number":["2","2"],
         "weight":10,"value":4000,
         "description":"",
         "properties":[
@@ -504,7 +537,8 @@
     "emperor’snewclothes":{
         "name":"Emperor’s New Clothes",
         "tags":["defensive","prestige"],
-        "flavor":"So wonderful that only good people of taste, breeding, and distinction can even see them.","stat":["ba"],"number":["5"],
+        "flavor":"So wonderful that only good people of taste, breeding, and distinction can even see them.",
+        "stat":["ba"],"number":["5"],
         "weight":10,"value":1000000,
         "description":"",
         "properties":[
@@ -514,7 +548,8 @@
     "emperor’sskullflask":{
         "name":"Emperor’s Skull Flask",
         "tags":["defensive","ward"],
-        "flavor":"The skull of an emperor fashioned into a gilded, jewel-encrusted flask. Can be worn as a classy barbarian belt ornament.","stat":["ka"],"number":["4"],
+        "flavor":"The skull of an emperor fashioned into a gilded, jewel-encrusted flask. Can be worn as a classy barbarian belt ornament.",
+        "stat":["ka"],"number":["4"],
         "weight":10,"value":1000000,
         "description":"",
         "properties":[
@@ -535,7 +570,8 @@
     "excellentjoke":{
         "name":"Excellent Joke",
         "tags":["offensive","rhetoric","bestfolk"],
-        "flavor":"Razor-sharp humour written by a very rare algorithm engine from the Old Days.","stat":["ba"],"number":["1d10"],
+        "flavor":"Razor-sharp humour written by a very rare algorithm engine from the Old Days.",
+        "stat":["ba"],"number":["1d10"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -553,7 +589,8 @@
     "exquisiteface":{
         "name":"Exquisite Face",
         "tags":["offensive","rhetoric","bestfolk"],
-        "flavor":"The time and money it takes to paint a commanding face are not something any fool could afford. The cosmetics alone require a small army of itinerant labourers to go hungry in the scented forests of Urborja.","stat":["ba"],"number":["2d6"],
+        "flavor":"The time and money it takes to paint a commanding face are not something any fool could afford. The cosmetics alone require a small army of itinerant labourers to go hungry in the scented forests of Urborja.",
+        "stat":["ba"],"number":["2d6"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -562,7 +599,8 @@
     "exsecrarium":{
         "name":"Exsecrarium",
         "tags":["offensive","charm","rightmaker"],
-        "flavor":"A censer of censure. The gentle mist and the aromatic herbs wafting from the alabaster and gold orb direct hate and curses against the victim of the wielder’s imprecations and gestures.","stat":["ka"],"number":["2d12"],
+        "flavor":"A censer of censure. The gentle mist and the aromatic herbs wafting from the alabaster and gold orb direct hate and curses against the victim of the wielder’s imprecations and gestures.",
+        "stat":["ka"],"number":["2d12"],
         "weight":10,"value":20000,
         "description":"",
         "properties":[
@@ -583,7 +621,8 @@
     "eyeofthe metagorgon":{
         "name":"Eye of the Metagorgon",
         "tags":["offensive","charm","biomechane","oldtech"],
-        "flavor":"The orb was originally a reality debugging tool. Now it floats in a blinded nutrĳug.","stat":["ka"],"number":["1d6"],
+        "flavor":"The orb was originally a reality debugging tool. Now it floats in a blinded nutrĳug.",
+        "stat":["ka"],"number":["1d6"],
         "weight":20,"value":100,
         "description":"",
         "properties":[
@@ -618,7 +657,8 @@
     "flamesprayer":{
         "name":"Flamesprayer",
         "tags":["voyager","offensive","weapon","biggun"],
-        "flavor":"A makeshift contraption that spews forth flammable liquids.","stat":["ha"],"number":["1d6*"],
+        "flavor":"A makeshift contraption that spews forth flammable liquids.",
+        "stat":["ha"],"number":["1d6*"],
         "weight":30,"value":20,
         "description":"",
         "properties":[
@@ -638,7 +678,8 @@
     "forgedevidence":{
         "name":"Forged Evidence",
         "tags":["offensive","rhetoric","staunchkeeper"],
-        "flavor":"If a thief hangs in the forest and nobody sees them, does a thief even hang?","stat":["ba"],"number":["1d10"],
+        "flavor":"If a thief hangs in the forest and nobody sees them, does a thief even hang?",
+        "stat":["ba"],"number":["1d10"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -647,7 +688,8 @@
     "fulltechnicolorspectrum suit":{
         "name":"Full Technicolor Spectrum Suit",
         "tags":["defensive","ward"],
-        "flavor":"The finest robe of many colours.","stat":["ka"],"number":["7"],
+        "flavor":"The finest robe of many colours.",
+        "stat":["ka"],"number":["7"],
         "weight":20,"value":25000,
         "description":"",
         "properties":[
@@ -658,7 +700,8 @@
     "generativeaxis":{
         "name":"Generative Axis",
         "tags":["offensive","charm","oldtech"],
-        "flavor":"The devourer liked to hear it was a good cannon. That it was doing a good job. 144 A delicate strange-matter rod rotating within a steel-glass shaft. The crystal spheres at either end spark with numinous essence.","stat":["ka","ha"],"number":["2d10","1d12"],
+        "flavor":"The devourer liked to hear it was a good cannon. That it was doing a good job. 144 A delicate strange-matter rod rotating within a steel-glass shaft. The crystal spheres at either end spark with numinous essence.",
+        "stat":["ka","ha"],"number":["2d10","1d12"],
         "weight":20,"value":5000,
         "description":"",
         "properties":[
@@ -669,7 +712,8 @@
     "ghoulgarland":{
         "name":"Ghoul Garland",
         "tags":["defensive","ward"],
-        "flavor":"Rat skulls, garlic bulbs, sunflower seeds, a cogflower carved in ebony, seven nails, and a vial of holy spring water.","stat":["ka"],"number":["3"],
+        "flavor":"Rat skulls, garlic bulbs, sunflower seeds, a cogflower carved in ebony, seven nails, and a vial of holy spring water.",
+        "stat":["ka"],"number":["3"],
         "weight":20,"value":160,
         "description":"",
         "properties":[
@@ -679,7 +723,8 @@
     "ghostboneaxe":{
         "name":"Ghostbone Axe",
         "tags":["offensive","weapon","hammeraxe"],
-        "flavor":"An axe made from the bones of the Early World's shimmering titans. The energies still bound within these gifts of creation devastate abominations against the circle of life.","stat":["ha"],"number":["2d8"],
+        "flavor":"An axe made from the bones of the Early World's shimmering titans. The energies still bound within these gifts of creation devastate abominations against the circle of life.",
+        "stat":["ha"],"number":["2d8"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -699,7 +744,8 @@
     "globlobber":{
         "name":"Glob Lobber",
         "tags":["voyager","offensive","weapon","rifle"],
-        "flavor":"Fires globs of rapidly expanding glue.","stat":["ha"],"number":["1d2"],
+        "flavor":"Fires globs of rapidly expanding glue.",
+        "stat":["ha"],"number":["1d2"],
         "weight":20,"value":60,
         "description":"",
         "properties":[
@@ -770,7 +816,8 @@
     "gloriousgala":{
         "name":"Glorious Gala",
         "tags":["offensive","rhetoric","bestfolk"],
-        "flavor":"A lavish celebration to permanently cement one of the arriviste adventurers as a member of the bestfolk.","stat":["ba"],"number":["2d20"],
+        "flavor":"A lavish celebration to permanently cement one of the arriviste adventurers as a member of the bestfolk.",
+        "stat":["ba"],"number":["2d20"],
         "weight":10,"value":100000,
         "description":"",
         "properties":[
@@ -789,7 +836,8 @@
     "gnosticmystery":{
         "name":"Gnostic Mystery",
         "tags":["offensive","rhetoric","unfettered"],
-        "flavor":"A Truth resides within the hero, a terrible fate awaiting its opportunity to emerge and tear down the gates of Bāb-ilim.","stat":["1d20","1d20"],"number":["ba","ka"],
+        "flavor":"A Truth resides within the hero, a terrible fate awaiting its opportunity to emerge and tear down the gates of Bāb-ilim.",
+        "stat":["1d20","1d20"],"number":["ba","ka"],
         "weight":10,"value":50000,
         "description":"",
         "properties":[
@@ -808,7 +856,8 @@
     "goldenhammer":{
         "name":"Golden Hammer",
         "tags":["offensive","weapon","hammeraxe"],
-        "flavor":"These glittering weapons of pure-printed novalloy are used as currency by the tribes of Newo Georgioi, who till the lands in mock agrarian idyll under the commanding gaze of the autofac Great Printer Marcus IV. The hammers are decent weapons, but the self-repairing novalloy can only be reforged into other objects by true oldtech autofacs.","stat":["ha","ba"],"number":["1d10","1d10"],
+        "flavor":"These glittering weapons of pure-printed novalloy are used as currency by the tribes of Newo Georgioi, who till the lands in mock agrarian idyll under the commanding gaze of the autofac Great Printer Marcus IV. The hammers are decent weapons, but the self-repairing novalloy can only be reforged into other objects by true oldtech autofacs.",
+        "stat":["ha","ba"],"number":["1d10","1d10"],
         "weight":20,"value":200,
         "description":"",
         "properties":[
@@ -817,7 +866,8 @@
     "golembow":{
         "name":"Golem Bow",
         "tags":["offensive","weapon","bow"],
-        "flavor":"A war bow with a specialized full-arm golem harness that loads and draws the weapon for the archer. After the Steam Lords mandated augmented golem-multi-arm training for their free labourer caste from childhood, their piston archers revolutionized Long Sea warfare for a generation. Then the 3rd ansible revolution wiped out the Steam Lords.","stat":["ha"],"number":["1d12"],
+        "flavor":"A war bow with a specialized full-arm golem harness that loads and draws the weapon for the archer. After the Steam Lords mandated augmented golem-multi-arm training for their free labourer caste from childhood, their piston archers revolutionized Long Sea warfare for a generation. Then the 3rd ansible revolution wiped out the Steam Lords.",
+        "stat":["ha"],"number":["1d12"],
         "weight":10,"value":2000,
         "description":"",
         "properties":[
@@ -828,7 +878,8 @@
     "gongofdoom":{
         "name":"Gong of Doom",
         "tags":["offensive","charm","void"],
-        "flavor":"When struck, the gong’s vibrations awaken the doomed and dispossessed. The echoes of their pain rush forth in a numbing blackened death growl.","stat":["ka"],"number":["3d12"],
+        "flavor":"When struck, the gong’s vibrations awaken the doomed and dispossessed. The echoes of their pain rush forth in a numbing blackened death growl.",
+        "stat":["ka"],"number":["3d12"],
         "weight":40,"value":20000,
         "description":"",
         "properties":[
@@ -839,7 +890,8 @@
     "gracefulbeadedcumbersuit":{
         "name":"Graceful Beaded Cumbersuit",
         "tags":["defensive","prestige"],
-        "flavor":"An ornate harness of amber bead necklaces. The ostentation clarifies the wearer is too important to actually spend their energy working … or walking much.","stat":["ba"],"number":["10"],
+        "flavor":"An ornate harness of amber bead necklaces. The ostentation clarifies the wearer is too important to actually spend their energy working … or walking much.",
+        "stat":["ba"],"number":["10"],
         "weight":40,"value":1000,
         "description":"",
         "properties":[
@@ -855,7 +907,8 @@
     "hardlightshield":{
         "name":"Hard Light Shield",
         "tags":["defensive","armour"],
-        "flavor":"A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.","stat":["ha"],"number":["3"],
+        "flavor":"A glittering personal force-shield of hard light bound to a projection bracer of true Sunrider design.",
+        "stat":["ha"],"number":["3"],
         "weight":10,"value":100000,
         "description":"",
         "properties":[
@@ -866,7 +919,8 @@
     "harpoongun":{
         "name":"Harpoon Gun",
         "tags":["voyager","offensive","weapon","rifle"],
-        "flavor":"Reel in the test subjects.","stat":["ha"],"number":["1d12"],
+        "flavor":"Reel in the test subjects.",
+        "stat":["ha"],"number":["1d12"],
         "weight":30,"value":40,
         "description":"",
         "properties":[
@@ -875,7 +929,8 @@
     "harshestslander":{
         "name":"Harshest Slander",
         "tags":["offensive","rhetoric","outcaste"],
-        "flavor":"So false, yet so believable. Amazing what swims in the gutters.","stat":["ba"],"number":["2d8"],
+        "flavor":"So false, yet so believable. Amazing what swims in the gutters.",
+        "stat":["ba"],"number":["2d8"],
         "weight":10,"value":2000,
         "description":"",
         "properties":[
@@ -894,7 +949,8 @@
     "headhelmet":{
         "name":"Head Helmet",
         "tags":["defensive","ward"],
-        "flavor":"Made from the skull and skin of some kind of giant, alien, or engineer. Looks creepy.","stat":["ka","ha"],"number":["4","2"],
+        "flavor":"Made from the skull and skin of some kind of giant, alien, or engineer. Looks creepy.",
+        "stat":["ka","ha"],"number":["4","2"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -930,7 +986,8 @@
     "hero'sbadge":{
         "name":"Hero's Badge",
         "tags":["offensive","rhetoric","ironfist"],
-        "flavor":"A heart shackled in the four spears of destiny, a soul broken upon the trifold wheel, a person given whole to the service of the Motherfatherland.","stat":["ba"],"number":["1d8"],
+        "flavor":"A heart shackled in the four spears of destiny, a soul broken upon the trifold wheel, a person given whole to the service of the Motherfatherland.",
+        "stat":["ba"],"number":["1d8"],
         "weight":1,"value":40,
         "description":"",
         "properties":[
@@ -939,7 +996,8 @@
     "heroicepic":{
         "name":"Heroic Epic",
         "tags":["offensive","rhetoric","soiltwined"],
-        "flavor":"A majestic tale, recited, sung, quoted and much-loved. Uniquely spun to highlight the hero's role in restoring the ancient glories.","stat":["ba"],"number":["2d12"],
+        "flavor":"A majestic tale, recited, sung, quoted and much-loved. Uniquely spun to highlight the hero's role in restoring the ancient glories.",
+        "stat":["ba"],"number":["2d12"],
         "weight":20,"value":10000,
         "description":"",
         "properties":[
@@ -948,7 +1006,8 @@
     "hiddenstalkerring":{
         "name":"Hidden Stalker Ring",
         "tags":["defensive","ward"],
-        "flavor":"The ring-shaped focus for a hacked reality encoder spirit uses ghost tendrils to enhance (hĳack) the wearer's nervous system and project a chameleon field.","stat":["ka"],"number":["2"],
+        "flavor":"The ring-shaped focus for a hacked reality encoder spirit uses ghost tendrils to enhance (hĳack) the wearer's nervous system and project a chameleon field.",
+        "stat":["ka"],"number":["2"],
         "weight":1,"value":1000,
         "description":"",
         "properties":[
@@ -977,7 +1036,8 @@
     "home'ssoil":{
         "name":"Home's Soil",
         "tags":["offensive","rhetoric","soiltwined"],
-        "flavor":"A soul-jar of dirt grounds the bearer and reminds them of their roots. Their colourful curses reverberate with the memories of long-forgotten earths.","stat":["ba"],"number":["1d6"],
+        "flavor":"A soul-jar of dirt grounds the bearer and reminds them of their roots. Their colourful curses reverberate with the memories of long-forgotten earths.",
+        "stat":["ba"],"number":["1d6"],
         "weight":10,"value":400,
         "description":"",
         "properties":[
@@ -986,7 +1046,8 @@
     "homespunwisdom":{
         "name":"Homespun Wisdom",
         "tags":["offensive","rhetoric","soiltwined"],
-        "flavor":"Their head is full of grandmother Org's old sayings about the wars in heaven and the fate of the soldiers of the Viles and the Lings.","stat":["ba"],"number":["1d6"],
+        "flavor":"Their head is full of grandmother Org's old sayings about the wars in heaven and the fate of the soldiers of the Viles and the Lings.",
+        "stat":["ba"],"number":["1d6"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -1006,7 +1067,8 @@
     "horaniwarmaul":{
         "name":"Horani War Maul",
         "tags":["offensive","weapon","rod"],
-        "flavor":"A big two-handed mace forged from the brainstone and neural column of an Iron War golem. Fortunately, few of those wrecks remain in the Horaberg Colline Mountains, the traditional homeland of the Horani radical machinist collectives.","stat":["ha"],"number":["1d20"],
+        "flavor":"A big two-handed mace forged from the brainstone and neural column of an Iron War golem. Fortunately, few of those wrecks remain in the Horaberg Colline Mountains, the traditional homeland of the Horani radical machinist collectives.",
+        "stat":["ha"],"number":["1d20"],
         "weight":30,"value":625,
         "description":"",
         "properties":[
@@ -1016,7 +1078,8 @@
     "hypercomplicatedwatch":{
         "name":"Hypercomplicated Watch",
         "tags":["defensive","prestige"],
-        "flavor":"One never actually owns a rhodium diamond-encrusted pure-luxe watch. One only rents it from the bank with the surplus value borrowed from one’s tenant bond warehouse workers.","stat":["ba"],"number":["4"],
+        "flavor":"One never actually owns a rhodium diamond-encrusted pure-luxe watch. One only rents it from the bank with the surplus value borrowed from one’s tenant bond warehouse workers.",
+        "stat":["ba"],"number":["4"],
         "weight":10,"value":2000000,
         "description":"",
         "properties":[
@@ -1024,7 +1087,8 @@
     "ideallever":{
         "name":"Ideal Lever",
         "tags":["offensive","charm","architect"],
-        "flavor":"Concepts of constructed reality welded into an engineer’s sceptre. Theoretically, it is infinitely long and massless.","stat":["ka","ha"],"number":["2d8","1d6"],
+        "flavor":"Concepts of constructed reality welded into an engineer’s sceptre. Theoretically, it is infinitely long and massless.",
+        "stat":["ka","ha"],"number":["2d8","1d6"],
         "weight":10,"value":5000,
         "description":"",
         "properties":[
@@ -1042,7 +1106,8 @@
     "iksanheatray":{
         "name":"Iksan Heat Ray",
         "tags":["offensive","weapon","energy","rifle"],
-        "flavor":"A ruby wand encased in a bakelite and ironwood amplifier casing. Originally mass-produced by the Reasonable Army, new heat-rays are usually ornate one-offs produced by crystal wizards for the luxury laser hunting market.","stat":["ha"],"number":["2d6"],
+        "flavor":"A ruby wand encased in a bakelite and ironwood amplifier casing. Originally mass-produced by the Reasonable Army, new heat-rays are usually ornate one-offs produced by crystal wizards for the luxury laser hunting market.",
+        "stat":["ha"],"number":["2d6"],
         "weight":10,"value":1000,
         "description":"",
         "properties":[
@@ -1053,7 +1118,8 @@
     "iksanlevellersuit":{
         "name":"Iksan Leveller Suit",
         "tags":["defensive","armour"],
-        "flavor":"Brightly coloured plates of ceramic threaded with silvery metallic links.","stat":["ha"],"number":["7"],
+        "flavor":"Brightly coloured plates of ceramic threaded with silvery metallic links.",
+        "stat":["ha"],"number":["7"],
         "weight":30,"value":5000,
         "description":"",
         "properties":[
@@ -1062,7 +1128,8 @@
     "iridescentbodypaint":{
         "name":"Iridescent Body Paint",
         "tags":["defensive","prestige"],
-        "flavor":"Really it’s just petroleum jelly with powdered iridescent glitter. But it certainly looks posh to a certain class of human.","stat":["ba"],"number":["1"],
+        "flavor":"Really it’s just petroleum jelly with powdered iridescent glitter. But it certainly looks posh to a certain class of human.",
+        "stat":["ba"],"number":["1"],
         "weight":10,"value":10,
         "description":"",
         "properties":[
@@ -1072,7 +1139,8 @@
     "ironminotaursuit":{
         "name":"Iron Minotaur Suit",
         "tags":["defensive","armour"],
-        "flavor":"A monstrosity of godmeat and bronze cooked up in the churning crypt vats of the Living Flesh God.","stat":["ha"],"number":["7"],
+        "flavor":"A monstrosity of godmeat and bronze cooked up in the churning crypt vats of the Living Flesh God.",
+        "stat":["ha"],"number":["7"],
         "weight":30,"value":5000,
         "description":"",
         "properties":[
@@ -1086,7 +1154,8 @@
     "jollyponcho":{
         "name":"Jolly Poncho",
         "tags":["defensive","ward"],
-        "flavor":"A bright yellow poncho with a hood. The edges are trimmed with geometric patterns and russet tassels.","stat":["ha","ka"],"number":["1","2"],
+        "flavor":"A bright yellow poncho with a hood. The edges are trimmed with geometric patterns and russet tassels.",
+        "stat":["ha","ka"],"number":["1","2"],
         "weight":10,"value":400,
         "description":"",
         "properties":[
@@ -1094,7 +1163,8 @@
     "justiceskull":{
         "name":"Justice Skull",
         "tags":["offensive","charm","rightmaker"],
-        "flavor":"A serious skull wired with silver and embossed with turquoise and malachite. Its eyes and mouth emit rays of judgement.","stat":["ka"],"number":["1d6"],
+        "flavor":"A serious skull wired with silver and embossed with turquoise and malachite. Its eyes and mouth emit rays of judgement.",
+        "stat":["ka"],"number":["1d6"],
         "weight":10,"value":50,
         "description":"",
         "properties":[
@@ -1125,7 +1195,8 @@
     "labyrinthjewel":{
         "name":"Labyrinth Jewel",
         "tags":["offensive","charm","architect"],
-        "flavor":"The higher-dimensional jewel sits in a palladium crown and blasts foes with mazing rays, trapping them in visceral figments of the wielder’s imagination.","stat":["ka"],"number":["2d12"],
+        "flavor":"The higher-dimensional jewel sits in a palladium crown and blasts foes with mazing rays, trapping them in visceral figments of the wielder’s imagination.",
+        "stat":["ka"],"number":["2d12"],
         "weight":10,"value":45000,
         "description":"",
         "properties":[
@@ -1136,7 +1207,8 @@
     "leadendragonsuit":{
         "name":"Leaden Dragon Suit",
         "tags":["defensive","armour"],
-        "flavor":"A massive suit of malevolently sliding plates and spikes woven around a golem servo harness designed to augment the endurance of its wearer.","stat":["ha"],"number":["3"],
+        "flavor":"A massive suit of malevolently sliding plates and spikes woven around a golem servo harness designed to augment the endurance of its wearer.",
+        "stat":["ha"],"number":["3"],
         "weight":30,"value":8000,
         "description":"",
         "properties":[
@@ -1174,7 +1246,8 @@
     "lifterskeleframe":{
         "name":"Lifter Skeleframe",
         "tags":["voyager","defensive","armour"],
-        "flavor":"Basic exoskeleton for loading and unloading cargo.","stat":["ha"],"number":["3"],
+        "flavor":"Basic exoskeleton for loading and unloading cargo.",
+        "stat":["ha"],"number":["5"],
         "weight":50,"value":200,
         "description":"",
         "properties":[
@@ -1184,7 +1257,8 @@
     "lignumvitaebattle stick":{
         "name":"Lignum Vitae Battle Stick",
         "tags":["offensive","weapon","rod"],
-        "flavor":"Carved and polished from the glowing heartwood of the heavy tree, the stick sinks in water. Widely used as a “compliance tool” by the imperial uplifters of the Four Sky Regency, it has remained a traditional badge of rank among the officer-chiefs of the regency camelherder tribes of the Pale Plains beyond the Yellowland.","stat":["ha"],"number":["1d6"],
+        "flavor":"Carved and polished from the glowing heartwood of the heavy tree, the stick sinks in water. Widely used as a “compliance tool” by the imperial uplifters of the Four Sky Regency, it has remained a traditional badge of rank among the officer-chiefs of the regency camelherder tribes of the Pale Plains beyond the Yellowland.",
+        "stat":["ha"],"number":["1d6"],
         "weight":10,"value":5,
         "description":"",
         "properties":[
@@ -1230,7 +1304,8 @@
     "logicalconsequences":{
         "name":"Logical Consequences",
         "tags":["offensive","rhetoric","uptaught"],
-        "flavor":"The wizardly logic of the overeducated can flense a fool from their freedom.","stat":["ba"],"number":["1d8"],
+        "flavor":"The wizardly logic of the overeducated can flense a fool from their freedom.",
+        "stat":["ba"],"number":["1d8"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -1239,7 +1314,8 @@
     "longeyefusil":{
         "name":"Longeye Fusil",
         "tags":["offensive","weapon","rifle"],
-        "flavor":"A sniper rifle made to the specifications of the golem fusiliers by the drone human fabricators of the Crust Belt.","stat":["ha"],"number":["1d10"],
+        "flavor":"A sniper rifle made to the specifications of the golem fusiliers by the drone human fabricators of the Crust Belt.",
+        "stat":["ha"],"number":["1d10"],
         "weight":10,"value":200,
         "description":"",
         "properties":[
@@ -1249,7 +1325,8 @@
     "lucitespell-breaker":{
         "name":"Lucite Spell-Breaker",
         "tags":["offensive","weapon","rod"],
-        "flavor":"A small club or truncheon of pure lucite reinforced with sinew and copper bands.","stat":["ha","ka"],"number":["1d4","1d4"],
+        "flavor":"A small club or truncheon of pure lucite reinforced with sinew and copper bands.",
+        "stat":["ha","ka"],"number":["1d4","1d4"],
         "weight":10,"value":4,
         "description":"",
         "properties":[
@@ -1257,7 +1334,8 @@
     "luminousspear":{
         "name":"Luminous Spear",
         "tags":["offensive","weapon","polearm"],
-        "flavor":"A glowing two-handed weapon favoured by the Bund-Bund warriors of the technopapacy.","stat":["ha"],"number":["1d10"],
+        "flavor":"A glowing two-handed weapon favoured by the Bund-Bund warriors of the technopapacy.",
+        "stat":["ha"],"number":["1d10"],
         "weight":20,"value":100,
         "description":"",
         "properties":[
@@ -1276,7 +1354,8 @@
     "machineghostbelt":{
         "name":"Machine Ghost Belt",
         "tags":["defensive","ward"],
-        "flavor":"Looping, coiling links of living machine corpses, still sparkling with the ghosts of ancient sapience subroutines.","stat":["ka"],"number":["3"],
+        "flavor":"Looping, coiling links of living machine corpses, still sparkling with the ghosts of ancient sapience subroutines.",
+        "stat":["ka"],"number":["3"],
         "weight":20,"value":100,
         "description":"",
         "properties":[
@@ -1284,7 +1363,8 @@
     "magnificentfireballpistol":{
         "name":"Magnificent Fireball Pistol",
         "tags":["offensive","weapon","pistol"],
-        "flavor":"One of the most stupidly overpowered inventions ever fed into an autofac production matrix. The fireball wandpistol converts the dross of mortal life force into powerful balls of fire. Hardly a fair trade in the eyes of the noble land barons.","stat":["ha"],"number":["3d6"],
+        "flavor":"One of the most stupidly overpowered inventions ever fed into an autofac production matrix. The fireball wandpistol converts the dross of mortal life force into powerful balls of fire. Hardly a fair trade in the eyes of the noble land barons.",
+        "stat":["ha"],"number":["3d6"],
         "weight":10,"value":20000,
         "description":"",
         "properties":[
@@ -1304,7 +1384,8 @@
     "malachitegolemsuit":{
         "name":"Malachite Golem Suit",
         "tags":["defensive","armour"],
-        "flavor":"A composite suit of polished semi-magical stone and woven layers of force magic designed to counter massed firearms. The coiling, gurgling force fields seem to cover the suit in rippling waves of viscous liquid.","stat":["ha"],"number":["5"],
+        "flavor":"A composite suit of polished semi-magical stone and woven layers of force magic designed to counter massed firearms. The coiling, gurgling force fields seem to cover the suit in rippling waves of viscous liquid.",
+        "stat":["ha"],"number":["5"],
         "weight":20,"value":10000,
         "description":"",
         "properties":[
@@ -1323,7 +1404,8 @@
     "mepuppet":{
         "name":"Me Puppet",
         "tags":["defensive","prestige"],
-        "flavor":"A lovely golem suit that changes appearance to look just like a prettier version of its wearer.","stat":["ba","ha"],"number":["6","3"],
+        "flavor":"A lovely golem suit that changes appearance to look just like a prettier version of its wearer.",
+        "stat":["ba","ha"],"number":["6","3"],
         "weight":30,"value":10000,
         "description":"",
         "properties":[
@@ -1374,7 +1456,8 @@
     "mininglaser":{
         "name":"Mining Laser",
         "tags":["voyager","offensive","weapon","energy"],
-        "flavor":"Great for melting rock, steel, and flesh.","stat":["ha"],"number":["1d4"],
+        "flavor":"Great for melting rock, steel, and flesh.",
+        "stat":["ha"],"number":["1d4"],
         "weight":20,"value":100,
         "description":"",
         "properties":[
@@ -1383,7 +1466,8 @@
     "mirror-of-heaven":{
         "name":"Mirror-of-Heaven",
         "tags":["defensive","ward"],
-        "flavor":"A cerulean mirror hung on fine chains of woven unicorn sinew in and the tears of the starborn.","stat":["ka"],"number":["9"],
+        "flavor":"A cerulean mirror hung on fine chains of woven unicorn sinew in and the tears of the starborn.",
+        "stat":["ka"],"number":["9"],
         "weight":30,"value":30000,
         "description":"",
         "properties":[
@@ -1392,7 +1476,8 @@
     "monochromesuit":{
         "name":"Monochrome Suit",
         "tags":["defensive","ward"],
-        "flavor":"Harlequin suit in shifting patterns of black and white. Tight and bulky by turns.","stat":["ka"],"number":["7"],
+        "flavor":"Harlequin suit in shifting patterns of black and white. Tight and bulky by turns.",
+        "stat":["ka"],"number":["7"],
         "weight":20,"value":100000,
         "description":"",
         "properties":[
@@ -1401,7 +1486,8 @@
     "mostusefulwarrant":{
         "name":"Most Useful Warrant",
         "tags":["offensive","rhetoric","legalities"],
-        "flavor":"The quill of the law is a sharp sword in the righteous fist.","stat":["ba"],"number":["1d10"],
+        "flavor":"The quill of the law is a sharp sword in the righteous fist.",
+        "stat":["ba"],"number":["1d10"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -1418,7 +1504,8 @@
     "mouthofgod":{
         "name":"Mouth of God",
         "tags":["offensive","charm","hardlight"],
-        "flavor":"The portable solid hologram projector manifests a divine progenitor to smite the unbelievers. Or, at least, scare gullible fools out of their wits.","stat":["ka","ba"],"number":["3d10","3d10"],
+        "flavor":"The portable solid hologram projector manifests a divine progenitor to smite the unbelievers. Or, at least, scare gullible fools out of their wits.",
+        "stat":["ka","ba"],"number":["3d10","3d10"],
         "weight":20,"value":25000,
         "description":"",
         "properties":[
@@ -1431,7 +1518,8 @@
     "nailgun":{
         "name":"Nailgun",
         "tags":["voyager","offensive","weapon","pistol"],
-        "flavor":"Rat-tat-tat-tat-click.","stat":["ha"],"number":["1d4"],
+        "flavor":"Rat-tat-tat-tat-click.",
+        "stat":["ha"],"number":["1d4"],
         "weight":2,"value":20,
         "description":"",
         "properties":[
@@ -1440,7 +1528,8 @@
     "necronomictome":{
         "name":"Necronomic Tome",
         "tags":["defensive","ward"],
-        "flavor":"A bulky book that promises life eternal. It lies.","stat":["ka"],"number":["3"],
+        "flavor":"A bulky book that promises life eternal. It lies.",
+        "stat":["ka"],"number":["3"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -1449,7 +1538,8 @@
     "nemeanskin":{
         "name":"Nemean Skin",
         "tags":["defensive","prestige"],
-        "flavor":"The luxurious pelt of a now-dead divine creature reflects both literal and metaphorical arrows.","stat":["ba","ha"],"number":["5","5"],
+        "flavor":"The luxurious pelt of a now-dead divine creature reflects both literal and metaphorical arrows.",
+        "stat":["ba","ha"],"number":["5","5"],
         "weight":20,"value":20000,
         "description":"",
         "properties":[
@@ -1457,7 +1547,8 @@
     "neoprimitivebow":{
         "name":"Neoprimitive Bow",
         "tags":["offensive","weapon","bow"],
-        "flavor":"A hunting bow designed in a museum style from the lost ages.","stat":["ha"],"number":["1d6"],
+        "flavor":"A hunting bow designed in a museum style from the lost ages.",
+        "stat":["ha"],"number":["1d6"],
         "weight":10,"value":5,
         "description":"",
         "properties":[
@@ -1476,7 +1567,8 @@
     "nihiltablet":{
         "name":"Nihil Tablet",
         "tags":["offensive","charm","void"],
-        "flavor":"A tablet dug up from a long-extinct The robot witch used the labyrinth jewel to send their minds into an imaginary maze.. 145 civilization. It tells of the death of a utopia. Reciting the grime poem inflicts bleak despair.","stat":["ka"],"number":["1d6"],
+        "flavor":"A tablet dug up from a long-extinct The robot witch used the labyrinth jewel to send their minds into an imaginary maze.. 145 civilization. It tells of the death of a utopia. Reciting the grime poem inflicts bleak despair.",
+        "stat":["ka"],"number":["1d6"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -1484,7 +1576,8 @@
     "nu-faceaugment":{
         "name":"Nu-face Augment",
         "tags":["defensive","prestige"],
-        "flavor":"A better face for a better you. Deep neural rewiring gives full control of one’s expressions and emotions.","stat":["ba"],"number":["3"],
+        "flavor":"A better face for a better you. Deep neural rewiring gives full control of one’s expressions and emotions.",
+        "stat":["ba"],"number":["3"],
         "weight":10,"value":10000,
         "description":"",
         "properties":[
@@ -1514,7 +1607,8 @@
     "obsidianchameleonsuit":{
         "name":"Obsidian Chameleon Suit",
         "tags":["defensive","armour"],
-        "flavor":"A rough, pebbly synthetic skin overlaid on a fungal golem metaskeleton. Designed for agility and covert operations.","stat":["ha"],"number":["5"],
+        "flavor":"A rough, pebbly synthetic skin overlaid on a fungal golem metaskeleton. Designed for agility and covert operations.",
+        "stat":["ha"],"number":["5"],
         "weight":20,"value":30000,
         "description":"",
         "properties":[
@@ -1524,7 +1618,8 @@
     "officialcorpocratuniform":{
         "name":"Official Corpocrat Uniform",
         "tags":["defensive","prestige"],
-        "flavor":"This complicated and cumbersome suit is completely unsuitable to the local climate. However, it does mark its wearer as a member of local society in good standing, willing to put in the effort to fit in.","stat":["ba"],"number":["6"],
+        "flavor":"This complicated and cumbersome suit is completely unsuitable to the local climate. However, it does mark its wearer as a member of local society in good standing, willing to put in the effort to fit in.",
+        "stat":["ba"],"number":["6"],
         "weight":40,"value":20,
         "description":"",
         "properties":[
@@ -1555,7 +1650,8 @@
     "onyxghostsuit":{
         "name":"Onyx Ghost Suit",
         "tags":["defensive","armour"],
-        "flavor":"A ghost-infused golem suit of coiling onyx snakes and shifting spirit stones. As it moves, it whispers with hints of lives wasted and dreams destroyed.","stat":["ha","ka"],"number":["5","5"],
+        "flavor":"A ghost-infused golem suit of coiling onyx snakes and shifting spirit stones. As it moves, it whispers with hints of lives wasted and dreams destroyed.",
+        "stat":["ha","ka"],"number":["5","5"],
         "weight":20,"value":150000,
         "description":"",
         "properties":[
@@ -1565,7 +1661,8 @@
     "orangelandglitterplate":{
         "name":"Orangeland Glitterplate",
         "tags":["defensive","armour"],
-        "flavor":"Flattering form-fitted breastplate of translucent ceramic reinforced with shards of hard light.","stat":["ha","ba"],"number":["4","2"],
+        "flavor":"Flattering form-fitted breastplate of translucent ceramic reinforced with shards of hard light.",
+        "stat":["ha","ba"],"number":["4","2"],
         "weight":20,"value":2000,
         "description":"",
         "properties":[
@@ -1594,7 +1691,8 @@
     "overlavishgift":{
         "name":"Overlavish Gift",
         "tags":["offensive","rhetoric","staunchkeeper"],
-        "flavor":"An overpriced bottle of wine or an ornate colonial carving to make hosts feel inadequate.","stat":["ba"],"number":["1d8"],
+        "flavor":"An overpriced bottle of wine or an ornate colonial carving to make hosts feel inadequate.",
+        "stat":["ba"],"number":["1d8"],
         "weight":10,"value":10,
         "description":"",
         "properties":[
@@ -1602,7 +1700,8 @@
     "patchworkvacsuit":{
         "name":"Patchwork Vacsuit",
         "tags":["voyager","defensive","armour"],
-        "flavor":"Caution: check vacsuits for holes, tears, and faulty patches before spacewalk.","stat":["ha"],"number":["2"],
+        "flavor":"Caution: check vacsuits for holes, tears, and faulty patches before spacewalk.",
+        "stat":["ha", "ka"],"number":["4", "2"],
         "weight":30,"value":100,
         "description":"",
         "properties":[
@@ -1613,7 +1712,8 @@
     "plasmaknife":{
         "name":"Plasma Knife",
         "tags":["offensive","weapon","energy","knife"],
-        "flavor":"An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.","stat":["ha"],"number":["2d4"],
+        "flavor":"An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.",
+        "stat":["ha"],"number":["2d4"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -1633,7 +1733,8 @@
     "personalcard":{
         "name":"Personal Card",
         "tags":["defensive","prestige"],
-        "flavor":"Subtly off-white, tasteful thickness, even a watermark.","stat":["ba"],"number":["2"],
+        "flavor":"Subtly off-white, tasteful thickness, even a watermark.",
+        "stat":["ba"],"number":["2"],
         "weight":"1","value":1000,
         "description":"",
         "properties":[
@@ -1672,7 +1773,8 @@
     "planeprojector":{
         "name":"Plane Projector",
         "tags":["offensive","charm","hardlight"],
-        "flavor":"The handheld Ulfire & Octarine Ltd. hardlight projector is a masterpiece of lucent oldtech. It projects a chaotic probability wave that collapses into a plane of solid light a cubit across. Placed just right, the plane can decapitate a bull or deflect a bullet.","stat":["ka"],"number":["1d4"],
+        "flavor":"The handheld Ulfire & Octarine Ltd. hardlight projector is a masterpiece of lucent oldtech. It projects a chaotic probability wave that collapses into a plane of solid light a cubit across. Placed just right, the plane can decapitate a bull or deflect a bullet.",
+        "stat":["ka"],"number":["1d4"],
         "weight":10,"value":50,
         "description":"",
         "properties":[
@@ -1683,7 +1785,8 @@
     "pleasureportal":{
         "name":"Pleasure Portal",
         "tags":["offensive","charm","seeming"],
-        "flavor":"A vile fae charm, the portal beckons its victims with a false heaven where all their urges are fulfilled.","stat":["ka"],"number":["1d30"],
+        "flavor":"A vile fae charm, the portal beckons its victims with a false heaven where all their urges are fulfilled.",
+        "stat":["ka"],"number":["1d30"],
         "weight":40,"value":20000,
         "description":"",
         "properties":[
@@ -1704,7 +1807,8 @@
     "pointyhelmet":{
         "name":"Pointy Helmet",
         "tags":["defensive","armour"],
-        "flavor":"A fine helm with the razor sharp horn of a labmythical beast.","stat":["ha"],"number":["2"],
+        "flavor":"A fine helm with the razor sharp horn of a labmythical beast.",
+        "stat":["ha"],"number":["2"],
         "weight":10,"value":200,
         "description":"",
         "properties":[
@@ -1713,7 +1817,8 @@
     "poisonedbribe":{
         "name":"Poisoned Bribe",
         "tags":["offensive","rhetoric","outcaste"],
-        "flavor":"The worm hides an uncomfortable hook.","stat":["ba"],"number":["1d12"],"value":200,
+        "flavor":"The worm hides an uncomfortable hook.",
+        "stat":["ba"],"number":["1d12"],"value":200,
             "description":"",
             "properties":[
                 {"name":"On the hook", "description":"Target gains €100 but suffers [-] to tests vs the wielder for the rest of the conflict."},
@@ -1732,7 +1837,8 @@
     "porcelainprincepanoply":{
         "name":"Porcelain Prince Panoply",
         "tags":["defensive","armour"],
-        "flavor":"A full suit of integrated ceramic-steel composite, best donned with the help of another polybody.","stat":["ha"],"number":["10"],
+        "flavor":"A full suit of integrated ceramic-steel composite, best donned with the help of another polybody.",
+        "stat":["ha"],"number":["10"],
         "weight":40,"value":4000,
         "description":"",
         "properties":[
@@ -1742,7 +1848,8 @@
     "portableshadow":{
         "name":"Portable Shadow",
         "tags":["defensive","ward"],
-        "flavor":"A battle-hardened war shadow from the eternal struggle cloned and bound to protect. Don’t lose the leash.","stat":["ka"],"number":["4"],
+        "flavor":"A battle-hardened war shadow from the eternal struggle cloned and bound to protect. Don’t lose the leash.",
+        "stat":["ka"],"number":["4"],
         "weight":20,"value":800,
         "description":"",
         "properties":[
@@ -1751,7 +1858,8 @@
     "poshaddress":{
         "name":"Posh Address",
         "tags":["defensive","prestige"],
-        "flavor":"It’s easy to show one lives in the good part of town: a few correctly branded luxury accessories, a passkey to the Tru-Hites gated community, and the constant burden of comparing oneself to one’s neighbours.","stat":["ba"],"number":["5"],
+        "flavor":"It’s easy to show one lives in the good part of town: a few correctly branded luxury accessories, a passkey to the Tru-Hites gated community, and the constant burden of comparing oneself to one’s neighbours.",
+        "stat":["ba"],"number":["5"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -1789,7 +1897,8 @@
     "realitydistortionfield":{
         "name":"Reality Distortion Field",
         "tags":["defensive","prestige"],
-        "flavor":"A harness of hell metals & heaven leathers that looks like particularly luxurious suspenders.","stat":["ba"],"number":["7"],
+        "flavor":"A harness of hell metals & heaven leathers that looks like particularly luxurious suspenders.",
+        "stat":["ba"],"number":["7"],
         "weight":20,"value":400000,
         "description":"",
         "properties":[
@@ -1819,7 +1928,8 @@
     "redgodrobes":{
         "name":"Red God Robes",
         "tags":["defensive","ward"],
-        "flavor":"Elegantly fashionable robes in the second empire style ward off superstition, slander, and even the occasional stiletto.","stat":["ha,","&"],"number":["1","ka"],
+        "flavor":"Elegantly fashionable robes in the second empire style ward off superstition, slander, and even the occasional stiletto.",
+        "stat":["ha,","&"],"number":["1","ka"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -1828,7 +1938,8 @@
     "redlivingmail":{
         "name":"Red Living Mail",
         "tags":["defensive","armour"],
-        "flavor":"Chitinous, half-living armour of flowing arthropod links, infused with the biomancy of the Living Flesh God.","stat":["ha","ka"],"number":["4","2"],
+        "flavor":"Chitinous, half-living armour of flowing arthropod links, infused with the biomancy of the Living Flesh God.",
+        "stat":["ha","ka"],"number":["4","2"],
         "weight":20,"value":3000,
         "description":"",
         "properties":[
@@ -1846,7 +1957,8 @@
     "saltyfountainof curses":{
         "name":"Salty Fountain of Curses",
         "tags":["offensive","rhetoric","outcaste"],
-        "flavor":"A terrifying vocabulary acquired from the sailors of the Circle Sea, the Golden Desert pirates, and the lime nomads of the Ultraviolet Grasslands.","stat":["ba"],"number":["1d8"],
+        "flavor":"A terrifying vocabulary acquired from the sailors of the Circle Sea, the Golden Desert pirates, and the lime nomads of the Ultraviolet Grasslands.",
+        "stat":["ba"],"number":["1d8"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -1855,7 +1967,8 @@
     "scytheofjustice":{
         "name":"Scythe of Justice",
         "tags":["offensive","rhetoric","leastfolk"],
-        "flavor":"A scythe of gold anodized orgonium, symbolizing the prophesied final victory of the proletariat. If only somebody had not lost the instruction manifesto.","stat":["ba","ha"],"number":["1d10","1d10"],
+        "flavor":"A scythe of gold anodized orgonium, symbolizing the prophesied final victory of the proletariat. If only somebody had not lost the instruction manifesto.",
+        "stat":["ba","ha"],"number":["1d10","1d10"],
         "weight":10,"value":4000,
         "description":"",
         "properties":[
@@ -1864,7 +1977,8 @@
     "sentimentalamulet":{
         "name":"Sentimental Amulet",
         "tags":["defensive","ward"],
-        "flavor":"A clasped metal bivalve with two holograms. One of the hero’s lineage princess-mother, the other of their memory city. Just having it near strengthens the soul.","stat":["ka"],"number":["1"],
+        "flavor":"A clasped metal bivalve with two holograms. One of the hero’s lineage princess-mother, the other of their memory city. Just having it near strengthens the soul.",
+        "stat":["ka"],"number":["1"],
         "weight":"1","value":5,
         "description":"",
         "properties":[
@@ -1872,7 +1986,8 @@
     "serpentstick":{
         "name":"Serpent Stick",
         "tags":["offensive","charm","serpent"],
-        "flavor":"A walking stick carved into a serpent. Or a serpent pretending to be a stick.","stat":["ha","ka"],"number":["1d6","1d6"],
+        "flavor":"A walking stick carved into a serpent. Or a serpent pretending to be a stick.",
+        "stat":["ha","ka"],"number":["1d6","1d6"],
         "weight":10,"value":200,
         "description":"",
         "properties":[
@@ -1891,7 +2006,8 @@
     "shock-sword":{
         "name":"Shock-sword",
         "tags":["offensive","weapon","energy","sword"],
-        "flavor":"A composite amber and ceramic blade, rippling with electromagical fields. Neon knight gangs use decorated custom grips and colourful auras to stand out. Still, most shock-swords continue to be manufactured by a single levitating auto-factory called R.O.G.","stat":["ha"],"number":["1d10"],
+        "flavor":"A composite amber and ceramic blade, rippling with electromagical fields. Neon knight gangs use decorated custom grips and colourful auras to stand out. Still, most shock-swords continue to be manufactured by a single levitating auto-factory called R.O.G.",
+        "stat":["ha"],"number":["1d10"],
         "weight":10,"value":400,
         "description":"",
         "properties":[
@@ -1902,7 +2018,8 @@
     "sidekickcape":{
         "name":"Sidekick Cape",
         "tags":["defensive","prestige"],
-        "flavor":"It only looks fancy at first glance, but it does have some tricks.","stat":["ba","ha"],"number":["1","1"],
+        "flavor":"It only looks fancy at first glance, but it does have some tricks.",
+        "stat":["ba","ha"],"number":["1","1"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -1911,7 +2028,8 @@
     "siegetortoisesuit":{
         "name":"Siege Tortoise Suit",
         "tags":["defensive","armour"],
-        "flavor":"A powerful suit originally developed for Izvoreni siege troopers during the slow wars of the time-space lens tunnels.","stat":["ha"],"number":["5"],
+        "flavor":"A powerful suit originally developed for Izvoreni siege troopers during the slow wars of the time-space lens tunnels.",
+        "stat":["ha"],"number":["5"],
         "weight":20,"value":5000,
         "description":"",
         "properties":[
@@ -1931,7 +2049,8 @@
     "six-foldwand":{
         "name":"Six-fold Wand",
         "tags":["offensive","charm","summoning"],
-        "flavor":"The wand paints lines of reality-blurring fire with each strike. When the six lines align, a gate opens.","stat":["ka"],"number":["1d6*"],
+        "flavor":"The wand paints lines of reality-blurring fire with each strike. When the six lines align, a gate opens.",
+        "stat":["ka"],"number":["1d6*"],
         "weight":10,"value":200,
         "description":"",
         "properties":[
@@ -1954,7 +2073,8 @@
     "sledgehammer":{
         "name":"Sledgehammer",
         "tags":["voyager","offensive","weapon","hammeraxe"],
-        "flavor":"To the hammer, everything is a nail.","stat":["ha"],"number":["1d12"],
+        "flavor":"To the hammer, everything is a nail.",
+        "stat":["ha"],"number":["1d12"],
         "weight":30,"value":10,
         "description":"",
         "properties":[
@@ -1974,7 +2094,8 @@
     "slow-forcebelt":{
         "name":"Slow-Force Belt",
         "tags":["defensive","armour"],
-        "flavor":"An intricately four-dimensional belt that dynamically fractures space-time around the wearer, projecting a slow-force field around them. The kinetic energies of physical attacks are dispersed and misdirected.","stat":["ha"],"number":["3"],
+        "flavor":"An intricately four-dimensional belt that dynamically fractures space-time around the wearer, projecting a slow-force field around them. The kinetic energies of physical attacks are dispersed and misdirected.",
+        "stat":["ha"],"number":["3"],
         "weight":10,"value":4000,
         "description":"",
         "properties":[
@@ -1983,7 +2104,8 @@
     "smugvest":{
         "name":"Smug Vest",
         "tags":["defensive","prestige"],
-        "flavor":"This soft vest of finest silkwool patterned in a cosy hyggelogical comfort clan style is so snug it makes anyone a bit smug.","stat":["ba"],"number":["4"],
+        "flavor":"This soft vest of finest silkwool patterned in a cosy hyggelogical comfort clan style is so snug it makes anyone a bit smug.",
+        "stat":["ba"],"number":["4"],
         "weight":20,"value":800,
         "description":"",
         "properties":[
@@ -1992,7 +2114,8 @@
     "sneerofcold command":{
         "name":"Sneer of Cold Command",
         "tags":["offensive","rhetoric","ironfist"],
-        "flavor":"A combination of neuro-surgery, plastic enhancement, and time-honoured military training and harsh experience.","stat":["ba"],"number":["2d12"],
+        "flavor":"A combination of neuro-surgery, plastic enhancement, and time-honoured military training and harsh experience.",
+        "stat":["ba"],"number":["2d12"],
         "weight":10,"value":10000,
         "description":"",
         "properties":[
@@ -2011,7 +2134,8 @@
     "societyofthe rightbulb":{
         "name":"Society of the Rightbulb",
         "tags":["offensive","rhetoric","uptaught"],
-        "flavor":"The lightbulb was not enough. They had to learn how to wield the serpent's voice.","stat":["ba"],"number":["2d8"],
+        "flavor":"The lightbulb was not enough. They had to learn how to wield the serpent's voice.",
+        "stat":["ba"],"number":["2d8"],
         "weight":10,"value":1000,
         "description":"",
         "properties":[
@@ -2028,7 +2152,8 @@
     "soul-eaternightblade":{
         "name":"Soul-eater Nightblade",
         "tags":["offensive","weapon","sword"],
-        "flavor":"The spirit of the Eater in Darkness dwells in this blade.","stat":["ha"],"number":["1d8"],
+        "flavor":"The spirit of the Eater in Darkness dwells in this blade.",
+        "stat":["ha"],"number":["1d8"],
         "weight":10,"value":50,
         "description":"",
         "properties":[
@@ -2058,7 +2183,8 @@
     "soulspear":{
         "name":"Soul Spear",
         "tags":["offensive","charm","allchemy"],
-        "flavor":"A spear that vibrates between realities leaves wounds that only the spirit can perceive.","stat":["ka"],"number":["1d10"],
+        "flavor":"A spear that vibrates between realities leaves wounds that only the spirit can perceive.",
+        "stat":["ka"],"number":["1d10"],
         "weight":20,"value":200,
         "description":"",
         "properties":[
@@ -2100,7 +2226,8 @@
     "spinningpendulum":{
         "name":"Spinning Pendulum",
         "tags":["offensive","charm","seeming"],
-        "flavor":"The master hypnotist’s pendulum also hypnotizes ghosts and ghouls.","stat":["ka"],"number":["1d10"],
+        "flavor":"The master hypnotist’s pendulum also hypnotizes ghosts and ghouls.",
+        "stat":["ka"],"number":["1d10"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -2121,7 +2248,8 @@
     "spiritspectacles":{
         "name":"Spirit Spectacles",
         "tags":["defensive","ward"],
-        "flavor":"Rather peculiar round tinted spectacles that gaze into the daemonic realm.","stat":["ka"],"number":["2"],
+        "flavor":"Rather peculiar round tinted spectacles that gaze into the daemonic realm.",
+        "stat":["ka"],"number":["2"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -2131,7 +2259,8 @@
     "spirittestimony":{
         "name":"Spirit Testimony",
         "tags":["offensive","rhetoric","legalities"],
-        "flavor":"Necromancer lawyers get the dead to talk. Their accusations can hurt.","stat":["ba","ka"],"number":["1d8","1d4"],
+        "flavor":"Necromancer lawyers get the dead to talk. Their accusations can hurt.",
+        "stat":["ba","ka"],"number":["1d8","1d4"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -2140,7 +2269,8 @@
     "statusoblong":{
         "name":"Status Oblong",
         "tags":["defensive","prestige"],
-        "flavor":"A digital daemon in a small personal phylactery with a glossy touchscreen. Promises to answer every question.","stat":["ba"],"number":["2"],
+        "flavor":"A digital daemon in a small personal phylactery with a glossy touchscreen. Promises to answer every question.",
+        "stat":["ba"],"number":["2"],
         "weight":10,"value":50,
         "description":"",
         "properties":[
@@ -2150,7 +2280,8 @@
     "steppe-shipcutlass":{
         "name":"Steppe-ship Cutlass",
         "tags":["offensive","weapon","sword"],
-        "flavor":"A masterpiece of precision engineering, the hilt holds an array of valuable tools: corkscrew, bottle opener, bread knife, butter spreader, saw, nail file, nail clipper, scissors, swappable screwdriver, wrench, magnifying lens, compass, and whistle.","stat":["ha"],"number":["1d6"],
+        "flavor":"A masterpiece of precision engineering, the hilt holds an array of valuable tools: corkscrew, bottle opener, bread knife, butter spreader, saw, nail file, nail clipper, scissors, swappable screwdriver, wrench, magnifying lens, compass, and whistle.",
+        "stat":["ha"],"number":["1d6"],
         "weight":10,"value":40,
         "description":"",
         "properties":[
@@ -2168,7 +2299,8 @@
     "storminfantryshield":{
         "name":"Storm Infantry Shield",
         "tags":["defensive","armour"],
-        "flavor":"A large shield to absorb and deflect blows, laced with diffusers to disperse energy attacks. Painted with vivid and terrifying designs to recall the lost immortals of old.","stat":["ha"],"number":["3"],
+        "flavor":"A large shield to absorb and deflect blows, laced with diffusers to disperse energy attacks. Painted with vivid and terrifying designs to recall the lost immortals of old.",
+        "stat":["ha"],"number":["3"],
         "weight":20,"value":20,
         "description":"",
         "properties":[
@@ -2177,7 +2309,8 @@
     "strangledconfession":{
         "name":"Strangled Confession",
         "tags":["offensive","charm","word"],
-        "flavor":"The wizard-priest pours their most horrible, revolting, blasphemous sins into a bead bracelet. Then, they speak out their self-loathing as arrows of karmic force that injure the morals and soul of the listener.","stat":["ka"],"number":["1d10"],
+        "flavor":"The wizard-priest pours their most horrible, revolting, blasphemous sins into a bead bracelet. Then, they speak out their self-loathing as arrows of karmic force that injure the morals and soul of the listener.",
+        "stat":["ka"],"number":["1d10"],
         "weight":10,"value":1,
         "description":"",
         "properties":[
@@ -2189,7 +2322,8 @@
     "stratohastur":{
         "name":"Stratohastur",
         "tags":["offensive","charm","metal"],
-        "flavor":"A forbidden and hellish guitar of horrors. Its victims fall stumbling through nameless aeons and inconceivable dimensions.","stat":["ka","ba"],"number":["2d8","2d8"],
+        "flavor":"A forbidden and hellish guitar of horrors. Its victims fall stumbling through nameless aeons and inconceivable dimensions.",
+        "stat":["ka","ba"],"number":["2d8","2d8"],
         "weight":20,"value":100,
         "description":"",
         "properties":[
@@ -2201,7 +2335,8 @@
     "stuckforceshiv":{
         "name":"Stuckforce Shiv",
         "tags":["offensive","weapon","knife"],
-        "flavor":"A shard of fractured force field held in uneasy equilibrium by a stabilizer pearl bound in jade cement. These blades are the residue of magical struggles beyond what anyone could imagine today; some say they are the leftovers of creation itself.","stat":["ha"],"number":["2d3"],
+        "flavor":"A shard of fractured force field held in uneasy equilibrium by a stabilizer pearl bound in jade cement. These blades are the residue of magical struggles beyond what anyone could imagine today; some say they are the leftovers of creation itself.",
+        "stat":["ha"],"number":["2d3"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -2209,7 +2344,8 @@
     "switchbladerevolver":{
         "name":"Switchblade Revolver",
         "tags":["offensive","weapon","knife","pistol"],
-        "flavor":"An ugly, snub-nosed affair.","stat":["ha"],"number":["1d6"],
+        "flavor":"An ugly, snub-nosed affair.",
+        "stat":["ha"],"number":["1d6"],
         "weight":10,"value":40,
         "description":"",
         "properties":[
@@ -2220,7 +2356,8 @@
     "symboloffate":{
         "name":"Symbol of Fate",
         "tags":["offensive","rhetoric","sacrality"],
-        "flavor":"Simple symbols yet hold power to sway and frighten.","stat":["ba","ka"],"number":["1d4","1d4"],
+        "flavor":"Simple symbols yet hold power to sway and frighten.",
+        "stat":["ba","ka"],"number":["1d4","1d4"],
         "weight":10,"value":2,
         "description":"",
         "properties":[
@@ -2228,7 +2365,8 @@
     "synthcrystalray rifle":{
         "name":"Synth Crystal Ray Rifle",
         "tags":["offensive","weapon","energy","rifle"],
-        "flavor":"Massive humming compressors and radiating batteries emit blistering energy pulses.","stat":["ha"],"number":["2d8"],
+        "flavor":"Massive humming compressors and radiating batteries emit blistering energy pulses.",
+        "stat":["ha"],"number":["2d8"],
         "weight":20,"value":2000,
         "description":"",
         "properties":[
@@ -2249,7 +2387,8 @@
     "tasselledrhinestonejacket":{
         "name":"Tasselled Rhinestone Jacket",
         "tags":["defensive","prestige"],
-        "flavor":"This jacket has it all, including bullet-proof and stab-proof linings to protect from over-zealous fans.","stat":["ba,","1"],"number":["3","ha,"],
+        "flavor":"This jacket has it all, including bullet-proof and stab-proof linings to protect from over-zealous fans.",
+        "stat":["ba,","ha"],"number":["3","1"],
         "weight":20,"value":200,
         "description":"",
         "properties":[
@@ -2259,7 +2398,8 @@
     "terminalproscription":{
         "name":"Terminal Proscription",
         "tags":["offensive","rhetoric","sacrality"],
-        "flavor":"A legal document, blessed by gods of city and government, exiles the target from the citizen brethren.","stat":["ba"],"number":["2d12"],
+        "flavor":"A legal document, blessed by gods of city and government, exiles the target from the citizen brethren.",
+        "stat":["ba"],"number":["2d12"],
         "weight":10,"value":10000,
         "description":"",
         "properties":[
@@ -2277,7 +2417,8 @@
     "thedevourer":{
         "name":"The Devourer",
         "tags":["offensive","weapon","serpent"],
-        "flavor":"A voidworm extruded into the common dimensions and utilized as a ray cannon. Not a good charm to encounter.","stat":["ka"],"number":["3d6"],
+        "flavor":"A voidworm extruded into the common dimensions and utilized as a ray cannon. Not a good charm to encounter.",
+        "stat":["ka"],"number":["3d6"],
         "weight":20,"value":1000,
         "description":"",
         "properties":[
@@ -2287,7 +2428,8 @@
     "thirdeyegem":{
         "name":"Third Eye Gem",
         "tags":["defensive","ward"],
-        "flavor":"A superior tiger’s eye gem with a trapped daemon’s eye.","stat":["ka"],"number":["2"],
+        "flavor":"A superior tiger’s eye gem with a trapped daemon’s eye.",
+        "stat":["ka"],"number":["2"],
         "weight":"1","value":1000,
         "description":"",
         "properties":[
@@ -2298,7 +2440,8 @@
     "thoughtsandteeth":{
         "name":"Thoughts and Teeth",
         "tags":["offensive","charm","biomechané"],
-        "flavor":"A bead necklace of ossified thoughts and monster teeth. It clatters and chatters and promises death and decay.","stat":["ka"],"number":["2d8"],
+        "flavor":"A bead necklace of ossified thoughts and monster teeth. It clatters and chatters and promises death and decay.",
+        "stat":["ka"],"number":["2d8"],
         "weight":10,"value":4000,
         "description":"",
         "properties":[
@@ -2308,7 +2451,8 @@
     "tinfoilwardsuit":{
         "name":"Tinfoil Wardsuit",
         "tags":["voyager","defensive","ward"],
-        "flavor":"A rattling assembly of crumpled tinfoil, dials, and sensors. Scribbled upon it: 'They're listening!'","stat":["ka"],"number":["3"],
+        "flavor":"A rattling assembly of crumpled tinfoil, dials, and sensors. Scribbled upon it: 'They're listening!'",
+        "stat":["ha", "ka"],"number":["2", "5"],
         "weight":20,"value":150,
         "description":"",
         "properties":[
@@ -2319,7 +2463,8 @@
     "tinsectswarm":{
         "name":"Tinsect Swarm",
         "tags":["offensive","charm","golem"],
-        "flavor":"A swarm of tiny golems in a can. They have painful, acid stingers.","stat":["ka","ha"],"number":["1d4","1d4"],
+        "flavor":"A swarm of tiny golems in a can. They have painful, acid stingers.",
+        "stat":["ka","ha"],"number":["1d4","1d4"],
         "weight":10,"value":5,
         "description":"",
         "properties":[
@@ -2330,12 +2475,14 @@
     "tophat":{
         "name":"Top Hat",
         "tags":["defensive","prestige"],
-        "flavor":"A cartoonishly classy hat still provides a sense of gravitas.","stat":["ba"],"number":["2"],
+        "flavor":"A cartoonishly classy hat still provides a sense of gravitas.",
+        "stat":["ba"],"number":["2"],
         "weight":10,"value":100,
         "description":""},"warhair":{
         "name":"War Hair",
         "tags":["defensive","prestige"],
-        "flavor":"The kind of hair a raider, marauder, barbarian, or rock star would wear.","stat":["ba"],"number":["3"],
+        "flavor":"The kind of hair a raider, marauder, barbarian, or rock star would wear.",
+        "stat":["ba"],"number":["3"],
         "weight":20,"value":10,
         "description":"",
         "properties":[
@@ -2353,7 +2500,8 @@
     "tranquilizergun":{
         "name":"Tranquilizer Gun",
         "tags":["voyager","offensive","weapon","pistol"],
-        "flavor":"A beast-tamer's best friend.","stat":["ha"],"number":["1d2"],
+        "flavor":"A beast-tamer's best friend.",
+        "stat":["ha"],"number":["1d2"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -2362,7 +2510,8 @@
     "transfergonne":{
         "name":"Transfer Gonne",
         "tags":["offensive","charm","allchemy"],
-        "flavor":"It takes a piece of the wielder and puts it into the target. Spiritually speaking.","stat":["ka"],"number":["1d8"],
+        "flavor":"It takes a piece of the wielder and puts it into the target. Spiritually speaking.",
+        "stat":["ka"],"number":["1d8"],
         "weight":10,"value":200,
         "description":"",
         "properties":[
@@ -2371,7 +2520,8 @@
     "truerubbergloves":{
         "name":"True Rubber Gloves",
         "tags":["defensive","ward"],
-        "flavor":"Synthetic gloves that block electromagical fields. Useful for many kinds of wizard. Not very rugged, though.","stat":["ka"],"number":["2"],
+        "flavor":"Synthetic gloves that block electromagical fields. Useful for many kinds of wizard. Not very rugged, though.",
+        "stat":["ka"],"number":["2"],
         "weight":10,"value":100,
         "description":"",
         "properties":[
@@ -2380,7 +2530,8 @@
     "trenchrifle":{
         "name":"Trench Rifle",
         "tags":["offensive","weapon","polearm","rifle"],
-        "flavor":"Oiled wood and blue steel tipped with a bayonet that could have been mounted on a partisan.","stat":["ha"],"number":["2d6"],
+        "flavor":"Oiled wood and blue steel tipped with a bayonet that could have been mounted on a partisan.",
+        "stat":["ha"],"number":["2d6"],
         "weight":20,"value":500,
         "description":"",
         "properties":[
@@ -2399,7 +2550,8 @@
     "ultramechcodex":{
         "name":"Ultramech Codex",
         "tags":["offensive","charm","golem"],
-        "flavor":"A self-organizing logic log based on old-times proto-vome autonomous synthetic programming manuals. Still potent enough to scramble thought matrices.","stat":["ka"],"number":["1d10"],
+        "flavor":"A self-organizing logic log based on old-times proto-vome autonomous synthetic programming manuals. Still potent enough to scramble thought matrices.",
+        "stat":["ka"],"number":["1d10"],
         "weight":10,"value":400,
         "description":"",
         "properties":[
@@ -2408,7 +2560,8 @@
     "undyingdream":{
         "name":"Undying Dream",
         "tags":["offensive","charm","necrolexicon","sanatry"],
-        "flavor":"Once read in a tome of most profound learnings, the dream embeds within the innermost recesses of the soul’s desire, a wish to burst free of the bonds of mortality. With this longing comes an icy spirit grasp, a lance of pure mind, that chills the hearts of all who live and breathe.","stat":["ka"],"number":["1d20"],
+        "flavor":"Once read in a tome of most profound learnings, the dream embeds within the innermost recesses of the soul’s desire, a wish to burst free of the bonds of mortality. With this longing comes an icy spirit grasp, a lance of pure mind, that chills the hearts of all who live and breathe.",
+        "stat":["ka"],"number":["1d20"],
         "weight":10,"value":66600,
         "description":"",
         "properties":[
@@ -2429,7 +2582,8 @@
     "upliftingorb":{
         "name":"Uplifting Orb",
         "tags":["offensive","charm","noösphere"],
-        "flavor":"An ancient noösphere access orb rewired into a direct link projector. Its aural field-effect floods minds with an overwhelming array of information.","stat":["ka"],"number":["2d6"],
+        "flavor":"An ancient noösphere access orb rewired into a direct link projector. Its aural field-effect floods minds with an overwhelming array of information.",
+        "stat":["ka"],"number":["2d6"],
         "weight":10,"value":500,
         "description":"",
         "properties":[
@@ -2441,7 +2595,8 @@
     "utilityaxe":{
         "name":"Utility Axe",
         "tags":["offensive","weapon","hammeraxe"],
-        "flavor":"A multitool axe in bright primary colours in the styles of the old Maintenance Warguilds.","stat":["ha"],"number":["1d6"],
+        "flavor":"A multitool axe in bright primary colours in the styles of the old Maintenance Warguilds.",
+        "stat":["ha"],"number":["1d6"],
         "weight":10,"value":20,
         "description":"",
         "properties":[
@@ -2467,7 +2622,8 @@
     "vastlanderrobes":{
         "name":"Vastlander Robes",
         "tags":["defensive","armour"],
-        "flavor":"A set of robes in the relaxed styles of the vastlanders.","stat":["ha"],"number":["1"],
+        "flavor":"A set of robes in the relaxed styles of the vastlanders.",
+        "stat":["ha"],"number":["1"],
         "weight":10,"value":5,
         "description":"",
         "properties":[
@@ -2504,7 +2660,8 @@
     "vibroscalpel":{
         "name":"Vibroscalpel",
         "tags":["voyager","offensive","weapon","knife"],
-        "flavor":"Contains settings for: surgery, melee combat, extra chunky, and fine puree.","stat":["ha"],"number":["1d4"],
+        "flavor":"Contains settings for: surgery, melee combat, extra chunky, and fine puree.",
+        "stat":["ha"],"number":["1d4"],
         "weight":1,"value":20,
         "description":"",
         "properties":[
@@ -2514,7 +2671,8 @@
     "vileofblood™ [sic]":{
         "name":"Vile of Blood™ [sic]",
         "tags":["defensive","ward"],
-        "flavor":"An entropy-blocked vial of pure Original Vile blood with an automated injector. Looks like some kind of bracelet or watch. Best worn close to an artery.","stat":["ka"],"number":["3"],
+        "flavor":"An entropy-blocked vial of pure Original Vile blood with an automated injector. Looks like some kind of bracelet or watch. Best worn close to an artery.",
+        "stat":["ka"],"number":["3"],
         "weight":10,"value":50000,
         "description":"",
         "properties":[
@@ -2524,7 +2682,8 @@
     "voidwormtoothknife":{
         "name":"Voidworm Tooth Knife",
         "tags":["offensive","weapon","knife"],
-        "flavor":"The flickering half-real tooth of a void worm—a terrifying paracreature that gnaws the unrealistic wormways between the worlds. The teeth wash up on the shores of the Voidly Seas, where the beachcombers of reality polish them into blades.","stat":["ha","ka"],"number":["1d4","1d4"],
+        "flavor":"The flickering half-real tooth of a void worm—a terrifying paracreature that gnaws the unrealistic wormways between the worlds. The teeth wash up on the shores of the Voidly Seas, where the beachcombers of reality polish them into blades.",
+        "stat":["ha","ka"],"number":["1d4","1d4"],
         "weight":10,"value":220,
         "description":"",
         "properties":[
@@ -2545,7 +2704,8 @@
     "voxdeii":{
         "name":"Vox Deii",
         "tags":["offensive","rhetoric","sacrality"],
-        "flavor":"Special training and surgery grants the terrible voice, which turns bowels to water and brings fear to the hearts of mortals with intimations of eternal nihilation and the cosmic void.","stat":["ba"],"number":["2d10"],"value":2000,
+        "flavor":"Special training and surgery grants the terrible voice, which turns bowels to water and brings fear to the hearts of mortals with intimations of eternal nihilation and the cosmic void.",
+        "stat":["ba"],"number":["2d10"],"value":2000,
             "description":"",
             "properties":[
                 {"name":"Permanent", "description":"Cannot be removed from a character's inventory."},
@@ -2571,7 +2731,8 @@
     "wizardlyquarterstaff":{
         "name":"Wizardly Quarterstaff",
         "tags":["offensive","weapon","polearm"],
-        "flavor":"A simple staff whose odd shadow seems to fight ghosts in a spirit realm illumined by strange suns.","stat":["ha","ka"],"number":["1d6","1d6"],
+        "flavor":"A simple staff whose odd shadow seems to fight ghosts in a spirit realm illumined by strange suns.",
+        "stat":["ha","ka"],"number":["1d6","1d6"],
         "weight":10,"value":200,
         "description":"",
         "properties":[
@@ -2579,7 +2740,8 @@
     "wormynodule":{
         "name":"Wormy Nodule",
         "tags":["offensive","rhetoric","leastfolk"],
-        "flavor":"A thin-skinned, humorously shaped, infested root vegetable.","stat":["ba"],"number":["1d6"],
+        "flavor":"A thin-skinned, humorously shaped, infested root vegetable.",
+        "stat":["ba"],"number":["1d6"],
         "weight":10,"value":1,
         "description":"",
         "properties":[

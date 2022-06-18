@@ -5,15 +5,25 @@
     "flavor": "Exhibits high quantities of hydrogen and oxygen. Anomalous biosignatures detected.",
     "description": "actual description of the environment",
     "conditions": [
-      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."}],
+      {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."},
+      {"name": "Sensitive Ecosphere", "description": "Adding a new substance, or leaving an item in the ecosphere adds +1 disruption."}],
     "encounters": [
-      {"description": "A flock of *creatures.airpig*s descends from the sky.", "creatures": ["airpig", "airpig", "airpig", "airpig"]}],
+      {"description": "A concrete seagull clambers into view.", "creatures": ["concreteseagull"]},
+      {"description": "Spot a sand octopus hiding in a crevice.", "creatures": ["sandoctopus"]},
+      {"description": "A swarm of jumping crabs gathers.", "creatures": ["jumpingcrab","jumpingcrab","jumpingcrab"]}],
     "events": [
-      "A [props.obstacle] stands in your path.", 
-      "Item gets wet.", 
+      "Waves lap peacefully at the rocky shore.", 
+      "Two suns peek through the clouds briefly, reflected on the water's surface.",
+      "Come across a trench between tide pools. Takes 1 turn to cross.", 
+      "Drop an item into the water.", 
       "1d3 supplies stolen by seagull.", 
       "The tide rises: +1 disruption.", 
-      "A glimmer in the distance: +1 knowledge."],
+      "Discover fruiting kelp grove pool. +1d3 supplies.", 
+      "A glimmer in the distance: +1 knowledge.",
+      "Traces of black oil cast rainbow sheens on the water's surface. +1 disruption.",
+      "Discover strange tracks. +1 knowledge.",
+      "Discover partially devoured herbivore corpse. +1d3 supplies, +1 disruption.",
+      "Sight something massive in the distance, moving under the water's surface. +1 knowledge."],
     "zones": [
       { "name": "shorepool", "display": "Shore Pool", "category": "zones"},
       { "name": "tombofthedruids", "display": "Tomb of the Druids", "category": "zones"}]
