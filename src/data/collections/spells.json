@@ -1,102 +1,1515 @@
 {
-  "burdensharingarrangement": {
-    "name": "Burden Sharing Arrangement",
-    "tags": ["abmortal-sanatry"],
-    "flavor": "Undertake a spiritual ka-voyage through the patient's eyes or other primary sense organs.",
-    "description": "Over a time period the doctor removes a burden from the target and converts it into a Healer’s Burden stored in an adjacent creature’s aura.",
-    "ranks": [
-      { "power": 1, "effect": "Rite takes several hours." },
-      { "power": 2, "effect": "Rite takes about half an hour." },
-      { "power": 3, "effect": "Rite takes a few minutes." },
-      { "power": 4, "effect": "Rite takes a dozen seconds." }
-    ],
-    "modifiers": ["healers-burden", "rushed", "telemagic"]
-  },
-  "healingsleep": {
-    "name": "Healing Sleep",
-    "tags": ["abmortal-sanatry"],
-    "flavor": "Douse the patient's aura and send their essential hakaba code through the gates of horn and ivory to heal in the presence of the oneiroi Quiescus and Sanatos.",
-    "description": "The wizard performs an hour-long rite to heal a patient's burden. A patient could be mistaken for dead while their aura is doused. When the code returns to their incarnation, they awaken refreshed, and one of their burdens dissipates.",
-    "ranks": [
-      {
-        "power": 1,
-        "effect": "The target is helpless, nigh-soulless, for three days and nights."
-      },
-      { "power": 3, "effect": "The target is helpless for a day and a night." },
-      { "power": 5, "effect": "The target is helpless for six hours" },
-      { "power": 7, "effect": "The target is helpless for an hour." }
-    ],
-    "modifiers": ["telemagic"]
-  },
-  "metempsychosis": {
-    "name": "Metempsychosis",
-    "tags": ["abmortal-sanatry"],
-    "flavor": "Though individual abmortals may expect to live forever, accidents do happen. Fortunately, the finest of sanators have a solution: transmigration of the hakaba code.",
-    "description": "The wizard breaks down a patient’s essential structure and translates it into another nearby physical form. For best results, the latest incarnation should be a replica of the original, but thrifty abmortals have made do with crude golems, animals, and even crystals or vats of memory liquid.",
-    "ranks": [
-      {
-        "power": 1,
-        "effect": "Budget transmigration. The wizard immerses the patient in a frigid bath and spends one day translating one of their mental stats. This ritual damages the patient’s source body, making translating their remaining stats more difficult."
-      },
-      {
-        "power": 3,
-        "effect": "Full-corpus transmigration. The wizard uses a gelid sarcolector to translate all of a patient’s mental stats in one day. This destroys the original body."
-      },
-      {
-        "power": 5,
-        "effect": "Sudden action transmigration. The wizard Imbues the patient with a translator parasite. It takes the parasite a day to embed, after that the wizard can translate all of patient’s stats in a few minutes. This causes the original body to spontaneously combust."
-      },
-      {
-        "power": 7,
-        "effect": "Telemetempsychosis. The wizard uses an imbued translator parasite entangled with a destination vessel. The parasite needs a day to embed, but after that, translation is nearly instantaneous, with a range of several hundred thousand kilometres. This causes the original body to violently combust."
-      }
-    ],
-    "modifiers": ["morphic-shock", "overwriting", "precast-vessel", "telemagic"]
-  },
-  "parasomatransference": {
-    "name": "Parasoma Transference",
-    "tags": ["abmortal-sanatry"],
-    "flavor": "What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
-    "description": "The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
-    "ranks": [
-      {
-        "power": 1,
-        "effect": "Basic shunt. For each point transferred, recipient gains 1 life."
-      },
-      {
-        "power": 2,
-        "effect": "Enriched shunt. For each point, recipient gains 1d2 life."
-      },
-      {
-        "power": 3,
-        "effect": "Power shunt. Recipient gains 1d3 life per point."
-      },
-      { "power": 4, "effect": "Recipient gains 1d4 life per point." },
-      { "power": 6, "effect": "Recipient gains 1d6 life per point." }
-    ],
-    "modifiers": ["telemagic"]
-  },
-  "test": {
-    "name": "TEST",
-    "tags": ["abmortal-sanatry"],
-    "flavor": "What is life but the purposeful reordering of the underlying energy patterns of the Given World?",
-    "description": "The wizard touches two creatures and transfers up to their level in life points from one to the other using the principles of universal existential identity. They can also transfer life directly from their own reserves. The descended folk call this a life shunt.",
-    "ranks": [
-      {
-        "power": 1,
-        "effect": "Basic shunt. For each point transferred, recipient gains 1 life."
-      },
-      {
-        "power": 2,
-        "effect": "Enriched shunt. For each point, recipient gains 1d2 life."
-      },
-      {
-        "power": 3,
-        "effect": "Power shunt. Recipient gains 1d3 life per point."
-      },
-      { "power": 4, "effect": "Recipient gains 1d4 life per point." },
-      { "power": 6, "effect": "Recipient gains 1d6 life per point." }
-    ],
-    "modifiers": ["dangerous"]
-  }
+  "affordancegrid":{
+    "name":"Affordance Grid",
+    "tags":["golemmafex"],
+    "flavor":"Motion is a state of mind",
+    "description":"The caster manipulates the ka-grid of a mechanism to increase or decrease its affordances, making it run more or less smoothly for about an hour.",
+    "ranks":[
+      {"power":1,"effect":"A small, soap-sized mechanism, like a lock, becomes easier [+] or harder [-] to open or otherwise use for about an hour."},
+      {"power":2,"effect":"A stone-sized mechanism becomes easier or harder to use."},
+      {"power":4,"effect":"A sack-sized mechanism becomes easier or harder to use."},
+      {"power":8,"effect":"A wagon-sized mechanism becomes easier or harder to use."}],
+      "properties":[
+        {"name":"Frictionless","description":"For triple the price the mechanism becomes either frictionless (essentially free-moving) or completely jammed. This releases or blocks locks."},
+        {"name":"Maintain","description":"The effect persists as long as the object is imbued."}]},
+  "animachine":{
+    "name":"Animachine",
+    "tags":["oldtech"],
+    "flavor":"Put a ghost in its shell.",
+    "description":"The ga-hackerjee pours their own ghost into a machine. A hissing electroplasmic gas of stem techware recreates a shadow of the machine’s original ghost.",
+    "ranks":[
+      {"power":0,"effect":"Revives a machine that is out of fuel, but otherwise functional."},
+      {"power":1,"effect":"Revives a machine with minor damage to its command and control systems."},
+      {"power":3,"effect":"A corroded or damaged wreck heaves into motion."},
+      {"power":6,"effect":"A centuries-old machine activates, though out of fuel, parts, and style."},
+      {"power":9,"effect":"Destroyed parts, machine fossils basically, recombine into an unscientific mockery of their original form. But, it works."}],
+      "properties":[
+        {"name":"Focus","description":"To command a machine."},
+        {"name":"Imbue","description":"Doubles the price (minimum 1), but anyone can command the revived machine."}]},
+  "accordionofthepassions":{
+    "name":"Accordion of the Passions",
+    "tags":["rightmaker"],
+    "flavor":"Emotions as an instrument to play.",
+    "description":"The wizard uses the ancient assisted rhetorics of voice, gesture, light, and tele-empathy to modulate sentients’ emotions.",
+    "ranks":[
+      {"power":1,"effect":"A target’s existing emotional state is enhanced. Anger turns to rage, sadness to depression. If the wizard focusses, they gain [+] to social tests against the target."},
+      {"power":3,"effect":"A target’s emotional state is flipped to a different emotion."},
+      {"power":5,"effect":"Target experiences an acute emotional crisis. Labile creatures or those in difficult circumstances may experience a psychotic break."}],
+      "properties":[
+        {"name":"Group","description":"Spell price x2. The modulation affects a small crowd. Maybe a dozen people."},
+        {"name":"Mob","description":"Spell price x4. Affects a medium crowd. Up to 100 people."},
+        {"name":"Throng","description":"Spell price x8. Affects a large crowd. 1,000 people."}]},
+  "anchoroftheessences":{
+    "name":"Anchor of the Essences",
+    "tags":["rightmaker"],
+    "flavor":"Let not the coward flee.",
+    "description":"The wizard binds a target’s ha, ka, and ba together so tightly they can not be unbound. The destruction of one does not release the others. Many scribes aver that this spell has been misused during enhanced interrogations.",
+    "ranks":[
+      {"power":1,"effect":"While the wizard focusses, a target does not die until all three of its essences are destroyed."},
+      {"power":3,"effect":"While the target is imbued with the wizard’s power, it cannot die until all three of its essences are destroyed."},
+      {"power":9,"effect":"Further, the target is imbued with a shadowy fourth essence, a šwt. The šwt may be bound in a precious object, such as a jewel, pearl, or quantum obelisk. The šwt does not need to stay near the target. So long as the šwt is whole, the target cannot die. Even if its ha, ka, and ba are destroyed; they can be recreated from the history they wove together with the šwt."}]},
+  "animateecology":{
+    "name":"Animate Ecology",
+    "tags":["plantsinger"],
+    "flavor":"The quick should beware.",
+    "description":"The gaintherist animates plants and fungi in a small area with their urgent essence. Flush with animal vigour, bushes roll forth, trees spring up.",
+    "ranks":[
+      {"power":0,"effect":"Flowers open, leaves sway, spores release."},
+      {"power":1,"effect":"Foliage, tendrils, and branches move to open passages and obscure passage."},
+      {"power":2,"effect":"Bushes roll in to block passage, branches batter like clubs."},
+      {"power":3,"effect":"Plants uproot themselves into motion, marching with the speed of a human."},
+      {"power":4,"effect":"Trees and bundles of smaller plants attack like ogres."},
+      {"power":5,"effect":"Great trees strike like giants, wicker men rise from swamps."},
+      {"power":7,"effect":"A whole copse lifts up and marches, a titan on the move."},
+      {"power":9,"effect":"Megafloral kaiju."}],
+      "properties":[
+        {"name":"Autonomy","description":"If the gaintherist imbues the flora, it continues to move under its own strange will."},
+        {"name":"Expanse","description":"Double spell cost to affect a large area."}]},
+  "asbelowsoabove":{
+    "name":"As Below So Above",
+    "tags":["cosmiclogos"],
+    "flavor":"From microworld to macro.",
+    "description":"The zu-yuga paints a map of reality, then judiciously alters it to change the territory of reality.",
+    "ranks":[
+      {"power":1,"effect":"Location. A mark appears where the wizard, or one whose substance they possess, is found."},
+      {"power":2,"effect":"Passage. A door swings open, a wall crumbles, a thicket withers."},
+      {"power":3,"effect":"Bridge. Stone grows, cables stretch, branches interlock."},
+      {"power":4,"effect":"Trap. Pits excavate, spikes thrust, flames gather."},
+      {"power":5,"effect":"Life. Oozes, slimes, gelatines, and offal growths spontaneously generate and populate."},
+      {"power":6,"effect":"Corruption. Floors grow hands, ceilings grow eyes, trees grow ripping hands."},
+      {"power":7,"effect":"Subversion. Gravity reverses, floodwaters ready themselves, air turns to poison."},
+      {"power":8,"effect":"Omission. Creatures disappear, memories are lost, treasures turn to dust."},
+      {"power":9,"effect":"Creation. Houses, manors, castles, trees spring up, simulated peons to till lands, illusory mentors to fill dreams."}],
+      "properties":[
+        {"name":"Ka attack","description":"If a soul is unwilling."},
+        {"name":"Map","description":"Each stroke must be in the wizard’s own hand, but they can copy an existing map. The larger or more precise the map, the longer making it takes. The map may be of a mind or a kingdom, a ship or a story. Individual maps are small (1 soap), but a robust carrying case is not (1 stone)."}]},
+  "beseechearthandsky":{
+    "name":"Beseech Earth and Sky",
+    "tags":["sevensummons"],
+    "flavor":"Make clear the way.",
+    "description":"The bokubok spends several minutes creating a makeshift shrine, aligning a few rocks and scratching celestial marks in the dirt. Then they use a small offering, perhaps a libation of wine or a few trail crackers, to attract the attention of a local daemon.",
+    "ranks":[
+      {"power":1,"effect":"The wizard may ask three questions of the daemon and receive instruction on the local area. For example, it might reveal where a spring could be found, if people have camped there, or if a large monster lives nearby. The imp is not all-knowing, but will try to answer truthfully if the wizard convinces them to help."},
+      {"power":2,"effect":"The wizard begs assistance. A convinced daemon grants three boons—[+] to tests or misplaced mundane objects. The wizard can use these boons in the local area over the next day and night."},
+      {"power":3,"effect":"A convinced daemon gives a gift. Perhaps an unusually lucky rock, stick, or flower (1 stone). This gift carries three [+] usable over the next week and a day."},
+      {"power":4,"effect":"A convinced daemon carries out a small task over the next week and a day. Perhaps a door will be left unlocked, a guard will fall asleep, or a termite-infested granary will finally collapse."},
+      {"power":5,"effect":"A convinced daemon manifests a visible sign over the next week and a day. A stream might run red, the sun grow dim, crops wither, or frogs grow wings."},
+      {"power":6,"effect":"A convinced daemon subverts a course of events over the next week and a day. A sick man recovers, but another dies, a pregnant woman loses her child, but a barren woman quickens."}],
+      "properties":[
+        {"name":"Dialogue","description":"This spell depends on polite conversation, possibly with scones and tea, between wizard and daemon."}]},
+  "bindingofwindandgreen":{
+    "name":"Binding of Wind and Green",
+    "tags":["sevensummons"],
+    "flavor":"A mystery gaping inside.",
+    "description":"The wizard traps mind and spirit (ka and ba) within a prison of their own perceptions. ",
+    "ranks":[
+      {"power":1,"effect":"Wizard spends a week creating the seal, and the bond lasts an hour and a whisper."},
+      {"power":3,"effect":"Bond lasts a day and a night."},
+      {"power":5,"effect":"Bond lasts a week & a sunrise."},
+      {"power":7,"effect":"The bond lasts a month and a night and a dawn."},
+      {"power":9,"effect":"A year and a new moon."},
+      {"power":11,"effect":"A decade and an eclipse."},
+      {"power":13,"effect":"A century and a new king."}],
+      "properties":[
+        {"name":"Dialogue","description":"If the wizard wins, the target is bound to serve for the specified period. Failure: the seal crumbles to blood and dust."},
+        {"name":"Faster","description":"Wizard pays double spell cost to craft the seal in a day. Double again to craft in an hour."},
+        {"name":"Imbue","description":"The wizard’s life keeps the seal ready until it is used."},
+        {"name":"No-summon","description":"Another spell may be required to bring a daemon."},
+        {"name":"Seal","description":"Anchors the spell (1 stone). If the binding works, the target bears the seal in its body. When the spell ends, the seal crumbles to ash and salt."},
+        {"name":"Weight of being","description":"Corporeal targets suffer [-] in dialogue."}]},
+  "blackfortressofthesoul":{
+    "name":"Black Fortress [of the Soul]",
+    "tags":["phantasmata"],
+    "flavor":"What no one sees does not exist.",
+    "description":"The wizard traces a mandala upon the ground, then a second perpendicular mandala upon the air, then a third perpendicular to the first two. With each, they strip another layer of possible appearance from the space encompassed by the mandalas. At the last, they speak the no-word of the black fortress and the space within the mandalas becomes a no-space, impervious and imperceptible to creatures and forces that reside in the world of appearances. For creatures inside the no-space time and space, self and other do not exist. They exist in a state of simple nothing-thinking, protected from ageing and hunger and thirst. Non-sentient constructs or awakened entities can pass through the no-space as usual, though it does tickle and make them laugh (if they can). Creatures that can actually see the black fortress describe it as a no-thing of blackness, with light, time, and space sliding off its surface like water off a duck.",
+    "ranks":[
+      {"power":1,"effect":"The black fortress no-space is the size of a matchbox. Takes a tablespoon of sand and a minute to draw the mandala."},
+      {"power":2,"effect":"Large enough to hold a heart. A cup of sand and 10 minutes."},
+      {"power":3,"effect":"The size of a large trunk. A stone of sand and an hour. "},
+      {"power":4,"effect":"As large as a simple wagon. A sack of sand and six hours."},
+      {"power":5,"effect":"The size of a chamber. A couple of sacks, dusk till dawn."},
+      {"power":6,"effect":"Big as a house. Five sacks and three days."},
+      {"power":7,"effect":"Big as a castle. Thirteen sacks and seventeen days. "}],
+      "properties":[
+        {"name":"Imbue","description":"The fortress lives on the wizard’s trapped life essence."},
+        {"name":"One-way time machine","description":"If the wizard creates the black fortress around themselves, they can use it to travel forward in time, as they can maintain the spell indefinitely."}]},
+  "bluescreenshield":{
+    "name":"Bluescreen Shield",
+    "tags":["oldtech"],
+    "flavor":"Flipping the technomagic script.",
+    "description":"The disenchanter weaves their electroplasm into a frothing nimbus of potential fantascience.",
+    "ranks":[
+      {"power":1,"effect":"The dancing nimbus negates one builder-tier attack (dealing 1d30 or more damage) or a spell of the 6th power or higher. Very hard test: shield stays up."},
+      {"power":2,"effect":"The shimmering nimbus negates one long-long-ago tier attack (1d20 or more damage) or a spell of the 5th power or higher. V. hard test to maintain."},
+      {"power":3,"effect":"The glimmering nimbus negates one long-ago tier attack (2d8 or more damage) or a spell of the 4th power or higher. Very hard test to maintain."},
+      {"power":4,"effect":"The stuttering nimbus negates one epic attack (1d12 or more damage) or a spell of the 3rd power or above. Hard to maintain."},
+      {"power":5,"effect":"The strobing nimbus negates one strong attack (1d8 or more damage) or a spell of the 2nd power or above. Hard to maintain."},
+      {"power":6,"effect":" The pulsing nimbus negates one moderate attack (1d4 or more damage) or a spell of the 1st power or above. Hard to maintain."},
+      {"power":7,"effect":"The scribbling nimbus negates one attack or a spell of any power. Moderate test to maintain."}],
+      "properties":[
+        {"name":"Imbue","description":"To keep the shield up."},
+        {"name":"Superquick","description":"Raising the shield is a free action if the disenchanter is using a machine ghost."}]},
+  "bodyofsteel":{
+    "name":"Body of Steel",
+    "tags":["ironsymphony"],
+    "flavor":"If they move, will they fall?",
+    "description":"Through loud meditation and exercise, the wizard transforms a body into metal.",
+    "ranks":[
+      {"power":1,"effect":"Steel skin. Gains [+] vs light slashing and piercing damage."},
+      {"power":2,"effect":"Ferrous fat. [+] vs all melee and bullet damage."},
+      {"power":3,"effect":"Metal muscles. [+] to strength and endurance tests, [+] vs arrow damage, immune to piercing melee damage."},
+      {"power":4,"effect":"Biatomic bones. Ignores the first 5 points of damage from every source and [+] vs crits."},
+      {"power":5,"effect":"Iron mind. [+] vs all ka damage and ba damage from non-legal sources."},
+      {"power":7,"effect":"Heavy metal pot. The target’s body collapses into a pot-sized metal object. In this form it ignores another 5 points of damage from all sources, is immune to crits, and has [+] vs all damage. It also suffers [-] to  physical tests, as it only has its vibrational body to levitate and manipulate its environment."},
+      {"power":9,"effect":"Shining singularity. The target collapses into a glowing green metal sphere the size of a walnut. In this form it ignores another 10 points of damage from all sources and, if swallowed, held, or worn, it can dominate another creature with its iron will (moderate test)."}],
+      "properties":[
+        {"name":"Cumulative","description":"Each power includes its lower-order effects. "},
+        {"name":"Imbued","description":"The target’s will keeps their iron body in shape."},
+        {"name":"Magnetic","description":"Healed by electric effects that deal 20 damage or less."}]},
+  "bottledheroism":{
+    "name":"Bottled Heroism",
+    "tags":["soulbreaker"],
+    "flavor":"Translation of skill and power.",
+    "description":"The wizard grabs a creature’s arm or other limb to steal its essence, its soul and personality, and trap it in a special flask (1 soap) for later use.",
+    "ranks":[
+      {"power":1,"effect":"Traps the soul of a level 1 (or lower) creature. A sip grants one trait or skill. Drinker gains a bonus to their rolls equal to the creature’s level."},
+      {"power":2,"effect":"Traps the soul of a level 2 (or lower creature). Sip grants two trait or skill ranks, and a bonus equal to creature’s level."},
+      {"power":3,"effect":"A soul of level 3 or lower. Sip grants 3 trait or skill ranks, plus bonus."},
+      {"power":4,"effect":"Level 4+ or lower, 4+ trait or skill ranks, bonus equal to level, etc. "}],
+      "properties":[
+        {"name":"Ka attack","description":"Vs unwilling."},
+        {"name":"Drink soul","description":"The wizard can drink a bottled soul to gain its power and abilities. A bottle is treated as a consumable, when it runs out the soul is spent. The soul is not destroyed in this manner—after drinking, it evaporates out of the wizard and seeks its body again."},
+        {"name":"Imbue","description":"The wizard uses their vital force to hold the spell in place."},
+        {"name":"Mere minutes","description":"A sip does not last."},
+        {"name":"Nightmare catatonia","description":"So long as the entirety of its soul is in the flask, the victim cannot move, its ka-ba trapped in a magic prison."},
+        {"name":"Recovery","description":"The victim tests endurance to awaken every time the wizard sips their trapped soul. However, they are weak and unsteady until their whole soul is drunk or poured out of the flask."}]},
+  "boundarydiscontinuity":{
+    "name":"Boundary Discontinuity",
+    "tags":["portalarchitect"],
+    "flavor":"Edge cases will always escape.",
+    "description":"By the application of supernal balance and perspective, the wizard tips a noumenon from one local maximum to another. In other words, they tip an object from one stable state to another.",
+    "ranks":[
+      {"power":1,"effect":"Entropy. Rock turns to sand, alcohol evaporates, ice melts."},
+      {"power":2,"effect":"Bistability. A rock becomes a liquid, a liquid polymer becomes a glass, a gas condenses into a rubbery fluid. Chemical composition may change to make transition possible."},
+      {"power":3,"effect":"Reverse the arrow. Rust turns to iron, exhaust condenses into fuel."},
+      {"power":4,"effect":"Discontinued matter. Ordinary matter is turned into paradoxic builder-stuff. One of its physical properties is wrong. For example, ice that is hot to the touch, or magma that is lighter than air."},
+      {"power":7,"effect":"Self-organizing matter. Dangerous. This power is interdicted. Do not create ice-9."}],
+      "properties":[
+        {"name":"Sudden","description":"A swift spell!"},
+        {"name":"Volume","description":"Spell normally affects a handful of matter per casting. Increasing the volume tenfold doubles the spell cost."}]},
+  "burdensharingarrangement":{
+    "name":"Burden Sharing Arrangement",
+    "tags":["abmortalities"],
+    "flavor":"Let me bear your cross.",
+    "description":"The sanator undertakes a spiritual voyage into a creature’s essential existence to remove their burden. Some dress up the simple metem­psychic rite to justify higher fees.",
+    "ranks":[
+      {"power":1,"effect":"The sanator’s ka embarks on its voyage through the creature’s eyes or other primary sense organs. Over several hours they remove a burden from the target and convert it into a healer’s burden stored in an adjacent creature’s aura."},
+      {"power":2,"effect":"Rite takes about half an hour."},
+      {"power":3,"effect":"Rite takes a few minutes."},
+      {"power":4,"effect":"A dozen seconds."}],
+      "properties":[
+        {"name":"Healer’s Burden","description":"The sanator encysts a spirit stone in the aural body. It imposes [-] to all tests with one stat. It is otherwise harmless and dissipates without long-term damage to the bearer."},
+        {"name":"Sloppy Transfer","description":"Rite is twice as quick, but deals 1d6 damage to both donor and recipient."},
+        {"name":"Telemagic","description":"Radio healing."},
+        {"name":"Transfer","description":"Preserves the sanator."}]},
+  "carpentierscancerbomb":{
+    "name":"Carpentier's Cancer Bomb",
+    "tags":["biomechane"],
+    "flavor":"Unleash the thing!",
+    "description":"The wizard spits on a creature and nano-daemons in their spittle rip open its source code.",
+    "ranks":[
+      {"power":4,"effect":"The target's flesh ripples and twitches for one round, then it tests endurance. If it fails, flailing keratin ropes and strangling muscular tentacles erupt from its skin. Each round, the target of the spell takes 2d6* ha damage, and the closest nearby creature suffers 1d8 ha damage. The target or an ally can attempt a tough endurance or strength test to rip the thing out of their body. The immature cancer bomb thing (L4, horror) dies within minutes of exposure to the atmosphere. If the thing kills the target, it crawls out fully adapted to its environment. The thing is never under the spell caster's control."},
+      {"power":7,"effect":"The tentacles and ropes erupt instantly. The target does not test endurance. The spell becomes #dangerous—if the wizard flubs the casting, the horror bursts out of their body instead."}],
+      "properties":[
+        {"name":"Born dying","description":"The thing begins to die as soon as it enters the world; only the wizard's imbued life force sustains it. Absent the seitas' life force, it permanently loses 1 life per hour. Once a day, at moon-rise, the wizard tests charisma. If they succeed, it becomes a perfect self-sustaining alien survivor. It is still not under the caster's control. Seriously, why let this monster live?"},
+        {"name":"Focus","description":"Until the thing is born."},
+        {"name":"Horror","description":"Frightens fools."}]},
+  "channelchannel":{
+    "name":"Channel Channel",
+    "tags":["portalarchitect"],
+    "flavor":"Every door opens in many ways.",
+    "description":"The wizard meditates upon a door, a handle, a key, then opens it otherways and reveals another direction.",
+    "ranks":[
+      {"power":1,"effect":"It opens out of another adjacent portal."},
+      {"power":2,"effect":"Another nearby portal."},
+      {"power":3,"effect":"A faraway portal."},
+      {"power":4,"effect":"A portal at the edge of sight."},
+      {"power":5,"effect":"A memorized portal."},
+      {"power":7,"effect":"A well-described portal."},
+      {"power":9,"effect":"A legendary portal. "}],
+      "properties":[
+        {"name":"Other dimension","description":"Opening a portal into another dimension doubles spell cost. Time may be a dimension."}]},
+  "chronicperception":{
+    "name":"Chronic Perception",
+    "tags":["phantasmata"],
+    "flavor":"To you a moment; to me years.",
+    "description":"The wizard looks into the target’s eyes and speaks in a voice that modulates the frequencies of temporal perception. As long as the patient hears the voice, their perception of time is modified.",
+    "ranks":[
+      {"power":1,"effect":"Each moment feels half as long, everything around the target seems to move in a blur. Target loses half of their actions."},
+      {"power":2,"effect":"Each moment feels twice as long, the target can accomplish an additional mental action per round—their mind comes up with convincing reasons why they don’t want to accomplish an additional physical action."},
+      {"power":3,"effect":"Each moment feels like it passes many times faster. Target moves slowly as a snail, losing three quarters of their actions."},
+      {"power":4,"effect":"The target is flooded with adrenalin. Their hyper-focus gives them 2 additional mental actions per round and [+] to physical actions as their mind pushes their body past its limits. They lose 1 life every round they are accelerated and gain a burden of hurt when the spell ends."},
+      {"power":5,"effect":"Time stops moving for the patient. A perfect moment, stretching away. As long as they are not physically injured, they remain rooted in blissful contemplation of the experienced world. If they stay in this state for a full seven days, there is a chance they achieve enlightenment. In any case, they permanently gain 1 point of aura from their seven-day meditation on one single moment of existence."},
+      {"power":7,"effect":"The patient’s mind breaks through the veil of time, realizing the illusion of free will, seeing time and existence as a mountain range of predestination. If they succeed at an aura test, they gain 5 additional actions in a single round, then collapse unconscious. If they fail, they immediately suffer 1d4 aura damage and collapse unconscious."}],
+      "properties":[
+        {"name":"Focus","description":"Must keep talking."},
+        {"name":"Ka attack","description":"Vs unwilling targets."}]},
+  "coherentillumination":{
+    "name":"Coherent Illumination",
+    "tags":["hardlight"],
+    "flavor":"The light! It burns!",
+    "description":"The illuminos sculpts a focus matrix of airs and gestures that amplifies a light source, drawing in additional energies from surrounding matter to produce a beam of coherent light. A ray.",
+    "ranks":[
+      {"power":1,"effect":"Sets nearby flammables ablaze. Blinds distant creatures."},
+      {"power":2,"effect":"Blisters nearby skin (1d6 damage), scorches plastics, melts soft metals. Blinds very distant creatures."},
+      {"power":3,"effect":"Burns nearby objects (3d6 damage). Sets distant flammables ablaze. Blinds miles away."},
+      {"power":4,"effect":"5d6 damage to nearby."}],
+      "properties":[
+        {"name":"Aiming","description":"Illuminos tests to strike small or dodging targets."},
+        {"name":"Crystal variation","description":"With different crystals, the illuminos can produce strange light rays from out of time and space. A blue crystal projects nauseating void rays, an acid UV crystal emits confusing rays, a neutral grey crystal jams machine logics, etc."},
+        {"name":"Default","description":"Fire effects."},
+        {"name":"Focus","description":"The ray continues to affect its target as long as the wizard focuses."},
+        {"name":"Source","description":"Requires a light source, such as an electric candle."}]},
+  "consumption":{
+    "name":"Consumption",
+    "tags":["soulbreaker"],
+    "flavor":"Everyone is but fuel.",
+    "description":"The kaliyat opens their third eye to reach into a nearby friend, ally, pet, or servant. They burn their victim’s life essence to fuel their magic.",
+    "ranks":[
+      {"power":1,"effect":"The victim loses 1d6 life and the kaliyat gains access to 1d6 + pro life for spell-casting."},
+      {"power":2,"effect":"Victim loses 2d6 life, kaliyat accesses 2d6 + pro life."},
+      {"power":3,"effect":"3d6 life for 3d6 + pro life."},
+      {"power":4,"effect":"Et cetera."}],
+      "properties":[
+        {"name":"Unwilling","description":"Spell costs double vs unwilling targets (ka attack)."},
+        {"name":"Siphon","description":"As the long as the wizard focusses, they can keep draining their target without further tests."}]},
+  "createcanonicalform":{
+    "name":"Create Canonical Form",
+    "tags":["golemmafex"],
+    "flavor":"Machines—extensions of my life.",
+    "description":"The caster uses a blueprince scroll to assemble a golem, and their own life force to imbue it with motive ka. A workshop, tools, and materials are recommended. The work takes 1 week per golem level (min. 1 day for a 0-level noveltomaton).",
+    "ranks":[
+      {"power":1,"effect":"Build a tiny, insectile golem."},
+      {"power":2,"effect":"Toad or rat-sized."},
+      {"power":3,"effect":"Cat or dog-sized."},
+      {"power":4,"effect":"Human-sized."},
+      {"power":5,"effect":"Cow or bear-sized."},
+      {"power":6,"effect":"Megatherium-sized."},
+      {"power":7,"effect":"Big as a giant squid."},
+      {"power":8,"effect":"Flying statolith turtle-sized."}],
+      "properties":[
+        {"name":"Improvised","description":"A golem built without a suitable workshop, tools, or materials has halved (roll d6): (1) life, (2) mobility, (3) defense, (4) attack, (5) damage, or (6) just looks very poorly made."}]},
+  "createiksir":{
+    "name":"Create Iksir",
+    "tags":["allchemy"],
+    "flavor":"We shall be as gods again.",
+    "description":"The matter wizard creates pure white crystal form iksir from the zero point of creation itself. The required demiurgent protocols to make this process safe are considered lost.",
+    "ranks":[
+      {"power":7,"effect":"The wizard spends an hour creating one dose of iksir."},
+      {"power":11,"effect":"A day creating 2 doses."},
+      {"power":13,"effect":"A week creating 4 doses."},
+      {"power":17,"effect":"A month creating 8 doses."},
+      {"power":19,"effect":"A year creating 16 doses."}],
+      "properties":[
+        {"name":"Iksir boost","description":"The wizard spends a dose of iksir to triple the amount of iksir created or speed up the ritual by one order of magnitude."}]},
+  "delusionlock":{
+    "name":"Delusion Lock",
+    "tags":["phantasmata"],
+    "flavor":"A labyrinth of shattered mirrors.",
+    "description":"The wizard riffles through a target’s mind for fears and hopes, dreams and worries, doubts and conflicts they can manipulate.",
+    "ranks":[
+      {"power":1,"effect":"Gentle. The target is soothed, sure that the wizard or another creature is harmless."},
+      {"power":2,"effect":"Inspire. The target loves the wizard or another creature, and gains [+] while helping them."},
+      {"power":3,"effect":"Enthrall. The target submits to the wizard or another creature, and follows their every command."},
+      {"power":4,"effect":"Bereft. Target is convinced they are worthless and suffers [-] to tests, unless they follow any other creature’s command."},
+      {"power":5,"effect":"Haunted. Target is convinced everyone is out to get them. They are hostile to all other creatures and suffer [-] to social tests or any tests to help other creatures."},
+      {"power":6,"effect":"Broken. Target is at war with itself. Voices from its past and future shout from all sides. It suffers [-] to all tests, confuses friends for enemies, and sees dire omens everywhere."},
+      {"power":7,"effect":"Locked. Target is trapped in its own mind. What battles does it fight? A dream voyage is required to tease it out again."}],
+      "properties":[
+        {"name":"Ka attack","description":"Vs unwilling targets."},
+        {"name":"Life lock","description":"The target of a successful attack loses life equal to the spell’s power."},
+        {"name":"Natural decay","description":"If the target has no contact with the wizard, the delusion decays on its own in a few weeks and the spell ends."},
+        {"name":"Self-imbued","description":"Spell is imbued with the target’s own life."}]},
+  "doorsofperception":{
+    "name":"Doors of Perception",
+    "tags":["portalarchitect"],
+    "flavor":"See, it all makes sense now.",
+    "description":"The wizard closes their eyes and opens a door between their mind and another. Through the channel between, meanings can flow.",
+    "ranks":[
+      {"power":0,"effect":"Wizard connects to a mind directly, using a bi-neural cable."},
+      {"power":1,"effect":"A mind at arm’s length."},
+      {"power":2,"effect":"A nearby mind."},
+      {"power":3,"effect":"A faraway mind."},
+      {"power":4,"effect":"A mind seen, either by the naked eye or through a screen."},
+      {"power":5,"effect":"A mind unseen, but known."},
+      {"power":6,"effect":"A unknown, but well described. Requires a personal object to attune the aura."},
+      {"power":7,"effect":"Unknown, unconnected. "}],
+      "properties":[
+        {"name":"Alien minds","description":"Double spell cost."},
+        {"name":"Bi-neural cable","description":"A simple piece of gear, available from most radio autofacs. Used costs around €25."},
+        {"name":"Swift link","description":"To communicate ten times faster than with speech, double spell cost (minimum 1)."}]},
+  "draftblueprincescroll":{
+    "name":"Draft Blueprince Scroll",
+    "tags":["golemmafex"],
+    "flavor":"Ghost-free machines!",
+    "description":"The caster translates a living creature into an analogous golem that will follow instruction lemmas implanted in its command unit. Completing a scroll takes 1d6 days of study and one day of meditative drafting. Masterful golem theorics can create a blueprince scroll without destroying the template creature, but this is a difficult feat.",
+    "ranks":[
+      {"power":1,"effect":" Caster drafts a blueprince for a golem based on a tiny creature. Perhaps a scorpion or a housefly, a perch or a jellyfish."},
+      {"power":2,"effect":"A small creature. Toad, rat, thrush, or apple."},
+      {"power":3,"effect":"A cat or dog-sized creature."},
+      {"power":4,"effect":"Chimpanzee or human-sized."},
+      {"power":5,"effect":"Horse or aurochs-sized."},
+      {"power":6,"effect":"Elephant or triceratop-sized."},
+      {"power":7,"effect":"Big as a sea whale."},
+      {"power":8,"effect":"Big as a void mosasaur."}],
+      "properties":[
+        {"name":"Ctrl+V","description":"A scroll can be used with a spell like Create Canonical Form to produce golems ad nauseam."}]},
+  "electromagicalprojector":{
+    "name":"Electromagical Projector ",
+    "tags":["motherelectric"],
+    "flavor":"Zip ah doo da.",
+    "description":"The wizard makes the three gestures and collapses into an electro-magnificent wave-particle that travels like lightning to a nearby location, where they violently reassemble. If the target is sentient, the wizard makes a ka attack. If they miss, they reassemble next to their target.",
+    "ranks":[
+      {"power":3,"effect":"Each creature in the wizard's path suffers 2d6 electromagical damage. Every creature next to the reassembly point takes 4d6 damage. If the hero reassembles within a solid target, they both suffer 8d6 damage."},
+      {"power":4,"effect":"Can use reflective surfaces to change direction."},
+      {"power":5,"effect":"Transmits to a location or target far away."},
+      {"power":6,"effect":"Deals 3d6 damage in path, 6d6 to creatures next to reassembly point, and 12d6 within a solid target."},
+      {"power":7,"effect":"Can reflect off a storm cloud."}],
+      "properties":[
+        {"name":"Oh-mega","description":"Uses the rods to direct the sizzling bolts."}]},
+  "electromagnificentdetector":{
+    "name":"Electromagnificent Detector",
+    "tags":["rightmaker"],
+    "flavor":"Keep covered your third eye.",
+    "description":"Over several hours the wizard paints a net of symbols on a stone-sized object—perhaps a small stone tablet or a compass. While they imbue this object with their life force and have it on, or very near, their person, the wizard’s senses expand beyond their normal range. Hiding the item in a pocket or other container may ‘blind’ it.",
+    "ranks":[
+      {"power":1,"effect":"The object replicates the senses of a creature similar to the wizard. Perhaps the keen ears of a fennec fox, the electric detection of an eel, or the piercing eyes of a falcon."},
+      {"power":2,"effect":"It senses strange spectra and chroma no mortal could detect, from radio waves to the deep flesh-eating plinking of hard radioactivity or the bass line of gravity pulses."},
+      {"power":3,"effect":"The wizard can detect the information substrate of the world, the life signs of ha weaving through the Given World, the ka spirits flitting between, the reality dysfunctions perpetrated by magics."}],
+      "properties":[
+        {"name":"Focus","description":"When the wizard’s attention wanders, they no longer see through their eye-stone."},
+        {"name":"Small anchor","description":"A painted eye. Soap-sized."}]},
+  "electromagnificentdiscordion":{
+    "name":"Electromagnificent Discordion",
+    "tags":["motherelectric"],
+    "flavor":"The omnipresent hum.",
+    "description":"The electric wizard waves their oh-mega rods in strange designs over a diagram of wires and crystals (many wizards prepare this diagram in advance, sewing it onto a cloth or parchment).  When they touch the rods together, they amplify a vibrant field of disruption into existence.",
+    "ranks":[
+      {"power":1,"effect":"Adjacent electromagical communications blocked. Electric creatures nauseated [-]."},
+      {"power":2,"effect":"Field expands, covering a small area. Adjacent electricals and synthetics suffer 1 mental stat damage per round."},
+      {"power":4,"effect":"Field encompasses a large area. Adjacent electricals suffer 2 stat damage per round. Nearby golems and ka spirits are also nauseated [-]."},
+      {"power":8,"effect":"Electricals suffer 4 stat damage. Golems and ka spirits suffer 1 stat damage."},
+      {"power":16,"effect":"Damage double again."}],
+      "properties":[
+        {"name":"Focus","description":"The hum continues as long as the electric wizard waves their oh-mega rod."}]},
+  "energyaccumulator":{
+    "name":"Energy Accumulator",
+    "tags":["golemmafex"],
+    "flavor":"Somewhat sustainable infinite magical power!",
+    "description":"The caster traces strange diagrams on the air for several minutes to imbue a physical object with environmental ka, holding it in place with their will. This energy can be released slowly, powering machinery or golems, or swiftly, creating explosions. The energy is drained from the caster’s surroundings, which can cause crops to wither and cows to stop giving milk.",
+    "ranks":[
+      {"power":1,"effect":"The caster imbues a chickpea-sized object with a tenth-unit of energy. It provides the equivalent of a sub-baseline human’s hourly labour. Suddenly released, it deals 2d6 ha damage to all in a small radius."},
+      {"power":2,"effect":"Caster imbues an egg-sized object with a unit of energy. It provides the equivalent of a baseline human’s daily labour. Swiftly released, it deals 3d6 ha damage to all in a medium radius."},
+      {"power":3,"effect":"Stone-sized object with ten units of energy. Released, deals 5d6 damage in a medium radius."},
+      {"power":4,"effect":"Sack-sized object with 100 units of energy. 8d6 damage in a medium radius. More closer to the object. Less farther out."},
+      {"power":5,"effect":"Shipment-sized object with 1,000 units of energy. If suddenly released, it is as destructive as a traditional ton of the oldtech explosive called ‘teent’. It deals 13d6 damage in a medium area."}]},
+  "essentialappetite":{
+    "name":"Essential Appetite",
+    "tags":["awakenedsphere"],
+    "flavor":"Eat its heart, gain its courage.",
+    "description":"The wizard consumes the flesh and blood of a creature to acquire its attributes.",
+    "ranks":[
+      {"power":1,"effect":"Similarity: the mane of a lion, pebbly snake-like skin, bunny ears. [+] to social interactions with that type of creature."},
+      {"power":2,"effect":"Senses: the smell of a shark, the hearing of an elf."},
+      {"power":3,"effect":"Aptitude: the brachiation of an ape, the leaping of a kangaroo, the flight of an albatross. May include natural attacks."},
+      {"power":5,"effect":"Trait: the semi-magical ability of an individual creature. E.g., a hero’s Break the Weak trait."}],
+      "properties":[
+        {"name":"Imbue","description":"When the wizard ends the spell, the organ is flushed out in a mess of spell-flesh."},
+        {"name":"Living source","description":"Spell price halved if consuming a pound of living flesh, dealing 1d6 ha damage."},
+        {"name":"Organ","description":"Each attribute (or trait) manifests as a 1 stone organ on or in the wizard’s body. Removal is painless, though it may be gory."},
+        {"name":"Symbolic","description":"Spell price doubled if wizard consumes a symbolic representation of the creature, rather than its actual flesh. Creature cookies are popular."}]},
+  "evivification":{
+    "name":"E-Vivification",
+    "tags":["motherelectric"],
+    "flavor":"A new, better kind of life!",
+    "description":"The wizard jams their oh-mega rods into the yielding flesh of a motionless body and forces an electric ka elemental into this flesh prison. The ritual takes several minutes to create a creature under their control.",
+    "ranks":[
+      {"power":1,"effect":"The hero e-vivifies a cat or dog-sized body, creating a Level 1 electric abomination (sparkling, twitching, drooling)."},
+      {"power":2,"effect":"The hero e-vivifies a pig- or human-sized body, creating an L2 abomination (rumbling, blistering, sizzling)."},
+      {"power":4,"effect":"A cow- or horse-sized body, for an L4 abomination (rippling, bloating, searing)."},
+      {"power":8,"effect":"A rhino- or hippo-sized body, for an L8 abomination (thundering, stomping, flashing)."}],
+      "properties":[
+        {"name":"Dangerous","description":"What? Really?"},
+        {"name":"Imbue","description":"Life to maintain control."},
+        {"name":"Living body","description":"If the wizard uses a living body, it should ideally be bound to an electrically resistive slab with solid straps. The living target undergoes a painful, terminal procedure, losing 1 life per minute until dead. All life lost this way is added to the e-vivified abomination’s usual life total. Most inquisitors agree using this spell on a living creature is a vile offence against sapience."},
+        {"name":"Oh-mega","description":"Needs the rods."}]},
+  "extractiksir":{
+    "name":"Extract Iksir",
+    "tags":["allchemy"],
+    "flavor":"Fossil gods will fuel our dreams.",
+    "description":"The matter wizard uses an opus box and the exemplar protocols to extract iksir and refine it into stable red powder form.",
+    "ranks":[
+      {"power":1,"effect":"The wizard spends an hour refining one dose of iksir."},
+      {"power":2,"effect":"A day refining 3 doses."},
+      {"power":3,"effect":"A week refining 9 doses."},
+      {"power":4,"effect":"A month refining 27 doses."}],
+      "properties":[
+        {"name":"Iksir dose (item)","description":"The extracted iksir is entangled with the wiz-ard’s essence. They recover their imbued life force after using up all the iksir."},
+        {"name":"Six sources","description":"The six accepted sources of iksir are:"}]},
+  "fearitself":{
+    "name":"Fear Itself",
+    "tags":["phantasmata"],
+    "flavor":"Will eat you up.",
+    "description":"The wizard channels their life force directly into a target’s fears, giving them the ability to affect the physical world.",
+    "ranks":[
+      {"power":1,"effect":"The fear crawls out of the subconscious and assaults like a flickering shadow (L1, +3 1d6 ka, psychic lash)."},
+      {"power":2,"effect":"It grows larger (L2, +4 1d6 ba, wave of guilt). Its attacks can afflict up to three creatures near the victim at once."},
+      {"power":3,"effect":"It becomes solid (L3, +6 1d10 ha or 1 aura, ogrish paw)."},
+      {"power":4,"effect":"It manifests as a swirling maelstrom of dust (L4) and can strike creatures in a large area around the target."},
+      {"power":5,"effect":"It looms like a thin, hungry ogre (L5, +8 2d8 ba or 1d4 cha, clammy, guilty clench)."},
+      {"power":6,"effect":"It can manifest as a radiation ghost (L6) and attack as far away as the patient can see."},
+      {"power":7,"effect":"It grows huge, a mass of writhing electronic tentacles and faces (L7, +10 2d12 ka or 1d4 aura and thought, shocking revelation of insignificance)."},
+      {"power":8,"effect":"It manifests as a departed friend (L8) as far as the target can imagine."}]},
+  "fiatlux":{
+    "name":"Fiat Lux",
+    "tags":["hardlight"],
+    "flavor":"Let there be light.",
+    "description":"The mulmullu creates light from their own body.",
+    "ranks":[
+      {"power":1,"effect":"The light has a brightness of 10 lumens. Like a weak lamp."},
+      {"power":2,"effect":"100 lumens. A basic lamp."},
+      {"power":3,"effect":"1000 lumens. Very bright."},
+      {"power":4,"effect":"10,000 lumens. A blindingly bright lamp. 1d4 damage/round to all nearby at full spectrum."},
+      {"power":5,"effect":"100k lumens. The light causes permanent blindness and overloads circuits. Dangerous. 4d4* damage/round to all far away and nearby at full spectrum."},
+      {"power":6,"effect":"1 million lumens. Very dangerous. 4d4*d4* damage/round to all far away and nearby at full spectrum."}],
+      "properties":[
+        {"name":"Crystal variation","description":"See above."},
+        {"name":"Default","description":"Clear (comm) effects."},
+        {"name":"Full spectrum","description":"Double spell cost: the emitted light covers the full EM spectrum and deals serious tissue damage. Victims may suffer magical corruption."},
+        {"name":"Flaring imbue IV","description":"The light burns on as long as the spell is imbued. If the spell cost was more than 4, the wizard tests aura or endurance each round. Success: they pay an additional 1d4* life; Fail: pay the full spell cost again."},
+        {"name":"Project","description":"For 1 additional spell cost, the light blazes from a nearby target. For 2, it shines from a faraway target. For 3, it radiates from a distant target the wizard can still see clearly. "}]},
+  "foldforce":{
+    "name":"Fold Force",
+    "tags":["masterforce"],
+    "flavor":"Reality twisted is a bent bow.",
+    "description":"The barrerante takes one of the fundamental forces they manipulate and bends it to their use.",
+    "ranks":[
+      {"power":0,"effect":"Nudge. The barrerante slightly nudges the vector of a force. Gravity tilts, electromagnetic charge shifts, bosons leap, love … is love a fundamental force? This might mean [-] or [+] for a long range missile, a glitch in an EM message, or a stutter in a reaction."},
+      {"power":1,"effect":"Turn. The local vector makes a large shift (30° to 60°). Gravity feels wonky. Projectiles miss until attackers compensate, electronic systems desynchronize."},
+      {"power":2,"effect":"Bend. Vector redirects by 60° to 120°. Furniture falls sideways as gravity rotates, sunlight turns aside creating a cone of darkness."},
+      {"power":3,"effect":"Fold. Vector swings by 120° to 240°. Up becomes down, positive goes negative, light fades to dark. A barrerante could concentrate and swiftly fold gravity around them to give the impression that they (and possibly their easy chair, side table, teapot, and lamp) are flying."},
+      {"power":4,"effect":"Enfold. Vector flips around by 240° to 480°, tying itself in a loop. A goblin trapped in a gravity loop accelerates to terminal velocity, electricity coils into ball lightning."}],
+      "properties":[
+        {"name":"Falling damage","description":"This spell creates environmental hazards."},
+        {"name":"Focus","description":"Intense attention to maintain an effect over time."},
+        {"name":"Fold spell","description":"The barrerante can redirect a spell cast by another wizard. To do so, they increase the power cost of the fold force spell by the power of the other magic. For extras’ magical attacks, the TC estimates the power (see Setting Spell Power For New Spells, pXX). For example, bending (P2) a P3 Electromagical Projector would have a power cost of P2 + P3 = 5."},
+        {"name":"Modulate","description":"The barrerante can double the power cost to adjust a forces carrier signal. They can double or halve the strength of a fundamental force within the affected area. If modulating another spell, this doubles or halves its effect."},
+        {"name":"Small area","description":"Affects a small area around the barrerante. Affecting a large area doubles the power cost."},
+        {"name":"Wall-runner","description":"Everyone, including the barrerante, suffers [-] to running, fighting, leaping, and other dynamic actions in a modified fundamental force effect. It’s just weird to the human brain."}]},
+  "forestssymbiote":{
+    "name":"Forest’s Symbiote",
+    "tags":["plantsinger"],
+    "flavor":"Accept the tree into thyself.",
+    "description":"By ingesting part of a plant or fungus and meditating upon its essence, the pooli sunglé merges with it at a cellular level.",
+    "ranks":[
+      {"power":0,"effect":"The pooli knows perfectly what a plant needs to flourish."},
+      {"power":1,"effect":"The pooli gains a weak trait from the plant, perhaps photosynthesis to halve their food needs, bark-like skin to grant +2 ha, or succulent skin to halve water loss in a desert."},
+      {"power":3,"effect":"The pooli gains a stronger trait. Photosynthesis feeds them with edible fruits leftover, woody platelets grants +5 ha, iron-wood thorns deal 2d8 damage to any melee atackers."},
+      {"power":6,"effect":"Gains a powerful trait. They can feed a small community with the tubers that grow on their back, can assume the form of an ambulatory war mushroom with +9 ha and chitin flails that deal 3d8 damage each, and so on."},
+      {"power":10,"effect":"Turns into a fine redwood or vast mycelium to travel through time, ageless and proud. "}],
+      "properties":[
+        {"name":"Imbue","description":"While life flows into the spell, its effect persists."}]},
+  "fountainzero":{
+    "name":"Fountain Zero",
+    "tags":["masterforce"],
+    "flavor":"Enter, energy.",
+    "description":"The tabattalger’s mind unrolls a nearby point of force, creating a tennis-ball-sized fountain of energy. Favourite starters include batteries, lighters, or firecrackers.",
+    "ranks":[
+      {"power":1,"effect":"Energizer. A dim red ball. Adjacent creatures gain [+] to energy attacks."},
+      {"power":2,"effect":"Burner. A bright yellow ball. Adjacent creatures suffer 2d8 damage, batteries and energy weapons test vs overload."},
+      {"power":3,"effect":"Flare. A blinding green ball. Adjacent creatures suffer 4d8 damage, batteries and energy weapons explode for 2d8 damage, force shields suffer 6d8 damage."},
+      {"power":4,"effect":"Warp. A mind-bending blue ball. Adjacent creatures suffer 6d8 damage, force shields suffer 12d8 damage. Nearby power sources explode for 2d8 damage."},
+      {"power":5,"effect":"Gateway. An eye-burning ultraviolet ball. Adjacent creatures suffer 6d8 damage, force shields suffer 18d8 damage. Far away power sources explode for 2d8 damage. Ending the spell cast at this power or higher is always dangerous. After a few minutes, and every hour thereafter, there is a 1-in-6 chance a thing of luminous chaos (L=Px2, ineffable, burning, awesome) enters through the fountain. It is alien and deadly but not hostile, unless provoked."}],
+      "properties":[
+        {"name":"Easily dangerous","description":"Double power when comparing to character level."},
+        {"name":"Folds easily","description":"Folding this spell does not increase the power cost of a Fold Force spell."},
+        {"name":"Force fountain • Undifferentiated energies spill out of the fountain"},
+        {"name":"Imbue","description":"The tabattalger’s life keeps the fountain open."}]},
+  "fourpointhold":{
+    "name":"Four-Point Hold",
+    "tags":["masterforce"],
+    "flavor":"Immobility is a decision.",
+    "description":"The feniksan uses their immaterial third hand to tease out a nucleus of force from an object’s core. Stretching this force string, they can anchor the nucleus to up to four other physical objects. Once locked in this way, the object is immobile—even if suspended in mid-air. A pyramidal arrangement is the usual way to create a floating rock or island.",
+    "ranks":[
+      {"power":0,"effect":"The force strings can be no longer than a handsbreadth."},
+      {"power":1,"effect":"Up to a metre long."},
+      {"power":2,"effect":"Up to 10 metres."},
+      {"power":3,"effect":"100 metres (~100 Vastlands yards)."},
+      {"power":4,"effect":"1 kilometre (~1 Vastlands mile)."}],
+      "properties":[
+        {"name":"Drag","description":"The feniksan must physi­cally haul the force-string, like a spider with its thread."},
+        {"name":"Optional imbue","description":"If the feniksan does not imbue the forcestring, it slowly evaporates. The thinner the string, the faster the evaporation. "},
+        {"name":"Razorforce","description":"The feniksan decides the thickness of the forcestrings, from as wide as their third hand can grasp, to thinner than the sharpest razor. Regardless, the forcestring is unbreakable."},
+        {"name":"Razortrap","description":"Each sharp forcestring deals ~1d8 ha damage and severs limbs or heads on a critical roll. Speed and circumstance may modify this damage."}]},
+  "golemdeconstruction":{
+    "name":"Golem Deconstruction",
+    "tags":["golemmafex"],
+    "flavor":"Just hacking apart with scissors.",
+    "description":"The caster reaches into a golem’s lemma banks with their mind and tries to break them down. This breakdown may be explosive.",
+    "ranks":[
+      {"power":1,"effect":"It suffers 1d12 ba or ha damage."},
+      {"power":2,"effect":"1d20 ba or ha damage."},
+      {"power":4,"effect":"2d20 ba or ha damage to the golem, 2d6 ha dmg to all nearby."},
+      {"power":8,"effect":"3d20 ba or ha damage to the golem, 4d6 ha damage to all in a medium radius."},
+      {"power":16,"effect":"4d20 ba or ha damage to the golem, 8d6 ha damage to all in a large radius."}],
+      "properties":[
+        {"name":"Per definitionem","description":"Where is the line between human and golem?"}]},
+  "greatmagneticfield":{
+    "name":"Great Magnetic Field",
+    "tags":["ironsymphony"],
+    "flavor":"They just turn their heads.",
+    "description":"The bardingast’s muscles interlace with the electromagnetic fields in a small area, amplifying them, playing them like music.",
+    "ranks":[
+      {"power":1,"effect":"Horripilation. Dread unease fills the air. A tremor of anticipation. All creatures suffer [-] vs ba and ka attacks."},
+      {"power":2,"effect":"Buzzing. Tastes of metal and ash. [-] to fine motor skills. Synthetics also suffer 1d6 ka damage & memory loss each round."},
+      {"power":3,"effect":"Brake. Wizard restricts the movement of smallish metal objects in the field. [-] to all tests with metal tools. Synthetics suffer 2d6 ka damage per round."},
+      {"power":4,"effect":"Wield. Stone-sized or smaller metal objects follow the wizard’s command. Each round: 1d6 ha damage to all creatures in the area, synthetics suffer an additional 3d6 ka damage."},
+      {"power":5,"effect":"Whirl. Metal items turn into a maelstrom of destruction. Each round: 3d6 ha damage to all creatures, 4d6 ka to synthetics."},
+      {"power":6}],
+      "properties":[
+        {"name":"Contract","description":"Halve spell price (minimum 1) to focus effect on a single metal object. Only affects a single target it is in contact with."},
+        {"name":"Expand","description":"Double spell price to affect a large area. Quadruple for a very large area."},
+        {"name":"Focus","description":"As long as the wizard flexes, the magnetics sing."},
+        {"name":"Move","description":"Moving the area of effect is a 1 power extra spell flex."}]},
+  "headbanger":{
+    "name":"Headbanger",
+    "tags":["ironsymphony"],
+    "flavor":"For metal that is true?",
+    "description":"The sonovor is the conduit of an angry, angsty demiurge, a thunder from the sky sworn to fight and die, an inspiration of destruction, pain and cheese. No scholar of the magics has yet figured out what’s up with the cheese, but it’s tradition, so best to play along.",
+    "ranks":[
+      {"power":0,"effect":"In spirit. The wizard spends one hero die, the target gains a hero die and increases it one step."},
+      {"power":1,"effect":"In deed. Hero dice of nearby allies are twice as effective."},
+      {"power":2,"effect":"In glory. The wizard spends one hero die, every nearby ally gains a hero die and increases it."},
+      {"power":3,"effect":"In bravery. Hero dice spent charging into battle are thrice as effective."},
+      {"power":4,"effect":"In flight. Spends 1 HD: all nearby allies can trample their opponents, gain 1 HD and increase it. "},
+      {"power":5,"effect":"Wall of death. Any ally injured this round gains 1 HD. "}],
+      "properties":[
+        {"name":"Cumulative","description":"Each power gives access to its lower-order effects. "},
+        {"name":"Focus","description":"The sonovor keeps the channels roaring as energy flows through them. Each round, the sonovor can spend one hero die for additional effects."},
+        {"name":"Inspiration","description":"As long as the channels are open, all nearby allies gain +X to all rolls, where X is the power of the spell."}]},
+  "healingsleep":{
+    "name":"Healing Sleep",
+    "tags":["abmortalities"],
+    "flavor":"Where did you dream last night?",
+    "description":"The wizard performs an hour-long rite to douse the patient's aura and send their essential hakaba code through the gates of horn and ivory to heal in the presence of the oneiroi Quiescus and Sanatos. A patient could be mistaken for dead while their aura is doused. When the code returns to their incarnation, they awaken refreshed, and they recover one attribute or one of their burdens dissipates.",
+    "ranks":[
+      {"power":1,"effect":"The target is helpless, nigh-soulless, for three days & nights."},
+      {"power":3,"effect":"The target is helpless for a day and a night."},
+      {"power":5,"effect":"Helpless for six hours."},
+      {"power":7,"effect":"Helpless for an hour."}],
+      "properties":[
+        {"name":"Many sleeps","description":"The wissa can cast multiple instances of healing sleep on the same target at the same time to restore multiple attributes or remove multiple burdens. However, the price of each subsequent casting is increased by 1 of each sleep already cast."},
+        {"name":"Offensive sleep","description":"If the target is unwilling, it gets an easy aura or endurance test to resist the spell."},
+        {"name":"Telemagic","description":"Initially developed to reduce costs to insurers."}]},
+  "holeintime":{
+    "name":"Hole In Time",
+    "tags":["void"],
+    "flavor":"Kick a hole right in the sky.",
+    "description":"Between one step and the next, the voidwalker flickers between existence and non-existence. Where did they voyage in the time between heartbeats?",
+    "ranks":[
+      {"power":1,"effect":"The voidwalker ages a day and gains [+] to one test. If the test is moderate or easier, they succeed automatically. They have already succeeded so many times in so many worlds."},
+      {"power":2,"effect":"The voidwalker ages a week and has in their possession a helpful mundane object or simple information, such as a password or written directions."},
+      {"power":4,"effect":"The voidwalker ages a month and has a rare object or complex information, such as a map or instruction manual."},
+      {"power":8,"effect":"The voidwalker ages a year, and a person or town that did not know them before now knows and trusts them. They have spent many days and nights together, the walker coming and going, a fond visitor over the years."}],
+      "properties":[
+        {"name":"Dangerous","description":"Don’t play with it."},
+        {"name":"Null","description":"It’s just reality."}]},
+  "ignoranceisbliss":{
+    "name":"Ignorance [is Bliss]",
+    "tags":["phantasmata"],
+    "flavor":"You see what you want to see.",
+    "description":"The wizard chants quietly and plays a strange melody. Their target feels soothed and at ease, their mind gently filling in the world around them with what they want to see. As long as the wizard chants, the patient’s perception of reality remains sweetly comforting. After, the patient only remembers their perception, not what they might have really experienced.",
+    "ranks":[
+      {"power":1,"effect":"A target overlooks something distressing. Someone afraid of heights ignores the height of a ledge. A scared guard ignores a night-clad assassin walking past."},
+      {"power":2,"effect":"Target does not experience pain. A visit to the dentist passes in a haze of pleasant chit-chat."},
+      {"power":3,"effect":"Target passes time in solipsistic comfort, unaware of the world around them. Rough ground feels like silken mattresses, sand tastes like cake, a high drop is a staircase leading down to a pleasure garden."},
+      {"power":5,"effect":"Target completely dissociates from the world and enters a luxury palace of their sweetest dreams. After a day in this state, they get a week’s rest."}],
+      "properties":[
+        {"name":"Focus","description":"Gotta be doing it."},
+        {"name":"Group ignorance","description":"Spell price increases by 3 to delude targets equal to the wizard’s level."},
+        {"name":"Ka attack","description":"Vs unwilling targets."}]},
+  "imagoreplay":{
+    "name":"Imago Replay ",
+    "tags":["hardlight"],
+    "flavor":"These things I’ve seen.",
+    "description":"The nura dawa uses their mind to record a scene or object, creating an imago anchor. Fully recording a 3d representation takes a few minutes. Recording a whole scene may take longer.",
+    "ranks":[
+      {"power":1,"effect":"The wizard replays a scene or object they could encompass with arms outstretched."},
+      {"power":2,"effect":"A scene or object to fill a whole chamber."},
+      {"power":3,"effect":"The scene stretches as far as the wizard could throw a stone."},
+      {"power":4,"effect":"As far as an arrow flies."},
+      {"power":5,"effect":"As far as the eye can see."}],
+      "properties":[
+        {"name":"Default","description":"Clear (comm) effects."},
+        {"name":"Hard light","description":"Double spell price to make the imago as durable as liquid water (ludu 3). Double again for completely impermeable light (ludu 4)."},
+        {"name":"Imago anchor","description":"A poly-dimensional representation in the caster’s mind. 1 stone."},
+        {"name":"Living focus","description":"One action: caster makes the imago move with a semblance of life for that round."}]},
+  "incarnatelabourer":{
+    "name":"Incarnate Labourer",
+    "tags":["sevensummons"],
+    "flavor":"What a lovely … pet.",
+    "description":"The summoner spends a few hours detailing a homely, inviting diagram. Next, they sacrifice a small animal or potted plant to incarnate a ‘helpful’ daemon.",
+    "ranks":[
+      {"power":1,"effect":"The hopeful daemon (L0, incompetent) is the size of a pot-bellied pig, with six prehensile tentacles on its tummy. It is suitable for unskilled labour."},
+      {"power":2,"effect":"The helpful daemon (L0, uncanny) is the size of a middling dog, with six-fingered human hands on each paw and a prehen­sile tail. It is a master of one skill."},
+      {"power":3,"effect":"The precocious daemon (L1, unearthly) is the size of a store dummy masquerading as a person, with eyes of fire and detachable floating hands. Besides mastery of one skill, it has a supernormal ability, such as (d6): (1) levitation, (2) understanding many languages, (3) seeing in the dark, (4) breathing water, (5) speaking to animals, or (6) mimicking any sound."},
+      {"power":5,"effect":"The heavy daemon (L2, plodding) can also carry loads like an ox, break gates like a bull, plough fields like a draft horse, or build walls like a confab servitor."},
+      {"power":7,"effect":"The thorny daemon (L3, slippery) is like a cross between a scarecrow and a shrike. Besides the previous abilities, its ethereal blades go snicker-snack and its beak can pluck out hearts."},
+      {"power":9,"effect":"The thoughtful daemon (L4, zu) is like a snake with wings and three gemstone heads. It is also psychokinetic, telepathic, and wise in strange, twisted ways."}]},
+  "indivisiblecleaver":{
+    "name":"Indivisible Cleaver",
+    "tags":["allchemy"],
+    "flavor":"Breaking reality.",
+    "description":"The wizard uses the protocols of the ten translations to reach into the indivisible heart of a material object and break it. This releases creative forces, which can be rather destructive.",
+    "ranks":[
+      {"power":1,"effect":"The wizard caresses a soap-sized material object and causes it to break down over one hour. First, it is weakened, then it fractures, eventually it crumbles into dust or even sublimates."},
+      {"power":2,"effect":"The breakdown happens in a minute, releasing significant heat that sets flammable objects on fire and deals 1 ha damage to adjacent creatures each round."},
+      {"power":4,"effect":"The breakdown happens in a second. The object explodes violently and showers nearby creatures with shrapnel (1d6 ha damage). Adjacent creatures suffer double damage."},
+      {"power":8,"effect":"The breakdown happens in a sixtieth of a second. The explosion is more violent and deals 3d6 ha damage to nearby creatures, double to adjacent."},
+      {"power":16,"effect":"Even faster. The fireball excavates a crater, deals 8d6 damage to nearby creatures, double to adjacent."},
+      {"power":32,"effect":"Horribly fast. The object breaks down in one 216,000th of a second, and within a milli-second the fireball is tens of metres across. By 100 milli-seconds, it measures hundreds of metres. Using dice to simulate damage is pointless. The crater continues to glow with spell radiance for days, and the source codes of living creatures in the vicinity continue to be corrupted for weeks or months."}],
+      "properties":[
+        {"name":"Iksir modification","description":"The wizard can use a dose of iksir to delay the spell's trigger by a minute or so, as well as all the usual iksir mods."},
+        {"name":"Living objects","description":"The wizard needs to make a ha attack to touch an unwilling creature and trigger the indivisible cleaver within its physical form. The unfortunate target suffers quadruple damage from the spell."}]},
+  "interpretationofempire":{
+    "name":"Interpretation of Empire",
+    "tags":["cosmiclogos"],
+    "flavor":"The sublunar is predictable.",
+    "description":"The receiver uses the canonical libraries to interpret the omens and navigate the future.",
+    "ranks":[
+      {"power":1,"effect":"Necessary pain. The next time a willing target suffers damage, they gain that amount as a bonus to a subsequent roll."},
+      {"power":2,"effect":"Promised path. As long as the target does not deviate from their path, they gain [+] to one roll per round."},
+      {"power":3,"effect":"Omen ward. As long as the target does not rebel against their destiny (as interpreted by the wizard), they gain [+] vs attacks."},
+      {"power":4,"effect":"Oath’s fortune. The target speaks and oath and the mark imbues the target’s life force in an item. The item gains that amount as a bonus to all rolls, unless the target breaks its oath."},
+      {"power":5,"effect":"Different destiny. If the target is slain, the mark revives them five days and nights later, restored with the life force imbued in the mark."},
+      {"power":6,"effect":"Prophecied. The target accepts a quest. As long as they follow the quest, the omens guide them, granting a special skill [R3]  called ‘prophecy’ and a special seventh stat called ‘omen’ [5]. When relevant, the target can rely on the strength of their omen and the righteousness of their prophecy to prevail. The skill and stat each take up a skill or trait slot."},
+      {"power":7,"effect":"Doom. Until the target faces their fated opponent, they cannot die. Even though slain, they return—a logos revenant."}],
+      "properties":[
+        {"name":"Ka attack","description":"If a soul is unwilling."},
+        {"name":"Mark","description":"The wizard marks (1 st) a target with the interpretation in bone ash and blood ink. The mark may be imbued with the wizard’s or the target’s life force."}]},
+  "invitationrider":{
+    "name":"Invitation Rider",
+    "tags":["sevensummons"],
+    "flavor":"Let cosmic strength flow through!",
+    "description":"The wizard spends a few hours painting imbued diagrams on a creature with the four black inks and the six celestial tints. They may paint the diagrams on themselves. When the wizard activates the diagram, a daemon rushes in to possess the creature. ",
+    "ranks":[
+      {"power":1,"effect":"The creature’s eyes flare with the daemon’s favourite colour. The daemon grants [+] to all tests using one of the creature’s skills or stats."},
+      {"power":2,"effect":"A halo rings the creature’s head. It gains [+] to tests and effects with two skills or stats."},
+      {"power":3,"effect":"Cilia of light ripple across the creature’s body. It gains [+] to tests and effects with three skills or stats. Also, it gains resistance [+] vs all ha, ka, or ba damage. "},
+      {"power":5,"effect":"A shifting aura of many colours bathes the creature. It gains all previous effects and any supernatural ability or trait of the summoner’s choice."},
+      {"power":7,"effect":"Luminous rainbow dust swirls off the creature. It is very visible on any magitechnical detector. It gains all previous effects. Also, all its physical stats become 6, and any weapon it holds is wreathed in energy. The weapon’s damage dice increase 1 step, and it can fire bolts of daemonic energy (1d12, explosive). "}],
+      "properties":[
+        {"name":"Dangerous","description":"Of course it is."},
+        {"name":"Dialogue","description":"To choose a daemon & convince it to leave at the end."},
+        {"name":"Feeling lucky","description":"A daemon from the simple generator possesses the target. The wizard must pay an additional spell cost to ensure a manageable daemon manifests. The additional cost is equal to the desired daemon’s level."},
+        {"name":"Imbue","description":"Effective as long as the diagrams remain imbued."},
+        {"name":"Welcome overstayed","description":"When the spell ends, the wizard still has to convince the daemon to leave. As soon as the spell ends, the posses­sed creature loses all the benefits granted by the daemon."}]},
+  "lemmahack":{
+    "name":"Lemma Hack",
+    "tags":["golemmafex"],
+    "flavor":"All fixes are hacks. Right?",
+    "description":"Once the wizard gains access to the machine’s core processing unit they can modify its lemmas, gaining control over its basic and advanced functions. The ritual lasts about a quarter of an hour and involves the waving of wands and plugging of cables.",
+    "ranks":[
+      {"power":1,"effect":"The wizard can read the golem’s memory banks and learn what it has done."},
+      {"power":2,"effect":"The wizard can insert a repeater lemma to perceive through the golem’s senses. The wizard needs a receiver to decode the signal."},
+      {"power":3,"effect":"The wizard can rewrite lemmas, giving new commands, ending previous commands, or creating exceptions—for example, the golem might no longer perceive the wizard or their friends."},
+      {"power":4,"effect":"The wizard infects the golem with a control gremlin, gaining direct control golem directly, action for action. Imbue control gremlin: control lasts until gremlin exorcised."}],
+      "properties":[
+        {"name":"Focus","description":"Is required to maintain effects for more than one turn."},
+        {"name":"Practical","description":"This is a key spell of the practical school."}]},
+  "livingmetal":{
+    "name":"Living Metal",
+    "tags":["ironsymphony"],
+    "flavor":"The sound of racing steel.",
+    "description":"Screaming like a metal banshee, the geldringer awakens a metal object. It dances to their tune.",
+    "ranks":[
+      {"power":0,"effect":"One soap or smaller. Perhaps a coin or a needle."},
+      {"power":1,"effect":"One stone or smaller. A sword, mace, or gun."},
+      {"power":2,"effect":"One sack or less. A tower shield or a suit of armour."},
+      {"power":3,"effect":"One shipment (10 sacks or less). A small car or a portcullis."},
+      {"power":4,"effect":"Ten shipments (100 sacks). That’s roughly 10 tons. A truck? Two trucks? "},
+      {"power":5,"effect":"100 tons or so."}],
+      "properties":[
+        {"name":"Free-will","description":"Granting the item faux intelligence doubles the spell cost. It uses the wizard’s attributes. "},
+        {"name":"Imbued","description":"The wizard’s will keeps the metal thing moving."},
+        {"name":"Maglev","description":"The metal item levitates on a field of pure magnetic will."}]},
+  "machineimmaterial":{
+    "name":"Machine Immaterial",
+    "tags":["masterforce"],
+    "flavor":"A constructed thing for all to fear.",
+    "description":"The fortokampin accesses the integral asset library of creation to mold pure force into a machine by tracing it into being with their second and third hands.",
+    "ranks":[
+      {"power":1,"effect":"The forto spends a few minutes to create a simple machine of pure force: a wedge, lever, or wheel."},
+      {"power":2,"effect":"A quarter of an hour creating a force-field mechanism linking of four to six bars and joints. Provided power, this can perform work, like pumping, walking, manipulating, and other early industrial tasks."},
+      {"power":3,"effect":"An hour to create an engine or actuator out of pure, condensed forcefields."},
+      {"power":4,"effect":"A complex machine with a homeostatic or other logical controller, capable of performing set tasks."},
+      {"power":5,"effect":"A self-organizing machine that adapts to its circumstances and performs set tasks with an eerie parody of intelligence."},
+      {"power":6,"effect":"An intelligent forcefield machine capable of self-replication. Ending the spell cast at this power or higher is always dangerous. Warning! Casting at this spell power may unleash a murderous sentient forcefield machine (L=P, self-repairing, replicating, synthetic) on the world!"}],
+      "properties":[
+        {"name":"Fathom","description":"The machine fits within the character’s outstretched arms. Twice the size, twice the cost."},
+        {"name":"Imbue","description":"Without the forto’s life, the machine decoheres."}]},
+  "magnificenthiddenpalace":{
+    "name":"Magnificent Hidden Palace",
+    "tags":["portalarchitect"],
+    "flavor":"Hid in a dim-remembered past.",
+    "description":"The caster spends a few seconds swirling their arms and hands and feet in ellipses, suddenly tracing glowing afterimages in the air, then steps through an afterimage into a mental palace, safe from all harm.",
+    "ranks":[
+      {"power":1,"effect":"The wizard disappears inside for about a minute. Extreme exit test."},
+      {"power":2,"effect":"Vanishes for about an hour. Hard exit test."},
+      {"power":3,"effect":"About a day. Moderate test."},
+      {"power":4,"effect":"A week. Easy test."},
+      {"power":5,"effect":"A month. Trivial test."},
+      {"power":6,"effect":"A year. Automatic."},
+      {"power":7,"effect":"Decade."},
+      {"power":8,"effect":"Lifetime."},
+      {"power":9,"effect":"Seven lifetimes."}],
+      "properties":[
+        {"name":"Early exit","description":"Wizard’s discretion."},
+        {"name":"Guests","description":"The wizard can pull guests along into the palace. The spell price is multiplied by the number of people entering."},
+        {"name":"Imbue","description":"The wizard’s life force is locked to keep the exit open."},
+        {"name":"Memory palace","description":"If the wizard has the memory palace trait, they can enter their own palace. While there, they do not age."}]},
+  "manybodiedcollective":{
+    "name":"Manybodied Collective",
+    "tags":["awakenedsphere"],
+    "flavor":"One body was never enough.",
+    "description":"The wizard multiplies their consciousness and bodies. After all, it takes a village to survive an armaggedon level event. By injecting a target creature with their cerebrospinal fluid, the wizard adds it to their collective.",
+    "ranks":[
+      {"power":1,"effect":"A tiny body, such as a mouse or bird or beetle joins the hive."},
+      {"power":2,"effect":"A small body, perhaps a cat, carp, or capybara."},
+      {"power":3,"effect":"A humannish body. A man, bear, or pig. Perhaps a porpoise."},
+      {"power":4,"effect":"A large body, such as a moose, quetzalcoatl, or orca."},
+      {"power":5,"effect":"A great body, such as a whale or brontotherium."}],
+      "properties":[
+        {"name":"Collective","description":"The new body’s spirit and personality (ka and ba) are quiescent within the collective. If their memories are directly accessed, for example their skills or knowledge of a password, a contest ensues. If the body succeeds, it breaks free of the hive spell."},
+        {"name":"Community","description":"The multiple bodies still have individual personalities and quirks, but function for the overriding good of the collective hive as dictated by the identity anchors."},
+        {"name":"Control","description":"When a new body has a higher sum of mental attributes than the wizard, a contest for control ensues. Some wizards have lost themselves this way."},
+        {"name":"Imbue","description":"The new body may be imbued with its own life force, or the life force of the original body."},
+        {"name":"Identity anchor","description":"Each body requires a 1 stone organic anchor to connect with every other body. Larger hives may adopt a cellular or hub-and-spoke network. Smaller or larger bodies have suitably sized anchors."},
+        {"name":"Ka attack","description":"If a body is unwilling."},
+        {"name":"Sharing","description":"The hive communicates directly through the noösphere. Focusing on the sensory experiences of an individual body, apart from the wizard’s original body, takes an action."}]},
+  "materialmetatropy":{
+    "name":"Material Metatropy",
+    "tags":["allchemy"],
+    "flavor":"Modifying reality at the source.",
+    "description":"The matterite magician uses the protocols of the eight keys to modify one attribute of a physical (ha) object; doubling or halving (or otherwise significantly altering) its mass, volume, temperature, density, colour, conductivity, malleability, or lustre of a material (ha) object without modifying its underlying chemical composition.",
+    "ranks":[
+      {"power":1,"effect":"The magician spends a week to modify a handful of matter."},
+      {"power":2,"effect":"The magician spends a day to modify a handful."},
+      {"power":4,"effect":"An hour to modify a handful."},
+      {"power":8,"effect":"A minute for a handful."}],
+      "properties":[
+        {"name":"Bulk metatropy","description":"Modifying a bucketful of matter doubles the spell’s power cost. A sackful triples the spell’s power."},
+        {"name":"Iksir boost","description":"A dose of iksir lets the wizard change an additional attribute during the same ritual, speed up the modification, or increase the bulk."},
+        {"name":"Iksir permanence","description":"Spending doses of iksir equal to the spell’s power makes the modification permanent."},
+        {"name":"Imbue","description":"The matter remains modified so long as it is imbued with the essence spent by the caster."}]},
+  "measureofjustice":{
+    "name":"Measure of Justice",
+    "tags":["rightmaker"],
+    "flavor":"Cut through discord.",
+    "description":"The wizard uses their cubit des archives to make things right and dispense judgements.",
+    "ranks":[
+      {"power":2,"effect":"The cubit changes shape, like wax, becoming a more suitable shape, such as a key, cup, or mirror. If shaped into a weapon, its damage dice increase one step."},
+      {"power":3,"effect":"The cubit is wreathed in purifying flames. It deals normal damage to otherwise immune creatures, including disease demons and possessive spirits. It may set objects on fires. Unclean creatures suffer double damage."}],
+      "properties":[
+        {"name":"Imbue","description":"Active with life."},
+        {"name":"Rich","description":"A rightmaker may simultaneously imbue a correct and official cubit des archives with multiple measures (P1 to P8) from the list. Each measure requires a separate casting."}]},
+  "metalsteeliron weapon":{
+    "name":"Metal Steel Iron Weapon",
+    "tags":["ironsymphony"],
+    "flavor":"Add umlauts for power.",
+    "description":"The trampetchi’s growls, grunts, and groans infuse a metal weapon (or lump) with magic potential.",
+    "ranks":[
+      {"power":0,"effect":"A magnetic soul is bound to the weapon. It is now a magic weapon. No modifiers though."},
+      {"power":1,"effect":"Weapon gains wizard’s pro to attack and damage rolls."},
+      {"power":2,"effect":"Weapon’s critical multiplier increases by the wizard’s pro."},
+      {"power":3,"effect":"It glows with all fire, cutting through all non-metal substances like butter."},
+      {"power":4,"effect":"It roars with first thunder. Struck on the ground, it unleashes a wave of energy that flows forward a short distance from the wizard. It deals 2d8 ka damage and knocks back creatures."},
+      {"power":6,"effect":"It pulses with primal war. Raised aloft, it unleashes a ring of energy that deals 6d8 ka damage to all nearby creatures and blasts them back a ways."}],
+      "properties":[
+        {"name":"Imbued","description":"The wizard’s will keeps the metal magic moshing."},
+        {"name":"Multi-weave","description":"Can be used multiple times on the same weapon."}]},
+  "metempsychosis":{
+    "name":"Metempsychosis",
+    "tags":["abmortalities"],
+    "flavor":"Live. Die. Live again.",
+    "description":"Though individual abmortals may expect to live forever, accidents do happen. Fortunately, the finest of sanators have a solution: trans-migration of the hakaba code. The wizard breaks down a patient’s essential structure and translates it into another nearby physical form. For best results, the latest incarnation should be a replica of the original, but thrifty abmortals have made do with crude golems, animals, and even crystals or vats of memory liquid.",
+    "ranks":[
+      {"power":1,"effect":"Budget transmigration. The wizard immerses the patient in a frigid bath and spends one day translating one of their mental stats. This ritual damages the patient’s source body, making translating their remaining stats more difficult."},
+      {"power":3,"effect":"Full-corpus transmigration. The wizard uses a gelid sarcolector to translate all of a patient’s mental stats in one day. This destroys the original body."},
+      {"power":5,"effect":"Sudden action transmigration. The wizard imbues the patient with a translator parasite. It takes the parasite a day to embed, after that the wizard can translate all of patient’s stats in a few minutes. This causes the original body to spontaneously combust."},
+      {"power":7,"effect":"Telemetempsychosis. The wizard uses an imbued translator parasite entangled with a destination vessel. The parasite needs a day to embed, but after that, translation is nearly instan-taneous, with a range of several hundred thousand kilometres. This causes the original body to violently combust."}],
+      "properties":[
+        {"name":"Imbue ka-ba vessel","description":"The wizard can imbue a body with the spell to accept the patient's essential code on trigger. The transfer can be auto-mated or initiated by the patient."},
+        {"name":"Intact bodies","description":"If the patient is intact and willing, the wizard does not need to test to succeed. Damaged patients make transmigrations challenging. "},
+        {"name":"Morphic shock","description":"Patients translated into different forms suffer psychophysical burdens."},
+        {"name":"Overwrite","description":"If the destination is an unresisting conscious creature, its mental stats are overwritten by this spell. However, if it resists, a psychic conflict occurs."},
+        {"name":"Telemagic","description":"Action at a distance."},
+        {"name":"Transfer","description":"So-called souls between so-called vessels."}]},
+  "midsummerssong":{
+    "name":"Midsummer’s Song",
+    "tags":["plantsinger"],
+    "flavor":"I am your sun, eat my flesh.",
+    "description":"The broccomancer gives of themselves that the ecology may flourish and grow strong.",
+    "ranks":[
+      {"power":0,"effect":"A plant sprouts, a flower blossoms, a fruit ripens."},
+      {"power":1,"effect":"Plants adjacent to the broccomancer are healed, or flourish."},
+      {"power":2,"effect":"Near the broccomancer."},
+      {"power":4,"effect":"In a large area."},
+      {"power":8,"effect":"As far as the broccomancer can see."}],
+      "properties":[
+        {"name":"Ritual of hours","description":"Takes as many hours (minimum 1 minute) as the spell price paid by the wizard."},
+        {"name":"Three-step bounty","description":"One casting to sprout, a second to grow and blossom, a third to ripen."}]},
+  "nanolithharvest":{
+    "name":"Nanolith Harvest",
+    "tags":["oldtech"],
+    "flavor":"Inhaling the source dust.",
+    "description":"The dialecticrat modulates their electroplasm to break down oldtech artefacts and devices.",
+    "ranks":[
+      {"power":1,"effect":"Over a few minutes, the dialecticrat harvests a nanolith pebble from an oldtech or otherwise magical artefact. Soap-sized artefacts are destroyed, larger objects decay."},
+      {"power":2,"effect":"Harvests two pebbles from a stone-sized or larger item. Stone-sized items are destroyed, larger objects decay."},
+      {"power":3,"effect":"Harvests four pebbles from a sack-sized or larger artefact. Sack-sized artefacts are destroyed, larger ones decay."},
+      {"power":4,"effect":"8 pebbles from a shipment-sized (1 ton) or larger artefact. Shipment-sized artefacts destroyed, larger ones decay."}],
+      "properties":[
+        {"name":"Ka attack","description":"[-] vs unwilling oldtech machines. If the attack fails, no nanoliths are harvested."},
+        {"name":"Nanolith pebble","description":"A soap-sized aggregate of nanoliths. As an action, the dialecticrat can spend any number of pebbles. Each pebble adds 1d6 to any roll or generates 1d6 temporary life for spellcasting."},
+        {"name":"Quick-harvest","description":"Double spell cost to harvest in a few seconds."}]},
+  "necrophony":{
+    "name":"Necrophony",
+    "tags":["necrolexicon"],
+    "flavor":"I am … hearing someone … a Joh … Jam … Jack! Do you know a Jack? Your dead brother? Yes, it’s your dead brother, Jack, talking to me!",
+    "description":"The dead-talker uses the shell or possession of a once-living thing—a bone, a tooth, a dead tree, or a pocket watch—to send their voice probing into the void-sea of non-existence, to tease out the remnants of consciousness. They roll their eyes, gnash their teeth, and speak in strange post-mortal tongues for a few minutes to find their ghost.",
+    "ranks":[
+      {"power":0,"effect":"Fragments and whispers come through. The conversation is poor. [-] to the ghost’s attitude."},
+      {"power":1,"effect":"The voice comes through, barely strong enough for a normal conversation."},
+      {"power":2,"effect":"Drawn to the vis viva of the wizard, the ghost is eager [+]."},
+      {"power":3,"effect":"The power of the necrologist forces three clear answers out of the ghost, regardless of attitude."},
+      {"power":5,"effect":"The wizard’s voice binds the ghost to stay and answer to them until the sun rises or sets."},
+      {"power":7,"effect":"The wizard eats the ghost and holds it captive in their mind, able to riffle through its memories and speak with its voice until the sun rises or sets."}],
+      "properties":[
+        {"name":"Better dialogues","description":"This spell is the standard way a necromancer improves their conversation with the dead (see Dialogues table)."}]},
+  "nomenestomen":{
+    "name":"Nomen Est Omen",
+    "tags":["cosmiclogos"],
+    "flavor":"The named is mastered.",
+    "description":"The navi describes and names a target, thus gaining the ability to manipulate it through its nomen.",
+    "ranks":[
+      {"power":1,"effect":"Traces. The world whispers to the wizard, “Here, your named target passed here, it went there.”"},
+      {"power":2,"effect":"Vulnerable. The target’s body gasps, “This is an old injury, here the armour is broken.” Wizard gains [+] to one roll against the target per round."},
+      {"power":3,"effect":"Predict. The target’s mind guesses, “If I do this, I shall be well.” Wizard acts before the target each round and gains [+] to tests vs the target."},
+      {"power":5,"effect":"Guide. The wizard speaks to the target with voices of  world, body and mind, “Here, go here; do this; try that.” The target is sure it follows its own free will. The wizard spends an action to give each new command."}],
+      "properties":[
+        {"name":"Cumulative","description":"Each power includes its lower-order effects."},
+        {"name":"Focus","description":"To hear the cosmos. Double spell price: free focus. "},
+        {"name":"Nomen","description":"Creates a 1 st nomen anchor per researched target."},
+        {"name":"Research","description":"Requires a day’s physical and metaphysical study."},
+        {"name":"Universalize","description":"The wizard can imbue a nomen with 7 life to expand it from a specific target to a general type, for example, from “Horace the Gate Dragon” to “all Horaces.” The wizard can reduce the imbue cost by 1 for each concept used to specify the target type more precisely. Example: “all blue-haired green-eyed Horaces” costs 5 life, while “all flying red dragons with no eyes” costs 4."}]},
+  "noösphereintegration":{
+    "name":"Noösphere Integration",
+    "tags":["awakenedsphere"],
+    "flavor":"Be now consumed by the all.",
+    "description":"The wizard submerges their false self and becomes one with the living world around them.",
+    "ranks":[
+      {"power":1,"effect":"Interface. The wizard feels the pulse and breath and thought of life in a small area. [+] to detect hidden creatures and vs surprise."},
+      {"power":2,"effect":"Breakdown. The wizard gets a summary of current and recent biological processes in the area. Eating, excreting, living, dying. Can track without failure."},
+      {"power":3,"effect":"Agent. The wizard is embraced by the noösphere. They choose whether natural creatures notice their presence. If they choose to be noticed, they gain [+] to social tests."},
+      {"power":5,"effect":"Meld. The noösphere consumes the wizard. Their body is eaten by the living creatures of the area and their mind and personality (ka and ba) travels unseen in the movement of birds and beetles, the sigh of grass and the creak of trees. When the spell ends, their body is reconstituted from dead organic matter over about a day."},
+      {"power":9,"effect":"Avatar. The wizard releases all the anchors of their self. In so doing, they become the dragon."}],
+      "properties":[
+        {"name":"Dangerous","description":"Giving up the self is always a hazardous game."},
+        {"name":"Expand","description":"Double spell price to encompass a large area."},
+        {"name":"Imbue","description":"Integration lasts as long as the wizard imbues the spell."},
+        {"name":"Dissolution","description":"Each time the wizard casts Noösphere integration they must pay part of the spell price with at least one point of thought or charisma as a part of them dissolves. If their thought and charisma are both 0, the spell price is reduced by 1."}]},
+  "nothingremains":{
+    "name":"Nothing Remains",
+    "tags":["void"],
+    "flavor":"If you die before you wake.",
+    "description":"With a gesture, the voidwalker accelerates entropy.",
+    "ranks":[
+      {"power":1,"effect":"Fires to ash, batteries go flat."},
+      {"power":3,"effect":"Joints ache, vehicles slow down, iron rusts."},
+      {"power":9,"effect":"Houses crumble to rubble, lives burn out, diamonds dull and cease to shine."},
+      {"power":27,"effect":"Kingdoms end, sky castles fall, domesticated suns die out."}],
+      "properties":[
+        {"name":"Null","description":"Not magical."}]},
+  "nunkascombatadaptation":{
+    "name":"Nunka’s Combat Adaptation",
+    "tags":["biomechane"],
+    "flavor":"Nature’s teeth and claws unhidden.",
+    "description":"The caster grows claws, horns, venom glands, clubs, spines, or fangs on creatures. The adaptation occupies an inventory slot.",
+    "ranks":[
+      {"power":1,"effect":"Over a day, the caster coaxes natural weaponry to develop. A rabbit gains dagger-like biting teeth (1d4 ha), while an elephant grows a muscular tail with a thagomizer (1d12 ha). A creature with existing attacks increases their damage die one step."},
+      {"power":2,"effect":"Dice increase one more step."},
+      {"power":4,"effect":"One more step."},
+      {"power":8,"effect":"One more."}],
+      "properties":[
+        {"name":"Affliction","description":"Obviously."},
+        {"name":"Rupture","description":"The weaponry bursts out in seconds, dealing 1d6* damage. Spell price doubles."},
+        {"name":"Willing flesh","description":"First time, free."}]},
+  "obeliskinterface":{
+    "name":"Obelisk Interface",
+    "tags":["oldtech"],
+    "flavor":"Its dark design, integrated.",
+    "description":"The nürdü skollét touches an oldtech ruin or artefact and falls into a trance for a few minutes as their electroplasm interfaces with the radiation echo of the ancient construct.",
+    "ranks":[
+      {"power":0,"effect":"Vibes. The nürdü’s mind picks up who the device’s creators were and what its intended purpose was. They also learn if there is residual juice and what kind of magitech it actuates."},
+      {"power":1,"effect":"Read. The nürdü accesses the oldtech’s integrated user manual. They find nearby hidden doors and gain [+] to bypassing security protocols."},
+      {"power":3,"effect":"Map. The nürdü downloads a schematic of the original construct. At the very least, this gives [+] to navigating or using it."},
+      {"power":5,"effect":"Analyse. The nürdü’s electroplasm generates a repair protocol for fixing the oldtech construct. In play, this might involve 1d4+1 missing or broken parts and tests to replace them. Each test is [d6]: (1–3) very hard, (4–5) hard, (6) moderate."},
+      {"power":7,"effect":"Reverse engineer. The nürdü generates an electroplasmic false-sentient package (1 stone) of instructions for building a copy of an oldtech artefact. The building will involve 1d4+1 expensive tests ([d6]: (1–3) extreme, (4–5) very hard, (6) hard)."}],
+      "properties":[
+        {"name":"Obelisk","description":"As a nürdü uses this spell, a dark monolith echoes in their mind. Promising, whispering."},
+        {"name":"Sequential","description":"The nürdü must cast each power level in sequence on an individual construct. For example, they cannot analyse an electric catacomb without having mapped it first."}]},
+  "onlyafoolhasaface":{
+    "name":"Only A Fool Has A Face",
+    "tags":["rightmaker"],
+    "flavor":"Truth is faceless.",
+    "description":"The wizard takes their face … off. Beneath it is a different face. Is it faces all the way down?",
+    "ranks":[
+      {"power":1,"effect":"While the wizard focusses, their identity is bland and unmemorable. [+] to subterfuge."},
+      {"power":2,"effect":"Their identity is absent, their face blank, their voice a buzzing polyphony."},
+      {"power":3,"effect":"Passing their hand over another face, then over their own, the wizard overwrites their identity with another person’s."},
+      {"power":5,"effect":"Peeling off their face, the wizard reveals a believable synthetic identity generated by underlying reality algorithms."},
+      {"power":9,"effect":"The wizard reveals a true face. Their honesty blazes forth, cowing the world with its truth. Lower level creatures cannot lie to the wizard. The wizard gains [+] to social tests."}],
+      "properties":[
+        {"name":"Focus","description":"Requires concentration."},
+        {"name":"Costly imbue","description":"Double spell cost to avoid having to focus."}]},
+  "openthedoorofworms":{
+    "name":"Open the Door of Worms",
+    "tags":["void"],
+    "flavor":"Walk the wormways.",
+    "description":"The wizard traces an outline on a surface. It shimmers and then erupts into a sucking doorway. ",
+    "ranks":[
+      {"power":2,"effect":"Door leads through a wall."},
+      {"power":4,"effect":"It leads through empty air from the wizard’s hand to as far as they could shoot an arrow. "},
+      {"power":8,"effect":"It leads through sheer wormspace to a point the wizard has visited before. Travel through wormspace always takes a week. "},
+      {"power":16,"effect":"It opens directly into wormspace, letting the wizard exit anywhere in the Given World. Travel to places the wizard has not visited takes 1d4* weeks. Beware of grey paradox worms."}],
+      "properties":[
+        {"name":"Imbue","description":"Life force to keep doors open, portals un-shuttered."},
+        {"name":"Revelation","description":"Cannot be learned."}]},
+  "parasomatransference":{
+    "name":"Parasoma Transference",
+    "tags":["abmortalities"],
+    "flavor":"The redirection of being.",
+    "description":"What is life but the purposeful reordering of the underlying energy patterns of the Given World? The skilled wizard can transfer life from one creature to another using the principles of universal existential identity. The descended folk call this a life shunt. ",
+    "ranks":[
+      {"power":1,"effect":"Basic shunt. For each point transferred, recipient gains 1 life."},
+      {"power":2,"effect":"Enriched shunt. For each point, recipient gains 1d2 life."},
+      {"power":3,"effect":"Power shunt. Recipient gains 1d3 life per point."},
+      {"power":4,"effect":"Gains 1d4 life per point."},
+      {"power":5,"effect":"Gains 1d6 life per point."}],
+      "properties":[
+        {"name":"Telemagic","description":"Cheaper, innit?"},
+        {"name":"Transfer","description":"The name of the game."}]},
+  "permissionrescission":{
+    "name":"Permission Rescission",
+    "tags":["sevensummons"],
+    "flavor":"Pay the piper, cast it out.",
+    "description":"The wizard cloaks themselves in the blue and green pigments that daemons fear and daubs their fingers with catfish fat. Then they wave four magic incense sticks, one for earth, one for sky, one for wind, one for green, as they revoke a daemon’s permission to remain in a target creature, object, or form.",
+    "ranks":[
+      {"power":1,"effect":"The chants command the attention of a mild poison or disease daemon, something that causes afflictions like nausea, vertigo, diarrhoea, the common cold or dandruff."},
+      {"power":2,"effect":"A playful, confused, or accidental daemon is drawn into dialogue. Perhaps cowardice, error, sloth, or indecision."},
+      {"power":3,"effect":"A moderate poison or disease daemon deigns to talk with the wizard, something that may be debilitating but not deadly, for example, the flu or alcohol poisoning."},
+      {"power":4,"effect":"A persistent or curse-bound possession talks. Perhaps melancholy or ennui."},
+      {"power":5,"effect":"A deadly poison or disease daemon, or a curse bearer, listens to the wizard. The plague, syphilis, or mercury poisoning."},
+      {"power":6,"effect":"A malevolent or hostile possession begins a dialogue. Perhaps madness, lycanthropy, or bureaucracy."},
+      {"power":8,"effect":"A terminal affliction daemon stops to talk with the wizard. Perhaps a radiation daemon or a metastatic tumour."}],
+      "properties":[
+        {"name":"Banish the weak","description":"If the spell cost is thrice the level of the daemon (twice if the wizard knows its true name), it is bani­shed outright, without any dialogue. The wizard may over­pay the spell cost to banish a daemon."},
+        {"name":"Bribe","description":"By offering a suitable libation, the wizard gains [+] to their dialogue test."},
+        {"name":"Dialogue","description":"Must talk the daemon into accepting the rescission."},
+        {"name":"Healing","description":"Convincing a daemon to leave may remove a burden from a character, but it never restores lost attributes. Time and rest must repair those."},
+        {"name":"Redirect","description":"A malicious wizard may convince an afflicting daemon to attempt to possess somebody else, rather than going straight home to the aether."}]},
+  "poisonedwhispers":{
+    "name":"Poisoned Whispers",
+    "tags":["flyingserpent"],
+    "flavor":"See how the truth breaks even you?",
+    "description":"The selective revelation of the uroboros drives the un-initiated slightly mad in predictable ways.",
+    "ranks":[
+      {"power":1,"effect":"Adjacent target tests endu­rance or aura. Fail: gains a free action to do what caster wants."},
+      {"power":2,"effect":"A hard test."},
+      {"power":3,"effect":"An extreme test."},
+      {"power":4,"effect":"There is no test. There is but to do what the atlik commands."},
+      {"power":5,"effect":"Target gains [+] to their free action."},
+      {"power":6,"effect":"Target gets a free action every round until the end of the scene. Each time, they do the wizard’s bidding."},
+      {"power":7,"effect":"And when first they hear the whisper, they get two free actions."}]},
+  "prismaticmanipulation":{
+    "name":"Prismatic Manipulation",
+    "tags":["hardlight"],
+    "flavor":"Reflect. Refract. Break.",
+    "description":"The photic manipulates ambient light in a dazzling dance of sensory incoherence. Each effect influences an area or objects the wizard could encompass with arms outstretched.",
+    "ranks":[
+      {"power":1,"effect":"Mirror. The target area behaves like a perfect mirror. Immune to light effects, [+] vs energy effects."},
+      {"power":2,"effect":"Refract. The target looks different: like another nearby object or creature, or even entirely invisible. [+] to stealth, disguise, and vs direct attacks."},
+      {"power":3,"effect":"Bend. Light bends completely around the target, rendering it fully concealed by a luminous event horizon. Unless there is a light source inside the area, it is entirely dark."}],
+      "properties":[
+        {"name":"Focus","description":"Photic moves the affected area or modifies a higher power effect to one of lower power."},
+        {"name":"Imbue","description":"Effect persists."},
+        {"name":"Project","description":"Double spell price to encompass adjacent area. Double again to encompass nearby area."}]},
+  "realitydecryption":{
+    "name":"Reality Decryption",
+    "tags":["allchemy"],
+    "flavor":"Reading the ten keys of all matter.",
+    "description":"The nucleotheologist uses the existential translations and the substance of perfect being to read a physical object’s structure.",
+    "ranks":[
+      {"power":0,"effect":"A few minutes give a simple readout of the energies (evil, magic, antimagic, radiation, good vibrations) given off by an object. "},
+      {"power":1,"effect":"A few minutes reveals the physical composition of an object."},
+      {"power":2,"effect":"The wizard also discerns recent magical and mundane modifications of the object."},
+      {"power":3,"effect":"They can discern information by merely waving their hands around an object without physical contact."},
+      {"power":4,"effect":"The wizard also discerns the deep physical structure of an object, its flaws and strengths."},
+      {"power":5,"effect":"Discern information at a distance, using a telescope or vidy link."}],
+      "properties":[
+        {"name":"Faster reading","description":"Getting a ten times faster reading doubles the spell price."},
+        {"name":"Opus box","description":"Using a box halves spell prices (minimum 1)."},
+        {"name":"Slower at scale","description":"Durations are for a soap-sized object. Scanning a stone-sized objects takes a quarter of an hour, a sack takes an hour, a shipment a few hours, etc."}]},
+  "realtimerebuild":{
+    "name":"Real-time Rebuild",
+    "tags":["abmortalities"],
+    "flavor":"Getting better right now.",
+    "description":"The zdarovar plunges their spiritual hand into the target. They then summon undamaged hakaba codes from the oneiroi Quiscus and Sanatus to directly overwrite the target’s current iteration. This painful process lasts a few minutes.",
+    "ranks":[
+      {"power":1,"effect":"A cosmetic blemish or a bad fright is wiped away."},
+      {"power":2,"effect":"A toxin or affliction is flushed from the system."},
+      {"power":3,"effect":"A damaged organ is restored to factory settings."},
+      {"power":5,"effect":"A whole limb is regrown."},
+      {"power":8,"effect":"A head or torso regrows."},
+      {"power":13,"effect":"From dust and fragments, a whole body is rebuilt."}],
+      "properties":[
+        {"name":"Consciousness","description":"Only affects conscious targets."},
+        {"name":"Painful","description":"Deals damage equal to spell price. This damage cannot kill the victim (but may traumatise)."},
+        {"name":"Swifter","description":"The process lasts a few seconds but is twice as painful."}]},
+  "rehoryansmendingflesh":{
+    "name":"Rehoryan’s Mending Flesh",
+    "tags":["biomechane"],
+    "flavor":"Health is restoring factory settings.",
+    "description":"The biomancer touches an organism and focuses. Its flesh and bone start to repair.",
+    "ranks":[
+      {"power":1,"effect":"Organism regenerates 1 life  per round. After an hour, one burden, such as a broken bone or injured pride, is reduced—e.g., the broken bone sets but stays fragile."},
+      {"power":3,"effect":"2 life per round. Burden reduced after half an hour. One lost extremity regrows after an hour."},
+      {"power":6,"effect":"3 life per round. Burden reduced after a quarter-hour. One lost organ regrows after an hour."}],
+      "properties":[
+        {"name":"Exhausting","description":"The biomancer can only sustain the mending for 10 minutes per level. Then they need a bit of air, maybe a cigarette, and a fresh casting of the spell."},
+        {"name":"Focus","description":"to keep healing."}]},
+  "replicationofempire":{
+    "name":"Replication of Empire",
+    "tags":["cosmiclogos"],
+    "flavor":"Render unto the sublunar king.",
+    "description":"The aquarik draws strands of reality out of thin air and plucks them like a lyre, actualizing the secret omens and the absolute nomos of reality to replicate the creations ruled by the sublunar. This takes a few minutes.",
+    "ranks":[
+      {"power":1,"effect":"The aquarik duplicates a bucketful of air or other aether."},
+      {"power":2,"effect":"They duplicate a jug of water or other liquid ruled by the blue."},
+      {"power":3,"effect":"Duplicates a box of wood, earth, or other stuff of the green."},
+      {"power":4,"effect":"Duplicates a pig of iron, steel, stone, or other item monochrome."},
+      {"power":5,"effect":"Replicates a pot’s worth of matter held in the aquarik’s mind."},
+      {"power":7,"effect":"Duplicates a complex 1 stone arrangement of matter. For example a person’s head."}],
+      "properties":[
+        {"name":"Hodl","description":"The aquarik spends a day meditating upon a material object. They fix this item in their mind as an anchor (1 stone) and can replicate it without reference to the original."},
+        {"name":"Instant","description":"The aquarik pays double the spell price to instantly materialize the matter."},
+        {"name":"Moar","description":"Duplicate 10x the matter, double the spell price."},
+        {"name":"Warning","description":"Uncontrolled replication of specie or currency may crash an economy."}]},
+  "reweavereality":{
+    "name":"Reweave Reality",
+    "tags":["masterforce"],
+    "flavor":"Making the force matter.",
+    "description":"Over a few hours the manalik uses focussing lenses and buffing leathers to polish the energy of the sun itself into a stuckforce solid attuned to their own soul.",
+    "ranks":[
+      {"power":0,"effect":"The solid is no more than an inch across and can carry 1 soap."},
+      {"power":1,"effect":"Measures no more than a span across and carries 1 stone."},
+      {"power":2,"effect":"A cubit across and carries 1 sack."},
+      {"power":3,"effect":"An ulna across and carries 3 sacks."},
+      {"power":4,"effect":"A fathom across. Carries 6 sacks."},
+      {"power":5,"effect":"4 metres. Carries 1 shipment."}],
+      "properties":[
+        {"name":"Tether","description":"A manalik can use a rope harness woven from their own hair (or some more ordinary rope) to pull their stuckforce solid along, like a floating pack mule. "},
+        {"name":"Imbue","description":"The manalik’s life keeps the force sticking around. Unimbued, it dissipates in a week or two."},
+        {"name":"Postphysical","description":"The inertialess disc stays at complete rest in relation to  local gravity sources unless moved by the wizard’s touch. Absorbed energy flares off as light and heat."},
+        {"name":"Shapes","description":"Simple solids, such as orbs, discs, sheets, and cylinders require no test. More complex shapes call for a relevant skill test, e.g., sculpture, pottery, or weaving. "},
+        {"name":"Shield","description":"The stuckforce is almost completely impenetrable, and shields against ranged attacks."}]},
+  "sacredreliquary":{
+    "name":"Sacred Reliquary",
+    "tags":["necrolexicon"],
+    "flavor":"A shell for a ghost.",
+    "description":"The wizard spends an hour or two binding a ghost’s non-corporeal ba and ka through a relic housed in a reliquary. This can be as simple as a prepared skull or something as ornate as a gilded model of an office ziggurat with window panels of mother-of-pearl and translucent jade holding a lock of a sage’s beard.",
+    "ranks":[
+      {"power":0,"effect":"A very basic reliquary, barely magical. The necromantic equivalent of writing down somebody’s phone number. When using Necrophony to reach this ghost, the wizard gains [+]. "},
+      {"power":1,"effect":"Direct line reliquary. The ghost is grumpy, but answers every time the dead-talker calls."},
+      {"power":2,"effect":"An open line reliquary. The ghost can come through and manifest as an ectoplasmic projection on their own, without the caster’s input. Non-wizards can communicate with the spirit."},
+      {"power":3,"effect":"A command line reliquary. The ghost can possess a mechanical or biological body through the reliquary and act directly in the living world."}],
+      "properties":[
+        {"name":"Imbued relic","description":"The reliquary is infused with vitality. The caster can use their life or a willing acolyte's."},
+        {"name":"Sustenance lock","description":"When using an external life source, a devious necromancer can make the bond permanent by binding one of their own life points to the reliquary. This sustains the ghost until the reliquary is destroyed."}]},
+  "sevenvenomsong":{
+    "name":"Seven Venom Song",
+    "tags":["flyingserpent"],
+    "flavor":"Threads bind us all in memory.",
+    "description":"The flying serpent revealed seven venoms to the cachars. They preserve them in their chants.",
+    "ranks":[
+      {"power":1,"effect":"Pain. An angry red liquid. Target deals & suffers +2 damage until the end of the scene."},
+      {"power":2,"effect":"Weakness. Cool and black. Target suffers [-] to ha tests and effects until the end of the scene."},
+      {"power":3,"effect":"Blindness. Sparkling blue fluid. Target suffers [-] to ha, ka, or ba tests until scene ends."},
+      {"power":4,"effect":"Eating. Sickly green. Target loses 5 life per action it takes until the scene ends."},
+      {"power":5,"effect":"Petrifying. Shimmering dusty beverage. Target turns to stone while the potion is imbued."},
+      {"power":6,"effect":"Medusa. Piercing white. Target is petrified with self-doubt as it grasps the infinite recursion of its existence within the world. Loses 1d4 mental attributes per action it takes until scene ends."},
+      {"power":7,"effect":"Manticore. Pure pink light. Target makes an endurance test every time it takes an action until scene ends. When it fails, its mind and spirit are knocked out of its body, which falls to the ground lifeless. Psychosurgery is required to reattach its ghost."}],
+      "properties":[
+        {"name":"Imbue","description":"See below."},
+        {"name":"Potion","description":"Vials sold separately."}]},
+  "signalcharge":{
+    "name":"Signal Charge",
+    "tags":["motherelectric"],
+    "flavor":"Crackling sounds. Ozone smell.",
+    "description":"The wizard rubs their hands together without rhythm and builds up an electromagical charge. Their hands stay charged until they discharge the energy or touch a conducting object.",
+    "ranks":[
+      {"power":1,"effect":"Wizard’s next touch deals 1d10 electric damage."},
+      {"power":2,"effect":"Touch also stuns the target for 1d4 rounds or knocks it back."},
+      {"power":3,"effect":"Touch also sets the target on fire, dealing 1d6 ha/round until put out (stop, drop, and roll)."},
+      {"power":4,"effect":"Deals 4d10 damage instead."},
+      {"power":6,"effect":"Touch also commands an electrical to move nearby or gives 2 immediate actions."}],
+      "properties":[
+        {"name":"Imbue","description":"Charged until release."},
+        {"name":"Recharge","description":"This spell recharges batteries and magic power cells if the wizard succeeds at an aura test to modulate the signal field. One charge per spell cost."}]},
+  "singingintheblood":{
+    "name":"Singing in the Blood",
+    "tags":["awakenedsphere"],
+    "flavor":"The ocean, it lives in the blood.",
+    "description":"By exchanging blood or other fluids between two creatures, the wizard lets them communicate directly through their shared evolutionary bond and the magic of the noösphere.",
+    "ranks":[
+      {"power":1,"effect":"Two creatures of the same species can communicate mind-to-mind over a long distance."},
+      {"power":2,"effect":"Two related species, for example two birds or two reptiles."},
+      {"power":3,"effect":"Very distantly related species, e.g. a fish and an ape."},
+      {"power":4,"effect":"Species evolved on the same world, e.g. a medusa and a wolf."},
+      {"power":7,"effect":"Aliens who have shared the salt and dust of the same noösphere for a day and a night. "}],
+      "properties":[
+        {"name":"Imbue","description":"The life energy of one of the creatures binds the spell into place. If this creature is the wizard, they do not pay the spell cost twice. It ends when that creature releases the energy."},
+        {"name":"Ha attack","description":"Jabbing an unwilling creature with a needle is not easy."},
+        {"name":"Needles","description":"Sterile equipment is recommended for this spell."},
+        {"name":"Understanding","description":"Double spell price: communication is deep and meaningful. [+] to conversations."}]},
+  "skilltegrate":{
+    "name":"Skilltegrate",
+    "tags":["oldtech"],
+    "flavor":"Machine memory.",
+    "description":"Electroplasm invades a machine and learns how to use it, translating that knowledge directly into a host neural network.",
+    "ranks":[
+      {"power":0,"effect":"The wizard figures out what skills are needed to use a device."},
+      {"power":1,"effect":"The electroplasm temporarily inscribes a relevant rank 1 skill into an available skill slot."},
+      {"power":3,"effect":"Inscribes a relevant rank 2 skill into two available skill slots."},
+      {"power":6,"effect":"Inscribes a relevant rank 3 skill into 3 available skill slots."},
+      {"power":10,"effect":"Inscribes a relevant rank 4 skill into 4 available skill slots. Danger. Error. Overload."}],
+      "properties":[
+        {"name":"Imbue","description":"The skill remains as long as the spell is imbued."},
+        {"name":"Otherwrite","description":"Double spell cost to overwrite an existing skill or inscribe the skill into an inventory or trait slot."},
+        {"name":"Permanence","description":"Triple spell cost and dangerous. But, permanent."}]},
+  "skinshift":{
+    "name":"Skinshift",
+    "tags":["awakenedsphere"],
+    "flavor":"Walk a mile in its fur.",
+    "description":"The wizard dons the skin and form of another creature. The transformation takes several minutes. The target creature’s attributes replace the wizard’s own. If the target creature cannot speak, neither can the wizard.",
+    "ranks":[
+      {"power":1,"effect":"Mass conservative. Wizard takes the form of a creature roughly their size. For a human, this might be a dog, pig, donkey, ostrich, or another human."},
+      {"power":2,"effect":"Mass flexible. Shrinks to the size of a tiny creature, such as a gerbil, pigeon, or frog, or grows into a larger creature, such as a tuna, aurochs, or bear."},
+      {"power":4,"effect":"Mass ignorant. From a tiny mosquito or ladybird, to a ponderous pachyderm or whale."},
+      {"power":6,"effect":"Distributed. Shifts into a colony organism, such as a swarm of termites, hive of mole rats, or herd of telepathic feral hogs."}],
+      "properties":[
+        {"name":"Alien kingdom","description":"Shifting into an alien creature, such as a fungus, carnivorous plant, or zu-construct, doubles the spell price."},
+        {"name":"Imbue","description":"Obviously."},
+        {"name":"Sketch","description":"The wizard can spend an hour sketching a creature and taking down its noöspheric source code parameters, letting them don the skin symbolically, without actual skinning."},
+        {"name":"Skins","description":"If the wizard is carrying a target creature’s prepared skin (1 stone), the transformation takes but a heartbeat."},
+        {"name":"Slain","description":"If the skin-shifted wizard is slain, they revert to their original form. If they were using a prepared skin, the wizard’s original form is uninjured but dazed for a few minutes (loses 1 action per turn). The skin is destroyed."},
+        {"name":"Symbolic","description":"Spell price doubled if wizard uses a symbolic representation of the creature, rather than actual skin. A popular option, as a single illustrated journal can hold hundreds of skins."}]},
+  "somnihilation":{
+    "name":"Somnihilation",
+    "tags":["necrolexicon"],
+    "flavor":"The sleepers must not wake.",
+    "description":"The wizard releases their holy blood and uses it to anoint an undead abomination, such as a mummy, skeleton, vampire, or zombie. This takes a couple of minutes and a lot of passionate imprecation. The undead abomination then returns to its appointed rest. An assistant usually holds down the abomination during the ritual.",
+    "ranks":[
+      {"power":1,"effect":"Puts down a 1st level abomination."},
+      {"power":2,"effect":"A 2nd level abomination."},
+      {"power":3,"effect":"L3 abomination. Etc."}],
+      "properties":[
+        {"name":"Five symbol death punch","description":"By doubling the spell price, the wizard requires a single action to imbue their fist with the five symbols of eternal repose. Their next successful ha or ka attack against an undead abomination puts it to rest."},
+        {"name":"Sudden conduit","description":"At the moment of contact with the abomination, the wizard comprehends its actual power level. They can then open the gates of their soul, pouring more life into the spell to defeat the undead if it is more powerful than they expected. Unfortunately, this may make the magic dangerous."}]},
+  "soulscourge":{
+    "name":"Soul Scourge",
+    "tags":["soulbreaker"],
+    "flavor":"Finesse is overrated.",
+    "description":"The wizard puts their hands to their forehead in the null-dimensional key and unleashes an indiscriminate, nightmarish attack on every affected soul. The wizard deals 1d6 x level ka damage to each target in the area.",
+    "ranks":[
+      {"power":1,"effect":"Attacks a single target next to the wizard."},
+      {"power":2,"effect":"3 targets next to the wizard."},
+      {"power":3,"effect":"Up to 10 nearby targets."},
+      {"power":5,"effect":"Up to 25 far away targets."},
+      {"power":7,"effect":"Up to 66 far away targets."},
+      {"power":11,"effect":"All targets in a v. large cone."},
+      {"power":17,"effect":"All targets in a cone as far as the wizard can see."}],
+      "properties":[
+        {"name":"Cone","description":"The spell scourges a conical area ahead of the wizard."},
+        {"name":"Ka attack","description":"Vs all, willing and unwilling alike."},
+        {"name":"Mind-burned","description":"If a target is reduced to 0 life and the wizard has an action remaining on their turn, they can turn it into a ka-zombie. Their mind burns out the target’s personality and takes control. The ka-zombie regains all missing life, but is now under the wizard’s mental control. Giving instructions requires an action, but the ka-zombie will continue to perform a task (e.g., “attack the lizard human”) without supervision."},
+        {"name":"Overburn","description":"Wizard can spend 1 mental stat to add 1d6 to their ka attack natural roll."}]},
+  "snakeform":{
+    "name":"Snakeform",
+    "tags":["flyingserpent"],
+    "flavor":"Become the circle.",
+    "description":"The zyxommanto eats themselves in a single gulp and emerges from a point of shadow as a serpent.",
+    "ranks":[
+      {"power":1,"effect":"The caster becomes a snake. Mass is conserved, so they are quite large. They can cast spells as a snake, but have no hands. Gain a constricting ha attack (1d6): deals automatic damage with each action after it hits."},
+      {"power":2,"effect":"Armoured. [+] vs ha dmg."},
+      {"power":3,"effect":"Venomous. Its bite (1d8 ha) can inject any potion the wizard has prepared."},
+      {"power":4,"effect":"Larger. Mass is not conserved. Damage dice increase 1 step."},
+      {"power":5,"effect":"Self-sacrificing speed. Can spend 1 attribute point per round to gain an extra action."},
+      {"power":6,"effect":"Larger. Damage dice increase 1 more step."},
+      {"power":7,"effect":"Flying. It’s a flying snake."}],
+      "properties":[
+        {"name":"Dangerous","description":"Well, yes."},
+        {"name":"Imbue","description":"To stay a snake."},
+        {"name":"Stuck","description":"The caster must succeed at a thought test to return to human form. Fail: they must pay the spell price again. The price increases by 1 life for every day they spend in snake form."}]},
+  "stucklight":{
+    "name":"Stucklight",
+    "tags":["hardlight"],
+    "flavor":"Turning light back into matter.",
+    "description":"The depictomancer ‘paints’ a line or plane of light with their hands and then solidifies it. The larger the effect, the longer it takes. Using a mould or canvas to capture the light is faster, but the initial setup takes longer.",
+    "ranks":[
+      {"power":1,"effect":"The light feels as dense and strong as foam. Several planes of light can safely block a fall. "},
+      {"power":2,"effect":"The light feels like bread. Several planes safely stop a galloping rhino."},
+      {"power":3,"effect":"It feels like ice. Running into a plane of this light hurts."},
+      {"power":4,"effect":"Like granite. Lines of this make a formidable barricade."},
+      {"power":5,"effect":"Like steel. Planes and lines of this light cut like blades."},
+      {"power":6,"effect":"Feels denser and stronger than ordinary matter. This light cuts steel like butter."},
+      {"power":7,"effect":"Dense and strong enough for a single filament of light to shear through steel and bone and rushing vehicles. "}],
+      "properties":[
+        {"name":"Default","description":"Neutral grey."},
+        {"name":"Imbue","description":"Stays solid while the wizard’s life is locked within."}]},
+  "symphonyofshapes":{
+    "name":"Symphony of Shapes",
+    "tags":["portalarchitect"],
+    "flavor":"Secret geometries made stone.",
+    "description":"The wizard imposes an anti-entropic architectural geometry upon the world around them, singing mindless matter into the forms most pleasing to the GBD. ",
+    "ranks":[
+      {"power":0,"effect":"A point of reality coalesces into a stone-like substance. It slowly accretes to the size of a sphere the wizard can hold in their hand."},
+      {"power":1,"effect":"The wizard pulls a line of solid matter, no thicker than their wrist, into existence."},
+      {"power":2,"effect":"Spreading hands with deluvian motions, creates a plane of matter no thicker than their palm."},
+      {"power":3,"effect":"Tracing form into fact, a geometric solid settles into existence."},
+      {"power":4,"effect":"The wizard seems to deform, revealing the higher dimensional nature of every thinking being, as their many flagella bring a four-dimensional object into being."}],
+      "properties":[
+        {"name":"Dimensions","description":"The wizard creates as much matter each minute as they encompass with their outstretched hands."},
+        {"name":"Focus","description":"With concentration, massive objects are possible."}]},
+  "tabularasa":{
+    "name":"Tabula Rasa",
+    "tags":["soulbreaker"],
+    "flavor":"A soulless body is a happy vessel.",
+    "description":"The wizard touches two soul anchors (creatures, vessels, etc.) and swaps their soul-personalities.",
+    "ranks":[
+      {"power":1,"effect":"Transfers the ka-ba of up to 2 levels’ worth of creatures (for example, between two first level creatures)."},
+      {"power":2,"effect":"Up to 4 levels’ worth of creatures."},
+      {"power":3,"effect":"6 levels’ worth."},
+      {"power":4,"effect":"Etc."}],
+      "properties":[
+        {"name":"Battering","description":"Double spell cost to gain [+] on ka attack."},
+        {"name":"Ka attack","description":"Vs unwilling."},
+        {"name":"Lightning machine","description":"Using a special laboratory and ectoplasmic storm halves the spell cost."},
+        {"name":"Mind swap","description":"The two creatures swap mental stats, memories, skills, and traits."},
+        {"name":"Static vessel","description":"Transferring a soul-personality into or from a jar, pot, crystal matrix, or other static object doubles the spell cost."}]},
+  "thewillingvoidnihilvolunt":{
+    "name":"The Willing Void — Nihil Volunt",
+    "tags":["void"],
+    "flavor":"We made the singularity of not.",
+    "description":"The voidwalker draws a circle of circles upon the air, encompassing a sacred void. As their life flows into this void, so it attracts other objects into itself.",
+    "ranks":[
+      {"power":1,"effect":"The void pulls in nearby light objects. Pages, leaves, hats. Everything is slightly crumpled in the middle of the void. "},
+      {"power":2,"effect":"Nearby cat-sized objects are drawn in swiftly, sustaining painful but harmless bruising as they are jammed together. "},
+      {"power":4,"effect":"Nearby pig-sized objects are sucked in, thumping together with significant force in the middle of the void (1d6 damage). Crushing may suffocate unfortunates."},
+      {"power":8,"effect":"Horse-sized objects from quite a ways around are hauled into the centre at speed (2d6 damage), then mashed together, injuring them (1d4 per round)"},
+      {"power":16,"effect":"Elephant-sized objects in a large area are swiftly pulled into the void, smashing together violently (4d6 damage) and congealing under the void pressures (2d4 per round). "},
+      {"power":32,"effect":"Tree-sized objects in a large radius are sucked into the void, taking 8d6 damage and then igniting under the unearthly pressures (4d4 per round)."}],
+      "properties":[
+        {"name":"Imbued void","description":"The hole in reality persists as long as the wizard imbues it with their life essence. "}]}, 
+  "theworm":{
+    "name":"The Worm",
+    "tags":["flyingserpent"],
+    "flavor":"Uroboros manifests.",
+    "description":"The guivriste parts the veils of reality, and the great worm uncoils from the ground or from the shadows or even from the clear blue sky. Terror ensues.",
+    "ranks":[
+      {"power":6,"effect":"The worm manifest appears."},
+      {"power":9,"effect":"Two worms appear."},
+      {"power":11,"effect":"Three worms."},
+      {"power":12,"effect":"Four worms."},
+      {"power":13,"effect":"Worms swallow the caster and all adjacent creatures."}],
+      "properties":[
+        {"name":"Dangerous","description":"Obviously."},
+        {"name":"Imbue","description":"The caster’s life keeps the worm present."},
+        {"name":"Slow","description":"Requires 2 actions to cast."}]},
+  "tormentengine":{
+    "name":"Torment Engine",
+    "tags":["soulbreaker"],
+    "flavor":"Work the soul, burn the candle.",
+    "description":"The wizard’s glittering touch traps a creature’s soul in an infinite loop and mills it for energy.",
+    "ranks":[
+      {"power":1,"effect":"Victim loses 1 life and 1 personal memory per round. Wizard gains enough energy to recharge an omni-battery."},
+      {"power":3,"effect":"Victim loses 1 stat point and 1 skill per round. Enough energy to recharge a radiothermal barrel."},
+      {"power":6,"effect":"Victim loses 1 level and 1 trait per round. Enough energy to recharge an oldtech town generator."}],
+      "properties":[
+        {"name":"Escape the labyrinth","description":"Each round, the victim makes a thought test to escape the torment engine. Thereafter, it gains [+] vs the wizard’s magic."},
+        {"name":"Ka attack","description":"Vs unwilling."},
+        {"name":"Dangerous","description":"For the target."},
+        {"name":"Destruction","description":"This spell perma­nently damages or destroys souls."},
+        {"name":"Overburn","description":"Wizard can spend 1 mental stat to add 1d6 to their ka attack natural roll."},
+        {"name":"Siphon","description":"Focus to sustain the drain."},
+        {"name":"Soul-thrower","description":"With their other hand, the wizard can channel the creature’s shattered soul like a celestial flamethrower. This deals 1d10 damage per power of the spell (so a P6 torment engine will deal 6d10 damage) to all targets in a narrow, short-range jet of blistering hell-fire."},
+        {"name":"Unsafeguard","description":"Wizard can double the burn rate (and power) of the torment engine by doubling its cost. This is dangerous all-round."}]},
+  "twitchingpuppet":{
+    "name":"Twitching Puppet",
+    "tags":["motherelectric"],
+    "flavor":"Twisting mind, pulling strings.",
+    "description":"The wizard raises their hands, and a crackling gush of electro-magical bolts unerringly strikes a nearby target for 1d6 ha damage.",
+    "ranks":[
+      {"power":1,"effect":"The target loses 1 life per round. Each round, the wizard may make a ka attack against the target on the target's turn. If they succeed, they gain poor control of the target’s physical movements for that round—it makes all rolls with [-]. Controlling the target requires no actions."},
+      {"power":3,"effect":"Target loses 2 life per round. If the wizard has control of the target, their control is satisfactory, and it rolls normally."},
+      {"power":6,"effect":"Target loses 3 life per round. The wizard's control is ka-infused, and target rolls with [+]."}],
+      "properties":[
+        {"name":"Focus","description":"To maintain the link."},
+        {"name":"Oh-mega","description":"Requires the rods for fine motor control."},
+        {"name":"Open channel","description":"The spell continues until the target touches the wizard, it dies, or the wizard stops focusing. "}]},
+  "ubiqueserpens":{
+    "name":"Ubique Serpens",
+    "tags":["flyingserpent"],
+    "flavor":"Looks like snake, is snake.",
+    "description":"Since all reality is, somehow, a snake-like circle, many things might become a snake. Particularly long, thing things.",
+    "ranks":[
+      {"power":1,"effect":"A big stick or garden hose becomes a snake (L1). A small, thin bundle becomes a tangle of small snakes (L0)."},
+      {"power":2,"effect":"Bigger snake (L2) or 1d4+pro snakes (L1)."},
+      {"power":3,"effect":"Bigger (L3) or 1d8+pro."},
+      {"power":4,"effect":"Yet bigger (L4) or 1d12+pro."}],
+      "properties":[
+        {"name":"Control","description":"The smokyar com­mands pro+thought levels of snakes. The rest are free-willed."},
+        {"name":"Imbue","description":"The smokyar’s life is in their snakes. Without it, they revert to base matter."}]},
+  "unitywithancestors":{
+    "name":"Unity With Ancestors",
+    "tags":["necrolexicon"],
+    "flavor":"In desperation, even flowers bite.",
+    "description":"The wizard takes the powdered essence of an undead creature, mixes it with sacred liquids, and turns it into ancestor juice through an hour-long ritual. Robes, candles, and cryptic chants are optional, but a vial of some sort is essential. The effects of each type of ancestor juice last about a day.",
+    "ranks":[
+      {"power":1,"effect":"Crushed skeleton bones. The drinker loses 1d3 endurance and becomes resistant to soft tissue damage and poisons."},
+      {"power":2,"effect":"Dried and powdered zombie brain. The drinker loses 1d3 agility, gains 10 temporary life (or unlife), and becomes resistant to non-critical ha attacks."},
+      {"power":3,"effect":"Diced and sliced ghoul. The drinker loses 1d3 aura but gains a paralyzing touch. Each time a creature is touched by the drinker, they lose 1 action. Further, and more horrifically, the drinker can regain 1d4 life each hour by eating a quarter-pounder of living flesh (cheese optional). This secondary effect is not widely advertised."},
+      {"power":5,"effect":"Ash of a shadow, phantasm, or ghost. The drinker loses 1d3 str, deals ha damage with [-], and takes minimum damage from all physical sources."},
+      {"power":7,"effect":"Shredded mummy flakes. The drinker loses 1d4 cha, then gains a rotting touch. Every time they deal ha damage, they also deal 1 charisma damage."},
+      {"power":9,"effect":"Preserved vampire blood. The drinker loses 1d4 thought, then grows claws and fangs. Deals 1d8+level ha damage and regains life equal to damage dealt when fighting living creatures."}],
+      "properties":[
+        {"name":"Dangerous beverage","description":"The (un)holy ancestor juice can corrupt those who drink it."},
+        {"name":"Imbued beverage","description":"The juice keeps as long as the wizard imbues it with their life."},
+        {"name":"Pass for (un)dead","description":"All the juices make the drinker appear undead at first glance."},
+        {"name":"Proscribed","description":"This spell is proscribed by all reasonable scholars and commissars. Practising it in public often results in censure and persecution."}]},
+  "ushaswildmutation":{
+    "name":"Usha’s Wild Mutation",
+    "tags":["biomechane"],
+    "flavor":"Change, damnit!",
+    "description":"The caster speaks to a creature’s source code, sparking mutation.",
+    "ranks":[
+      {"power":3,"effect":"The mutation takes 1d4 rounds to complete and deals 1d6* damage per round. A random mutation fills a trait slot."},
+      {"power":6,"effect":"Caster chooses the mutation."},
+      {"power":9,"effect":"… and modifies the mutation."}],
+      "properties":[
+        {"name":"Horror","description":"Super freaky."},
+        {"name":"Willing flesh","description":"Acquiesce!"}]},
+  "valueaddeduplift":{
+    "name":"Value Added Uplift",
+    "tags":["biomechane"],
+    "flavor":"We went among the ants as gods.",
+    "description":"The caster increases the intelligence of a non-sentient creature or colony organism. Now anyone can play god! Very dangerous.",
+    "ranks":[
+      {"power":2,"effect":"Over a few days the biomancer increases the thought attribute of a creature and its keimplasma, its germplasm, by 1."},
+      {"power":4,"effect":"Increase thought by 1 more!"},
+      {"power":6,"effect":"Again!"},
+      {"power":8,"effect":"Again!"},
+      {"power":10,"effect":"Again! “Behold, I am Pro-metheus, and I have given you the world!” cries the sci-wizard at the sentient slime mould."}],
+      "properties":[
+        {"name":"Affliction","description":"Hurts the subject."},
+        {"name":"Ladder of reason","description":"Each subsequent casting on an individual organism is at a higher power, thus progressively harder."},
+        {"name":"Love the creator","description":"There is a chance the creature will be pleased with its new situation."},
+        {"name":"Very dangerous","description":"[-] to corruption tests when things go wrong."},
+        {"name":"Willing flesh","description":"Creatures usually like to be who they are."}]},
+  "vividcommunion":{
+    "name":"Vivid Communion",
+    "tags":["plantsinger"],
+    "flavor":"Hear the forest. It speaks.",
+    "description":"The drevedroog plunges their mind into the ur-consciousness of the local ecosystem, communing with mushroom and thorn shrub and mighty baobab.",
+    "ranks":[
+      {"power":0,"effect":"Plants whisper and tell if they have been trod or touched."},
+      {"power":1,"effect":"A chorus of plants within arms’ reach awakens with a simple intelligence and tells all."},
+      {"power":3,"effect":"All nearby plants assemble into an average intelligence and let the derevedroog know what has happened and is happening. The drevedroog cannot be surprised and gains [+] to all perception tests within the area."},
+      {"power":5,"effect":"Plants in a large area become part of a superior communal intelligence. Drevedroog gains [+] to complex, analytic tests. Setting ambushes and traps is easy [+]."},
+      {"power":7,"effect":"Plants as far as the drevedroog can see combine their communication organelles into a surpassing vegetable intelligence. Drevedroog can supplicate it for guidance and secrets beyond the ken of individual lifeforms."}],
+      "properties":[
+        {"name":"Cumulative","description":"Powers include all lower order effects."},
+        {"name":"Focus","description":"So it goes."},
+        {"name":"Permanence","description":"This would take some sort of sacrifice, yeah?"}]},
+  "voidblade":{
+    "name":"Voidblade",
+    "tags":["void"],
+    "flavor":"The sword of nihilism.",
+    "description":"The mage turns nothingness into a weapon, holding it together with filaments of their own life.",
+    "ranks":[
+      {"power":1,"effect":"It deals 1d6 damage and leaves shadow scars. "},
+      {"power":2,"effect":"It deals 1d10 damage and leaves burning wounds. "},
+      {"power":4,"effect":"1d12 damage and steals ba, drinking 1 mental stat point per strike. "},
+      {"power":8,"effect":"2d8 damage and steals 2 mental stat points per strike."}],
+      "properties":[
+        {"name":"Ba-zombies","description":"A sentient who loses their last mental stat point becomes a zombie under the wizard’s thrall. This may be evil."},
+        {"name":"Imbued weapon","description":"Usually, the voidblade dissipates when the wizard stops imbuing it with their essence. Fed too many thoughts, it may refuse to be dispelled."},
+        {"name":"Sentient voidblade","description":"The blade accumulates removed mental points as ba. The more ba it gains, the more sentient it becomes: 5 ba • As bright as a cat. 10 ba • Smart as a troglodyte. 15 ba • Refuses to be dispelled. Spell becomes an item. 20 ba • Thoughtful as a demon. 30 ba • Deals 1d16 damage. 40 ba • Demands regular sacrifice. 60 ba • It reveals how to Open the Door of Worms."}]},
+  "walkontwigs":{
+    "name":"Walk on Twigs",
+    "tags":["plantsinger"],
+    "flavor":"Carried upon the forest blades.",
+    "description":"The vochencha synchronizes a target with the vegetable world, making it one with its songs.",
+    "ranks":[
+      {"power":0,"effect":"Walking on living vegetation, the target gains [+] to stealth and balance tests."},
+      {"power":1,"effect":"Nature consumes all traces of passage: visible, odour, even aura. Target’s weight is halved as far as plants is concerned."},
+      {"power":2,"effect":"Target weighs one tenth, easily standing on thin branches."},
+      {"power":3,"effect":"One hundredth. As far as a reed knows, an ordinary human weighs as much as a bar of soap."},
+      {"power":4,"effect":"One thousandth. Imagine how far a bent bough could launch such a person! Though the landing might hurt."}],
+      "properties":[
+        {"name":"Focus","description":"Spell cost doubles (minimum 1) to cast unfocussed."},
+        {"name":"Plant perception","description":"The spell alters how vegetation perceives the target. Because a plant has no mind to interfere with its beliefs, altered perception completely suspends its disbelief. Thus, a leaf could hold up an elephant, were a vochencha skilled enough."}]},
+  "walkwithme":{
+    "name":"Walk With Me",
+    "tags":["necrolexicon"],
+    "flavor":"Come, stay awhile. ",
+    "description":"The wizard exhales their life force into a mummified, pickled, or other-wise preserved corpse, imbuing it with a semblance of vitality.",
+    "ranks":[
+      {"power":1,"effect":"After a few hours, the corpse awakens into a shambling parody of life and follows the hero’s instructions as a slow corpse (L1, gormless, mindless, zombie). "},
+      {"power":3,"effect":"After a few minutes, the hero shakes the corpse into jerky life as a lurcher (L1, leaping, mindless, zombie)."},
+      {"power":5,"effect":"After mere seconds, the hero exhorts the mummy to unlife. The mummified servant (L2, elegant, limber, zombie) grows supple and strong again."},
+      {"power":7,"effect":"In a flash of soul fire, the hero transforms the corpse into a ravenous swift ghoul (L3, swift, terrifying, zombie). It springs up faster and stronger than in life."}],
+      "properties":[
+        {"name":"Echo of memories","description":"If the wizard pays double the spell price, an echo of the corpse’s ba is restored, imbuing it with a semblance of human intelligence. The undead can then act independently."},
+        {"name":"Imbued undead","description":"The corpse stays active while it is imbued with the wizard’s life. The wizard can instantly render it inert and dead by tapping its forehead thrice and speaking the channel termination protocol. They can then recover their life as usual. If the wizard is killed or otherwise removed from local spacetime while the undead is imbued, it becomes free of any control."},
+        {"name":"Mindless servant","description":"Such an undead requires direct instructions from the wizard. They can then perform their instructions indefinitely (or until they erode away). Giving instructions during a conflict requires an action."},
+        {"name":"Sacrificial life","description":"The wizard can replace the life force they have imbued in the corpse with another creature’s using a crushingly painful seventeen-minute ritual. The wizard can then recover their life force as usual. The sacrificial victim can only recover their life force if the corpse is ‘deactivated’ somehow."}]},
+  "wordsmayeverhurt":{
+    "name":"Words May Ever Hurt",
+    "tags":["cosmiclogos"],
+    "flavor":"Daggers for the soul.",
+    "description":"The logomanté uses their knowledge of the cosmic consciousness to spear their target’s essence.",
+    "ranks":[
+      {"power":1,"effect":"Cruel barb. Deals 1d6 damage and the target loses 1 defence for each action it takes on its next turn."},
+      {"power":2,"effect":"Bitter pill. 2d8 damage and the target suffers [-] for each action it takes on its next turn."},
+      {"power":3,"effect":"Skewering insight. 3d10 damage and the target loses an action on its next turn."},
+      {"power":4,"effect":"Crippling revelation. 4d12 damage and target suffers [-] vs attacks next round."},
+      {"power":5,"effect":"Mind-breaking truth. 5d20 damage and the target loses two actions on its next turn."},
+      {"power":6,"effect":"Hell does exist. 6d30 damage and if the target is reduced to 0 life, a portal to a kind of hell opens in its mind."}],
+      "properties":[
+        {"name":"Hell’s survivor","description":"A target sent into a hell of its own subconscious by this spell faces a very hard contest against itself and its own impulses. If it wins, it permanently gains 1 aura and thought when it returns to waking life."},
+        {"name":"Ka/ba attack","description":"The wizard chooses the target defence."},
+        {"name":"Singular","description":"Each power only works once per individual target."},
+        {"name":"Sub-lethal","description":"A target reduced to 0 life by this spell does not die. It is left catatonic and vulnerable."}]}
 }

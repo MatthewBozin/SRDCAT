@@ -10,7 +10,6 @@ import Ranks from "../bits/Ranks";
 import AddSubtract from "../bits/AddSubtract";
 import Table from "../bits/Table";
 import NameValuePair from "../bits/NameValuePair";
-import modsdata from "../../data/collections/modSpells.json";
 import Context from "../../data/context";
 
 const CardSpell = (props) => {
@@ -121,17 +120,18 @@ const CardSpell = (props) => {
               )}
             </div>
             <hr></hr>
-            {card.modifiers.map((mod, index) => {
-              let modifier = modsdata[mod];
-              return (
-                <div key={index}>
-                  <NameValuePair
-                    name={modifier.name}
-                    value={modifier.description}
-                  />
-                </div>
-              );
-            })}
+            {card.properties && <span>
+              {card.properties.map((property, index) => {
+                return (
+                  <div key={index}>
+                    <NameValuePair
+                      name={property.name}
+                      value={property.description}
+                    />
+                  </div>
+                );
+              })}
+            </span>}
           </span>
         )}
       </div>

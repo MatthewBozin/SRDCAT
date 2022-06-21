@@ -8,6 +8,18 @@
         "properties":[
             {"name":"Blood-fuelled", "description":"Each higher dimensional step costs 1 life."},
             {"name":"Chills", "description":"The user shivers terribly and suffers [-] in cold weather. Such as when translating through a higher dimension."}]},
+    "absorptionsphere":{
+        "name":"Absorption Sphere",
+        "tags":["gear"],
+        "flavor":"A bowling ball-sized portal that translates through the 5th dimension into a large (100 cubit or so), near-opaque milky force sphere dividing inside and outside. ",
+        "weight":10,"value":"~€100k","description":"",
+        "properties":[
+            {"name":"5D folder","description":"To collapse the expanded sphere. 1 st / ~€20k."},
+            {"name":"Absorbs energy","description":"Damage of all attacks passing through the sphere is reduced by 50 points."},
+            {"name":"Absorbs life","description":"Creatures touching or intersecting with the sphere’s field loses 1d10 life per round."},
+            {"name":"Null case","description":"For safe transport of small spheres. 1 st / ~€10k."},
+            {"name":"Overload","description":"If the sphere absorbs 999 damage in one round, it collapses catastrophically, dealing that damage to all creatures in a large radius."},
+            {"name":"Slow passage","description":"Any creature passing through the field loses an action and suffers [-] for the rest of the round."}]},
     "acceleratedflail":{
         "name":"Accelerated Flail",
         "tags":["offensive","weapon","chain"],
@@ -78,21 +90,22 @@
             {"name":"Air supply", "description":"Enough for one pig-sized animal for one day."},
             {"name":"Edible", "description":"In need, the airbell serves as 1 sk of supplies. Tastes like sunchoke. Produces gas."},
             {"name":"Photosynthesizer", "description":"Fertilized and watered, the airbell recharges its air galls in a week."}]},
-    "archmage’shidesuit":{
-        "name":"Archmage’s Hide Suit",
-        "tags":["defensive","ward"],
-        "flavor":"An inhuman archmage’s hide, preserved and cured into a vestment. It positively crackles with eldritch wrath.",
-        "stat":["ka"],"number":["7"],
-        "weight":20,"value":300000,
-        "description":"",
+    "alephan":{
+        "name":"Aleph, An",
+        "tags":["gear"],
+        "flavor":"Small iridescent sphere of almost unbearable brilliance. Reveals all space, actual and undiminished. ",
+        "weight":"1","value":"~€99k","description":"",
         "properties":[
-            {"name":"Horrifying", "description":"[+] to frighten."},
-            {"name":"Wrathful", "description":"[+] to ka damage."}]},
-    "amberancestorcuirass":{
-        "name":"Amber Ancestor Cuirass",
-        "tags":["defensive","armour"],
-        "flavor":"Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.",
-        "stat":["ha","ka"],"number":["4","4"],
+            {"name":"Attractive","description":"All who see an aleph make a very hard charisma test or gaze upon the aleph for a turn."},
+            {"name":"Distracting","description":"Gazing upon an aleph imposes [-] to other tasks."},
+            {"name":"Revelation","description":"While gazing, one sees all things, but can do nothing with this knowledge."},
+            {"name":"Oblivion","description":"After looking away, the infinite swiftly fades. Watcher gains [+][+] to one test, then [+] to one more, then the melancholy of the speck of dust descends."},
+            {"name":"Melancholy","description":"Feelings of finitude impose [-] to any actions initiated by the watcher for a day or more."}]},
+            "amberancestorcuirass":{
+                "name":"Amber Ancestor Cuirass",
+                "tags":["defensive","armour"],
+                "flavor":"Strands of ancestral memories trapped in amber, fashioned into a cuirass of arcane glory.",
+                "stat":["ha","ka"],"number":["4","4"],
         "weight":20,"value":4000,
         "description":"",
         "properties":[
@@ -107,18 +120,18 @@
         "properties":[
             {"name":"Powered", "description":"Technospiritual prayer wheel batteries."},
             {"name":"Ranged", "description":"[-] vs far away targets."}]},
-    "amphibisuit“eogyrine”":{
-        "name":"Amphibisuit “Eogyrine”",
-        "tags":["gear"],
-        "flavor":"Large synthetic basal amphibian diving symbiote. It envelops the wearer and breathes through its 167 skin. The powerful 2 metre tail provides ample swimming speed.",
-        "weight":100,"value":200,
+            "amphibisuit“eogyrine”":{
+                "name":"Amphibisuit “Eogyrine”",
+                "tags":["gear"],
+                "flavor":"Large synthetic basal amphibian diving symbiote. It envelops the wearer and breathes through its 167 skin. The powerful 2 metre tail provides ample swimming speed.",
+                "weight":100,"value":200,
         "description":"",
         "properties":[
             {"name":"Feeding", "description":"Drains 1 life per day from its wearer."},
             {"name":"Storage", "description":"Packs away in a membranous egg sack for transport."},
             {"name":"Swimming", "description":"Fast in water."},
             {"name":"Water-breathing", "description":"What it says."}]},
-    "ancestorperfume":{
+            "ancestorperfume":{
         "name":"Ancestor Perfume",
         "tags":["consumable","alterative"],
         "flavor":"Essence makes a living person smell like one of the dead. Heavy notes of spice and leather.",
@@ -126,6 +139,26 @@
         "description":"ornate diffuser",
         "properties":[
             {"name":"Passing", "description":"[+] to looking dead."}]},
+    "archmage’shidesuit":{
+        "name":"Archmage’s Hide Suit",
+        "tags":["defensive","ward"],
+        "flavor":"An inhuman archmage’s hide, preserved and cured into a vestment. It positively crackles with eldritch wrath.",
+        "stat":["ka"],"number":["7"],
+        "weight":20,"value":300000,
+        "description":"",
+        "properties":[
+            {"name":"Horrifying", "description":"[+] to frighten."},
+            {"name":"Wrathful", "description":"[+] to ka damage."}]},
+    "artificialmagnetizer":{
+        "name":"Artificial Magnetizer",
+        "tags":["gear"],
+        "flavor":"A nested puzzle sphere folding multiple reality membranes to generate a great electromagnificent field.  ",
+        "weight":100,"value":"~€30k","description":"",
+        "properties":[
+            {"name":"Anti-particle field","description":"Shields a large area from energy attacks. [+][+] vs energy damage."},
+            {"name":"Magnetizer","description":"Stood on a surface or object, it makes a large area strongly magnetic."},
+            {"name":"Metallifacent • Used as a direct weapon on a nearby target. Struck target rolls hard aura test: success, 2d8 ka damage; failure, turns to steel."},
+            {"name":"Powered","description":"Omni-batteries."}]},
     "astralammo":{
         "name":"Astral Ammo",
         "tags":["consumable","munition"],
@@ -135,6 +168,14 @@
         "properties":[
             {"name":"Anti-ghost", "description":"Double damage vs. ghosts and phantasms."},
             {"name":"Ka-version", "description":"Deals ka damage."}]},
+    "attachécase":{
+        "name":"Attaché Case",
+        "tags":["gear"],
+        "flavor":"A classic tool of social warfare. Conceals up to 10 targeted ba attacks, such as warrants, writs, cachets, amnesties, pardons, and other get out of jail free devices.  ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Intimidating","description":"+1 ba and [+] to legal strong-arming tests."},
+            {"name":"Space","description":"For pens, notebooks, cigars, cards, etc."}]},
     "autodoctor“markbasket”":{
         "name":"Autodoctor “Mark Basket”",
         "tags":["gear"],
@@ -180,6 +221,24 @@
         "properties":[
             {"name":"Poisonous challenge", "description":"Target can gain [+] to their next test at the cost of suffering damage again."},
             {"name":"Limited replay", "description":"Not reusable with the same audience. Functions like ammo."}]},
+    "backpack“squash”brand":{
+        "name":"Backpack, “Squash” Brand",
+        "tags":["gear"],
+        "flavor":"Standard porter equipment. At one point, a kind of gourd plant was engineered to grow organic backpacks. Since then, various shapes of backpack are grown and used in even the poorest subsistence scavenger settlements. ",
+        "weight":10,"value":"~€1","description":"",
+        "properties":[
+            {"name":"Quick-drop","description":"Free action to drop."},
+            {"name":"Space","description":"Holds 1 sack of stuff."},
+            {"name":"Upgrades • Better designed backpacks carry bonus gear:","description":"undefined +1 stone / +€100 +2 stone / +€500 +3 stone / +€2k"}]},
+    "bandages“universalduck”":{
+        "name":"Bandages, “Universal Duck”",
+        "tags":["gear"],
+        "flavor":"Smart universal bandages from the bioengineering prince-corporation MMM. The generatrix machines escaped into the wild when the Third Eternal Union fell. The best domesticated varietals now flourish in the Orange Lands. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Kwik-fix","description":"Temporarily restores 1 point of ha or ka per application."},
+            {"name":"Kwik-seal","description":"Stops bleeding, air loss, and other ongoing damage."},
+            {"name":"Universal","description":"Work on any creature or machine."}]},
     "beliefstructuresymbol":{
         "name":"Belief Structure Symbol",
         "tags":["offensive","charm","word"],
@@ -238,6 +297,27 @@
         "description":"",
         "properties":[
             {"name":"Team colours", "description":"[+] to social tests with friends, [-] with unfriendlies."}]},
+    "bodytospirittranslator":{
+        "name":"Body-to-Spirit Translator",
+        "tags":["gear"],
+        "flavor":"The inspiritualizer holds a composite drum inscribed with the seven billion names of Reality. It spins through seven dimensional epicentres to turn a physical object or creature into a ghost. Traditionally used to backup valuable goods in a spiritual storage format. ",
+        "weight":100,"value":"~€50k","description":"",
+        "properties":[
+            {"name":"Rebuilder","description":"Optional expansion module to reverse the process. Risk of defects. +1 sk / ~€25k."},
+            {"name":"Powered","description":"Crank & omni-battery."},
+            {"name":"Spirit body","description":"All of a character’s physical stat points are added to their mental stats. The new ghost has no ha score, all ha points are added to ka and ba. The spirit body is insubstantial, translucent, and has [+] vs physical attacks."},
+            {"name":"Spiritual decay • The spirit body loses 1 stat point per day. It requires an external source of vitality to sustain indefinitely."},
+            {"name":"Temporary spirit","description":"A creature without a ka defence switches its ha and ka scores."},
+            {"name":"Translation","description":"Takes 1 minute and 1 life per subject’s level."}]},
+    "bookselfwriting“notey”":{
+        "name":"Book, Self-Writing “Notey”",
+        "tags":["gear"],
+        "flavor":"With the decline of literacy after the Long Long Ago self-writing books called “Noteys” after the assistant daemon bundled with the plastic paper and crystal memory tablets. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Assistant daemon","description":"“Notey”, likely modelled after a Long Long Ago desktop wet wipe dispenser, helpfully offers to record speech."},
+            {"name":"Tablet","description":"Virtual pages accessible at the touch of a finger!"},
+            {"name":"Writing","description":"[+] vs forgetting stuff."}]},
     "bourgeoisblade":{
         "name":"Bourgeois Blade",
         "tags":["offensive","weapon","sword"],
@@ -281,6 +361,39 @@
             {"name":"Infamous", "description":"The target suffers [-] to social tests in the locality."},
             {"name":"Coin-marked", "description":"Surprise attacks against the target gain [+]."},
             {"name":"Single-use", "description":"Can’t be used twice."}]},
+    "bucketshovel":{
+        "name":"Bucket & Shovel",
+        "tags":["gear"],
+        "flavor":"Over-priced, but ever so useful. ",
+        "weight":20,"value":"~€2","description":"",
+        "properties":[
+            {"name":"Prospecting","description":"[+] to digging holes and ditches."}]},
+    "buoy“frederick”":{
+        "name":"Buoy “Frederick”",
+        "tags":["gear"],
+        "flavor":"Each year myriads of these buoys are churned by a seasteading liberto-fac known as “Frederick”. They float and go beep. ",
+        "weight":10,"value":"~€1","description":"",
+        "properties":[
+            {"name":"Beep","description":"An alien signal perhaps?"},
+            {"name":"Float","description":"[+] vs sinking."}]},
+    "cablebraidedtowing":{
+        "name":"Cable, Braided Towing",
+        "tags":["gear"],
+        "flavor":"Enough heavy duty golem-made metal towing cable to drag a monolith (10 sh). ",
+        "weight":100,"value":"~€2","description":"",
+        "properties":[
+            {"name":"Packing","description":"[+] vs losing packed cargo to misfortunes."}]},
+    "“caelus”atmo":{
+        "name":"“Caelus” Atmo Generator",
+        "tags":["gear"],
+        "flavor":"A semi-living forcefield medusa nested in a radiotrophic plant-fungus machine generates a synthetic atmosphere in an ovoid large enough for a family or two. The size and of the ovoid depends on external atmospheric pressure. ",
+        "weight":100,"value":"~€10k","description":"",
+        "properties":[
+            {"name":"Positive pressure","description":"[+] vs airborne toxins inside the ovoid."},
+            {"name":"Powered","description":"Needs a radiothermal barrel. This baby sucks juice."},
+            {"name":"Radiotrophic","description":"Recharges in high electro­magical radiation areas."},
+            {"name":"Semi-living","description":"Communicates with the languidly weird attitude of a badly trained artificial sentience."},
+            {"name":"Synthetic air","description":"Generates most atmospheres based on hydrogen, nitrogen, oxygen, fluorine, and chlorine. Requires external supply of carbon and other elements for other atmospheric formulations."}]},
     "califragilistic":{
         "name":"Cali Fragilistic",
         "tags":["consumable","nocive"],
@@ -300,6 +413,13 @@
         "properties":[
             {"name":"Mutagenesis", "description":"On a natural roll of 13, the target loses an action and gains a random mutation."},
             {"name":"Tentacles", "description":"On a natural roll of 7, the target suffers double damage as seven tentacles erupt from its flesh to deal 1d10 ha damage to seven adjacent targets."}]},
+    "carabinerpitonset":{
+        "name":"Carabiner & Piton Set",
+        "tags":["gear"],
+        "flavor":"Essential for turning a rope into a safe climbing rope. ",
+        "weight":10,"value":"~€1","description":"",
+        "properties":[
+            {"name":"Kit","description":"[+] to climb and rappel."}]},
     "cartelhandshake":{
         "name":"Cartel Handshake",
         "tags":["offensive","rhetoric","staunchkeeper"],
@@ -339,7 +459,8 @@
         "flavor":"Something out of a museum.",
         "stat":["ha"],"number":["6"],
         "weight":30,"value":300,
-        "description":""},"golemdriverleather jacket":{
+        "description":""},
+    "golemdriverleatherjacket":{
         "name":"Golem Driver Leather Jacket",
         "tags":["defensive","armour"],
         "flavor":"One sleeve tastefully ripped for that daring wastelander look.",
@@ -378,6 +499,17 @@
         "properties":[
             {"name":"Unarmed", "description":"Counts as an unarmed attack in physical conflicts. If the wielder’s unarmed damage is equal or greater, it instead increases damage dice one step."},
             {"name":"Universal authority", "description":"[+] to credentials with educated humans."}]},
+    "coldsleepcrystalcoffin":{
+        "name":"Cold Sleep Crystal Coffin",
+        "tags":["gear"],
+        "flavor":"A magic coffin of pan-reality extra-temporal crystal. Works as a one-way time machine. ",
+        "weight":200,"value":"~€30k","description":"",
+        "properties":[
+            {"name":"Absorbing","description":"Reduces all damage suffered by 50 points."},
+            {"name":"Generator","description":"The coffin gives off positive energy harvested from a ghostly extra-cosmic source. An omni-battery placed near an active coffin recharges in a day."},
+            {"name":"Repair","description":"Each year, the coffin removes one burden from its occupant. When no burdens remain, the coffin erases one year of aging per year, until the occupant reaches peak potential psycho-physical vigour."},
+            {"name":"Suspension","description":"The coffin’s occupant does not age."},
+            {"name":"Waking dream","description":"The occupant is aware of the world beyond the coffin as in a waking dream. They can choose to leave the coffin. Waking takes an hour for every year spent in cold sleep."}]},
     "commandingbadge":{
         "name":"Commanding Badge",
         "tags":["offensive","rhetoric","ironfist"],
@@ -388,6 +520,13 @@
         "properties":[
             {"name":"Pass", "description":"Opens doors, allows access to organization facilities."},
             {"name":"Restricted", "description":"The authority deals [+] ba damage against characters falsely claiming membership."}]},
+    "compassallfield":{
+        "name":"Compass, All-field",
+        "tags":["gear"],
+        "flavor":"A simple device for navigating by the electromagnificent fields of the world. Stories say that compasses once talked to the fast stars and shared global positions, but these weak compasses of the later days are still alright. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Kit","description":"[+] to navigate and orient."}]},
     "condenseddrama":{
         "name":"Condensed Drama",
         "tags":["consumable","nutrive"],
@@ -397,6 +536,37 @@
         "properties":[
             {"name":"Fighting fuel", "description":"User gains [+] to tests to escalate conflicts."},
             {"name":"Soul food", "description":"Vitalizes restless spirits, energy vampires, ghouls."}]},
+    "credit&statuscalculoid":{
+        "name":"Credit & Status Calculoid",
+        "tags":["gear"],
+        "flavor":"An elegant, monopoly-approved individual and corporate credit assesment daemon with symbiotic status card printer. Usually used to vet visitors to grand corpocratic evets, sometimes used by rogues to forge identities. ",
+        "weight":20,"value":"~€50k","description":"",
+        "properties":[
+            {"name":"Ba printer","description":"Takes a few minutes to churn out a sickeningly slick, corporate, triple-embossed magic card (1 sp) to open doors and convince low-level operatives. Grants +10 ba against all non-executive opponents."},
+            {"name":"Etiquette whisperer","description":"The wireless long-range earbud grants [+] to etiquette and manners tests. "},
+            {"name":"Expert system","description":"Acts as an over-eagre corporate status assessment system. Tests with +9 mod."},
+            {"name":"Personality","description":"One-dimensional with a 10,000 watt smile."},
+            {"name":"Powered","description":"Basic omni-batteries."},
+            {"name":"Restricted","description":"All calculoids are officially numbered clones of the central social status calculoid. However, corruption has ensured a number of unlicensed units have escaped into the wild."}]},
+    "“črnobel”environmentsuit":{
+        "name":"“Črnobel” Environment Suit",
+        "tags":["gear"],
+        "flavor":"The suit’s monochrome less-dimensional material protects its wearer by created an irreality barrier between them and their environment. Used by the Builder’s repair crews after the Secondary Landmass Incident. There is no secondary landmass. ",
+        "weight":20,"value":"~€500","description":"",
+        "properties":[
+            {"name":"Irreality barrier","description":"[+] vs all external damage."},
+            {"name":"Less-dimensional","description":"The wearer experiences the world as through a scanner darkly. Colours are flat, sounds are robbed of depth. [-] to perception and surprise."},
+            {"name":"Powered","description":"Omni-battery with a radiophage option."},
+            {"name":"Secured environment","description":"Wearer is immune to disease, toxins, electromagical radiation, and all other environmental threats."}]},
+    "crowbarallaccess":{
+        "name":"Crowbar, All-Access",
+        "tags":["gear"],
+        "flavor":"A rod of wondrously tough pre-created matter for opening things. ",
+        "weight":10,"value":"~€5","description":"",
+        "properties":[
+            {"name":"Club","description":"1d6 ha in a pinch."},
+            {"name":"Indestructible","description":"Very nearly."},
+            {"name":"Lever","description":"[+] to forcing things open, from doors to cans."}]},
     "crucifixbow":{
         "name":"Crucifix Bow",
         "tags":["offensive","weapon","bow"],
@@ -452,6 +622,14 @@
             {"name":"Detachment", "description":"Costs 3 charges. Struck target takes no damage and disappears into a delusory dimension for 3 rounds."},
             {"name":"Powered", "description":"3 charges. Gains 1 charge per action spent cranking."},
             {"name":"Reverie", "description":"Target may choose to lose 2 actions and gain 1d6 life instead of taking damage."}]},
+    "differentialpully":{
+        "name":"Differential Pully",
+        "tags":["gear"],
+        "flavor":"A simple machine with swing cheeks to easily thread rope. Great for lifting heavy things. Much better than a primitive block and tackle. ",
+        "weight":40,"value":"~€5","description":"",
+        "properties":[
+            {"name":"Heave-ho","description":"[+] to lifting stuff."},
+            {"name":"Strength multiplier","description":"10:1 mechanical advantage."}]},
     "dopplerpod":{
         "name":"Doppler Pod",
         "tags":["consumable","facient"],
@@ -471,6 +649,39 @@
         "properties":[
             {"name":"Disorienting", "description":"Target suffers [-] to tests that require concentration for the rest of the round."},
             {"name":"Fearsome", "description":"Target suffers [-] to morale, sanity, and fear tests for the rest of the round."}]},
+    "digitalancestorclone":{
+        "name":"Digital Ancestor Clone",
+        "tags":["gear"],
+        "flavor":"A restored bit-accurate recreation of an individual from their last visit to a Recordarium. Once, even middle-class citizens of empires such as the Popular Republic of Concerned Corporate Citizens had access to the distributed ghost-recordarium network, ensuring that everyone had 24-hour backups in the case of terminal accidents. Nowadays, only a few holy recordariums remain, their services controlled and doled out by grand memorialists. ",
+        "weight":100,"value":"~€15k","description":"",
+        "properties":[
+            {"name":"Digital cleanup","description":"The clone has none of the original’s burdens."},
+            {"name":"Independent","description":"The clone is their own person. Convincing the clone to allow an overwrite or merge with the original is very hard."},
+            {"name":"Lost memories","description":"Suffers [-] to social interactions when missing memories matter."},
+            {"name":"Near duplicate","description":"The clone’s str, agi, end, and tho match the original. Aura is 1 point lower. Charisma is rolled randomly."},
+            {"name":"New hero","description":"A player can use a clone as a new hero or extra."},
+            {"name":"Recording","description":"Costs ~€1,000. Side effects are quite rare. Honest."},
+            {"name":"Soft soul","description":"Unless the original’s soul (ka) is transferred into the clone, they suffer [-] vs ka attacks until their spiritual shell hardens. This takes 1d6* weeks."}]},
+    "disembodiedautolimb":{
+        "name":"Disembodied Auto-Limb",
+        "tags":["gear"],
+        "flavor":"An ultra-light prosthetic made of the magical “living metal” and “flesh porcelain” of the ancients. Equipped with golem servos, slipforce minidisks, and a pet-class artificial mind. Folk tales speak of ancient champions wielding dozens of such limbs to destroy whole phalanxes. ",
+        "weight":10,"value":"~€20k","description":"",
+        "properties":[
+            {"name":"Artificial pet mind","description":"The limb follows orders. Detached, it gets 1 action per round."},
+            {"name":"Independent motion","description":"The limb can levitate near its user."},
+            {"name":"Symbiotic hardpoint","description":"User imbues the limb with 1d4 life."},
+            {"name":"Upgrade","description":"User gains +1 to a random physical stat."}]},
+    "drill“trillybosk”":{
+        "name":"Drill, “Trilly-bosk”",
+        "tags":["gear"],
+        "flavor":"With anti-matter harmonic resonator for the toughest obstacles. ",
+        "weight":20,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Dour","description":"Not a joke."},
+            {"name":"Long","description":"Penetrates up to 1 cubit."},
+            {"name":"Powered","description":"Limp without juice."},
+            {"name":"Thick","description":"Goes to -11 gauge."}]},
     "duesofsacrifice":{
         "name":"Dues of Sacrifice",
         "tags":["offensive","rhetoric","leastfolk"],
@@ -646,6 +857,16 @@
         "description":"crystal-9",
         "properties":[
             {"name":"Standard units", "description":"A metre in some places, a meter in others. A yard in third places."}]},
+    "filtersymbiote“pothosphere”":{
+        "name":"Filter Symbiote “Pothosphere”",
+        "tags":["gear"],
+        "flavor":"A classic biomantic model, grown from plant and tunicate precursors. Usually worn on the head to filter toxins and particulates. ",
+        "weight":10,"value":"~€100","description":"",
+        "properties":[
+            {"name":"Air freshener","description":"[+] vs airborne pollutants and diseases."},
+            {"name":"Blood-sucker","description":"Absorbs 1 life from its host when attached."},
+            {"name":"Moist","description":"Prolonged wear may cause fungal dermatitis."},
+            {"name":"Water filtration","description":"The proboscid  pseudopod filters 1 litre per hour."}]},
     "firestarter":{
         "name":"Firestarter",
         "tags":["consumable","munition"],
@@ -665,6 +886,16 @@
             {"name":"Indiscriminate", "description":"Attacks target all creatures in the vicinity, including allies."},
             {"name":"Inflammatory", "description":"Inflammatory - On hit: flammable targets are set alight (1d6 damage per round)."},
             {"name":"Strange ammo", "description":"Strange ammo - costs 1 Supply to refill tank after each combat."}]},
+    "floationdevice“dognut”":{
+        "name":"Floation Device “Dognut”",
+        "tags":["gear"],
+        "flavor":"The classic dognut self-inflating harness is as traditional as proper boat shoes among the yacht class. An autofactory near the Dry Sea of Barcolana has been churning them out night and day for generations, its drones methodically processing the surrounding lands and expelling the last of the native Imperialés over seventy years ago. Some paralinguists suspect the name “dognut” is a mistranslation.  ",
+        "weight":10,"value":"~€100","description":"",
+        "properties":[
+            {"name":"Float","description":"[+][+] to staying afloat."},
+            {"name":"Inflated","description":"Once inflated, the dognut occupies 1 sk."},
+            {"name":"Lively deflation","description":"Takes an hour’s violent struggle or 1 life to deflate and stow the dognut."},
+            {"name":"Powered","description":"Rare variant (~€400) has flagellae to help swim [+]. In sea water, feeds on plankton. Uses omni-batteries too."}]},
     "flycactusbiscuit":{
         "name":"Fly Cactus Biscuit",
         "tags":["consumable","nutrive"],
@@ -709,6 +940,18 @@
             {"name":"Mass ejection", "description":"With a flick, the wielder can launch the nimbus at a nearby or far away [-] target."},
             {"name":"Nimbus", "description":"Wielder can spend 1 life to create a healing nimbus about 4 metres across. Every creature within the nimbus gains 1 life. The glowing effect lasts one round."},
             {"name":"Two-handed", "description":"It’s axle-sized."}]},
+    "ghostcapturepipes":{
+        "name":"Ghost Capture Pipes",
+        "tags":["gear"],
+        "flavor":"A cross between a miniature pipe organ, a set of bag pipes, and an onyx-and-brushed steel reliquary. Used to capture an adjacent creature’s spirit (ka) for “study”. Painful for the bodiless. ",
+        "weight":20,"value":"~€10k","description":"",
+        "properties":[
+            {"name":"Ghost-grinder","description":"Deals 1d20 ka damage to creatures without ha."},
+            {"name":"Mill socket","description":"Plugs into a soul mill to release captured ka."},
+            {"name":"Powered","description":"Omni-batteries or at least one pedalling servant."},
+            {"name":"Soul-sucker","description":"Target tests aura. Failure: it no longer has a ka score and suffers 1 aura damage. Additionally, it is confused [-] for one round as it figures out it can function without a soul."},
+            {"name":"Spirit storage","description":"The pipes can store up to 10 levels worth of ka."},
+            {"name":"Storage upgrade","description":"Pipes can store +10 levels of ka for +€10k."}]},
     "ghoulgarland":{
         "name":"Ghoul Garland",
         "tags":["defensive","ward"],
@@ -752,43 +995,11 @@
             {"name":"Long reload", "description":"Must take a full round to reload between shots."},
             {"name":"Sticky", "description":"On hit: target is stuck. While stuck, they have [-] to ha defense and cannot move. They must spend two actions to unstick themselves. On crit: two targets become stuck together."},
             {"name":"Strange ammo", "description":"costs 1 Supply to refill tank after each combat."}]},    
-    "go-juice":{
-        "name":"Go-Juice",
-        "tags":["consumable","nutrive"],
-        "flavor":"Fizzy metallurgic fluid from the Prison Star drinks refineries.",
-        "weight":10,"value":20,
-        "description":"tetra-pack",
-        "properties":[
-            {"name":"Energy", "description":"[+] to strenuous, adrenaline-fuelled physical tests."},
-            {"name":"Not people", "description":"After many tests, conclusively not people."},
-            {"name":"Sustenance", "description":"It has what plants and animals crave. A pack a day."},
-            {"name":"Toxic", "description":"Regular use causes neuropathy and leaf blight."}]},
-    "godsbod":{
-        "name":"Godsbod",
-        "tags":["consumable","alterative"],
-        "flavor":"Animalcular extension of the Sun God’s perfect form brings perfection to whoever partakes of it.",
-        "weight":10,"value":2500,
-        "description":"flesh tub",
-        "properties":[
-            {"name":"Addictive", "description":"Hard test. Purely psychological, but who would not want to stay forever perfect?"},
-            {"name":"Beauty", "description":"+5 charisma."},
-            {"name":"Health", "description":"Immunity to disease."},
-            {"name":"Vigor", "description":"[+] to physical tests."},
-            {"name":"Youth", "description":"Temporary."}]},
-    "goggles,protectivereflective":{
-        "name":"Goggles, Protective Reflective",
-        "tags":["gear"],
-        "flavor":"Mirrored Iksan-style goggles protect from dust, shrapnel, and gaze attacks.",
-        "weight":10,"value":5,
-        "description":"",
-        "properties":[
-            {"name":"Eye-ward", "description":"[+] vs blinding."},
-            {"name":"Un-gazed", "description":"[+] vs gaze attacks."}]},
-    "ghosttonic":{
-        "name":"Ghost Tonic",
-        "tags":["consumable","alterative"],
-        "flavor":"Eerily glowing amber spirits tasting of smoke and regret.",
-        "weight":40,"value":250,
+            "ghosttonic":{
+                "name":"Ghost Tonic",
+                "tags":["consumable","alterative"],
+                "flavor":"Eerily glowing amber spirits tasting of smoke and regret.",
+                "weight":40,"value":250,
         "description":"crate",
         "properties":[
             {"name":"Growth", "description":"A stat permanently increases by +2."},
@@ -843,8 +1054,19 @@
         "properties":[
             {"name":"Permanent", "description":"Cannot be removed from a character's inventory."},
             {"name":"Whispers", "description":"Can only affect adjacent targets."}]},
-    "godribgoo":{
-        "name":"Godrib Goo",
+    "go-juice":{
+        "name":"Go-Juice",
+        "tags":["consumable","nutrive"],
+        "flavor":"Fizzy metallurgic fluid from the Prison Star drinks refineries.",
+        "weight":10,"value":20,
+        "description":"tetra-pack",
+        "properties":[
+            {"name":"Energy", "description":"[+] to strenuous, adrenaline-fuelled physical tests."},
+            {"name":"Not people", "description":"After many tests, conclusively not people."},
+            {"name":"Sustenance", "description":"It has what plants and animals crave. A pack a day."},
+            {"name":"Toxic", "description":"Regular use causes neuropathy and leaf blight."}]},
+            "godribgoo":{
+                "name":"Godrib Goo",
         "tags":["consumable","nocive"],
         "flavor":"Some of the old gods were very large, and their bones continue to leak toxic red tar.",
         "weight":10,"value":500,
@@ -853,6 +1075,27 @@
             {"name":"Calciferous", "description":"Soft tissues to bone."},
             {"name":"Contact", "description":"Charisma test or [-] to agility and strength tests as affected area stiffens and calcifies."},
             {"name":"Ingested", "description":"3-5 days: racking pain, [-] to tests. Then: body ossifies."}]},
+            "godsbod":{
+        "name":"Godsbod",
+        "tags":["consumable","alterative"],
+        "flavor":"Animalcular extension of the Sun God’s perfect form brings perfection to whoever partakes of it.",
+        "weight":10,"value":2500,
+        "description":"flesh tub",
+        "properties":[
+            {"name":"Addictive", "description":"Hard test. Purely psychological, but who would not want to stay forever perfect?"},
+            {"name":"Beauty", "description":"+5 charisma."},
+            {"name":"Health", "description":"Immunity to disease."},
+            {"name":"Vigor", "description":"[+] to physical tests."},
+            {"name":"Youth", "description":"Temporary."}]},
+    "goggles,protectivereflective":{
+        "name":"Goggles, Protective Reflective",
+        "tags":["gear"],
+        "flavor":"Mirrored Iksan-style goggles protect from dust, shrapnel, and gaze attacks.",
+        "weight":10,"value":5,
+        "description":"",
+        "properties":[
+            {"name":"Eye-ward", "description":"[+] vs blinding."},
+            {"name":"Un-gazed", "description":"[+] vs gaze attacks."}]},
     "goldenhammer":{
         "name":"Golden Hammer",
         "tags":["offensive","weapon","hammeraxe"],
@@ -875,6 +1118,15 @@
             {"name":"Autofire", "description":"The golem full-arm can fire at a marked target as a free action once per round."},
             {"name":"Life-charged", "description":"Wielder can spend 1 action and 1 life to translate their will through the golem harness into the arrow. The bow deals an additional 1d12 damage on the next attack."},
             {"name":"Ranged", "description":"[-] vs far away targets."}]},
+    "golemautotool":{
+        "name":"Golem Autotool",
+        "tags":["gear"],
+        "flavor":"A small, specialized golem, designed to perform a single task. Common models include: 1.\tAssembler. Turns parts into wholes. Traditionally used for cabinetry. Named “Makör.” 2.\tChef. Place on a table and it’ll make a meal. It flays, it flenses, it flambés! Comes with hundreds of recipes. Named “Lekker.” 3.\tCleaner. For houses, vehicles, and industrial facilities. May fail to stop. Named “Demon.” 4.\tDrill. Bores holes up to 5 cm across. Named “Ricardo.” 5.\tStraightener. Makes bent and curled objects straight. Named “Unbender”. 6.\tUndertaker. Buries bodies and tends flowers. Unclear why originally developed. Named “First Clown.” ",
+        "weight":20,"value":"~€100","description":"",
+        "properties":[
+            {"name":"False sentience","description":"The tool only pretends to have a soul."},
+            {"name":"Powered","description":"Buy omni-batteries!"},
+            {"name":"Skilled","description":"User can perform tests even if they do not have a relevant skill. The autotool guides them."}]},
     "gongofdoom":{
         "name":"Gong of Doom",
         "tags":["offensive","charm","void"],
@@ -896,6 +1148,14 @@
         "description":"",
         "properties":[
             {"name":"Cumber", "description":"[-] to physical activity."}]},
+    "handcuffs“shackley”":{
+        "name":"Handcuffs, “Shackley”",
+        "tags":["gear"],
+        "flavor":"Biohacked cuffs descended from friendly local political peacemaking protocols. They repeat an old mantra about “Friend President” after binding their victim. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Bonds","description":"[-][-] to escape."},
+            {"name":"Shackley","description":"Won’t shut up, making them easy to track."}]},
     "happyrump®symbiotes":{
         "name":"Happy Rump® Symbiotes",
         "tags":["consumable","alterative"],
@@ -936,6 +1196,16 @@
         "properties":[
             {"name":"Et tu, Brute", "description":"Deals double damage to friends."},
             {"name":"Heart-breaking", "description":"Target becomes vulnerable to ka or ba damage for the rest of the round."}]},
+    "hatexplorerbrand":{
+        "name":"Hat, “Explorer” Brand",
+        "tags":["gear"],
+        "flavor":"Traditional ultra-wide wasteland hat. Coated in synthetic waxes, perfumes, and repellent oils. ",
+        "weight":10,"value":5,
+        "description":"",
+        "properties":[
+            {"name":"Dapper","description":"+1 ba and ka."},
+            {"name":"Rain-ward","description":"[+] to smoke in rain."},
+            {"name":"Sun-ward","description":"[+] against heat, haze blindness, and sun burn."}]},
     "hazardsuit":{
         "name":"Hazard Suit",
         "tags":["gear"],
@@ -1043,6 +1313,18 @@
         "properties":[
             {"name":"Bloody roots", "description":"Hero can spend 1d6 life to reroll a test."},
             {"name":"Rooted", "description":"+1 ha and ka defence."}]},
+    "homeostaticresetter":{
+        "name":"Homeostatic Resetter",
+        "tags":["gear"],
+        "flavor":"Elegant brass and medical rubber box with hypodermic, filtering, pumping, and cleaning systems visible through its clear neoplaz ports. It quickly scrubs and resets a patient to its baseline metabolic standard. Each scrubbing procedure targets one imbalance, removing a toxin, bacterium, virus, fungus, parasite, or other physical affliction from the target. ",
+        "weight":40,"value":"~€5k","description":"",
+        "properties":[
+            {"name":"Anti-mutant","description":"Patients with mutations: hard endurance or charisma test. Fail: lose 2d6 life and 1 mutation."},
+            {"name":"Nanogolem","description":"Uses a distributed swarm of tiny golems generated in its replicative organs."},
+            {"name":"Painful","description":"Each scrubbing costs patient 1d4* life."},
+            {"name":"Powered","description":"Consumes excess living tissue (1d4 life) to recharge itself. Some fringe cultures have taken to using it as a dieting tool."},
+            {"name":"Side effects","description":"May include hair loss, hair growth, excess mucus, pseudo-placenta, and vomiting."},
+            {"name":"Savant","description":"Comes with a rudimentary personality named something like “Chad”, “Brad”, or “Vlad”."}]},
     "homespunwisdom":{
         "name":"Homespun Wisdom",
         "tags":["offensive","rhetoric","soiltwined"],
@@ -1064,6 +1346,16 @@
             {"name":"Misty spirit hop", "description":"The journey home through the portal takes 1d4* days."},
             {"name":"Out of mind", "description":"The voyage makes the spirits fly and removes one mental burden."},
             {"name":"Whoah", "description":"The travellers arrive at their destination confused, suffering [-] to cognitive tests."}]},
+    "homewardboundportal":{
+        "name":"Homeward-Bound Portal",
+        "tags":["gear"],
+        "flavor":"Two simple folding hoops, one of solid light, the other of solid antilight. Unfolded, each hoop measures 2 cubits across. A two-directional dullway sub-dimensional passage connects the hoops, regardless of intervening distance. ",
+        "weight":20,"value":"~€100k","description":"",
+        "properties":[
+            {"name":"Closed","description":"It is impossible to exit a folded hoop."},
+            {"name":"Dullway","description":"Crawling through the passage takes 1d3* days. If multiple people are crawling through the passage, each rolls separately. Time and space work oddly in the dullway."},
+            {"name":"Recharge","description":"A night of moonlight."},
+            {"name":"Semi-paradoxic","description":"It is possible to carry one hoop into the dullway and bring it out the other end. Taking both hoops into the dullway closes all exits and creates a permanent closed dullway loop."}]},
     "horaniwarmaul":{
         "name":"Horani War Maul",
         "tags":["offensive","weapon","rod"],
@@ -1171,6 +1463,13 @@
             {"name":"Demon brand", "description":"Each time a demon, undead creature, or other chaotic horror is struck, it suffers a burden of justice. Champions of righteousness gain +1 to attack and damage for each such brand the creature bears. One brand disappears with each moonrise."},
             {"name":"Short-range", "description":"[+] vs adjacent targets, [-] vs near targets. Cannot hit faraway targets."},
             {"name":"Sin-borne", "description":"Deals minimum damage to targets without sin."}]},
+    "kerosenelamp":{
+        "name":"Kerosene Lamp",
+        "tags":["gear"],
+        "flavor":"The standard source of light for most classes of unfortunates. ",
+        "weight":10,"value":"~€1","description":"",
+        "properties":[
+            {"name":"Fuel","description":"Works best with kerosene ‘54 harvested from the sap of cyborgolem air-sucker trees."}]},
     "kilotonic":{
         "name":"Kilotonic",
         "tags":["consumable","alterative"],
@@ -1342,6 +1641,13 @@
             {"name":"Luminous", "description":"Increased damage [+] to creatures of darkness."},
             {"name":"Spirit-ward", "description":"Grants 1 ka defence."},
             {"name":"Two-handed", "description":"Left and right."}]},
+    "lunchbox“icefig9”":{
+        "name":"Lunchbox “Ice Fig.9”",
+        "tags":["gear"],
+        "flavor":"A self-cooling lunchbox. Stops food and medicines going bad.  Rumours tell of a city beyond the Mountains of the Moon whose walls are built of old lunchboxes, creating a wall of cold.  ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Void field","description":"Besides being incredibly cold, time flows 5% more slowly inside the box."}]},
     "machineaccessdeck":{
         "name":"Machine Access Deck",
         "tags":["gear"],
@@ -1360,6 +1666,16 @@
         "description":"",
         "properties":[
             {"name":"Ghost weave", "description":"All incoming ka damage is reduced [-]."}]},
+    "magicitemreprocessor":{
+        "name":"Magic Item Reprocessor",
+        "tags":["gear"],
+        "flavor":"A boxy oven-like artefact, first described in the Epic of Iron and Spoon. Turns magic items, imbued tech, and artefacts into depersonalized vital energy (life) ready for wizardly use. ",
+        "weight":20,"value":"~€10k","description":"",
+        "properties":[
+            {"name":"Danger","description":"Metal items placed inside the reprocessor will short-circuit the artefact. Please use an expansion module (see below)."},
+            {"name":"Disimbue","description":"Extracts the magic from items placed in the oven. Takes a minute per imbued life point. Unless otherwise noted: Small or weak item: 3 life. Middling or uncommon: 7 life. Rare or powerful: 11 life. Epic or unique: 17 life."},
+            {"name":"Expansion module ","description":"Cables and an iridescent “tent” to reprocess larger items. 2 st / ~€500."},
+            {"name":"Vital store","description":"Up to 20 life for paying spell prices."}]},
     "magnificentfireballpistol":{
         "name":"Magnificent Fireball Pistol",
         "tags":["offensive","weapon","pistol"],
@@ -1401,6 +1717,47 @@
         "properties":[
             {"name":"Grappling", "description":"Target is enmeshed in lively tentacles. [-] to physical tests. Strength test to break."},
             {"name":"Grabbing", "description":"Tentacles also latch onto adjacent creatures and objects. [-] to physical tests. Strength test to break or thought test to untangle."}]},
+            "mechanicalbrain":{
+                "name":"Mechanical Brain",
+        "tags":["gear"],
+        "flavor":"Can store a personality-copy. Interfaces with most golems and machines. Great for playing chess or having a synthetic friend to talk to on a floating desert island.",
+        "weight":20,"value":5000,
+        "description":"",
+        "properties":[
+            {"name":"Calculator", "description":"[+] to math tests."},
+            {"name":"Direct interface", "description":"[+] to controlling connected machines."},
+            {"name":"Memory storage", "description":"Stores data and records with only minute errors and reality breakdowns."}]},
+    "mechatronicbartender":{
+        "name":"Mechatronic Bartender",
+        "tags":["gear"],
+        "flavor":"Resembling the upper half of a premium caste servitor from the thirteenth gilded era, the mechatronic bartender creates a convivial atmosphere wherever it goes. Its built-in intoxicant rubricator turns any organic material into delicious, mostly-non-lethal, beverages. ",
+        "weight":50,"value":"~€1,000","description":"",
+        "properties":[
+            {"name":"Booze generator","description":"Comes with a formidable cyclopaedia of historic and post-historic intoxicants, including motor chung, iron velvet, seven dreams of red, and, famously, champ agony."},
+            {"name":"Cocktails","description":"[+] to negotiations."},
+            {"name":"Powered","description":"Best plug into a powerful energy source."},
+            {"name":"Seventeen personalities","description":"Complete with anecdotes, jokes, laugh tracks, and an understanding shoulder to cry on."},
+            {"name":"Therapy module","description":"[+] to healing  ka or ba injuries."}]},
+    "memoriumdecrypter":{
+        "name":"Memorium Decrypter",
+        "tags":["gear"],
+        "flavor":"Possibly related to spectrum satrap technology, the memorium decrypter looks like a fanciful fibre optic medusa’s head. It uses a variety of electromagical rays to interface directly with the reality-trace of a book or monument, translating the emotions and thoughts of its creator. ",
+        "weight":20,"value":"~€500","description":"",
+        "properties":[
+            {"name":"Authorial intent","description":"Grasp the emotions and reasons behind a monument or literary work."},
+            {"name":"Decrypter","description":"[+] to read lost languages & divine odd meanings."},
+            {"name":"Powered","description":"Vital force. 1 life."},
+            {"name":"Reality smear","description":"User’s mind is lightly scattered by the device’s rays. Moderate aura test or they gain a blocked memory burden. Until the burden is shed, the user cannot use a random skill or trait."}]},
+    "memoryseedcake":{
+        "name":"Memory Seed Cake",
+        "tags":["consumable","nutrive"],
+        "flavor":"Made with the roasted spores of memory mushrooms growing in the skulls of wizardly ancestors.",
+        "weight":10,"value":750,
+        "description":"cupcakes",
+        "properties":[
+            {"name":"Magificent", "description":"User immediately acquires a random spell nesting in their skull. It can be cast as normal, but it is extremely hard to capture and actually study."},
+            {"name":"Motor tremors", "description":"Until the spell is cast, the user suffers [-] to agility."},
+            {"name":"Sustenance", "description":"A day’s food for a true wizard. Or some kind of elf."}]},
     "mepuppet":{
         "name":"Me Puppet",
         "tags":["defensive","prestige"],
@@ -1413,26 +1770,6 @@
             {"name":"Full-golem", "description":"Can act independently of the wearer. About as smart as a domestic synth."},
             {"name":"Jealous streak", "description":"The suit’s sentience simulation routines wish they were a real person."},
             {"name":"Vital 10", "description":"Grants 10 life."}]},
-    "mechanicalbrain":{
-        "name":"Mechanical Brain",
-        "tags":["gear"],
-        "flavor":"Can store a personality-copy. Interfaces with most golems and machines. Great for playing chess or having a synthetic friend to talk to on a floating desert island.",
-        "weight":20,"value":5000,
-        "description":"",
-        "properties":[
-            {"name":"Calculator", "description":"[+] to math tests."},
-            {"name":"Direct interface", "description":"[+] to controlling connected machines."},
-            {"name":"Memory storage", "description":"Stores data and records with only minute errors and reality breakdowns."}]},
-    "memoryseedcake":{
-        "name":"Memory Seed Cake",
-        "tags":["consumable","nutrive"],
-        "flavor":"Made with the roasted spores of memory mushrooms growing in the skulls of wizardly ancestors.",
-        "weight":10,"value":750,
-        "description":"cupcakes",
-        "properties":[
-            {"name":"Magificent", "description":"User immediately acquires a random spell nesting in their skull. It can be cast as normal, but it is extremely hard to capture and actually study."},
-            {"name":"Motor tremors", "description":"Until the spell is cast, the user suffers [-] to agility."},
-            {"name":"Sustenance", "description":"A day’s food for a true wizard. Or some kind of elf."}]},
     "metapoison":{
         "name":"Metapoison",
         "tags":["consumable","nocive"],
@@ -1709,35 +2046,32 @@
             {"name":"Pressurized", "description":"Wearer is immune to the effects of abnormal pressure."},
             {"name":"Thermoregulated", "description":"Wearer is immune to the effects of abnormal temperature."},
             {"name":"Thin seal", "description":"Incoming damage breaks the suit."}]},
-    "plasmaknife":{
-        "name":"Plasma Knife",
-        "tags":["offensive","weapon","energy","knife"],
-        "flavor":"An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.",
-        "stat":["ha"],"number":["2d4"],
-        "weight":10,"value":100,
-        "description":"",
+    "penbic":{
+        "name":"Pen, “B.I.C”",
+        "tags":["gear"],
+        "flavor":"Uncounted billions of these all-surface marking pens were manufactured during the Blue Ink Catastrophe vomish eruption. Today, many Terreplastique tribes use them as crossbow bolts. ",
+        "weight":"1","value":"~€1","description":"",
         "properties":[
-            {"name":"Grievous", "description":"Ignores damage resistances."},
-            {"name":"Overcharge", "description":"With a bit of judicious hacking, the power dampers can be disabled. The blade flares out, dealing 4d4 damage, but suffering [-] to attacks. In this configuration, the plasma knife burns 3 charges per conflict."},
-            {"name":"Powered", "description":"Prefers dark crystal batteries."}]},
-    "personaegg":{
-        "name":"Persona Egg",
-        "tags":["consumable","curative"],
-        "flavor":"A jewel the size of a gecko’s egg implanted near the character’s central processing system. If their personality is changed or lost through body death or ultra-possession, the persona egg can restore it with less than 1.67% integrity loss.","value":5000,
-        "description":"chip",
-        "properties":[
+            {"name":"Ammo","description":"For crossbows."},
+            {"name":"Pen","description":"It writes things down."}]},
+            "personaegg":{
+                "name":"Persona Egg",
+                "tags":["consumable","curative"],
+                "flavor":"A jewel the size of a gecko’s egg implanted near the character’s central processing system. If their personality is changed or lost through body death or ultra-possession, the persona egg can restore it with less than 1.67% integrity loss.","value":5000,
+                "description":"chip",
+                "properties":[
             {"name":"Implant", "description":"Occupies a trait slot."},
             {"name":"Personality reset", "description":"Character restores their mental state to their manual or daily restore point. This cancels any mental burdens or mental stat changes experienced since the point was created. This also wipes any intervening memories."},
             {"name":"Restart", "description":"If the character is destroyed or personality wiped, the persona egg can rebuild a simulacrum in a clone or synthetic shell with the mental stats and memories stored at the restore point."},
             {"name":"Restore point", "description":"Set daily at sunrise. Also stores one manual restore point."}]},
-    "personalcard":{
-        "name":"Personal Card",
-        "tags":["defensive","prestige"],
-        "flavor":"Subtly off-white, tasteful thickness, even a watermark.",
-        "stat":["ba"],"number":["2"],
-        "weight":"1","value":1000,
-        "description":"",
-        "properties":[
+            "personalcard":{
+                "name":"Personal Card",
+                "tags":["defensive","prestige"],
+                "flavor":"Subtly off-white, tasteful thickness, even a watermark.",
+                "stat":["ba"],"number":["2"],
+                "weight":"1","value":1000,
+                "description":"",
+                "properties":[
             {"name":"Cut to size", "description":"Hand out for 1d8 ba damage. Double vs Street street money types."},
             {"name":"Discrete", "description":"Fits in a wallet."},
             {"name":"Pack", "description":"Of 20 in a card case."}]},
@@ -1753,23 +2087,23 @@
             {"name":"Powered", "description":"Crystal dreams."},
             {"name":"Shift", "description":"Moves 1 mental stat point."},
             {"name":"Strengthen", "description":"User gains a conviction trait that grants +3 ba and +1 ka defence."}]},
-    "petmakertmtreatdispenser":{
-        "name":"PetmakerTM Treat Dispenser",
-        "tags":["gear"],
+            "petmakertmtreatdispenser":{
+                "name":"PetmakerTM Treat Dispenser",
+                "tags":["gear"],
         "flavor":"Programmable pet treat creator with over 500 programmable volatile compounds!",
         "weight":20,"value":500,
         "description":"",
         "properties":[
             {"name":"Treat!", "description":"[+] to interactions with animals, including domestication."}]},
-    "photomeasure":{
-        "name":"Photomeasure",
-        "tags":["gear"],
-        "flavor":"Handheld multi-spectrum measuring device, accurate to 10 km (depending on atmospheric interference). Capable of recording and storing the 4-dimensional layout of a middling space in a single flashing sweep of its iridescent beams.",
-        "weight":10,"value":100,
-        "description":"",
-        "properties":[
-            {"name":"3D map", "description":"Handy in the ruins of a Purification era metro-bunker."},
-            {"name":"Tripod (optional)", "description":"Greater accuracy [+] when measuring, but needs a bit of prep. +1 stone."}]},
+            "photomeasure":{
+                "name":"Photomeasure",
+                "tags":["gear"],
+                "flavor":"Handheld multi-spectrum measuring device, accurate to 10 km (depending on atmospheric interference). Capable of recording and storing the 4-dimensional layout of a middling space in a single flashing sweep of its iridescent beams.",
+                "weight":10,"value":100,
+                "description":"",
+                "properties":[
+                    {"name":"3D map", "description":"Handy in the ruins of a Purification era metro-bunker."},
+                    {"name":"Tripod (optional)", "description":"Greater accuracy [+] when measuring, but needs a bit of prep. +1 stone."}]},
     "planeprojector":{
         "name":"Plane Projector",
         "tags":["offensive","charm","hardlight"],
@@ -1782,6 +2116,17 @@
             {"name":"Deflecting", "description":"Wielder can spend 1 action and 1 life to interrupt and deflect an inbound ranged attack."},
             {"name":"Short-range", "description":"[+] vs adjacent targets, [-] vs near targets. Cannot hit faraway targets."},
             {"name":"Vorpal", "description":"Severs or destroys an extremity on a critical hit."}]},
+    "plasmaknife":{
+        "name":"Plasma Knife",
+        "tags":["offensive","weapon","energy","knife"],
+        "flavor":"An artefact salvaged from fallen fast stars and stranded cities. Its luminous blade slices through wrought-iron like butter and sears flesh it touches.",
+        "stat":["ha"],"number":["2d4"],
+        "weight":10,"value":100,
+        "description":"",
+        "properties":[
+            {"name":"Grievous", "description":"Ignores damage resistances."},
+            {"name":"Overcharge", "description":"With a bit of judicious hacking, the power dampers can be disabled. The blade flares out, dealing 4d4 damage, but suffering [-] to attacks. In this configuration, the plasma knife burns 3 charges per conflict."},
+            {"name":"Powered", "description":"Prefers dark crystal batteries."}]},
     "pleasureportal":{
         "name":"Pleasure Portal",
         "tags":["offensive","charm","seeming"],
@@ -1804,6 +2149,22 @@
             {"name":"Canned wisdom", "description":"User spends an action consulting the plush to gain [+] on an oracle roll."},
             {"name":"Nightmare repellant", "description":"User is resistant vs the attacks of nightmares and other sleep demons while holding the plush."},
             {"name":"Soothing", "description":"Grants [+] vs fear."}]},
+    "pocketknowledgedaemon":{
+        "name":"Pocket Knowledge Daemon",
+        "tags":["gear"],
+        "flavor":"A Long Long Ago daemon trapped in a marvelous insectile shell. With lights and sounds and haptic feedback, it conveys the knowledge of the ancients. ",
+        "weight":"2","value":"~€200","description":"",
+        "properties":[
+            {"name":"Encyclopaedia","description":"Wealth of out-of-date information. [+] when analyzing artifacts and oldtech."},
+            {"name":"Friendly council","description":"Offers bottled wisdom and medical advice. [+] to recovery from all types of damage."},
+            {"name":"Listener","description":"Keeps secrets with three-factor authenticity. Great for storing passwords."}]},
+    "pocketmechanoelectrickit":{
+        "name":"Pocket mechano-electric kit",
+        "tags":["gear"],
+        "flavor":"Basic kit for hot-wiring golems, jump-starting biomech horses, and connecting devices. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Interface","description":"Necessary for fiddly work with machines and golems"}]},
     "pointyhelmet":{
         "name":"Pointy Helmet",
         "tags":["defensive","armour"],
@@ -1823,6 +2184,14 @@
             "properties":[
                 {"name":"On the hook", "description":"Target gains €100 but suffers [-] to tests vs the wielder for the rest of the conflict."},
                 {"name":"Gift", "description":"Once given, it's gone."}]},
+    "polefishing":{
+        "name":"Pole, Fishing",
+        "tags":["gear"],
+        "flavor":"A wonderfully light and flexible pole with a whizz-bang reel. ",
+        "weight":10,"value":"~€5","description":"",
+        "properties":[
+            {"name":"10 cubits","description":"30% longer than 10’."},
+            {"name":"Sporty","description":"[+] to fishing."}]},
     "polymorphicaccesscard":{
         "name":"Polymorphic Access Card",
         "tags":["gear"],
@@ -1834,6 +2203,15 @@
             {"name":"Blood screen error", "description":"Critical fail: PAC performs a 5-minute reboot."},
             {"name":"Mind-blending", "description":"Costs 1 mental point to use. The void worm node plays rough with the user’s brain."},
             {"name":"Short-term storage", "description":"Card “remembers” up to 5 locks."}]},
+    "polyopticonheadgear":{
+        "name":"Polyopticon Headgear",
+        "tags":["gear"],
+        "flavor":"A mass of synthetic eyes providing 360-degree, tetrachromatic, deep spectrum vesion. ",
+        "weight":10,"value":"~€1k","description":"",
+        "properties":[
+            {"name":"360-vision","description":"[+] vs surprise."},
+            {"name":"Deep-spectrum","description":"Wearer sees ultraviolet and infrared light."},
+            {"name":"Nauseating","description":"Wearer needs time to deal with the perspective shift."}]},
     "porcelainprincepanoply":{
         "name":"Porcelain Prince Panoply",
         "tags":["defensive","armour"],
@@ -1845,6 +2223,13 @@
             {"name":"Mobile", "description":"Despite the weight, does not impede movement."},
             {"name":"Reflective", "description":"Grants resistance to energy damage."},
             {"name":"Tinkling", "description":"Clattering plates impose [-] to stealth tests."}]},
+    "portablemicroscope":{
+        "name":"Portable Microscope",
+        "tags":["gear"],
+        "flavor":"Perfect for enjoying the wonders of the microworld. ",
+        "weight":10,"value":"~€100","description":"",
+        "properties":[
+            {"name":"Vision","description":"Reveals tiny things. [+] to relevant science tests."}]},
     "portableshadow":{
         "name":"Portable Shadow",
         "tags":["defensive","ward"],
@@ -1954,7 +2339,32 @@
         "description":"source fetich",
         "properties":[
             {"name":"Critical V", "description":"All natural d20 rolls of 1–5 are critical fails, 16–20 are critical successes."}]},
-    "saltyfountainof curses":{
+    "rollythingstm":{
+        "name":"Rolly ThingsTM",
+        "tags":["gear"],
+        "flavor":"Sturdy pouch of polyhedrons, rocks, marbles, tokens, and other rolling doodads decorated with mathemagical symbols.  ",
+        "weight":10,"value":"~€1","description":"",
+        "properties":[
+            {"name":"Meta","description":"[+] to relevant meta tests."},
+            {"name":"Rolling","description":"[+] to japes and capers."}]},
+    "rope“fiftyfeet” brand":{
+        "name":"Rope, “Fifty Feet” Brand",
+        "tags":["gear"],
+        "flavor":"The Given World’s favourite rope brand for over 500 years! Strong, tough, fray-proof, flame-proof. ",
+        "weight":10,"value":"~€5","description":"",
+        "properties":[
+            {"name":"Superlight","description":"50 metres long."},
+            {"name":"Traverse","description":"Makes crossing tall vertical obstacles feasible."}]},
+    "rrypobobblehead":{
+        "name":"RRYPO Bobble Head",
+        "tags":["gear"],
+        "flavor":"Authentic R.R.Y.P.O. brand. Made from durable, non-toxic ceramo-plastics. With its pyramid cap and tentacle face, this dash ornament makes any ride terrifying. ",
+        "weight":"1","value":"~€400","description":"",
+        "properties":[
+            {"name":"Adhesive","description":"Sticks to any surface. Pull to remove."},
+            {"name":"Terrifying","description":"All ride attacks can deal ka damage instead."},
+            {"name":"Warding","description":"Ride’s driver gains [+] vs ka attacks and spells."}]},
+    "saltyfountainofcurses":{
         "name":"Salty Fountain of Curses",
         "tags":["offensive","rhetoric","outcaste"],
         "flavor":"A terrifying vocabulary acquired from the sailors of the Circle Sea, the Golden Desert pirates, and the lime nomads of the Ultraviolet Grasslands.",
@@ -2003,6 +2413,27 @@
             {"name":"Energize", "description":"Grants 10 bonus life to golems and synthetics."},
             {"name":"Repair", "description":"Removes one burden overnight."},
             {"name":"Glitchy", "description":"Trivial thought test to avoid vome infection."}]},
+    "shamblewire":{
+        "name":"Shamblewire",
+        "tags":["consumable","curative"],
+        "flavor":"Bobbin of living wire laced with post-mortal energies.",
+        "weight":20,"value":2000,
+        "description":"steel suitcase",
+        "properties":[
+            {"name":"Glitchy", "description":"Trivial endurance test to avoid vome infection."},
+            {"name":"Post-wired", "description":"A corpse laced with the wire is reanimated. Depending on how long it has been dead, its ba (personality) may be wholly decayed."},
+            {"name":"Pre-wired", "description":"A living character laced with the wire loses 1 endurance but is immediately reanimated with 13 life when an injury kills them. They are now undead, a wire wight."},
+            {"name":"Slow decay", "description":"The wired decay ten times more slowly than normal corpses, losing 1 physical stat point or 1 charisma per week."}]},
+    "shellundeaddetector":{
+        "name":"Shell (Undead) Detector",
+        "tags":["gear"],
+        "flavor":"Ornate, shoulder-portable soul-dysfunction detector. Emits a plinking sound when it detects a shell (body with its ka-ba removed) and a low rumble for a spirit (ka-ba ghost without a body). Sages dispute how it works, but it is blinded by living, ensouled tissue—for example, it can’t spot a vampire in a skywhale’s belly. ",
+        "weight":20,"value":"~€500","description":"",
+        "properties":[
+            {"name":"Interfuzz","description":"The user can spend 1d6 life to reverse the detector’s plinks and rumbles into a blast of interfuzzy sound, which confuses nearby undead (hard aura test or lose 2 actions)."},
+            {"name":"Long-range mode","description":"Picks up signals within ~100 metres. [+] to finding hidden undead."},
+            {"name":"Powered","description":"Drinks life, 1 / charge."},
+            {"name":"Short-range mode","description":"Accurate to about 15 metres (nearby). [+] to targeting undead & vs surprise. "}]},
     "shock-sword":{
         "name":"Shock-sword",
         "tags":["offensive","weapon","energy","sword"],
@@ -2059,17 +2490,20 @@
             {"name":"Powered", "description":"6 charges. Gains 1 charge per moonrise."},
             {"name":"Six-fold", "description":"When the wand strikes a target, it paints them with a fold. The fold is an inert burden; it can be removed by a curse-breaker."},
             {"name":"Ranged", "description":"[-] vs far away targets."}]},
-    "shamblewire":{
-        "name":"Shamblewire",
-        "tags":["consumable","curative"],
-        "flavor":"Bobbin of living wire laced with post-mortal energies.",
-        "weight":20,"value":2000,
-        "description":"steel suitcase",
+    "skyhookelevatorsuit":{
+        "name":"Sky Hook Elevator Suit",
+        "tags":["gear"],
+        "flavor":"A void-capable suit equipped with a Tower of Babel class elevator force anchor. Built to access the fast stars from the surface of the given world.  ",
+        "weight":30,"value":"~€1,000","description":"",
         "properties":[
-            {"name":"Glitchy", "description":"Trivial endurance test to avoid vome infection."},
-            {"name":"Post-wired", "description":"A corpse laced with the wire is reanimated. Depending on how long it has been dead, its ba (personality) may be wholly decayed."},
-            {"name":"Pre-wired", "description":"A living character laced with the wire loses 1 endurance but is immediately reanimated with 13 life when an injury kills them. They are now undead, a wire wight."},
-            {"name":"Slow decay", "description":"The wired decay ten times more slowly than normal corpses, losing 1 physical stat point or 1 charisma per week."}]},
+            {"name":"Armoured","description":"Suit force cage grants [+] vs ha damage."},
+            {"name":"Elevation","description":"The suit’s energy wings snare the forcefield sky hooks that regularly rake the sky above the elevation pads. Once, these were well-maintained; now they are obscure and hard to find. Ascent into the lowest fast star realms takes a day. "},
+            {"name":"Glide","description":"Glides on diaphanous energy wings."},
+            {"name":"Glorious oldtech","description":"+5 ba."},
+            {"name":"Inputs","description":"Aircake."},
+            {"name":"Leap","description":"The suit’s golem limbs and force wings let the wearer jump across small trees with ease."},
+            {"name":"Powered","description":"Rechargeable omni-batteries. A day’s sunlight refills."},
+            {"name":"Void-capable","description":"Breaks down aircake and recycles water to let wearer survive in the void."}]},
     "sledgehammer":{
         "name":"Sledgehammer",
         "tags":["voyager","offensive","weapon","hammeraxe"],
@@ -2081,6 +2515,15 @@
             {"name":"Colossal", "description":"Takes two actions to attack and requires two hands to wield."},
             {"name":"Critical throw", "description":"On crit: human sized or smaller target is thrown into a nearby obstacle and knocked down."},
             {"name":"Stunning", "description":"On hit: target loses an action."}]},
+    "sleepegg":{
+        "name":"Sleep Egg",
+        "tags":["gear"],
+        "flavor":"A hardy, partly-higher dimensional larva pressed into service as a portable sleeping pod. Correctly massaged, it expands to the size of a jar large enough to fit two bodies comfortably. ",
+        "weight":10,"value":"~€400","description":"",
+        "properties":[
+            {"name":"Armoured","description":"[+][+] vs all damage while inside the egg."},
+            {"name":"Camouflaged","description":"The shell adjusts colouration to match the egg’s surroundings. [-] to spot."},
+            {"name":"Soporific pheromones","description":"[+] to sleep inside the egg."}]},
     "slowdecay":{
         "name":"Slow Decay",
         "tags":["consumable","nocive"],
@@ -2131,6 +2574,13 @@
             {"name":"Addictive", "description":"Easy test. An addict without snip & puff feels low and insecure. [-] to social tests."},
             {"name":"Euphoria", "description":"Happiness keeps terror and shame away. Resistance to ka and ba damage [-]."},
             {"name":"Hopping", "description":"User gains 2 free actions to use during the scene."}]},
+    "snorkelandmask":{
+        "name":"Snorkel and Mask",
+        "tags":["gear"],
+        "flavor":"Made from processed mycelium and translucent bio-plaz. ",
+        "weight":10,"value":"~€2","description":"",
+        "properties":[
+            {"name":"Shallow waters","description":"[+] to diving, exploring, and harpooning."}]},
     "societyofthe rightbulb":{
         "name":"Society of the Rightbulb",
         "tags":["offensive","rhetoric","uptaught"],
@@ -2141,6 +2591,13 @@
         "properties":[
             {"name":"Change of heart", "description":"If the target does not attack the wielder or their allies this round, they suffer minimum damage instead."},
             {"name":"Whispers", "description":"Can only affect adjacent targets."}]},
+    "socketedpowerimplant":{
+        "name":"Socketed Power Implant",
+        "tags":["gear"],
+        "flavor":"A bio-electric animaloid integrated with a multi-source energy converter. Used by unscrupulous warlords to free their biologicals from the need for food. ",
+        "weight":10,"value":"~€300","description":"",
+        "properties":[
+            {"name":"Nu-powered","description":"The host is now powered and derives sustenance from omni-batteries."}]},
     "solarlamp":{
         "name":"Solar Lamp",
         "tags":["gear"],
@@ -2170,6 +2627,16 @@
             {"name":"Burned", "description":"Powers a mansion or village for a year."},
             {"name":"Cast", "description":"A wizard gains bonus life equal to their maximum for spellcasting purposes only."},
             {"name":"Existential horizon", "description":"Nothing then remains of the milled soul."}]},
+    "souljuicer“allyox10k”":{
+        "name":"Soul Juicer, “Allyox 10K”",
+        "tags":["gear"],
+        "flavor":"The ad says, “In the prim future, there is only diplomacy.” In fact, the supranational wizarding corporations usually use the Allyox 10K for magitechnical espionage. It resembles a crystal face mask with a spigot. Attached to a target’s face, it liquifies their personality (ba) into a drinkable memory fluid: soul juice.  ",
+        "weight":10,"value":"~€5k","description":"",
+        "properties":[
+            {"name":"Disorienting","description":"The drained and the drunk suffer [-] to physical tests for an hour or so."},
+            {"name":"Drain","description":"Target suffers selective amnesia: -1 mental stat."},
+            {"name":"Drink","description":"User acquires a rough grasp of the target’s memories. [+] whenever this would be useful. Like with passwords."},
+            {"name":"New skill","description":"Drinking enough memories grants a new “skill” named after the source person. E.g., “Being Limoncello Stoffa”."}]},
     "soulmill":{
         "name":"Soul Mill",
         "tags":["gear"],
@@ -2266,6 +2733,13 @@
         "properties":[
             {"name":"Chilling", "description":"When used to deal ka damage, the target suffers [-] on its next test."},
             {"name":"Limited", "description":"Functions like ammo."}]},
+    "spraypaint“everglo”":{
+        "name":"Spray Paint, “Ever-Glo”",
+        "tags":["gear"],
+        "flavor":"Available in five eye-burning hues. Only slightly radioactive. Guaranteed 60-year glow! ",
+        "weight":10,"value":"~€2","description":"",
+        "properties":[
+            {"name":"Toxic","description":"Do not lick or ingest."}]},
     "statusoblong":{
         "name":"Status Oblong",
         "tags":["defensive","prestige"],
@@ -2395,6 +2869,25 @@
             {"name":"Blatant", "description":"[-] to stealth."},
             {"name":"Rhinestone memories", "description":"Can store one spell or memory in the jacket’s glittering synthetic gems."},
             {"name":"Tassels", "description":"Floopy strands confuse ghosts and vampires, imposing [-] to their tests against the wearer."}]},
+    "telepathicdrone“aristotle”":{
+        "name":"Telepathic Drone “Aristotle”",
+        "tags":["gear"],
+        "flavor":"Combines a levitating sensorium orb & HUD-vision magic helmet. ",
+        "weight":20,"value":"~€10k","description":"",
+        "properties":[
+            {"name":"Follower","description":"The orb maintains its position automatically, the wearer only needs to take action if they want to focus on a specific detail or location."},
+            {"name":"Long range","description":"The sensorioum orb can go far away and still feed sensory input to the wearer."},
+            {"name":"Nauseating","description":"Wearer needs time to deal with the perspective shift."},
+            {"name":"Third-eye","description":"Wearer gains an additional point of view."},
+            {"name":"Wondrous","description":"Helmet grants +2 ha and ba defences."}]},
+    "tentbag“northlandgoose”":{
+        "name":"Tentbag, “Northland Goose”",
+        "tags":["gear"],
+        "flavor":"Ergonomic inflatable weather­proof tent / sleeping bag combo. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Flammable","description":"Very."},
+            {"name":"Restful","description":"[+] to rest in the wilds."}]},
     "terminalproscription":{
         "name":"Terminal Proscription",
         "tags":["offensive","rhetoric","sacrality"],
@@ -2488,7 +2981,7 @@
         "properties":[
             {"name":"Armour of faith", "description":"[-] to missile damage."},
             {"name":"Goes to eleven", "description":"wearer gains [+] to one roll every time they roll 11."}]},
-    "towel,eternal":{
+    "toweleternal":{
         "name":"Towel, Eternal",
         "tags":["gear"],
         "flavor":"A magnificent towel embossed with the glyph-logo of a Long Long Ago magicorporation. Its fibres clean themselves, so the logo always looks as wonderful as when the towel was new.",
@@ -2517,6 +3010,14 @@
         "properties":[
             {"name":"Ranged", "description":"[-] vs far away targets."},
             {"name":"Transfer", "description":"One of the wielder’s burdens now also afflicts the target."}]},
+    "transfoldulatingcane":{
+        "name":"Transfoldulating Cane",
+        "tags":["gear"],
+        "flavor":"A fantastic poly-matter walking cane with six push-button transfoldulations: 1. Articulated whip (1d6 ha). 2. Comfy director’s chair. 3. Emergency hammock. 4. Mesh umbrella. 5. Self-tightening shackles. 6. Utility ladder. ",
+        "weight":10,"value":"~€80","description":"",
+        "properties":[
+            {"name":"Transfoldulate","description":"Cane unfolds and becomes something else."},
+            {"name":"Swanky","description":"Grants +2 ba."}]},
     "truerubbergloves":{
         "name":"True Rubber Gloves",
         "tags":["defensive","ward"],
@@ -2557,6 +3058,15 @@
         "properties":[
             {"name":"Command syntax", "description":"For the rest of the round, target gains [+] to its tests if it follows wielder’s instructions, [-] if it does not."},
             {"name":"Vome-breaker", "description":"Deals double damage to vomes."}]},
+    "umbrellahipolymer":{
+        "name":"Umbrella, Hi-Polymer",
+        "tags":["gear"],
+        "flavor":"Classic secret servant utility combat accessory. A traditional badge of office in the High-T. ",
+        "weight":10,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Anti-rain","description":"[+] vs air-water."},
+            {"name":"Shield","description":"+3 ha and ka when used defensively."},
+            {"name":"Stinger","description":"Deals 1d4 ha damage. Can inject poison."}]},
     "undyingdream":{
         "name":"Undying Dream",
         "tags":["offensive","charm","necrolexicon","sanatry"],
@@ -2668,7 +3178,17 @@
             {"name":"Deep cut", "description":"Crit multiplier increased by 1."},
             {"name":"Medical", "description":"[-] to damage vs allies."},
             {"name":"Sharp", "description":"Crit range increased by 1."}]},
-    "vileofblood™ [sic]":{
+    "vidyrecordereye":{
+        "name":"Vidy Recorder Eye",
+        "tags":["gear"],
+        "flavor":"A jewelled eye, like that of some gargantuan mantis shrimp. It records light from roentgen to microwave, and sound from the infrasonic rumble of an earthquake to the high song of the disembodied ultras. ",
+        "weight":"1","value":"~€400","description":"",
+        "properties":[
+            {"name":"Implantable","description":"The eye can graft itself to a warm human or post-human body. While attached, it imbues itself with 2 life."},
+            {"name":"Livestream","description":"Plugging directly into the vidy eye requires  uncomfortable neural sculpting and costs 1d4 life. "},
+            {"name":"Playback","description":"Projects recordings in a 1 cubit illusion sphere."},
+            {"name":"Powered","description":"If not grafted."}]},
+    "vileofblood™[sic]":{
         "name":"Vile of Blood™ [sic]",
         "tags":["defensive","ward"],
         "flavor":"An entropy-blocked vial of pure Original Vile blood with an automated injector. Looks like some kind of bracelet or watch. Best worn close to an artery.",
@@ -2679,6 +3199,17 @@
             {"name":"Relife", "description":"If the wearer dies, the blood is instantly injected into their system, rebooting them to a semblance of abmortality— rejuvenating them by about a decade in the process. This destroys the vile of blood™."},
             {"name":"Tracker", "description":"Tracks vital signs and location. Accessible via aether link or crystal ball (magic password: admin12345)."},
             {"name":"Watch", "description":"Current universal time."}]},
+    "voidsuit":{
+        "name":"Void Suit",
+        "tags":["gear"],
+        "flavor":"A full void suit from the Creation Era. The stuff a god would wear. ",
+        "weight":50,"value":"~€25k","description":"",
+        "properties":[
+            {"name":"Armoured","description":"Suit force cage grants [+] vs ha damage."},
+            {"name":"Defensive","description":"+5 ha and ba."},
+            {"name":"Flying","description":"Five slipforce disks for mobility in void, air, and water."},
+            {"name":"Environment","description":"Recycles air and water, generates nutrients from light. Sufficient for a week."},
+            {"name":"Suspension","description":"Preserves wearer in deep sleep for 10 years."}]},
     "voidwormtoothknife":{
         "name":"Voidworm Tooth Knife",
         "tags":["offensive","weapon","knife"],
@@ -2719,6 +3250,22 @@
         "properties":[
             {"name":"Eat", "description":"Ingests up to 7 human-sized creatures’ leavings per days."},
             {"name":"Emit", "description":"Produces a warm omni-charge pearl after ingesting 7 leavings. Each pearl has 1 charge."}]},
+    "watch“hourglass”brand":{
+        "name":"Watch, “Hourglass” Brand",
+        "tags":["gear"],
+        "flavor":"A standard timepiece ensures accurate time records are kept. ",
+        "weight":"1","value":"~€2","description":"",
+        "properties":[
+            {"name":"Civilized","description":"[+] to social tests in bureaucracies."},
+            {"name":"Time","description":"[+] to figuring out how much time has elapsed."}]},
+    "wetsuit“thebeach”std":{
+        "name":"Wetsuit, “The Beach” Std",
+        "tags":["gear"],
+        "flavor":"Perfect for staying warm in cold water or a nuclear winter. ",
+        "weight":20,"value":"~€10","description":"",
+        "properties":[
+            {"name":"Beachwear","description":"[+] on the beach."},
+            {"name":"Protective","description":"[+] vs radiation."}]},
     "wizard’stail":{
         "name":"Wizard’s Tail",
         "tags":["consumable","enhancer"],
