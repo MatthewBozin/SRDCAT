@@ -151,6 +151,15 @@ const RandomCharModal = () => {
     let armor = { name: s(armorNames), savedrank: 0, mods: [], statmods: {} };
     newchar.items.push(armor);
 
+    let consumableNames;
+    if (heroType === "voyager") {
+      consumableNames = filter("tags", "items", "consumable+voyager");
+    } else {
+      consumableNames = filter("tags", "items", "consumable");
+    }
+    let consumable = { name: s(consumableNames), savedrank: 0, mods: [], statmods: {} };
+    newchar.items.push(consumable);
+
     for (let attribute of attributes) {
       newchar[attribute] = 0;
     }
