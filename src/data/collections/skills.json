@@ -1,4 +1,13 @@
 {
+  "acedemolitionist": {
+    "name": "Ace Demolitionist",
+    "tags": ["background", "ha"],
+    "flavor": "An autonomous popular people’s collective ruled by an autocrat.",
+    "description": "Prepares artisanally controlled blasts. Sets charges. Plants mines. Rolls out of blast zones. Never looks at the explosions. Loves the smell of napalm in the morning.",
+    "ranks": [
+      "Can choose to have an explosive explode instantly instead of at the end of a round.",
+      "Gains [+] to dodge all explosives. Allies have [+] to dodge hero's thrown explosives.",
+      "Can choose to instantly succeed a test to dodge an explosive."]},
   "agriculturalistfarmer": {
     "name": "Agriculturalist Farmer",
     "tags": ["background", "ha"],
@@ -198,6 +207,16 @@
       "Weakened but unbroken. When the handyworker would be reduced to 0 life, they may instead reduce a stat by 1.",
       "Secret ways. Hero gains 1 ka defence. Once per session, they can spend 1d6 life to \"find\" a secret crawlspace left by the cosmic plumbers and duct builders. It leads somewhere nearby the hero has visited, for example, the back alley behind the county jail.",
       "Secret recipes. Hero regains life equal to their level by consuming a stone's worth of uncommon root vegetables (e.g. turnips, radishes, rutabagas, kohlrabis, ginger, or daikon)."]},
+  "hazardouswastedisposal": {
+    "name": "Hazardous Waste Disposal",
+    "tags": ["background", "ha"],
+    "flavor": "It's time to take out the trash.",
+    "description": "Handles even the toughest stains. Leaves locations in pristine condition. Specializes in:",
+    "table": ["Slaying infectious biowaste tumors","Deactivating malfunctioning biotech nanoclusters","Erasing basilisk-level lethal graffiti","Bitcrushing cognitohazardous memes","Neutralizing oldworld ad-jingle earworms","Countering online disinformation"],
+    "ranks": [
+      "[+] vs the effects of harmful substances.",
+      "Can make a difficult THO test to convert a volatile or hazardous substance into supplies.",
+      "Immune to the effects of harmful substances. [+] to waste-to-supplies conversion."]},  
   "historianofthedownfall": {
     "name": "Historian of the Downfall",
     "tags": ["adventure", "ka"],
