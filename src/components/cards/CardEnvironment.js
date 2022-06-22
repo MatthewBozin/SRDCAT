@@ -175,7 +175,7 @@ const Card = (props) => {
             )}
             {card.props !== undefined && (
               <div>
-                Prop:{" "}
+                Discovery:{" "}
                 <Table
                   table={card.props}
                   savedresult={savedresult}

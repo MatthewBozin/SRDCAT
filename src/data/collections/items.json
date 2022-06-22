@@ -902,8 +902,8 @@
         "description":"",
         "properties":[
             {"name":"Indiscriminate", "description":"Attacks target all creatures in the vicinity, including allies."},
-            {"name":"Inflammatory", "description":"Inflammatory - On hit: flammable targets are set alight (1d6 damage per round)."},
-            {"name":"Strange ammo", "description":"Strange ammo - costs 1 Supply to refill tank after each combat."}]},
+            {"name":"Inflammatory", "description":"On hit: flammable targets are set alight (1d6 damage per round)."},
+            {"name":"Strange ammo", "description":"Costs 1 Supply to refill tank after each combat."}]},
     "floationdevice“dognut”":{
         "name":"Floation Device “Dognut”",
         "tags":["gear"],

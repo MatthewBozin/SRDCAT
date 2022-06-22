@@ -48,8 +48,8 @@ const Table = (props) => {
       <button className="button clearborder" onClick={roll}>
         <D20 className="button iconsvg" />
       </button>
-      {props.type === "encounter" && <ModalTableDisplay table={props.table} mode={"encounter"}></ModalTableDisplay>}
-      {props.type !== "encounter" && <ModalTableDisplay table={props.table}></ModalTableDisplay>}
+      {props.type === "encounter" && <ModalTableDisplay table={props.table} mode={"encounter"} method={props.method}></ModalTableDisplay>}
+      {props.type !== "encounter" && <ModalTableDisplay table={props.table} method={props.method}></ModalTableDisplay>}
       {context.link !== "collections" && props.type === "encounter" &&
         <button className="button clearborder" onClick={() => {props.method(entry.creatures)}}>
           <AddCard className="button iconsvg" />

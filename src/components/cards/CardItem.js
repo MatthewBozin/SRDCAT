@@ -92,7 +92,7 @@ const CardItem = (props) => {
           <span className="row rightfloat mright8px mtop4px">
             {context.link !== "collections" &&
               props.deleteFrom === "items" &&
-              card.tags.includes("offensive") && (
+              (card.tags.includes("offensive") || card.tags.includes("explosive")) && (
                 <Attack
                   className="iconsvg"
                   onClick={() => {
@@ -245,7 +245,7 @@ const CardItem = (props) => {
                 {card.tags.includes("defensive") && (
                   <span className="orangetext">Defense: </span>
                 )}
-                {card.tags.includes("offensive") && (
+                {(card.tags.includes("offensive") || card.tags.includes("explosive")) && (
                   <span className="orangetext">Damage: </span>
                 )}
                 {card.stat && card.stat.map((eachstat, index) => {
@@ -256,7 +256,7 @@ const CardItem = (props) => {
                         card.tags.includes("defensive") && <span> and </span>}
                       {index < card.stat.length &&
                         index !== 0 &&
-                        card.tags.includes("offensive") && <span> or </span>}
+                        (card.tags.includes("offensive") || card.tags.includes("explosive")) && <span> or </span>}
                       {card.number[index]} <i>{architecture.statMasks[eachstat]}</i>
                     </span>
                   );

@@ -292,7 +292,12 @@ hr {
 
 .limitwidth {
   width: 700px;
-  max-width: 100%;
+  max-width: 31%;
+}
+
+.limitwidthworld {
+  width: 700px;
+  max-width: 31%;
 }
 
 .maxwidth {
@@ -325,6 +330,10 @@ MARGIN AND PADDING
 
 .mbottom20px {
   margin-bottom: 20px;
+}
+
+.mleft0px {
+  margin-left: 0px;
 }
 
 .mleft5px {
@@ -515,6 +524,12 @@ button:hover {
 
   .limitwidth {
     width: 97.5%;
+    max-width: 97.5%;
+  }
+
+  .limitwidthworld {
+    width: 97.5%;
+    max-width: 93.5%;
   }
 
   .navletSpan {

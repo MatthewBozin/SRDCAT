@@ -3,11 +3,14 @@ import Modal from "react-bootstrap/Modal";
 import { toggle } from "../../utils/exports.js";
 import ModalCardDisplay from "./ModalCardDisplay.js";
 import { ReactComponent as List} from "../../data/icons/list.svg";
+import { ReactComponent as AddCard} from "../../data/icons/addcard.svg";
 import HyperText from "../bits/HyperText.js";
 
 function ModalTableDisplay(props) {
   const [tableModalOpen, setTableModalOpen] = useState(false);
   const { table } = props;
+
+  console.log(props.parameter);
 
   return (
     <span>
@@ -31,6 +34,7 @@ function ModalTableDisplay(props) {
               return (
                 <div key={index}>
                   {index + 1}. {<HyperText text={entry.description} />}
+                  {props.method && <AddCard className="iconsvg" onClick={() => {props.method(entry.creatures)}}/>}
                 </div>
               );
             }
@@ -41,12 +45,14 @@ function ModalTableDisplay(props) {
                 <div key={index}>
                   {index + 1}.{" "}
                   <ModalCardDisplay entry={entry}></ModalCardDisplay>
+                  {props.method && <AddCard className="iconsvg" onClick={() => {props.method(entry)}}/>}
                 </div>
               );
             }
             return (
               <div key={index}>
                 {index + 1}. {<HyperText text={entry} />}
+                {props.method && <AddCard className="iconsvg" onClick={() => {props.method(props.parameter)}}/>}
               </div>
             );
           })}

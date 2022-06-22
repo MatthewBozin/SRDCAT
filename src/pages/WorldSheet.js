@@ -40,122 +40,125 @@ const WorldSheet = () => {
   }
   
   return (
-    <div className="charsheet">
-      <div className="outerbox limitwidth">
+    <div>
+      <div className="outerbox">
         <span className="row rightfloat mright12px">
           <SaveModal savepath={"SRDworlds"} context={"worldstate"} />
           <ExportModal context={"worldstate"} />
         </span>
         <SlotName context={"worldstate"} />
-        <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
       </div>
-      <div className="outerbox limitwidth">
-        <span>
-          <div className="mleft5px button" 
-            onClick={() =>
-              setContext(() => {
-                let newcontext = context;
-                newcontext.collections = "environments";
-                newcontext.link = "collections";
-                let final = JSON.parse(JSON.stringify(newcontext));
-                return final;
-              })
-            }>
-            ENVIRONMENT
-          </div>
-        </span>
-        <CardEnvironment
-          context={context}
-          key={0}
-          card={{ name: worldState.environment }}
-          form={"minus"}
-          placement={0}
-          deleteFrom={"environments"}
-          category={"environments"}
-        />
-      </div>
-      <div className="outerbox limitwidth">
-        <span>
-          <div className="mleft5px button" 
-            onClick={() =>
-              setContext(() => {
-                let newcontext = context;
-                newcontext.collections = "environments";
-                newcontext.link = "collections";
-                let final = JSON.parse(JSON.stringify(newcontext));
-                return final;
-              })
-            }>
-            ZONE
-          </div>
-        </span>
-        <CardEnvironment
-          key={0}
-          card={{ name: worldState.zone }}
-          form={"minus"}
-          placement={0}
-          deleteFrom={"zones"}
-          category={"zones"}
-        />
-      </div>
-      {/* <div className="outerbox limitwidth">
-        {typeof worldState.scene === "string" && (
-          <div>
-            <div>Current Scene:</div>
-            <CardScene
-              context={context}
-              key={0}
-              card={{ name: worldState.scene }}
-              form={"minus"}
-              placement={0}
-              deleteFrom={"scenes"}
-              category={"scenes"}
-            />
-            <div
+      <Stats stats={["supply", "disruption", "knowledge"]} name={"RESOURCES"} />
+      <div className="row mleft0px">
+        <div className="outerbox limitwidthworld">
+          <span>
+            <div className="mleft5px button" 
               onClick={() =>
                 setContext(() => {
                   let newcontext = context;
-                  newcontext.collections = "scenes";
+                  newcontext.collections = "environments";
                   newcontext.link = "collections";
                   let final = JSON.parse(JSON.stringify(newcontext));
                   return final;
                 })
-              }
-              className="button bordered"
-              to="/"
-            >
-              Change Scene
-            </div>
-          </div>
-        )}
-        {worldState.scene && (
-            <Scene />
-        )}
-      </div> */}
-      <div className="outerbox">
-        <div className="row mleft5px fullwidth">
-          <span>
-            <div className="row mleft5px button">
-              ENCOUNTER
+              }>
+              ENVIRONMENT
             </div>
           </span>
+          <CardEnvironment
+            context={context}
+            key={0}
+            card={{ name: worldState.environment }}
+            form={"minus"}
+            placement={0}
+            deleteFrom={"environments"}
+            category={"environments"}
+          />
         </div>
-        <CardList
-          context={"worldstate"}
-          content={worldState.creatures}
-          form={"minus"}
-          deleteFrom={"creatures"}
-          category={"creatures"}
-          mode={"worldstate"}
-        />
-        <CardList
-          context={"worldstate"}
-          content={worldState.props}
-          form={"minus"}
-          deleteFrom={"props"}
-          category={"props"}
-          mode={"worldstate"}
-        />
+        <div className="outerbox limitwidthworld">
+          <span>
+            <div className="mleft5px button" 
+              onClick={() =>
+                setContext(() => {
+                  let newcontext = context;
+                  newcontext.collections = "environments";
+                  newcontext.link = "collections";
+                  let final = JSON.parse(JSON.stringify(newcontext));
+                  return final;
+                })
+              }>
+              ZONE
+            </div>
+          </span>
+          <CardEnvironment
+            key={0}
+            card={{ name: worldState.zone }}
+            form={"minus"}
+            placement={0}
+            deleteFrom={"zones"}
+            category={"zones"}
+          />
+        </div>
+      
+        {/* <div className="outerbox limitwidthworld">
+          {typeof worldState.scene === "string" && (
+            <div>
+              <div>Current Scene:</div>
+              <CardScene
+                context={context}
+                key={0}
+                card={{ name: worldState.scene }}
+                form={"minus"}
+                placement={0}
+                deleteFrom={"scenes"}
+                category={"scenes"}
+              />
+              <div
+                onClick={() =>
+                  setContext(() => {
+                    let newcontext = context;
+                    newcontext.collections = "scenes";
+                    newcontext.link = "collections";
+                    let final = JSON.parse(JSON.stringify(newcontext));
+                    return final;
+                  })
+                }
+                className="button bordered"
+                to="/"
+              >
+                Change Scene
+              </div>
+            </div>
+          )}
+          {worldState.scene && (
+              <Scene />
+          )}
+        </div> */}
+        <div className="outerbox limitwidthworld">
+          <div className="row mleft5px fullwidth">
+            <span>
+              <div className="row mleft5px button">
+                ENCOUNTER
+              </div>
+            </span>
+          </div>
+          <CardList
+            context={"worldstate"}
+            content={worldState.creatures}
+            form={"minus"}
+            deleteFrom={"creatures"}
+            category={"creatures"}
+            mode={"worldstate"}
+          />
+          <CardList
+            context={"worldstate"}
+            content={worldState.props}
+            form={"minus"}
+            deleteFrom={"props"}
+            category={"props"}
+            mode={"worldstate"}
+          />
+        </div>
       </div>
     </div>
   );
