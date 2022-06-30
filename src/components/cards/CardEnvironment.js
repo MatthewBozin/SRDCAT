@@ -192,6 +192,14 @@ const Card = (props) => {
                 <ModalConnection connections={card.connections}></ModalConnection>
               </div>
             )}
+            {card.actions !== undefined && (
+              <div>
+                {card.actions.map((action, index) => {
+                  return <NameValuePair name={action.name} value={action.description} key={index} />;
+                })}
+                <hr></hr>
+              </div>
+            )}
           </span>
         )}
       </div>

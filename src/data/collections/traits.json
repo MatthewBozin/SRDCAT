@@ -25,7 +25,7 @@
       "+2 agility or hero gains an additional action."]},
   "alwaysready": {
     "name": "Always Ready",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "The first few seconds after entering the portal are the most critical.",
     "ranks": [
       "[+] to initiative rolls. 2-in-6 chance to not be surprised.",
@@ -138,6 +138,16 @@
       "Hero gains 1 charisma (maximum +6). Once per week, they can receive a mysterious package, no larger than a small coffin, containing a non-magical machine or item of their choice.",
       "Hero gains 1 ba defence. Once per day, hero receives guidance via a deep implant. Either [+] on their next test or a true answer (the player may simply narrate something they “know”, subject to the referee’s soft veto).",
       "When a hero would die, they instead find themselves awake and unable to move in a strange coccoon, with shadowy shapes talking about “preparing the backup”. Next thing they know, they’re back in their bed missing some memories (hero permanently loses 1 skill)."]},
+  "biolichdom": {
+    "name": "Biolichdom",
+    "tags": ["mutation", "ha"],
+    "flavor": "Powered by the fires of primordial life.",
+    "description": "Whenever the bearer would die, they revive and rank up this mutation.",
+    "ranks": [
+      "Bearer’s eyes and veins glow green. ",
+      "END reduced permanently by 1 as their genetic code strains.",
+      "END reduced permanently by 1. [-] to resist biological and mutation effects as memories of ancient mutations surface.",
+      "Memories of previous bioliches break free of nucleic bonds and run freely across the bearer’s genes. Bearer’s body is completely destroyed, melting into a pile of chaotic, protoplasmic ooze. The *items.prophylactery* gleams within, seeking a new bearer."]},
   "bloodclad": {
     "name": "Bloodclad",
     "tags": ["trait", "ha", "combat"],
@@ -173,7 +183,7 @@
       "Increase strength or endurance by 1. May use their strength or endurance stat for ka defences."]},
   "bornsurvivor": {
     "name": "Born Survivor",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "",
     "ranks": [
       "If hero would be reduced to 0 life, instead they may spend a hero die and be reduced to 1 life instead.",
@@ -216,7 +226,7 @@
       "Conduit grows. Damage increases two more steps (e.g. 1d6 to 1d12)."]},
   "choiceconsumer": {
     "name": "Choice Consumer",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "",
     "ranks": [
       "When you use a consumable or supply, there is a 1-in-6 chance it's not consumed.",
@@ -256,9 +266,18 @@
       "When the hero sees a spell cast, they may make a moderate aura test to see if they grab an echo of the spell in their ego-matrix (inventory). They can cast each echo once. The spell price must still be paid.",
       "Spell echo prices are halved.",
       "It is now an easy test to capture spell echoes."]},
+  "crawlingworldsblessing": {
+    "name": "Crawling World's Blessing",
+    "tags": ["voyager","trait"],
+    "flavor": "One of many. Many in one.",
+    "description": "Every cell becomes imbued with its own will. The hero ceases to be a being and becomes a decentralized collection of cells.",
+    "ranks": [
+      "It becomes difficult for the hero to refer to themselves as a whole.",
+      "Over the course of ten minutes, the hero can meld their form into any conceivable shape, like putty.",
+      "Hero can detach their head and limbs at will and have them function independently."]},
   "crawlspacer": {
     "name": "Crawlspacer",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "Adapted to life on space-stations. Adept at functioning in tightly cramped environments.",
     "ranks": [
       "No penalties to tests for being in constricting environments.",
@@ -315,7 +334,7 @@
       "Hero can microdose poisons and meds, using them to provide resistance to similar poisons, vaccinating against diseases, and doubling the effects of potions."]},
   "doublemajor": {
     "name": "Double Major",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "",
     "ranks": [
       "This trait can only be acquired through character generation. Choose a skill and replace this trait with it."]},
@@ -898,7 +917,7 @@
       "Gains [+] to balance competing claims and pass legal or moral judgements."]},
   "petowner": {
     "name": "Pet Owner",
-    "tags": ["voyager", "trait", "ba"],
+    "tags": ["voyager", "trait", "ba","starter"],
     "flavor": "Bonded with a lovable companion.",
     "ranks": [
       "This trait can only be acquired through character generation. Remove this trait and gain a random pet."]},
@@ -980,7 +999,7 @@
       "Hero becomes a protean thing of strange organelles and fluid body plan."]},
   "protowizard": {
     "name": "Proto-Wizard",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "",
     "ranks": [
       "This trait can only be acquired through character generation. Randomly select a spell and replace this trait with it."]},
@@ -1152,7 +1171,7 @@
       "Increases to 1d8 damage. In medical settings hero's touch gives [+] or [-]; restarting stopped hearts, improving muscle tone, reducing viral replication."]},
   "specialization": {
     "name": "Specialization",
-    "tags": ["voyager","trait"],
+    "tags": ["voyager","trait","starter"],
     "flavor": "",
     "ranks": [
       "This trait can only be acquired through character generation. Remove this trait and rank up a skill."]},

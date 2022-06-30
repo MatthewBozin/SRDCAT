@@ -5,22 +5,6 @@
     "description": "Found in caves.",
     "properties": [
       {"name": "Cover","description": "[-] to ranged attacks targeting someone hiding behind it."}]},
-  "arcanophagebacteria": {
-    "name": "Arcanophage Bacteria",
-    "tags": ["resource", "biological", "magical", "voyager"],
-    "flavor": "",
-    "description": "",
-    "actions": [
-      {"name": "Consume",
-        "options": [
-          {"name": "Arcane symbiosis","description": "Gain the *traits.arcanophagesymbiosis* mutation."},
-          {"name": "Ingest","description": "Gain resistance to magical effects for the rest of the session."}]},
-      {"name": "Craft",
-        "options": [
-          {"name": "Coat item","description": "Item loses all magical properties for a session."}]},
-      {"name": "Cultivate",
-        "options": [
-          {"name": "Spell Siphon","description": "Whenever a hero casts a spell with total magic cost over 50, a new colony of arcanophage bacteria buds."}]}]},
   "biotechsarcophagus": {
     "name": "Biotech Sarcophagus",
     "tags": ["discovery", "archaeological", "voyager"],
@@ -63,7 +47,7 @@
       {"name": "Disturb",
         "options": [
           {"name": "Step through","description": "The wards flicker and disappear. A rumbling begins in the distance. A swarm of *creatures.lithoformnematodes* will arrive in 1 turn."},
-          {"name": "Take a sample","description": "Easy AGI test + medium THO test: gain a sample of *props.arcanophagebacteria*."}]}]},
+          {"name": "Take a sample","description": "Easy AGI test + medium THO test: gain a sample of *items.arcanophagebacteria*."}]}]},
   "humanoidstatues": {
     "name": "Humanoid Statues",
     "tags": ["discovery", "medical", "voyager"],
@@ -94,8 +78,8 @@
           {"name": "Add some Blood","description": "-1d6 life. Gain 3 knowledge. Bubble becomes a *creatures.roamingmicrobiome* and attacks."}]},
       {"name": "Harvest",
         "options": [
-          {"name": "Take a Sample","description": "Easy AGI test: gain *props.rawstemcells*. On failure: +1 disruption."},
-          {"name": "Take it All","description": "+1d3 disruption. Gain 2 *props.rawstemcells*. The microbiome is destroyed."}]}]},
+          {"name": "Take a Sample","description": "Easy AGI test: gain *items.rawstemcells*. On failure: +1 disruption."},
+          {"name": "Take it All","description": "+1d3 disruption. Gain 2 *items.rawstemcells*. The microbiome is destroyed."}]}]},
   "oilvein": {
     "name": "Oil Vein",
     "tags": ["discovery", "geological", "voyager"],
@@ -108,43 +92,6 @@
           {"name": "Third success","description": "The nanites appear to devour iron and other metals at a rapid rate in order to reproduce and self-sustain."}]},
       {"name": "Harvest",
         "options": [
-          {"name": "Take a sample","description": "Easy AGI test: gain *props.sableoil*. On failure: +1 disruption."},
-          {"name": "","description": ""}]}]},
-  "rawstemcells": {
-    "name": "Raw Stem Cells",
-    "tags": ["resource", "biological", "voyager"],
-    "flavor": "A seething mass of pink slime.",
-    "description": "The building blocks of biological systems. Has a number of healing and mutating properties.",
-    "actions": [
-      {"name": "Consume",
-        "options": [
-          {"name": "Biotherapy","description": "Remove a physical burden."},
-          {"name": "Genetic inquest","description": "Swap a mutation for free."},
-          {"name": "Ingest","description": "Rapid cellular reconstruction heals 3d6 life."}]},
-      {"name": "Craft",
-        "options": [
-          {"name": "Forge","description": "Forge: give an offensive item *modifiers.geneslicer*."}]},
-      {"name": "Cultivate",
-        "options": [
-          {"name": "Bleak Harvest","description": "Liquefy a sentient creature into raw stem cells. Sentient Safety and Morality Protocols forbid this within OBELISK."}]}]},
-  "sableoil": {
-    "name": "Sable Oil",
-    "tags": ["resource", "technological", "voyager"],
-    "flavor": "Dense black metallic oil that ripples and flows of its own volition.",
-    "description": "Self-replicating liquid nanites left over from a failed attempt to colonize the planet. A group of druidic eco-hackers rewrote the nanites' composite crowdcode to defend the planet's ecosystem rather than consume it.",
-    "actions": [
-      {"name": "Persuade",
-        "options": [
-          {"name": "Hack its behavior module","description": "Difficult THO test."},
-          {"name": "Feed it","description": "Consume one metal item."}]},
-      {"name": "Craft",
-        "options": [
-          {"name": "Forge","description": "Forge: give an item *modifiers.selfrepairing*."}]},
-      {"name": "Consume",
-        "options": [
-          {"name": "Blood Synthesis","description": "The Oil eagerly attaches itself to the iron in your blood. Gain [+] to incoming healing for a session."}]},
-      {"name": "Cultivate",
-        "options": [
-          {"name": "Metal Mitosis","description": "Feed the oil a metal item of $200 or more and it will duplicate."}]}]
-  }
+          {"name": "Take a sample","description": "Easy AGI test: gain *items.sableoil*. On failure: +1 disruption."},
+          {"name": "","description": ""}]}]}
 }

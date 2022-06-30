@@ -4,20 +4,27 @@
     "tags": ["voyager"],
     "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it",
     "description": "actual description of the zone",
+    "travel": [],
     "conditions": [],
     "encounters": [
       {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]},
       {"description": "A *creatures.roamingmicrobiome* rolls down the cliffside.", "creatures": ["roamingmicrobiome"]}
     ],
-    "events": [
-      "The research goes as planned.",
-      "Everything goes as you hoped.",
-      "Nothing happens.",
-      "A breakthrough! [+] to next test.",
-      "A minor discovery! +1 knowledge.",
-      "Extra efficiency! +1 supplies.",
-      "Slip and release chemicals into the environment. +1 disruption.",
-      "Get distracted. [-] to next test."],
+    "props": [
+      { "name": "microbiomebubble", "display": "Microbiome Bubble", "category": "props" },
+      { "name": "oilvein", "display": "Oil Vein", "category": "props" }
+    ]
+  },
+  "hallofthepods": {
+    "name": "Hall of the Pods",
+    "tags": ["voyager"],
+    "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it",
+    "description": "actual description of the zone",
+    "travel": [],
+    "conditions": [],
+    "encounters": [
+      {"description": "With a deep bass rumble, a swarm of *creatures.lithoformnematodes* squidges from a stone wall.", "creatures": ["lithoformnematodes"]}
+    ],
     "props": [
       { "name": "microbiomebubble", "display": "Microbiome Bubble", "category": "props" },
       { "name": "oilvein", "display": "Oil Vein", "category": "props" }
@@ -28,20 +35,12 @@
     "tags": ["voyager"],
     "flavor": "read aloud text to read to the players when they uncover it and are about to travel to it/ or text upon exiting the portal",
     "description": "Basalt tomb shaped by swarms of reprogrammed stone-regurgitating nematodes. Contains the bio-uplifted remains of legendary eco-hacking liches from ages past.",
+    "travel": [],
     "conditions": [],
     "encounters": [
       {"description": "With a deep bass rumble, a swarm of *creatures.lithoformnematodes* squidges from a stone wall.", "creatures": ["lithoformnematodes"]},
       {"description": "The time has come. The sarcophagus opens, and the *creatures.mantidbiolich* emerges to face the enemies of their people once more.", "creatures": ["mantidbiolich"]}
     ],
-    "events": [
-      "The research goes as planned.",
-      "Everything goes as you hoped.",
-      "Nothing happens.",
-      "A breakthrough! [+] to next test.",
-      "A minor discovery! +1 knowledge.",
-      "Extra efficiency! +1 supplies.",
-      "Slip and release chemicals into the environment. +1 disruption.",
-      "Get distracted. [-] to next test."],
     "props": [
       { "name": "biotechsarcophagus", "display": "Biotech Sarcophagus", "category": "props" },
       { "name": "druidicbasrelief", "display": "Druidic Bas Relief", "category": "props" },

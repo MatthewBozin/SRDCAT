@@ -1,16 +1,18 @@
 {
-  "tidepools": {
-    "name": "Tide Pools",
+  "crawlingcoast": {
+    "name": "Crawling Coast",
     "tags": ["voyager"],
     "flavor": "Exhibits high quantities of hydrogen and oxygen. Anomalous biosignatures detected.",
-    "description": "actual description of the environment",
+    "description": "Stepping through the portal, you squint your eyes, blinded for a moment by sun-on-sand. The wind is cold and humid. A wave crashes against the blackened rocks and you are blanketed for a moment by sea spray. You look to the horizon, to landforms that melt and twist slowly and deliberately like a distant storm. Even the ground beneath your feet moves, so slowly that you could scarcely notice it. Two dim suns glare down through sea mist. You have a slow certainty that you are being observed.",
     "conditions": [
       {"name": "Rising Tides", "description": "At 10 disruption, the tide is waist deep: AGI tests have [-], STR tests to lift or carry have [+]."},
       {"name": "Sensitive Ecosphere", "description": "Adding a new substance, or leaving an item in the ecosphere adds +1 disruption."}],
     "encounters": [
-      {"description": "A concrete seagull clambers into view.", "creatures": ["concreteseagull"]},
-      {"description": "Spot a sand octopus hiding in a crevice.", "creatures": ["sandoctopus"]},
-      {"description": "A swarm of jumping crabs gathers.", "creatures": ["jumpingcrab","jumpingcrab","jumpingcrab"]}],
+      {"description": "A *creatures.sableoilblob* oozes from a crevice.", "creatures": ["sableoilblob"]},
+      {"description": "A *creatures.roamingmicrobiome* and a *creatures.sableoilblob* fighting each other in an oozy battle for territorial supremacy.", "creatures": ["roamingmicrobiome","sableoilblob"]},
+      {"description": "A dying *creatures.krakenautofac* beached on the shore, bleeding out 1d3 *creatures.sableoilblob*s.", "creatures": ["sableoilblob","sableoilblob","sableoilblob"]},
+      {"description": "A terrible rending and rumbling from below. The water runs dark with oil. A smell of burning plastic and vaporized heavy metals runs on the breeze. A *creatures.krakenautofac* breaches the surface, searching for threats.", "creatures": ["krakenautofac"]},
+      {"description": "A *creatures.roamingmicrobiome* rolls down the cliffside.", "creatures": ["roamingmicrobiome"]}],
     "events": [
       "Waves lap peacefully at the rocky shore.", 
       "Two suns peek through the clouds briefly, reflected on the water's surface.",

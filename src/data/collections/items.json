@@ -94,7 +94,7 @@
         "name":"Aleph, An",
         "tags":["gear"],
         "flavor":"Small iridescent sphere of almost unbearable brilliance. Reveals all space, actual and undiminished.",
-        "weight":"1","value":99000,"description":"",
+        "weight":1,"value":99000,"description":"",
         "properties":[
             {"name":"Attractive","description":"All who see an aleph make a very hard charisma test or gaze upon the aleph for a turn."},
             {"name":"Distracting","description":"Gazing upon an aleph imposes [-] to other tasks."},
@@ -139,6 +139,17 @@
         "description":"ornate diffuser",
         "properties":[
             {"name":"Passing", "description":"[+] to looking dead."}]},
+    "arcanophagebacteria": {
+        "name": "Arcanophage Bacteria",
+        "tags": ["resource", "biological", "magical", "voyager"],
+        "flavor": "",
+        "weight":1,"value":300,
+        "description": "",
+        "actions": [
+            {"name": "Arcane symbiosis","description": "Gain the *traits.arcanophagesymbiosis* mutation."},
+            {"name": "Coat item","description": "Item loses all magical properties for a session."},
+            {"name": "Cultivate","description": "Whenever a hero casts a spell with total magic cost over 50, a new colony of arcanophage bacteria buds."},
+            {"name": "Ingest","description": "Gain resistance to magical effects for the rest of the session."}]},
     "archmage’shidesuit":{
         "name":"Archmage’s Hide Suit",
         "tags":["defensive","ward"],
@@ -216,7 +227,7 @@
         "tags":["offensive","rhetoric","unfettered"],
         "flavor":"It looked like they were friends.",
         "stat":["ba"],"number":["1d8"],
-        "weight":"1","value":10,
+        "weight":1,"value":10,
         "description":"",
         "properties":[
             {"name":"Poisonous challenge", "description":"Target can gain [+] to their next test at the cost of suffering damage again."},
@@ -515,7 +526,7 @@
         "tags":["offensive","rhetoric","ironfist"],
         "flavor":"Proving membership in an authority organization.",
         "stat":["ba"],"number":["1d4"],
-        "weight":"1","value":1,
+        "weight":1,"value":1,
         "description":"",
         "properties":[
             {"name":"Pass", "description":"Opens doors, allows access to organization facilities."},
@@ -604,7 +615,7 @@
             {"name":"Lunar shoemaker", "description":"[-] to all damage in moonlight."}]},
     "degreepostgraduate":{
         "name":"Degree, Postgraduate",
-        "tags":["voyager","defensive","prestige"],
+        "tags":["voyager","defensive","prestige","starter"],
         "flavor":"Awarded with distinction by the OBELISK University subconscious graduate program.",
         "stat":["ba"],"number":["4"],
         "weight":1,"value":0,
@@ -613,7 +624,7 @@
             {"name":"Expertise", "description":"Hero can gain [+] to a test involving the skill, but if they fail, they take 1d6 humiliation damage."}]},
     "dehydratedskill":{
         "name":"Dehydrated Skill",
-        "tags":["consumable","enhancer","voyager"],
+        "tags":["consumable","enhancer","voyager","starter"],
         "flavor":"Just add water.",
         "weight":1,"value":500,
         "description":"Jerky chunks. (try not to examine too closely)",
@@ -701,7 +712,7 @@
             {"name":"Prophecy's armour", "description":"+2 ha defence."}]},
     "dynamitebundle":{
         "name":"Dynamite Bundle",
-        "tags":["consumable","explosive","voyager"],
+        "tags":["consumable","explosive","voyager","starter"],
         "flavor":"“We're doing this the old fashioned way!” -Macready, crew demolitionist",
         "stat":["ha"],"number":["6d6"],
         "weight":10,"value":150,
@@ -713,7 +724,7 @@
         "name":"Ebéteen Opium",
         "tags":["consumable","curative"],
         "flavor":"Reddish tarry balls rendered from the sweat of the Fleshgod.",
-        "weight":"1","value":100,
+        "weight":1,"value":100,
         "description":"gilded package",
         "properties":[
             {"name":"Addictive", "description":"Easy test. A worshipper without their god’s own medicine experiences withdrawal. For weeks, they suffer [-] to all tests and lose 2 life per sunrise."},
@@ -895,7 +906,7 @@
             {"name":"Incendiary", "description":"Target catches fire. Suffers 1d6 damage per round. Agility test to douse."}]},
     "flamesprayer":{
         "name":"Flamesprayer",
-        "tags":["voyager","offensive","weapon","biggun"],
+        "tags":["voyager","offensive","weapon","biggun","starter"],
         "flavor":"A makeshift contraption that spews forth flammable liquids.",
         "stat":["ha"],"number":["1d6*"],
         "weight":30,"value":20,
@@ -1004,7 +1015,7 @@
             {"name":"Ka-shell", "description":"Grants +1 ka."}]},
     "globlobber":{
         "name":"Glob Lobber",
-        "tags":["voyager","offensive","weapon","rifle"],
+        "tags":["voyager","offensive","weapon","rifle","starter"],
         "flavor":"Fires globs of rapidly expanding glue.",
         "stat":["ha"],"number":["1d2"],
         "weight":20,"value":60,
@@ -1168,7 +1179,7 @@
             {"name":"Cumber", "description":"[-] to physical activity."}]},
     "grenadeflashbang":{
         "name":"Grenade, Flashbang",
-        "tags":["consumable","explosive","voyager"],
+        "tags":["consumable","explosive","voyager","starter"],
         "flavor":"What it says on the tin.",
         "stat":["ba"],"number":["1d6"],
         "weight":10,"value":80,
@@ -1178,7 +1189,7 @@
             {"name":"Grenade", "description":"Explodes at the end of the round. Affects all in the vicinity. Creatures can hold an action in order to dodge the blast by succeeding a hard AGI/ha test."}]},
     "grenadesoap":{
         "name":"Grenade, Soap",
-        "tags":["consumable","explosive","voyager"],
+        "tags":["consumable","explosive","voyager","starter"],
         "flavor":"For those extra big messes.",
         "stat":["ba"],"number":["1d6"],
         "weight":10,"value":80,
@@ -1218,7 +1229,7 @@
             {"name":"Vorpal edge", "description":"Used as an improvised melee weapon deals 1d4 damage. Severs extremity on critical hit."}]},
     "harpoongun":{
         "name":"Harpoon Gun",
-        "tags":["voyager","offensive","weapon","rifle"],
+        "tags":["voyager","offensive","weapon","rifle","starter"],
         "flavor":"Reel in the test subjects.",
         "stat":["ha"],"number":["1d12"],
         "weight":30,"value":40,
@@ -1295,7 +1306,7 @@
             {"name":"Palliative", "description":"Character ignores a burden from venom, bugs, parasites, diseases, rashes, and blisters."}]},
     "herosandwich":{
         "name":"Hero Sandwich",
-        "tags":["consumable","nutrive","voyager"],
+        "tags":["consumable","nutrive","voyager","starter"],
         "flavor":"Legendary.",
         "weight":1,"value":50,
         "description":"",
@@ -1592,7 +1603,7 @@
             {"name":"Lifesteal", "description":"User gains damage dealt. Vampires gain double. Cannot exceed normal life total."}]},
     "lifterskeleframe":{
         "name":"Lifter Skeleframe",
-        "tags":["voyager","defensive","armour"],
+        "tags":["voyager","defensive","armour","starter"],
         "flavor":"Basic exoskeleton for loading and unloading cargo.",
         "stat":["ha"],"number":["5"],
         "weight":50,"value":200,
@@ -1840,7 +1851,7 @@
             {"name":"Translation shock", "description":"Moderate thought test or the recipient of the new attribute suffers a burden of confusion ([-] to thought tests for a week or so)."}]},
     "mininglaser":{
         "name":"Mining Laser",
-        "tags":["voyager","offensive","weapon","energy"],
+        "tags":["voyager","offensive","weapon","energy","starter"],
         "flavor":"Great for melting rock, steel, and flesh.",
         "stat":["ha"],"number":["1d4"],
         "weight":20,"value":100,
@@ -1902,7 +1913,7 @@
             {"name":"Two-handed", "description":"Requires two hands to operate the knobs and levers."}]},
     "nailgun":{
         "name":"Nailgun",
-        "tags":["voyager","offensive","weapon","pistol"],
+        "tags":["voyager","offensive","weapon","pistol","starter"],
         "flavor":"Rat-tat-tat-tat-click.",
         "stat":["ha"],"number":["1d4"],
         "weight":2,"value":20,
@@ -2075,7 +2086,7 @@
             {"name":"Synth-loved", "description":"Can serve as a battery substitute."}]},
     "originalmagicola":{
         "name":"Original Magicola",
-        "tags":["consumable","nutrive","voyager"],
+        "tags":["consumable","nutrive","voyager","starter"],
         "flavor":"“Bold new packaging, same great taste!”",
         "weight":1,"value":5,
         "description":"can",
@@ -2092,7 +2103,7 @@
             {"name":"Gift", "description":"Once given, it's gone."}]},
     "patchworkvacsuit":{
         "name":"Patchwork Vacsuit",
-        "tags":["voyager","defensive","armour"],
+        "tags":["voyager","defensive","armour","starter"],
         "flavor":"Caution: check vacsuits for holes, tears, and faulty patches before spacewalk.",
         "stat":["ha", "ka"],"number":["4", "2"],
         "weight":30,"value":100,
@@ -2106,7 +2117,7 @@
         "name":"Pen, “B.I.C”",
         "tags":["gear"],
         "flavor":"Uncounted billions of these all-surface marking pens were manufactured during the Blue Ink Catastrophe vomish eruption. Today, many Terreplastique tribes use them as crossbow bolts.",
-        "weight":"1","value":1,"description":"",
+        "weight":1,"value":1,"description":"",
         "properties":[
             {"name":"Ammo","description":"For crossbows."},
             {"name":"Pen","description":"It writes things down."}]},
@@ -2125,7 +2136,7 @@
                 "tags":["defensive","prestige"],
                 "flavor":"Subtly off-white, tasteful thickness, even a watermark.",
                 "stat":["ba"],"number":["2"],
-                "weight":"1","value":1000,
+                "weight":1,"value":1000,
                 "description":"",
                 "properties":[
             {"name":"Cut to size", "description":"Hand out for 1d8 ba damage. Double vs Street street money types."},
@@ -2209,7 +2220,7 @@
         "name":"Pocket Knowledge Daemon",
         "tags":["gear"],
         "flavor":"A Long Long Ago daemon trapped in a marvelous insectile shell. With lights and sounds and haptic feedback, it conveys the knowledge of the ancients.",
-        "weight":"2","value":200,"description":"",
+        "weight":2,"value":200,"description":"",
         "properties":[
             {"name":"Encyclopaedia","description":"Wealth of out-of-date information. [+] when analyzing artifacts and oldtech."},
             {"name":"Friendly council","description":"Offers bottled wisdom and medical advice. [+] to recovery from all types of damage."},
@@ -2305,6 +2316,15 @@
         "description":"",
         "properties":[
             {"name":"Accessories", "description":"Various bits and bobs can be put away in a 5 soap pouch for safekeeping. Grants no defence when stored this way."}]},
+    "prophylactery":{
+        "name":"Prophylactery",
+        "tags":["voyager","artefact"],
+        "flavor":"A burning mitochondrial source of life from when the universe was young.",
+        "weight":20,"value":20000,
+        "description":"A seed sent forward through time, collecting memories from each bearer, in turn, and storing then in the hidden spaces between alleles. For when the final battle comes, it will generate a hybrid of all the greatest warriors and wizards it has inhabited. A true god in the flesh.",
+        "properties":[
+            {"name":"Regenerative return", "description":"If left alone, the phylactery will regrow the entire biosarcophagus, containing a clone of the phylactery’s previous owner, over the course of 3 sessions."},
+            {"name":"Revival songs", "description":"In the presence of a Researcher’s dead body, will begin to sing the Song of the Holy Host. Those nearby must make a difficult AUR test or be compelled to tear out the heart of their dead companion and shove the phylactery in. The phylactery begins to beat and grow roots. Its host returns to life and gains the *traits.biolichdom* mutation."}]},
     "puppet-maker":{
         "name":"Puppet-maker",
         "tags":["consumable","munition"],
@@ -2335,6 +2355,17 @@
             {"name":"Dehydrate", "description":"Dried out, the place hybernates indefinitely. Add water to awaken."},
             {"name":"Quiet place", "description":"No sounds or EM radiation penetrates the quiet spheroid. Light acquires a dull blue cast within the area."},
             {"name":"Swim away", "description":"Once rehydrated, the quiet plaice swims away into its home dimensions, leaving behind a large spheroidal area of delayed vibration."}]},
+    "rawstemcells": {
+        "name": "Raw Stem Cells",
+        "tags": ["resource", "voyager"],
+        "flavor": "A seething mass of pink slime.",
+        "weight":10,"value":600,
+        "description": "The building blocks of biological systems. Has a number of healing and mutating properties.",
+        "actions": [
+            {"name": "Biotherapy","description": "Remove a physical burden."},
+            {"name": "Bleak Harvest","description": "Liquefy a sentient creature into raw stem cells. Sentient Safety and Morality Protocols forbid this within the Voyager Research Programme."},
+            {"name": "Forge","description": "Give an offensive item *modifiers.geneslicer*."},
+            {"name": "Ingest","description": "Rapid cellular reconstruction heals 3d6 life, then make a medium END test: on failure, take 1d3 END damage as genetic code corrupts"}]},
     "realitydistortionfield":{
         "name":"Reality Distortion Field",
         "tags":["defensive","prestige"],
@@ -2407,7 +2438,8 @@
         "name":"Rope, “Fifty Feet” Brand",
         "tags":["gear"],
         "flavor":"The Given World’s favourite rope brand for over 500 years! Strong, tough, fray-proof, flame-proof.",
-        "weight":10,"value":5,"description":"",
+        "weight":10,"value":5,
+        "description":"",
         "properties":[
             {"name":"Superlight","description":"50 metres long."},
             {"name":"Traverse","description":"Makes crossing tall vertical obstacles feasible."}]},
@@ -2415,11 +2447,22 @@
         "name":"RRYPO Bobble Head",
         "tags":["gear"],
         "flavor":"Authentic R.R.Y.P.O. brand. Made from durable, non-toxic ceramo-plastics. With its pyramid cap and tentacle face, this dash ornament makes any ride terrifying.",
-        "weight":"1","value":400,"description":"",
+        "weight":1,"value":400,
+        "description":"",
         "properties":[
             {"name":"Adhesive","description":"Sticks to any surface. Pull to remove."},
             {"name":"Terrifying","description":"All ride attacks can deal ka damage instead."},
             {"name":"Warding","description":"Ride’s driver gains [+] vs ka attacks and spells."}]},
+    "sableoil": {
+        "name": "Sable Oil",
+        "tags": ["resource", "technological", "voyager"],
+        "flavor": "Dense black metallic oil that ripples and flows of its own volition.",
+        "weight":30,"value":250,
+        "description": "Self-replicating liquid nanites left over from a failed attempt to colonize the planet. A group of druidic eco-hackers rewrote the nanites' composite crowdcode to defend the planet's ecosystem rather than consume it.",
+        "actions": [
+            {"name": "Blood Synthesis","description": "The Oil eagerly attaches itself to the iron in your blood. Gain [+] to incoming healing for a session."},
+            {"name": "Forge","description": "Give an item *modifiers.selfrepairing*."},
+            {"name": "Metal Mitosis","description": "Feed the oil a metal item of $300 or more and it will duplicate."}]},
     "saltyfountainofcurses":{
         "name":"Salty Fountain of Curses",
         "tags":["offensive","rhetoric","outcaste"],
@@ -2445,7 +2488,7 @@
         "tags":["defensive","ward"],
         "flavor":"A clasped metal bivalve with two holograms. One of the hero’s lineage princess-mother, the other of their memory city. Just having it near strengthens the soul.",
         "stat":["ka"],"number":["1"],
-        "weight":"1","value":5,
+        "weight":1,"value":5,
         "description":"",
         "properties":[
             {"name":"Singular", "description":"Only one copy of this item benefits the wearer."}]},
@@ -2562,7 +2605,7 @@
             {"name":"Void-capable","description":"Breaks down aircake and recycles water to let wearer survive in the void."}]},
     "sledgehammer":{
         "name":"Sledgehammer",
-        "tags":["voyager","offensive","weapon","hammeraxe"],
+        "tags":["voyager","offensive","weapon","hammeraxe","starter"],
         "flavor":"To the hammer, everything is a nail.",
         "stat":["ha"],"number":["1d12"],
         "weight":30,"value":10,
@@ -2624,7 +2667,7 @@
         "name":"Snip & Puff",
         "tags":["consumable","enhancer"],
         "flavor":"Air squid hunters make the best sniff & puff from the spores of the aeraflorine puffer they catch with cobweb nets in the mist forests of the Alto Rosso above the Cyan Sea. Cheaper (and more addictive) S&P is also made from other types of motile air lichen.",
-        "weight":"1","value":500,
+        "weight":1,"value":500,
         "description":"snuffbox",
         "properties":[
             {"name":"Addictive", "description":"Easy test. An addict without snip & puff feels low and insecure. [-] to social tests."},
@@ -2979,7 +3022,7 @@
         "tags":["defensive","ward"],
         "flavor":"A superior tiger’s eye gem with a trapped daemon’s eye.",
         "stat":["ka"],"number":["2"],
-        "weight":"1","value":1000,
+        "weight":1,"value":1000,
         "description":"",
         "properties":[
             {"name":"Implant", "description":"Attaches to the body with ectoplasmic suckers. Spend 1 life to remove."},
@@ -2999,7 +3042,7 @@
             {"name":"The horror of teeth", "description":"Targets reduced to 0 life fall into a stupor for 1 round and permanently lose 1 physical stat as a slight biting horror (L2) pulls itself out of their flesh. The horror does not follow commands."}]},
     "tinfoilwardsuit":{
         "name":"Tinfoil Wardsuit",
-        "tags":["voyager","defensive","ward"],
+        "tags":["voyager","defensive","ward","starter"],
         "flavor":"A rattling assembly of crumpled tinfoil, dials, and sensors. Scribbled upon it: 'They're listening!'",
         "stat":["ha", "ka"],"number":["2", "5"],
         "weight":20,"value":150,
@@ -3048,7 +3091,7 @@
             {"name":"Empathetic invisibility", "description":"Hyperempathetic creatures cannot see the wearer while the towel is wrapped around their head."}]},
     "tranquilizergun":{
         "name":"Tranquilizer Gun",
-        "tags":["voyager","offensive","weapon","pistol"],
+        "tags":["voyager","offensive","weapon","pistol","starter"],
         "flavor":"A beast-tamer's best friend.",
         "stat":["ha"],"number":["1d2"],
         "weight":10,"value":100,
@@ -3139,7 +3182,7 @@
         "name":"Universal Reset",
         "tags":["consumable","curative"],
         "flavor":"In a middling area, everything resets to its moment of creation.",
-        "weight":"1","value":125000,
+        "weight":1,"value":125000,
         "description":"spirit grenade",
         "properties":[
             {"name":"Innocents", "description":"The innocent are unchanged by the universal reset."},
@@ -3225,7 +3268,7 @@
             {"name":"Zone of empathy", "description":"When a creature with a brain enters the affected area it makes a hard charisma test. If it fails, it is swamped by the dominant emotion. [+] and [-] to tests depending on whether the emotion helps or hinders."}]},
     "vibroscalpel":{
         "name":"Vibroscalpel",
-        "tags":["voyager","offensive","weapon","knife"],
+        "tags":["voyager","offensive","weapon","knife","starter"],
         "flavor":"Contains settings for: surgery, melee combat, extra chunky, and fine puree.",
         "stat":["ha"],"number":["1d4"],
         "weight":1,"value":20,
@@ -3238,7 +3281,7 @@
         "name":"Vidy Recorder Eye",
         "tags":["gear"],
         "flavor":"A jewelled eye, like that of some gargantuan mantis shrimp. It records light from roentgen to microwave, and sound from the infrasonic rumble of an earthquake to the high song of the disembodied ultras.",
-        "weight":"1","value":400,"description":"",
+        "weight":1,"value":400,"description":"",
         "properties":[
             {"name":"Implantable","description":"The eye can graft itself to a warm human or post-human body. While attached, it imbues itself with 2 life."},
             {"name":"Livestream","description":"Plugging directly into the vidy eye requires  uncomfortable neural sculpting and costs 1d4 life."},
@@ -3310,7 +3353,7 @@
         "name":"Watch, “Hourglass” Brand",
         "tags":["gear"],
         "flavor":"A standard timepiece ensures accurate time records are kept.",
-        "weight":"1","value":2,"description":"",
+        "weight":1,"value":2,"description":"",
         "properties":[
             {"name":"Civilized","description":"[+] to social tests in bureaucracies."},
             {"name":"Time","description":"[+] to figuring out how much time has elapsed."}]},

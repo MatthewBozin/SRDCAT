@@ -838,6 +838,20 @@
     "properties": [
       {"name": "Post-sentient","description": "Now exists as pure zen contemplation."},
       {"name": "Skippy","description": "[+] when jumping and saving lost innocents."}]},
+  "krakenautofac": {
+    "name": "Kraken Autofac",
+    "level": 6,"life": 78,"maxlife": 78,
+    "facets": ["squirming", "screeching", "bleeding"],"tags": ["voyager", "creature", "synthetic", "mollusc"],
+    "description": "Guardians and repairers of the crawling world, flowing about below its surface.",
+    "attacks": [
+      {"defensename": "ha","defenseamount": 9,"bonus": "+1","attackname": "tentacle","damage": "1d8"},
+      {"defensename": "ka","defenseamount": 11},
+      {"defensename": "ba","defenseamount": 11,"bonus": "+3","attackname": "rending scream","damage": "3d4*"}],
+    "properties": [
+      {"name": "Bleeds oil","description": "When receiving crit below half health: spawn a *creatures.sableoilblob*."},
+      {"name": "Nightmare of tendrils","description": "As the autofac heaves itself bodily onto land, more and more tentacles emerge from below the surface. For every round of combat, the Kraken can make one tentacle attack."},
+      {"name": "Slow","description": "Not built for moving on land. Researchers could flee up the cliffs (medium AGI test) in order to escape."},
+      {"name": "Tentacle","description": "If multiple tentacle attacks hit the same target in a round, that target is grabbed, and cannot move until they spend an action and succeed in a difficult STR test."}]},
   "labourskeleton": {
     "name": "Labour Skeleton",
     "level": 1,"life": 6,"maxlife": 6,
@@ -948,10 +962,10 @@
     "facets": ["rumbling", "squirming", "unified"],"tags": ["creature", "annelid", "voyager"],
     "description": "A swarm of worms that tunnels through, and regurgitates, stone.",
     "attacks": [
-      {"defensename": "ha","defenseamount": 8,"bonus": "+2","attackname": "devour","damage": "1d4"},
+      {"defensename": "ha","defenseamount": 10,"bonus": "+2","attackname": "devour","damage": "1d6"},
       {"defensename": "ka","defenseamount": 7,"bonus": "—","attackname": ""}],
     "properties": [
-      {"name": "Concrete Vomit","description": "At half health: Makes a ha attack that targets all in the vicinity. Targets hit become concreted: they have [-] to ha attacks and defense until they spend an action and make a medium STR test to break free."},
+      {"name": "Concrete Vomit","description": "At half health and on death: Makes a ha attack that targets all in the vicinity. Targets hit become concreted: they have [-] to ha attacks and defense until they spend an action and make a medium STR test to break free."},
       {"name": "Stone Swimmer","description": "Can spend 2 actions to sink into a stone surface or terrain feature. Their next attack has [+] to hit."}]},
   "lobogolem":{
     "name":"Lobogolem","carry":1200,"value":5,"level":8,"life":64,"tags":["vehicle"],
@@ -1038,18 +1052,18 @@
       {"name": "Snake-killer","description": "[+] to all rolls against snakes."}]},
   "mantidbiolich": {
     "name": "Mantid Biolich",
-    "level": 7,"life": 57,"maxlife": 57,
-    "facets": ["buzzing", "brilliant", "magical"],"tags": ["creature", "insectoid", "wizard", "voyager"],
-    "description": "An elite Ecowarrior from a previous kalpa. Trapped between life and death, sent forward in time in a stasis biosarcophagus in order to wage hopeless war against the doom machine at the end of time.",
+    "level": 5,"life": 57,"maxlife": 57,
+    "facets": ["buzzing", "magical", "confused"],"tags": ["creature", "insectoid", "wizard", "voyager"],
+    "description": "An elite Ecowarrior from a previous kalpa. Trapped between life and death, sent forward in time in a stasis sarcophagus in order to wage hopeless war against the doom machine at the end of time.",
     "attacks": [
       {"defensename": "ha","defenseamount": 15,"bonus": "+5","attackname": "exoskeletal blades","damage": "2d8"},
       {"defensename": "ka","defenseamount": 15,"bonus": "+7","attackname": "biotechnical unmaking","damage": "2d10"},
       {"defensename": "ba","defenseamount": 9,"bonus": "+3","attackname": "glimpse of doom","damage": "1d3"}],
     "properties": [
-      {"name": "Biomaster","description": "Upon reaching half life: roll another encounter: those creatures join the battle on the side of the lich."},
+      {"name": "Biomaster","description": "Upon reaching half life: roll an encounter: those creatures join the battle on the side of the lich."},
       {"name": "Biotechnical unmaking","description": "Target loses a trait, mutation, or modifier."},
-      {"name": "Glimpse of doom","description": "The doom machine is inevitable. It knows everything you have done and will ever do. Target must spend their next turn breaking any technology they possibly can."},
-      {"name": "Undying","description": "If not destroyed, the biosarcophagus will regrow the lich within a week."}]},
+      {"name": "Confused","description": "Released before schedule, the lich emerges alarmed and hostile. If the researchers can convince it that they are not agents of the doom machine, it will stop attacking them."},
+      {"name": "Glimpse of doom","description": "The doom machine is inevitable. It knows everything you have done and will ever do. Target must spend their next turn breaking any technology they possibly can."}]},
   "marchergate":{
     "name":"Marcher Gate","carry":1500,"value":2,"level":15,"life":400,"tags":["vehicle"],
     "description":"Metalithic ziggurat on world-breaker class drive units. A leftover from the travelling temple years, its god-caller converted into a two-way gate.",
@@ -1399,14 +1413,15 @@
       {"name":"Sentient","description":"Has own plans."}]},
   "roamingmicrobiome": {
     "name": "Roaming Microbiome",
-    "level": 3,"life": 30,"maxlife": 30,
+    "level": 2,"life": 30,"maxlife": 30,
     "facets": ["oozing", "rolling", "swirling"],"tags": ["creature", "ooze", "voyager"],
     "description": "An entire biome of arcane microorganisms encased in a gelatinous cell wall. This one has developed a taste for blood through a protogenetic mishap.",
     "attacks": [
-      {"defensename": "ha","defenseamount": 10,"bonus": "+3","attackname": "encase","damage": "1d8"},
+      {"defensename": "ha","defenseamount": 9,"bonus": "+3","attackname": "encase","damage": "1d8"},
       {"defensename": "ka","defenseamount": 11,"bonus": "+2","attackname": "protogenetic poison burst","damage": "1d6"}],
     "properties": [
       {"name": "Protogenetic poisoning","description": "On death: affects all in vicinity. Biological creatures must test END or take 1 END damage."},
+      {"name": "Stem cell harvest","description": "Researchers can make a medium THO test, then a medium AGI test to harvest some *items.rawstemcells* from a dead microbiome."},
       {"name": "Walled Garden","description": "Whenever the delicate ecological balance within the microbiome encounters a new foreign substance, it takes 1d6 damage."}]},
   "rollingrock": {
     "name": "Rolling Rock",
@@ -1426,12 +1441,13 @@
     "facets": ["formless", "watchful", "slithering"],"tags": ["ooze", "synthetic", "voyager"],
     "description": "Boiling up from between shoreline crevices and oozing down canyons in search of threats to the planet's ecosystem.",
     "attacks": [
-      {"defensename": "ha","defenseamount": 8,"bonus": "+2","attackname": "pseudopod","damage": "2d6"},
-      {"defensename": "ka","defenseamount": 8,"bonus": "+2","attackname": "electrical discharge","damage": "1d6"},
-      {"defensename": "ba","defenseamount": null,"bonus": "-","attackname": ""}],
+      {"defensename": "ha","defenseamount": 8,"bonus": "+2","attackname": "pseudopod","damage": "1d6"},
+      {"defensename": "ka","defenseamount": 8,"bonus": "+2","attackname": "electrical discharge","damage": "1d6"}],
     "properties": [
-      {"name": "Electrical discharge","description": "Has [area] when in water. Ka save or an electrical item breaks."},
-      {"name": "Metal eater","description": "Metal items break on contact, then the blob heals 1d6."}]},
+      {"name": "Ecological defender","description": "Deals additional damage equal to the expedition’s disruption total."},
+      {"name": "Electrical discharge","description": "Has [area] when in water. [+] vs metal targets. Targets make ka save or an electrical item breaks."},
+      {"name": "Metal eater","description": "Metal items break on contact, then the blob heals 1d6."},
+      {"name": "Sable oil source","description": "Researchers can make a difficult THO test to harvest some Sable Oil from a dead blob."}]},
   "sampansempervirens":{
     "name":"Sampan, “Sempervirens”","carry":1200,"value":50,"level":7,"life":130,"tags":["vehicle"],
     "description":"A flat-bottomed speeder grown from a single coco-bateau palm nut. The Salt Dog Thalassocracy planted so many of the engineered palms around the Circle Sea that even now, generations later, it is often better to adapt one of the over-sized seeds than actually build a boat hull.",

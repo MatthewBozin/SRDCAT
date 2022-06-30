@@ -146,7 +146,7 @@
     "selfrepairing": {
         "name": "Self-Repairing",
         "tags": ["items", "voyager"],
-        "description": "Item can spend 1 supply in order to repair itself over 10 minutes."},
+        "description": "Nanites dwelling within the item can spend 1 supply in order to repair itself over the course of 10 minutes."},
     "stochastic": {
         "name": "Stochastic",
         "tags": ["items", "strange"],

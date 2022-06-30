@@ -339,7 +339,7 @@
       "Gains [+] to attacks against pursuers."]},
   "offworldengineer": {
     "name": "Offworld Engineer",
-    "tags": ["voyager"],
+    "tags": ["voyager","starter"],
     "flavor": "",
     "description": "Patches suits. Oils joints. Persuades golems. Curses like a sailor.",
     "ranks": [
@@ -518,7 +518,7 @@
       "Gains +1 ba defence from protocolary gear and ritual armour."]},
   "psionicinitiate": {
     "name": "Psionic Initiate",
-    "tags": ["voyager"],
+    "tags": ["voyager","starter"],
     "flavor": "",
     "description": "Detects malign interferences. Surveys the astral plane. Debates the healing properties of crystals.",
     "ranks": [
@@ -793,7 +793,7 @@
       "Golems and other machines are reluctant to harm the hero and suffer [-] to tests against them. At any time, the toymaker can spend a few minutes and 1 life to restore 1d6 life to a mechanical creature."]},
   "traumadoc": {
     "name": "Trauma Doc",
-    "tags": ["voyager"],
+    "tags": ["voyager","starter"],
     "flavor": "",
     "description": "Staunches bleeding. Applies hyperchemical medicines. Saves lives on alien worlds.",
     "ranks": [
@@ -961,7 +961,7 @@
     "ranks": ["Gets ITEM (table)."]},
   "xenorticulturalist": {
     "name": "Xenorticulturalist",
-    "tags": ["voyager"],
+    "tags": ["voyager","starter"],
     "flavor": "",
     "description": "Cultivates buds. Samples spores. Eats shoots and leaves. Evades contraband laws. Accidentally introduces invasive species.",
     "ranks": [
@@ -970,7 +970,7 @@
       "Immune to the negative side effects of plants, herbs, and drugs. Analyze tests on alien flora are guaranteed to succeed."]},
   "xenowrangler": {
     "name": "Xeno Wrangler",
-    "tags": ["voyager"],
+    "tags": ["voyager","starter"],
     "flavor": "",
     "description": "Wrassles shrieking monstrosities. Captures defiant alien samples. Survives higher-dimensional bites and stings.",
     "ranks": [
@@ -979,7 +979,7 @@
       "Can use an action to escape a grapple without a test. Can make a ba attack at +5 / 1d20 to subdue or scare off an alien creature."]},
   "zerogwarrior": {
     "name": "Zero-G Warrior",
-    "tags": ["voyager"],
+    "tags": ["voyager","starter"],
     "flavor": "OBELISK, we have a problem...",
     "description": "Radios to ground control. Eats food in creative ways. Patches vacsuits in record time. Performs acrobatic feats in strange gravities.",
     "ranks": [

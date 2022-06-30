@@ -38,7 +38,7 @@ const RandomCharModal = () => {
     if (collection === "creatures") {
       selectionName = s(filter("tags", "creatures", "pet"));
     } else if (heroType === "voyager") {
-      selectionName = s(filter("tags", collection, "voyager"));
+      selectionName = s(filter("tags", collection, "starter"));
     } else {
       selectionName = s(contextData[collection])
     }
@@ -135,7 +135,7 @@ const RandomCharModal = () => {
 
     let weaponNames;
     if (heroType === "voyager") {
-      weaponNames = filter("tags", "items", "offensive+voyager");
+      weaponNames = filter("tags", "items", "offensive+starter");
     } else {
       weaponNames = filter("tags", "items", "offensive");
     }
@@ -144,7 +144,7 @@ const RandomCharModal = () => {
 
     let armorNames;
     if (heroType === "voyager") {
-      armorNames = filter("tags", "items", "defensive+voyager");
+      armorNames = filter("tags", "items", "defensive+starter");
     } else {
       armorNames = filter("tags", "items", "defensive");
     }
@@ -153,7 +153,7 @@ const RandomCharModal = () => {
 
     let consumableNames;
     if (heroType === "voyager") {
-      consumableNames = filter("tags", "items", "consumable+voyager");
+      consumableNames = filter("tags", "items", "consumable+starter");
     } else {
       consumableNames = filter("tags", "items", "consumable");
     }

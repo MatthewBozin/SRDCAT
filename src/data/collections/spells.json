@@ -364,6 +364,17 @@
       {"power":8,"effect":"Big as a void mosasaur."}],
       "properties":[
         {"name":"Ctrl+V","description":"A scroll can be used with a spell like Create Canonical Form to produce golems ad nauseam."}]},
+  "echoesofthefleshchoir":{
+    "name":"Echoes of the Flesh Choir",
+    "tags":["voyager"],
+    "flavor":"All carbon-based life was once one. The old architects spun fleshworlds out of the void, and bade their trusted chitin-clad shepherds to thresh new creations from the heaving slime. This is but a shred of their old harvest song.",
+    "description":"Emit the special harmonic frequencies that inspire microorganisms to gather together, forming distributed biological nanofactories.",
+    "ranks":[
+      {"power":4,"effect":"Grow a new organ or limb attached to target."},
+      {"power":7,"effect":"Create a duplicate of target creature, with no items or memories."}],
+      "properties":[
+        {"name":"Bio-shock","description":"Facing such sudden change, the target must make a medium END test or fall into shock."},
+        {"name":"Imbue","description":"The wizard holds the spell effects together through ancient will. Pay the spell cost again to make the changes permanent."}]},
   "electromagicalprojector":{
     "name":"Electromagical Projector ",
     "tags":["motherelectric"],

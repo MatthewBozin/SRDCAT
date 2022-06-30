@@ -103,7 +103,7 @@
       "CASH": 30000
     },
     "voyager": {
-      "name": "OBELISK Crew",
+      "name": "Voyager",
       "skills": 1,
       "traits": 1,
       "items": 0,
@@ -155,7 +155,7 @@
     "supply": 25,
     "disruption": 0,
     "knowledge": 0,
-    "environment": "tidepools",
+    "environment": "crawlingcoast",
     "environments": [],
     "zone": "shorepool",
     "scene": "test",
@@ -194,11 +194,11 @@
       "description": "The embodiment of a culture hero, an archetype taken flesh. After reaching the pinnacle of power, the only paths left open are change and decline. There is nowhere further to go."
     },
     {
-      "name": "OBELISK Crewmember",
+      "name": "Voyager",
       "value": "voyager",
       "stats": ["Level: 2", "Life: 16", "XP: 0", "Cash: 0"],
-      "flavor": "For games of VOTBO.",
-      "description": "Prospective crewmembers of OBELISK emerge from their pods ready to do research on distant worlds with specialized skills and strange items."
+      "flavor": "For games of Voyager.",
+      "description": "Prospective crewmembers of the Voyager Research Programme emerge from their pods ready to do research on distant worlds with specialized skills and strange items."
     }
   ],
   "attributeArray": ["str", "end", "agi", "cha", "aur", "tho"],
