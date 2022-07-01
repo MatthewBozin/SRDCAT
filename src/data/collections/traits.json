@@ -140,7 +140,7 @@
       "When a hero would die, they instead find themselves awake and unable to move in a strange coccoon, with shadowy shapes talking about “preparing the backup”. Next thing they know, they’re back in their bed missing some memories (hero permanently loses 1 skill)."]},
   "biolichdom": {
     "name": "Biolichdom",
-    "tags": ["mutation", "ha"],
+    "tags": ["mutation", "ha", "voyager"],
     "flavor": "Powered by the fires of primordial life.",
     "description": "Whenever the bearer would die, they revive and rank up this mutation.",
     "ranks": [

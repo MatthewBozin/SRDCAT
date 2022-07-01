@@ -1767,6 +1767,15 @@
             {"name":"Force field", "description":"Incoming high velocity & energy attacks suffer [-]."},
             {"name":"Strength servos", "description":"+5 strength."},
             {"name":"Vital 30", "description":"Grants 30 life."}]},
+    "mantidsickle":{
+        "name":"Mantid Sickle",
+        "tags":["offensive","sword", "voyager"],
+        "flavor":"Used for the ritual slicing of the genetic chain.",
+        "weight":1,"value":9000,
+        "description":"An impossibly light and sharp curved chitin blade.",
+        "properties":[
+            {"name":"Fragile", "description":"Critically failing an attack roll breaks the sickle."},
+            {"name":"Flesh cleaver", "description":"[+] to damage vs biological creatures."}]},
     "many-handed":{
         "name":"Many-handed",
         "tags":["consumable","munition"],
@@ -1776,8 +1785,8 @@
         "properties":[
             {"name":"Grappling", "description":"Target is enmeshed in lively tentacles. [-] to physical tests. Strength test to break."},
             {"name":"Grabbing", "description":"Tentacles also latch onto adjacent creatures and objects. [-] to physical tests. Strength test to break or thought test to untangle."}]},
-            "mechanicalbrain":{
-                "name":"Mechanical Brain",
+    "mechanicalbrain":{
+        "name":"Mechanical Brain",
         "tags":["gear"],
         "flavor":"Can store a personality-copy. Interfaces with most golems and machines. Great for playing chess or having a synthetic friend to talk to on a floating desert island.",
         "weight":20,"value":5000,

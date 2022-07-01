@@ -30,14 +30,14 @@ const NavMaster = () => {
           newContext.link = "landing";
           setContext(JSON.parse(JSON.stringify(newContext)));
         }}>SRDCAT</span>
-        {/* {<span
+        {<span
           className="button bordered row heading mleft30px"
           onClick={() => {
             personaToggle();
           }}
         >
           {context.persona}
-        </span>} */}
+        </span>}
         {(context.link === "collections" || context.link === "sheet") && 
           <div className="rightfloat mright12px">
             {navbar[context.persona].map((navmaster, index) => {
