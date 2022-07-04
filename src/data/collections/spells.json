@@ -1310,9 +1310,9 @@
       {"power":2,"effect":"Spreading hands with deluvian motions, creates a plane of matter no thicker than their palm."},
       {"power":3,"effect":"Tracing form into fact, a geometric solid settles into existence."},
       {"power":4,"effect":"The wizard seems to deform, revealing the higher dimensional nature of every thinking being, as their many flagella bring a four-dimensional object into being."}],
-      "properties":[
-        {"name":"Dimensions","description":"The wizard creates as much matter each minute as they encompass with their outstretched hands."},
-        {"name":"Focus","description":"With concentration, massive objects are possible."}]},
+    "properties":[
+      {"name":"Dimensions","description":"The wizard creates as much matter each minute as they encompass with their outstretched hands."},
+      {"name":"Focus","description":"With concentration, massive objects are possible."}]},
   "tabularasa":{
     "name":"Tabula Rasa",
     "tags":["soulbreaker"],

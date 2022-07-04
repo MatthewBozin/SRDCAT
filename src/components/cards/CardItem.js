@@ -147,7 +147,7 @@ const CardItem = (props) => {
                   }}
                 />
               )}
-            {context.persona === "PC" && (props.deleteFrom === "items" || props.deleteFrom === "none") && (
+            {context.persona === "PC" && (props.deleteFrom === "items" || props.deleteFrom === "none") && !props.modal && (
               <span>
                 <Dollar
                   className="iconsvg"

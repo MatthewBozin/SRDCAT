@@ -145,7 +145,7 @@
         "flavor": "",
         "weight":1,"value":300,
         "description": "",
-        "actions": [
+        "properties": [
             {"name": "Arcane symbiosis","description": "Gain the *traits.arcanophagesymbiosis* mutation."},
             {"name": "Coat item","description": "Item loses all magical properties for a session."},
             {"name": "Cultivate","description": "Whenever a hero casts a spell with total magic cost over 50, a new colony of arcanophage bacteria buds."},
@@ -1680,7 +1680,7 @@
             {"name":"Ammunition", "description":"Brass cartridges."},
             {"name":"Long-Range", "description":"Attacks nearby and far away targets normally. [-] vs adjacent targets."},
             {"name":"Precise", "description":"[+] to attacks if wielder is not jostled that round."}]},
-    "lucitespell-breaker":{
+    "lucitespellbreaker":{
         "name":"Lucite Spell-Breaker",
         "tags":["offensive","weapon","rod"],
         "flavor":"A small club or truncheon of pure lucite reinforced with sinew and copper bands.",
@@ -1771,6 +1771,7 @@
         "name":"Mantid Sickle",
         "tags":["offensive","sword", "voyager"],
         "flavor":"Used for the ritual slicing of the genetic chain.",
+        "stat":["ha", "ka"],"number":["1d6", "1d6"],
         "weight":1,"value":9000,
         "description":"An impossibly light and sharp curved chitin blade.",
         "properties":[
@@ -2370,7 +2371,7 @@
         "flavor": "A seething mass of pink slime.",
         "weight":10,"value":600,
         "description": "The building blocks of biological systems. Has a number of healing and mutating properties.",
-        "actions": [
+        "properties": [
             {"name": "Biotherapy","description": "Remove a physical burden."},
             {"name": "Bleak Harvest","description": "Liquefy a sentient creature into raw stem cells. Sentient Safety and Morality Protocols forbid this within the Voyager Research Programme."},
             {"name": "Forge","description": "Give an offensive item *modifiers.geneslicer*."},
@@ -2468,7 +2469,7 @@
         "flavor": "Dense black metallic oil that ripples and flows of its own volition.",
         "weight":30,"value":250,
         "description": "Self-replicating liquid nanites left over from a failed attempt to colonize the planet. A group of druidic eco-hackers rewrote the nanites' composite crowdcode to defend the planet's ecosystem rather than consume it.",
-        "actions": [
+        "properties": [
             {"name": "Blood Synthesis","description": "The Oil eagerly attaches itself to the iron in your blood. Gain [+] to incoming healing for a session."},
             {"name": "Forge","description": "Give an item *modifiers.selfrepairing*."},
             {"name": "Metal Mitosis","description": "Feed the oil a metal item of $300 or more and it will duplicate."}]},

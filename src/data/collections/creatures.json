@@ -1447,7 +1447,7 @@
       {"name": "Ecological defender","description": "Deals additional damage equal to the expedition’s disruption total."},
       {"name": "Electrical discharge","description": "Has [area] when in water. [+] vs metal targets. Targets make ka save or an electrical item breaks."},
       {"name": "Metal eater","description": "Metal items break on contact, then the blob heals 1d6."},
-      {"name": "Sable oil source","description": "Researchers can make a difficult THO test to harvest some Sable Oil from a dead blob."}]},
+      {"name": "Sable oil source","description": "Researchers can make a difficult THO test to harvest some *items.sableoil* from a dead blob."}]},
   "sampansempervirens":{
     "name":"Sampan, “Sempervirens”","carry":1200,"value":50,"level":7,"life":130,"tags":["vehicle"],
     "description":"A flat-bottomed speeder grown from a single coco-bateau palm nut. The Salt Dog Thalassocracy planted so many of the engineered palms around the Circle Sea that even now, generations later, it is often better to adapt one of the over-sized seeds than actually build a boat hull.",

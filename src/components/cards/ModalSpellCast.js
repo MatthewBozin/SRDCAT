@@ -12,7 +12,6 @@ function ModalSpellCast(props) {
     setCastModalOpen,
     description,
     ranks,
-    modifiers,
   } = props;
 
   const [cost, setCost] = useState(0);
@@ -45,13 +44,13 @@ function ModalSpellCast(props) {
       </Modal.Header>
       <Modal.Body className="modalbackground">
         <div className="margin5px">{description}</div>
-        {modifiers.includes("dangerous") && (
+        {/* {modifiers.includes("dangerous") && (
           <div>
             <hr />{" "}
             <span className="orangetext">Casting this spell is dangerous.</span>{" "}
             <hr />
           </div>
-        )}
+        )} */}
         <SpellCostCard
           name={name}
           description={description}
