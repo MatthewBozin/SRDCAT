@@ -217,13 +217,11 @@ const ExportModal = (props) => {
   ];
 
   return (
-    <div>
-      <Download
-        className="iconsvg mleft12px mtop4px"
-        onClick={() => {
-          modalOpening();
-        }}
-      />
+    <div className="outerbox992 button mleft8px">
+      <span onClick={() => {modalOpening();}}>
+        <span className="none992">Import/Export</span>
+        <Download className="iconsvg mleft8px"/>
+      </span>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           {gate().name} Export/Import Options

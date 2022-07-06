@@ -180,20 +180,18 @@ const RandomCharModal = () => {
 
     //if (gear == "true") { give hero an item each marked "armor" or "clothes", "weapon" }
 
-    newchar.name = "Name";
+    newchar.name = "Name (click to edit)";
     newchar.type = levels.name;
 
     setCharacter(newchar);
   };
 
   return (
-    <div>
-      <D20
-        className="iconsvg mleft8px mtop4px"
-        onClick={() => {
-          modalOpening();
-        }}
-      />
+    <div className="outerbox992 button">
+      <span onClick={() => {modalOpening();}}>
+        <span className="none992">New</span>
+        <D20 className="iconsvg mleft8px"/>
+      </span>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           Generate Random Hero

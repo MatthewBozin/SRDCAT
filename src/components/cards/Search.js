@@ -99,12 +99,14 @@ const Search = () => {
           onClick={resetSearch}
         >
           <b>C</b>
+          <span className="none992">lear Search</span>
         </button>
         <button
           className="button bordered link flexstart searchbutton"
           onClick={randomResult}
         >
           <b>R</b>
+          <span className="none992">andom Result</span>
         </button>
       </div>
     </div>

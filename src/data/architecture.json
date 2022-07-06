@@ -124,7 +124,7 @@
     }
   },
   "currentChar": {
-    "name": "Name",
+    "name": "Name (click to edit)",
     "str": 1,
     "end": 1,
     "agi": 1,
@@ -254,6 +254,7 @@
     "ka": "ka",
     "ba": "ba",
     "life": "Life",
+    "maxlife": "Max Life",
     "HERODICE": "Hero Dice",
     "XP": "Xp",
     "CASH": "Cash",

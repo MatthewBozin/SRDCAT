@@ -4,8 +4,7 @@ const Footer = () => {
 
   return (
     <div className="row footer">
-      <span className="button row heading fontsize18">ABOUT</span>
-      <span className="button row heading mleft30px">
+      <span className="button row heading">
         <a
           className="orangetext fontsize18"
           href="https://www.patreon.com/sakertarsos"

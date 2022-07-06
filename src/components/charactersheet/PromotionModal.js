@@ -42,13 +42,11 @@ const PromotionModal = () => {
   }
 
   return (
-    <div>
-      <Promotion
-        className="iconsvg mleft8px mtop4px"
-        onClick={() => {
-          modalOpening();
-        }}
-      />
+    <div className="outerbox992 button mleft8px">
+      <span onClick={() => {modalOpening();}}>
+        <span className="none992">Promote</span>
+        <Promotion className="iconsvg mleft8px"/>
+      </span>
       <Modal show={modalOpen} onHide={closeModal}>
         <Modal.Header className="modalbackground">
           Promote Your Hero

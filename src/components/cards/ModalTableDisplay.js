@@ -10,8 +10,6 @@ function ModalTableDisplay(props) {
   const [tableModalOpen, setTableModalOpen] = useState(false);
   const { table } = props;
 
-  console.log(props.parameter);
-
   return (
     <span>
       <button

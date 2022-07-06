@@ -2,14 +2,11 @@
   "zones": ["shorepool", "tombofthedruids"],
   "props": [
     "stalagmite", 
-    "arcanophagebacteria",
     "biotechsarcophagus",
     "druidicbasrelief",
     "humanoidstatues",
     "microbiomebubble",
-    "oilvein",
-    "rawstemcells",
-    "sableoil"
+    "oilvein"
   ],
   "scenes": [
     "astraljourney",

@@ -179,7 +179,7 @@ const Resources = () => {
           </form>
           <div className="flex">{ifStat1(modalStat)}</div>
           <div className="flex">{ifStat2(modalStat)}</div>
-          <div className="outerbox flex">
+          <div className="margin5px flex">
             <textarea
               className="button bordered flexgrow2"
               id={"add" + character[modalStat]}
@@ -193,6 +193,13 @@ const Resources = () => {
                 onClick={addTo}
             >Add</button>
           </div>
+          {modalStat === "life" && 
+            <button
+                  className="button bordered padded5px margin5px"
+                  onClick={() => {setModalStat("maxlife")}}
+            >Set Maximum</button>
+          }
+          
         </Modal.Body>
       </Modal>
     </div>

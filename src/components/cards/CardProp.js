@@ -26,6 +26,7 @@ const Card = (props) => {
     setExpanded(!status);
   };
 
+  console.log(props.card.name);
   let card = JSON.parse(JSON.stringify(cards[props.card.name]));
 
   const noBreakpointsIfHeroSheet = () => {

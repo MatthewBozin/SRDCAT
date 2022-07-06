@@ -54,7 +54,7 @@ const HeroSheet = () => {
     </div>
     <div className="charsheet">
       <StatSheet />
-      <div className="outerbox limitwidth">
+      <div className="limitwidth">
         <div className="outerbox">
           <div className="row mleft5px fullwidth">
             <span>

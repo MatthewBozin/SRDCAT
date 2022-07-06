@@ -75,7 +75,7 @@ const Navlet = (props) => {
       }
     >
       {displayIcon()}
-      <span className="navletSpan">{props.navlet.display}</span>
+      <span className="none992">{props.navlet.display}</span>
     </button>
   );
 };

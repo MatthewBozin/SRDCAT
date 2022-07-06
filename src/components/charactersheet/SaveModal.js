@@ -82,15 +82,13 @@ const SaveModal = (props) => {
   };
 
   return (
-    <div>
-      <Folder
-        className="iconsvg mtop4px mleft12px scaleup125"
-        onClick={() => {
-          modalOpening();
-        }}
-      />
+    <div className="outerbox992 button mleft8px">
+      <span onClick={() => {modalOpening();}}>
+        <span className="none992">Save/Load</span>
+        <Folder className="iconsvg mleft8px scaleup125"/>
+      </span>
       <Modal show={modalOpen} onHide={closeModal}>
-        <Modal.Header className="modalbackground">Manage Slots</Modal.Header>
+        <Modal.Header className="modalbackground">Save/Load Heroes</Modal.Header>
         <Modal.Body className="modalbackground">
           {slots.map((eachSlot, index) => {
             let slot = JSON.parse(JSON.stringify(index));

@@ -48,8 +48,6 @@ function ModalItemTinker(props) {
       setMessage(`Not enough XP! Required: ${cost}.`)
       return;
     };
-    console.log(character.items[props.placement].mods);
-    console.log(mod);
     for (let currentmod of character.items[props.placement].mods) {
       if (currentmod.name === mod.name) {
         setMessage(`Item already has mod: ${mod.name}.`)
@@ -61,7 +59,6 @@ function ModalItemTinker(props) {
     newCharacter.XP -= cost;
     setCharacter(JSON.parse(JSON.stringify(newCharacter)));
     setMessage(`Mod added: ${mod.name}!`)
-    console.log();
   }
 
   return (

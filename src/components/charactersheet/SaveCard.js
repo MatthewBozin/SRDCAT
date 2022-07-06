@@ -122,13 +122,14 @@ const SaveCard = (props) => {
             //flex these
             <div>
               <hr></hr>
+              {confirmType.text}?
               <button
                 className="button bordered padded5px margin5px"
                 onClick={() => {
                   confirmAction();
                 }}
               >
-                {confirmType.text}
+                Yes
               </button>
               <button
                 className="button bordered padded5px margin5px"
