@@ -73,6 +73,11 @@ SPECIFIC
   transition: 0.3s;
 }
 
+.creditsLink {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 /*
 ---------------------------------------------
 MISC

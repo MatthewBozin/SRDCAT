@@ -4,15 +4,23 @@ const Footer = () => {
 
   return (
     <div className="row footer">
-      <span className="button row heading">
+      <span className="row heading">
         <a
-          className="orangetext fontsize18"
-          href="https://www.patreon.com/sakertarsos"
-          target="_blank"
+          className="orangetext creditsLink"
+          href="https://github.com/MatthewBozin/SRDCAT"
           rel="noopener noreferror"
         >
-          SUPPORT DEVELOPMENT
+          Code
         </a>
+        {" by "}
+        <a
+          className="orangetext creditsLink"
+          href="https://matthewbozin.netlify.app/"
+          rel="noopener noreferror"
+        >
+          Matthew Bozin 
+        </a>
+        2022
       </span>
     </div>
   );
